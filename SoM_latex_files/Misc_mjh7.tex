@@ -1,0 +1,265 @@
+
+\mode<presentation>
+{
+ \usetheme{default}      % or try Darmstadt, Madrid, Warsaw, ... 
+ %\usecolortheme{default} % or try albatross, beaver, crane, ...
+ \usecolortheme{TUNI} % mjh, 2018
+%  \usefonttheme{default}  % or try serif,
+%  \usefonttheme{serif}  % or try serif,structurebold, ...
+ \setbeamertemplate{navigation symbols}{}
+ \setbeamertemplate{caption}[numbered]
+} 
+
+\usepackage[english]{babel}
+%\usepackage[utf8]{inputenc}
+\usepackage[OT1]{fontenc} %maybe this works better with \href{with ä}
+\usepackage{mwe}
+\usepackage[absolute,overlay]{textpos}
+\usepackage{pgf}  
+\usepackage{tikz}
+\usepackage{calc}
+
+\usepackage{mathtools}
+\usepackage{animate}
+\usepackage{transparent}
+\usepackage{tikz}
+\usepackage{stackengine}
+
+\usepackage{threeparttable}
+\usepackage[labelformat=empty,font=scriptsize,skip=0pt,
+justification=justified,singlelinecheck=false]{caption}
+
+\mathchardef\mhyphen="2D % Define a "math hyphen"
+\newcommand{\micron}{{\textmu}m} %$\mu$m
+% \newcommand{\Alert}[1]{\alert{\textbf{#1}}}
+\newcommand{\Alert}[2][blue]{\textcolor{#1}{\textbf{#2}}}
+
+% recursive evilness
+%\renewcommand{\textbf}[2][black]{\textcolor{#1}{\textbf{#2}}}
+ 
+\usepackage{enumitem}
+
+\usepackage{tikz} 
+
+%% PRESENTATION ASPECT RATIO AFFECTS FOLLOWING POSITIONERS:
+%% CITATIONS %% 
+% 16:9 aspect ratio
+% \newcommand\BRciteXpos{159mm} 	% 127 mm
+% \newcommand\BRciteYpos{88mm}	% 94 mm
+% %% PAGE NUMBERING %%
+% % 4:3 aspect ratio
+% % \newcommand\framenumXpos{98mm} 	% 118 mm
+% % 16:9 aspect ratio
+% \newcommand\framenumXpos{130mm} 	% 118 mm
+
+% \draw[step=0.5cm,gray,very thin] (-1.9,-1.9) grid (5.9,5.9); % for positioning stuff in drafting mode
+
+\graphicspath{{Figures/}{Figures/Logos/}{Figures/misc/}{Figures/Prezi/}{Figures/Intro/}{Figures/MRES/}{Figures/NDDA/}{Figures/LessIsMore/}{Figures/3DNLO/}{Figures/Seminar2020/}{Figures/DeepLearning/}{Figures/highQ/}{Figures/Transients/}{Figures/PREIN_lukio_kuvat/}}
+% Organize figures into folders: 
+% Figures/NLO		(NLO schematics)
+% Figures/misc 		(TUT logos etc.)
+% Figures/Logos 	(TUT logos etc.)
+% Figures/Prezi 	(this presentation figs)
+% Figures/?			(other presentation figs)
+% etc.
+
+%% Automated titlecase:
+\newcommand{\tc}[1]{\titlecap{#1}}
+
+%%%%%%%%%%%%%% FOOTLINE SIZE: %%%%%%%%%%%%%%%%%
+% \makeatletter
+% \defbeamertemplate*{footline}{Dan P theme}
+% {
+%   \leavevmode%
+%   \hbox{%
+%   \begin{beamercolorbox}[wd=.2\paperwidth,ht=2.25ex,dp=1ex,center]{author in head/foot}%
+%     \usebeamerfont{author in head/foot}\insertshortauthor\expandafter\beamer@ifempty\expandafter{\beamer@shortinstitute}{}{~~(\insertshortinstitute)}
+%   \end{beamercolorbox}%
+%   \begin{beamercolorbox}[wd=.6\paperwidth,ht=2.25ex,dp=1ex,center]{title in head/foot}%
+%     \usebeamerfont{title in head/foot}\insertshorttitle
+%   \end{beamercolorbox}%
+%   \begin{beamercolorbox}[wd=.2\paperwidth,ht=2.25ex,dp=1ex,right]{date in head/foot}%
+%     \usebeamerfont{date in head/foot}\insertshortdate{}\hspace*{2em}
+% \insertframenumber{} / \inserttotalframenumber\hspace*{2ex} 
+%   \end{beamercolorbox}}%
+%   \vskip0pt%
+% }
+% \makeatother
+
+%%%%%%%%%%%%%% NEW COMMANDS: %%%%%%%%%%%%%%%%%
+
+% Itemize list -customization:
+\setbeamercolor{itemize item}{fg=blue}  % mainBlue darkblue
+\setbeamertemplate{itemize item}[circle]  % triangle
+\newcommand\mjhLineSpace{-1mm}
+\newcommand\FontThanks{\fontsize{22}{7.2}\selectfont}
+
+% To highlight results using colors:
+\usepackage{xcolor,soul} %allows you to use \hl{} to highlight text
+\definecolor{magenta}{RGB}{230,0,230} %\definecolor{orange}{rgb}{1,0.5,0}
+\newcommand{\magenta}[1]{{\color{magenta}#1}}  
+\definecolor{green}{RGB}{0,191,0} %\definecolor{orange}{rgb}{1,0.5,0}
+\newcommand{\green}[1]{{\color{green}#1}}  %% You can create your own 
+\definecolor{expblue}{RGB}{0,0,255} %\definecolor{orange}{rgb}{1,0.5,0}
+\newcommand{\blue}[1]{{\color{expblue}#1}}  %% You can create your own 
+
+% %%% WIKI-forwarding \EMPH -command
+% \DeclareTextFontCommand{\emphLink}{\em}%\bfseries\em
+% \DeclareDocumentCommand\EMPH{o g}{%
+%     {\IfNoValueT{#1}%
+%     {\href{https://en.wikipedia.org/wiki/#2}{\emphLink{#2}}}%
+%     \IfNoValueF {#1} {\href{#1}{\emphLink{#2}}}%
+%     }%
+% }
+
+%%%%%%%%%%%%%%%%%%%% EMPH %%%%%%%%%%%%%%%%%%%%
+\let\emph\relax % there's no \RedeclareTextFontCommand
+% \DeclareTextFontCommand{\emph}{\bfseries\em}
+%% make lmgtfy links to emph'd terms..
+\DeclareTextFontCommand{\emph}{\bfseries\em}
+\DeclareTextFontCommand{\emphLink}{\bfseries\em}
+
+% \newcommand{\EMPH}[1]{\href{https://lmgtfy.com/?q=#1}{\emph{#1}}}
+%https://lmgtfy.com/?q=index+of+refraction
+%% wiki version:
+% \newcommand{\EMPH}[1]{\href{https://en.wikipedia.org/wiki/#1}{\emph{#1}}}
+% \newcommand{\EMPH}[1]{\href{https://en.wikipedia.org/wiki/#1}{\emph{#1}}}
+
+% https://stackoverflow.com/questions/1812214/latex-optional-arguments
+\usepackage{xparse}
+% \DeclareDocumentCommand\EMPH{ m g }{%
+%     {\IfNoValueT{#2}%
+%     {\href{https://en.wikipedia.org/wiki/#1}{\emph{#1}}}%
+%     \IfNoValueF {#2} {\href{#2}{\emph{#1}}}%
+%     }%
+% }
+
+\usepackage{mfirstuc}
+\makeatletter
+\newcommand*\define[1]{%
+  %\textit{#1}%
+  \index{#1@\protect\capitalisewords{#1}}%
+   }
+\makeatother
+ 
+\DeclareDocumentCommand\EMPH{ m g g}{%
+    {\IfNoValueT{#3}%
+    {\define{#1}}%
+    \IfNoValueF {#3} {\define{#3}}%
+    }%
+    {\IfNoValueT{#2}%
+    {\href{https://en.wikipedia.org/wiki/#1}{\emphLink{#1}}}%
+    \IfNoValueF {#2} {\href{#2}{\emphLink{#1}}}%
+    }%
+}
+% \newcommand{\example}[2][YYY]{Mandatory arg: #2;
+%                                  Optional arg: #1.}
+%% EMPH withouth indexing:                                
+\DeclareDocumentCommand\EMPHn{ m g g}{%
+    {\IfNoValueT{#3}%
+    {}%
+    \IfNoValueF {#3} {\define{#3}}%
+    }%
+    {\IfNoValueT{#2}%
+    {\href{https://en.wikipedia.org/wiki/#1}{\emphLink{#1}}}%
+    \IfNoValueF {#2} {\href{#2}{\emphLink{#1}}}%
+    }%
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Make hyperlink to bottom left:
+\newcommand{\hlinkBL}[2]
+{\setlength{\TPHorizModule}{\textwidth}
+ \setlength{\TPVertModule}{\textwidth}
+ \begin{textblock}{0.5}(0.5,0.860)  % Left Bottom = (0.01,0.86)
+ \hyperlink{#1}{\beamergotobutton{#2}}   
+\end{textblock}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Make horizontal navigation bar:
+\newcommand{\insertCentHorNavBar}
+{\setbeamertemplate{headline}{%
+\leavevmode%
+  \hbox{%
+    \begin{beamercolorbox}[wd=\paperwidth,ht=2.5ex,dp=1.125ex]{palette quaternary}%
+  % \insertsectionnavigationhorizontal{\paperwidth}{}{\hskip0pt plus1filll}
+  % \insertsectionnavigationhorizontal{\paperwidth}{\hskip0pt plus1filll}{\hskip0pt plus1filll}
+    \insertsectionnavigationhorizontal{\paperwidth}{\hfill\hfill}{\hfill\hfill}
+    \end{beamercolorbox}%
+  }
+}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% INSERT TEXT TO CUSTOM POSITION:
+\newcommand{\textToArbPos}[2]
+{\setlength{\TPHorizModule}{\textwidth}
+ \setlength{\TPVertModule}{\textwidth}
+ \begin{textblock}{0.5}(#1){#2}  % Left Bottom = (0.01,0.86)
+ \end{textblock}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Customize colors, Fig. captions and footlines %%% 
+
+%\setbeamertemplate{caption}{\raggedright\insertcaption\par} % removes Fig. 1 from the captions.
+\setbeamertemplate{caption}{\centering\insertcaption\par} % removes Fig. 1 from the captions.
+\setlength\abovecaptionskip{2pt}
+% \setbeamertemplate{caption}{\centering\insertcaption\par} % removes Fig. 1 from the captions.
+\setbeamercolor{footline}{bg=white,fg=darkblue}
+\setbeamerfont{caption}{size=\scriptsize}
+
+\usepackage{xcolor}
+\newcommand{\highlight}[1]{%
+  \colorbox{mainViolet}{$\displaystyle#1$}} % mainGreen!50
+
+%%%%%%%%% SUB-SECTION AUTONAMING %%%%%%%%%%%%% 
+%% extract frametitle to auto-name sub-sections
+\addtobeamertemplate{frametitle}{
+\subsection{\insertframetitle}}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% define the golden ratio lengths:
+\newcommand\gra{0.618}
+\newcommand\TUTsbWdth{0.15cm}
+%\newcommand{\TUTlogoW}[1]{%
+%\number\numexpr#1+\TUTsbWdth\relax%
+%}
+%%%%% INSERT TUNI LOGO %%%%%
+%https://tex.stackexchange.com/questions/53781/how-can-i-include-the-logo-in-some-slides-and-remove-in-others-using-beamer
+% \newif\ifplacelogo % create a new conditional
+% \placelogotrue % set it to true
+% \ifplacelogo%
+%%%%% INSERT TUNI LOGO %%%%%
+%https://tex.stackexchange.com/questions/53781/how-can-i-include-the-logo-in-some-slides-and-remove-in-others-using-beamer
+% \newif\ifplacelogo % create a new conditional
+% \placelogotrue % set it to true
+% \ifplacelogo%
+% \setbeamertemplate{footline}[text line]
+% {\parbox[c][1.4cm]{\linewidth}
+% {\hspace*{-0.9cm}  
+% %  \includegraphics[height=1cm]{Figures/Logos/TUNI_logo_violet.eps}}  % was 1.1cm earlier
+%  \includegraphics[height=1cm]{logo_TAU_2rivi_fi_violetti_RGB}}  % was 1.1cm earlier
+% }%
+
+\newcommand{\nologo}{\setbeamertemplate{footline}[text line]{}}
+
+%%%%% INSERT TUT LEFT-BAR %%%%%
+\setlength{\TPHorizModule}{10mm}
+\setlength{\TPVertModule}{\TPHorizModule}
+\textblockorigin{0mm}{1\paperheight} % start everything near the top-left corner
+% \setlength{\parindent}{0pt}
+
+%%%%% CUSTOMIZE TABLE OF CONTENT (ToC) STYLE %%%%%
+% SECTION
+\setbeamertemplate{section in toc}[circle]
+\setbeamercolor{section in toc}{fg=darkblue}
+\setbeamertemplate{section in toc}
+{{\color{darkblue}\inserttocsectionnumber.}~\inserttocsection}
+% SUB-SECTION
+\setbeamercolor{subsection in toc}{fg=black}
+\setbeamerfont{subsection in toc}{size=\footnotesize} % \small 
+
+%\setbeamertemplate{section in toc}{\inserttocsectionnumber.~\inserttocsection}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+ 

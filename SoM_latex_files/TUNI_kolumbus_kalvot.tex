@@ -1,0 +1,318 @@
+%%%%%%%%%% TUNI CUSTOMIZATION %%%%%%%%%%
+\usepackage{charter}
+
+\usepackage{qrcode}
+
+% http://labmaster.mi.infn.it/wwwasdoc.web.cern.ch/wwwasdoc/TL8/texmf/doc/latex/base/html/fntguide/node18.html
+%% commands to declare specific symbols
+
+% https://tex.stackexchange.com/questions/399859/fake-semibold-bold-without-increasing-the-length-of-the-text
+
+\xdef\maintextfont{Kolumbus_variable-Regular}
+\xdef\maintextboldfont{Kolumbus_variable-Regular} 
+\xdef\maintextboldfont{Kolumbus_bold_variable-Regular} 
+\xdef\mathvecboldfont{Kolumbus_bold_vec-Regular} 
+\xdef\mathbigsymbols{Kolumbus_variable_4p5-Regular}
+
+\usepackage{unicode-math} % would this work?
+
+\usepackage{amsmath,stackengine,mathtools} % stacked math highlights
+\stackMath
+
+
+% \setmathfont{latinmodern-math}
+% \defaultfontfeatures[\maintextfont]
+%     { Path = {./fonts/} ,
+%       Extension = .otf }
+
+% setmainfont, Bold gives mathbf
+\setmainfont[BoldFont=\mathvecboldfont .otf, 
+    BoldItalicFont=\maintextboldfont .otf]
+    {\maintextfont .otf}
+
+\setmathfont{latinmodern-math.otf}
+
+\setmathfont[BoldFont=\mathvecboldfont  .otf,
+    BoldItalicFont=\maintextboldfont .otf]
+    {\maintextfont .otf}
+
+\setsansfont[BoldFont=\maintextboldfont  .otf,
+    BoldItalicFont=\maintextboldfont  .otf]
+    {\maintextfont .otf}
+
+\setromanfont[BoldFont=\maintextboldfont  .otf,
+    BoldItalicFont=\maintextboldfont  .otf]
+    {\maintextfont .otf}
+    
+%\setmonofont[BoldFont=\maintextboldfont  .otf,
+%    BoldItalicFont=\maintextboldfont  .otf]
+%    {\mathbigsymbols .otf}
+    
+\usepackage[defaultrm]{mathastext} % must be after \set...font cmds
+
+    
+    
+%%%%%%%%%% TUNI CUSTOMIZATION %%%%%%%%%%
+\usefonttheme{professionalfonts}
+
+\newfontface\bigsymbolsfont[BoldFont=\mathbigsymbols .otf, BoldItalicFont=\mathbigsymbols .otf, ItalicFont=\mathbigsymbols .otf]{\mathbigsymbols .otf}           % font
+% \bg[2.7]{ \text{\bigsymbolsfont\{}} \! \!    
+%%%%%%%%%% Title specs %%%%%%%%%%
+\newfontface\titlefont{\maintextfont .otf}           % font
+\newcommand{\titlecolor}{\textcolor{mainViolet}}    % color
+\setbeamerfont{title}{size=\Large} %Large                 % size
+\newcommand{\inserttitlefontDetails}{\titlefont\titlecolor} % for frametitle-template
+
+
+%%%%%%%%%% Frametitle specs %%%%%%%%%%
+% \newfontface\frametitlefont[BoldFont=\maintextboldfont .otf, BoldItalicFont=\maintextboldfont .otf, ItalicFont=\maintextfont .otf]{\maintextfont .otf}  % font
+\newfontface\frametitlefont[BoldFont=\maintextboldfont .otf, BoldItalicFont=\maintextboldfont .otf, ItalicFont=\maintextfont .otf]{\maintextboldfont .otf}  % font
+\setbeamercolor{frametitle}{fg=mainViolet}
+\setbeamerfont{frametitle}{size=\Large}  % \Large
+
+%%%%%%%%%% Subframetitle specs %%%%%%%%%%
+\newfontface\subframetitlefont[BoldFont=\maintextboldfont .otf, BoldItalicFont=\maintextboldfont .otf, ItalicFont=\maintextfont .otf]
+{\maintextfont .otf}  % font
+% Path = fonts/,
+
+%% Figure captions:
+% \xdef\figcapfont{OpenSans}
+\xdef\figcapfont{\maintextfont}
+\newfontface\figurecaptionfont[BoldFont=\maintextboldfont .otf, BoldItalicFont=\maintextboldfont .otf, ItalicFont=\figcapfont .otf]
+{\figcapfont .otf}  % font
+
+%% Main text font:
+%\setbeamercolor{framesubtitle}{fg=mainViolet}
+\setbeamerfont{framesubtitle}{size=\large} % \normalsize \small        %% customize framesubtitle -command:        
+\let\oldframesubtitle\framesubtitle
+
+\newfontface\mainfont[BoldFont=\maintextboldfont .otf, BoldItalicFont=\maintextboldfont .otf, ItalicFont=\figcapfont .otf]
+{\figcapfont .otf}  % font
+
+\setbeamerfont{normal text}{size=\large} %Large                 % size
+% \setbeamerfont{alerted text}{size=\large,family*={Kolumbus_variable_bold-Regular}}
+\setbeamerfont{item}{size=\large}
+\setbeamerfont{item projected}{size=\large}
+\setbeamerfont{itemize item}{size=\large}
+
+
+%% horizontal distances should be in ex lengths ??
+\usepackage{mfirstuc}
+\usepackage{titlecaps}
+\Addlcwords{my for an the a is}
+ 
+% the below works for regular kolumbus font: 
+\addtobeamertemplate{frametitle}{\vspace{6mm}\hspace{-12mm}
+\frametitlefont}
+% https://tex.stackexchange.com/questions/120718/capitalising-first-letter-of-each-word-in-section-headings-using-book-class
+
+
+%%%%% PAGE NUMBERING %%%%%%%%%%%%%%%%%%%%
+%% Page numbering to top left: %%%%%%%%%%
+\newcommand\framenumYpos{2mm}	% 0 mm
+\newcommand\framenumXpos{98mm}% default
+
+% Macros for recognizing the aspect ratio:
+\makeatletter
+\newcommand{\aspectratio}{Aspect ratio is 4:3 (default)}
+\ifthenelse{%
+  \lengthtest{\beamer@paperwidth=16cm}}% condition (16cm is the width of the frame with an aspect ratio = 16:9)
+    {\renewcommand{\aspectratio}{Aspect ratio is 16:9}% 
+    % 16:9 aspect ratio
+    \renewcommand\framenumXpos{130.5mm}}
+    {}%do nothing
+\makeatother
+% 4:3 aspect ratio
+% \renewcommand\framenumXpos{98mm}
+
+%% SHOW ONLY CURRENT FRAME: %%
+\addtobeamertemplate{frametitle}{}{%
+\textblockorigin{\framenumXpos}{\framenumYpos}
+\begin{flushright}
+\begin{textblock*}{30mm}[0,0.5](0cm,0cm) \tikz {\node[mainViolet] at (0.8cm,0.5cm)%  
+ {\tiny \hyperlink{\TOCcourse}{\insertframenumber}\hspace*{\fill}};%TSOM_TOC
+   }%  \hfill or  \hspace*{\fill}
+\end{textblock*}
+\end{flushright}}
+
+%\usepackage{ulem}
+%\useunder{\uuline}{\bfseries}{\textbf}
+%\useunder{\uwave}{\bf}{\textbf}
+%\let\oldinsertframetitle\insertframetitle
+%\renewcommand{\insertframetitle}{\Uline{\oldinsertframetitle}}
+
+%% 10.6.21 edit, to comment this
+%\addtobeamertemplate{frametitle}{\vspace{-8.0mm}}{\vspace{0mm}} 
+
+%% 30.12. edit, to comment this
+% \addtobeamertemplate{frametitle}{\vskip-1mm}{\vspace{3mm}} 
+\addtobeamertemplate{frametitle}{\vspace{-8.0mm}}{\vspace{0mm}} 
+
+
+%%%%%%%%%% COLORS %%%%%%%%%%
+\newcommand{\red}[1]{{\color{red}#1}}  %% You can create your own 
+\newcommand{\tuniblue}[1]{{\color{tuniblue}#1}}  
+\newcommand{\tunired}[1]{{\color{tunired}#1}} 
+\newcommand{\tuniyellow}[1]{{\color{tuniyellow}#1}} 
+ \newcommand{\tuniyellowdarker}[1]{{\color{tuniyellowdarker}#1}} 
+ 
+%%%%%%% EMPH %%%%%%%%%
+%\DeclareTextFontCommand{\emph}{\bfseries\em}
+%\DeclareTextFontCommand{\emphLink}{\bfseries\em}
+
+% https://stackoverflow.com/questions/1812214/latex-optional-arguments
+%\usepackage{xparse}
+%\usepackage{mfirstuc}
+
+%\makeatletter
+%\newcommand*\define[1]{%
+%  %\textit{#1}%
+%  \index{#1@\protect\capitalisewords{#1}}%
+%   }
+%\makeatother
+% 
+%\DeclareDocumentCommand\EMPH{ m g g}{%
+%    {\IfNoValueT{#3}%
+%    {\define{#1}}%
+%    \IfNoValueF {#3} {\define{#3}}%
+%    }%
+%    {\IfNoValueT{#2}%
+%    {\href{https://en.wikipedia.org/wiki/#1}{\emphLink{#1}}}%
+%    \IfNoValueF {#2} {\href{#2}{\emphLink{#1}}}%
+%    }%
+%}
+%%% EMPH withouth indexing:                                
+%\DeclareDocumentCommand\EMPHn{ m g g}{%
+%    {\IfNoValueT{#3}%
+%    {}%
+%    \IfNoValueF {#3} {\define{#3}}%
+%    }%
+%    {\IfNoValueT{#2}%
+%    {\href{https://en.wikipedia.org/wiki/#1}{\emphLink{#1}}}%
+%    \IfNoValueF {#2} {\href{#2}{\emphLink{#1}}}%
+%    }%
+%}
+
+%% darn, Beamer class has its own commands for overlay cmds:
+%\newcommand<>{⟨command name⟩}[⟨argument number⟩][⟨default optional value⟩]{⟨text⟩}
+%\newcommand<>{\makered}[1]{{\color#2{red}#1}}
+
+%\newcommand{\Alert}[2][blue]{\textcolor{#1}{\textbf{#2}}}
+%%%%%%% ALERT %%%%%%%%%
+\DeclareTextFontCommand{\Alert}{\bfseries\em}
+
+% https://stackoverflow.com/questions/1812214/latex-optional-arguments
+%\usepackage{xparse}
+%\usepackage{mfirstuc}
+ 
+%% EMPH withouth indexing:                                
+\DeclareDocumentCommand\Alert{O{red} m g}{%
+    {\IfNoValueT{#3}%
+    {\textcolor{#1}{\textbf{#2}}}%
+    \IfNoValueF {#3} {\href{#3}{\textcolor{#1}{\textbf{#2}}}}%
+    }%
+}
+
+%% neat underlines
+\usepackage{contour}
+\usepackage{ulem}
+\renewcommand{\ULdepth}{2.3pt}
+\renewcommand{\ULthickness}{1.0pt}%
+\contourlength{0.7pt}
+%\contourlength{1.0pt}
+
+
+
+\newcommand{\Uline}[1]{%
+	\renewcommand{\ULthickness}{1.0pt}%
+	  \uline{\phantom{#1}}%
+	  \llap{\contour[50]{white}{#1}}%
+}
+
+%% appearing dashed underline in math mode:
+%\newcommand\MDashuline[1][+-]{\bgroup\markoverwith{%
+%\appear[#1]{\renewcommand{\ULdepth}{5.0pt}%
+%\kern.1em%
+%\vtop{\kern\ULdepth \hrule height 1.5pt width .5em}% \hrule height h depth d width w \relax
+%\kern.15em
+%}}\ULon%
+%}
+
+\newcommand\Dashuline{\bgroup\markoverwith{%
+\renewcommand{\ULdepth}{0.8pt}%
+\kern.1em%
+\vtop{\kern\ULdepth \hrule height 1.5pt width .5em}% \hrule height h depth d width w \relax
+\kern.15em
+}\ULon}
+
+\newcommand\MDashuline[1][+(1)-]{\bgroup\markoverwith{%
+\appear[#1]{\renewcommand{\ULdepth}{5.0pt}%
+\kern.1em%
+\vtop{\kern\ULdepth \hrule height 1.5pt width .5em}% \hrule height h depth d width w \relax
+\kern.15em
+}}\ULon%
+}
+
+\newcommand{\cutline}[3][+(1)-]{%
+\textcolor{#2}{\MDashuline[#1]{\textcolor{black}{\appear[+(-1)-]{#3}}}}%
+}
+
+\newcommand{\Underlinecomment}[4][+(1)-]{
+\renewcommand\useanchorwidth{T}%tightens math to normal-looking eq.
+\stackunder[-1.5mm]{\cutline[#1]{#2}{ #3 }}{\scriptstyle\textcolor{#2}{\appear[+(-3)-]{\text{#4}}}}\addtocounter{beamerpauses}{-3}
+}
+    
+%https://tex.stackexchange.com/questions/475646/centering-linebreaks-and-raggedright-in-underbrace-text-in-mathmode
+
+%\markoverwith{\kern.13em
+%  \vtop{\kern\ULdepth \hrule width .3em}%
+%  \kern.13em}\ULon}
+
+\newcommand{\DUTline}[2][red!50]{%
+	\renewcommand{\ULthickness}{1.5pt}%
+	  \textcolor{#1}{\Dashuline{\phantom{#2}}}%
+	  \llap{\contour[50]{white}{#2}}%
+}
+  
+\newcommand\culine[1][red]{%
+\bgroup\markoverwith{\textcolor{#1}{\rule[-0.3ex]{2pt}{1.5pt}}}\ULon
+}
+
+\newcommand{\CUTline}[2][red!50]{%
+	\renewcommand{\ULthickness}{1.5pt}%
+	  \textcolor{#1}{\uline{\phantom{#2}}}%
+	  \llap{\contour[48]{white}{#2}}%
+}
+
+\newcommand{\UTline}[1]{%
+	\renewcommand{\ULthickness}{1.5pt}%
+	  \uline{\phantom{#1}}%
+	  \llap{\contour{white}{#1}}%
+}
+
+% Underlined alert
+\DeclareDocumentCommand\UAlert{O{red} m g}{%
+    {\IfNoValueT{#3}%
+    {\textcolor{#1}{\textbf{\UTline{#2}}}}%
+    \IfNoValueF {#3} {\href{#3}{\textcolor{#1}{\textbf{\UTline{#2}}}}}%
+    }%
+}
+
+% Colored (slightly lighter underlined), Underlined alert
+\DeclareDocumentCommand\CUAlert{O{red} m g}{%
+    {\IfNoValueT{#3}%
+    {\textbf{\CUTline[#1!40]{\textcolor{#1}{#2}}}}%
+    \IfNoValueF {#3} {\href{#3}{\textcolor{#1}{\textbf{\CUTline[#1]{#2}}}}}%
+    }%
+}
+
+% Colored (slightly lighter underdash), Dashed alert
+\DeclareDocumentCommand\CDAlert{O{red} m g}{%
+    {\IfNoValueT{#3}%
+    {\textbf{\DUTline[#1!40]{\textcolor{#1}{#2}}}}%
+    \IfNoValueF {#3} {\href{#3}{\textcolor{#1}{\textbf{\DUTline[#1]{#2}}}}}%
+    }%
+}
+
+%%
+

@@ -1,0 +1,238 @@
+
+
+%%%%%%%%% FIGURE MARGINS: %%%%%%%%%%%%%  
+\makeatletter
+\renewenvironment{figure}[1][]{%
+  \def\@captype{figure}%
+  \par\centering}
+  {\par}
+\makeatother
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Caption width == figure width
+% https://tex.stackexchange.com/questions/53497/how-do-i-control-the-exact-dimension-of-a-picture-in-latex
+% https://tex.stackexchange.com/questions/53497/how-do-i-control-the-exact-dimension-of-a-picture-in-latex
+
+\usepackage{printlen}
+% \usepackage{caption}
+\usepackage[font=small]{caption}
+%  %% CAPTION:
+%     \node (capt) [yshift=11mm,below=of A,text width=\imagewidth, font=\small, align=justify]%\scriptsize , align=center
+%     {\figurecaptionfont #3};%\subframetitlefont
+\newlength\imageheight
+\newlength\imagewidth
+
+
+%% maximum image height, which could be used to ensure same dims.
+% Macros for reconizing the aspect ratio:
+\makeatletter
+\ifthenelse{%
+  \lengthtest{\beamer@paperwidth=16cm}}% condition (16cm is the width of the frame with an aspect ratio = 16:9)
+    {% 16:9 aspect ratio
+    \newcommand\maxfigheight{55mm} 	% 118 mm
+    \newcommand\maxfigwidth{140mm} 	% 118 mm
+    }
+    {% 4:3 aspect ratio
+    \newcommand\maxfigheight{55mm} 	% 118 mm
+    \newcommand\maxfigwidth{100mm} 	% 118 mm
+    }%do nothing
+\makeatother
+% 4:3 aspect ratio
+% \renewcommand\framenumXpos{98mm}
+
+
+
+%% Make 1 centered figure: 
+\newlength{\mylength}   % for raising the figs
+\newlength{\defaultYspace}   % for raising the figs 
+\newcommand{\figOne}[3]
+{\vspace{\defaultYspace}%default vspace
+\begin{figure} 
+  \settowidth\imagewidth{\includegraphics[#1]{#2}}
+  \includegraphics[#1]{#2}
+  \captionsetup{width=\the\imagewidth} %\the\imageheight
+  \caption{#3}
+ \end{figure}
+ \settototalheight{\mylength}{#3}% calculate caption height
+ %  % Raise figure if enough cites are mentioned:
+ \ifPositif{\yshiftDueCites}
+    {\raisebox{\yshiftDueCites+\mylength+3em}{}% Raise lists
+    }{\raisebox{\mylength+2em}{}% Raise figure/caption up
+     }
+}
+
+ 
+
+%%% Newest figure inserting command %%%
+\newlength\Maximagewidth
+\newlength\Maximageheight
+
+\usepackage{pgfkeys}
+%%%  key-value-based figures:
+% \pgfkeys{
+%     /fig/.is family, /fig,
+%     default/.style =
+%     {height = \maxfigheight,
+%     width = \maxfigwidth,
+%     capwidth = 0cm},
+%     height/.estore in = \fig@height,
+%     width/.estore in = \fig@width,
+%     capwidth/.estore in = \fig@capwidth,
+%     }
+    
+% noexpand magic?, the input arguments won't get exapnded?
+% \newlength\test
+% \newlength\dappa
+\pgfkeys{
+    /figu/.is family, /figu,
+    default/.style =
+    {height = 6cm,
+    width = 8cm,
+    m = 0cm,
+    broadencaption = 0cm,},
+    height/.store in = \figu@height,
+    width/.store in = \figu@width,
+    m/.store in = \figu@m,
+    broadencaption/.store in = \figu@broadencaption,
+    }
+
+%% make e.g. width and height comparisons to be compatible with given input heights etc. 
+%% would be also nice to be fully compatible with the \includegraphics[]{} functionality.
+% noexpand magic?, the input arguments won't get exapnded?
+%% difference between store and estore...?
+
+
+%% NEW TIKZ BASED FIGURE PLACING COMMAND:
+% a lot clearer to make separate macros to
+% a) calculate the optimal figure size
+% b) position the figures etc.
+
+\newlength{\myheight}       % for raising the figs
+\newlength{\captionheight}   % for raising the figs
+\newlength{\tmpwidth}   % for raising the figs
+\newlength{\figureYoffset}
+\newcommand*{\yshift}{}
+\pgfkeys{
+    /figut/.is family, /figut,
+    default/.style =
+    {height = 6cm,
+    width = 8cm,
+    yshift = 0cm,
+    broadencaption = 0cm, },
+    height/.estore in = \figut@height, %
+    width/.estore in = \figut@width, %
+    yshift/.estore in = \yshift, %
+    broadencaption/.estore in = \figut@broadencaption, %
+    }
+
+% \newcommand\maxfigheight{55mm} 	% 118 mm
+\newlength{\maxfigheightnu}
+\setlength{\maxfigheightnu}{60mm} %55mm
+\newcommand{\fignu}[3][]{%
+    \pgfkeys{/figut, default, #1}%
+    %{
+    % OFFSET USING CAPTION HEIGHT:
+    % \settototalheight{\captionheight}{
+    %     \begin{tikzpicture} 
+    %     \node (capt) [yshift=11mm, text width=\imagewidth, font=\small, align=justify]
+    %         {\subframetitlefont #3};
+    %     \end{tikzpicture}
+    % }
+    \setlength{\tmpwidth}{\maxfigwidth}%
+    \addtolength{\tmpwidth}{\figut@broadencaption}%
+    \settoheight{\captionheight}{
+        \begin{tikzpicture} 
+        \node (capt) [yshift=11mm, text width=\tmpwidth, font=\small, align=justify]%\imagewidth
+            {\subframetitlefont #3};
+        \end{tikzpicture}
+    }
+    % \the\maxfigheightnu \\
+    % \the\captionheight \\
+    % \the\maxfigheightnu \\
+    \addtolength{\maxfigheightnu}{-\captionheight}%\maxfigheightnu
+    % \the\maxfigheightnu
+    % OPTIMIZE FIGURE WIDTH / HEIGHT:
+    \settowidth\Maximagewidth{\includegraphics[width=\maxfigwidth]{#2}}%
+    \settowidth\Maximageheight{\includegraphics[height=\maxfigheightnu]{#2}}%
+    \ifthenelse{\lengthtest{\Maximagewidth > \Maximageheight}}
+        {% extract figure width for caption:
+        \settowidth\imagewidth{\includegraphics[height=\maxfigheightnu]{#2}}
+         }{
+        % extract figure width for caption:
+        \settowidth\imagewidth{\includegraphics[width=\maxfigwidth]{#2}}
+        }
+    
+    % broaden \imagewidth to widen captions:
+    \addtolength{\imagewidth}{\figut@broadencaption}%
+    %
+    %% PICTURE:
+    % offset by half of the caption height
+    \addtolength{\figureYoffset}{0.5\captionheight}
+    % add slight downward offset for balanced slides [-0.2cm]
+    % \addtolength{\figureYoffset}{-0.1cm}
+    \addtolength{\figureYoffset}{-0.4cm} % for kolumbus fonts
+    % optional handle to shift the figure & caption
+    \addtolength{\figureYoffset}{\yshift}
+    %
+    \begin{tikzpicture} %%%% TIKZ %%%%
+        [remember picture,overlay]
+        % offset with \figureYoffset because of captions
+        \node (A) [xshift=0mm,yshift=\figureYoffset, anchor=center] at (current page.center)
+        {%% re-size the figure depending on above lengths:
+          \ifthenelse{\lengthtest{\Maximagewidth > \Maximageheight}}{
+                \includegraphics[height=\maxfigheightnu]{#2}
+              }{
+                % make figure
+                \includegraphics[width=\maxfigwidth]{#2}
+              }
+          };
+    %% CAPTION:
+    \node (capt) [yshift=11mm,below=of A,text width=\imagewidth, font=\small, align=justify]%\scriptsize , align=center
+    {\figurecaptionfont #3};%\subframetitlefont
+    \end{tikzpicture} %%%% TIKZ %%%%
+    %}
+}
+
+
+ 
+%% Make 2 figures side by side with separate captions, 1st to left, 2nd to right: 
+\usepackage{etoolbox}% http://ctan.org/pkg/etoolbox
+% \def\sA{1}
+% \def\sB{2}
+% \ifnumcomp{\sA}{<}{\sB}{ture}{false}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% INSERT FIGURE TO CUSTOM POSITION:
+\newcommand{\figToArbPos}[6]
+{\begin{tikzpicture}[remember picture,overlay]
+    \node[xshift=#1,yshift=#2, anchor=#6] at (current #3) {\includegraphics[#4]{#5}};
+\end{tikzpicture}}
+
+%% Figures with caption to arbitrary position
+\usetikzlibrary{positioning}
+\newcommand{\figArbPosCap}[7]{
+\begin{tikzpicture}
+[remember picture,overlay]
+    \node (A) [xshift=#1,yshift=#2, anchor=#6] at (current #3) {\includegraphics[#4]{#5}};
+    \node (capt) [yshift=11mm,below=of A,text width=\linewidth, align=center,font=\scriptsize]%\scriptsize,font=\scriptsize
+    { #7}; %\subframetitlefont
+\end{tikzpicture}}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% TIKZ TO CUSTOM POSITION:
+\newcommand{\tikzToArbPos}[1]
+{\begin{tikzpicture}[remember picture,overlay]
+    %\node[xshift=#1,yshift=#2] at (current #3) 
+    #1 %{}
+ \end{tikzpicture}
+}
+
+%% let's see if this works here.
+\newcommand{\figArbPosCapB}[5]{
+\begin{tikzpicture}
+[remember picture,overlay]
+    \node (A) [xshift=#1,yshift=#2, anchor=south] at (current page.center) {\includegraphics[#3]{#4}};
+    \node (capt) [yshift=12mm,below=of A,text width=\linewidth, align=center,font=\small]%\scriptsize
+    {\subframetitlefont #5};
+\end{tikzpicture}}

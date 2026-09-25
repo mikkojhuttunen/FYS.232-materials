@@ -1,0 +1,309 @@
+
+
+%%%% MATH %%%%
+\usepackage{bm} % bold symbols using \bm
+\renewcommand{\vec}[1]{\mathbf{#1}}
+\newcommand{\rmi}{\mathrm{i}}
+\newcommand{\rme}{\mathrm{e}}
+\newcommand{\rmd}{\,\mathrm{d}}
+% \DeclareMathOperator{\rmd}{d}%gives wrong spacing after \rmd...
+\newcommand{\rmb}{\mathrm{b}}
+\newcommand{\rmf}{\mathrm{f}}
+\newcommand{\dg}{\ensuremath{^\circ}}
+\newcommand{\uvec}[1]{\vec{\hat{#1}}}
+
+\usepackage[]{amsmath}
+%\newcommand\tline[2]{$\underset{\text{#1}}{\text{\underline{\hspace{#2}}}}$}
+\newcommand\tline[2]{$\underset{\text{#2}}{\text{\underline{#1}}}$}
+
+%\renewcommand{\sqrt}[1]{\ensuremath (#1)^{1/2}}
+%\renewcommand{\sqrt}[1]{\ensuremath \textrm{((}#1\textrm{))}^{1/2}}
+%\renewcommand{\sqrt}[1]{\ensuremath \Big(#1 \Big)^{1/2}}
+\renewcommand{\sqrt}[1]{\ensuremath \Big(#1 \Big)^{1/2}}
+\newcommand{\Sqrt}[1]{\ensuremath \bigg(#1 \bigg)^{1/2}}
+
+\renewcommand{\langle}{\ensuremath <}
+\renewcommand{\rangle}{\ensuremath >}
+%\tline{Repetition is needed}{$F = ma$}
+
+% https://tex.stackexchange.com/questions/22773/making-a-big-summation-sign
+%\usepackage{calc}
+\newlength{\depthofsumsign}
+\setlength{\depthofsumsign}{\depthof{$\sum$}}
+\newlength{\totalheightofsumsign}
+\newlength{\heightanddepthofargument}
+
+\newcommand{\nsum}[1][1.4]{
+  \mathop{%
+    \raisebox
+    {-#1\depthofsumsign+1.4\depthofsumsign}%-#1\depthofsumsign+1\depthofsumsign
+    {\scalebox
+      {#1}
+      {$\displaystyle\sum$}%
+    }
+  }
+}
+
+\newcommand{\nint}[1][1.4]{
+  \mathop{%
+    \raisebox
+    {-#1\depthofsumsign+1\depthofsumsign}
+    {\scalebox
+      {#1}
+      {$\displaystyle\int$}%
+    }
+  }
+}
+
+\newcommand{\niint}[1][1.4]{
+  \mathop{%
+    \raisebox
+    {-#1\depthofsumsign+1\depthofsumsign}
+    {\scalebox
+      {#1}
+      {$\displaystyle\iint$}%
+    }
+  }
+}
+
+%\newlength{\depthofparenthesis}
+%\setlength{\depthofparenthesis}{\depthof{$($}}
+%\newcommand{\vasen}[1][1.4]{
+%  \mathop{%
+%    \raisebox
+%    {-#1\depthofparenthesis+1\depthofparenthesis}
+%    {\scalebox
+%      {#1}
+%      {$\displaystyle($}%
+%    }
+%  }
+%}
+
+%% enabling use of \bigg( and \bigg)^{3/2} etc.
+\renewcommand\big[1]{\raisebox{-1.33\depthofsumsign+1\depthofsumsign}{\scalebox{1.333}{$\displaystyle \text{\bigsymbolsfont#1}$}}%
+}
+\renewcommand\Big[1]{\raisebox{-1.75\depthofsumsign+1\depthofsumsign}{\scalebox{1.75}{$\displaystyle \text{\bigsymbolsfont#1}$}}%
+}
+\renewcommand\bigg[1]{\raisebox{-2.2\depthofsumsign+1\depthofsumsign}{\scalebox{2.2}{$\displaystyle \text{\bigsymbolsfont#1}$}}%
+}
+\renewcommand\Bigg[1]{\raisebox{-2.7\depthofsumsign+1\depthofsumsign}{\scalebox{2.7}{$\displaystyle \text{\bigsymbolsfont#1}$}}%
+}
+
+\renewcommand\bigl[1]{\raisebox{-1.33\depthofsumsign+1\depthofsumsign}{\scalebox{1.333}{$\displaystyle \text{\bigsymbolsfont#1}$}}%
+}
+\renewcommand\Bigl[1]{\raisebox{-1.75\depthofsumsign+1\depthofsumsign}{\scalebox{1.75}{$\displaystyle \text{\bigsymbolsfont#1}$}}%
+}
+\renewcommand\biggl[1]{\raisebox{-2.2\depthofsumsign+1\depthofsumsign}{\scalebox{2.2}{$\displaystyle \text{\bigsymbolsfont#1}$}}%
+}
+\renewcommand\Biggl[1]{\raisebox{-2.7\depthofsumsign+1\depthofsumsign}{\scalebox{2.7}{$\displaystyle \text{\bigsymbolsfont#1}$}}%
+}
+
+\renewcommand\bigr[1]{\raisebox{-1.33\depthofsumsign+1\depthofsumsign}{\scalebox{1.333}{$\displaystyle \text{\bigsymbolsfont#1}$}}%
+}
+\renewcommand\Bigr[1]{\raisebox{-1.75\depthofsumsign+1\depthofsumsign}{\scalebox{1.75}{$\displaystyle \text{\bigsymbolsfont#1}$}}%
+}
+\renewcommand\biggr[1]{\raisebox{-2.2\depthofsumsign+1\depthofsumsign}{\scalebox{2.2}{$\displaystyle \text{\bigsymbolsfont#1}$}}%
+}
+\renewcommand\Biggr[1]{\raisebox{-2.7\depthofsumsign+1\depthofsumsign}{\scalebox{2.7}{$\displaystyle \text{\bigsymbolsfont#1}$}}%
+}
+
+
+% bigger symbols, e.g. ( ) , [ ] , { , } etc.
+\newcommand{\bg}[2][1.4]{
+  \mathop{%
+    \raisebox
+    {-#1\depthofsumsign+1\depthofsumsign}
+    {\scalebox
+      {#1}
+      {$\displaystyle \appear{#2} $}%
+    }
+  }
+}
+
+%\usepackage{mathtools} 
+%\DeclarePairedDelimiter\autobracket{(}{)}
+%\newcommand{\br}[1]{\autobracket*{#1}}
+%\abs[\Bigg]{\frac{a}{b}}
+
+% \newcommand{\T}{\intercal}
+
+\newcommand{\ket}[1]{$\left|#1\right\rangle$}
+
+\newcommand\varpm{\mathbin{\vcenter{\hbox{%
+  \oalign{\hfil$\scriptstyle+$\hfil\cr
+          \noalign{\kern-.3ex}
+          $\scriptscriptstyle({-})$\cr}%
+}}}}
+\newcommand\varmp{\mathbin{\vcenter{\hbox{%
+  \oalign{$\scriptstyle({+})$\cr
+          \noalign{\kern-.3ex}
+          \hfil$\scriptscriptstyle-$\hfil\cr}%
+}}}}
+
+%% cardinal sine seems to be missing a definition..
+%% the def should make a small space after the sinc!!!
+% \newcommand{\sinc}{\mathrm{sinc}}
+% \newcommand{\sinc}{\,\mathrm{sinc}}
+\DeclareMathOperator{\sinc}{sinc}
+%%
+
+%%
+\newcommand{\tabtwoline}[2]{
+\begin{tabular}{@{}c@{}} #1 \\ #2 \end{tabular}
+}
+\newcommand{\tabthreeline}[3]{
+\begin{tabular}{@{}c@{}c@{}} #1 \\ #2 \\ #3 \end{tabular}
+}
+\newcommand{\tabfourline}[4]{
+\begin{tabular}{@{}c@{}c@{}c@{}} #1 \\ #2 \\ #3 \\ #4 \end{tabular}
+}
+
+\usepackage{pgffor}
+
+%% partial derivatives:
+\newcommand{\pder}[2][]{\frac{\partial #1}{\partial #2}}
+\newcommand{\ppder}[2][]{\frac{\partial^2 #1}{\partial #2^2}}
+
+%% total derivatives:
+\usepackage{commath}
+\newcommand{\der}[2][]{\frac{\rmd #1}{\rmd #2}}
+\newcommand{\dder}[2][]{\frac{\rmd^2 #1}{\rmd #2^2}}
+
+%% macros for vectors:
+% https://tex.stackexchange.com/questions/270223/macro-for-writing-vectors
+\usepackage{stackengine}
+\newcommand\Vector[1]{\setstackEOL{,}\bracketVectorstack{#1}}
+
+%%%%%%%%%%%%%%%%%%%% MUELLER MATRICES %%%%%%%%%%%%%%%%%%%%
+\newcommand{\MuellerHlin}{
+    $\frac{1}{2} 
+    \begin{bmatrix}
+        1 & 1 & 0 & 0 \\
+        1 & 1 & 0 & 0 \\
+        0 & 0 & 0 & 0 \\
+        0 & 0 & 0 & 0 \\
+    \end{bmatrix}
+    $
+}
+\newcommand{\MuellerVlin}{
+    $\frac{1}{2} 
+    \begin{bmatrix}
+        1 & -1 & 0 & 0 \\
+        -1 & 1 & 0 & 0 \\
+        0 & 0 & 0 & 0 \\
+        0 & 0 & 0 & 0 \\
+    \end{bmatrix}
+    $
+}
+\newcommand{\Muellerdiaglin}{
+    $\frac{1}{2} 
+    \begin{bmatrix}
+        1 & 0 & 1 & 0 \\
+        0 & 0 & 0 & 0 \\
+        1 & 0 & 1 & 0 \\
+        0 & 0 & 0 & 0 \\
+    \end{bmatrix}
+    $
+}
+\newcommand{\Muellermdiaglin}{
+    $\frac{1}{2} 
+    \begin{bmatrix}
+        1 & 0 & -1 & 0 \\
+        0 & 0 & 0 & 0 \\
+        -1 & 0 & 1 & 0 \\
+        0 & 0 & 0 & 0 \\
+    \end{bmatrix}
+    $
+}
+\newcommand{\MuellerQWPHlin}{
+    $\begin{bmatrix}
+        1 & 0 & 0 & 0 \\
+        0 & 1 & 0 & 0 \\
+        0 & 0 & 0 & 1 \\
+        0 & 0 & -1 & 0 \\
+    \end{bmatrix}
+    $
+}
+\newcommand{\MuellerQWPVlin}{
+    $\begin{bmatrix}
+        1 & 0 & 0 & 0 \\
+        0 & 1 & 0 & 0 \\
+        0 & 0 & 0 & -1 \\
+        0 & 0 & 1 & 0 \\
+    \end{bmatrix}
+    $
+}
+
+%%%%%%%%%%%%%%%%%%%% STOKES MATRICES %%%%%%%%%%%%%%%%%%%%
+\newcommand{\StokesHlin}{
+    $\begin{bmatrix}
+        1 & 0   \\
+        0 & 0   \\
+    \end{bmatrix}
+    $
+}
+
+\newcommand{\StokesYlin}{
+    $\begin{bmatrix}
+        0 & 0   \\
+        0 & 1   \\
+    \end{bmatrix}
+    $
+}
+
+\newcommand{\Stokesdiaglin}{
+    $\frac{1}{2} 
+    \begin{bmatrix}
+        1 & 1   \\
+        1 & 1   \\
+    \end{bmatrix}
+    $
+}
+\newcommand{\Stokesmdiaglin}{
+    $\frac{1}{2} 
+    \begin{bmatrix}
+        1 & -1   \\
+        -1 & 1   \\
+    \end{bmatrix}
+    $
+}
+
+\newcommand{\StokesQWPVlin}{
+    $\rme^{\rmi \pi / 4} 
+    \begin{bmatrix}
+        1 & 0   \\
+        0 & -\rmi   \\
+    \end{bmatrix}
+    $
+}
+
+\newcommand{\StokesQWPHlin}{
+    $\rme^{\rmi \pi / 4} 
+    \begin{bmatrix}
+        1 & 0   \\
+        0 & \rmi   \\
+    \end{bmatrix}
+    $
+}
+
+%%%%%%%%%%%%%%%%%%%% STOKES VECTORS %%%%%%%%%%%%%%%%%%%%
+\newcommand{\Stokesvector}[4]{
+    $\begin{bmatrix}
+        #1   \\
+        #2   \\
+        #3   \\
+        #4   \\
+    \end{bmatrix}
+    $
+}
+
+%%%%%%%%%%%%%%%%%%%% JONES VECTORS %%%%%%%%%%%%%%%%%%%%
+\newcommand{\Jonesvector}[3]{
+    $#1 \begin{bmatrix}
+        #2   \\
+        #3   \\
+    \end{bmatrix}
+    $
+}
+\usepackage{booktabs}
+

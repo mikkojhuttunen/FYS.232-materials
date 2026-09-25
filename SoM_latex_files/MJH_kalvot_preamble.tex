@@ -1,0 +1,424 @@
+ 
+% kuvien shiftaukset/marginaalit kalvoihin
+\xdef\figYshift{-0.75cm}
+\xdef\figXshift{-0.25cm}
+
+
+%% itemize-ympäristöjen marginaalit, rivivälit jne.
+\xdef\iilm{0.5cm}
+\xdef\ilm{-0.0cm}
+\xdef\isep{2mm}
+%\xdef\semismall{\fontsize{11}{12}\selectfont}
+
+%% Nuoli-implikaatio itemize-ympäristönä
+\renewcommand{\implies}[2][\fontsize{11}{12}\selectfont]{\vspace{1mm}% new addition, done in 
+\begin{itemize}[leftmargin=0.7cm,
+			rightmargin=-0.5cm,
+			itemsep=3mm] 
+			#1 %28.10.2021 addition
+        \item[=>] #2
+    \end{itemize}
+}
+\newcommand{\Implies}[2][\fontsize{11}{12}\selectfont]{\vspace{1mm}% new addition, done in 
+\begin{itemize}[leftmargin=0.7cm,
+			rightmargin=-0.5cm,
+			itemsep=3mm] 
+			#1 %28.10.2021 addition
+        \item[=>]<1-> #2
+    \end{itemize}
+}
+
+\newcommand{\RA}{\Rightarrow} % reduces problems with ctrl+f
+\newcommand{\ra}{\rightarrow} % reduces problems with ctrl+f
+
+%\setlist{nosep,topsep=-\parskip}
+\setlist[itemize]{leftmargin=-0.35cm,
+			rightmargin=-0.5cm,
+			itemsep=2.5mm,
+			,label=\i} %3mm 
+			
+%https://tex.stackexchange.com/questions/533206/nested-enumerated-list-with-different-left-margins-in-latex
+% Create new environments for listings
+%\newlist{subitemize}{enumerate}{3}
+%\setlist[subitemize]{
+%  wide,
+%  align=left,
+%  topsep = 0in,
+%  parsep = 0.24in,
+%  partopsep = 0in,
+%  itemsep = 0in,
+%  labelsep = 0in,
+%  itemindent=0.5in,
+%  labelindent = -0.5in,
+%  labelwidth=0.5in,
+%}
+%\setlist[subitemize,1]{leftmargin=0in,label=\arabic*.}
+%\setlist[subitemize,2]{leftmargin=0.5in,label=(\alph*)}
+%\setlist[subitemize,3]{leftmargin=1in,label=(\roman*)}
+
+%% modify the nested itemize loops, in order to keep things simple:
+%\setlist[itemize,1]{leftmargin=-0.35cm,rightmargin=-0.5cm,label=\i,itemsep=2.5mm}
+\setlist[itemize,2]{leftmargin=0.5cm,rightmargin=0.4cm,itemsep=0.5mm,label=\ii}
+\setlist[itemize,3]{leftmargin=1cm,itemsep=1mm,label=\iii}
+
+%% Slide symbols:
+\xdef\i{-} %*. {\symbol{"25CA}}$ ~diamond
+\xdef\ii{\symbol{"25CA}} %*. {\symbol{"25CA}}$ ~diamond
+\xdef\iii{\symbol{"27A4}} %*. {\symbol{"25CA}}$ ~diamond
+
+%% SoM Slide symbols:  > , circle, -
+\xdef\i{\symbol{"27A4}} %*. {\symbol{"25CA}}$ ~diamond
+\xdef\ii{\symbol{"25CF}} %*. {\symbol{"25CA}}$ ~diamond
+\xdef\iii{-} %*. {\symbol{"25CA}}$ ~diamond
+
+% \global pause to slide items
+%\beamerdefaultoverlayspecification{<+->}
+%
+%\newcommand{\appear}[1]{%
+%\uncover<+->{%
+%   #1
+%}%
+%}
+
+%\newcommand{\appear}[1]{%
+%   #1
+%}
+
+% Set up the keys.  Only the ones directly under /myparbox
+% can be accepted as options to the \myparbox macro.
+\pgfkeys{
+ /myfootnote/.is family, /myfootnote,
+ % Here are the options that a user can pass
+ default/.style = {appear= .-, position = right, ref = H},
+ appear/.estore in = \myappearCMD,
+ Appear/.estore in = \myappearCMD,
+ position/.style = {positions/#1/.get = \myfootnotePosition},
+ Position/.style = {positions/#1/.get = \myfootnotePosition},
+ pos/.style = {positions/#1/.get = \myfootnotePosition},
+% Ref/.estore in = \myfootnoteRef,
+ ref/.style = {positions/#1/.get = \myfootnoteRef},
+ Ref/.style = {positions/#1/.get = \myfootnoteRef},
+ % /handlers/first char syntax=true,
+%  /handlers/first char syntax/the character </.initial=\mypointedmacro,
+ % Here is the dictionary for positions.
+ positions/.cd,
+  left/.initial = south west,
+  l/.initial = south west,
+  L/.initial = south west,
+  west/.initial = south west,
+  right/.initial = south east,
+  r/.initial = south east,
+  R/.initial = south east,
+  east/.initial = south east,
+% dictionary for the reference texts:
+  Harris/.initial = {Figure from R. Harris, \textit{Modern Physics} (2$^{nd}$ edition).},
+  H/.initial = {Figure from R. Harris, \textit{Modern Physics} (2$^{nd}$ edition).},
+  h/.initial = {R. Harris, \textit{Modern Physics} (2$^{nd}$ edition).},
+  HarrisShort/.initial = {R. Harris, \textit{Modern Physics} (2$^{nd}$ edition).},
+  Tipler/.initial = {Figure from P. Tipler \& R. Llewellyn, \textit{Modern Physics} (5$^{th}$ edition).},
+  T/.initial = {Figure from P. Tipler \& R. Llewellyn, \textit{Modern Physics} (5$^{th}$ edition).},
+  t/.initial = {P. Tipler \& R. Llewellyn, \textit{Modern Physics} (5$^{th}$ edition).},
+  TiplerShort/.initial = {P. Tipler \& R. Llewellyn, \textit{Modern Physics} (5$^{th}$ edition).},
+  Harris and Tipler/.initial = {Figure from R. Harris, \textit{Modern Physics} (2$^{nd}$ edition).},
+  h and t/.initial = {R. Harris, \textit{Modern Physics} (2$^{nd}$ edition) and P. Tipler \& R. Llewellyn, \textit{Modern Physics} (5$^{th}$ edition).},
+%  HarrisShort/.initial = R. Harris, \textit{Modern Physics} (2$^{nd}$ edition).,
+%  TiplerShort/.initial = P. Tipler \& R. Llewellyn, \textit{Modern Physics} (5$^{th}$ edition).,
+%  
+}
+%\def\mypointedmacro#1{{\pgfkeysalso{appearCMD={#1}}}}
+\newcommand\CR[2][]{%
+\pgfkeys{/myfootnote, default, #1}%
+\xdef\loc{\myfootnotePosition}%south east
+\appear[\myappearCMD]{\begin{tikzpicture}[remember picture,overlay] 
+		    \node (end) [yshift=-0.1cm,xshift=0.00cm,anchor=\loc] 
+		    at (current page.\loc) {\subframetitlefont \tiny \myfootnoteRef};
+		\end{tikzpicture}}%
+}
+	
+\ifx\cleannotes\undefined
+	%\newcommand{\appear}[1]{#1}
+	\newcommand{\appear}[2][+-]{#2}%[2][+-]{#2}
+	
+	%% References for figures, for FYS.232 Structure of matter.
+	\newcommand\HarrisCR[1][.-]{\tiny Figure from R. Harris, \textit{Modern Physics} (2$^{nd}$ edition).}
+%	\newcommand\HarrisCR[1][.-]{\tiny \appear[#1]{Figure from R. Harris, \textit{Modern Physics} (2$^{nd}$ edition).}}
+	\newcommand\HarrisCRshort[1][.-]{\tiny R. Harris, \textit{Modern Physics} (2$^{nd}$ edition).}
+	\newcommand\TiplerCR[1][.-]{\tiny Figure from P. Tipler \& R. Llewellyn, \textit{Modern Physics} (5$^{th}$ edition).}
+	\newcommand\TiplerCRshort[1][.-]{\tiny P. Tipler \& R. Llewellyn, \textit{Modern Physics} (5$^{th}$ edition).}
+	\newcommand\CRTiplershort[1][.-]{\footnote{\TiplerCRshort[#1]}\vspace{-\baselineskip}}
+
+	\NewDocumentCommand{\foocmd}{ O{default1} O{default2} m }{#1~#2~#3}
+%	\NewDocumentCommand{\copyright}{ O{right} O{.-} m }{\footnote{\TiplerCRshort[#2]}\vspace{-\baselineskip}}
+	\newcommand{\oldRightarrow}{\Rightarrow} % reduces problems with ctrl+f
+	\newcommand{\oldrightarrow}{\rightarrow} % reduces problems with ctrl+f
+
+	\def\plus{+}
+	\def\equal{=}
+	\def\minus{-}
+	
+	\newcommand{\Frac}[2]{\frac{#1}{#2}}
+	\newcommand{\fracc}[2]{\frac{#1}{#2}}
+	\newcommand{\fraca}[2]{\frac{#1}{#2}}
+	%	\let\oldequiv\equiv
+	%	\def\equiv{\appear{\oldequiv}}
+	\def\Approx{\approx}
+	\def\Equiv{\equiv}
+	\def\[#1\]{%
+		\vspace{-0.5mm}%
+		  \begin{equation*} #1 \end{equation*}%
+		  \vspace{-2.75mm}%
+		  
+		}
+	\def\endofslide{\vspace{8cm} }
+	\def\endofsection{\vspace{8cm} }	
+\else
+  \if\cleannotes1
+	% \global pause to slide items
+	\beamerdefaultoverlayspecification{<+->}
+	% \appear cmd to pause arbitrary items
+%	\newcommand{\appear}[1]{%
+%	\uncover<+->{%
+%	   #1}%
+%	}%
+	\newcommand{\appear}[2][+-]{%
+	\uncover<#1>{%
+	   #2}%
+	}%
+	% doesn't make sense since the _ and ^ markings won't be inside the same appear	
+%	\renewcommand{\nsum}[1][1.4]{
+%	  \mathop{%
+%	    \raisebox
+%	    {-#1\depthofsumsign+1.4\depthofsumsign}%-#1\depthofsumsign+1\depthofsumsign
+%	    {\scalebox
+%	      {#1}
+%	      {$\displaystyle\sum$}%
+%	    }
+%	  }
+%	}
+
+	\newcommand\HarrisCR[1][.-]{\tiny \appear[#1]{Figure from R. Harris, \textit{Modern Physics} (2$^{nd}$ edition).}}
+	\newcommand\HarrisCRshort[1][.-]{\tiny \appear[#1]{R. Harris, \textit{Modern Physics} (2$^{nd}$ edition).}}
+	\newcommand\TiplerCR[1][.-]{\tiny \appear[#1]{Figure from P. Tipler \& R. Llewellyn, \textit{Modern Physics} (5$^{th}$ edition).}}
+	\newcommand\TiplerCRshort[1][.-]{\tiny \appear[#1]{P. Tipler \& R. Llewellyn, \textit{Modern Physics} (5$^{th}$ edition).}}
+	
+	%\def\footnoterule{\only<3->\oldfootnoterule}
+	
+	%%%% Custom math operators that appear one by one
+	\let\oldfrac\frac
+	\newcommand{\Frac}[2]{\oldfrac{#1}{#2}}
+%	\renewcommand{\frac}[2]{\appear{\oldfrac{#1}{#2}}}
+%	\newcommand{\fracc}[2]{\appear{\oldfrac{\appear{#1}}{\appear{#2}}}}
+%	\newcommand{\fraca}[2]{\appear{\oldfrac{\appear{#1}}{\appear{#2}}}}
+%	\renewcommand{\frac}[2]{\appear{\oldfrac{#1}{#2}}}
+	\renewcommand{\frac}[2]{{\appear{\oldfrac{#1}{#2}}}}
+	\newcommand{\fracc}[2]{\appear{\oldfrac{\appear{#1}}{\appear{#2}}}}
+	\newcommand{\fraca}[2]{\appear{\oldfrac{\appear{#1}}{\appear{#2}}}}
+	
+	\let\oldRightarrow\Rightarrow
+	\let\oldrightarrow\rightarrow
+	\renewcommand{\Rightarrow}{\appear{\oldRightarrow}} % reduces problems with ctrl+f
+	\renewcommand{\rightarrow}{\appear{\oldrightarrow}} % reduces problems with ctrl+f
+
+	%\gdef+{\appear{\textplus}}
+%	\let\oldsqrt\sqrt
+%	\def\sqrt{\appear{\oldsqrt}}
+
+	\def\plus{\appear{+}}
+	\def\equal{\appear{=}}
+	\def\minus{\appear{-}}
+	\let\oldequiv\equiv
+	\def\equiv{\appear{\oldequiv}}
+	\let\oldapprox\approx
+	\def\approx{\appear{\oldapprox}}
+	\def\Approx{\oldapprox}
+	\def\Equiv{\oldequiv}
+	\let\oldpropto\propto
+	\renewcommand{\propto}{\appear{\oldpropto}}
+	\newcommand{\Propto}{\oldpropto}
+	%%
+	%\def\[#1\]{%
+	%  \begin{equation} \appear{#1} \end{equation}%
+	%}
+	\def\[#1\]{%
+	  \vspace{-0.5mm}%
+	  \begin{equation*} \appear{#1} \end{equation*}%
+	  \vspace{-2.75mm}%
+	  
+	   }
+	%\def$$#1$${%
+	%  \begin{equation} \appear{#1} \end{equation}%
+	%}
+	%\newenvironment{displaymath}{begdef}{enddef}
+	
+	%\DeclareMathSymbol{+}{\mathbin}{operators}{43}
+	%\begingroup
+	%\catcode`+=\active
+	%\gdef+{\mathbin{\text{\textplus}}}
+	%\endgroup
+	%\AtBeginDocument{\mathcode`+="8000 }
+	
+	\def\endofslide{\vspace{8cm}
+		\appear{\begin{tikzpicture}[remember picture,overlay] 
+	    \node (end) [yshift=-0.15cm,xshift=0.1cm,anchor=south east] 
+	    at (current page.south east) {\oldrightarrow};
+	\end{tikzpicture}%
+	}%
+	}
+	\def\endofsection{\vspace{8cm}
+		\appear{\begin{tikzpicture}[remember picture,overlay] 
+		    \node (end) [yshift=-0.125cm,xshift=0.1cm,anchor=south east] 
+		    at (current page.south east) {$\blacksquare$};
+		\end{tikzpicture}%
+		}
+	}
+   
+  \fi
+\fi
+
+%\usepackage{amsmath,stackengine,mathtools}
+%\stackMath
+
+%\newcommand\CommentUnderset[3][red]{
+%\underset{%
+%	\appear{\textcolor{#1}{
+%    \begin{array}{c}
+%      #2
+%    \end{array} }}
+%}%
+%{\cutline{#1}{#3}}
+%}
+
+\newcommand{\CommentUnderset}[3][red]{%
+ \renewcommand\useanchorwidth{T}%tightens math to normal-looking eq.
+ \stackunder[-1mm]{\cutline{#1}{#2}}
+ {\scriptstyle\Alert[#1]{#3} }
+}
+
+%\usepackage{calc}
+%\newlength{\depthofsumsign}
+%\setlength{\depthofsumsign}{\depthof{$\sum$}}
+%\newlength{\totalheightofsumsign}
+%\newlength{\heightanddepthofargument}
+%
+%% https://tex.stackexchange.com/questions/22773/making-a-big-summation-sign
+%\newcommand{\nsum}[1][1.4]{
+%  \mathop{%
+%    \raisebox
+%    {-#1\depthofsumsign+1\depthofsumsign}
+%    {\scalebox
+%      {#1}
+%      {$\displaystyle\sum$}%
+%    }
+%  }
+%}
+%
+%\newcommand{\nint}[1][1.4]{
+%  \mathop{%
+%    \raisebox
+%    {-#1\depthofsumsign+1\depthofsumsign}
+%    {\scalebox
+%      {#1}
+%      {$\displaystyle\int$}%
+%    }
+%  }
+%}
+%
+%\newcommand{\niint}[1][1.4]{
+%  \mathop{%
+%    \raisebox
+%    {-#1\depthofsumsign+1\depthofsumsign}
+%    {\scalebox
+%      {#1}
+%      {$\displaystyle\iint$}%
+%    }
+%  }
+%}
+%
+%
+
+%%%% GREEK SYMBOLS using unicode coding %%%%
+\renewcommand\alpha{α} 
+\renewcommand\beta{β} 
+
+\renewcommand\gamma{γ} 
+\renewcommand\Gamma{Γ} 
+
+\renewcommand\delta{δ}
+\renewcommand\Delta{Δ}
+
+\renewcommand\epsilon{\symbol{"03B5}} %\symbol{"03B5} ϵ
+\renewcommand\varepsilon{\symbol{"03B5}} %\symbol{"03B5} ϵ
+\renewcommand\Epsilon{E}
+
+\renewcommand\zeta{ζ}
+\renewcommand\Zeta{Z}
+
+\renewcommand\eta{η}
+\renewcommand\Eta{H}
+
+\renewcommand\theta{θ}
+\renewcommand\Theta{Θ}
+
+\renewcommand\iota{ι} 
+\renewcommand\Iota{I}
+
+\renewcommand\kappa{κ}
+\renewcommand\Kappa{K}
+
+\renewcommand\lambda{λ} 
+\renewcommand\Lambda{Λ} 
+
+\renewcommand\mu{μ} 
+\renewcommand\Mu{M}
+
+\renewcommand\nu{ν} 
+\renewcommand\Nu{N}
+
+\renewcommand\xi{ξ} 
+\renewcommand\Xi{Ξ}
+
+\renewcommand\xi{ξ} 
+\renewcommand\Xi{Ξ}
+
+\renewcommand\omicron{ξ} 
+\renewcommand\Omicron{Ξ}
+
+\renewcommand\pi{π} 
+\renewcommand\Pi{Π}
+ 
+%\renewcommand\rho{ξ} 
+\renewcommand\rho{ρ} %ξ 
+\renewcommand\Rho{Ξ}
+
+\renewcommand\sigma{σ} 
+\renewcommand\Sigma{Σ}
+
+\renewcommand\tau{τ} 
+\renewcommand\Tau{T}
+
+\renewcommand\upsilon{υ} 
+\renewcommand\Upsilon{ϒ}
+
+\renewcommand\phi{ϕ} 
+\renewcommand\Phi{Φ}
+
+\renewcommand\chi{χ} 
+\renewcommand\Chi{X}
+
+\renewcommand\psi{ψ} 
+\renewcommand\Psi{Ψ}
+
+\renewcommand\omega{ω} 
+\renewcommand\Omega{Ω}
+
+\renewcommand\square{□}
+\renewcommand\blacksquare{■}
+\newcommand\blackdot{●}
+\renewcommand\diamond{⋄}
+\renewcommand\star{∗}
+
+    
+\renewcommand\hbar{ℏ} %ħ
+ 
+
+

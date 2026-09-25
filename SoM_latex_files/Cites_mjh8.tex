@@ -1,0 +1,442 @@
+%% Auxiliary file to help in making customized citation %%
+%  styles, commands and customized (ISO standardized)
+%  journal abbreviations. 
+% 
+%  USAGE: 
+%   1. remember to include your .bib file in the beginning
+%   2. Customize styling and positioning commands
+%	3. Customize journal abbreviations* (using sourcemaps)
+%
+%  *2.5. Mendeley's export options seem to also work just
+%        fine in exporting abbreviated journal names. -mjh
+%
+%   Erich Hoover's amazing Journal abbreviator might also
+%   be made to work: \usepackage{jabbrv} 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%% FIRST, LOAD BIBLATEX %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \usepackage[backend=biber]{biblatex} 
+\usepackage[maxcitenames=1,giveninits=true,backend=biber]{biblatex} %
+%maxcitenames=2,style=apa,firstinits=true,giveninits=true
+
+%\usepackage{csquotes} %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%   1. remember to include your .bib file in the beginning
+%%%%%%% INSERT BIB FILE HERE: %%%%%%%
+% \addbibresource{Cleaned_SIM.bib} % SIMbibliography.bib
+% \addbibresource{NLOmicroscopy.bib} % SIMbibliography.bib
+\addbibresource{NLOmetasurfaces.bib} % SIMbibliography.bib
+\addbibresource{Bibliographies/NLOmetasurfaces.bib} %
+% \addbibresource{NLOmicroscopy.bib} %
+% \addbibresource{SIM.bib} % SIMbibliography.bib
+% \addbibresource{SIMbibliography.bib}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%   2. Customize styling and positioning commands
+%%%%%%% CUSTOMIZE CITATION STYLE: %%%%%%%
+\DeclareCiteCommand{\citejournal}
+  {\usebibmacro{prenote}}
+  {\usebibmacro{citeindex}%
+    \usebibmacro{journal}}
+  {\multicitedelim}
+  {\usebibmacro{postnote}}
+
+\DeclareNameAlias{labelname}{given-family} % include initials to \citeauthor
+
+%%%%%%% STYLING COMMAND: %%%%%%%%%%%%%%%%
+% \newcommand{\insertCiteDetails}[1]
+% {\scriptsize  \citeauthor{#1}, % \tiny  \scriptsize 
+% \emph{\citejournal{#1}},  %\textbf or \emph
+% (\citeyear{#1}).}
+
+% \newcommand{\insertCiteDetails}[1]
+% {\insertcitefontstyle \scriptsize  \citeauthor{#1}, % \tiny  \scriptsize 
+% \emph{\citejournal{#1}},  %\textbf or \emph
+% (\citeyear{#1}).}
+
+% no italics etc. defined for subframetitle..
+% \newcommand{\insertCiteDetails}[1]
+% {\subframetitlefont \scriptsize  \citeauthor{#1}, % \tiny  \scriptsize 
+% {\textit{\citejournal{#1}}},  %\textbf or \emph
+% (\citeyear{#1}).}
+ 
+%%%%%%% STYLING COMMAND: %%%%%%%%%%%%%%%%
+
+%WARNING: the command will *not* be defined if bibid is unknown
+% for example because biber has not yet run
+% therefore getting an "Undefined control sequence" in the first run is to be expected
+\DeclareCiteCommand{\geturl}
+    {\boolfalse{citetracker}\boolfalse{pagetracker}}
+    {\iffieldundef{postnote}
+        {\xdef\biburl{\thefield{url}}}
+        {%
+            \edef\geturlTmpCmd{\csfield{postnote}}%
+            \expandafter\xdef\geturlTmpCmd{\thefield{url}}%
+        }%
+    }
+    {}
+    {}
+
+% line to avoid errors using \biburl     
+\xdef\biburl{testDef}
+
+%% https://tex.stackexchange.com/questions/467262/create-a-hyperlink-by-using-the-url-stored-in-the-bibliography-reference/467265
+% \DeclareCiteCommand{\citehrefurl}
+%   {\boolfalse{citetracker}%
+%   \boolfalse{pagetracker}}
+%   {\iffieldundef{url}
+%      {\PackageWarning{biblatex}
+%         {The entry \thefield{entrykey} has no URL.\MessageBreak
+%          No link will be created}%
+%       \printfield{postnote}}
+%      {\href{\thefield{url}}
+%         {\iffieldundef{postnote}
+%           {\PackageWarning{biblatex}
+%               {Text argument missing,\MessageBreak
+%               using the title for entry\MessageBreak
+%               \thefield{entrykey}}%
+%             \printfield[citetitle]{labeltitle}}
+%           {\printfield{postnote}}}}}
+%   {}
+%   {}
+
+% \newcommand*{\citehrefurlwrap}[2]{\citehrefurl[#2]{#1}}
+
+
+%% short citation details linking with the url if the .bib item, if it exists
+\newcommand{\insertCiteDetails}[1]
+{\geturl{#1} \subframetitlefont \scriptsize  \href{\biburl}{\citeauthor{#1}, % \tiny  \scriptsize  \footnotesize
+\citejournal{#1}  %,\textbf or \emph
+(\citeyear{#1}).}}
+
+%% custom cite commands:
+\newcommand{\shortcite}[1]
+{\geturl{#1} \subframetitlefont  \href{\biburl}{\citeauthor{#1}, % \tiny  \scriptsize  \footnotesize
+\citejournal{#1}  %,\textbf or \emph
+(\citeyear{#1}).}}
+\let\oldcite\cite
+% \renewcommand{\cite}[1]{\shortcite{#1}}
+\renewcommand{\cite}[1]{%
+    \foreach \n in {#1} {
+        \shortcite{\n} \par
+    }
+}
+%% italics is already on in \citejournal... and \textit toggless it off?!? 
+%% HAS TO BE THE DEFAULT BIB STYLE, WHICH GAVE THE SURPRISING BEHAVIOR!!!
+% \newcommand{\insertCiteDetails}[1]
+% {\subframetitlefont \footnotesize \citeauthor{#1}, % \tiny  \scriptsize 
+% \textit{\citejournal{#1}},  %\textbf or \emph
+% (\citeyear{#1}).}
+
+
+%%%%%% CITE BOTTOM RIGHT (BR) %%%%%%%%%%%
+% define with respect to the \framenumXpos, which is defined according to the aspect ratio [4:3 vs. 16:9]:
+\newlength{\nuL}%define new length variable
+\setlength{\nuL}{\framenumXpos+29mm}%set variable
+\newcommand{\myCiteYscaler}{-0.024}%-0.031
+% \includegraphics[scale=\fpeval{2*\myscale}]{your-image}
+ % \pgfmathparse{-0.031*\value{citecounter}} %0.035
+    %  \pgfmathparse{-0.024
+\newcommand\BRciteXpos{\nuL}%use it
+%% set also y-dimension according to ratio:
+\ifdim \nuL < 150mm 
+    % 4:3
+    \newcommand\BRciteYpos{94mm}
+    \renewcommand{\myCiteYscaler}{-0.031}%-0.031
+\else %\newcommand\BRciteYpos{88mm}% 16:9.  %\BRciteYpos{88mm}% 16:9
+\newcommand\BRciteYpos{98.5mm}% 16:9. 
+\fi
+
+%%% Generic citation macro %%%
+\usepackage{pgffor}
+%\newcounter{citecounter}
+% http://ctan.org/pkg/fp
+\makeatletter
+\@ifpackageloaded{fp}{}{\usepackage[nomessages]{fp}}
+\makeatother
+% \requirepackage{fp}%[nomessages]
+%\FPeval\widthdim{#1*#3}% Calculate width dimension
+%\foreach \n in {apples, burgers, cake}{Let's eat \n.\par}
+\usepackage{pgf}
+\newcommand\yshiftDueCites{17pt} %define variable
+
+\newcommand{\fnoteciteBR}[1]{
+\setcounter{citecounter}{-1}
+ \foreach \n in {#1} {
+    \stepcounter{citecounter} % \arabic{citecounter}
+    %\FPeval{\result}{-0.035*\arabic{citecounter}} %
+    % \pgfmathparse{-0.031*\value{citecounter}} %0.035 -0.024. %
+     \pgfmathparse{\myCiteYscaler*\value{citecounter}} %0.035
+    % between cites
+    \textblockorigin{\BRciteXpos}{\BRciteYpos} 
+    \setlength{\TPHorizModule}{\textwidth}
+    \setlength{\TPVertModule}{\textwidth}
+    \begin{flushright}  
+        \begin{textblock}{0.98}[1,1](0,\pgfmathresult)   
+        {\insertCiteDetails{\n} \par}  
+        \end{textblock}
+    \end{flushright}
+    }
+    \renewcommand\yshiftDueCites{\the\numexpr\value{citecounter}pt+0.5em} 
+ }
+
+
+\usepackage{xstring}
+% \newcommand\mystr{Hello World!}
+
+% \StrSubstitute{a bc def }{ }{M}
+% The string ``\mystr'' has \StrLen{\mystr}{} characters.
+% Predicate ``\mystr{} contains the word Hello'' is \IfSubStr{\mystr}{Hello}{true}{false}.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\insertFootnote}[1]{\subframetitlefont \footnotesize {#1}}
+
+\newcommand{\fnoteBR}[1]{
+\setcounter{citecounter}{-1}
+ \foreach \n in {#1} {
+    \stepcounter{citecounter} % \arabic{citecounter}
+    %\FPeval{\result}{-0.035*\arabic{citecounter}} %
+    \pgfmathparse{-0.031*\value{citecounter}} %0.035
+    % between cites
+    \textblockorigin{\BRciteXpos}{\BRciteYpos} 
+    \setlength{\TPHorizModule}{\textwidth}
+    \setlength{\TPVertModule}{\textwidth}
+    \begin{flushright}  
+        \begin{textblock}{0.8}[1,1](0,\pgfmathresult) % \value{citecounter}
+            {\insertFootnote{\n} \par}   
+        \end{textblock}
+    \end{flushright}
+    }
+    \renewcommand\yshiftDueCites{\the\numexpr\value{citecounter}+0.5em} 
+ }
+%%%%%%%%%%%%%%%%%%%% 
+
+%% new wiki-link command:
+\usepackage{xparse}
+\DeclareTextFontCommand{\fnotetextLink}{}%\bfseries\em
+
+% optional argument to use a specific link, otherwise use the generic link.
+\DeclareDocumentCommand\wikilink{o m}{%
+    {\IfNoValueT{#1}%
+        {\href{https://en.wikipedia.org/wiki/#2}%
+        {'\fnotetextLink{#2},' Wikipedia.com}}% a.com.
+    \IfNoValueF {#1}%
+        {\href{#1}%
+        {'\fnotetextLink{#2},' Wikipedia.com}}% a.com.
+    }%
+}
+
+
+%% make a generic footnote command, to use both with wikipedia and cite commands.
+% - supports many inputs, separated by ',' [use {,} to insert a really comma]
+\let\oldfootnote\footnote
+%\renewcommand{\footnote}[2][https://en.wikipedia.org]{
+%\setcounter{citecounter}{-1}
+% \foreach \n in {#2} {
+%    \stepcounter{citecounter} % 
+%    \pgfmathparse{-0.031*\value{citecounter}} %0.035
+%    % between cites
+%    \textblockorigin{\BRciteXpos}{\BRciteYpos} 
+%    \setlength{\TPHorizModule}{\textwidth}
+%    \setlength{\TPVertModule}{\textwidth}
+%    \begin{flushright}  
+%        \begin{textblock}{0.98}[1.01,1](0,\pgfmathresult) % \value{citecounter}   {0.98}[1,1](0,\pgfmathresult)
+%            % {\insertfnoteDetails[#1]{\n} \par}
+%            {\subframetitlefont \scriptsize {\n} \par}%\footnotesize 
+%        \end{textblock}
+%    \end{flushright}
+%    }
+%    \renewcommand\yshiftDueCites{\the\numexpr\value{citecounter}+0.5em} 
+% }
+\renewcommand{\footnote}[2][https://en.wikipedia.org]{%
+\setcounter{citecounter}{-1}%
+\foreach \n in {#2} {%
+\stepcounter{citecounter}%
+\pgfmathparse{-0.031*\value{citecounter}}%0.035
+% between cites
+\textblockorigin{\BRciteXpos}{\BRciteYpos}% 
+\setlength{\TPHorizModule}{\textwidth}%
+\setlength{\TPVertModule}{\textwidth}%
+\begin{flushright}%
+\begin{textblock}{0.98}[1.01,1](0,\pgfmathresult)% \value{citecounter}   {0.98}[1,1](0,\pgfmathresult)
+% {\insertfnoteDetails[#1]{\n} \par}
+{\subframetitlefont \scriptsize {\n} \par}%\footnotesize 
+\end{textblock}%
+\end{flushright}%
+%\vspace{-\baselineskip}%addition in 1.1.2023, to remove extra linebreak
+}%
+\renewcommand\yshiftDueCites{\the\numexpr\value{citecounter}+0.5em}%
+}
+
+\newcommand{\footnotenu}[2][https://en.wikipedia.org]{%
+\setcounter{citecounter}{-1}%
+\foreach \n in {#2} {%
+\stepcounter{citecounter}%
+\pgfmathparse{-0.031*\value{citecounter}}%0.035
+% between cites
+\textblockorigin{\BRciteXpos}{\BRciteYpos}% 
+\setlength{\TPHorizModule}{\textwidth}%
+\setlength{\TPVertModule}{\textwidth}%
+\begin{flushright}%
+\begin{textblock}{0.98}[1.01,1](0,\pgfmathresult)% \value{citecounter}   {0.98}[1,1]
+{\subframetitlefont\scriptsize{\n}}%\footnotesize {\n} \par
+\end{textblock}%
+\end{flushright}}%
+%\renewcommand\yshiftDueCites{\the\numexpr\value{citecounter}+0.5em}%
+}
+
+%% moved this to the MJH_kalvot_preamble
+%% Set up the keys.  Only the ones directly under /myparbox
+%% can be accepted as options to the \myparbox macro.
+%\pgfkeys{
+% /myfootnote/.is family, /myfootnote,
+% % Here are the options that a user can pass
+% default/.style = {appear= .-, position = right, ref = H},
+% appear/.estore in = \myappearCMD,
+% Appear/.estore in = \myappearCMD,
+% position/.style = {positions/#1/.get = \myfootnotePosition},
+% Position/.style = {positions/#1/.get = \myfootnotePosition},
+% pos/.style = {positions/#1/.get = \myfootnotePosition},
+%% Ref/.estore in = \myfootnoteRef,
+% ref/.style = {positions/#1/.get = \myfootnoteRef},
+% Ref/.style = {positions/#1/.get = \myfootnoteRef},
+% % /handlers/first char syntax=true,
+%%  /handlers/first char syntax/the character </.initial=\mypointedmacro,
+% % Here is the dictionary for positions.
+% positions/.cd,
+%  left/.initial = south west,
+%  l/.initial = south west,
+%  L/.initial = south west,
+%  west/.initial = south west,
+%  right/.initial = south east,
+%  r/.initial = south east,
+%  R/.initial = south east,
+%  east/.initial = south east,
+%% dictionary for the reference texts:
+%  Harris/.initial = {Figure from R. Harris, \textit{Modern Physics} (2$^{nd}$ edition).},
+%  H/.initial = {Figure from R. Harris, \textit{Modern Physics} (2$^{nd}$ edition).},
+%  h/.initial = {R. Harris, \textit{Modern Physics} (2$^{nd}$ edition).},
+%  HarrisShort/.initial = {R. Harris, \textit{Modern Physics} (2$^{nd}$ edition).},
+%  Tipler/.initial = {Figure from P. Tipler \& R. Llewellyn, \textit{Modern Physics} (5$^{th}$ edition).},
+%  T/.initial = {Figure from P. Tipler \& R. Llewellyn, \textit{Modern Physics} (5$^{th}$ edition).},
+%  t/.initial = {P. Tipler \& R. Llewellyn, \textit{Modern Physics} (5$^{th}$ edition).},
+%  TiplerShort/.initial = {P. Tipler \& R. Llewellyn, \textit{Modern Physics} (5$^{th}$ edition).},
+%%  HarrisShort/.initial = R. Harris, \textit{Modern Physics} (2$^{nd}$ edition).,
+%%  TiplerShort/.initial = P. Tipler \& R. Llewellyn, \textit{Modern Physics} (5$^{th}$ edition).,
+%%  
+%}
+%%\def\mypointedmacro#1{{\pgfkeysalso{appearCMD={#1}}}}
+%\newcommand\CR[2][]{%
+%\pgfkeys{/myfootnote, default, #1}%
+%\xdef\loc{\myfootnotePosition}%south east
+%%\xdef\Ref{\myfootnoteRef}%south east 
+%\appear[\myappearCMD]{\begin{tikzpicture}[remember picture,overlay] 
+%		    \node (end) [yshift=-0.1cm,xshift=0.00cm,anchor=\loc] 
+%		    at (current page.\loc) {\subframetitlefont \scriptsize \myfootnoteRef};
+%		\end{tikzpicture}}%
+%}
+
+\newcommand{\footnoteleft}[2][https://en.wikipedia.org]{%
+\setcounter{citecounter}{-1}%
+ \foreach \n in {#2} {%
+    \stepcounter{citecounter}% 
+    \pgfmathparse{-0.031*\value{citecounter}}%0.035
+    % between cites
+    \textblockorigin{\BRciteXpos}{\BRciteYpos}% 
+    \setlength{\TPHorizModule}{\textwidth}%
+    \setlength{\TPVertModule}{\textwidth}%
+    %\begin{flushright}%  
+        \begin{textblock}{0.999}[1.135,1](0,\pgfmathresult)% \value{citecounter}   {0.98}[1,1](0,\pgfmathresult)
+            % {\insertfnoteDetails[#1]{\n} \par}
+            {\subframetitlefont \scriptsize {\n} \par}%\footnotesize 
+        \end{textblock}%
+    %\end{flushright}%
+    }%
+    \renewcommand\yshiftDueCites{\the\numexpr\value{citecounter}+0.5em}% 
+ }
+
+
+
+\newcommand{\insertWikiCiteDetails}[2][https://en.wikipedia.org]
+{\subframetitlefont \footnotesize \href{#1}{'#2,' Wikipedia.com.}}
+
+\newcommand{\fnotewikiciteBR}[2][https://en.wikipedia.org]{
+\setcounter{citecounter}{-1}
+ \foreach \n in {#2} {
+    \stepcounter{citecounter} % \arabic{citecounter}
+    %\FPeval{\result}{-0.035*\arabic{citecounter}} %
+    \pgfmathparse{-0.031*\value{citecounter}} %0.035
+    % between cites
+    \textblockorigin{\BRciteXpos}{\BRciteYpos} 
+    \setlength{\TPHorizModule}{\textwidth}
+    \setlength{\TPVertModule}{\textwidth}
+    \begin{flushright}  
+        \begin{textblock}{0.6}[1,1](0,\pgfmathresult) % \value{citecounter}
+            {\insertWikiCiteDetails[#1]{\n} \par}   
+        \end{textblock}
+    \end{flushright}
+    }
+    \renewcommand\yshiftDueCites{\the\numexpr\value{citecounter}+0.5em} 
+ }
+
+\newcommand{\insertfnoteDetails}[2][https://en.wikipedia.org]
+{\subframetitlefont \footnotesize \href{#1}{#2}}
+\newcommand{\fnotegenericiteBR}[2][https://en.wikipedia.org]{
+\setcounter{citecounter}{-1}
+ \foreach \n in {#2} {
+    \stepcounter{citecounter} % \arabic{citecounter}
+    %\FPeval{\result}{-0.035*\arabic{citecounter}} %
+    \pgfmathparse{-0.031*\value{citecounter}} %0.035
+    % between cites
+    \textblockorigin{\BRciteXpos}{\BRciteYpos} 
+    \setlength{\TPHorizModule}{\textwidth}
+    \setlength{\TPVertModule}{\textwidth}
+    \begin{flushright}  
+        \begin{textblock}{0.6}[1,1](0,\pgfmathresult) % \value{citecounter}
+            {\insertfnoteDetails[#1]{\n} \par}   
+        \end{textblock}
+    \end{flushright}
+    }
+    \renewcommand\yshiftDueCites{\the\numexpr\value{citecounter}+0.5em} 
+ }
+
+%%%%%% CITE BOTTOM LEFT (BL) %%%%%%%%%%%  
+\newcommand{\footnoteciteTwoBL}[2]
+{\setlength{\TPHorizModule}{\textwidth}
+ \setlength{\TPVertModule}{\textwidth}
+ \begin{textblock}{0.9}(0.01,0.83)
+        {\scriptsize  \insertCiteDetails{#1}} 
+ \end{textblock}
+ \begin{textblock}{0.9}(0.01,0.86)
+        {\scriptsize \insertCiteDetails{#2}} 
+ \end{textblock}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%	3. Customize journal abbreviations (using sourcemaps) 
+
+%% ABBREVIATE JOURNAL NAMES BY USING SOURCE MAPS AND STRING REPLACE %%
+\DeclareSourcemap{
+  \maps[datatype=bibtex,overwrite=true]{
+   \map{
+   % Science [Mendeley typos this as Science (80-. ).], with uppercase permutations:
+     \step[fieldsource=journal,
+           match=\regexp{Science\s\(80-.\s\).},  
+           replace={Science}]       
+   % Journal of microsocpy, with uppercase permutations:
+     \step[fieldsource=journal,
+           match=\regexp{Journal\sof\smicroscopy},
+           replace={J. Microsc.}] % J.\sMicrosc.
+     \step[fieldsource=journal,
+           match=\regexp{Journal\sof\sMicroscopy},
+           replace={J. Microsc.}]
+    % Chemical Reviews, with uppercase permutations:
+     \step[fieldsource=journal,
+           match=\regexp{Chemical\sReviews},  
+           replace={Chem. Rev.}]  
+     \step[fieldsource=journal,
+           match=\regexp{Chemical\sreviews},
+           replace={Chem. Rev.}]       
+   }
+  }
+}
+% Science (80-. ).

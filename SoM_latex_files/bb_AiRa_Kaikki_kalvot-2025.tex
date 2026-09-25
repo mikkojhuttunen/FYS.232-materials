@@ -1,0 +1,273 @@
+% !TEX TS-program = pdflatexmk -xelatex -outdir=build -c
+
+%& -job-name=test
+
+% regular expressions to find numbers with english styling 1.3 -> 1,3
+% (\d)\.(\d)
+
+%% broken pipes occur sometimes with Tikz figures, maybe the transparencies etc.
+% fix seems to be to fix the broken pdfs using
+% gs -o Tikz_SOM_Bonding_diamond_fixed.pdf -sDEVICE=pdfwrite Tikz_SOM_Bonding_diamond.pdf
+
+% \documentclass{beamer} % [draft]
+%\documentclass[aspectratio=169]{beamer} % [draft]
+\documentclass[finnish,aspectratio=1610]{beamer} % [draft]
+%\documentclass[aspectratio=2316]{beamer} % [draft]
+% Run using XeLaTex
+% \usepackage[finnish]{babel}
+
+ %% use \def\cleannotes{1} for clean notes, comment for showing \textit{} commands in red.
+%\def\cleannotes{1} %THIS MUST BE SET BEFORE DEFINING THE MACROS
+
+%% compile notes: normal texshop: XelateX (shift+cmd+T) runs twice, MyXeLaTeX (cmd+shift+option+T) runs twice + runs the below shell espace cmd
+%\xdef\filename{Optiikka_Luku_10_Geometrinen_optiikka.pdf}
+%\xdef\filename{SoM_Chapter_1_Statistical_mechanics.pdf}
+%\xdef\filename{SoM_Chapter_2_Bonding_of_solids.pdf}
+%\xdef\filename{SoM_Chapter_3_Nuclear_physics.pdf}
+
+%\xdef\filename{AiRa_Luku_1_Statistinen_mekaniikka.pdf}
+
+%\xdef\filename{AiRa_Luku_1_Statistinen_mekaniikka.pdf}
+
+\xdef\filename{AiRa_Luentokalvot.pdf}
+
+\usepackage{shellesc}
+\AtEndDocument{\ShellEscape{mv -f /Users/huttune3/Dropbox/Apps/Overleaf/FYS-232_Structure_of_matter_slides/build/tmp_build2.pdf /Users/huttune3/Library/CloudStorage/OneDrive-TUNI.fi/Opetus/OPETETTAVAT_kurssit/FYS.232\ Structure\ of\ matter/AiRa_kalvot/\filename; mv -f /Users/huttune3/Dropbox/Apps/Overleaf/FYS-232_Structure_of_matter_slides/build/tmp_build.pdf /Users/huttune3/Library/CloudStorage/OneDrive-TUNI.fi/Opetus/Books/Course_materials/\filename}}
+%\AtEndDocument{\ShellEscape{mv /Users/huttune3/Dropbox/Apps/Overleaf/FYS-240_Optiikka_kalvot/build/tmp_build.pdf /Users/huttune3/OneDrive\ -\ TUNI.fi/Opetus/FYS-1400\ Optiikka/Optiikka_KALVOT_kaikki/\filename} %cp doesn't work??
+
+%\AtEndDocument{\ShellEscape{mv /Users/huttune3/Library/CloudStorage/Dropbox/Apps/Overleaf/FYS-510_LaserPhysics_2025/build/tmp_build.pdf /Users/huttune3/Library/CloudStorage/OneDrive-TUNI.fi/Opetus/OPETETTAVAT_kurssit/FYS.501\ Laser\ physics/LaserPhysics_slides/\filename}}
+
+%\AtEndDocument{\ShellEscape{mv -f /Users/huttune3/Library/CloudStorage/Dropbox/Apps/Overleaf/FYS-510_LaserPhysics_2025/build/tmp_build2.pdf /Users/huttune3/Library/CloudStorage/OneDrive-TUNI.fi/Opetus/FYS.310\ KOF\ Solid\ State\ Physics/Exercises2024_fall/FYS310_SSP_2024fall_solution_videos/\filename; mv -f /Users/huttune3/Library/CloudStorage/Dropbox/Apps/Overleaf/FYS-310_SSP_slides_2023/build/tmp_build.pdf /Users/huttune3/Library/CloudStorage/OneDrive-SharedLibraries-TUNI.fi/TG-FYS-1627\ Solid\ State\ Physics\ -\ Admin\ channel\ -\ Admin\ channel/HW_2024_fall/\filename}}
+
+%%%% Customized frametitles and subframetitles:
+% https://tex.stackexchange.com/questions/415621/how-to-customize-the-frame-title-subtitle-main-text-in-terms-of-position-and
+\makeatletter
+\setbeamertemplate{frametitle}{%
+  \ifbeamercolorempty[bg]{frametitle}{}{\nointerlineskip}%
+  \@tempdima=\textwidth%
+  \advance\@tempdima by\beamer@leftmargin%
+  \advance\@tempdima by\beamer@rightmargin%
+  \begin{beamercolorbox}[sep=0.2cm,left,wd=\the\@tempdima]{frametitle}
+  % sep=??cm ADJUSTS HORIZONTAL SPACING OF TITLES
+    \usebeamerfont{frametitle}%
+    \vbox{}\vspace{7.5mm}%\vskip-0.25ex%  %ADJUSTS VERTICAL SPACING OF TITLES
+    \if@tempswa\else\csname beamer@fteleft\endcsname\fi%
+    \strut\insertframetitle\strut%\par
+    {%
+      \ifx\insertframesubtitle\@empty%
+      \else%
+%      {\usebeamerfont{framesubtitle}\usebeamercolor[fg]{framesubtitle}{- }\insertframesubtitle\strut\par}%
+      {\usebeamerfont{framesubtitle}\usebeamercolor[fg]{framesubtitle}{\textcolor{black}{- }}\insertframesubtitle\strut\par}
+      \fi
+    }%
+    \vspace{-9mm}% \vskip-1ex%
+    \if@tempswa\else\vskip-.3cm\fi% set inside beamercolorbox... evil here...
+  \end{beamercolorbox}%
+}
+\makeatother
+\setbeamercolor{framesubtitle}{fg=tunipink}%violet50
+%%%%%%%%%%%%%%% .12.10.2021 edits
+
+
+
+\makeatletter
+\def\input@path{{fonts/}{preamble/}{Tikz_preamble/}{Sections/}{Prezi_sections/}{Bibliographies/}}
+%or: \def\input@path{{/path/to/folder/}{/path/to/other/folder/}}
+\makeatother
+
+
+\usepackage{tikz}
+\usetikzlibrary{%
+    decorations.pathreplacing,%
+    decorations.pathmorphing%
+}
+\usepackage{tkz-euclide}
+%\usetkzobj{all} % Important , 9.2.2025 commented since all is printed
+\usepackage{pgf-spectra}
+\usepackage{tikz-3dplot}
+
+\input{wave_and_ray_styles.tex}
+
+\usepackage{verbatim}
+
+%% this doesn't work with beamer slides?
+% \usepackage[active,tightpage]{preview}
+% \PreviewEnvironment{tikzpicture}
+% \setlength\PreviewBorder{0pt}%
+% \usepackage{adjustbox} % adjust tikz scaling
+\usepackage{tikzscale}
+
+\usepackage{multido}
+\usepackage{pgfplots}
+\usepackage{xcolor}
+\usepackage{siunitx}
+\usepackage{xargs}
+
+\input{CustomComponents2.tex}
+
+\usepackage{changepage}
+
+\input{Misc_mjh7.tex}	% customized style
+\input{Figures_mjh9.tex}	% custom Figs
+\input{Optics_math_preamble}	% custom Figs
+% \input{TUNI_misc2.tex}	% TUNI(fonts,colors,logos)
+% \input{TUNI_kolumbus.tex}	% TUNI(fonts,colors,logos)
+\input{TUNI_kolumbus_kalvot}	% kalvojen preamble
+\input{Cites_mjh8.tex}	% custom citations
+%\setbeamertemplate{background}[grid][step=10]
+\input{Logo_positioning.tex}% collaboration logo positioning macros
+
+%%%%%%% Title slide %%%%%%%
+% \def\mytitle{\inserttitlefontDetails {Mitä Ultralyhyillä Laserpulsseilla Tehdään?}}
+\def\mytitle{\inserttitlefontDetails {FYS-232 Aineen Rakenne}}
+%\def\mytitle{\inserttitlefontDetails {FYS-232 Structure of Matter}}
+\title{\mytitle}
+ 
+
+% \input{preamble/Kolumbus_font_preamble}
+\AtBeginDocument{\usebeamerfont{normal text}}
+
+%% Automatic TOC labelling commands %%
+\newcounter{TOCcounter}
+\newcommand{\TOCrefs}{\xdef\TOCname{TOC\arabic{TOCcounter}}
+\refstepcounter{TOCcounter}}
+\xdef\TOCcourse{TOCcourse}
+%% 
+
+%% something's gotten broken, especially in \aperture functions, when defining new paths named aper\C.
+%% -TexLive 2018 works, newer don't...??
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%% BEGIN DOCUMENT %%%%%
+\begin{document}%
+\selectlanguage{finnish}
+
+% \fontsize{13}{15}\selectfont %
+\fontsize{13}{15}\selectfont %
+\makeatletter
+\DeclareMathSizes{\f@size}{13}{9}{5}
+\newcommand\semismall{\fontsize{11}{12}\selectfont}
+\newcommand\seminormal{\fontsize{12}{13}\selectfont}
+\newcommand\normal{\fontsize{13}{15}\selectfont}
+\makeatother
+
+\input{preamble/MJH_kalvot_preamble}
+\input{Custom_tikz_style2.tex} % colors are defined here
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcounter{sectionnum}
+\setcounter{sectionnum}{1}
+\newcommand{\secnum}[1]{#1\arabic{sectionnum}%
+\refstepcounter{sectionnum}}
+% \setcounter{partalph}{1} % set \abc to one = a)
+
+\abovedisplayshortskip=0pt 
+\belowdisplayshortskip=0pt 
+\abovedisplayskip=5pt
+\belowdisplayskip=5pt
+
+%%%%%%%%%%%%%%% SECTION %%%%%%%%%%%%%%%%%%%%%%%
+\section{Introduction}
+
+%% misc math cmds:
+%\textrm{[[}.  \textrm{((} \nint
+
+%\input{a_SoM_TOC} % preamble file giving the chapter/sub-chapter names
+\input{b_AiRa_TOC} % preamble file giving the chapter/sub-chapter names
+
+%% nämä kannattanee laittaa omaksi tiedostokseen mitä kutsua, muuten voi päätyä muuttamaan monesta kohtaa
+
+%\bg[3]{ \text{\bigsymbolsfont\{}}
+%% \bg[2.4]{\text{\bigsymbolsfont(}}\!\! 
+%\newcommand{\plusbinomial}[3][2]{(#2 + #3)^#1}
+\newcommand{\LP}[1][2.4]{\bg[#1]{\text{\bigsymbolsfont(}}\! }
+\newcommand{\RP}[1][2.4]{\bg[#1]{\!\text{\bigsymbolsfont)}}}
+\newcommand{\LB}[1][2.4]{\bg[#1]{\text{\bigsymbolsfont[}}\!}
+\newcommand{\RB}[1][2.4]{\bg[#1]{\!\text{\bigsymbolsfont]}}}
+\newcommand{\LC}[1][2.4]{\bg[#1]{\text{\bigsymbolsfont\{}}\!}
+\newcommand{\RC}[1][2.4]{\bg[#1]{\!\text{\bigsymbolsfont\}}}}
+%% these don't work with super/subsscripts as such...
+%\RP\appear{\raisebox{8pt}{$^{1/2}$}}
+
+%% linkkejä kalvoihin: 
+% \Alert[red]{MOSFET}{https://en.wikipedia.org/wiki/MOSFET\#Importance}
+
+%% COURSE TOC %%% 
+\xdef\chapterTOCvksip{-0.2cm}
+
+\xdef\chapterfolder{Kappaleet}
+
+%\input{\chapterfolder/SOM_course_TOC}
+\input{\chapterfolder/AiRa_kurssi_TOC}
+
+%%%% CHAPTER 1 %%%%
+\input{\chapterfolder/AiRa_Luku_1_kalvon_TOC}
+%\xdef\filename{AiRa_Luku_1_Statistinen_mekaniikka.pdf}
+\input{\chapterfolder/1_0_Statistical_mechanics}
+\input{\chapterfolder/1_2_Entropy_and_temperature}
+\input{\chapterfolder/1_3_Einsteins_solid}
+\input{\chapterfolder/1_4_Boltzmann_distribution}
+\input{\chapterfolder/1_5_Classical_averages}
+\input{\chapterfolder/1_6_Quantum_distributions}
+\input{\chapterfolder/1_7_Quantum_gas}
+\input{\chapterfolder/1_8_Photon_gas}
+\input{\chapterfolder/1_9_The_laser}
+\input{\chapterfolder/1_10_Specific_heats}
+\input{\chapterfolder/1_11_Debye_model}
+
+%%%% CHAPTER 2 %%%%
+%\xdef\chapterTOCvksip{-0.2cm}
+%\setcounter{framenumber}{114}% 
+\input{\chapterfolder/AiRa_Luku_2_kalvon_TOC}
+%\xdef\filename{AiRa_Luku_2_Molekyylien_ja_Kiinteiden_aineiden_Sidokset.pdf}
+\input{\chapterfolder/2_0_Bonding_molecules_and_solids}
+\input{\chapterfolder/2_2_Molecules}
+\input{\chapterfolder/2_3_Rotation_and_vibration}
+\input{\chapterfolder/2_4_Crystalline_solids}
+\input{\chapterfolder/2_5_Energy_bands_and_electrical_conduction}
+\input{\chapterfolder/2_6_Conductors_insulators_and_semiconductors}
+\input{\chapterfolder/2_7_Semiconductor_theory}
+\input{\chapterfolder/2_8_Semiconductor_devices}
+\input{\chapterfolder/2_9_Superconductivity}
+\input{\chapterfolder/2_10_Fullerenes}
+
+%%%%% CHAPTER 3 %%%%
+%\setcounter{framenumber}{281}%
+\input{\chapterfolder/AiRa_Luku_3_kalvon_TOC}
+%\xdef\filename{AiRa_Luku_3_Ydinfysiikka.pdf}
+\input{\chapterfolder/3_0_Nuclear_physics}
+\input{\chapterfolder/3_2_Binding}
+\input{\chapterfolder/3_3_Nuclear_models}
+\input{\chapterfolder/3_4_Radioactivity}
+\input{\chapterfolder/3_5_The_radioactive_decay_law}
+\input{\chapterfolder/3_6_Nuclear_reactions}
+\input{\chapterfolder/3_7_Applications_of_nuclear_physics_and_radioactivity}
+
+%%%%% CHAPTER 4 %%%%
+%%\xdef\chapterTOCvksip{0.75cm}
+%%\xdef\chapterTOCitemsep{5mm}
+%
+%\setcounter{framenumber}{404}%
+\input{\chapterfolder/AiRa_Luku_4_kalvon_TOC}
+%\xdef\filename{AiRa_Luku_4_Hiukkasfysiikka_ja_Alkeishiukkaset.pdf}
+\input{\chapterfolder/4_0_Fundamental_particles}
+\input{\chapterfolder/4_2_Antiparticles}
+\input{\chapterfolder/4_3_Forces_and_particles_how_many}
+\input{\chapterfolder/4_4_Particle_production_and_detection}
+\input{\chapterfolder/4_5_Decay_modes_and_conservation_rules}
+\input{\chapterfolder/4_6_Parity_charge_conjugation_and_time_reversal}
+\input{\chapterfolder/4_7_Unification_theories_and_cosmology}
+
+%% %% in TEXSHOP to make a master doc:   % !TEX root = ../bb_AiRa_Kappaleet.tex
+
+%%\newcommand{\slideLabel}{\label{\TOCname}}
+%%\setcounter{framenumber}{7}
+
+  
+%%%%%%%%%%%%%%% END DOCUMENT %%%%%%%%%%%%%%%%%% 
+\end{document}
+   
+  
+
+    
+    

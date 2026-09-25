@@ -1,0 +1,295 @@
+% !TEX root = ../aa_SoM_Chapters.tex
+
+% ö = \%c3\%b6
+% ä = \%C3\%A4
+
+\xdef\sectiontitle{\Isectiontitle} %aiheuttama
+\TOCrefs
+
+%%%%%%%%%%%%%%%
+\begin{frame}[label=1_2_a]%[label=1_2_TOC1]
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\label{\TOCname}
+
+\vspace{0.5cm}
+% can we simply override the appearing of items when needed with <1-> etc.
+\begin{itemize}[leftmargin=0.5cm,itemsep=2mm]
+    \item[1.1]<1-> \hyperlink{1_1_a}{\IaSubsectiontitle}
+    \item[1.2]<1-> \hyperlink{1_2_a}{\IbSubsectiontitle}	
+    \item[1.3]<1-> \hyperlink{1_3_a}{\IcSubsectiontitle}	
+    \item[1.4]<1-> \hyperlink{1_4_a}{\IdSubsectiontitle}
+    \item[1.5]<1-> \hyperlink{1_5_a}{\IeSubsectiontitle}
+    \item[1.6]<1-> \hyperlink{1_6_a}{\IfSubsectiontitle}
+    \item[1.7]<1-> \hyperlink{1_7_a}{\IgSubsectiontitle}
+\end{itemize}
+
+\vspace{-1cm}
+\begin{itemize}[leftmargin=8.5cm,itemsep=2mm]
+    \item[1.8]<1-> \hyperlink{1_8_a}{\IhSubsectiontitle}
+	\item[1.9]<1-> \hyperlink{1_9_a}{\IiSubsectiontitle}
+	\item[1.10]<1-> \hyperlink{1_10_a}{\CDAlert[red]{\IjSubsectiontitle}}
+	\item[1.11]<1-> \hyperlink{1_11_a}{\IkSubsectiontitle}
+\end{itemize}
+
+%\endofslide 
+\end{frame}
+%%%%%%%%%%%%%%%
+
+\xdef\sectiontitle{\IjSubsectiontitle} 
+
+%%%%%%%%%%%%%%%
+\begin{frame}%[label=1_10_a]
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+
+\begin{itemize}[itemsep=1.7mm]
+	\item We want to understand how a microscopic object stores energy %internally 
+	\item \CDAlert[red]{Equipartition theorem} states \appear{that for each degree of freedom} \appear{for quadratic variables}$ \appear{\textrm{((} E} \propto \appear{x^{2}} \appear{\textrm{))}} $\appear{, the object will have an energy $1 / 2 k_{B} T$:}
+\[
+<E>_{\text{one particle}}  \equal \frac{1}{2} \appear{k_{B} T} \,\appear{,} \qquad \appear{\textrm{per~degree~of~freedom}}
+\] 
+
+\item The total internal energy $U$ of a piece of material is then
+\[
+U_{\text{per mole}}  \equal \appear{N_{A}} \frac{1}{2} \appear{k_{B} T} \equal \frac{1}{2} \appear{R T} \appear{\,, \qquad \textrm{per~degree~of~freedom}}
+\]
+
+\item Specific heat may be defined either per mass or per mole
+
+\item \CDAlert[blue]{Molar specific heat capacity} would be:\vspace{-10mm}
+\[
+\hspace{8.5cm} C_{V}  \equal \frac{\partial U_{\text {per mole}}}{\partial T}
+\]
+\item Thus, equipartition theorem links $U$ \appear{and $T$} \appear{and a provides route to calculate the heat capacity $C_{V}$}
+\end{itemize}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Gases}
+
+
+\begin{minipage}{6.5cm}
+\small
+\begin{itemize}
+	% 6.5 cm = midway, 10 cm = 3/4 
+%\vspace{2.5mm}
+	\item For \CDAlert[red]{monoatomic gas molecules}\appear{, the number of degrees of freedom comes only from translation in 3 directions} \appear{$(x, y, z)$} \appear{resulting in a number of 3} \vspace{-3mm}\implies[\small]{ Translational $C_V$: $\quad C_{V}  \equal \appear{3} \appear{\cdot \frac{1}{2}} \appear{R}  \equal \frac{3}{2} \appear{R}$ }
+
+\item For \CDAlert[blue]{diatomic gas molecules}\appear{, \Alert[blue]{rotation} becomes significant at certain temperatures} \appear{(room temperature)} \appear{contributing two more degrees of freedom} 
+
+\item At even higher temperature \appear{(the shift starts at around $1000 \mathrm{~K}$)} \appear{also \CDAlert[fuchsia]{molecular vibrations} become relevant}\appear{, contributing two more degrees of freedom}
+
+\item In overall, the heat capacity can exhibit values
+\[
+C_{V}  \equal \frac{3}{2} \appear{R}\,\appear{,} \qquad \frac{5}{2}  \appear{R}\appear{\,,} \qquad \appear{\text{or}} \qquad \frac{7}{2} \appear{R}
+\]
+\end{itemize}
+\end{minipage}
+
+\xdef\loc{north east}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,width=7cm]{Figures_booklet/SOM_9_Statistical_mechanics_figures/SOM_Figure_28.png}}; %scale=\figscale. % 8cm max hei
+\end{tikzpicture}
+
+\xdef\loc{south east}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.25*\figYshift,xshift=0*\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=12,width=7cm]{Figures_booklet/SOM_9_Statistical_mechanics_figures/Tikz_SOM_Statistical_figures.pdf}}; %scale=\figscale. % 8cm max height
+\end{tikzpicture}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Set of harmonic oscillators}
+
+\begin{itemize}[itemsep=1.7mm]
+	\item When determining \CDAlert[red]{vibrational specific heat contribution} for gas molecules\appear{, integration of the Boltzmann distribution does not give a correct answer} \appear{(condition} $\appear{E_{n+1}} \minus \appear{E_n} \appear{\ll} \appear{k_B T}$ \appear{no longer holds)}  
+	
+	\item We need to sum up the states: % (see Slide 8/2):
+\[
+<E>\,  \equal  \fracc{\nsum_{n=0}^{\infty} n \hbar \omega_{0} e^{-n \hbar \omega_{0} / k_{B} T}}{\nsum_{n=0}^{\infty} e^{-n \hbar \omega_{0} / k_{B} T}} \appear{=\ldots=} \fracc{\hbar \omega_{0}}{e^{\hbar \omega_{0} / k_{B} T}-1}
+\]
+
+\item For a mole of harmonic oscillators 
+\[
+U_{\text {per mole}}^{(vib)}  \equal \appear{N_{A}} \fracc{\hbar \omega_{0}}{e^{\hbar \omega_{0} / k_{B} T}-1}
+\]
+
+\item And differentiating:
+\[
+C_{V}^{(vib)}  \equal \fracc{\partial U_\text{per mole}^{(vib)}}{\partial T}
+ \equal \appear{N_{A} k_{B}} \fracc{ \textrm{((} \hbar \omega_{0} \textrm{))}^{2} \appear{e^{\hbar \omega_{0} / k_{B} T}} }{ \textrm{((} k_{B} T \textrm{))} ^{2}\appear{ \textrm{((} e^{\hbar \omega_{0} / k_{B} T}-1 \textrm{))} ^{2}} }
+\]
+\end{itemize}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+
+\begin{itemize}
+	\item \CDAlert[red]{At high T} \appear{$ \textrm{((} k_{B} T \gg \hbar \omega_{0} \textrm{))} $}\appear{, the proportionality} \Alert[red]{$\appear{<E>} \propto \appear{k_{B} T}$} \appear{seems to be valid} \appear{(degrees of freedom = 2 for vibrations)}%Fig 29(a)
+\appear{\xdef\loc{south east}%
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.25*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,width=8.5cm]{Figures_booklet/SOM_9_Statistical_mechanics_figures/SOM_Figure_29.png}};%scale=\figscale. % 8cm max hei
+\end{tikzpicture}}
+\item \CDAlert[blue]{At low temperatures} \appear{$ \textrm{((} k_{B} T \ll \hbar \omega_{0} \textrm{))}$}\appear{, mean energy \Alert[blue]{$<E>\,$ rises from zero very slowly}.} \appear{Reason is that few of the molecules would be energetic enough to occupy any state other than the ground state}
+
+\item The $C_{V}$ shown in Fig.~(b) \appear{is practically the slope of $<E>\,$ shown in  Fig.~(a) }
+% 6.5 cm = midway, 10 cm = 3/4 
+\end{itemize}
+\vspace{2.5mm}
+
+\begin{minipage}{5cm} \small
+\begin{itemize}
+\item The \CDAlert[fuchsia]{shift from $C_{V}=0$ to $C_{V}=R$} resembles the shift in Fig.~28\appear{, where increased  \Alert[fuchsia]{temperature enables the population of vibrational states}} 
+
+\item This takes place apparently already at around: \vspace{-3mm}
+\[
+k_{B} T  \equal \appear{0.3} \appear{\;...\; 0.5} \appear{\hbar \omega_{0}}
+\]
+
+%\item For hydrogen molecule $\omega_{0}=8.28 \times 10^{14} \mathrm{rad} / \mathrm{s}$, giving significant rise at $T=0.3 \frac{\hbar \omega_{0}}{k_{B}} \approx 1900 \mathrm{~K} .$ This agrees with Fig $28 .$
+\end{itemize}
+\end{minipage}
+
+
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+
+\begin{itemize}
+
+\item For hydrogen molecule\appear{, the resonance frequency is $\omega_{0}=8.28 \times 10^{14}~\mathrm{rad} / \mathrm{s}$}\appear{, giving significant rise at temperature} $\appear{T=0.3 \frac{\hbar \omega_{0}}{k_{B}}} \appear{\approx \appear{1900 \mathrm{~K}}}$ 
+\item This agrees remarkably well with Fig.~28
+
+\end{itemize}
+
+\xdef\loc{south}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.25*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,width=10.3cm]{Figures_booklet/SOM_9_Statistical_mechanics_figures/SOM_Figure_28.png}}; %scale=\figscale. % 8cm max hei
+\end{tikzpicture}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Solid state}
+
+\begin{itemize}
+	\item In \CDAlert[red]{solids}\appear{, atoms/electrons cannot move freely} \appear{or rotate} 
+	\item They can \CDAlert[red]{only oscillate/vibrate in three directions} 
+	\item Since one-dimensional oscillator has 2 degrees of freedom\appear{, three-dimensional solid exhibits 6 degrees of freedom resulting in} 
+\[
+C_{V}  \equal  \appear{6 \cdot} \frac{1}{2} \appear{R}  \equal \appear{3 R} \appear{\,,} \qquad \appear{\textrm{(dielectrics)}}
+\]
+
+\item In conducting materials \appear{(e.\,g. metals)}\appear{, \CDAlert[blue]{conduction electrons} are not bound to individual atoms}\appear{, but \CDAlert[tuniblue]{move around acting like a gas}}
+
+\item Classically thinking\appear{, conduction electrons have \CDAlert[blue]{3 translational degrees} \CDAlert[blue]{of freedom}}\appear{, contributing by an additional factor of $3 \times \Frac{1}{2}=1.5$ to the heat capacity $C_V$}
+\implies{ classically one expects conductors to have $\appear{C_{V}}  \equal  \appear{4.5 R}$ }
+\end{itemize}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Solid state}
+
+\begin{itemize}
+	\item It turns out that the classical expectations given above are not fulfilled 
+	
+	\item For many solids, the value of heat capacity is still close to $3R$ \appear{(\CDAlert[red]{$C_V \Approx 3R$})}\appear{, \CDAlert[red]{both for insulators and for conductors}}
+
+\item The electrons in conductors are packed to lowest states\appear{, and since at}% 6.5 cm = midway, 10 cm = 3/4 
+\end{itemize}
+%\vspace{-2.5mm}
+\begin{minipage}{6.4cm}
+\begin{itemize}
+\item[] room temperature, the value of $k_{B} T$ is much less than $E_{F}$\appear{, practically, the situation is quite the same as $T=0$ would be}
+
+\item In conductors only a \Alert[blue]{small fraction of electrons move}\appear{, causing a negligible contribution to the heat capacity $C_V$}
+\end{itemize}
+\end{minipage}
+
+
+\xdef\loc{south east}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.25*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,width=7cm]{Figures_booklet/SOM_Tables/SOM_Statistical_Table_3.png}}; %scale=\figscale. % 8cm max hei
+\end{tikzpicture}
+
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Solid state}
+
+\begin{itemize}
+\item The atoms in a solid are strongly coupled (see Figure)
+
+\item One cannot displace a single atom \appear{without disturbing nearby atoms} \appear{(and the whole solid)}
+\end{itemize}
+	 
+\vspace{2.3mm}
+\begin{minipage}{7.8cm}
+\begin{itemize}
+	\item[] \begin{itemize}[itemsep=2.85mm] \small
+	\item Must consider \Alert[red]{collective vibrational excitations} 
+	\item Resulting acoustic waves behave like a boson gas
+	\item These waves are called \CDAlert[red]{phonons} \appear{and act as bosonic quanta of atomic vibrations}
+	\item A phonon has a zero spin\appear{, it may travel inside the solid carrying an energy of $h f$} \appear{($\sim$10 meV)}
+	\item A phonon is not a 'real particle' in the same sense as a photon is\appear{, but it is a \CDAlert[red]{'quasiparticle'}} \appear{or a \CDAlert[tunired]{'collective excitation'}} 
+	\implies[\small]{ Phonons only exist inside the solid }
+\end{itemize}
+
+%\item Vibrations in the solid may be treated as comprising of discrete phonons rather than diffuse waves
+\end{itemize}
+\end{minipage}
+
+
+%\xdef\loc{south east}
+%\begin{tikzpicture}[remember picture,overlay] % anchor=south
+%    \node (A) [yshift=0*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,width=6cm]{Figures_booklet/SOM_todo_figures/SOM_SSP_Figure_6.png}}; %scale=\figscale. % 8cm max hei
+%\end{tikzpicture}
+
+\xdef\loc{south east}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.25*\figYshift,xshift=1*\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=13,width=6cm]{Figures_booklet/SOM_9_Statistical_mechanics_figures/Tikz_SOM_Statistical_figures.pdf}}; %scale=\figscale. % 8cm max height
+\end{tikzpicture}
+
+%\endofslide 
+\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%

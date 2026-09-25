@@ -1,0 +1,264 @@
+% !TEX root = ../bb_AiRa_Kappaleet.tex
+
+% ö = \%c3\%b6
+% ä = \%C3\%A4
+
+\xdef\sectiontitle{\Isectiontitle} %aiheuttama
+\TOCrefs
+
+%%%%%%%%%%%%%%%
+\begin{frame}[label=1_11_a]%[label=1_11_TOC1]
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\label{\TOCname}
+
+\vspace{-0.5cm}
+
+\begin{itemize}[leftmargin=0.5cm,itemsep=2mm]
+    \item[1.1]<1-> \hyperlink{1_1_a}{\IaSubsectiontitle}
+    \item[1.2]<1-> \hyperlink{1_2_a}{\IbSubsectiontitle}	
+    \item[1.3]<1-> \hyperlink{1_3_a}{\IcSubsectiontitle}	
+    \item[1.4]<1-> \hyperlink{1_4_a}{\IdSubsectiontitle}
+    \item[1.5]<1-> \hyperlink{1_5_a}{\IeSubsectiontitle}
+    \item[1.6]<1-> \hyperlink{1_6_a}{\IfSubsectiontitle}
+    \item[1.7]<1-> \hyperlink{1_7_a}{\IgSubsectiontitle}
+\end{itemize}
+
+\vspace{-1cm}
+\begin{itemize}[leftmargin=8.5cm,itemsep=2mm]
+    \item[1.8]<1-> \hyperlink{1_8_a}{\IhSubsectiontitle}
+	\item[1.9]<1-> \hyperlink{1_9_a}{\IiSubsectiontitle}
+	\item[1.10]<1-> \hyperlink{1_10_a}{\IjSubsectiontitle}
+	\item[1.11]<1-> \hyperlink{1_11_a}{\CDAlert[blue]{\IkSubsectiontitle}}
+\end{itemize}
+
+%\endofslide 
+\end{frame}
+%%%%%%%%%%%%%%%
+
+\xdef\sectiontitle{\IkSubsectiontitle} 
+
+%%%%%%%%%%%%%%%
+\begin{frame}%[label=1_11_a]
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Fononit}
+\appear{}
+
+\begin{itemize}[itemsep=1.5mm]
+	\item Fononien aallonpituuksille on olemassa alaraja
+	\vspace{-1mm}\implies{Käytännössä: \qquad $\frac{1}{2} \appear{\lambda_{\min}}  \equal \appear{a=$} \appear{hilavakio} } 
+	\appear{\xdef\loc{south east}%
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,height=6.7cm]{Figures_booklet/SOM_9_Statistical_mechanics_figures/SOM_Figure_30_cropped.png}};%scale=\figscale. % 8cm max hei
+\end{tikzpicture}}
+	\item Pienin aallonpituus vastaa suurinta taajuutta
+	         \appear{eli suurinta energiaa $E_{\max}$}
+\end{itemize}
+
+% 6.5 cm = midway, 10 cm = 3/4 
+%\vspace{2.5mm}
+\begin{minipage}{8.5cm}
+\begin{itemize}[itemsep=1.5mm]
+	\item \CDAlert[fuchsia]{Fononien nopeus} ei ole valon nopeus\appear{, vaan \CDAlert[fuchsia]{äänen nopeus $v_{s}$} aineessa}
+
+\item Fononit voivat värähdellä kahdessa \CDAlert[red]{poikittaisessa} suunnassa\appear{, sekä \CDAlert[blue]{pitkittäis-}\\ \CDAlert[blue]{suunnassa}}
+
+\item Olettamalla sekä poikittais- että pitkit\-täis\-fononien nopeudet samoiksi\appear{, fononinen tilatiheys täytyy kertoa tekijällä $3 / 2$}
+\end{itemize}
+\end{minipage}
+
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Fononeihin varastoitunut energia}
+\appear{}
+
+\begin{itemize}[itemsep=1.55mm]
+	\item Fononien varastoimalle kokonaisenergialle voidaan muodostaa yhtälö:
+\[
+U_{\text {fononi}}  \equal \appear{\nint_{0}^{E_{\max}}} \appear{E} \appear{\mathbb{N}(E)} \appear{D(E)} \appear{d E}
+ \equal 
+ \appear{\nint_{0}^{E_{\max }} E} \frac{1}{e^{E / k_{B} T}-1} \frac{12 \pi V}{h^{3} v_{S}{ }^{3}} \appear{E^{2}} \appear{d E}
+\]
+
+\item Integraalin laskemiseksi\appear{ meidän täytyy}
+% 6.5 cm = midway, 10 cm = 3/4 
+%\vspace{2.5mm}
+\end{itemize}
+
+\begin{minipage}{7.3cm}
+\begin{itemize}[itemsep=1.55mm]
+	 \item[] arvioida \Alert[red]{suurin energia $E_{max}$} \appear{ja yhdistää se pienimpään aallonpituuteen \appear{$2 a$}}
+
+\item Tarkastellaan atomeita \Alert[blue]{kuutio\-maisessa kiinteässä kappaleessa} 
+
+\item Atomeita on yhdellä särmällä $N^{1 / 3}$\appear{, ja atomien välinen etäisyys on $L / N^{1 / 3}$} 
+\item[] \vspace{-2.2mm}\implies{ Aineessa on fononeita\appear{, joiden pienin aallonpituus on $2 L / N^{1 / 3}$}}
+
+\end{itemize}
+\end{minipage}
+
+
+\xdef\loc{south east}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.25*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,height=5.35cm]{Figures_booklet/SOM_9_Statistical_mechanics_figures/SOM_Figure_31.png}}; %scale=\figscale. % 8cm max hei
+\end{tikzpicture}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%
+%\begin{frame}
+%\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+%
+%\begin{itemize}
+%	\item Minimum wavelength leads to a maximum wave number $k=\frac{2 \pi}{\lambda}  \equal  \frac{\pi N^{1 / 3}}{L }$ 
+%	
+%	\item Note, $\mathbf{k}$ is basically a vector (k=$|\mathbf{k}|$)\appear{, it may point at any direction}\appear{, allowed phononic states form a sphere!}
+%% 6.5 cm = midway, 10 cm = 3/4 
+%\item[] \begin{minipage}{8.5cm}
+%\item We consider a cube in $\mathbf{k}$-space, with edge of $\pi N^{1 / 3} / L$, and we set the volume of the cube to be equal to $1 / 8$ of a sphere with radius $k_{\max }$
+%\[
+%\begin{aligned}
+% \bigg( \frac{\pi N^{1 / 3}}{L} \bigg) ^{3} &= \frac{1}{8} \bigg( \frac{4 \pi}{3} k_{\max }^{3} \bigg)  \\
+%\Rightarrow \qquad k_{\max } &= \bigg( \frac{3}{4 \pi} 8 \bigg( \frac{\pi N^{1 / 3}}{L} \bigg) ^{3} \bigg) ^{1 / 3} \\
+%&= \bigg( \frac{6 \pi^{2} N}{L^{3}} \bigg) ^{1 / 3}= \bigg( \frac{6 \pi^{2} N}{V} \bigg) ^{1 / 3}
+%\end{aligned}
+%\]
+%\end{minipage}
+%\vspace{3mm}
+%\end{itemize}
+%
+%
+%\xdef\loc{south east}
+%\begin{tikzpicture}[remember picture,overlay] % anchor=south
+%    \node (A) [yshift=-0.25*\figXshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,height=7cm]{Figures_booklet/SOM_9_Statistical_mechanics_figures/SOM_Figure_32.png}}; %scale=\figscale. % 8cm max hei
+%\end{tikzpicture}
+%
+%
+%\endofslide 
+%%\endofsection
+%\end{frame}
+%%%%%%%%%%%%%%%%
+%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Fononien tilatiheys ja energia}
+\appear{}
+
+\begin{itemize}[itemsep=1.7mm] \fontsize{11.5}{13}\selectfont %\small
+%	\item Minimum wavelength leads to a maximum wave number $k=\frac{2 \pi}{\lambda}  \equal  \frac{\pi N^{1 / 3}}{L }$ 
+	\item \CDAlert[blue]{Jaksollisuuden takia} kiinteässä aineessa\appear{ sallitut \Alert[blue]{aaltovektorit $\mathbf{k}$ ovat diskreettejä}:} \appear{yksittäinen fononitila vie} \appear{(ns.~$\mathbf{k}$-avaruudessa}\appear{/tila-avaruudessa)} \appear{tilavuuden  $( 2 \pi /L )^{3}$ }
+\end{itemize}
+\vspace{1.5mm}
+	 
+% 6.5 cm = midway, 10 cm = 3/4 
+\begin{minipage}{8cm} %\small
+\begin{itemize}[itemsep=1.7mm] \fontsize{11.5}{13}\selectfont %\small
+
+\item Huomaa että $\mathbf{k}$ on vektori \appear{(k=$|\mathbf{k}|$)}\appear{, ja voi\\ o\-soit\-taa mielivaltaiseen suuntaan}\appear{, jolloin sallitut fononitilat muodostavat pallon!}
+
+\item \CDAlert[red]{Systeemissä on yhteensä $N$ tilaa}\appear{, jonka täytyy vastata tiheyden} \appear{ja tilavuuden tuloa} \appear{($\mathbf{k}$-avaruudessa):}
+\[
+\begin{aligned}
+N & \equal  \appear{\bigg( \Frac{L}{2\pi} \bigg)^{3}} \appear{\bigg( \Frac{4 \pi}{3} k_{\max }^{3} \bigg)}  \\
+\appear{\Rightarrow} \qquad \appear{k_{\max }} & \equal  \appear{\bigg( \frac{8\pi^3}{L^3}} \frac{3N}{4\pi} \appear{\bigg) ^{1 / 3}} \\
+& \equal  \appear{\bigg(} \frac{6 \pi^{2} N}{L^{3}} \appear{\bigg) ^{1 / 3}}  \equal  \appear{\bigg(} \frac{6 \pi^{2} N}{V} \appear{\bigg) ^{1 / 3}}
+\end{aligned}
+\]
+\end{itemize}
+\end{minipage}
+
+
+\xdef\loc{south east}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.25*\figXshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,height=7cm]{Figures_booklet/SOM_9_Statistical_mechanics_figures/SOM_Figure_32.png}}; %scale=\figscale. % 8cm max hei
+\end{tikzpicture}
+
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Fononien energia ja Debyen lämpötila}
+\appear{}
+
+\begin{itemize}
+	\item Nyt kun suurin aaltoluku on johdettu\appear{, voidaan suurin fononin energia arvioida:}
+\[
+E_{\max}  \equal  \frac{h v_{s} k_{\max }}{2 \pi}  \equal  \frac{h v_{s}}{2 \pi} \appear{\bigg(} \frac{6 \pi^{2} N}{V} \appear{\bigg) ^{1 / 3}}  \equal  \appear{h v_{s}} \appear{\bigg(} \frac{3 N}{4 \pi V} \appear{\bigg) ^{1 / 3}} \appear{\,, \qquad E=\hbar \omega ~\textrm{ja}~\omega = v_s k}
+\]
+
+\item Oletimme \appear{että etenevien aaltojen nopeus} \appear{on sama kuin äänen nopeus aineessa}\appear{, mikä on kokeellisesti vahvistettu tosiasia. }\appear{Lisäksi oletimme että \CDAlert[red]{kaikki fononit liikkuvat samalla nopeudella}} 
+
+\item Asettamalla $E_{\max }=k_{B} T_{D}$ \appear{saamme ilmaistua suurimman energian lämpötilana}\appear{, niin sanottuna  \CDAlert[blue]{Debyen lämpötilana}}\appear{, mikä selvästikin riippuu aineen ominaisuuksista}\appear{, kuten $N / V$ ja $v_{s}$:}
+\[
+T_{D}  \equal \frac{E_{\max }}{k_{B}}  \equal \frac{h v_{S}}{k_{B}} \appear{\bigg(} \frac{3 N}{4 \pi V} \appear{\bigg) ^{1 / 3}}
+\]
+\end{itemize}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Fononeihin varastoitunut energia ja Debyen funktio}
+
+\begin{itemize}
+	\item Nyt kun maksimienergia on laskettu\appear{, voimme palata alkuperäiseen kokonaisenergian integraaliin:}
+	\appear{$$
+	U_{\text {fononi}}  \equal   \appear{\nint_{0}^{k_{B} T_{D}}} \appear{E} \fracc{1}{e^{E / k_{B} T}-1} \fracc{9 N}{ \big( k_{B} T_{D} \big) ^{3}} \appear{E^{2}} \appear{d E}  \equal \appear{9 k_{B} N} \frac{T^{4}}{T_{D}^{3}} \appear{\nint_{0}^{T_{D} / T}} \frac{x^{3}}{e^{x}-1} \appear{d x}
+	$$
+	\appear{missä muuttuja $E$ on vaihdettu} \appear{$x$:ksi} $\appear{(x} \equiv \appear{E/k_{B} T)}$}
+\item Moolille ainetta $N=N_{A}$\appear{, ja koska $k_{B} N_{A}=R$}\appear{, saamme lopuksi:}
+\[
+U_{\text{fononi,\,per mooli}}  \equal \appear{9 R} \frac{T^{4}}{T_{D}^{3}} \appear{\nint_{0}^{T_{D} / T}} \frac{x^{3}}{e^{x}-1} \appear{d x} \qquad
+\]
+
+\item Valitettavasti \CDAlert[red]{Debyen funktion} \Alert[tunired]{integraalia ei voida analyyttisesti laskea}\appear{, vaan se täytyy arvioida numeerisesti}\appear{, ja verrata kokeellisiin tuloksiin}
+\end{itemize}
+
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Fononien vaikutus ominaislämpökapasiteetteihin}
+\appear{}
+
+\begin{itemize}
+	\item Ylläkuvattu \CDAlert[fuchsia]{Debyen malli} \appear{\Alert[fuchsia]{täsmää hyvin kokeellisten lämpökapasiteettien kanssa}}\appear{, kuten kuvasta nähdään}
+	
+	\item \appear{\CDAlert[red]{Johtaminen oli nopea ja yksinkertaistettu}}\appear{, parempi johtaminen suoritetaan johdantokurssilla kiinteän olomuodon fysiikkaan!}
+\end{itemize}
+
+\xdef\loc{south}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.25*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,width=14cm]{Figures_booklet/SOM_9_Statistical_mechanics_figures/SOM_Figure_33.png}}; %scale=\figscale. % 8cm max hei
+\end{tikzpicture}
+
+
+%\endofslide 
+\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%

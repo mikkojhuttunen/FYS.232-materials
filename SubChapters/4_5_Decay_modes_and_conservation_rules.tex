@@ -1,0 +1,633 @@
+% !TEX root = ../aa_SoM_Chapters.tex
+
+%% HARRIS: Chapter 9
+%\xdef\Isectiontitle{Statistical Mechanics} 
+%%
+%\xdef\IaSubsectiontitle{A Simple Thermodynamic System} 
+%\xdef\IbSubsectiontitle{Entropy and Temperature}
+%\xdef\IcSubsectiontitle{Einstein's solid}
+%\xdef\IdSubsectiontitle{Boltzmann \& Maxwell–Boltzmann distributions}
+%\xdef\IeSubsectiontitle{Classical Averages}
+%
+%\xdef\IfSubsectiontitle{Quantum Distributions} 
+%\xdef\IgSubsectiontitle{The Quantum Gas} 
+%\xdef\IhSubsectiontitle{Photon Gas}
+%\xdef\IiSubsectiontitle{The Laser}
+%\xdef\IjSubsectiontitle{Specific Heats} 
+%\xdef\IkSubsectiontitle{Debye Model} 
+
+% ö = \%c3\%b6
+% ä = \%C3\%A4
+
+\xdef\sectiontitle{\IVsectiontitle} %aiheuttama
+
+%%%%%%%%%%%%%%%
+\begin{frame}[label=4_5_a]
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+
+%\vspace{\chapterTOCvksip}%
+\begin{itemize}[leftmargin=0.5cm,itemsep=\chapterTOCitemsep]
+    \item[4.1] \hyperlink{4_1_a}{\IVaSubsectiontitle}
+    \item[4.2] \hyperlink{4_2_a}{\IVbSubsectiontitle}	
+    \item[4.3] \hyperlink{4_3_a}{\IVcSubsectiontitle}	
+    \item[4.4] \hyperlink{4_4_a}{\IVdSubsectiontitle}
+    \item[4.5] \hyperlink{4_5_a}{\CDAlert[blue]{\IVeSubsectiontitle}}
+    \item[4.6] \hyperlink{4_6_a}{\IVfSubsectiontitle}
+    \item[4.7] \hyperlink{4_7_a}{\IVgSubsectiontitle}
+\end{itemize}
+
+%\endofslide 
+\end{frame}
+%%%%%%%%%%%%%%%
+
+\xdef\sectiontitle{\IVeSubsectiontitle} 
+
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+%
+\framesubtitle{Studying decay processes}
+
+\begin{itemize}
+	\item \appear{Nearly all the particles observed are unstable} \appear{(excluding proton}\appear{, electron} \appear{\& neutrino)}
+	\item They tend to decay \appear{and we can learn from their decay modes:}
+	\appear{e.g.~energies}\appear{, masses}\appear{, quantum numbers}
+	\item Many of the particles are so unstable and short-lived\appear{, that they can be \CDAlert[fuchsia]{studied only indirectly}}
+	\item \CDAlert[blue]{Momentum and relativistic total energy are always conserved}:
+	\appear{if apparent energy is not conserved}\appear{, then mass will be changed}
+	\item \CDAlert[red]{Charge is always conserved}
+	\item \CDAlert[fuchsia]{Are there some fundamental level laws behind this?}
+\end{itemize}
+
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+%
+\framesubtitle{Studying decay processes}
+
+\begin{itemize}
+	\item \appear{The \CDAlert[blue]{totalitarian principle}} \appear{$\oldrightarrow$ the essence of conservation law:}
+	\item[] "Everything not forbidden is compulsory" –Gell-Mann (\& R. Heinlein)%Anything that can happen, does happen"
+	\item If a decay or a reaction does not occur\appear{, then there must be a reason for that} \appear{$~\oldRightarrow~$ \CDAlert[blue]{Conservation law}}
+	
+	
+	\item Conservation laws in nature are fundamentally linked to \CDAlert[fuchsia]{symmetries}
+	
+	\item If e.g. the potential function of a particle is constant in the direction of motion\appear{, i.e. in the direction of a spatial coordinate}\appear{, then the potential does not cause forces upon the particle in that direction} \appear{and thus, the linear momentum of the particle will be conserved}
+	\implies{ constant potential has translational symmetry (\CDAlert[fuchsia]{translational invariance}) }
+	
+	\item If no angular torques affect on a body, then its potential will have spherical symmetry etc.
+
+\end{itemize}
+
+%
+%\xdef\loc{south}
+%\begin{tikzpicture}[remember picture,overlay] % anchor=south
+%    \node (A) [yshift=-0.25*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,width=9.5cm]{Figures_booklet/SOM_11_Fundamental_particles_figures/SOM_Fundamental_particles_Figure_1.png}}; %scale=\figscale. % 8cm max hei
+%\end{tikzpicture}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+%
+\framesubtitle{Emmy Noether}
+
+\begin{itemize}
+	\item \appear{Similarly, the \CDAlert[red]{conservation of energy} rules out any decay of a particle} \appear{so that the total mass of the decay products would be \Alert[tunired]{greater than the initial mass} }
+	
+	\item If kinetic energy increases\appear{, then there needs to be a decrease of mass}
+ \implies{ there is a symmetry linking \CDAlert[fuchsia]{time and energy} with each other}
+
+\item \CDAlert[black!30!fuchsia]{Emmy Noether} presented in 1918 a statement on the conjugate variables in physics. \appear{Each physical symmetry leads to a conservation law}
+
+\item The most common conserving quantities \appear{(in classical physics)} \appear{and the corresponding symmetries are:} \vspace{-1mm}
+$$ \small
+\begin{array}{rcl}
+\appear{ \text{Energy (mass)} & \qquad \leftrightarrow & \qquad\text{time reversal symmetry}  \\}
+\appear{ \text{Linear momentum} & \qquad \leftrightarrow &\qquad \text{translational symmetry} \\}
+ \appear{\text{Angular momentum} & \qquad \leftrightarrow  & \qquad\text{rotational symmetry} \\}
+\appear{ \text{Electrical charge} &\qquad \leftrightarrow &  \qquad \text{gauge invariance of electrodynamics}} \\
+\appear{\text{\CDAlert[blue]{Minkowski metric}} &\qquad \leftrightarrow &  \qquad \text{\CDAlert[blue]{special theory of relativity}}} 
+\end{array} 
+$$
+
+\end{itemize}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+%
+\framesubtitle{Emmy Noether}
+
+\begin{itemize}[itemsep=2.3mm]
+	 \item \appear{Noether also connected \CDAlert[red]{conjugate variables}} \appear{to \CDAlert[red]{conservation laws}:}
+	\begin{itemize}
+		 \item Energy–time (($\exp (\rmi E t)$\,))
+		\item Momentum–displacement (($\exp (\rmi \vec{k} \cdot \vec{r})$\,))
+		\item etc.
+	\end{itemize}
+	
+	\item However, already before \CDAlert[fuchsia]{Noether's theorem}\appear{, these conservation laws were more or less known}\appear{, in the scope of classical physics, based mostly on empirical discoveries }
+	
+	\item In terms of particle physics\appear{, most of the conservation laws are formed on empirical basis}
+	
+	\item In many cases, the conservation rule has been found to be obeyed only for a particular type of decay 
+	
+	\item For instance \CDAlert[blue]{strangeness} \Alert[blue]{is conserved only in strong and electromagnetic interactions}, but not in weak interaction, etc.
+\end{itemize}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+%
+\framesubtitle{Emmy Noether}
+
+\begin{itemize}
+	\item \appear{The \CDAlert[blue]{conservation laws in quantum mechanics} are connected with certain \CDAlert[blue]{quantum numbers}}%
+	\appear{\xdef\loc{south east}%
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.15*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,width=13cm]{Figures_booklet/SOM_11_Fundamental_particles_figures/SOM_Fundamental_Table_4.png}};%scale=\figscale. % 8cm max hei
+\end{tikzpicture}}%
+	\item Thus, we will present \CDAlert[tuniblue]{new quantum numbers}, which will be conserved, but only in certain selected reactions, processes or interactions: \vspace{1.5mm}
+	\begin{itemize} \small
+	 \item \CDAlert[red]{Baryon number (B)}: +1 for a baryon, $-1$ for antibaryon, 0 otherwise
+	\item \CDAlert[blue]{Lepton number(s) (L)}: one for each lepton generation $L_{e}$, $L_{\mu}$, $L_{\tau}$ (new data in 1998)
+	\item \CDAlert[fuchsia]{Strangeness (S)}: $-1$ for a strange quark, $+1$ for antistrange, 0 otherwise
+	\item \CDAlert[green]{Isospin}
+	\item \CDAlert[black!20!antiblue]{Hypercharge}
+	\end{itemize}
+
+\end{itemize}
+
+
+
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+%
+\framesubtitle{On the lepton number}
+
+\seminormal
+\begin{itemize}
+	\item \appear{According to original Standard Model}\appear{, \CDAlert[blue]{neutrinos} are assumed to have no mass, but they are polarized} 
+	\item Experiments have show neutrinos to be left-handed\appear{, i.e. their spin is antiparallel with their momentum }
+	\item Antineutrinos are right handed\appear{, spin parallel to momentum}
+
+\item In the Standard Model\appear{, mass arises from \CDAlert[fuchsia]{Higgs boson}.} \appear{The same interaction also is assumed to change the handedness from right to left, and vice versa}
+
+\item Thus, since neutrinos have always been found to be left-handed\appear{, this indicates they \CDAlert[tuniblue]{should have no mass}.} \appear{This implies that lepton number is conserved in the weak interaction}\appear{, and, more exactly, each of their \Alert[red]{flavours will be conserved}}
+
+\item Except that experiments made in 1998 \appear{showed that \Alert[blue]{neutrinos can change into other neutrinos}}, due to a phenomenon called \CDAlert[blue]{neutrino oscillation}
+
+\end{itemize}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+%
+\framesubtitle{Feynman diagrams}
+
+\begin{itemize}
+	 \item \appear{Collisions/reactions of fundamental particles are described by illustrative \CDAlert[red]{Feynman diagrams}}
+
+	\item Here we take the convention from our textbook by Harris:
+	\begin{itemize}
+		 \item Horizontal axis is time
+		\item Vertical axis is location
+	\end{itemize}
+	
+	\item Absolute spatial/temporal positions do not matter in the diagrams, rather they help in \CDAlert[red]{bookkeeping of possible particle interactions} 
+	
+\end{itemize}
+
+% 6.5 cm = midway, 10 cm = 3/4 
+\vspace{2.5mm}
+\begin{minipage}{9cm}
+\begin{itemize}
+	\item \CDAlert[blue]{Fermions}, (leptons, hadrons, quarks) are described by a \CDAlert[blue]{straight solid line}, \CDAlert[fuchsia]{bosons} (mediating particles) by a \CDAlert[fuchsia]{wavy line}. A joint in the graph means a reaction
+\end{itemize}
+\end{minipage}
+%\vspace{2.5mm}
+
+
+\xdef\loc{south east}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.25*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,width=4.5cm]{Figures_booklet/SOM_11_Fundamental_particles_figures/SOM_Fundamental_particles_Figure_10.png}}; %scale=\figscale. % 8cm max hei
+\end{tikzpicture}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+%
+\framesubtitle{Feynman diagrams}
+
+\semismall
+\begin{itemize}
+	\item Basic rules of the interactions: \vspace{2mm}
+	\begin{itemize}[itemsep=1.7mm]
+	 \item Only particle possessing \CDAlert[fuchsia]{color} can engage in the \CDAlert[fuchsia]{strong force}
+	\appear{$\oldrightarrow$ Only fermions involved in the \CDAlert[red]{strong vertex are quarks}}
+	\item To conserve color the gluon carries anticolor. \appear{Note, the quark changes color}
+	\item All particles can \CDAlert[fuchsia]{interact electromagnetically}\appear{, \CDAlert[fuchsia]{except neutrinos}}
+	\item Weak vertices show that all fundamental fermions may interact via W and Z %bosons
+	\item In the \CDAlert[blue]{W case}\appear{\Alert[blue]{, charge of quark changes and quarks} \CDAlert[blue]{transmutate}}
+\end{itemize}
+
+\end{itemize}
+
+
+\xdef\loc{south}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.25*\figYshift,xshift=0*\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,width=14cm]{Figures_booklet/SOM_11_Fundamental_particles_figures/SOM_Fundamental_particles_Figure_8.png}}; %scale=\figscale. % 8cm max hei
+\end{tikzpicture}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+%
+\framesubtitle{Feynman diagrams}
+
+\begin{itemize}
+	\item \CDAlert[red]{Fermions} \appear{(quarks or leptons)} \appear{can e.g. be destructed \CDAlert[red]{into a boson}} \appear{or be created from a boson}\appear{, this is described by \CDAlert[red]{destruction/creation vertices} (connecting points)}
+	\appear{\xdef\loc{south west}%
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.25*\figYshift,xshift=-\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,width=8.7cm]{Figures_booklet/SOM_11_Fundamental_particles_figures/SOM_Fundamental_particles_Figure_9.png}};%scale=\figscale. % 8cm max hei
+\end{tikzpicture}}%
+	\item Note the \CDAlert[blue]{time reversal symmetries} in the two graphs (Figure 9) on quarks and leptons, respectively
+
+\item A whole interaction can be illustrated \appear{by combining vertices into a more complex diagram}\appear{, as done in Figure 10}
+\end{itemize}
+
+
+
+
+\appear{\xdef\loc{south east}%
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.25*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,width=4.3cm]{Figures_booklet/SOM_11_Fundamental_particles_figures/SOM_Fundamental_particles_Figure_10.png}};%scale=\figscale. % 8cm max hei
+\end{tikzpicture}}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+%
+\framesubtitle{Feynman diagrams, Fig. 11}
+
+\begin{itemize}
+	 \item[] \appear{\textbf{a)} Neutron ($n$) converts into a proton ($p$)} \appear{and an electron ($e^-$)}
+\end{itemize}
+
+
+\xdef\loc{north}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-1.5cm,xshift=0*\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,width=10cm]{Figures_booklet/SOM_11_Fundamental_particles_figures/SOM_Fundamental_particles_Figure_11t.png}}; %scale=\figscale. % 8cm max hei
+\end{tikzpicture}
+
+\xdef\loc{south}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.25*\figYshift,xshift=0*\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,width=9.5cm]{Figures_booklet/SOM_11_Fundamental_particles_figures/SOM_Fundamental_particles_Figure_11a.png}}; %scale=\figscale. % 8cm max hei
+\end{tikzpicture}
+
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+%
+\framesubtitle{Feynman diagrams}
+
+\begin{itemize}
+	 \item[] \appear{\textbf{b)} Pion ($\pi^-$) decays to a muon ($\mu^-$).} \appear{This is a well-known decay}\appear{, in the outer regions of Earths atmosphere the cosmic pions are converted into muons}\appear{, which then arrive Earth within a short time of $2.2 \;\mu$s due to \CDAlert[blue]{Lorentz contraction} of the distance}
+\end{itemize}
+
+
+\xdef\loc{north}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-2.7cm,xshift=3.4cm, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,width=1.75cm]{Figures_booklet/SOM_11_Fundamental_particles_figures/SOM_Fundamental_particles_Figure_11tt.png}}; %scale=\figscale. % 8cm max hei
+\end{tikzpicture}
+
+\xdef\loc{south}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.25*\figYshift,xshift=0*\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,width=9.5cm]{Figures_booklet/SOM_11_Fundamental_particles_figures/SOM_Fundamental_particles_Figure_11b.png}}; %scale=\figscale. % 8cm max hei
+\end{tikzpicture}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+%
+\framesubtitle{Feynman diagrams}
+
+\begin{itemize}
+	 \item[] \appear{\textbf{c)} Sigma-baryon ($\sum^+$) decays to a neutron ($n$).} \appear{Strangeness is not conserved!}
+\end{itemize}
+
+\xdef\loc{north}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-1.5cm,xshift=0*\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,width=10cm]{Figures_booklet/SOM_11_Fundamental_particles_figures/SOM_Fundamental_particles_Figure_11t.png}}; %scale=\figscale. % 8cm max hei
+\end{tikzpicture}
+
+\xdef\loc{south}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.25*\figYshift,xshift=0*\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,width=9.5cm]{Figures_booklet/SOM_11_Fundamental_particles_figures/SOM_Fundamental_particles_Figure_11c.png}}; %scale=\figscale. % 8cm max hei
+\end{tikzpicture}
+
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+%
+\framesubtitle{Feynman diagrams}
+
+\begin{itemize}
+	 \item[] \appear{\textbf{d)} Muon ($\mu^+$) decays into a positron ($e^+$)}
+\end{itemize}
+
+\xdef\loc{north}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-1.5cm,xshift=0*\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,width=10cm]{Figures_booklet/SOM_11_Fundamental_particles_figures/SOM_Fundamental_particles_Figure_11t.png}}; %scale=\figscale. % 8cm max hei
+\end{tikzpicture}
+
+\xdef\loc{south}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.25*\figYshift,xshift=0*\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,width=9.5cm]{Figures_booklet/SOM_11_Fundamental_particles_figures/SOM_Fundamental_particles_Figure_11d.png}}; %scale=\figscale. % 8cm max hei
+\end{tikzpicture}
+
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+%
+\framesubtitle{Feynman diagrams}
+
+\begin{itemize}
+	 \item[] \appear{\textbf{e)} Sigma-baryon ($\sum^0$) decays to a lambda-baryon ($\Lambda^0$)}
+\end{itemize}
+
+\xdef\loc{north}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-1.5cm,xshift=0*\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,width=10cm]{Figures_booklet/SOM_11_Fundamental_particles_figures/SOM_Fundamental_particles_Figure_11t.png}}; %scale=\figscale. % 8cm max hei
+\end{tikzpicture}
+
+\xdef\loc{south}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.25*\figYshift,xshift=0*\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,width=9.5cm]{Figures_booklet/SOM_11_Fundamental_particles_figures/SOM_Fundamental_particles_Figure_11e.png}}; %scale=\figscale. % 8cm max hei
+\end{tikzpicture}
+
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+%
+\framesubtitle{Feynman diagrams}
+
+\begin{itemize}
+	 \item[] \appear{\textbf{f)} Kaon decays into another kaon and a pion}
+\end{itemize}
+
+\xdef\loc{north}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-1.5cm,xshift=0*\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,width=10cm]{Figures_booklet/SOM_11_Fundamental_particles_figures/SOM_Fundamental_particles_Figure_11t.png}}; %scale=\figscale. % 8cm max hei
+\end{tikzpicture}
+
+\xdef\loc{south}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.25*\figYshift,xshift=0*\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,width=9.5cm]{Figures_booklet/SOM_11_Fundamental_particles_figures/SOM_Fundamental_particles_Figure_11f.png}}; %scale=\figscale. % 8cm max hei
+\end{tikzpicture}
+
+\appear{\xdef\loc{south}%
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=1.5cm,xshift=4.2cm, anchor=west] at (current page.\loc) {$\leftarrow$ should be 0};%scale=\figscale. % 8cm max hei
+\end{tikzpicture}}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+%
+\framesubtitle{Example 1}
+
+\appear{Consider conservation of charge}\appear{, energy/mass}\appear{, angular momentum/spin}\appear{, strangeness} \appear{and baryon and lepton numbers}\appear{, in the following three decays.} \appear{Indicate whether the suggested decays are possible.}
+
+$$
+\begin{aligned}
+\appear{\textbf{I:} \quad && \tau^{-} \quad &\oldrightarrow \quad \mu^{-} ~+~\nu_{\tau} ~+~\overline{\nu_{\mu}}  &&}\\
+&&  &  &&\\
+\appear{\textbf{II:}\quad && \Delta^{+} \quad &\oldrightarrow \quad n~+~K^{+}  &&\\
+&&  &  &&}\\
+\appear{\textbf{III:}\quad && \overline{\Lambda^{o}} \quad &\oldrightarrow \quad \bar{p}~+~\pi^{+}  }&&
+\end{aligned}
+$$
+
+%$\tau^{-} \rightarrow \mu^{-}+v_{\tau}+\overline{v_{\mu}}$
+%$\Xi^{o} \rightarrow K^{+}+K^{-}$
+%$\Delta^{+} \rightarrow n+K^{+}$
+%$\overline{\Lambda^{o}} \rightarrow \bar{p}+\pi^{+}$
+
+%\xdef\loc{south}
+%\begin{tikzpicture}[remember picture,overlay] % anchor=south
+%    \node (A) [yshift=-0.25*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,width=9.5cm]{Figures_booklet/SOM_11_Fundamental_particles_figures/SOM_Fundamental_particles_Figure_1.png}}; %scale=\figscale. % 8cm max hei
+%\end{tikzpicture}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+%
+\framesubtitle{Example 1a } %\& b
+
+$$
+\begin{aligned}
+\textbf{I:} \quad && \tau^{-} \quad &\rightarrow \quad \mu^{-} ~+~\nu_{\tau} ~+~\overline{\nu_{\mu}}  &&\\
+&&  &  &&\\
+\appear{\text {Energy:}} \quad && \appear{1780 \mathrm{\;MeV}} \quad&\rightarrow \quad \appear{106 \mathrm{\;MeV}}  &&\quad\appear{\text {OK} }\\
+\appear{\text {Spin:}} \quad&& \appear{1 / 2}  \quad&\rightarrow \quad  \appear{1 / 2} ~ \plus ~ \appear{1 / 2} ~ \plus ~ \appear{1 / 2} &&\quad\appear{\text {{\sim}OK}}
+\end{aligned}
+$$
+\implies{Since lepton number is also conserved\appear{, the \CDAlert[red]{decay is allowed}} }
+
+\xdef\loc{south east}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.25*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,width=4.5cm]{Figures_booklet/SOM_11_Fundamental_particles_figures/SOM_Fundamental_particles_Figure_12a.png}}; %scale=\figscale. % 8cm max hei
+\end{tikzpicture}
+
+
+%$$
+%\tau^{-} \rightarrow \mu^{-}+\nu_{\tau}+\overline{v_{\mu}}
+%$$
+
+%$$
+%\begin{array}{llcll}
+%1780 \mathrm{MeV} & \rightarrow & 106 \mathrm{MeV} & \text { OK } \\
+%\text { Lepton numbers conserved } & & \text { OK } \\
+%\text { Spin } & 1 / 2 & \rightarrow & 1 / 2 & 1 / 2 & 1 / 2 & \text { OK }
+%\end{array}
+%$$
+%The decay is allowed!
+%
+%$$
+%\begin{array}{lllll}
+%1315 \mathrm{MeV} & \rightarrow & 2 \times 494 & \mathrm{MeV} & \text { OK } \\
+%\text { Baryon number } \mathrm{B}=+1 & \rightarrow & \mathrm{B}=0 \& \mathrm{~B}=0 & & \underline{\text { not }} \text { OK } \\
+%\text { Spin } 1 / 2 & \rightarrow & 0 & 0 & & \text { not OK }
+%\end{array}
+%$$
+
+%$$
+%\begin{aligned}
+%&& \Xi^{o} \quad &\rightarrow \quad K^{+} ~+~ K^{-}  &&\\
+%&&  &  &&\\
+%\text {Energy:} \quad && 1315 \mathrm{\;MeV} \quad&\rightarrow \quad 2\times494 \mathrm{\;MeV}  &&\quad\text {OK} \\
+%\text {Baryon number:} \quad&& +1  \quad&\rightarrow\quad 0  ~+~ 0 &&\quad\text {not OK} \\
+%\text {Spin:} \quad&& 1 / 2  \quad&\rightarrow \quad  1 / 2 ~+~ 1 / 2 ~+~ 1 / 2 &&\quad\text {{\sim}not OK}
+%\end{aligned}
+%$$
+%\implies{?? the \CDAlert[red]{decay is allowed} }
+
+
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+%
+\framesubtitle{Example 1c}
+
+$$
+\begin{aligned}
+\appear{\textbf{II:} \quad && \Delta^{+}} \quad &\rightarrow \quad \appear{n}\appear{~+~K^{+}}  &&\\
+&&  &  &&\\
+\appear{\text {Energy:}} \quad && \appear{1232 \mathrm{\;MeV}} \quad&\rightarrow \quad \appear{940 ~+~494 \mathrm{\;MeV}}  &&\quad \appear{\text {not OK}} \\
+\appear{\text {Baryon number:}} \quad&& \appear{+1}  \quad&\rightarrow\quad \appear{+1  ~+~ 0} &&\quad\appear{\text {OK}} \\
+\appear{\text {Spin:}} \quad&& \appear{3 / 2}  \quad&\rightarrow \quad  \appear{1 / 2 ~+~ 0} &&\quad \appear{\text{{\sim}OK}}
+\end{aligned}
+$$
+\implies{Final mass is greater than initial mass\appear{, the \CDAlert[blue]{decay is NOT allowed}} }
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+%
+\framesubtitle{Example 1d}
+
+$$
+\begin{aligned}
+\textbf{III:} \quad && \appear{\overline{\Lambda^{o}}} \quad &\rightarrow \quad \appear{\bar{p}~+~\pi^{+}}  &&\\
+&&  &  &&\\
+\appear{\text {Energy:}} \quad && \appear{1116 \mathrm{\;MeV}} \quad&\rightarrow \quad \appear{938 ~+~140 \mathrm{\;MeV}}  &&\quad\appear{\text {OK }} \\
+\appear{\text {Baryon number:}} \quad&& \appear{-1}  \quad&\rightarrow\quad \appear{-1  ~+~ 0} &&\quad\appear{\text {OK }} \\
+\appear{\text {Spin:}} \quad&& \appear{1 / 2 } \quad&\rightarrow \quad  \appear{1 / 2 ~+~ 0} &&\quad\appear{\text {OK }}
+\end{aligned}
+$$
+\implies{ All properties are conserved\appear{, the \CDAlert[red]{decay is allowed}} }
+
+
+\xdef\loc{south east}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.25*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,width=4.5cm]{Figures_booklet/SOM_11_Fundamental_particles_figures/SOM_Fundamental_particles_Figure_12b.png}}; %scale=\figscale. % 8cm max hei
+\end{tikzpicture}
+
+%\endofslide 
+\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%

@@ -1,0 +1,560 @@
+% !TEX root = ../aa_SoM_Chapters.tex
+
+%% HARRIS: Chapter 10
+
+% ö = \%c3\%b6
+% ä = \%C3\%A4
+
+\xdef\sectiontitle{\IIsectiontitle} %aiheuttama
+
+%%%%%%%%%%%%%%%
+\begin{frame}[label=2_3_a]%[label=2_2_TOC1]
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+
+%\vspace{0.5cm}
+%\begin{itemize}[leftmargin=0.5cm,itemsep=3mm]
+%    \item[2.1] \hyperlink{2_1_a}{\IIaSubsectiontitle}
+%    \item[2.2] \hyperlink{2_2_a}{\CDAlert[red]{\IIbSubsectiontitle}}	
+%    \item[2.3] \hyperlink{2_3_a}{\IIcSubsectiontitle}	
+%    \item[2.4] \hyperlink{2_4_a}{\IIdSubsectiontitle}
+%    \item[2.5] \hyperlink{2_5_a}{\IIeSubsectiontitle}
+%    \item[2.6] \hyperlink{2_6_a}{\IIfSubsectiontitle}
+%    \item[2.7] \hyperlink{2_7_a}{\IIgSubsectiontitle}
+%    \item[2.8] \hyperlink{2_8_a}{\IIhSubsectiontitle}
+%    \item[2.9] \hyperlink{2_9_a}{\IIiSubsectiontitle}
+%\end{itemize}
+
+\vspace{0.2cm}
+\begin{itemize}[leftmargin=0.5cm,itemsep=3mm]
+    \item[2.1] \hyperlink{2_1_a}{\IIaaSubsectiontitle}
+    \item[2.2] \hyperlink{2_2_a}{\IIaSubsectiontitle}
+    \item[2.3] \hyperlink{2_3_a}{\CDAlert[red]{\IIbSubsectiontitle}}	
+    \item[2.4] \hyperlink{2_4_a}{\IIcSubsectiontitle}	
+    \item[2.5] \hyperlink{2_5_a}{\IIdSubsectiontitle}
+    \item[2.6] \hyperlink{2_6_a}{\IIeSubsectiontitle}
+    \item[2.7] \hyperlink{2_7_a}{\IIfSubsectiontitle}
+    \item[2.8] \hyperlink{2_8_a}{\IIgSubsectiontitle}
+    \item[2.9] \hyperlink{2_9_a}{\IIhSubsectiontitle}
+    \item[2.10] \hyperlink{2_10_a}{\IIiSubsectiontitle}
+\end{itemize}
+
+\endofslide \end{frame}
+%%%%%%%%%%%%%%%
+
+\xdef\sectiontitle{\IIbSubsectiontitle} 
+
+%%%%%%%%%%%%%%%
+\begin{frame}%[label=2_2_a]
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+
+\begin{itemize}
+	\item A molecule has electrons on different energy levels\appear{, therefore it can absorb and emit electromagnetic radiation} 
+	
+	\item Study of molecular absorption and emission \CDAlert[red]{spectra gives information} of the \Alert[red]{energy states} \appear{and \Alert[red]{structure} of molecules}\appear{, as well as e.g. \Alert[red]{heat capacities} of materials}
+\implies{ \CDAlert[blue]{Spectral fingerprints} of chemical compounds for identification and concentration measurements}
+
+\item The energy spectra of molecules contain contributions from:
+\item[] \begin{itemize}
+	\item Electronic states and transitions\appear{, ${\sim}$1–1000 eV} $\rightarrow$  \appear{${\sim}$\Alert[red]{VIS} and \CDAlert[fuchsia]{X-rays}}
+\item Vibrational states\appear{, 1–100 meV} $\rightarrow$ \appear{microwaves and \CDAlert[blue]{infrared}}
+\item Rotational states\appear{, 1–10 meV} $\rightarrow$ \appear{microwaves and infrared}
+\end{itemize}
+
+\end{itemize}
+%
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+
+% 6.5 cm = midway, 10 cm = 3/4 
+\vspace{1mm}
+\begin{minipage}{9.2cm}
+	\begin{itemize}
+	\item Consider now a \CDAlert[red]{diatomic molecule}. \appear{We assume that molecular potential energy can be approximated with a parabola} \appear{in the vicinity of the equilibrium point $x_r$}
+\[ 
+ U \textrm{((}x_{r} \textrm{))} \appear{\cong} \appear{U_{0}}  \plus \frac{1}{2} \appear{\kappa x_r^{2}} \appear{\,,\qquad where~x_{r}} \equiv \appear{x-a}
+ \] 
+
+\item The coefficient $\kappa$ \appear{is the \CDAlert[red]{spring force constant} of the \CDAlert[tunired]{vibrating molecule}}
+\[ 
+ \kappa \equiv \frac{d^{2} U(x)}{d x^{2}} \appear{\,, \qquad when~x}\approx \appear{a} 
+ \]
+\appear{Then, for a \CDAlert[red]{harmonic oscillator} we get:} 
+\[
+E_{v i b, n}  \equal   \appear{\textrm{((}n}  \plus  \frac{1}{2} \appear{\textrm{))}} \appear{\hbar \omega_{0}}
+\]
+\end{itemize}
+
+\end{minipage}
+\vspace{2.5mm}
+
+\xdef\loc{north east}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=0.9*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,width=4cm]{Figures_booklet/SOM_10_Bonding_figures/SOM_Bonding_Figure_16.png}}; %scale=\figscale. % 8cm max height
+\end{tikzpicture}
+
+\xdef\loc{south east}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.25*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,width=4cm]{Figures_booklet/SOM_10_Bonding_figures/SOM_Bonding_Figure_17.png}}; %scale=\figscale. % 8cm max height
+\end{tikzpicture}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+
+\begin{itemize}
+	\item What is the \CDAlert[red]{resonance frequency $\omega_{0}$} for a diatomic molecule? 
+	
+	\item Vibration frequency $\omega_{0}$ can be related to the force exerted by one atom on another. \appear{If two masses $m_{1}$} \appear{and $m_{2}$} \appear{(}$\appear{\mu}\equiv$ \appear{their \CDAlert[red]{reduced mass})} \appear{are connected by a spring}\appear{, their potential energy turns out to be}
+\[
+\begin{aligned}
+U(x)&  \equal \frac{1}{2} \appear{\kappa x^{2}}  \equal \frac{1}{2} \appear{\mu \omega_{0}{ }^{2} x^{2}} \\
+\appear{\omega_{0}}&  \equal \appear{2 \pi f_{0}}  \equal \appear{\sqrt{\Frac{\kappa}{\mu}} }\appear{\,, \qquad \mu}  \equal \fraca{m_{1} m_{2}}{m_{1}+m_{2}}
+\end{aligned}
+\]
+\appear{which leads to \CDAlert[tunired]{vibrational energy levels}:}
+\[ 
+ E_{v i b, n}  \equal  \appear{\textrm{((}n}  \plus \frac{1}{2} \appear{\textrm{))}} \appear{\hbar} \appear{\sqrt{\Frac{\kappa}{\mu}}} \appear{\,, \qquad n=0,1,2,3, \ldots }
+ \]
+
+\item Note, that the vibrational energies have been treated here completely 1-dimensional
+\end{itemize}
+
+%\xdef\loc{east}
+%\begin{tikzpicture}[remember picture,overlay] % anchor=south
+%    \node (A) [yshift=\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,height=7cm]{Figures_booklet/SOM_10_Bonding_figures/SOM_Bonding_Figure_1.png}}; %scale=\figscale. % 8cm max height
+%\end{tikzpicture}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+
+\seminormal
+% 6.5 cm = midway, 10 cm = 3/4 
+\vspace{1mm}
+\begin{minipage}{9.5cm}
+	\begin{itemize}[itemsep=1.6mm]
+	\item Classically, \CDAlert[blue]{kinetic energy of rotation} is: 
+%	$$
+%	E=\frac{1}{2} I \omega^{2}=\frac{(I \omega)^{2}}{2 I}=\frac{L^{2}}{2 I} \,, \qquad where~I=moment~of~inertia
+%	$$
+%	 $$
+%E=\frac{1}{2} I \omega^{2}=\frac{(I \omega)^{2}}{2 I}=\frac{L^{2}}{2 I} \,, \qquad 
+%\begin{aligned}
+% I&=moment~of~inertia  \\
+% \omega&=angular~velocity~of~rotation \\
+% L&=I \omega = molecule's~angular~momentum
+%\end{aligned}
+%$$ 
+\[
+E  \equal \frac{1}{2} \appear{I} \appear{\omega^{2}}  \equal \frac{(I \omega)^{2}}{2 I}  \equal \frac{L^{2}}{2 I} \appear{\,,} 
+\]
+\appear{where $I$ = moment~of~inertia}\appear{, $\omega=$~angular velocity of rotation}\appear{, and $L=I \omega = $~molecule's~angular~momentum}
+
+\item Solution of the Schrödinger equation for rotation of a rigid body gives \CDAlert[fuchsia]{quantization} of angular momentum \appear{(analogous to single atom):}
+\[ 
+ L^{2}  \equal \appear{\ell} \appear{(\ell+1)} \appear{\hbar^{2}} \appear{\,, \qquad \ell=1,2,3, \ldots\Equiv \CDAlert[blue]{rotational~quantum~number}} 
+ \]
+ \end{itemize}
+\end{minipage}
+%\vspace{2.5mm}
+
+%Where $\ell$ is the rotational quantum number
+\begin{itemize}
+\item Note, $L$ refers now to the whole molecule\appear{, rotating about its center of mass}\appear{, with \CDAlert[tuniblue]{energy levels}:}\vspace{-2mm} 
+\[ 
+ E_{r o t, \ell}  \equal \frac{\ell(\ell+1) \hbar^{2}}{2 I}  \equal \frac{\ell(\ell+1)}{2} \appear{E_{r}}  \quad  \qquad 
+ \begin{aligned}
+ \appear{E_r}  \equal  \frac{\hbar^2}{I}  \equal \appear{&~characteristic\\
+ 	&~rotational~energy}
+ \end{aligned}
+ \] %E_r = ~characteristic~rotational~energy of
+\end{itemize}
+
+\xdef\loc{north east}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=0.5*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,width=4cm]{Figures_booklet/SOM_Tipler_Statistics_and_Bonding_figures/SOM_Tipler_figure_21.png}}; %scale=\figscale. % 8cm max height
+\end{tikzpicture}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+
+\seminormal
+\vspace{1mm}
+\begin{minipage}{9.5cm}
+	\begin{itemize}[itemsep=1.4mm]
+	\item \CDAlert[blue]{Rotational energy levels} contain information of the moment of inertia of the molecule \appear{and subsequently of the \CDAlert[blue]{bond length}} 
+	
+	\item The moment of inertia of a rotating system of two atoms \appear{(masses $m_{1}$ and $m_{2}$): }
+	\[ 
+	I  \equal \appear{m_{1} r_{1}^{2}}  \plus \appear{m_{2} r_{2}^{2}}
+	\]
+\item The 'lever rule' \appear{$m_{1} r_{1}=m_{2} r_{2}$} \appear{with $a \Equiv r_{1}+r_{2}$} \appear{gives us}
+\[
+I  \equal \appear{\mu a^{2}} \appear{\,,\qquad with~reduced~mass~\mu}  \equal \frac{m_{1} m_{2}}{m_{1}+m_{2}}
+\]
+\end{itemize}
+\end{minipage} 
+\begin{itemize}[itemsep=1.6mm]
+\item If the masses are equal\appear{, such as for $\mathrm{H}_{2}$ or $\mathrm{O}_{2}$}\appear{, then we get $\mu=\Frac{1}{2} m_{1}  \equal \frac{1}{2} \appear{m_{2}}$} \appear{and moment of inertia $I=\Frac{1}{2} m a^{2}$}
+
+\item In general case we obtain the rotational energy levels:\vspace{-1.25mm}
+\[ 
+ E  \equal \frac{\ell(\ell+1) \hbar^{2}}{2 I}  \equal \frac{\ell(\ell+1) \hbar^{2}}{2 \mu a^{2}} \equal \frac{\ell(\ell+1)}{2} \appear{E_{r}} \appear{\,\,, \qquad E_{r}=}\frac{\hbar^{2}}{\mu a^{2}} 
+ \]
+\end{itemize}
+
+\xdef\loc{north east}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=0.5*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,width=4cm]{Figures_booklet/SOM_Tipler_Statistics_and_Bonding_figures/SOM_Tipler_figure_21.png}}; %scale=\figscale. % 8cm max height
+\end{tikzpicture}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+
+\begin{itemize}[itemsep=1.6mm]
+	\item So, generally the energy levels of a \CDAlert[violet]{(diatomic) molecule} contain information about \CDAlert[violet]{two quantum numbers}: \appear{\CDAlert[red]{$n$}} \appear{and \CDAlert[blue]{$\ell$}}\appear{, related to the \CDAlert[red]{vibrational}} \appear{and \CDAlert[blue]{rotational} energies, respectively:}
+$$ \seminormal
+\appear{E_{n, \ell}}  \equal \appear{E_{v i b}}  \plus \appear{E_{r o t}}  \equal  \appear{\textrm{((}n+\Frac{1}{2} \textrm{))}} \appear{\hbar} \appear{\sqrt{\frac{\kappa}{\mu}}} \plus \frac{\ell(\ell+1) \hbar^{2}}{2 \mu a^{2}} \quad \quad 
+\begin{aligned}
+&\appear{n=0,1,2,3, \ldots} \\
+&\appear{\ell=0,1,2,3, \ldots}
+\end{aligned}
+$$
+\vspace{-2mm}
+\item Though arising from a similar differential equation\appear{, the $\ell$ here does not relate to electron orbital motion} \appear{(as for the hydrogen atom)}\appear{, but to the \CDAlert[blue]{rotation of the molecule}}
+
+\item Like for hydrogen\appear{, different rotational orientations are allowed}\appear{, governed by a quantum number $m_{\ell}$} \appear{obeying $m_{\ell}=0, \pm 1, \pm 2, \ldots, \pm \ell$} 
+
+\item Note also, that the mass $\mu$ here \appear{is the reduced mass of the considered diatomic molecule} 
+
+\item Energies\appear{, and spectra, of} \appear{\CDAlert[violet]{larger molecules follow the same pattern}}
+\end{itemize}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+
+\begin{itemize}
+	\item \CDAlert[blue]{Rotation energies}: 
+	\begin{itemize} \small
+	\item The electron excitations are in the order of $1$~eV\appear{, whereas characteristic rotational energies are typically $10^{-4}-10^{-3}$~eV} 
+	\item Transitions within given set of rotational energy levels yields photons in the far infrared 
+	\item Rotation energies are also small \appear{compared with the typical value of $k_{B} T} \approx \appear{0.026 ~\mathrm{eV}$ at $300 \mathrm{~K}$} 
+	\item \Alert[blue]{At normal temperatures a molecule can easily be excited to the lower rotational energy levels by collision with other molecules}
+
+\end{itemize}
+
+\item \CDAlert[red]{Vibration energies}: 
+\begin{itemize} \small
+	\item At normal temperatures \appear{vibrational energies are typically $0.1-0.2~\mathrm{eV}$ (i.e. $>k_{B} T $) }
+	\item Thus \Alert[red]{most} of the molecules \appear{are \Alert[red]{in the lowest vibrational state}} \appear{where $n=0$ and $E_{0}=1 / 2 h f$}
+\end{itemize}
+
+\item \CDAlert[violet]{At room temperature} \appear{the molecules are on the electronic ground state}\appear{, and on the \CDAlert[red]{lowest vibration state}}\appear{, but distributed among \CDAlert[blue]{several rotational energy states}}
+
+\end{itemize}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+
+
+%\vspace{2.5mm}
+\begin{minipage}{5.75cm}
+\begin{itemize}
+\item \CDAlert[red]{Q}: Consider a diatomic HD molecule \appear{(D = deuterium = hydrogen + neutron}\appear{, masses $m_H=1.007$ amu and $m_D=2.013$ amu}\appear{, and bond length $0.074 \mathrm{~nm}$).} \appear{Using Boltzmann distribution}\appear{, determine the temperature at which the ratio of molecules in $\ell=1$ rotational states} \appear{to those with}
+\end{itemize}
+\end{minipage}
+%\vspace{-2.5mm}
+\begin{itemize}
+\item[]	no rotational energy would be $1 / 10$
+	
+	\item \CDAlert[blue]{A}: \appear{The state $\ell=1$ has three different rotational orientations} \appear{(values of $m_{\ell}$)}\appear{, and state $\ell=0$ has only one}\appear{. Therefore, the ratio is:}
+\[ 
+ \frac{\text { number of energy } E_{n=0, \ell=1}}{\text { number of energy } E_{n=0, \ell=0}} \equal \frac{3}{1} \appear{\times} \frac{e^{-E_{0,1} / k_{B} T}}{e^{-E_{0,0} / k_{B} T}}  \equal \appear{3 e^{- \textrm{((}E_{0,1}-E_{0,0} \textrm{))} / k_{B} T} }
+ \]
+\end{itemize}
+
+\xdef\loc{north east}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=0.9*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,width=7.8cm]{Figures_booklet/SOM_10_Bonding_figures/SOM_Bonding_Figure_18.png}}; %scale=\figscale. % 8cm max height
+\end{tikzpicture}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+
+\begin{itemize}[itemsep=1.7mm]
+	\item The reduced mass is given by
+	$
+\appear{\mu}  \equal \frac{1.007 \mathrm{\,amu} \,\times\, 2.013 \mathrm{\,amu}}{1.007 \mathrm{\,amu} \,+\,2.013 \mathrm{\,amu}}  \equal \appear{0.671 \mathrm{\,amu}}
+$
+	\appear{while the energy difference is}
+	$$
+	 \begin{aligned}  \small
+	 \appear{E_{0,1}-E_{0,0}} & \equal \frac{1(1+1) \hbar^{2}}{2 \mu a^{2}}  \minus \frac{0(0+1) \hbar^{2}}{2 \mu a^{2}}  \equal \frac{\hbar^{2}}{\mu a^{2}} \\
+	 & \equal \frac{ \textrm{((}1.055 \times 10^{-34} \,Js \textrm{))}^{2}}{0.671 \times 1.66 \times 10^{-27} \mathrm{\,kg} \times \textrm{((}0.074 \times 10^{-9} \mathrm{\,m} \textrm{))}^{2}}  \equal \appear{1.82 \times 10^{-21} J}  \equal \appear{0.011 \mathrm{\,eV}}
+	 \end{aligned} 
+	 $$ 
+	
+\item Thus, we set the ratio to $1 / 10$ \appear{and obtain
+the temperature:}
+\[ \small
+\frac{1}{10}  \equal \appear{3 \exp}  \LB[3] \frac{-1.82 \times 10^{-21} \,J}{1.38 \times 10^{-23} \,J / K \times T} \RB[3] \qquad \Rightarrow \qquad \appear{ \cutline{red}{T \cong 40 \,K}}
+\]
+\vspace{-2mm}\implies{ \CDAlert[red]{Below $40 \mathrm{~K}$, the HD molecules can only translate (do not yet rotate)} } 
+
+\item This agrees with the $\mathrm{H}_{2}$ molecules shown in Fig.~18\appear{, where the jump form translational to rotational starts somewhat above 40–50 K}
+\end{itemize}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+
+\begin{itemize}
+	\item We saw that vibrational \appear{and rotational \CDAlert[red]{energies take only} \CDAlert[red]{discreet values}}\appear{, which we expect to see also in the molecular absorption and emission spectra}
+
+\item If a photon is emitted\appear{, then some of molecule's rotational and vibrational energy is given to a photon}\appear{, and $n$ or $\ell$ or both must decrease}
+\implies{ ~\CDAlert[red]{Selection rules}: $\qquad \appear{\Delta \ell}  \equal \appear{\pm 1} \quad$ \appear{and} $\appear{\quad \Delta n}  \equal \appear{\pm 1}$ }
+
+\item  Photon's spin is 1\appear{, then the system's total angular momentum before and after emission can match only} \appear{if $\ell$ changes by 1}$\quad \rightarrow \quad \appear{\Delta \ell=\pm 1}$
+\item Charge density in molecule oscillates as a dipole in the transitions between vibrational states. \appear{Charged harmonic oscillator oscillates} \appear{(not proven here)} \appear{as an \CDAlert[blue]{electric dipole} only in transitions between energy states whose quantum number differs by 1} $\quad \rightarrow \quad \appear{\Delta n=\pm 1}$
+\end{itemize}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+
+\begin{itemize}
+	\item If the molecule loses vibrational energy\appear{, obviously it must jump down to the next lower $n$-level }
+
+\item But, vibrational energy levels are further apart than the spacing of rotation energy levels\appear{, so, even if it jumps down in vibration levels}\appear{, it may shift to some levels higher or lower in the rotation energies}\appear{, thus \CDAlert[red]{$\ell$ may either decrease or increase by 1} }
+
+\item Therefore the energy of the emitted photon will be in total:
+\[ 
+ E_{\text {photon}}  \equal \appear{\hbar} \appear{\sqrt{\frac{\kappa}{\mu}}} \appear{\pm} \appear{i \times} \frac{\hbar^{2}}{\mu a^{2}}  \appear{\,, \qquad i=1,2,3, \ldots }
+ \]
+\end{itemize}
+
+%\xdef\loc{east}
+%\begin{tikzpicture}[remember picture,overlay] % anchor=south
+%    \node (A) [yshift=\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,height=7cm]{Figures_booklet/SOM_10_Bonding_figures/SOM_Bonding_Figure_1.png}}; %scale=\figscale. % 8cm max height
+%\end{tikzpicture}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+
+\begin{itemize}[itemsep=1.8mm]
+	\item In Figure 19\appear{, vibrational levels $n=0$ and $n=1$ are presented}\appear{, with also rotational levels of $\ell=0,1,2$ and 3}\appear{, thus $\Frac{\ell(\ell+1)}{2}=0,1,3$ and 6} 
+
+\item We \Alert[red]{find six transitions fulfilling the above selection rules} 
+\end{itemize}
+
+% 6.5 cm = midway, 10 cm = 3/4 
+\vspace{1mm}
+\begin{minipage}{7cm}
+\begin{itemize}[itemsep=1.8mm]
+	\item Note, that the unit of the energy steps on the rotation levels are denoted by 
+	\[
+	\delta E_{r}  \equal \frac{\hbar^{2}}{\mu a^{2}}
+	\]
+
+\item There is a 'hole' in the middle of the spectrum\appear{, since the transition $\Delta \ell=0$ does not exist}\appear{, it is forbidden}
+
+\item The rules, as indicated by the arrows in the figure\appear{, apply for \CDAlert[red]{both} \CDAlert[red]{absorption}} \appear{and \CDAlert[red]{emission}}
+\end{itemize}
+\end{minipage}
+
+
+\xdef\loc{south east}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.25*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,height=6.4cm]{Figures_booklet/SOM_10_Bonding_figures/SOM_Bonding_Figure_19.png}}; %scale=\figscale. % 8cm max height
+\end{tikzpicture}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+
+\begin{itemize}[itemsep=1.8mm]
+	\item The set of possible transitions\appear{, and therefore the selection for photon energies emitted} \appear{(or absorbed)}\appear{, form \CDAlert[red]{rotation–vibration spectra}}
+	\item Transitions where both vibrational and rotational states change \appear{are known as \CDAlert[red]{rovibrational/}\CDAlert[red]{ro-vibrational transitions}}
+
+\item In Fig.~20 we see the absorption spectrum of $\mathrm{HCl}$\appear{, and indeed, the lines of absorption} \appear{(wavelengths that are missing from the transmitted light beam)}\appear{, show a similar structure as described above}\appear{, even with the \CDAlert[blue]{'hole' in the middle}}
+\end{itemize}
+
+% 6.5 cm = midway, 10 cm = 3/4
+\vspace{2mm} 
+\begin{minipage}{6.8cm}
+\begin{itemize}[itemsep=1.8mm]
+	\item[] \begin{itemize} \small
+	 \item \CDAlert[tunired]{Peaks are not equally spaced}\appear{, since, as $\ell$ increases}\appear{, the molecules slightly stretch} \appear{causing changes in energies}
+	\item the peaks are \CDAlert[tunired]{broadened}\appear{, since chlorine has two abundant \CDAlert[fuchsia]{isotopes}} \appear{${ }^{35} \mathrm{Cl}$ and ${ }^{37} \mathrm{Cl}$} \appear{with different masses} \appear{(recall: $M_{C l}=35,45 \mathrm{~g} / \mathrm{mol} $)}
+\end{itemize}
+\end{itemize}
+\end{minipage}
+
+
+\xdef\loc{south east}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.25*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,width=7.5cm]{Figures_booklet/SOM_10_Bonding_figures/SOM_Bonding_Figure_20.png}}; %scale=\figscale. % 8cm max height
+\end{tikzpicture}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%% LET's SKIP THE REAL TRANSMISSION SPECTRUM OF HCl SLIDE for time being
+%%%%%%%%%%%%%%%%
+%\begin{frame}
+%\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+%
+%\begin{itemize}
+%	\item Note, that the absorption spectrum of HCl shown in Fig.~20 was actually processed from the real transmission spectrum, by first removing the background and further inverting the $y$-axis
+%\end{itemize}
+%
+%\xdef\loc{east}
+%\begin{tikzpicture}[remember picture,overlay] % anchor=south
+%    \node (A) [yshift=\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,width=6cm]{Figures_booklet/SOM_10_Bonding_figures/SOM_Bonding_Figure_20.png}}; %scale=\figscale. % 8cm max height
+%\end{tikzpicture}
+%
+%\xdef\loc{west}
+%\begin{tikzpicture}[remember picture,overlay] % anchor=south
+%    \node (A) [yshift=0*\figYshift,xshift=-\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,width=6cm]{Figures_booklet/SOM_10_Bonding_figures/SOM_Bonding_Figure_20.png}}; %scale=\figscale. % 8cm max height
+%\end{tikzpicture}
+%
+%\xdef\loc{east}
+%\begin{tikzpicture}[remember picture,overlay] % anchor=south
+%    \node (A) [yshift=\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,width=6cm]{Figures_booklet/SOM_10_Bonding_figures/SOM_Bonding_Figure_20.png}}; %scale=\figscale. % 8cm max height
+%\end{tikzpicture}
+%
+%
+%\endofslide 
+%%\endofsection
+%\end{frame}
+%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+
+\begin{itemize}[itemsep=1.6mm]
+	\item The spacing of electron energies in the molecules are usually in the order of $>\!1~\mathrm{eV}$\appear{, vibration energies in the order of $>\!0.1~\mathrm{eV}$} \appear{and rotation energies at $<\!0.1~ \mathrm{eV}$ }
+	
+	\item Figure 21 is not plotted in correct scale\appear{, but is fairly informative for describing the orders of magnitude}
+	
+% 6.5 cm = midway, 10 cm = 3/4 
+%\vspace{2.5mm}
+\item[] \begin{minipage}{8.2cm} \small
+ 	\begin{itemize}
+	\item  The red curves represent two different electron states 
+	
+	\item When the electron is in an \CDAlert[fuchsia]{excited state}\appear{, the atoms are slightly farther apart} \appear{(different $a$)} \appear{but still bound to each other} 
+	
+	\item The potential well is wider and shallower \appear{(= higher in the graph)}
+	
+	\item On \CDAlert[red]{both electron states}\appear{, there are different vibration levels $n$} \appear{and even more closely spaced rotation levels $\ell$}
+\end{itemize}
+
+\end{minipage}
+\vspace{2.5mm}
+
+\end{itemize}
+
+\xdef\loc{south east}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.25*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,height=6.1cm]{Figures_booklet/SOM_10_Bonding_figures/SOM_Bonding_Figure_21.png}}; %scale=\figscale. % 8cm max height
+\end{tikzpicture}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+
+\begin{itemize}
+	\item Note, that here we have been only dealing with \CDAlert[red]{diatomic molecules} 
+	
+	\item Generally, most of the molecules have \CDAlert[blue]{more complicated structure}\appear{, and subsequently both their rotational} \appear{and vibrational \CDAlert[tuniblue]{energy level schemes will have more structure}}
+
+\item For instance\appear{, the two common molecules}\appear{, $\mathrm{CO}_{2}$ (left)} \appear{and $\mathrm{H}_{2} \mathrm{O}$ (right)} \appear{are able to vibrate in several modes, as seen in the below Figure}
+
+\end{itemize}
+
+\appear{\xdef\loc{south}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.5*\figYshift,xshift=0*\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1, height=4cm]{Figures_booklet/SOM_10_Bonding_figures/Tikz_SOM_Bonding_vibrational_modes_fixed}};
+\end{tikzpicture}}
+
+%\endofslide 
+\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%

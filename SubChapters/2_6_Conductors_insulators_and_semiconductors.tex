@@ -1,0 +1,608 @@
+
+% !TEX root = ../aa_SoM_Chapters.tex
+
+%% HARRIS: Chapter 10
+
+% ö = \%c3\%b6
+% ä = \%C3\%A4
+
+\xdef\sectiontitle{\IIsectiontitle} %aiheuttama
+
+%%%%%%%%%%%%%%%
+\begin{frame}[label=2_6_a]%[label=2_5_TOC1]
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+
+%\vspace{0.5cm}
+%\begin{itemize}[leftmargin=0.5cm,itemsep=3mm]
+%    \item[2.1] \hyperlink{2_1_a}{\IIaSubsectiontitle}
+%    \item[2.2] \hyperlink{2_2_a}{\IIbSubsectiontitle}	
+%    \item[2.3] \hyperlink{2_3_a}{\IIcSubsectiontitle}	
+%    \item[2.4] \hyperlink{2_4_a}{\IIdSubsectiontitle}
+%    \item[2.5] \hyperlink{2_5_a}{\CDAlert[blue]{\IIeSubsectiontitle}}
+%    \item[2.6] \hyperlink{2_6_a}{\IIfSubsectiontitle}
+%    \item[2.7] \hyperlink{2_7_a}{\IIgSubsectiontitle}
+%    \item[2.8] \hyperlink{2_8_a}{\IIhSubsectiontitle}
+%    \item[2.9] \hyperlink{2_9_a}{\IIiSubsectiontitle}
+%\end{itemize}
+
+\vspace{0.2cm}
+\begin{itemize}[leftmargin=0.5cm,itemsep=3mm]
+    \item[2.1] \hyperlink{2_1_a}{\IIaaSubsectiontitle}
+    \item[2.2] \hyperlink{2_2_a}{\IIaSubsectiontitle}
+    \item[2.3] \hyperlink{2_3_a}{\IIbSubsectiontitle}	
+    \item[2.4] \hyperlink{2_4_a}{\IIcSubsectiontitle}	
+    \item[2.5] \hyperlink{2_5_a}{\IIdSubsectiontitle}
+    \item[2.6] \hyperlink{2_6_a}{\CDAlert[blue]{\IIeSubsectiontitle}}
+    \item[2.7] \hyperlink{2_7_a}{\IIfSubsectiontitle}
+    \item[2.8] \hyperlink{2_8_a}{\IIgSubsectiontitle}
+    \item[2.9] \hyperlink{2_9_a}{\IIhSubsectiontitle}
+    \item[2.10] \hyperlink{2_10_a}{\IIiSubsectiontitle}
+\end{itemize}
+
+\endofslide \end{frame}
+%%%%%%%%%%%%%%%
+
+\xdef\sectiontitle{\IIeSubsectiontitle} 
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+
+\begin{itemize}
+	\item When atoms come together\appear{, the electrons strongly bound to their atomic nuclei remain isolated in their atoms, and do not participate in electronic band formation (Figure)}
+
+\item Higher states\appear{, that's where the outmost electrons} \appear{i.e. the valence electron are,} \appear{are however broken into bands by the ionic potential}
+
+\item In a crystal of $N$ atoms\appear{, energy bands are split into $N$ spatial states} 
+
+\item Due to spin\appear{, the total number of electrons in the band is $2 N$}
+
+\end{itemize}
+
+% 6.5 cm = midway, 10 cm = 3/4 
+\vspace{2.5mm}
+\begin{minipage}{5.5cm}
+\begin{itemize}
+\item The difference between insulators \appear{and conductors is found in the \CDAlert[red]{occupation} of the \CDAlert[red]{highest energy band}}\appear{, and whether it's full} \appear{or only partially filled with electrons}
+\end{itemize}
+\end{minipage}
+
+\xdef\loc{south east}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.25*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,width=8cm]{Figures_booklet/SOM_10_Bonding_figures/SOM_Bonding_Figure_29.png}}; %scale=\figscale. % 8cm max height
+\end{tikzpicture}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%
+%\begin{frame}
+%\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+%
+%\begin{itemize}
+%	\item Let's look at the periodic potential ...
+%	\item $\ldots$ and the possible wave functions\appear{, here $N=8$}\appear{, as an example (only 4 functions presented):}
+%	
+%	\item We obtained energy bands, which may be overlapping with each other (depending on $a$)
+%	
+%\item And we found out that a great fraction of the energy of electrons is kinetic\appear{, potential energy deforms the curves, and gaps are formed}
+%
+%\end{itemize}
+%
+%
+%\endofslide 
+%%\endofsection
+%\end{frame}
+%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Real DOS}
+
+\begin{itemize}
+%	\item To study the band structure, we can take approaches of different level in details 
+	\item Next, we need to calculate how the electrons in the solid will populate the energy band
+	\appear{\xdef\loc{south east}%
+\begin{tikzpicture}[remember picture,overlay]% anchor=south
+    \node (A) [yshift=-0.15*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,width=8cm]{Figures_booklet/SOM_10_Bonding_figures/Tikz_SOM_Bonding_EFermi_schematic}};%scale=\figscale. % 8cm max height
+\end{tikzpicture}}
+	\item Recall, that we have already calculated the \CDAlert[fuchsia]{density of states} for a 3D quantum well:
+\[
+D(E) \equal \frac{1}{8} \appear{4 \pi n^{2} }\frac{d n}{d E}  \equal \frac{(2 s+1) m^{3 / 2} V}{\pi^{2} \hbar^{3} \sqrt{2}} \appear{\sqrt{E}}
+\]
+\vspace{2.5mm}
+\appear{and the associated \CDAlert[fuchsia]{Fermi energy $E_{F}$} was given by}
+\end{itemize}
+% 6.5 cm = midway, 10 cm = 3/4 
+%\vspace{2.5mm}
+\begin{minipage}{6.5cm}
+\begin{itemize}
+	\item[] \[
+ E_{F} \equal \frac{\pi^{2} \hbar^{2}}{m} \appear{\textrm{[[}}\frac{3}{(2 s+1) \pi \sqrt{2}} \frac{N}{V} \appear{\textrm{]]}^{2 / 3}}
+\]
+\end{itemize}
+\end{minipage}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+
+\begin{itemize}
+	\item In what follows, we could have 3 different cases for density of states:
+\item[] \begin{itemize}
+	\item density of states $D$ is kept constant \appear{(for simplicity of presentation, choice by Harris)}
+\item $D=D(E)$ is derived for square 3D-potential well structures \appear{(on previous lectures)}
+\item $D=D(E)$ is derived for Coulombic well structures \appear{(more sophisticated)}
+
+\end{itemize}
+
+\item Additionally, we study temperature cases where:
+\item[] \begin{itemize}
+	\item $T=0 \mathrm{~K}$
+	\item $T>0 \mathrm{~K}$
+	\end{itemize}
+	
+	\item Thus we will have 6 different approaches\appear{, see Table in the next slide}
+
+\end{itemize}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+
+\begin{itemize}
+	
+\item Please note, that these approaches are used rather randomly in attempt to illustrate the same point 
+\implies{ \Alert[fuchsia]{Energy band structure of electrons in a crystalline solid}}
+\vspace{4mm}
+
+{ \small
+\begin{tabular}{|l|c|l|} 
+\hline \Alert[blue]{Density of states, $D$} & FD-statistics at \Alert[red]{$T=0 \mathrm{~K}$} & FD-statistics at \Alert[tunired]{$T>0 \mathrm{~K}$} \\
+\hline Constant & X & X \\
+\hline Periodic 3D-square well & X & X \\
+\hline Periodic Coulombic potential & & \\
+\hline
+\end{tabular}
+}
+
+\end{itemize}
+
+\xdef\loc{south}%
+\begin{tikzpicture}[remember picture,overlay]% anchor=south
+    \node (A) [yshift=-0.25*\figYshift,xshift=0*\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,width=8cm]{Figures_booklet/SOM_10_Bonding_figures/Tikz_SOM_Bonding_EFermi_schematic}};%scale=\figscale. % 8cm max height
+\end{tikzpicture}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Band overlap}
+
+\begin{itemize}
+	\item Let's then check the energy levels of electrons for light elements in the periodic table:
+	% 6.5 cm = midway, 10 cm = 3/4 
+\end{itemize}
+\vspace{1.5mm}
+
+\begin{minipage}{3.75cm} \small
+\begin{itemize}
+\item[\ii] \CDAlert[red]{Lithium and Sodium} \appear{both have one electron on the valence states $2 \mathrm{s}$ and $3 \mathrm{s}$, respectively.} \appear{So, the bands are 'half full'.} \appear{They are assumed to be conductors.} \appear{And, in fact, they are \CDAlert[red]{conductors}}
+
+\item[\ii] \CDAlert[blue]{Beryllium and Magnesium} \appear{have two electrons in the states $2 \mathrm{s}$ and $3s$, respectively}. \appear{So, for them, the highest occupied band is 'full'.} \appear{It could be \CDAlert[blue]{assumed} that they are \CDAlert[blue]{insulators}}
+\end{itemize}
+\end{minipage}
+
+
+\xdef\loc{south east}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.25*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,width=10cm]{Figures_booklet/SOM_10_Bonding_figures/SOM_Atomic_Figure_14.png}}; %scale=\figscale. % 8cm max height
+\end{tikzpicture}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Band overlap}
+
+\begin{itemize}
+\item Relating atomic states $ \textrm{((}n, \ell, m_{\ell} \textrm{))}$ to bands in a solid can be complicated. \appear{Here, we treat the issue qualitatively, considering at first that there is no overlapping of different bands}
+
+\item The \CDAlert[red]{highest energy band}, that would be \Alert[red]{completely full at zero kelvins}\appear{, is defined as \CDAlert[red]{valence band}}
+	% 6.5 cm = midway, 10 cm = 3/4 
+
+\end{itemize}
+\vspace{2.5mm}
+
+\begin{minipage}{7.5cm}
+\begin{itemize}
+\item The \CDAlert[blue]{next} (higher) \Alert[blue]{allowed band is called} \CDAlert[blue]{conduction band}
+
+\item For lithium, as an example\appear{, the $2 \mathrm{s}$ band is a conduction band}
+\item For sodium\appear{, the $3 \mathrm{s}$ band is a conduction band}
+\end{itemize}
+\end{minipage}
+
+%% cropped image
+\xdef\loc{south east}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.25*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,width=6cm]{Figures_booklet/SOM_10_Bonding_figures/SOM_Bonding_Figure_30_cropped.png}}; %scale=\figscale. % 8cm max height
+\end{tikzpicture}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Band overlap}
+
+\begin{itemize}
+	\item The information above\appear{, however is still not sufficient to decide whether an element is an insulator or a conductor}
+
+\item One needs also knowledge about the \Alert[red]{actual energies} \appear{at the above-mentioned states}\appear{, or \CDAlert[red]{'energy bands'}}
+\end{itemize}
+
+% 6.5 cm = midway, 10 cm = 3/4 
+\vspace{2.5mm}
+\begin{minipage}{4.5cm}
+\begin{itemize}
+	\item Fig.~30, erroneously\appear{, assumes that there is an energy band gap between the filled $2 \mathrm{s}$ band} \appear{and the above $2 \mathrm{p}$ for Be} 
+	\item If Fig.~30 would be true, \appear{Be would be an insulator (no free electrons)}
+\end{itemize}
+\end{minipage}
+
+
+\xdef\loc{south east}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.25*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,width=9cm]{Figures_booklet/SOM_10_Bonding_figures/SOM_Bonding_Figure_30.png}}; %scale=\figscale. % 8cm max height
+\end{tikzpicture}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Band overlap}
+
+\begin{itemize}
+	\item Both \CDAlert[red]{Beryllium} and \CDAlert[red]{Magnesium}, however, \CDAlert[red]{are electrical conductors}
+
+\item The point is, that the \CDAlert[fuchsia]{energies of $2p$ (and $3 \mathrm{p}$)} band for beryllium (and magnesium) are \CDAlert[fuchsia]{overlapping with 2s (3s)} 
+
+\item Therefore, even the electrons in the full 2s band of beryllium \appear{(full 3s band of magnesium)} \appear{have access to}
+% 6.5 cm = midway, 10 cm = 3/4 
+\end{itemize}
+%\vspace{2.5mm}
+\begin{minipage}{7.1cm}
+\begin{itemize}
+	\item[]  $2 p$ levels (3p levels): 
+	\implies{ possibility to move around\appear{, and form a \\
+		      free electron quantum gas} } 
+	\implies{ and to enable \CDAlert[blue]{electrical conductivity} }
+\end{itemize}
+\end{minipage}
+
+
+\xdef\loc{south east}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.25*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,width=6.5cm]{Figures_booklet/SOM_10_Bonding_figures/SOM_Bonding_Figure_31.png}}; %scale=\figscale. % 8cm max height
+\end{tikzpicture}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Memorize Figure!}
+
+\seminormal
+\begin{itemize}
+	\item Figure 32 illustrates the difference between \Alert[red]{insulators, conductors and semiconductors}\appear{, first at $T=0 \mathrm{~K}$ (left)}\appear{, then at $\mathrm{T}>0 \mathrm{~K}$ (right).} \appear{Also enclosed are the Fermi–Dirac distributions at $T=0 \mathrm{~K}$} \appear{(practically a step function up to $E_{F}$)} \appear{and at $\mathrm{T}>0 \mathrm{~K}$ (smoother transition at $E_{F}$).} \appear{Material is a conductor}\appear{, if the band occupied by the highest-energy electrons is not full}\appear{, making it by definition a conduction band}
+
+\item Even at $T=0~\mathrm{K}$\appear{, the electrons are free to absorb energy from external field}
+\end{itemize}
+
+\xdef\loc{south}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.25*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,width=13cm]{Figures_booklet/SOM_10_Bonding_figures/SOM_Bonding_Figure_32.png}}; %scale=\figscale. % 8cm max height
+\end{tikzpicture}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{ Insulators}
+
+\begin{itemize}
+	\item If a solid has a completely filled valence band\appear{, and the gap between the valence band} \appear{and empty conduction band} \appear{is larger than about $2 \mathrm{~eV}$}\appear{, the solid is an insulator} 
+	\item The next-higher allowed energy band \appear{(conduction band)} \appear{is so high} \appear{that it cannot be reached by ordinary external fields}\appear{, and the electrons cannot occupy any states they were not occupying already} 
+	\implies{ no response to the external field }
+
+\item E.g. \CDAlert[blue]{ionic crystals are insulators} 
+\item The energy bands of $\mathrm{NaCl}$ arise from levels of the Na$^+$ and Cl$^-$ ions. \appear{Both ions have closed-shell configuration}\appear{, the highest occupied band is full, while the next band up is empty}
+
+\end{itemize}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Group 14}
+
+\semismall
+
+\begin{itemize}
+	 \item Carbon has two 2s and $2p$ electrons. \appear{In principle, the p-level is unfilled.} \appear{However,} %\appear{However, the $2 \mathrm{s}$ and $2 \mathrm{p}$ states hybridize} \appear{(into sp$^3$)} \appear{when carbon forms the covalent diamond structure (Figure)}
+\end{itemize}
+
+% 6.5 cm = midway, 10 cm = 3/4 
+%\vspace{2.5mm}
+\begin{minipage}{7.4cm}
+\begin{itemize}
+	\item[] the \CDAlert[fuchsia]{$2 \mathrm{s}$ and $2 \mathrm{p}$ states hybridize} \appear{(into sp$^3$)} \appear{when carbon forms the covalent diamond structure (Figure)}
+	
+	%\item In figure, the s- and p-levels split \appear{due to small atomic separation}\appear{, giving rise to hybridized sp$^3$ orbitals} \appear{and formation of covalent diamond structure.} %\appear{The energy of four space symmetric states} \appear{(one for $2 \mathrm{s}$, three for $2 \mathrm{p}$)} \appear{is lowered}\appear{, and the energy of four states is raised}
+
+\item The diamond lattice spacing is $0.154 \mathrm{~nm}$. \appear{The energy gap between filled valence band and empty conduction band is $\approx 5.4 \mathrm{~eV}$.} \appear{At temperature of $300 \mathrm{~K}$}\appear{, only few electrons can reach the conduction band }
+\implies{The valence band contains four electrons\\ 
+		(per atom)\appear{, while the conduction band\\ 
+		is empty}}
+\implies{\CDAlert[red]{Diamond is an insulator}}	
+
+
+\item For \CDAlert[blue]{Si and Ge}\appear{, the band gaps are $1.1 \mathrm{~eV}$ and $0.7 \mathrm{~eV}$, respectively}\appear{, making them \CDAlert[blue]{(intrinsic)} \CDAlert[blue]{semiconductors}}
+\end{itemize}
+\end{minipage}
+%\vspace{2.5mm}
+
+
+
+\xdef\loc{south east}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.25*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,width=6.3cm]{Figures_booklet/SOM_Tipler_Solid_state_physics_figures/SoM_Bonding_of_solids_Tipler_Band_hybridization_C_Si_Ge.png}}; %scale=\figscale. % 8cm max height
+\end{tikzpicture}
+
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Semiconductors}
+
+\begin{itemize}
+
+	\item If the \CDAlert[fuchsia]{gap} between the valence band and empty conduction band \CDAlert[fuchsia]{is small, the material is a semiconductor}
+
+\item Note that semiconductors are insulators at $T=0 \mathrm{~K}$\appear{, but some electrons are excited to the conduction band at normal (room) temperatures}\appear{, leaving holes in the valence band }
+
+\item However, the number of these electrons is small \appear{(compared to conductors)}
+
+\item The Fermi level $E_F$ is approximately in the middle of the gap
+
+\item These materials are \CDAlert[fuchsia]{intrinsic semiconductors}\appear{, intrinsic meaning} \appear{that they do not contain dopants} \appear{or impurities} \appear{(more information on semiconductors follows also in the later sections)}
+\end{itemize}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%
+%\begin{frame}
+%\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+%
+%\begin{itemize}
+%	\item More detailed presentation of sodium's energy bands
+%\end{itemize}
+%
+%%\xdef\loc{east}
+%%\begin{tikzpicture}[remember picture,overlay] % anchor=south
+%%    \node (A) [yshift=\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,height=7cm]{Figures_booklet/SOM_10_Bonding_figures/SOM_Bonding_Figure_1.png}}; %scale=\figscale. % 8cm max height
+%%\end{tikzpicture}
+%
+%\endofslide 
+%%\endofsection
+%\end{frame}
+%%%%%%%%%%%%%%%%
+
+
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Fermi level}
+%The Conductivity Gap
+
+\begin{itemize}
+	\item Electrons obey Fermi–Dirac statistics\appear{, and their occupation number is distributed to different energies according to:}
+\[
+ \mathbb{N} (E)_{F D}  \equal \frac{1}{e^{ \textrm{((}E-E_{F} \textrm{))} / k_{B} T}+1} \appear{< 1} \qquad \appear{\text{(exclusion principle)}}
+\]
+\end{itemize}
+\vspace{2.5mm}
+\begin{minipage}{7cm}
+\begin{itemize}
+%which is always less than 1 (exclusion principle). 
+	\item At higher $T$, some electrons are excited to higher energies 
+	
+	\item The distribution remains symmetric around $E_{F}$ \appear{and so the number of electrons appearing in the conduction band needs to be equal to the number of electrons disappearing from the valence band} 
+	\implies{ \Alert[fuchsia]{Fermi energy $E_F$ is in the middle \\
+			of the gap} }
+\end{itemize}
+\end{minipage}
+
+
+\xdef\loc{south east}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.25*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,width=6.5cm]{Figures_booklet/SOM_10_Bonding_figures/SOM_Bonding_Figure_33.png}}; %scale=\figscale. % 8cm max height
+\end{tikzpicture}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Band gap}
+
+\begin{itemize}
+	\item Note, here in figures\appear{, the density of states $D$ is assumed to be constant} \appear{(simplification by Harris)}
+	% 6.5 cm = midway, 10 cm = 3/4 
+\end{itemize}
+\vspace{2.5mm}
+
+\begin{minipage}{7.3cm}
+\begin{itemize}
+	%\item[] assumed to be a constant \appear{(presentation by Harris)} 
+	
+	\item Using $D=$~constant, we quickly obtain the number of electrons per energy range $d E$\appear{, that is $ \mathbb{N} (E)_{F D} \times D$} \appear{i.\,e. "the number of electrons per state times the number of states per $d E$}
+	
+	\item Once we know the number of electrons per energy range\appear{, we can calculate how the electron band structure is occupied by electrons}
+	\implies{ Once level occupation is known\appear{, one can\\ 
+		      predict whether the solid is an insulator}\appear{, \\
+		      a semiconductor}\appear{ or a metal} }	
+\end{itemize}
+\end{minipage}
+
+\xdef\loc{south east}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.25*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,height=7.3cm]{Figures_booklet/SOM_10_Bonding_figures/SOM_Bonding_Figure_34.png}}; %scale=\figscale. % 8cm max height
+\end{tikzpicture}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Band occupation}
+
+\begin{itemize}
+	\item Now we estimate the number of electrons which are excited over the gap \appear{($D=$~constant)}
+
+\item First we can calculate the number of \CDAlert[red]{electrons in the valence band} at $T=0$:
+\[
+N_{V}  \equal \appear{\nint_{E_{V, bottom}}^{E_{V, top}}}  \appear{\mathbb{N} (E)_{F D}} \appear{D} \appear{d E} \equal \appear{\nint_{E_{V, bottom}}^{E_{V, top}}} \appear{1 \cdot D} \appear{d E} \equal \appear{D \Delta E_{V}}
+\]
+
+\item Then we find the \CDAlert[blue]{number of excited electrons} at $T>0$:
+\[
+N_{\text {excited }}  \equal \appear{\nint_{E_{F}+\frac{1}{2} E_{g a p}}^{\infty}} \frac{1}{e^{ \textrm{((}E-E_{F} \textrm{))} / k_{B} T}+1} \appear{D} \appear{d E} \equal \appear{D k_{B} T} \appear{\ln  \textrm{[[}}\appear{1+e^{-E_{g a p} / 2 k_{B} T}} \appear{\textrm{]]}}
+\]
+\appear{recalling that} $\appear{\ln (1+\varepsilon)} \approx \appear{\varepsilon}\appear{\,, \text { if } \varepsilon \ll 1} $\appear{, we get}
+$$
+\Rightarrow \qquad \appear{N_{\text {excited}}} \approx \appear{D} \appear{k_{B}} \appear{T} \appear{e^{-E_{gap} / 2 k_{B} T}}
+$$
+\end{itemize}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Band occupation}
+
+\begin{itemize}
+	\item Thus, the ratio between electrons excited at $T>0$ \appear{and the total number in the valence band at at $T=0$}\appear{, will be:}
+\[
+\frac{N_{\text {excited }}}{N_{V}}  \equal  \frac{k_{B} T}{\Delta E_{V}} \appear{e^{-E_{g a p} / 2 k_{B} T}}
+\]
+\item The energy bands tend to be usually ${\sim}10$~eV high\appear{, and $k_{B} T \cong \frac{1}{40} \mathrm{~eV}$ et room $T$.} \appear{So the multiplicative factor in the equation above is roughly $10^{-3}$}
+
+\item But, in fact the \CDAlert[fuchsia]{exponential factor dominates}:
+\item[] \begin{itemize}
+	\item If the band gap is $5.4 \mathrm{~eV}$ (carbon)\appear{, then we obtain the exponential factor to be $10^{-42}$}
+\item If the band gap is $1.1 \mathrm{~eV}$ (silicon)\appear{, then we obtain the exponential factor to be $10^{-8}$}
+\end{itemize}
+
+\end{itemize}
+
+%\xdef\loc{east}
+%\begin{tikzpicture}[remember picture,overlay] % anchor=south
+%    \node (A) [yshift=\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,height=7cm]{Figures_booklet/SOM_10_Bonding_figures/SOM_Bonding_Figure_1.png}}; %scale=\figscale. % 8cm max height
+%\end{tikzpicture}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Example}
+
+\seminormal
+%Example 6.
+\begin{itemize}
+	\item \textbf{Q}: \appear{Near room-$T$}\appear{, an increase of $1 $~K decreases the conductivity of copper by $\approx 0.4 \%$.} \appear{For an unknown semiconductor}\appear{, $\Delta T=+1 K$ increases the conductivity by $4.8 \%$.} \appear{Estimate the semiconductor's band gap.}
+	
+\item \textbf{A}: \appear{Let's estimate the number of electrons at excited states both at $300 \mathrm{~K}$} \appear{and $301 \mathrm{~K}$}\appear{, and then set the ratio to $1.048$}
+\[ \semismall
+\frac{N_{\text{exc,i}}}{N_{V}} \equal \frac{k_{B} T_{i}}{\Delta E_{V}} \appear{e^{-E_{g a p} / 2 k_{B} T_{i}}} \appear{\,,} \qquad  \qquad  
+\frac{N_{\text{exc,f}}}{N_{V}}  \equal \frac{k_{B} T_{f}}{\Delta E_{V}} \appear{e^{-E_{g a p} / 2 k_{B} T_{f}}}
+\]
+
+$$ \semismall
+\begin{aligned}
+&\Rightarrow& \qquad \frac{ N_{\text{exc,f}} \bg[1.3]{/} \,N_{V}}{ N_{\text {exc,i}} /\, N_{V}}& \equal \frac{T_{f}}{T_{i}} \appear{e^{- \textrm{[[}}\frac{E_{gap}}{2 k_{B} T_{f}} \appear{\textrm{]]}+ \textrm{[[}}\frac{E_{g a p}}{2 k_{B} T_{i}}\appear{ \textrm{]]}}} \equal \appear{1.048} \\
+&\Rightarrow& \qquad \qquad \frac{E_{gap}}{2 k_{B}} \appear{\textrm{[[}}\frac{T_{f}-T_{i}}{T_{i} T_{f}} \appear{\textrm{]]}} & \equal \appear{\ln  \textrm{[[}}\appear{1.048} \frac{T_{i}}{T_{f}} \appear{\textrm{]]}} \\
+ &\Rightarrow& \qquad  \appear{E_{gap}}& \equal \appear{2 k_{B}} \appear{\textrm{[[}}\frac{T_{i} T_{f}}{T_{f}-T_{i}} \appear{\textrm{]]}} \appear{\ln  \textrm{[[}1.048} \frac{T_{i}}{T_{f}}\appear{ \textrm{]]}}  \equal \appear{0.68 ~eV} \qquad 
+\end{aligned}
+$$
+\appear{Obtained band gap $(\sim 0.7 \mathrm{eV}$) matches closely to the $E_{gap}$ of \CDAlert[blue]{germanium}}
+\end{itemize}
+
+%\endofslide 
+\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%

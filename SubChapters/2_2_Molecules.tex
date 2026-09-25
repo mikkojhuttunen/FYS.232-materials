@@ -1,0 +1,595 @@
+% !TEX root = ../aa_SoM_Chapters.tex
+
+%% HARRIS: Chapter 10
+
+% ö = \%c3\%b6
+% ä = \%C3\%A4
+
+\xdef\sectiontitle{\IIsectiontitle} %aiheuttama
+
+%%%%%%%%%%%%%%%
+\begin{frame}[label=2_2_a]%[label=2_0_TOC1]
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+
+\vspace{0.2cm}
+\begin{itemize}[leftmargin=0.5cm,itemsep=3mm]
+    \item[2.1] \hyperlink{2_1_a}{\IIaaSubsectiontitle}
+    \item[2.2] \hyperlink{2_2_a}{\CDAlert[red]{\IIaSubsectiontitle}}
+    \item[2.3] \hyperlink{2_3_a}{\IIbSubsectiontitle}	
+    \item[2.4] \hyperlink{2_4_a}{\IIcSubsectiontitle}	
+    \item[2.5] \hyperlink{2_5_a}{\IIdSubsectiontitle}
+    \item[2.6] \hyperlink{2_6_a}{\IIeSubsectiontitle}
+    \item[2.7] \hyperlink{2_7_a}{\IIfSubsectiontitle}
+    \item[2.8] \hyperlink{2_8_a}{\IIgSubsectiontitle}
+    \item[2.9] \hyperlink{2_9_a}{\IIhSubsectiontitle}
+    \item[2.10] \hyperlink{2_10_a}{\IIiSubsectiontitle}
+\end{itemize}
+
+\endofslide \end{frame}
+%%%%%%%%%%%%%%%
+
+\xdef\sectiontitle{\IIaSubsectiontitle} 
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+
+	% 6.5 cm = midway, 10 cm = 3/4 
+\vspace{1mm}
+\begin{minipage}{8cm}
+\begin{itemize}
+	\item Atoms form molecules when it is \Alert[fuchsia]{energetically favourable}\appear{, compared to separated atoms.} \appear{Forming the molecule, \CDAlert[red]{valence electrons} rearrange to minimize the energy}
+	\end{itemize}
+\end{minipage}
+
+\vspace{3mm}
+
+\begin{itemize}
+\item \CDAlert[red]{$\mathrm{H}_{2}{ }^{+}$ molecule}:
+\item[] \begin{itemize}
+	\item A simple example case is $\mathrm{H}_{2}{ }^{+}$ molecule\appear{, an ion consisting of two protons and one electron}
+	\item Total energy includes:
+\begin{itemize}
+	\item Electron energy \appear{(kinetic} \appear{+ negative Coulombic attractive potential energy)}
+\item \CDAlert[blue]{Coulombic} repulsion between two protons \appear{(i.\,e. \CDAlert[blue]{electrostatic} repulsion)}
+\end{itemize}
+
+\end{itemize}
+
+\end{itemize}
+
+\xdef\loc{north east}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,width=5.5cm]{Figures_booklet/SOM_10_Bonding_figures/SOM_Bonding_Figure_3.png}}; %scale=\figscale. % 8cm max height
+\end{tikzpicture}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+
+\begin{itemize}
+	\item \CDAlert[red]{Electron} in $\mathrm{H}_{2}{ }^{+}$ molecule:
+	\item[] \begin{itemize} \small
+	\item If the separation between the two protons would be large\appear{, then the electron would be with either of the protons}\appear{, having a \Alert[red]{Coulombic potential energy} of $-13.6~\mathrm{eV}$} 
+\item In the other extreme\appear{, if the protons 'fused'}\appear{, such as is the case in He atom}\appear{, then the Coulombic potential energy of the electron would be $-54.4~\mathrm{eV}$}
+\implies{We expect that the electron is at the lowest energy level\appear{, which depends on the proton separation}\appear{, decreasing with the separation}}
+\end{itemize}
+
+
+\item \CDAlert[blue]{Protons} in $\mathrm{H}_{2}{ }^{+}$ molecule:
+\item[] \begin{itemize} \small
+	\item The positive contribution \appear{(\Alert[blue]{repulsion})} \appear{to the total energy of the molecule increases as the separation decreases}\appear{, dramatically}\appear{, when the separation becomes very small}
+\item For far away protons\appear{, this contribution is negligible}
+\end{itemize}
+
+\item \CDAlert[fuchsia]{Total}
+\item[] \begin{itemize} \small
+	\item The molecules such as $\mathrm{H}_{2}{ }^{+}$ exist\appear{, thus, apparently there is a \CDAlert[fuchsia]{minimum potential energy} as a function of proton separation}
+\end{itemize}
+
+
+\end{itemize}
+
+%\xdef\loc{east}
+%\begin{tikzpicture}[remember picture,overlay] % anchor=south
+%    \node (A) [yshift=\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,height=7cm]{Figures_booklet/SOM_10_Bonding_figures/SOM_Bonding_Figure_1.png}}; %scale=\figscale. % 8cm max height
+%\end{tikzpicture}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+
+	% 6.5 cm = midway, 10 cm = 3/4 
+\begin{minipage}{8cm}
+\begin{itemize}[itemsep=5mm]
+	\item We know the \CDAlert[red]{potential energy} of an electron \appear{in the Coulombic field of two protons:}
+\[ 
+ U(\mathbf{r})  \equal \frac{1}{4 \pi \varepsilon_{0}} \appear{\LP} \frac{-e^{2}}{| \mathbf{r}-\Frac{1}{2} a \hat{\mathbf{x}} |}  \plus \frac{-e^{2}}{ | \mathbf{r}+\Frac{1}{2} a \hat{\mathbf{x}} |} \;\appear{\RP} 
+ \]
+\item Unfortunately, when this potential energy 
+\end{itemize}
+\end{minipage}
+%\vspace{-2.3mm}
+\begin{itemize}
+\item[] is plugged into the \CDAlert[blue]{Schrödinger's equation}\appear{, the equation cannot be  solved analytically}
+
+\item \CDAlert[red]{Numerical solution} reveals \appear{that the minimum potential energy for the electron} \appear{(as a function of the proton separation)} \appear{will be \CDAlert[red]{$-16.3 \mathrm{eV}$}}\appear{, and it is obtained \CDAlert[red]{at separation of $a_{\min }=0.11 \mathrm{~nm}$}}\appear{, which is only about \CDAlert[tunired]{twice the Bohr radius}}
+\end{itemize}
+
+\xdef\loc{north east}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,width=5.5cm]{Figures_booklet/SOM_10_Bonding_figures/SOM_Bonding_Figure_3.png}}; %scale=\figscale. % 8cm max height
+\end{tikzpicture}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+
+\begin{itemize}
+	\item There will be two 1s-orbital electrons \appear{with wave functions $\Psi_{1 s} \textrm{((}r_{1} \textrm{))}$} \appear{and $\Psi_{1 s} \textrm{((}r_{2} \textrm{))}$}
+
+\item When the protons are closer to each other\appear{, we need to take a \CDAlert[fuchsia]{superposition} of the two wave functions:}
+\end{itemize}
+
+% 6.5 cm = midway, 10 cm = 3/4 
+\begin{minipage}{6cm}
+\begin{itemize}
+	\item[] \appear{Schrödinger wave equation gives two types of solutions}\appear{, \CDAlert[red]{symmetric} \CDAlert[red]{(even)}:}
+\[ 
+ \Psi_{\text {symmetric}}  \equal \frac{1}{\sqrt{2}} \appear{\textrm{((} \Psi_{100} (r_{1} )}  \plus \appear{\Psi_{100} (r_{2} ) \textrm{))}} 
+ \]
+\item[] and \CDAlert[blue]{antisymmetric (odd)}:
+\[ 
+ \Psi_{\text {antisymmetric}}  \equal \frac{1}{\sqrt{2}} \appear{\textrm{((}\Psi_{100} (r_{1} )}  \minus \appear{\Psi_{100} (r_{2} ) \textrm{))}} 
+ \]
+\end{itemize}
+\end{minipage}
+
+\xdef\loc{south east}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.25*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,height=6cm]{Figures_booklet/SOM_10_Bonding_figures/SOM_Bonding_Figure_4.png}}; %scale=\figscale. % 8cm max height
+\end{tikzpicture}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+
+\begin{itemize}
+	\item The wave function associated with the \CDAlert[red]{ground state} of the molecule \CDAlert[red]{is symmetric}\appear{, contributing a majority of its probability/charge density in the region between the protons}
+
+\item The \CDAlert[tunired]{attraction which both}\\ 
+	\CDAlert[tunired]{protons share} with the inter-\\
+	vening electron cloud\appear{, is the root  \\
+	of the molecular bond's lower \\ energy}
+\end{itemize}
+
+\xdef\loc{south east}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.25*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,height=6cm]{Figures_booklet/SOM_10_Bonding_figures/SOM_Bonding_Figure_4.png}}; %scale=\figscale. % 8cm max height
+\end{tikzpicture}
+
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+
+\begin{itemize}
+	\item The construction of the $\mathrm{H}_{2}{ }^{+}$-ion \appear{can be extended by adding another electron}\appear{, thereby \CDAlert[red]{creating a neutral $\mathrm{H}_{2}$ molecule} }
+	
+	\item Then, there would be two electrons\appear{, and in the ground state}\appear{, both of them would be in the same lowest energy spatial state} 
+	\implies{ \appear{\CDAlert[red]{This minimization of energy by sharing of a pair of valence} \CDAlert[red]{electrons of opposite spins}} \appear{in known as \CDAlert[red]{covalent bond}} }
+
+\item The electron pair's spatial state is centrally located \appear{and attracts both positive ions} \appear{(here protons).} \appear{Both atoms (protons) in $\mathrm{H}_{2}$} \appear{'lay claim' on both electrons}\appear{, creating a very stable structure}
+
+\item \appear{The \CDAlert[blue]{same happens with valence $-1$ elements}}\appear{, similar bonds with two shared electrons are formed in $\mathrm{F}_{2}$}\appear{, $\mathrm{Cl}_{2}$}\appear{, $\mathrm{Br}_{2}$} \appear{and $\mathrm{I}_{2}$ molecules}
+
+\item In $\mathrm{O}_{2}$\appear{, the atoms \CDAlert[tunired]{share 4 electrons}}\appear{, in $\mathrm{N}_{2}$ 6 electrons are shared}
+\end{itemize}
+
+%\xdef\loc{east}
+%\begin{tikzpicture}[remember picture,overlay] % anchor=south
+%    \node (A) [yshift=\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,height=7cm]{Figures_booklet/SOM_10_Bonding_figures/SOM_Bonding_Figure_1.png}}; %scale=\figscale. % 8cm max height
+%\end{tikzpicture}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+
+\begin{itemize}[itemsep=1.7mm] \semismall
+	\item Certain atoms form noble gas like structures \appear{by sharing pairs of valence electrons.} \appear{However, this is slightly simplified 
+	picture}\appear{, since the wave functions look different from those of noble gases}
+	 % 6.5 cm = midway, 10 cm = 3/4 
+\end{itemize}
+
+\begin{minipage}{5.5cm} 
+\begin{itemize}[itemsep=1.7mm] \semismall
+
+\item Also, the other, '\CDAlert[fuchsia]{non-bonding} electrons' may also be shared
+
+\item Recall the wavefunctions $\Psi$ \appear{of the $\mathrm{H}_{2}{ }^{+}$-ion described above:} 
+
+\item[] \begin{itemize} \small
+	\item The \CDAlert[red]{even} one has lower energy\appear{, since both protons are close to bulk of the electron cloud in the center.} \appear{It is known as \CDAlert[red]{sigma bonding orbital}}\appear{, $\sigma 1 s$}
+	 
+	\item The \CDAlert[blue]{odd} one is known as \Alert[blue]{sigma antibonding orbital}\appear{, $\sigma^{*} 1 s$.} \appear{Its energy is higher} \appear{because the wave function node keeps the electron away from the center region}
+\end{itemize}
+\end{itemize}
+\end{minipage}
+
+\xdef\loc{south east}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.25*\figXshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,height=6.7cm]{Figures_booklet/SOM_10_Bonding_figures/SOM_Bonding_Figure_4.png}}; %scale=\figscale. % 8cm max height
+\end{tikzpicture}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%
+%%\begin{frame}
+%%\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+%%
+%%\begin{itemize}
+%%	\item Certain atoms form noble gas like structures by sharing pairs of valence electrons. However, this is slightly simplified 
+%%	picture, since the wave functions look different from those of noble gases.
+%%	 % 6.5 cm = midway, 10 cm = 3/4 
+%%\item[] \begin{minipage}{6.2cm} 
+%% \item Wave functions look different from those of noble gases. Also, the other, 'nonbonding electrons' may also be shared.
+%%
+%%\item The odd one is known as \Alert[blue]{sigma antibonding orbital}, $\sigma^{*} 1 s$. Its energy is higher because the wave function node keeps the electron away from the center region
+%%\end{minipage}
+%%\vspace{3mm}
+%%\end{itemize}
+%%
+%%\xdef\loc{south east}
+%%\begin{tikzpicture}[remember picture,overlay] % anchor=south
+%%    \node (A) [yshift=-0.25*\figXshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,height=6.7cm]{Figures_booklet/SOM_10_Bonding_figures/SOM_Bonding_Figure_4.png}}; %scale=\figscale. % 8cm max height
+%%\end{tikzpicture}
+%%
+%%\endofslide 
+%%%\endofsection
+%%\end{frame}
+%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+
+
+% 6.5 cm = midway, 10 cm = 3/4 
+\begin{minipage}{9.5cm}
+\begin{itemize}[itemsep=2.7mm]
+	\item Figure 5 compares the orbitals of the atomic states with both $1 s$ bonding \appear{and $1 s$ anti-bonding states}
+
+\item Here the $\pm$-signs do not indicate charge\appear{, but the sign of the wave function} \appear{(which will disappear if one plots probability)}
+
+\item \appear{The \CDAlert[red]{even $\sigma 1s$} results} \appear{from $\Psi$s combining \Alert[red]{in-phase}}
+
+\item \appear{In \CDAlert[blue]{odd $\sigma^{*} 1s$}} \appear{the $\Psi$s are \Alert[blue]{half} \Alert[blue]{a cycle out of phase}}
+
+\item The energy diagram of the states show both cases\appear{, when the protons are far away from each other} \appear{and when they are close by.} \appear{Behaviour is same as for the $N$ square wells closing up} 
+\end{itemize}
+\end{minipage}
+
+\vspace{3mm}
+
+\begin{itemize}[itemsep=2.7mm]
+\item \CDAlert[red]{Energies spread out with decreasing atomic separation}
+\end{itemize}
+
+\xdef\loc{north east}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=0.5*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,width=4.0cm]{Figures_booklet/SOM_10_Bonding_figures/SOM_Bonding_Figure_5.png}}; %scale=\figscale. % 8cm max height
+\end{tikzpicture}
+
+\xdef\loc{south east}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-1.25*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,width=4.0cm]{Figures_booklet/SOM_10_Bonding_figures/SOM_Bonding_Figure_6.png}}; %scale=\figscale. % 8cm max height
+\end{tikzpicture}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+
+\begin{itemize}
+	\item It is elucidating to plot the energy levels\appear{, along with spins}\appear{, for the molecules discussed above:} \appear{$\mathrm{H}_{2}{ }^{+}$}\appear{, $\mathrm{H}_{2}$}\appear{, $\mathrm{He}_{2}{ }^{+}$} \appear{and $\mathrm{He}_{2}$} \appear{(which actually does not exist, since He does not form a molecule)}
+
+\item The anti-bonding orbital has its energy higher \appear{than the atomic $1 s$ level}
+
+\item $\mathrm{He}_{2}{ }^{+}$-ion can form a bound state\appear{, since the two electrons in the $\sigma 1 s$ state} \appear{and one on the $\sigma^{*} 1s$ state} \appear{give a \Alert[fuchsia]{lower total energy than three electrons in atomic $1s$ states (isolated He and He$^+$)}}
+\end{itemize}
+
+\xdef\loc{south}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.25*\figYshift,xshift=0*\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,width=11cm]{Figures_booklet/SOM_10_Bonding_figures/SOM_Bonding_Figure_7.png}}; %scale=\figscale. % 8cm max height
+\end{tikzpicture}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+
+	% 6.5 cm = midway, 10 cm = 3/4 
+\begin{minipage}{8.5cm}
+\begin{itemize}[itemsep=1.8mm]
+	\item Spherical atomic $2 s$ states give similar behaviour \appear{as the $1 s$ states} 
+	
+	\item \CDAlert[red]{$2p$ states} result in \CDAlert[red]{more complex} behaviour%, as we will see next
+
+\item The three atomic $2 p$ states\appear{, perpendicular with each other}\appear{, are shown in Fig.~8} 
+	\appear{\xdef\loc{north east}%
+\begin{tikzpicture}[remember picture,overlay]% anchor=south
+    \node (A) [yshift=\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,width=5cm]{Figures_booklet/SOM_10_Bonding_figures/SOM_Bonding_Figure_8.png}};%scale=\figscale. % 8cm max height
+\end{tikzpicture}%
+}
+
+\item The angular dependencies of the three \Alert[tunired]{equal-energy} spatial states of hydrogen are:
+\[ 
+ \psi_{2,1,0} \propto \appear{\cos \theta} \qquad \appear{and} \qquad \appear{\psi_{2,1, \pm 1}} \propto \appear{\sin \theta} \,\appear{e^{\pm i \phi}} 
+ \]
+ \end{itemize}
+\end{minipage}
+%\vspace{3mm}
+
+\begin{itemize}[itemsep=1.8mm]
+\item Which may be combined to \CDAlert[red]{three equivalent states}:
+\[
+\begin{aligned}
+\appear{\psi_{2 p_{z}} &=\psi_{2,1,0}}  &\propto& \appear{\,\cos \theta}  \\
+ \appear{\psi_{2 p_{x}}} & \equal  \appear{\psi_{2,1,+1}}  \plus \appear{\psi_{2,1,-1}}  &\propto& \,\appear{\sin \theta \cos \phi} \\ 
+ \appear{\psi_{2 p_{y}}&=}\appear{\psi_{2,1,+1}}  \minus \appear{\psi_{2,1,-1}} &\propto& \,\appear{\sin \theta \sin \phi}
+\end{aligned}
+\]
+
+\end{itemize}
+
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+
+% 6.5 cm = midway, 10 cm = 3/4 
+\begin{minipage}{9.5cm}
+	\begin{itemize}[itemsep=3mm]
+	\item For two identical atoms \appear{there are six different $2 p$ spatial states}
+
+\item The states \CDAlert[blue]{$2 p_{x}$}\appear{, having the charge density largest on the molecular axis}\appear{, are \CDAlert[blue]{known as $\sigma$-bonds}}
+
+\item There are both bonding $\sigma 2 p_{x}$ \appear{and antibonding $\sigma^{*} 2 p_{x}$ states}
+
+\item The two other coordinates have also their $2 p_{y}$ and $2 p_{z}$  states. \appear{These are known as \CDAlert[red]{$\pi$-bonds}} 
+
+\item These states are: \appear{$\pi 2 p_{y}$}\appear{, $\pi 2 p_{z}$}\appear{, $\pi^{*} 2 p_{y}$} \appear{and $\pi^{*} 2 p_{z}$}
+\end{itemize}
+\end{minipage}
+\vspace{3mm}
+
+\xdef\loc{east}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=0*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,height=8.5cm]{Figures_booklet/SOM_10_Bonding_figures/SOM_Bonding_Figure_9.png}}; %scale=\figscale. % 8cm max height
+\end{tikzpicture}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+
+\begin{itemize}
+	\item Interestingly, when \CDAlert[blue]{homonuclear} \CDAlert[tuniblue]{diatomic} molecules form via this kind of covalent bonding\appear{, the energy levels of $\sigma$ and $\pi$ states are \CDAlert[fuchsia]{not necessarily} \Alert[fuchsia]{in the same order in energy scale for different molecules}}
+\end{itemize}
+% 6.5 cm = midway, 10 cm = 3/4 
+\begin{minipage}{6.25cm}
+\begin{itemize}
+	\item E.\;g., for $\mathrm{N}_{2}, \mathrm{O}_{2}$ and $\mathrm{F}_{2}$:
+	\appear{\xdef\loc{south east}%
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.25*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,width=7.5cm]{Figures_booklet/SOM_10_Bonding_figures/SOM_Bonding_Figure_10.png}};%scale=\figscale. % 8cm max height
+\end{tikzpicture}}%
+
+\begin{itemize}[itemsep=3.5mm]
+\item $1 s$ electrons are confined to their respective atoms
+
+\item The \CDAlert[fuchsia]{order of levels vary}\appear{, i.\,e. \CDAlert[blue]{$\sigma 2 p$} is higher than \CDAlert[red]{$\pi 2 p$} for $\mathrm{N}_{2}$}\appear{, but lower for $\mathrm{O}_{2}$ and $\mathrm{F}_{2}$}
+
+\item The two $\pi^{*} 2 p$ atoms of $\mathrm{O}_{2}$ occupy different states \appear{($y$ vs. $z$)}
+\end{itemize}
+\end{itemize}
+\end{minipage}
+\vspace{3mm}
+
+
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+
+\begin{itemize}
+	\item If the elements of a \CDAlert[red]{diatomic molecule} are different\appear{, then the electrons are not shared equally.} \appear{This results in \CDAlert[red]{polar covalent bonds}}
+\end{itemize}
+
+% 6.5 cm = midway, 10 cm = 3/4 
+\begin{minipage}{8.5cm}
+\begin{itemize}
+	\item E.g.~in $\mathrm{HF}$\appear{, the hydrogen's $\mathrm{n}=1$} \appear{and fluorine's $\mathrm{n}=2$ electrons} \appear{are shared asymmetrically}
+
+\item The asymmetry is very pronounced in the case where one atom is one electron short\appear{, and one atom one too many} \appear{(\CDAlert[blue]{of valencies $+1$ and $-1$})}
+
+\implies{ atoms \CDAlert[tuniblue]{do not share electrons}\appear{, instead the one \\
+		atom with a lone electron will 'give' one electron \\ to the other atom} } 
+\implies{ This results in an \CDAlert[blue]{ionic bond} }
+%In practice most molecular bonds have their characteristics between these two extremes, between purely covalent and purely ionic bond
+\end{itemize}
+\end{minipage}
+
+\xdef\loc{east}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,width=4.8cm]{Figures_booklet/SOM_10_Bonding_figures/SOM_Bonding_Figure_11.png}}; %scale=\figscale. % 8cm max height
+\end{tikzpicture}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+
+\begin{itemize}[itemsep=6.5mm]
+	\item So, two different kind of bonds \appear{(or categories/types of bonds)} \appear{can be formed:} \appear{\CDAlert[blue]{ionic bonds}}  \appear{and  \CDAlert[red]{polar covalent bonds}}\\[6.5mm]
+\end{itemize}
+
+% 6.5 cm = midway, 10 cm = 3/4 
+\begin{minipage}{8.5cm}
+\begin{itemize}[itemsep=6.5mm]
+
+	\item In practice most molecular bonds have their characteristics \Alert[fuchsia]{between these two extremes}\appear{, between purely covalent and purely ionic bond}
+	
+	\item In other words, \CDAlert[fuchsia]{binary division} between covalent and ionic bonds \CDAlert[fuchsia]{is simplistic}\appear{, it is a model approximating real bonding of molecules}
+\end{itemize}
+\end{minipage}
+
+\xdef\loc{east}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,width=4.8cm]{Figures_booklet/SOM_10_Bonding_figures/SOM_Bonding_Figure_11.png}}; %scale=\figscale. % 8cm max height
+\end{tikzpicture}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+
+% 6.5 cm = midway, 10 cm = 3/4 
+\begin{minipage}{9.5cm}
+	\begin{itemize}[itemsep=1.7mm]
+	\item \CDAlert[fuchsia]{Carbon} has four $\mathrm{n}=2$ electrons\appear{, when surrounded by electron-hungry atoms}\appear{, carbon shares its four electrons} 
+	
+	\item Spatially this leads to a \Alert[fuchsia]{tetrahedral configuration} of the orbitals\appear{, four lobes in four directions}%
+	\appear{\xdef\loc{north east}%
+\begin{tikzpicture}[remember picture,overlay]% anchor=south
+    \node (A) [yshift=0.5*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,width=4.1cm]{Figures_booklet/SOM_10_Bonding_figures/SOM_Bonding_Figure_12.png}};%scale=\figscale. % 8cm max height
+\end{tikzpicture}}
+
+\item These four states are known as \CDAlert[fuchsia]{hybrid $s p^{3}$ states} 
+
+\item One good example is \CDAlert[fuchsia]{diamond}%
+\appear{\xdef\loc{south east}%
+\begin{tikzpicture}[remember picture,overlay]% anchor=south
+    \node (A) [yshift=-0.25*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,width=4.1cm]{Figures_booklet/SOM_10_Bonding_figures/SOM_Bonding_Figure_13.png}};%scale=\figscale. % 8cm max height
+\end{tikzpicture}%
+}\appear{, which has a very \Alert[fuchsia]{strong crystalline structure}}\\[-1mm]
+\[
+{\small%
+\begin{aligned}
+\psi_{I} & \equal \appear{\psi_{2 s} } \minus  \appear{\psi_{2 p_{z}}} \\
+\appear{\psi_{II}} &  \equal \appear{\psi_{2 s}}  \plus \frac{1}{3} \appear{\psi_{2 p_{z}}}  \minus \frac{\sqrt{8}}{3} \appear{\psi_{2 p_{x}}} \\
+\appear{\psi_{\mathrm{III}} } & \equal \appear{\psi_{2 s}+\frac{1}{3} \psi_{2 p_{z}}} \appear{+\frac{\sqrt{2}}{3} \psi_{2 p_{x}}} \appear{-\frac{\sqrt{6}}{3} \psi_{2 p_{y}}} \\
+\appear{\psi_{\mathrm{IV}}} & \equal  \appear{\psi_{2 s}}  \plus \frac{1}{3} \appear{\psi_{2 p_{z}}} \plus \frac{\sqrt{2}}{3} \appear{\psi_{2 p_{x}}} \plus \frac{\sqrt{6}}{3} \appear{\psi_{2 p_{y}}}
+\end{aligned}
+}
+\]
+\end{itemize}
+\end{minipage}
+%\vspace{3mm}
+
+
+
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+
+\begin{itemize}[itemsep=3.5mm]
+	\item \CDAlert[red]{Elements near carbon in the periodic system tend to form} \CDAlert[red]{similar structures} \appear{(e.g. silicon (Si)}\appear{, germanium (Ge)}\appear{, Si$_{1-x}$Ge$_{x}$ alloys}\appear{,...)}
+
+\item For instance, nitrogen has five $\mathrm{n}=2$ electrons. \appear{In ammonia molecule $ \textrm{((}\mathrm{NH}_{3} \textrm{))}$}%
+\appear{\xdef\loc{south east}%
+\begin{tikzpicture}[remember picture,overlay]% anchor=south
+    \node (A) [yshift=-0.25*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,width=7cm]{Figures_booklet/SOM_10_Bonding_figures/SOM_Bonding_Figure_15.png}};%scale=\figscale. % 8cm max height
+\end{tikzpicture}}%
+\appear{ one of these five electrons takes the place of a 'missing' hydrogen electron.} \appear{With one proton also missing, the lobe has a negative charge} 
+\implies{ This gives ammonia an \CDAlert[fuchsia]{electric dipole moment} \appear{which accounts for many \\ of its properties as a \CDAlert[fuchsia]{solvent} }}
+\end{itemize}
+
+\vspace{2.5mm}
+% 6.5 cm = midway, 10 cm = 3/4 
+\begin{minipage}{6.7cm}
+\begin{itemize}[itemsep=3.5mm]
+	\item In \CDAlert[blue]{water}\appear{, two extra $\mathrm{n}=2$ electrons of oxygen replace hydrogen's electrons}
+	\vspace{-3.5mm}
+	
+	\implies{ Two lobes are formed creating \\
+			also an \CDAlert[blue]{electric dipole moment} }
+\end{itemize}
+\end{minipage}
+
+
+
+%\endofslide 
+\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+

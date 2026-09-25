@@ -1,0 +1,580 @@
+% !TEX root = ../bb_AiRa_Kappaleet.tex
+
+% ö = \%c3\%b6
+% ä = \%C3\%A4
+
+\xdef\sectiontitle{\Isectiontitle} %aiheuttama
+\TOCrefs
+
+%%%%%%%%%%%%%%%
+\begin{frame}[label=1_7_a]%[label=1_7_TOC1]
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\label{\TOCname}
+
+\vspace{-0.5cm}
+
+\begin{itemize}[leftmargin=0.5cm,itemsep=2mm]
+    \item[1.1]<1-> \hyperlink{1_1_a}{\IaSubsectiontitle}
+    \item[1.2]<1-> \hyperlink{1_2_a}{\IbSubsectiontitle}	
+    \item[1.3]<1-> \hyperlink{1_3_a}{\IcSubsectiontitle}	
+    \item[1.4]<1-> \hyperlink{1_4_a}{\IdSubsectiontitle}
+    \item[1.5]<1-> \hyperlink{1_5_a}{\IeSubsectiontitle}
+    \item[1.6]<1-> \hyperlink{1_6_a}{\IfSubsectiontitle}
+    \item[1.7]<1-> \hyperlink{1_7_a}{\CDAlert[blue]{\IgSubsectiontitle}}
+\end{itemize}
+
+\vspace{-1cm}
+\begin{itemize}[leftmargin=8.5cm,itemsep=2mm]
+    \item[1.8]<1-> \hyperlink{1_8_a}{\IhSubsectiontitle}
+	\item[1.9]<1-> \hyperlink{1_9_a}{\IiSubsectiontitle}
+	\item[1.10]<1-> \hyperlink{1_10_a}{\IjSubsectiontitle}
+	\item[1.11]<1-> \hyperlink{1_11_a}{\IkSubsectiontitle}
+\end{itemize}
+
+%\endofslide 
+\end{frame}
+%%%%%%%%%%%%%%%
+
+\xdef\sectiontitle{\IgSubsectiontitle}
+
+%%%%%%%%%%%%%%%
+\begin{frame}%[label=1_7_a]
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\appear{}
+
+\begin{itemize}[itemsep=3.5mm]
+	\item Tähän asti on paneuduttu hiukkasjakaumiin jotka \CDAlert[red]{noudattavat kvanttistatistiikkaa} 
+	
+	\item Seuraavaksi\appear{ muodostetaan näistä hiukkasista \CDAlert[blue]{3-ulotteinen systeemi}}\appear{, joka on johonkin alueeseen/tilavuuteen rajoitettu}\appear{, ja missä hiukkaset voivat \CDAlert[blue]{liikkua vapaasti}}
+
+\item Koska \CDAlert[fuchsia]{tilavuus on rajoitettu}\appear{, hiukkasten \CDAlert[fuchsia]{kvanttijakaumat ovat diskreettejä}}
+
+\item Näissä systeemeissä hiukkaskonsentraatio $(N / V)$ \appear{on tarpeeksi korkea että kvanttimekaaninen \CDAlert[red]{erottamattomuus} täytyy ottaa huomioon}
+\end{itemize}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Hiukkaset äärettömän syvässä kvanttikaivossa}
+\appear{}
+\begin{itemize}
+	\item Ongelman dimensionaalisuudesta riippuen\appear{, rajoitettu tilavuus voi olla joko} 
+	\item[] \begin{itemize}[itemsep=6mm]
+	 \item Yksiulotteinen%
+\appear{\xdef\loc{south}%
+\begin{tikzpicture}[remember picture,overlay]% anchor=south
+    \node (A) [yshift=-0.2*\figYshift,xshift=0*\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=9,width=14cm]{Figures_booklet/SOM_9_Statistical_mechanics_figures/Tikz_SOM_Statistical_figures.pdf}};%scale=\figscale. % 8cm max height
+\end{tikzpicture}%
+}% 
+{\small \appear{ (kvanttikaivot}\appear{, \CDAlert[fuchsia]{nanolangat}}\appear{, \CDAlert[fuchsia]{hiilinanoputket})} }
+	 \item Kaksiulotteinen {\small\appear{(grafeeni}\appear{, ja muut \CDAlert[blue]{2D-materiaalit}}\appear{, esim.~ MoS$_2$}\appear{, hBN, ...)} }
+	 \item Kolmiulotteinen  {\small \appear{(\CDAlert[red]{metallien johtavuuselektronit})} }
+\end{itemize}
+
+\end{itemize}
+
+
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\appear{}
+\begin{itemize}
+	\item Kolmenlaisten hiukkasten \appear{((klassisten}\appear{/erotettavien}\appear{, fermionien} \appear{ja bosonien))} \appear{kvalitatiivinen kuvaus kvanttikaivossa}
+\end{itemize}
+
+\xdef\loc{south}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.5*\figYshift,xshift=0, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,width=11cm]{Figures_booklet/SOM_9_Statistical_mechanics_figures/SOM_Figure_14.png}}; %scale=\figscale. % 8cm max hei
+\end{tikzpicture}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Tilatiheys}
+
+\begin{itemize}
+	\item Lasketaan  \CDAlert[fuchsia]{tilatiheus $D(E)$} kolmiulotteiselle värähtelijälle
+	
+	\item Energiatasot ovat muotoa
+\[
+E_{n_{x}, n_{y}, n_{z}}  \equal  \appear{\textrm{((}n_{x}^{2}} \appear{+n_{y}^{2}} \appear{+n_{z}^{2} \textrm{))}} \frac{\pi^{2} \hbar^{2}}{2 m L^{2}}
+\]
+\appear{ja käyttämällä}
+\[
+ n  \equiv \appear{\sqrt{n_{x}^{2}+n_{y}^{2}+n_{z}^{2}}}
+\]
+\item[] saamme kuvattua \CDAlert[red]{värähtelijän energian} kvanttiluvun $n$ funktiona \appear{[[$E(n)$]]}\appear{, ja päinvastoin  \CDAlert[blue]{kvanttiluvun} \CDAlert[blue]{energian funktiona $n=n(E)$}:}
+\[
+E  \equal \frac{\pi^{2} \hbar^{2}}{2 m L^{2}} \appear{n^{2}} \qquad \appear{\Rightarrow} \qquad \appear{n}  \equal \appear{\bigg( \Frac{2 m L^{2} E}{\pi^{2} \hbar^{2}}  \bigg)^2}  \equal  \appear{n(E)}
+\]
+\end{itemize}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Tilatiheys}
+
+\appear{}
+% 6.5 cm = midway, 10 cm = 3/4 
+\begin{minipage}{8cm}
+	\begin{itemize}[itemsep=1.8mm] \small
+	\item Kuvan pallon 1/8-osa on $ \textrm{((}n_{x}, n_{y}, n_{z} \textrm{))}$-avaruudessa\appear{, ja kvanttiluvut $n_{x}, n_{y}$ ja $n_{z}$ voivat olla \Alert[red]{vain kokonaislukuja}} 
+	\item Jos energia kasvaa määrällä $d E$ niin pallon säde kasvaa määrällä $d n$\appear{, mutta \Alert[blue]{tilojen lukumäärä kasvaa verrannollisesti kerroksen kasvaneeseen tilavuuteen}} \appear{(=\; kerroksen pinta-ala $\times$ paksuus $=4 \pi r^{2} d n$)}%$=4 \pi r^{2} d r$
+
+\item Kvanttiluvut ovat positiivisia\appear{, joten ongelman \CDAlert[tuniblue]{symmetrian takia} meidän tarvitsee tarkastella vain 1/8 osaa pallon kerroksesta}\appear{, jolloin \Alert[blue]{differentiaalinen tilojen lukumäärä energiavälillä $d E$}} \appear{on yhtäsuuri kuin} $\frac{1}{8} \appear{4 \pi n^{2} d n}$
+
+\item Eli \CDAlert[fuchsia]{tilatiheys} on
+\[
+\begin{aligned} 
+D(E)  &\equal  \frac{\text { differentiaalinen tilojen lukumäärä energiavälillä } d E}{d E}  \\
+	&\equal \frac{1}{8} \appear{4 \pi n^{2}} \frac{d n}{d E}
+\end{aligned}
+\]
+\end{itemize}
+\end{minipage}
+%\vspace{3mm}
+
+\xdef\loc{east}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=0cm,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,width=5.5cm]{Figures_booklet/SOM_9_Statistical_mechanics_figures/SOM_Figure_15.png}}; %scale=\figscale. % 8cm max hei
+\end{tikzpicture}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Tilatiheys}
+
+\appear{}
+\begin{itemize}
+	\item[]  \vspace{-6mm}
+	\[
+\Rightarrow \qquad \qquad \appear{D(E)=} \frac{1}{8} \appear{4 \pi n^{2}} \frac{d n}{d E} \appear{=\ldots=} \frac{m^{3 / 2} L^{3}}{\pi^{2} \hbar^{3} \sqrt{2}} \appear{\sqrt{E}} \qquad \qquad
+\]
+\item Usein on käytännöllisempää käyttää kaivon tilavuutta \appear{$\textrm{((}L^{3}=V \textrm{))}$} 
+%\Alert[red]{useat mahdolliset spin-tilat}\appear{$(=2 s+1}  \equal \appear{2~\textrm{tai}~1)}$\appear{, jolloin saadaan:}
+\item Täytyy myös muistaa että kaksi spin-1/2 hiukkasta voi olla samalla tilalla. Tällöin lukumäärä tulee kertoa vielä \appear{$(2 s+1)$:llä}\appear{, jolloin saadaan:}\\[-2mm]
+\[
+D(E) \equal \frac{(2 s+1) m^{3 / 2} V}{\pi^{2} \hbar^{3} \sqrt{2}} \appear{\sqrt{E}}
+\]
+\end{itemize}
+
+\xdef\loc{south}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.15*\figYshift,xshift=0*\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=5,width=11.5cm]{Figures_booklet/SOM_9_Statistical_mechanics_figures/Tikz_SOM_Statistical_figures.pdf}}; 
+\end{tikzpicture}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Keskimääräinen energia}
+\appear{}
+\begin{itemize}[itemsep=1.7mm]
+	\item Olemme kiinnostuneita hiukkasten keskimääräisestä energiasta:\\
+\item[] \begin{itemize} \small
+	 \item Voisimme yrittää laskea \CDAlert[red]{tarkasti} keskimääräisen energian 
+	 \item Yleisesti ottaen tämä on \CDAlert[tunired]{hankala lasku}, koska esim.~parametrit \CDAlert[blue]{$B$ ja $T$ riippuvat systeemistä}\appear{, systeemit ovat usein monimutkaisia} \appear{ja \CDAlert[blue]{$D(E)$ estää $B$:n ja $<E(T)>\,$ laskemisen suljetussa muodossa} kvanttikaasun tapauksessa}
+
+\end{itemize}
+
+\item Mutta ainakin keskimääräiselle energialla voidaan laskea \CDAlert[red]{likiarvo} \appear{hiukkaslukumäärätiheyden $N / V$ funktiona (Harjoituksena):}
+\[
+\overline{E}  \equal \frac{3}{2} \appear{k_{B} T} \bg[2.8]{\text{\bigsymbolsfont[}}\! \appear{1 \mp} \frac{\pi^{3} \hbar^{3} \sqrt{2}}{ \appear{(2 s+1)} \appear{(2 \pi m k_{B} T )^{3/2}}  } \bg[2.4]{\text{\bigsymbolsfont(}} \frac{N}{V} \bg[2.4]{\text{\bigsymbolsfont)}} \appear{+\ldots} \bg[2.8]{\text{\bigsymbolsfont]}}\!\!
+\]
+% classical term = internal energy of an ideal gas
+% quantum term = something that reflects the quantum indistinguishability
+% \pm , - = bosons, + = fermions
+\item[] Eli keskimääräinen energia riippuu sekä lämpötilasta  \appear{että hiukkaslukumäärätiheydestä}
+\item Suuremmalla tiheydellä $N/V$\appear{, energia kasvaa fermioneilla $(+)$}\appear{, ja pienenee bosoneilla $(-)$}
+\end{itemize}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Keskimääräinen energia ja kvanttitermi}
+\appear{}
+\begin{itemize} \seminormal
+	\item Klassisten hiukkasten käyttäytyminen \appear{$\leftrightarrow$} \appear{\CDAlert[blue]{I termi hallitsee}}
+\appear{$\leftrightarrow$} \appear{kun hiukkasten de Broglie-aallonpituus on pieni} \appear{ja hiukkasten välinen etäisyys on suuri}\appear{, ts.~N/V on pieni!}
+
+\item Aallonpituuden suhteen 
+\[
+\lambda  \equal \frac{h}{p}  \equal \frac{h}{m v}  \equal \frac{h}{m \sqrt{3 k_{B} T / m}} \propto \frac{h}{\sqrt{m k_{B} T}} \qquad \appear{\Rightarrow} \qquad \frac{1}{T^{3 / 2}} \propto \appear{\lambda^{3}}
+\]
+\item Hiukkasten välisen etäisyyden suhteen:
+\[
+\frac{d^{3}}{1} \propto \frac{V}{N} \qquad \appear{\Rightarrow} \qquad \appear{d} \propto \appear{\bigg(} \frac{V}{N} \appear{\bigg)^{1 / 3}}
+\]
+
+\item Meillä on \CDAlert[red]{kvanttitermi} joka on muotoa
+\[
+\text {Kvanttitermi}  \equiv \frac{\pi^{3} \hbar^{3} \sqrt{2}}{(2 s+1) \textrm{((}2 \pi m k_{B} T \textrm{))}^{\Frac{3}{2}}} \appear{\bg[2.4]{\text{\bigsymbolsfont(}}} \frac{N}{V} \appear{\bg[2.4]{\text{\bigsymbolsfont)}}}  \,\propto \appear{ \bigg( \Frac{\lambda}{d} \bigg)^{3}}
+\]
+%\item The 2nd term in Eq (40), i.e. the quantum term, is clearly:
+%\item[] \begin{itemize}
+%	 \item small when $\lambda$ is small
+%\item small when $\lambda<d$
+%\item large when $\lambda$ is large
+%\item large when $d$ is small
+%\end{itemize}
+\end{itemize}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Keskimääräisen energian kvanttitermi}
+\appear{}
+\begin{itemize}
+	
+\item Meillä on \CDAlert[red]{kvanttitermi} joka on muotoa 
+\[
+\text {Kvanttitermi}  \equiv \frac{\pi^{3} \hbar^{3} \sqrt{2}}{(2 s+1) \textrm{((}2 \pi m k_{B} T \textrm{))}^{\Frac{3}{2}}} \appear{ \bg[2.4]{\text{\bigsymbolsfont(}} \frac{N}{V} \bg[2.4]{\text{\bigsymbolsfont)}} } \propto \appear{ \bigg( \Frac{\lambda}{d}  \bigg)^{3}}
+\]
+
+\item Toinen termi (\CDAlert[red]{kvanttitermi}) \appear{on likimääräisessä ratkaisussa} \appear{keskimääräiselle energialle $\overline{E}$} \appear{muotoa:}
+\item[] \begin{itemize}[itemsep=3.5mm]
+	 \item pieni kun $\lambda$ on pieni
+\item pieni kun $\lambda<d$
+\item suuri kun  $\lambda$ on suuri
+\item suuri kun $d$ on pieni
+\end{itemize}
+
+
+\end{itemize}
+
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Hiukkasten jakautuminen tiloille}
+\begin{itemize}
+	\item Toinen tapa ajatella asiaa on miettiä kuinka hiukkaset ovat jakaantuneita eri energiatasoille 
+	\item Käsitellään fermioneita esimerkkitapauksena\appear{, ja lasketaan fermitaso $E_F$} \appear{0\;K:ssä} \appear{(eli fermienergia)}
+
+\item \CDAlert[blue]{Hiukkasten kokonaislukumäärä}: $\qquad \appear{N} \equal \appear{\nint_{0}^{\infty}}  \appear{\mathbb{N} (E)_{F D}} \appear{D(E)} \appear{d E}$
+
+\item $T=0:$ \appear{miehitysluku $ \mathbb{N} $ on askelfunktio} \appear{($ \mathbb{N} =1$ kun $\mathrm{E}<E_{F}$}\appear{,  $\mathbb{N} =0$ kun $\mathrm{E}>E_{F}$)} \vspace{-4mm}
+\[ 
+\begin{aligned} 
+&\Rightarrow& \qquad \appear{N}  &\equal  \appear{\nint_{0}^{E_{F}}} \frac{1\cdot (2 s+1) m^{3 / 2} V}{\pi^{2} \hbar^{3} \sqrt{2}} \appear{\sqrt{E}} \appear{d E}  \equal  \frac{(2 s+1) m^{3 / 2} V}{\pi^{2} \hbar^{3} 2^{1/2}} \appear{ \bigg( \Frac{2}{3} E_{F}^{3 / 2} \bigg) } \\ 
+&\Rightarrow& \qquad \appear{E_{F}}  &\equal \frac{\pi^{2} \hbar^{2}}{m} \appear{\Bigg[}\frac{3}{(2 s+1) \pi 2^{1/2}} \frac{N}{V} \appear{\Bigg]^{2 / 3}}
+\end{aligned} 
+\]
+\end{itemize}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Kvanttitermi ja fermitaso}
+\appear{}
+\begin{itemize}
+	\item Tulos näyttää että jo nollassa kelvinissä\appear{, energia kasvaa fermionien konsentraation kasvaessa:} $\qquad \appear{E_{F}} \propto \appear{\textrm{((}\Frac{N}{V} \textrm{))}^{2 / 3}}$
+
+\item Termien uudelleen järjestäminen johtaa yhtälöön 
+\[
+\begin{aligned}
+& & E_{F}  &\equal \frac{\pi^{2} \hbar^{2}}{m} \appear{\Bigg[}\frac{3}{(2 s+1) \pi 2^{1/2}} \frac{N}{V} \appear{\Bigg]^{2 / 3}} \\
+&\Rightarrow& \qquad \appear{E_{F}^{3 / 2}}  &\equal  \appear{ \bigg( \Frac{\pi^{2} \hbar^{2}}{m}  \bigg)^{3 / 2}} \frac{3}{(2 s+1) \pi 2^{1/2}} \frac{N}{V}  \equal  \frac{3 \pi^{2}}{2^{1/2}} \frac{\hbar^{3}}{(2 s+1) m^{3 / 2}} \frac{N}{V}
+\end{aligned}
+\]
+\item Eli on olemassa verrannollisuus $\frac{\hbar^{3}}{(2 s+1) m^{3 / 2}} \frac{N}{V} \propto \appear{E_{F}^{3 / 2}}$ \appear{mitä voidaan hyödyntää analysoimaan kvanttitermin merkitystä keskimääräisessä energiassa:}
+\[
+\overline{E}  \equal \frac{3}{2} \appear{k_{B} T} \bg[2.6]{\text{\bigsymbolsfont[}}\! \appear{1} \appear{\mp \frac{\pi^{3} \hbar^{3} \sqrt{2}}{(2 s+1) \textrm{((}2 \pi m k_{B} T \textrm{))}^{\Frac{3}{2}} \textrm{((}\Frac{N}{V} \textrm{))} } } \appear{+\ldots} \bg[2.6]{\text{\bigsymbolsfont]}}
+\]
+\end{itemize}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Kvanttitermi ja fermitaso}
+\appear{}
+\begin{itemize}
+	\item Eli \CDAlert[red]{kvanttitermi riippuu termistä} \Alert[red]{$\big( \Frac{E_{F}}{k_{B} T}  \big)^{3 / 2}$}
+
+\item Tapauksesa \CDAlert[blue]{$k_{B} T \gg E_{F}$} \appear{ensimmäinen klassinen termi säilyy}\appear{, ja toinen termi (kvanttitermi)}\appear{ on pieni} 
+
+\item Hiukkaset ovat diffuusisti jakaantuneet eri tiloille\appear{, joten kvanttimekaaninen \CDAlert[tuniblue]{erottamattomuus voidaan unohtaa}}
+\item \CDAlert[fuchsia]{Yhteenveto}: kaasu käyttäytyy klassisesti jos
+\[
+\begin{aligned}
+& & \qquad \bigg( \Frac{\lambda}{d}  \bigg)^{3} &\ll 1  \\
+\appear{&\textrm{tai kun}\quad& &} \\
+& & \qquad \frac{N}{V} \frac{\hbar^{3}}{ \textrm{((}m k_{B} T \textrm{))}^{3 / 2}} \appear{&\ll} \appear{1} \qquad \Rightarrow \qquad \text {\appear{\CDAlert[blue]{Klassinen raja}}} \\
+\end{aligned}
+\]
+\end{itemize}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Metallit ja niiden johtavuuselektronit}
+\appear{}
+% 6.5 cm = midway, 10 cm = 3/4 
+\begin{minipage}{10.5cm}
+	\begin{itemize}
+	\item Metalleissa jotkut valenssielektroneista on jaettu kaikkien atomien kesken
+	\implies{ Nämä elektronit liikkuvat vapaasti, positiivisesti varautu-\\
+	neiden ytimien muodostamassa kvanttikaivossa  }
+
+\item \CDAlert[red]{Vapaat elektronit}\appear{/\CDAlert[red]{johtavuuselektronit}} \appear{metalleissa ovat hyvä esimerkki \CDAlert[tunired]{fermionikaasusta}.} %\appear{Nämä tunnetaan myös nimellä \CDAlert[red]{johtavuus} \CDAlert[red]{elektronit}}
+
+\item Kuva 16 näyttää \CDAlert[pink]{Koulombisen potentiaalin} yhdelle elektronille yhden/usean metalli-ionin lähellä 
+\appear{\xdef\loc{east}%
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=0cm,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,height=9cm]{Figures_booklet/SOM_9_Statistical_mechanics_figures/SOM_Figure_16.png}};%scale=\figscale. % 8cm max hei
+\end{tikzpicture}}%
+\item Kun ioneita on tarpeeksi monta \appear{ja niillä on riittävä konsentraatio} \appear{(kuvat 16b–d)}\appear{, ne muodostavat  \CDAlert[blue]{äärellisen kaivon} valenssielektronien kvanttikaasulle}
+
+\item Tilanne voidaan ymmärtää \CDAlert[tuniblue]{äärettömän syvän} \\ \CDAlert[red]{kaivon avulla}
+\end{itemize}
+\end{minipage}
+\vspace{3mm}
+
+
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Johtavuuselektronit muodostavat fermionikaasun}
+\appear{}
+\begin{itemize}
+	\item \CDAlert[fuchsia]{Fermionien kieltosäännön takia}\appear{, johtavuuselektronit täyttävät energiatiloja jotka olisivat erittäin korkeita klassisessa tarkastelussa}
+
+\item \appear{Historiallisesti}\appear{, alkuun ei ymmärretty kuinka monta aineen elektronia osallistuu elektronikaasun muodostumiseen} \appear{ja siten vaikuttavat \CDAlert[red]{ominaislämpökapasiteetin} muodostumiseen} 
+
+\item Jos jokainen johtavuuselektroni vaikuttaa \appear{ja liikkuisi aineessa vapaasti}\appear{, niin lämpökapasiteetista tulisi todella suuri}\appear{, mikä näkyisi oikeille aineille tehtävissä kokeissa}\appear{/arkielämässä}
+
+\item Myöhemmin, kävi selväksi että \Alert[red]{vain} \CDAlert[red]{fermienergiaa} \Alert[red]{lähellä olevat elektronit} \appear{voivat \CDAlert[tunired]{liikkua vapaasti}}\appear{, saada lisäenergiaa}\appear{, eli suurin osa aineen elektroneista ei siis osallistunut energian varastoitumiseen aineessa} \appear{(ominaislämpökapasiteetti)}
+
+\vspace{-1.4mm} \seminormal
+\item[] (Ks. Harrisin luku 9\appear{, ja luentomme ominaislämpökapasiteetista)}
+\end{itemize}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Työfunktio/irrotustyö}
+\appear{}
+% 6.5 cm = midway, 10 cm = 3/4 
+\begin{minipage}{8.5cm}
+	\begin{itemize}
+	\item On olemassa minimienergia $\phi$ \appear{joka vaaditaan elektronien irrottamiseen metallista.}\appear{ Tämä on kaivon yläreunan} \appear{ja fermitason välinen erotus:}
+\[
+\phi  \equal \appear{U_{0}}  \minus  \appear{E_{F}}
+\]
+
+\item Tämä energia $\phi$ tunnetaan\\ \CDAlert[red]{työfunktiona/irrotustyönä}\appear{, ja riippuu \\
+tietystikin aineesta}\appear{, riippuen sekä:}
+\item[] \begin{itemize}[itemsep=4mm]
+	\item $U_{0}$ kaivon syvyydestä
+	\item $E_{F}$ aineen fermitasosta
+\end{itemize}
+
+\end{itemize}
+\end{minipage}
+\vspace{3mm}
+
+\xdef\loc{east}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=0cm,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,height=7cm]{Figures_booklet/SOM_9_Statistical_mechanics_figures/SOM_Figure_17.png}}; %scale=\figscale. % 8cm max hei
+\end{tikzpicture}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Kahden fermionikaasusysteemin yhdistäminen}
+\appear{}
+\begin{itemize}[itemsep=1.6mm]
+	\item Kun kaksi metallia laitetaan kiinni toisiinsa%
+	\appear{\xdef\loc{south east}%
+\begin{tikzpicture}[remember picture,overlay]% anchor=south
+    \node (A) [yshift=-0.25*\figXshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,height=4.3cm]{Figures_booklet/SOM_9_Statistical_mechanics_figures/SOM_Figure_18.png}};%scale=\figscale. % 8cm max hei
+\end{tikzpicture}}%
+\appear{, \Alert[fuchsia]{energeettisimmät elektronit metallista 2 siirtyvät metalliin 1}}\appear{, \Alert[red]{siirtäen metallin 1 energiatasoja ylöspäin}} \appear{(sähköstaattisen hylkimisen takia)}\appear{, ja \Alert[blue]{metallin 2 energiatasot laskevat}} 
+	
+	\item Tämän seurauksena \appear{metallien välille muodostuu} \appear{potentiaaliero $\Delta U$} 
+	
+	\item Elektronit liikkuvat\appear{, \CDAlert[fuchsia]{kunnes fermienergiat $E_F$ ovat samalla tasolla}}
+	
+	\item[] {\small %scriptsize
+	\begin{itemize}[itemsep=2.2mm]
+	\item \CDAlert[red]{Seebeckin efektiä},\\ 
+		hyödynnetään \\
+		\Alert[tunired]{lämpöpareissa} \\
+		mittaamaan lämpötilaa
+		\item \CDAlert[red]{Peltierin efektiä}\\ 
+		käytetään \Alert[tunired]{jäähdyttimissä}\\
+		 \Alert[tunired]{(Peltier-elementit)} \\
+		
+		\item esim. \Alert[blue]{kiihtynyt korroosio}
+\end{itemize}
+}
+\end{itemize}
+
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Bosonikaasu}
+\appear{}
+\begin{itemize}
+	\item Miehitysluvun löydettiin olevan bosoneille $\appear{ \mathbb{N} (E)_{B E}} \equal \frac{1}{B e^{E / k_{B} T}-1}$
+
+\item Kun $E \rightarrow \appear{0}$\appear{, bosonien miehitysluku kasvaa}\appear{, eli hiukkaset alkavat relaksoitumaan alimmalle kvanttitilalleen} 
+
+\item Helium-4 atomi koostuu kahdesta protonista ja kahdesta neutronista\appear{, se on siis bosoni jonka spin $=0$} \appear{(ytimen kokonaisspin $=0$}\appear{, kaksi 1s elektronia joiden kokonaisspin $=0$)}
+
+\item \CDAlert[red]{Helium-4 ei muutu kiinteäksi helposti}\appear{, se säilyy kaasumaisena erittäin mataliin lämpötiloihin asti \appear{(>4,15~K)}}
+
+\item Tarpeeksi matalissa lämpötiloissa\appear{, hiukkasten väliset voimat muodostuvat merkittäviksi}\appear{, ja kaasumainen He-4 muuttuu nesteeksi}
+
+\item Todella matalissa lämpötiloissa osa aineen atomeista \Alert[blue]{tiivistyy alimmalle energiatilalleen}
+\end{itemize}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Supranesteet}
+\appear{}
+% 6.5 cm = midway, 10 cm = 3/4 
+\begin{minipage}{9cm}
+	\begin{itemize}
+	\item Matalassa \Alert[red]{$2,17$ K lämpötilassa Helium-4:stä tulee} \CDAlert[red]{supraneste}
+\begin{itemize}
+	\item \Alert[tunired]{Häviävän pieni viskositeetti}
+\item \Alert[tunired]{Suuri lämmönjohtavuus}
+\end{itemize}
+\appear{(Voisi käyttää klassista kriteeriä} \appear{arvioimaan karkeasti milloin tämä} \appear{olotilanmuutos}\appear{/faasimuutos} \appear{voisi tapahtua)}
+
+\item Alfred Leitner on tehnyt kuuluisan videon \CDAlert[fuchsia]{kuuluisa video}{https://www.youtube.com/watch?v=2Z6UJbwxBZI} \appear{He-4:n käyttäytymisestä kun sitä nostetaan kauhalla astiasta}
+%https://www.youtube.com/watch?v=2Z6UJbwxBZI 
+%\Alert[red]{yleissivistyksen}{https://www.youtube.com/watch?v=K5XpNONcsNw}
+\item Heliumi \CDAlert[blue]{kiinnittyy} kulhon sisäpintaan \appear{ja lopulta \Alert[blue]{'ryömii' kulhosta pois} sen pintojen kautta}
+\end{itemize}
+\end{minipage}
+\vspace{3mm}
+
+\xdef\loc{east}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=0cm,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,height=9cm]{Figures_booklet/SOM_9_Statistical_mechanics_figures/SOM_Figure_19.png}}; %scale=\figscale. % 8cm max hei
+\end{tikzpicture}
+
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Bosen–Einsteinin kondensaatti (BEC)}
+\appear{}
+% 6.5 cm = midway, 10 cm = 3/4 
+\begin{minipage}{8.5cm}
+	\begin{itemize}
+	\item Kuumat hiukkaset harvassa kaasussa  \appear{ovat makroskooppisessa astiassa jakaantuneet erittäin suureen lukumäärään tiloja}\appear{, jolloin todennäköisyys sille että joku yksittäinen tila on viritetty/käytössä on pieni}
+
+\item Kun aine \CDAlert[tuniblue]{jäähdytetään} lämpötilaan jossa hiukkasen de Broglie-aallonpituudesta \appear{tulee suurempi kuin atomien välinen etäisyys}\appear{, atomit tiivistyvät perustilalleen}\appear{, \Alert[tuniblue]{kaikki hiukkaset päätyvät samaan kvanttimekaaniseen tilaan}}
+\implies{aineeseen muodostuu uusi faasi\appear{/olomuoto}\appear{, \\ \CDAlert[blue]{Bosen–Einsteinin kondensaatti (BEC)}}}
+ \end{itemize}
+
+\end{minipage}
+\vspace{3mm}
+\xdef\loc{east}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=0cm,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,height=8.5cm]{Figures_booklet/SOM_Tipler_Statistics_and_Bonding_figures/SOM_Tipler_figure_3.png}}; %scale=\figscale. % 8cm max hei
+\end{tikzpicture}
+
+
+%\endofslide 
+\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%

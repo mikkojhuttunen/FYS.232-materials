@@ -1,0 +1,123 @@
+% !TEX root = ../bb_AiRa_Kappaleet.tex
+
+% ö = \%c3\%b6
+% ä = \%C3\%A4
+
+\xdef\sectiontitle{\IVsectiontitle} %aiheuttama
+\TOCrefs
+
+%%%%%%%%%%%%%%%
+\begin{frame}[label=4_4_a]
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\label{\TOCname}
+
+\vspace{-3mm}
+
+%\vspace{\chapterTOCvksip}%
+\begin{itemize}[leftmargin=0.5cm,itemsep=\chapterTOCitemsep]
+    \item[4.1]<1-> \hyperlink{4_1_a}{\IVaSubsectiontitle}
+    \item[4.2]<1-> \hyperlink{4_2_a}{\IVbSubsectiontitle}	
+    \item[4.3]<1-> \hyperlink{4_3_a}{\IVcSubsectiontitle}	
+    \item[4.4]<1-> \hyperlink{4_4_a}{\CDAlert[red]{\IVdSubsectiontitle}}
+    \item[4.5]<1-> \hyperlink{4_5_a}{\IVeSubsectiontitle}
+    \item[4.6]<1-> \hyperlink{4_6_a}{\IVfSubsectiontitle}
+    \item[4.7]<1-> \hyperlink{4_7_a}{\IVgSubsectiontitle}
+\end{itemize}
+
+
+\end{frame}
+%%%%%%%%%%%%%%%
+
+\xdef\sectiontitle{\IVdSubsectiontitle} 
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Lyhyt historia}%A Short history
+\appear{}
+
+\semismall
+\begin{itemize}
+\item \appear{Varhaiset kokeet tehtiin \CDAlert[red]{alfalähteillä}} \appear{esim.\ Pb-210}\appear{, \CDAlert[red]{5,3\;MeV:n kineettisillä energioilla}:} 
+
+\item<.->[] \begin{itemize}
+	 \item \CDAlert[red]{Elektroni}\appear{, löydettiin 1897} \appear{((J. J. Thomson, katodisäteellä, e/m))}\appear{, sen varaus mitattiin 1909 (Millikan)}
+	\item \CDAlert[blue]{Protoni}\appear{, löydettiin 1919} \appear{((E. Rutherford, alfahiukkaspommituksella kultakalvoon))}
+	\item \CDAlert[fuchsia]{Neutroni}\appear{, löydettiin 1932} \appear{((J. Chadwick, sähköisesti neutraalien painavien hiukkasten säteily löydettiin pommituskokeissa, massa oli lähellä protonia))} \appear{$\tau \sim 882 \mathrm{\;s}$}
+\end{itemize}
+
+\item Myöhemmin \CDAlert[blue]{gammasäteitä ja kosmisia säteitä} käytettiin $\appear{\oldrightarrow$  \CDAlert[blue]{$\gtrsim 1 \mathrm{\;GeV}$}:}
+\item<.->[] \begin{itemize}
+\item \CDAlert[red]{Positroni}\appear{, löydettiin 1932} \appear{((Anderson, Wilsonin sumukammiota \& gammasäteitä))}
+\item Myoni\appear{, löydettiin 1936 (kosmisilla säteillä)} \appear{$m_{\mu}=0,106 \mathrm{\;GeV}, ~\tau \sim 2,2 \;\mu\mathrm{s}$}
+\item Pioni\appear{, löydettiin 1947}\appear{, (kosmisilla säteillä) $m_{\pi}=0,140 \mathrm{\;GeV}, ~\tau \sim 26 \mathrm{\;ns}$}
+\item \appear{Kaoni}\appear{, löydettiin 1947}\appear{, (kosmisilla säteillä) $m_{K}=0,490 \mathrm{\;GeV}, ~\tau \sim 5 \mathrm{\;ns}$}
+\end{itemize}
+
+\item Kaonit $\oldrightarrow$ koostuvat \CDAlert[fuchsia]{kvarkeista}: \appear{ylös, alas, \& outo vuonna 1967}
+\end{itemize}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Modernit kiihdyttimet}%Modern accelerators
+\appear{}
+
+\semismall
+\begin{itemize}
+	\item Vielä myöhemmin, \appear{uusia ja painavampia hiukkasia löydettiin:}
+\begin{itemize} \small
+	 \item 1974: \appear{$3,1 \mathrm{\;GeV} ~J/\psi$-\CDAlert[fuchsia]{mesoni}}\appear{, koostuu lumo-kvarkista ja sen antikvarkista}
+	\item 1975: \appear{$1,8 \mathrm{\;GeV}$ tauoni}
+	\item 1977: \appear{$9,5 \mathrm{\;GeV}$ Upsilon-mesoni}\appear{, koostuu alas-kvarkista ja sen antikvarkista}
+	\item 1983: \appear{$80 \mathrm{\;GeV} ~\&~ 91 \mathrm{\;GeV}$ $W$- ja $Z$-bosonit}
+	\item 1994: \appear{$180 \mathrm{\;GeV}$ \CDAlert[fuchsia]{huippu-kvarkki}}\appear{, massiivisin kvarkki mikä \CDAlert[fuchsia]{ei 'hadronisoidu'}}
+\end{itemize}
+
+%\item Modernit kiihdyttimet yltävät >500\;TeV\appear{, joko käyttäen \CDAlert[blue]{2-säteen kiihdytin}menetelmää} \appear{tai \CDAlert[red]{paikallaan olevaa kohdetta ja yhtä kiihdytettyä sädettä}}
+\item Modernit kiihdyttimet yltävät jopa 6,8 TeV:iin ja törmäyttävät kaksi korkeaenergistä hiukkassuihkua toisiinsa ($\Rightarrow$ törmäysenergia jopa 13,6 TeV) 
+\end{itemize}
+
+%
+\appear{\xdef\loc{south} %south west
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.15*\figYshift,xshift=-\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[width=6.6cm]{Figures_booklet/SOM_11_Fundamental_particles_figures/SOM_Fundamental_particles_Figure_4.png}}; %scale=\figscale. % 8cm max hei
+\end{tikzpicture}}
+
+%\xdef\loc{south east}
+%\begin{tikzpicture}[remember picture,overlay] % anchor=south
+%    \node (A) [yshift=-0.15*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[width=5.6cm]{Figures_booklet/SOM_11_Fundamental_particles_figures/SOM_Fundamental_particles_Figure_6.png}}; %scale=\figscale. % 8cm max hei
+%\end{tikzpicture}\CR[ref=h]{}}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Hiukkaskiihdyttimet}%Particle detectors
+\appear{}
+
+\seminormal
+\begin{itemize}
+	 \item Sumukammioiden jäädessä historiaan\appear{, on useita tekniikoita tunnistaa} \appear{ja karakterisoida törmäyksissä syntyviä/vapautuvia hiukkasia}\appear{, varauksen määrittäminen}\appear{, liikemäärä}\appear{, massa jne.}
+
+\item \CDAlert[fuchsia]{Tuikeilmaisin}: \appear{materiaali emittoi valoa hiukkasen osuessa (esim.\  Th:NaI kide)}
+\item \CDAlert[black]{Monijohdin verrannollisuuslaskuri}: \appear{saapuvat hiukkaset ionisoivat ainetta, ja johdinlankaristikoista mitattujen sähkövirtojen avulla hiukkasen liikerata voidaan selvittää, \CDAlert[black]{fysiikan Nobelin palkinto 1992}}
+\item \CDAlert[red]{Cerenkov-ilmaisin}: \appear{hiukkasen nopeus voidaan määrittää syntyneen säteilyn ominaisuuksista}
+\item \CDAlert[blue]{Pii-ilmaisin}: \appear{Säteily synnyttää puolijohteeseen elektroni–aukkopareja} \appear{$\oldrightarrow$ hiukkasen liikerata}
+\item \CDAlert[green]{Kalorimetri}: \appear{Tulevan hiukkasen synnyttämien hiukkassuihkujen avulla selvitetään energia}
+
+\end{itemize}
+
+%\endofslide 
+\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%

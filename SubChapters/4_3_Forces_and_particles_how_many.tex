@@ -1,0 +1,586 @@
+% !TEX root = ../aa_SoM_Chapters.tex
+
+%% HARRIS: Chapter 9
+%\xdef\Isectiontitle{Statistical Mechanics} 
+%%
+%\xdef\IaSubsectiontitle{A Simple Thermodynamic System} 
+%\xdef\IbSubsectiontitle{Entropy and Temperature}
+%\xdef\IcSubsectiontitle{Einstein's solid}
+%\xdef\IdSubsectiontitle{Boltzmann \& Maxwell–Boltzmann distributions}
+%\xdef\IeSubsectiontitle{Classical Averages}
+%
+%\xdef\IfSubsectiontitle{Quantum Distributions} 
+%\xdef\IgSubsectiontitle{The Quantum Gas} 
+%\xdef\IhSubsectiontitle{Photon Gas}
+%\xdef\IiSubsectiontitle{The Laser}
+%\xdef\IjSubsectiontitle{Specific Heats} 
+%\xdef\IkSubsectiontitle{Debye Model} 
+
+% ö = \%c3\%b6
+% ä = \%C3\%A4
+
+\xdef\sectiontitle{\IVsectiontitle} %aiheuttama
+
+%%%%%%%%%%%%%%%
+\begin{frame}[label=4_3_a]%[label=4_3_TOC1]
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+
+%\vspace{\chapterTOCvksip}%
+\begin{itemize}[leftmargin=0.5cm,itemsep=\chapterTOCitemsep]
+    \item[4.1] \hyperlink{4_1_a}{\IVaSubsectiontitle}
+    \item[4.2] \hyperlink{4_2_a}{\IVbSubsectiontitle}	
+    \item[4.3] \hyperlink{4_3_a}{\CDAlert[blue]{\IVcSubsectiontitle}}	
+    \item[4.4] \hyperlink{4_4_a}{\IVdSubsectiontitle}
+    \item[4.5] \hyperlink{4_5_a}{\IVeSubsectiontitle}
+    \item[4.6] \hyperlink{4_6_a}{\IVfSubsectiontitle}
+    \item[4.7] \hyperlink{4_7_a}{\IVgSubsectiontitle}
+\end{itemize}
+
+%\endofslide 
+\end{frame}
+%%%%%%%%%%%%%%%
+
+\xdef\sectiontitle{\IVcSubsectiontitle} 
+
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{On fundamental forces}
+%
+\semismall
+\begin{itemize}
+	\item Our picture of fundamental forces has been well shaped during last 100 years:
+\item[] \begin{itemize}[leftmargin=0.2cm]
+	\item Electricity and magnetism \appear{were combined into electromagnetism by Maxwell 1873}
+	\item Electromagnetism was combined with quantum mechanics and relativity (\CDAlert[blue]{quantum electrodynamics (QED)}) in 1950s
+\item Electromagnetism and weak force were combined into \CDAlert[blue]{electroweak force} in 1960s. \appear{Despite this, electromagnetism and weak forces are sill often referred separately}\appear{, since "weak force" is manifest only in certain subatomic particle reactions}
+\item \CDAlert[red]{Strong nuclear force} is covered by \CDAlert[tunired]{quantum chromodynamics (QCD)}
+\item \CDAlert[fuchsia]{Gravitational force} has remained as a separate force/\CDAlert[green]{interaction}
+\end{itemize}
+	
+\end{itemize}
+
+% table 12.1
+\xdef\loc{south}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.25*\figYshift,xshift=0*\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[width=11cm]{Figures_booklet/SOM_11_Fundamental_particles_figures/SOM_Fundamental_Table_1_cropped.png}}; % 8cm max height
+\end{tikzpicture}
+
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{On fundamental particles}
+
+\semismall
+\begin{itemize}[itemsep=1.9mm]
+	\item \CDAlert[blue]{Fermions experience forces}: \appear{\Alert[blue]{quarks}} \appear{and \Alert[tuniblue]{leptons}}
+	\item \CDAlert[red]{Bosons mediate forces}: \appear{gluons}\appear{, W-} \appear{and Z-bosons}\appear{, photons}\appear{, gravitons?}
+	
+	\item Each fermions affected by a force\appear{, has a property associated with that force:}
+\begin{itemize}
+	\item \CDAlert[white!30!fuchsia]{Mass/energy} for gravitation
+	\item \CDAlert[fuchsia]{Charge}\appear{, or weak charge}\appear{, for electroweak interaction}
+	\item \CDAlert[black!30!fuchsia]{Color charge} for strong interaction
+\end{itemize}
+\end{itemize}
+
+\xdef\loc{south east}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.25*\figYshift,xshift=1*\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[width=14.5cm]{Figures_booklet/SOM_11_Fundamental_particles_figures/Elementary_particles}}; % 8cm max height
+\end{tikzpicture}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{On fundamental particles}
+
+\begin{itemize}
+	\item Observation of elementary particles usually takes place indirectly \appear{based on \CDAlert[red]{conservation laws} and known processes} 
+	\item Some particles can only be assumed to exist based on the \CDAlert[fuchsia]{standard model} 
+	\item For example, of quarks\appear{, and of their interactions via gluons which bind them together}\appear{, we do not have very strong experimental evidence}
+	
+	\item Also, the search for \CDAlert[blue]{Higgs boson $\mathrm{H}^{0}$}\appear{, predicted by the standard model}, and the event in 4.7.2012 of finding it with mass $125 \mathrm{\;GeV} / \mathrm{c}^{2}$\appear{, has been one of the recent topics in verifying our present image of structure of matter}
+\implies{ A promise of a \CDAlert[fuchsia]{grand unified theory} }
+\end{itemize}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{The strong force}
+%
+
+\semismall
+% 6.5 cm = midway, 10 cm = 3/4 
+%\vspace{2.5mm}
+\begin{minipage}{8.5cm}
+\begin{itemize}[itemsep=1.7mm]
+	\item Quarks inside nucleons \appear{(protons and neutrons)} \appear{are bound together via attraction due to the strong force}%
+	\appear{\xdef\loc{north east}%
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=0.75*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[width=5cm]{Figures_booklet/SOM_11_Fundamental_particles_figures/SOM_Fundamental_particles_Figure_3.png}};% 8cm max height
+\end{tikzpicture}}%
+	\item The quarks are considered to be the \CDAlert[blue]{fundamental} \CDAlert[blue]{fermions interacting with the strong force}\appear{, via exchange of gluons}
+	
+	\item There are \CDAlert[red]{six types of quarks}\appear{, listed in the Table}%up (u), down (d), strange (s), charm (c), bottom (b) and top (t)
+\appear{\xdef\loc{south east}%
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.25*\figYshift,xshift=1*\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[width=8cm]{Figures_booklet/SOM_11_Fundamental_particles_figures/SOM_Fundamental_Table_1_cropped2.png}};% 8cm max height
+\end{tikzpicture}}%
+\item Each have spin $=\frac{1}{2}$\appear{, and charge either $-\frac{1}{3} e$} \appear{or $+\Frac{2}{3} e$}
+
+\end{itemize}
+\end{minipage}
+
+% 6.5 cm = midway, 10 cm = 3/4 
+\vspace{1.7mm}
+\begin{minipage}{5.8cm}
+\begin{itemize}[itemsep=1.7mm]
+	\item \CDAlert[fuchsia]{Proton} consists of \CDAlert[fuchsia]{uud}, with 
+	\[
+	\text{charge}  \equal  \plus \frac{2}{3} \plus \frac{2}{3} \plus ( \minus \frac{1}{3})\appear{=1}
+	\]
+
+\item \CDAlert[gray]{Neutron} consists of \CDAlert[gray]{udd}, with
+\[
+\text{charge}  \equal  \plus \frac{2}{3} \plus ( \minus \frac{1}{3}) \plus ( \minus \frac{1}{3}) \equal \appear{0}
+\]
+\item Particles composed of quarks are called \CDAlert[red]{hadrons}
+\end{itemize}
+\end{minipage}
+%\vspace{2.5mm}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Quark/Color confinement}
+%Quark Confinement
+\semismall
+
+\begin{itemize}[itemsep=1.7mm]
+	\item Quarks have not been observed isolated. \appear{It is understood that \Alert[tunired]{strong force gets stronger} with separation} \appear{(unlike electrical force).} \appear{It is almost impossible to separate quarks}\appear{, they 'refuse' to be separated} \appear{$\Leftrightarrow$ \CDAlert[red]{quark/color confinement} }
+	
+	\item Attempting to separate quarks with high energy bombardment\appear{, what happens is that the energy consumed} \appear{will just \Alert[tunired]{produce additional quark-antiquark pairs}}
+\appear{\xdef\loc{south east}%
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.25*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[scale=0.75]{Figures_booklet/SOM_11_Fundamental_particles_figures/SOM_Fundamental_quark_confinement.pdf}};% 8cm max height
+\end{tikzpicture}}
+
+\end{itemize}
+
+\vspace{1.7mm}
+\begin{minipage}{8.2cm}
+\begin{itemize}[itemsep=1.7mm]
+	\item Information of quarks have been obtained by deep inelastic scattering experiments using $E=20 \mathrm{\;GeV}$ \appear{\& $p=20 \mathrm{\;GeV} / \mathrm{c}$ electrons} \appear{(with $\lambda \sim{10^{-16}} \mathrm{\;m}$)} \appear{(e.g. SLAC, 1973)}
+	\item Based on the experiments\appear{, quarks move relatively freely inside the nucleon}
+	\item Summed mass of three quarks in a nucleon is significantly less than the mass of the nucleon\appear{, the \CDAlert[fuchsia]{missing energy/mass} is assumed to be stored in a \CDAlert[fuchsia]{cloud of energetic gluons} in the nucleon}
+\end{itemize}
+\end{minipage}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Gluons}
+
+\seminormal
+
+\begin{itemize}[itemsep=1.6mm]
+	\item The \CDAlert[red]{mediating particle} of strong force is \CDAlert[red]{gluon}
+	\item Quarks exchange gluons continuously
+\end{itemize}
+
+% 6.5 cm = midway, 10 cm = 3/4 
+\vspace{1.6mm}
+\begin{minipage}{9.6cm}
+\begin{itemize}[itemsep=1.6mm]
+	\item Gluons have spin 1 and zero mass 
+
+\item With zero mass\appear{, the range is infinite} \appear{((range} $\approx \frac{\hbar}{c} \frac{1}{m}$\appear{))} 
+
+\item \CDAlert[blue]{Gluons carry} the property specific to force\appear{, i.e. \CDAlert[blue]{color charge}}
+\appear{(\CDAlert[tuniblue]{unlike photons} which are electrically neutral)}
+\implies{ Because gluon has color, effective range is very short }
+
+\item \CDAlert[red]{Approximation for the potential} of strong force has been suggested\appear{, and experimentally verified for short distances:}\vspace{-1.5mm}
+\[
+\qquad V_{QCD}(r)  \equal  \minus \frac{4 \alpha_{s}}{3 r}  \plus \appear{k r}
+\]
+\item[] where $\alpha_{S} \appear{=\text{coupling constant for strong force}} \appear{\Approx0.3}$ \appear{and $k=1 \mathrm{\;GeV} / \mathrm{fm}$}
+\end{itemize}
+
+\end{minipage}
+
+\xdef\loc{south east}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.25*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[scale=0.7]{Figures_booklet/SOM_11_Fundamental_particles_figures/Quark_potential.pdf}}; % 8cm max height
+\end{tikzpicture}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Color charge}
+
+\seminormal
+\begin{itemize}
+	\item The property specific for strong interaction is \CDAlert[fuchsia]{color charge}\appear{, or simply color}
+	\appear{\xdef\loc{south east}%
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.25*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[scale=0.6]{Figures_booklet/SOM_11_Fundamental_particles_figures/Color_charges.pdf}};% 8cm max height
+\end{tikzpicture}}%
+	\vspace{2mm}
+	\begin{itemize}[itemsep=2.2mm,leftmargin=1.5mm]
+		\item Each \Alert[white!30!fuchsia]{quark} has a color charge: \appear{\textcolor{red}{\Alert[red]{red} (r)}}\appear{, \textcolor{green}{\CDAlert[green]{green} $(g)$}}\appear{, and \textcolor{blue}{\CDAlert[blue]{blue} $(b)$}}
+	\item \Alert[black!30!fuchsia]{Antiquarks} have anticolors: \appear{\textcolor{antired}{\CDAlert[antired]{antired} $(\bar{r})$}}\appear{, \textcolor{antigreen}{\CDAlert[antigreen]{antigreen} $(\bar{g})$}}\appear{, and \textcolor{antiblue}{\CDAlert[antiblue]{antiblue} $(\bar{b})$}}
+	
+	\item These colors are mainly labels to describe a quantum mechanical property of the particles \appear{(no connection to colours of visible light\,!!)}
+	\end{itemize}
+\end{itemize}
+
+% 6.5 cm = midway, 10 cm = 3/4 
+%\vspace{2.5mm}
+\begin{minipage}{5.1cm}
+\begin{itemize}	
+\item[] \begin{itemize}[itemsep=2.2mm,leftmargin=1.5mm]
+	\item Like the electric charge\appear{, also \CDAlert[fuchsia]{color is conserved}}
+\item Gluons themselves carry color and anticolor \appear{((there are 8 different gluons, SU(3)\,))}
+\item \CDAlert[red]{Gluons interact also with} \CDAlert[red]{other gluons!}
+\end{itemize}
+\end{itemize}
+\end{minipage}
+%\vspace{2.5mm}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Why color was needed/introduced?}
+
+\seminormal
+%Why was color introduced (needed) in the first place?s
+\begin{itemize}
+	\item Hadrons consist of \CDAlert[blue]{fermionic quarks} \appear{and are color-neutral}
+	
+	\item \CDAlert[tuniblue]{Exclusion principle} forbids two fermions to be in a same state \appear{(with exactly the same quantum numbers)} 
+	\implies{ Quarks within the hadron must not be in exactly same quantum state} 
+	\implies{ Property of color (3 different values) was introduced in 1964 by O.W. Greenberg} 
+	\item Without color\appear{, e.g. hadrons} $\appear{\Delta^{++}=uuu} \appear{~\&~ \Delta^{-}=d d d}$ \appear{would have same quantum number}
+
+\item E.g. the three quarks in a nucleon each have a different color 
+
+\item \Alert[red]{Mesons} consist of a \CDAlert[tunired]{quark and antiquark pairs} 
+\implies{Color neutrality requires \CDAlert[green]{color} \appear{and \CDAlert[antigreen]{anticolor} pairing}}
+
+\item \CDAlert[fuchsia]{Experimental evidence} from jets emerging from high energy particle collisions \CDAlert[fuchsia]{implies that gluons and colors exist} 
+%\item It can be deducted from the collision products, that sometimes individual gluons have been produced immediately after collision
+\end{itemize}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Color charge and color confinement}
+
+\semismall
+%Electrical charge vs. Color charge
+\begin{itemize}
+%	\item How can we interpret the difference that for electroweak force the property electrical charge is free and 'abundant' in the particles, but for the specific property of strong force, color, all the hadrons are color-neutral? 
+	
+	\item The electric and color charges behave quite differently: \vspace{2mm}
+	
+	\begin{itemize}
+	 \item Electrically charged particles are abundantly found in free from \appear{(e.g. free electron)}
+	 \item Hadrons are color-neutral\appear{, no experiment has yet succeeded in producing a colored particle!}
+	 \item \CDAlert[fuchsia]{Why is there no free color around?}
+\end{itemize}
+
+	\item The simplified explanation is \appear{that the strengths of forces are so vastly different:} \appear{strongly interacting particles attract each other very strongly}
+	
+\end{itemize}
+
+% 6.5 cm = midway, 10 cm = 3/4 
+\vspace{2.5mm}
+\begin{minipage}{8.2cm}
+\begin{itemize}
+	\item But the strength of the force doesn't explain why \CDAlert[red]{experiments have failed to find a single quark!}
+	
+	\item Answer is that the \CDAlert[tuniblue]{gluons interact also} \CDAlert[tuniblue]{with other gluons}\appear{, which gives rise to a \CDAlert[blue]{force that increases in strength}} \appear{when the distances between two colored particles is increased}
+\appear{\xdef\loc{south east}%
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.25*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[scale=0.75]{Figures_booklet/SOM_11_Fundamental_particles_figures/SOM_Fundamental_quark_confinement.pdf}};% 8cm max height
+\end{tikzpicture}}
+\end{itemize}
+
+\end{minipage}
+%\vspace{2.5mm}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Categories of hadrons}
+
+\seminormal
+%Categories of Hadrons
+\begin{itemize}
+	\item Because there are six quarks and antiquarks%
+	\appear{\xdef\loc{south east}%
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.25*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[width=8cm]{Figures_booklet/SOM_11_Fundamental_particles_figures/SOM_Fundamental_Table_1_cropped2.png}};% 8cm max height
+\end{tikzpicture}}%
+\appear{, many hadrons can be created}
+
+	\item Table 12.2. (next slide) lists the most common hadrons 
+	
+	\item \CDAlert[fuchsia]{Proton is the only stable hadron} \appear{(lifetime of a free neutron is $889 \mathrm{\;s}$)}
+	%free neutron is $889 \mathrm{sec})$. Note, that instead of lifetime, an energy range is given assuming $\Delta E \approx \hbar / \tau$, where $\tau$ is the time interval where the particle has been observed to exist
+	\item \CDAlert[blue]{Baryons} are combinations of \CDAlert[blue]{three quarks}: \appear{Proton (uud)  and neutron (udd)}
+	
+	\item \CDAlert[red]{Mesons} are combinations of a \CDAlert[red]{quark and an antiquark}: \appear{$\pi^{+}$-meson} \appear{($u\bar{d}$)}\appear{, and $\pi^{-}$-meson ($\bar{u}d$)}
+
+\end{itemize}
+
+% 6.5 cm = midway, 10 cm = 3/4 
+\vspace{2.5mm}
+\begin{minipage}{5.5cm}
+\begin{itemize}
+	\item Instead of lifetime\appear{, an \CDAlert[fuchsia]{energy range} is often given assuming} $\appear{\Delta E} \approx \appear{\hbar / \tau}$\appear{, where $\tau$ is the time interval when the particle has been assumed to exist}
+\end{itemize}
+\end{minipage}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Most common hadrons}
+
+\xdef\loc{south}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.25*\figYshift,xshift=0*\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[width=15cm]{Figures_booklet/SOM_11_Fundamental_particles_figures/SOM_Fundamental_Table_2.png}}; % 8cm max height
+\end{tikzpicture}
+
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Intrinsic properties}
+
+\seminormal
+\begin{itemize}
+	\item All quarks are spin-$\Frac{1}{2}$ fermions\appear{, thus, according to addition of angular momentums}\appear{, all baryons} \appear{(three quarks)} \appear{will have spin either $\Frac{1}{2}$} \appear{or $\Frac{3}{2}$}
+
+\item \CDAlert[red]{Isospin} \vspace{2mm}
+
+\begin{itemize}
+	\item As Table 12.2 shows\appear{, some hadrons seem to have the same quark content} \appear{and same spin} 
+	\item To obey exclusion principle\appear{, another quantum number needs to exist}
+	\item This quantum number is called isospin $I$\appear{, and is more abstract than the ordinary spin}\appear{, but its \CDAlert[tunired]{third component $I_{3}$} follows similar quantization as with normal spin} 
+	
+	\item The up and down quark both have isospin $I=\frac{1}{2}$\appear{, for strange quark $I=0$}
+\end{itemize}
+
+\item \CDAlert[blue]{Strangeness} \vspace{2mm}
+	\begin{itemize} 
+	\item Strange quark has a strangeness of $s=-1$. \appear{Therefore, e.g. for $\Omega^{-}(sss): \quad s=-3$}
+	\end{itemize}
+\end{itemize}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{The residual strong force}
+
+\begin{itemize}[itemsep=2.2mm]
+	\item Neutral molecules may become electrically polarized\appear{, and thereby  interact electrostatically with each other} 
+	\item A good example are water molecules forming crystalline structure of ice 
+	\item Similarly, color-neutral particles may attract each other via strong force \implies{ \CDAlert[blue]{This attraction binds the nucleons together in atomic nuclei!} }
+	
+\item This so-called \CDAlert[blue]{residual strong force} is not really as a distinct force\appear{, but a \CDAlert[tuniblue]{manifestation of the} \CDAlert[black!30!blue]{true strong} \CDAlert[tuniblue]{interaction}}
+
+\item Proton and neutron \appear{(color-neutral)} \appear{exchange pions} \appear{(two-quark mesons) }
+\item \CDAlert[red]{Mass of mesons} explain the \CDAlert[red]{short range} of the residual strong force
+\item A range of $1 \mathrm{\;fm}$ gives a mass $197 \mathrm{\;Mev} / \mathrm{c}^{2}$ for the mediating particle\appear{, measured value being $140 \mathrm{\;Mev} / \mathrm{c}^{2}$}
+\end{itemize}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Electroweak force}
+
+\seminormal
+\begin{itemize}[itemsep=1.8mm]
+	\item Particles that are associated with \CDAlert[red]{charge}/\CDAlert[blue]{weak charge} \appear{(sometimes called '\CDAlert[blue]{flavor charge}')} \appear{as a specific property of the electroweak interaction}\appear{, can engage in \Alert[red]{electro}\Alert[blue]{weak} force }
+	\implies{ Both quarks and leptons feel electroweak forces}
+	
+	 \item \CDAlert[fuchsia]{Fermionic leptons} are fundamental particles \CDAlert[fuchsia]{lacking the color charge}\appear{, and do not therefore interact via the strong force}
+
+\item Leptons come in \CDAlert[fuchsia]{three generations}: \appear{electrons}\appear{, muons} \appear{and tauons} 
+\item Each generation has its own lepton\appear{, antilepton}\appear{, neutrino} \appear{and antineutrino}
+
+\item Electron, muon and tauon \appear{are quite much alike in their behaviour}\appear{, only having different masses}
+
+\item \CDAlert[blue]{Electroweak interaction is the dominant interaction} \appear{at scales larger than subatomic} \appear{and smaller than astronomical} 
+\item It holds together different phases of matter\appear{, both \CDAlert[blue]{physical and chemical}}
+\end{itemize}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Mediating particles of electroweak force}
+
+%Mediating Particles of Electroweak Force
+\begin{itemize}
+	\item The mediating particles for electroweak force are the massless photon \appear{and three bosons with masses}\appear{, namely $\mathrm{W}^{+}$}\appear{, $\mathrm{W}^{-}$} \appear{and $\mathrm{Z}^{0}$ }
+	
+	\item Electromagnetic and weak parts of the electroweak force are still often treated separately\appear{, but the theory formed around 1970}\appear{, combined them together within QED}
+
+\item The \CDAlert[fuchsia]{asymmetry in the mediating particle masses} is explained, again, by an analogy 
+\item A toy top may be spinning properly and be oriented vertically with high rotational energy\appear{, but it may spontaneously drop and fall, and exhibit a large asymmetry }
+\item The \CDAlert[fuchsia]{true symmetry} would be visible only at high energies such as $1 \mathrm{\;TeV}$\appear{, which have not yet been observed}
+\end{itemize}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Gravitational force}
+
+\seminormal
+\begin{itemize}[itemsep=2mm]
+	\item All particles experience gravitational interaction\appear{, because its source as a \CDAlert[blue]{"gravitational charge" is mass}} \appear{((...in \CDAlert[fuchsia]{GR also the stress–energy tensor}...))}
+	
+	\item Compared with strong force\appear{, \CDAlert[blue]{gravity is very weak}} \appear{(${\sim}10^{-38}$ times weaker)} 
+	\implies{ Gravity has no role in formation of elementary particles, atoms, molecules... }
+
+\item Mediating particle would be the \CDAlert[tuniblue]{still unfound} \CDAlert[blue]{graviton}
+
+\item It is assumed to be electrically neutral\appear{, \CDAlert[blue]{massless}} \appear{and having \CDAlert[blue]{spin 2}}
+
+\item A development for methods and apparatus to observe the graviton is ongoing
+
+\item \CDAlert[red]{Gravitational waves} are disturbances in the fabric ("curvature") of spacetime generated by accelerated masses\appear{, which propagate as waves outward from their source at the speed of light} 
+
+\item In \CDAlert[red]{2017}, Weiss, Thorne \& Barich received the \CDAlert[red]{Nobel Prize in Physics} for their role in the \CDAlert[tunired]{detection of gravitational waves}
+
+\end{itemize}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{On the standard model}
+
+\seminormal 
+\begin{itemize}
+	\item \CDAlert[fuchsia]{Standard Model} is the current accepted theory of fundamental particles:
+\end{itemize}
+
+% 6.5 cm = midway, 10 cm = 3/4 
+\vspace{1.5mm}
+\begin{minipage}{8.6cm}
+\begin{itemize}
+\item[] \begin{itemize}
+		\item \CDAlert[red]{Quark model} of particle structure
+		\item Unification of electromagnetic and weak interactions \appear{$\oldrightarrow$ electroweak theory}
+		\item \CDAlert[blue]{Unification of electroweak and strong} \CDAlert[blue]{interactions} \appear{(quantum chromodynamics (QCD))} \appear{$\oldrightarrow$ Grand Unified Theory (GUT)}
+		\item Explains properties of fundamental particles
+		\item Explains the character of interactions
+	\end{itemize}
+	\vspace{0mm}
+	\item Some \CDAlert[fuchsia]{current open issues}: \vspace{1.5mm}
+\begin{itemize}
+	\item \CDAlert[red]{Rest mass of neutrino?}
+\item Properties of \CDAlert[green]{Higgs boson} (found in 2012)?
+\item \CDAlert[blue]{Graviton to be found}
+\item Galaxy rotation curves\appear{, \CDAlert[fuchsia]{dark matter}/\CDAlert[red]{energy}?}
+\end{itemize}
+
+\end{itemize}
+\end{minipage}
+%\vspace{2.5mm}
+
+\xdef\loc{south east}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.25*\figYshift,xshift=0*\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[scale=0.5]{Figures_booklet/SOM_11_Fundamental_particles_figures/Separation_of_forces_schematic.pdf}}; % 8cm max height
+\end{tikzpicture}
+
+
+%\endofslide 
+\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+

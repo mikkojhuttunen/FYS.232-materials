@@ -1,0 +1,610 @@
+% !TEX root = ../aa_SoM_Chapters.tex
+
+%% HARRIS: Chapter 10
+
+% ö = \%c3\%b6
+% ä = \%C3\%A4
+
+\xdef\sectiontitle{\IIsectiontitle} %aiheuttama
+
+%%%%%%%%%%%%%%%
+\begin{frame}[label=2_9_a]%[label=2_8_TOC1]
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+
+%\vspace{0.5cm}
+%\begin{itemize}[leftmargin=0.5cm,itemsep=3mm]
+%    \item[2.1] \hyperlink{2_1_a}{\IIaSubsectiontitle}
+%    \item[2.2] \hyperlink{2_2_a}{\IIbSubsectiontitle}	
+%    \item[2.3] \hyperlink{2_3_a}{\IIcSubsectiontitle}	
+%    \item[2.4] \hyperlink{2_4_a}{\IIdSubsectiontitle}
+%    \item[2.5] \hyperlink{2_5_a}{\IIeSubsectiontitle}
+%    \item[2.6] \hyperlink{2_6_a}{\IIfSubsectiontitle}
+%    \item[2.7] \hyperlink{2_7_a}{\IIgSubsectiontitle}
+%    \item[2.8] \hyperlink{2_8_a}{\CDAlert[red]{\IIhSubsectiontitle}}
+%    \item[2.9] \hyperlink{2_9_a}{\IIiSubsectiontitle}
+%
+%\end{itemize}
+
+\vspace{0.2cm}
+\begin{itemize}[leftmargin=0.5cm,itemsep=3mm]
+    \item[2.1] \hyperlink{2_1_a}{\IIaaSubsectiontitle}
+    \item[2.2] \hyperlink{2_2_a}{\IIaSubsectiontitle}
+    \item[2.3] \hyperlink{2_3_a}{\IIbSubsectiontitle}	
+    \item[2.4] \hyperlink{2_4_a}{\IIcSubsectiontitle}	
+    \item[2.5] \hyperlink{2_5_a}{\IIdSubsectiontitle}
+    \item[2.6] \hyperlink{2_6_a}{\IIeSubsectiontitle}
+    \item[2.7] \hyperlink{2_7_a}{\IIfSubsectiontitle}
+    \item[2.8] \hyperlink{2_8_a}{\IIgSubsectiontitle}
+    \item[2.9] \hyperlink{2_9_a}{\CDAlert[red]{\IIhSubsectiontitle}}
+    \item[2.10] \hyperlink{2_10_a}{\IIiSubsectiontitle}
+\end{itemize}
+
+\endofslide \end{frame}
+%%%%%%%%%%%%%%%
+
+\xdef\sectiontitle{\IIhSubsectiontitle} 
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Superconducting elements}
+%Superconducting elements
+\begin{itemize}
+	\item For some elemental metals\appear{, the resistivity decreases dramatically to zero when approaching $T=0$\;K} \appear{(compare tin and copper) }
+%	The critical temperature for this to happen, $T_{c}$, is a characteristic of the material. For those elements which behave like this, the critical temperature $T_{c}$ is usually in the order of few Kelvins. $0.15$
+\end{itemize}
+
+\vspace{2.5mm}
+\begin{minipage}{7cm}
+\begin{itemize}%[itemsep=1.7mm]
+\item  The \CDAlert[red]{critical temperature} for this to happen\appear{, \CDAlert[red]{$T_{c}$}}\appear{, is a characteristic of the material }
+
+\item For those elements which behave like this\appear{, the critical temperature $T_{c}$ is usually \CDAlert[red]{in the order of few kelvins}}
+	\end{itemize}
+\end{minipage}
+
+\xdef\loc{south east}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.25*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,width=6.7cm]{Figures_booklet/SOM_10_Bonding_figures/SOM_Bonding_Figure_48.png}}; %scale=\figscale. % 8cm max height
+\end{tikzpicture}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Superconducting elements}
+
+\begin{itemize}[itemsep=1.9mm]
+	\item Over 20 \CDAlert[red]{metallic elements} can become superconductors (See Table)
+	\item Also certain \CDAlert[blue]{semiconductors} can be made superconducting \appear{under suitable conditions (such as application of high pressure or as very thin films)}
+	
+\end{itemize}
+
+\vspace{1.9mm}
+\begin{minipage}{6.4cm}
+\begin{itemize}[itemsep=1.9mm]
+\item Also \CDAlert[fuchsia]{2D materials} \appear{(two properly aligned graphene flakes)} \appear{have  recently joined the class of materials that can be superconductors}
+	
+	\item So-called \CDAlert[fuchsia]{high-temperature} \Alert[fuchsia]{superconductivity} is still not well understood
+	
+	\end{itemize}
+\end{minipage}
+
+\xdef\loc{south east}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.25*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {%
+    {\scriptsize
+\begin{tabular}{llr} 
+Type of SC & Substance & $T_{c}(\mathrm{~K})$ \\
+\hline Simple metal SC & $\mathrm{Al}$ & $1.17$ \\
+& $\mathrm{ln}$ & $3.41$ \\
+& $\mathrm{Hg}$ & $4.20$ \\
+& $\mathrm{Sn}$ & $3.72$ \\
+& $\mathrm{Pb}$ & $7.20$ \\
+& $\mathrm{Nb}$ & $9.25$ \\
+& $\mathrm{Nb}_{3} \mathrm{Sn}$ & $18.0$ \\
+& $\mathrm{Nb}_{3} \mathrm{Ge}$ & $23.2$ \\
+& $\mathrm{C}_{60} \mathrm{Rb}_{3}$ & 31 \\
+& $\mathrm{La}_{2-\mathrm{S}} \mathrm{Sr}_{\mathrm{x}} \mathrm{CuO}_{4}$ & 38 \\
+& $\mathrm{YBa}_{2} \mathrm{Cu}_{3} \mathrm{O}_{7}$ & 93 \\
+& $\mathrm{Bi}_{2} \mathrm{Sr}_{2} \mathrm{Ca}_{2} \mathrm{Cu}_{3} \mathrm{O}_{10}$ & 107 \\
+& $\mathrm{Tl}_{2} \mathrm{Ba}_{2} \mathrm{Ca}_{2} \mathrm{Cu}_{3} \mathrm{O}_{10}$ & 125 \\
+& $\mathrm{HgBa}_{2} \mathrm{Ca}_{2} \mathrm{Cu}_{3} \mathrm{O}_{8}$ & 135 \\
+Magnesium diboride SC & $\mathrm{MgB}_{2}$ & 39 \\
+Iron-based SC & $\mathrm{FeSe}$ & 8 \\
+& $\mathrm{LaO}_{0.89} \mathrm{~F}_{0.11} \mathrm{FeAs}$ & 26 \\
+& $\mathrm{Sr}_{0.5} \mathrm{Sm}_{0.5} \mathrm{FeAsF}$ & 56
+\end{tabular}
+}%
+}; %scale=\figscale. % 8cm max height
+\end{tikzpicture}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Properties of superconductors}
+
+\begin{itemize}
+	\item \CDAlert[tunired]{Property No 1:} \appear{\CDAlert[red]{No electrical resistivity}}
+
+\item A superconductor can behave as if it had \Alert[red]{no measurable DC electrical resistivity} 
+
+\item Currents have been established in superconductors which have shown no apparent decay within experiments lasting for several years
+
+\item This property is \CDAlert[fuchsia]{technologically relevant}\appear{, because resistivity implies losses and heating of the device}
+\implies{ Devices based on strong electromagnets \\
+        	may utilize superconductors  } 
+
+\end{itemize}
+
+\xdef\loc{south east}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.25*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {%
+    {\scriptsize
+\begin{tabular}{lllr} 
+Substance & M/I/SC & $\rho(\mathrm{ohm} \mathrm{m})$ & $T_{\mathrm{c}}(\mathrm{K})$ \\
+\hline Silver & $\mathrm{M}$ & $1.6 \times 10^{-8}$ & $-$ \\
+Copper & $\mathrm{M}$ & $1.7 \times 10^{-8}$ & $-$ \\
+Gold & $\mathrm{M}$ & $2.4 \times 10^{-8}$ & $-$ \\
+Aluminium & M/SC & $2.8 \times 10^{-8}$ & $1.17$ \\
+Lead & M/SC & $2.2 \times 10^{-7}$ & $7.20$ \\
+Mercury & M/SC & $9.8 \times 10^{-7}$ & $4.20$ \\
+Porcelain & 1 & $5 \times 10^{12}$ & $-$ \\
+Rubber & I & $6 \times 10^{14}$ & $-$ \\
+Quartz (fused) & I & $7.5 \times 10^{17}$ & $-$ \\
+\hline
+\end{tabular}
+}%
+}; %scale=\figscale. % 8cm max height
+\end{tikzpicture}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Properties of superconductors}
+
+\semismall
+\begin{itemize}[itemsep=1.6mm]
+	\item \CDAlert[tunired]{Property No 2:} \appear{\Alert[red]{Perfect diamagnetism} }
+	
+	\item A sample in thermal equilibrium in an applied magnetic field carries electrical surface currents 
+	
+	\item These currents give rise to an additional magnetic field \appear{that precisely cancels the applied magnetic field in the interior of the superconductor}
+
+\end{itemize}
+
+\vspace{1.6mm}
+\begin{minipage}{6.4cm}
+\begin{itemize}[itemsep=1.6mm]
+	\item At $T<T_{c}$ the field lines of an external magnetic field \Alert[red]{curve around the object}
+
+\item According to Faraday's law\appear{, if $R=0$}\appear{, an arbitrary large surface current can form producing an internal field that cancels the external field}
+
+\item Circuit loops inside the superconductor can resist the external field since $R=0$\appear{. The exclusion of magnetic field lines by a superconductor is known as the \CDAlert[red]{Meissner effect}}
+	\end{itemize}
+\end{minipage}
+
+\xdef\loc{south east}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.25*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,width=7.3cm]{Figures_booklet/SOM_10_Bonding_figures/SOM_Bonding_Figure_49.png}}; %scale=\figscale. % 8cm max height
+\end{tikzpicture}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Properties of superconductors}
+
+\begin{itemize}
+	\item Due to the Meissner effect\appear{, a superconductor always \CDAlert[red]{repels a magnet}}
+
+\item Thus, the sample piece of a (permanent) \Alert[red]{magnet will levitate} above a superconductor
+\end{itemize}
+
+\vspace{2.5mm}
+\begin{minipage}{6.4cm}
+\begin{itemize}%[itemsep=1.6mm]
+	\item When the magnet is above the superconductor\appear{, it induces currents inside the superconductor }
+	
+	\item These \Alert[fuchsia]{currents construct a magnetic counter-field} \appear{causing a force on the magnetic sample }
+	
+	\item At certain distance, the counter force equals gravitational force on the sample\appear{, and the magnet starts to levitate}
+	\end{itemize}
+\end{minipage}
+
+\xdef\loc{south east}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.25*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,width=7cm]{Figures_booklet/SOM_10_Bonding_figures/SOM_Bonding_Figure_50.png}}; %scale=\figscale. % 8cm max height
+\end{tikzpicture}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Property number 3}
+%Property No3
+\begin{itemize}
+	\item A superconductor usually behaves as if there were a \Alert[fuchsia]{gap in energy of width $2 \Delta$ centred about the Fermi energy} in the set of allowed \CDAlert[fuchsia]{one-electron levels} 
+	
+	\item Thus, an electron of energy $\mathcal{E}$ can be accommodated by \appear{(or extracted from)} \appear{a superconductor only if $\mathcal{E}-E_{F}$} \appear{(or $E_{F}-E$) exceeds $\Delta$ }
+	\item The energy gap $\Delta$ increases in size as the temperature drops\appear{, levelling off to a maximum value $\Delta(0)$ at very low temperatures}
+\end{itemize}
+
+\xdef\loc{south}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.25*\figYshift,xshift=0*\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,width=12.5cm]{Figures_booklet/SOM_supeconductor_deltaE.png}}; %scale=\figscale. % 8cm max height
+\end{tikzpicture}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+%\framesubtitle{Property number 3}
+
+\begin{itemize}
+	\item The critical temperature for the transition decreases with external magnetic field\appear{, and finally, when field is increased to a value of $B_{c}$}\appear{, the transition does not happen.} \appear{In a way, the external field $B$ is too strong, it destroys the superconductivity}
+\end{itemize}
+
+\vspace{2.5mm}
+\begin{minipage}{7.1cm}
+\begin{itemize}%[itemsep=1.6mm]
+	\item The dependency of $B_{c}$ on temperature $T$ is approximately:
+\[
+B_{c}(T)  \equal \appear{B_{c}(0)}\appear{ \textrm{((}1-} \frac{T^{2}}{T_{c}^{2}} \appear{\textrm{))}}
+\]
+
+\item Note, that if there is a limit on the magnetic field that a material can bear\appear{, then there will be a limit on its ability to carry current}
+
+	\end{itemize}
+\end{minipage}
+
+\xdef\loc{south east}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.25*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,width=6.5cm]{Figures_booklet/SOM_Tipler_Solid_state_physics_figures/SOM_Tipler_SSP_figure_61.png}}; %scale=\figscale. % 8cm max height
+\end{tikzpicture}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Type-I superconductors}
+
+%Type-| Superconductors
+\begin{itemize}[itemsep=1.8mm]
+	\item \CDAlert[red]{Type-I (soft) superconductors exhibit complete Meissner effect} 
+	
+	\item For external magnetic fields less than $B_{c}$ \appear{($B<B_c$)}\appear{, the magnetic field induced in the superconductor is equal and opposite to external magnetic field.} \appear{Type-I superconductors are characterized by sharp transition as the external magnetic field increases}
+\end{itemize}
+
+\vspace{1.8mm}
+\begin{minipage}{4.6cm}
+\begin{itemize}[itemsep=1.8mm]
+	\item Superconducting elements tend to be of Type-I 
+	
+	\item Their critical fields and temperatures are relatively low\appear{, typically 0.01–0.1\;T and 1–9\;K}\appear{, so their \Alert[red]{usefulness is limited}}
+\end{itemize}
+\end{minipage}
+
+\xdef\loc{south east}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.1*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,width=9cm]{Figures_booklet/SOM_10_Bonding_figures/SOM_Bonding_Figure_51.png}}; %scale=\figscale. % 8cm max height
+\end{tikzpicture}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Type-II superconductors}
+%Type-II Superconductors
+
+\seminormal
+\begin{itemize}[itemsep=1.5mm]
+	\item \CDAlert[red]{For $B<B_{c1}$, the type-II material shows the full Meissner effect}
+
+\item When also $T<T_{c}$ \appear{the material is superconducting and $B=0$ throughout the volume of the superconductor}
+
+\item For $B_{c 1}<B<B_{c 2}$ \appear{the magnetic field lines penetrate the material but are \Alert[blue]{confined to flux tubes of normally resistive material}} \appear{that form the so-called \CDAlert[blue]{vortex lattice}}
+\end{itemize}
+
+\vspace{1.5mm}
+\begin{minipage}{4.6cm}
+\begin{itemize}[itemsep=1.5mm]
+	\item For a given temperature $T<T_{c}$\appear{, as the applied field $B$ approaches $B_{c 2}$} \appear{the size of superconducting regions shrinks as more flux tubes occupy the volume }
+	 \item When $B>B_{c 2}$ the entire material has normal resistivity
+\end{itemize}
+\end{minipage}
+
+\xdef\loc{south east}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.05*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,width=9cm]{Figures_booklet/SOM_10_Bonding_figures/SOM_Bonding_Figure_54.png}}; %scale=\figscale. % 8cm max height
+\end{tikzpicture}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Type-II superconductors}
+
+\seminormal
+
+\vspace{1.5mm}
+\begin{minipage}{8.8cm}
+\begin{itemize}[itemsep=3mm]
+	\item In the non-superconducting region\appear{, the material has so-called \CDAlert[fuchsia]{normal cores}}\appear{, through which the magnetic field lines pass} 
+	
+	\item For magnetic fields in the range $B_{c 1}<B<B_{c 2}$\appear{, the material is in the so-called \CDAlert[fuchsia]{vortex state}}\appear{, and has the above-mentioned vortices} 
+\end{itemize}
+\end{minipage}
+
+\vspace{4.3mm}
+\begin{minipage}{6.5cm}
+\begin{itemize}[itemsep=3mm]
+		\item Above magnetic field $B_{c 1}$\appear{, the field lines begin to pass through normal cores}\appear{, while the \Alert[red]{outer regions around the cores remain superconducting}}
+	
+	\item  For even stronger B-fields\appear{, the vortices become more dense and the fraction of superconducting \Alert[red]{zones gets smaller}}
+\end{itemize}
+\end{minipage}
+
+\xdef\loc{north east}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=1*\figYshift,xshift=1*\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,height=4.25cm]{Figures_booklet/SOM_10_Bonding_figures/SOM_Bonding_Figure_52.png}}; %scale=\figscale. % 8cm max height
+\end{tikzpicture}
+
+\xdef\loc{south east}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.1*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,height=4.4cm]{Figures_booklet/SOM_10_Bonding_figures/SOM_Bonding_Figure_53.png}}; %scale=\figscale. % 8cm max height
+\end{tikzpicture}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{BCS Theory}
+
+%BSC Theory
+\begin{itemize}[itemsep=1.6mm]
+	\item \Alert[fuchsia]{The first Nobel prize on superconductivity was given already in 1913} (to Kammerlingh Onnes) \appear{when the superconductivity of some elements in low temperature was found }
+	
+	\item Later, it became apparent that there is always a certain connection\appear{, or correlation}\appear{, between pairs of electrons in the material}\appear{, so-called \CDAlert[red]{Cooper pairs}} \appear{(\CDAlert[fuchsia]{2$^{nd}$ Nobel on superconductivity in 1972})}
+
+\item Electrons are fermions\appear{, but a \CDAlert[blue]{pair of electrons makes a boson}!}
+
+ \item The range of this correlation between each two electrons may be a long distance within the material 
+ 
+ \item In principle, the effect arises form the \Alert[red]{interaction between electrons and phonons} \appear{(lattice vibration of the ions)} \appear{in the solid}\appear{, and when everything is added up, we are left with a weak attraction between these two excitations}
+\end{itemize}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{BCS Theory}
+
+\begin{itemize}
+	\item There are two clues towards the interaction between electrons and the atomic lattice
+	
+	\item \CDAlert[red]{Clue 1}: \appear{A given material's critical temperature varies with the average atomic mass of the lattice ions}\appear{, approximately} $\appear{T_{c}} \propto \appear{M^{-1 / 2}}$\appear{, which has been experimentally verified e.g. with different isotopes}
+
+\item The exact dependency is: $ M^{\alpha} T_{c}=$ constant\appear{,
+where the exponent $\alpha$ depends on material }
+\implies{ The fact that atomic masses affect $T_{C}$ suggest the ions \\
+	of the lattice to be involved }
+	
+\item \CDAlert[blue]{Clue 2}: \appear{Experiments show that low-$T$ superconducting elements are poor conductors at room temperature}\appear{, and vice versa} 
+\implies{ Strong interaction between electrons and ions at room-$T$ is, more or less, a requirement to have superconductivity at low temperature }
+	
+	\end{itemize}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{BCS Theory}
+
+\seminormal
+\begin{itemize}[itemsep=1.5mm]
+	\item At low $T$, two electrons in a solid can form a Cooper pair%, mediated by a phonon 
+	\item Electron moving through a solid \CDAlert[red]{locally deform the lattice}\appear{, affecting other electrons during their propagation}
+\end{itemize}
+
+\vspace{1.9mm}
+\begin{minipage}{6.7cm}
+\begin{itemize}[itemsep=2.2mm]
+\item Electron can be seen to emit a phonon\appear{, which is absorbed by the second electron} 
+
+\item In overall the process manifests itself as an \CDAlert[blue]{attractive force} between the electrons \appear{(seems analogous to forces arising due to exchange of virtual particles in quantum field theories)}
+
+\item The \CDAlert[fuchsia]{binding energy} of a Cooper pair is small \appear{(${\sim}1$\;meV)}\appear{, and the electron separation is fairly large}\appear{( ${\sim}\,1\;\mu \mathrm{m}$).} \appear{Thus, many Cooper pairs overlap each other} %(see Slide 12)
+\end{itemize}
+\end{minipage}
+
+\xdef\loc{south east}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.25*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,width=6.8cm]{Figures_booklet/SOM_10_Bonding_figures/SOM_Bonding_Figure_55.png}}; %scale=\figscale. % 8cm max height
+\end{tikzpicture}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{BCS Theory}
+
+\begin{itemize}
+	\item In 1972, Nobel prize was given to \Alert[red]{John Bardeen, Leon Cooper, and John Robert Schrieffer on their \CDAlert[red]{BCS-theory}}\appear{, which successfully explained the two types of superconductivity}\appear{, Meissner effect}\appear{, existence of a critical temperature, etc.} \appear{Some notes on the results of BCS-theory:}
+
+\item[] \begin{itemize} \seminormal
+	\item The overall state of \CDAlert[red]{lowest energy} (of the system) occurs \appear{when the most energetic conduction electrons (near $E_{F}$) form \Alert[red]{opposite-spin Cooper pairs}}
+	
+\item Only the \Alert[blue]{electrons near $E_{F}$ participate} in the superconducting state. \appear{Raising electrons from deeper to the free states near $E_{F}$}\appear{, would increase energy more than the weak interaction would allow}
+
+\item The electron separation for a Cooper pair is fairly large\appear{, ${\sim}\,1\; \mu \mathrm{m}$.} \appear{Thus, \Alert[fuchsia]{many Cooper pairs overlap each other}}
+
+\end{itemize}
+\end{itemize}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{BCS Theory}
+
+\begin{itemize}
+	\item[] \begin{itemize}  \seminormal
+	\item The electrons in \Alert[blue]{Type-I superconductors have a relatively long mean free path}\appear{, for Type-II, the mean free path is smaller}\appear{, allowing for a microscopic network of flux-carrying normal cores within an otherwise superconducting regime}
+	
+	\item Binding energy \appear{(i.e. energy gap)} \appear{of a Cooper pair is  $\Approx 3.5 k_{B} T_{c}$}\appear{, resulting in $\approx 10^{-3} \;\mathrm{eV}$.} \appear{\CDAlert[fuchsia]{Binding energy becomes apparent at low temperatures}}
+	
+\item According to BCS-theory\appear{, the \Alert[red]{magnetic flux is quantized}.} \appear{The magnetic flux passing through any region encircled by a supercurrent}\appear{, must be an integer times $\pi \hbar / e$}
+
+\end{itemize}
+
+\item The energy gap in the density of states of a superconductor can be estimated 
+
+\item For example, for cadmium $T_{c}=0.517 \mathrm{~K}$, so:
+\[
+E_{g}  \equal \appear{3.5 \,k_{B} T_{c}} \equal \appear{1.56 \times 10^{-4} \;\mathrm{eV}}
+\]
+\end{itemize}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{High-$T_c$ superconductors}
+
+%$\underline{\text { High-T }_{c} \text { Superconductors }}$
+\begin{itemize}
+	\item There is an ongoing research and development towards superconductors at higher and higher temperatures\appear{, approaching room temperature} 
+	
+	\item The promising compounds have been\appear{, quite surprisingly, \CDAlert[red]{ceramics} containing e.g. copper and oxygen }
+	
+	\item Temperatures as high as liquid nitrogen \appear{($T=77 \mathrm{~K}=-196^{\circ} \mathrm{C}$)} \appear{have been reached with compounds such as (historically important)} \appear{$\mathrm{YBa}_{2} \mathrm{Cu}_{3} \mathrm{O}_{7}$} \appear{and $\mathrm{Hg}_{0.8} \mathrm{Tl}_{0.2} \mathrm{Ba}_{2} \mathrm{Ca}_{3} \mathrm{Cu}_{3} \mathrm{O}_{8.33}$}\appear{, and recent record Fm-3m structure of $\mathrm{LaH}_{10}$ (@ $\left.p \sim 170 \mathrm{\;GPa}\right)$ in $T=250 \mathrm{~K}=$ $-23^{\circ} \mathrm{C}$ (Drozdov et al., 2018)!!}
+
+\item Note that this is only the high temperature record\appear{, often novel high-$T$ superconductor materials \CDAlert[fuchsia]{cannot sustain high electrical currents}}
+
+\item Mechanism in superconducting \CDAlert[blue]{2D materials} seems similar to the high-$T$ materials\appear{, hopefully providing \CDAlert[blue]{novel theoretical insights}}
+\end{itemize}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{High-$T_c$ superconductors}
+
+\begin{itemize}
+	\item For technologically relevant applications\appear{, it is often important to maximize the triplet of:} \appear{a) \CDAlert[red]{temperature}}\appear{, b) \CDAlert[blue]{electrical current density}} \appear{and c) \CDAlert[fuchsia]{magnetic field strength}}
+
+\end{itemize}
+
+\vspace{2.5mm}
+\begin{minipage}{6cm}
+\begin{itemize}[itemsep=1.6mm]
+\item Some technological implementations of these HTS-materials (high-$T$  superconductors) in power transmission already exist using novel cable structures\appear{, with sophisticated \Alert[red]{concentric cooling structures} }
+
+\item Reaching \Alert[red]{liquid nitrogen temperatures} is an achievement
+
+\item Numerous application areas! 
+\end{itemize}
+\end{minipage}
+
+\appear{\xdef\loc{south east}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.25*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\scriptsize 
+\begin{tabular}{|cc|} 
+%&\text { High-Temperature Superconductors }\\
+%&\begin{array}{c|c}
+\hline
+\text { \Alert[red]{Electronics} } & \text { \Alert[blue]{Basic Research} } \\
+\text { Sensors } & \text { High-Field Magnets } \\
+\text{Supercomputers} & \text { SQUID Sensors } \\
+\text{\!\!Cryo-electronic Components\!\!\!\!\!\!} & \text { Bolometers } \\
+  & \text { Particle Detectors } \\
+ \text { \Alert[blue]{Medical Techniques} } &  \\
+\text { SQUID Diagnostics } & \text { \Alert[red]{Microwave Technique} } \\
+\text { Magnetic Resonance } & \text { Filters } \\
+\text { Imaging (MRI) } & \text { Resonators } \\
+& \text { Antenna } \\
+\text { \Alert[red]{Power Engineering} } &  \text { Delay Lines }\\
+\text { Generators } & \text { Active Components } \\
+%\text { Motors } &  \\
+\text { Transformers } & \\
+\text { Current Limiters } & \text { \Alert[blue]{Traffic Engineering} }  \\
+\text { Switchers } & \text { Maglev Trains } \\
+\text { Cables } &  \text {Magnetic Transport Systems\!\!} \\
+\text { Energy Storages } & \text { Ship's Engines }  \\
+\hline
+%\end{array}
+\end{tabular}
+}; %scale=\figscale. % 8cm max height
+\end{tikzpicture}}
+
+%\endofslide 
+\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%

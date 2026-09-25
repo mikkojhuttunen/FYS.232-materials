@@ -1,0 +1,325 @@
+% !TEX root = ../aa_SoM_Chapters.tex
+
+% ö = \%c3\%b6
+% ä = \%C3\%A4
+
+\xdef\sectiontitle{\Isectiontitle} %aiheuttama
+
+%%%%%%%%%%%%%%%
+\begin{frame}[label=1_4_a]%[label=1_4_TOC1]
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+
+\vspace{0.5cm}
+
+\begin{itemize}[leftmargin=0.5cm,itemsep=2mm]
+    \item[1.1]<1-> \hyperlink{1_1_a}{\IaSubsectiontitle}
+    \item[1.2]<1-> \hyperlink{1_2_a}{\IbSubsectiontitle}	
+    \item[1.3]<1-> \hyperlink{1_3_a}{\IcSubsectiontitle}	
+    \item[1.4]<1-> \hyperlink{1_4_a}{\Alert[red]{\IdSubsectiontitle}}
+    \item[1.5]<1-> \hyperlink{1_5_a}{\IeSubsectiontitle}
+    \item[1.6]<1-> \hyperlink{1_6_a}{\IfSubsectiontitle}
+    \item[1.7]<1-> \hyperlink{1_7_a}{\IgSubsectiontitle}
+\end{itemize}
+
+\vspace{-1cm}
+\begin{itemize}[leftmargin=9.5cm,itemsep=2mm]
+    \item[1.8]<1-> \hyperlink{1_8_a}{\IhSubsectiontitle}
+	\item[1.9]<1-> \hyperlink{1_9_a}{\IiSubsectiontitle}
+	\item[1.10]<1-> \hyperlink{1_10_a}{\IjSubsectiontitle}
+	\item[1.11]<1-> \hyperlink{1_11_a}{\IkSubsectiontitle}
+\end{itemize}
+
+%\endofslide 
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%\xdef\IbSubsectiontitle{Entropy and Temperature}
+\xdef\sectiontitle{\IdSubsectiontitle}
+
+%%%%%%%%%%%%%%%
+\begin{frame}%[label=1_4_a]
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+
+\begin{itemize}
+	\item Applying equation for $P_{n_{i}}$\appear{, shown \hyperlink{1_3_Pn}{on earlier slide}, is tedious.} \appear{For large systems, it is feasible to use \CDAlert[red]{Boltzmann probability}:}
+\[ 
+ P \textrm{((} E_{n} \textrm{))}  \equal \appear{A} \appear{e^{-E_{n} / k_{B} T} }
+ \]
+\appear{It is seen in Figure 6 that Boltzmann works fairly well} \appear{even for smaller systems like the one given}
+\end{itemize}
+
+\vspace{2.5mm}
+% 6.5 cm = midway, 10 cm = 3/4 
+\begin{minipage}{5.5cm}
+\begin{itemize}
+	\item For $P \textrm{((} E_{n} \textrm{))} $ to be a qualified probability function\appear{, it needs to be normalized}\appear{, i.\,e. we need to choose constant $A$ properly}
+%\[
+%\sum P \textrm{((} E_{n} \textrm{))} =\sum_{n} A e^{-E_{n} / k_{B} T}=1 \Rightarrow A=\frac{1}{\sum_{n} e^{-E_{n} / k_{B} T}} \Rightarrow P \textrm{((} E_{n} \textrm{))} =\frac{e^{-E_{n} / k_{B} T}}{\sum_{n} e^{-E_{n} / k_{B} T}}
+%\[
+%And thus, e.g. average energy can be obtained by
+%\[
+% < E >\, =\sum_{n} E_{n} P \textrm{((} E_{n} \textrm{))} =\sum_{n} E_{n} \frac{e^{-E_{n} / k_{B} T}}{\sum_{n} e^{-E_{n} / k_{B} T}}=\frac{\sum_{n} E_{n} e^{-E_{n} / k_{B} T}}{\sum_{n} e^{-E_{n} / k_{B} T}}
+%\[
+\end{itemize}
+\end{minipage}
+
+\xdef\loc{south east}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.25*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,width=8.2cm]{Figures_booklet/SOM_9_Statistical_mechanics_figures/SOM_Figure_6.png}}; %scale=\figscale. % 8cm max hei
+\end{tikzpicture}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}%[label=1_4_a]
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+
+\begin{itemize}
+\item[] \[
+\begin{aligned}
+\nsum \appear{P \textrm{((} E_{n} \textrm{))}} &  \equal  \appear{\nsum_{n}} \appear{A} \appear{e^{-E_{n} / k_{B} T} } \equal  \appear{1} \qquad \Rightarrow \qquad \appear{A}  \equal \frac{1}{\nsum_{n} e^{-E_{n} / k_{B} T}} \\
+ \appear{\Rightarrow} \qquad \quad \appear{P \textrm{((} E_{n} \textrm{))}} & \equal \frac{e^{-E_{n} / k_{B} T}}{\nsum_{n} e^{-E_{n} / k_{B} T}}
+\end{aligned}
+\]
+\item And thus, e.g. \CDAlert[red]{average energy $< E >\,$}$^*$ can be obtained by\footnote{{\appear{$^*$\;$< E >\,$ is the  \CDAlert[red]{expected value}{https://en.wikipedia.org/wiki/Expected_value}, defined as $\mathrm{E}(X) \Equiv \sum_{i=1}^n x_i p_i \,$.} \appear{Memorize~this.}}}
+\[
+\begin{aligned}
+ < E >\, &  \equal \appear{\nsum_{n}} \appear{E_{n}} \appear{P \textrm{((} E_{n} \textrm{))}} \\
+ & \equal \appear{\nsum_{n} E_{n}} \frac{e^{-E_{n} / k_{B} T}}{\nsum_{n} e^{-E_{n} / k_{B} T}} \\
+ & \equal \fracc{\nsum_{n} E_{n} e^{-E_{n} / k_{B} T}}{\nsum_{n} e^{-E_{n} / k_{B} T}}
+\end{aligned}
+\]
+\end{itemize}
+
+%\xdef\loc{south east}
+%\begin{tikzpicture}[remember picture,overlay] % anchor=south
+%    \node (A) [yshift=-0.25*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,width=8.2cm]{Figures_booklet/SOM_9_Statistical_mechanics_figures/SOM_Figure_6.png}}; %scale=\figscale. % 8cm max hei
+%\end{tikzpicture}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+
+\begin{itemize}
+	\item For the Einstein's solid \appear{we had $E_{n}=n \hbar \omega_{0}$}\appear{, now let's plug this into above equation, and plot the Boltzmann distribution (Fig.~7)}
+	\appear{\xdef\loc{south east}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.25*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,width=8cm]{Figures_booklet/SOM_9_Statistical_mechanics_figures/SOM_Figure_7.png}}; %scale=\figscale. % 8cm max hei
+\end{tikzpicture}}
+
+\item Variation of Boltzmann probability distribution $P \textrm{((} E_{n} \textrm{))}$ for 3 different temperature ranges \appear{(from $k_{\mathrm{B}} T\!<\!\hbar \omega_{0}$ to $k_{\mathrm{B}} T\!>\!\hbar \omega_{0}$):}
+% 6.5 cm = midway, 10 cm = 3/4 
+\end{itemize}
+
+\begin{minipage}{6cm}
+\begin{itemize}
+	\item[] \begin{itemize}[itemsep=2mm]
+	\item $T=\Frac{1}{5} \hbar \omega_{0} / k_{B}$
+\item $T=\hbar \omega_{0} / k_{B}$
+\item $T=5 \hbar \omega_{0} / k_{B}$
+\end{itemize}
+
+\item Obviously at lower temperatures it is very
+	unlikely for the oscillators to possess
+	several quanta \appear{(of $\hbar \omega_{0}$)}\appear{, i.\,e. to get
+	to higher energy states}
+\end{itemize}
+\end{minipage}
+\vspace{2.5mm}
+
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+
+%\begin{itemize}
+%	% 6.5 cm = midway, 10 cm = 3/4 
+%\item[]
+\begin{minipage}{7cm}
+\begin{itemize}
+	\item We want to often know how
+		many particles \appear{(oscillators)} \appear{are at
+		certain state}
+		\appear{(possess a certain number of quanta)}
+
+\item Total number of particles is still $N$
+\end{itemize}
+\end{minipage}
+
+\vspace{2.5mm}
+\begin{itemize}
+
+\item We define \CDAlert[red]{occupation number} $\mathbb{N}$: %$\mathcal{N}$
+\[ 
+ \mathbb{N} \textrm{((} E_{n} \textrm{))} _{B o l t z m a n n}  \equal  \appear{N P \textrm{((} E_{n} \textrm{))}}  \equal  \appear{N\,} \appear{A e^{-E_{n} / k_{B} T}} \appear{\,, \qquad  < E >\,  \equal \frac{\sum_{n} E_{n} \mathbb{N} \textrm{((} E_{n} \textrm{))} }{\sum_{n} \mathbb{N} \textrm{((} E_{n} \textrm{))} } }
+ \]
+
+\item Using occupation number $\mathbb{N}$\appear{, we get:}
+\[ \bg[2.4]{\text{\bigsymbolsfont(}}\!\! 
+\appear{{\footnotesize
+\begin{array}{c}
+\text {number of} \\ \text {particles of} \\ \text {energy E}
+\end{array}  }}
+ \!\!\bg[2.4]{\text{\bigsymbolsfont)}}   \equal  \appear{\bg[2.4]{\text{\bigsymbolsfont(}\! }
+\appear{{\footnotesize
+\begin{array}{c}
+\mathbb{N} \text {, number of} \\ \text{particles in a given} \\ 
+\text {state of energy E}
+\end{array}}}
+\!\!\bg[2.4]{\text{\bigsymbolsfont)}}  } \appear{\times} \appear{ \bg[2.4]{\text{\bigsymbolsfont(}}\!\!  
+\appear{{\footnotesize 
+\begin{array}{c}
+\text {number of} \\ \text{states of} \\ \text {energy E}
+\end{array}}}
+\!\!\bg[2.4]{\text{\bigsymbolsfont)}} }
+\]
+\end{itemize}
+
+\xdef\loc{north east}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,width=6.5cm]{Figures_booklet/SOM_9_Statistical_mechanics_figures/SOM_Figure_7.png}}; %scale=\figscale. % 8cm max hei
+\end{tikzpicture}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+
+\begin{itemize}
+	\item Now we can write: 
+	\[
+	< E >\,  \equal \fracc{\sum_{n} E_{n} \mathbb{N} \textrm{((} E_{n} \textrm{))} }{\sum_{n} \mathbb{N} \textrm{((} E_{n} \textrm{))} }
+	\]
+\item Often the quantum energy levels are so close to each other that the \CDAlert[red]{sums can be replaced by integrals}
+
+\item Generally, the ratio between probabilities of two neighbouring energy levels is
+\[ 
+ \Frac{P \textrm{((} E_{n} \textrm{))} }{P \textrm{((} E_{n+1} \textrm{))} }  \equal \fracc{e^{-E_{n} / k_{B} T}}{e^{-E_{n+1} / k_{B} T}} \equal \appear{e^{ \textrm{((} E_{n+1}-E_{n} \textrm{))}  / k_{B} T} }
+ \]
+\item So if $E_{n+1}-E_{n}$ is much smaller than $k_{B} T$\appear{, then the ratio really is close to 1}\appear{, and the sum can be transformed into an integral}
+
+\end{itemize}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+
+\begin{itemize}
+	\item This could be seemingly performed by taking the limit
+\[ 
+  < E >\,  \equal \frac{\sum_{n} E_{n} \mathbb{N} \textrm{((} E_{n} \textrm{))} }{\sum_{n} \mathbb{N} \textrm{((} E_{n} \textrm{))} } \qquad \appear{\Rightarrow} \qquad \frac{\int_{n} E \mathbb{N}(E) d n}{\int_{n} \mathbb{N}(E) d n} 
+ \]
+	\item However, we need to be careful when transforming sums into continuous integrals
+	
+\item First of all, the quantum number $n$ is not necessarily the most convenient integration variable here\appear{, energy is a better quantity}
+
+\item Therefore we should have:
+\[ 
+  < E >\,  \equal \frac{\int E \mathbb{N}(E) d n}{\int \mathbb{N}(E) d n} \equal \frac{\int E \mathbb{N}(E) \frac{d n}{d E} \appear{d E}}{\int \mathbb{N}(E) \appear{\Frac{d n}{d E} d E}} \equal \frac{\int E \mathbb{N}(E) D(E) d E}{\int \mathbb{N}(E) D(E) d E} 
+ \]
+
+\end{itemize}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+
+\begin{itemize}
+\item[] %Therefore we should have:
+\[ 
+  < E >\,  \equal \Frac{\int E \mathbb{N}(E) d n}{\int \mathbb{N}(E) d n}  \equal \Frac{\int E \mathbb{N}(E) \Frac{d n}{d E} d E}{\int \mathbb{N}(E) \Frac{d n}{d E} d E} \equal \Frac{\int E \mathbb{N}(E) D(E) d E}{\int \mathbb{N}(E) D(E) d E} 
+ \]
+\item Here we have introduced a quantity known as the \CDAlert[fuchsia]{density of} \CDAlert[fuchsia]{states $D(E)$}\appear{, indicating how closely the energy levels are packed:}
+\[ 
+ D(E) \equiv \fracc{\text{\small differential number of states within range dE close to E}}{d E} \equal \fracc{d n}{d E} 
+ \]
+
+%\fontsize{13}{15}\selectfont 
+\item In practise, most (if not all) calculations of mean values \appear{are calculated as integrals}
+\implies[\normal]{ \CDAlert[red]{Density of states $D$ (or DOS)} \appear{\CDAlert[red]{is a central and omnipresent}} \\ \appear{\CDAlert[red]{concept in solid-state physics!}} }
+\implies[\normal]{ \Alert[tunired]{Re-introduced in our course on solid-state physics..} }
+\end{itemize}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+
+\begin{itemize}
+\item Harmonic oscillator provides an easy example to demonstrate \appear{how the density of states $D(E)$ can be calculated:} 
+\[
+\begin{aligned}
+E_{n}  \equal \appear{n \hbar \omega_{0}} \qquad &\Rightarrow& \qquad
+\frac{d n}{d E} &\equal \frac{\text{differential number of states}}{d E} \\
+&\Rightarrow& \qquad \appear{d n} &  \equal \frac{1}{\hbar \omega_{0}} \appear{d E} \\
+&\Rightarrow &    \frac{d n}{d E} & \equal \frac{1}{\hbar \omega_{0}}  \equal \appear{D(E)}
+ \end{aligned}
+\]
+
+\item Admittedly, this example is somewhat boring\appear{/trivial}\appear{, as it gives a constant density of states}\appear{, but at least we can verify that the result makes sense} \appear{(energy states of harmonic oscillator are equispaced)}
+\end{itemize}
+
+%\xdef\loc{south west}
+%\begin{tikzpicture}[remember picture,overlay] % anchor=south
+%    \node (A) [yshift=2cm,xshift=-\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,width=6.8cm]{Figures_booklet/SOM_9_Statistical_mechanics_figures/SOM_Figure_4_cc.png}}; %scale=\figscale. % 8cm max hei
+%\end{tikzpicture}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+
+\begin{itemize}
+	\item For a set of identical (but distinguishable) harmonic oscillators\appear{, we obtain the average energy:}
+\[ 
+  < E >\,  \equal \fracc{\nint E \mathbb{N}(E) D(E) d E}{\nint \mathbb{N}(E) D(E) d E}  \equal \frac{\nint E N A e^{-E_{n} / k_{B} T} \frac{1}{\hbar \omega_{0}} d E}{\nint N A e^{-E_{n} / k_{B} T} \frac{1}{\hbar \omega_{0}} d E}  \equal \appear{\ldots} \equal \appear{k_{B} T} 
+ \]
+\item Previously we obtained a result:
+\[ 
+  < E >\,  \equal \frac{\hbar \omega_{0}}{e^{\hbar \omega_{0} / k_{B} T}-1} 
+ \]
+\item If we have $\hbar \omega_{0} \ll k_{B} T$\appear{, then $\appear{x=}\frac{\hbar \omega_{0}}{k_{B} T} \appear{\ll 1}$}\appear{, and using} $\appear{e^{x}} \approx \appear{1+x}$\appear{, we obtain $ \appear{< E >} \approx \appear{k_{B} T}$}
+\end{itemize}
+
+%\endofslide 
+\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+

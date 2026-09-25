@@ -1,0 +1,626 @@
+% !TEX root = ../bb_AiRa_Kappaleet.tex
+
+%% HARRIS: Chapter 10
+
+% ö = \%c3\%b6
+% ä = \%C3\%A4
+
+\xdef\sectiontitle{\IIsectiontitle} %aiheuttama
+\TOCrefs
+
+%%%%%%%%%%%%%%%
+\begin{frame}[label=2_6_a]%[label=2_5_TOC1]
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\label{\TOCname}
+
+\vspace{\chapterTOCvksip}
+\begin{itemize}[leftmargin=0.5cm,itemsep=3mm]
+    \item[2.1]<1-> \hyperlink{2_1_a}{\IIaaSubsectiontitle}
+    \item[2.2]<1-> \hyperlink{2_2_a}{\IIaSubsectiontitle}
+    \item[2.3]<1-> \hyperlink{2_3_a}{\IIbSubsectiontitle}	
+    \item[2.4]<1-> \hyperlink{2_4_a}{\IIcSubsectiontitle}	
+    \item[2.5]<1-> \hyperlink{2_5_a}{\IIdSubsectiontitle}
+    \item[2.6]<1-> \hyperlink{2_6_a}{\CDAlert[blue]{\IIeSubsectiontitle}}
+    \item[2.7]<1-> \hyperlink{2_7_a}{\IIfSubsectiontitle}
+    \item[2.8]<1-> \hyperlink{2_8_a}{\IIgSubsectiontitle}
+    \item[2.9]<1-> \hyperlink{2_9_a}{\IIhSubsectiontitle}
+    \item[2.10]<1-> \hyperlink{2_10_a}{\IIiSubsectiontitle}
+\end{itemize}
+
+%\endofslide 
+\end{frame}
+%%%%%%%%%%%%%%%
+
+\xdef\sectiontitle{\IIeSubsectiontitle} 
+%\xdef\sectiontitle{Johteet, Eristeet ja Puolijohteet} 
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Vöiden miehitysasteet}
+\appear{}
+
+\begin{itemize}
+	\item Kun atomit liittyvät toisiinsa \appear{voimakkaasti ytimiin sidotut elektronit pysyvät eristäytyneinä atomiensa lähellä, eivätkä osallistu vöiden muodostumiseen (kuva)}
+
+\item Korkeammat tilat\appear{, missä uloimmat elektronit ovat}\appear{, eli valenssielektronit,} \appear{hajoavat kuitenkin energiavöiksi jaksollisen potentiaalin takia}
+
+\item $N$:stä atomista koostuvassa kiteessä\appear{ energiavyöt hajoavat $N$:ksi avaruudelliseksi tilaksi} 
+
+\item Spinin takia \appear{kullekin vyölle mahtuu yhteensä $2 N$ elektronia}
+
+\end{itemize}
+
+% 6.5 cm = midway, 10 cm = 3/4 
+\vspace{2.5mm}
+\begin{minipage}{5.6cm}
+\begin{itemize}
+\item Eristeen ja \appear{sähkönjohteen ero johtuu \CDAlert[red]{korkeimman vyön} miehitysasteesta}\appear{, \CDAlert[red]{onko se täynnä}} \appear{vai vain osittain elektronien miehittämä?}
+\end{itemize}
+\end{minipage}
+
+\xdef\loc{south east}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.25*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,width=8cm]{Figures_booklet/SOM_10_Bonding_figures/SOM_Bonding_Figure_29.png}}; %scale=\figscale. % 8cm max height
+\end{tikzpicture}
+\footnote{\HarrisCR[1-]}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%
+%\begin{frame}
+%\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+%
+%\begin{itemize}
+%	\item Let's look at the periodic potential ...
+%	\item $\ldots$ and the possible wave functions\appear{, here $N=8$}\appear{, as an example (only 4 functions presented):}
+%	
+%	\item We obtained energy bands, which may be overlapping with each other (depending on $a$)
+%	
+%\item And we found out that a great fraction of the energy of electrons is kinetic\appear{, potential energy deforms the curves, and gaps are formed}
+%
+%\end{itemize}
+%
+%
+%\endofslide 
+%%\endofsection
+%\end{frame}
+%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Oikea tilatiheys (DOS)}
+\appear{}
+
+\begin{itemize}
+%	\item To study the band structure, we can take approaches of different level in details 
+	\item Lasketaan seuraavaksi kuinka kiinteän aineen elektronit täyttävät energiavyöt 
+	\appear{\xdef\loc{south east}%
+\begin{tikzpicture}[remember picture,overlay]% anchor=south
+    \node (A) [yshift=-0.15*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,width=8cm]{Figures_booklet/SOM_10_Bonding_figures/Tikz_SOM_Bonding_EFermi_schematic}};%scale=\figscale. % 8cm max height
+\end{tikzpicture}}
+	\item Muista että olemme jo laskeneet kolmiulotteisen kvanttikaivon \CDAlert[fuchsia]{tilatiheyden}:
+\[
+D(E) \equal \frac{1}{8} \appear{4 \pi n^{2} }\frac{d n}{d E}  \equal \fraca{\appear{(2 s+1)} \appear{m^{3 / 2} V}}{\pi^{2} \appear{\hbar^{3}} \appear{2^{1/2}}} \appear{E^{1/2}}
+\]
+\vspace{2.5mm}
+\appear{ja tähän liittyväksi \CDAlert[fuchsia]{fermienergiaksi $E_{F}$} saatiin}
+\end{itemize}
+% 6.5 cm = midway, 10 cm = 3/4 
+%\vspace{2.5mm}
+\begin{minipage}{6.5cm}
+\begin{itemize}
+	\item[] \[
+ E_{F} \equal \fraca{\pi^{2} \hbar^{2}}{m} \appear{\Bigg[} \, \fraca{3}{\appear{(2 s+1)} \appear{\pi} \appear{2^{1/2}}} \frac{N}{V} \,\, \appear{\Bigg]^{2/3}}
+\]
+\end{itemize}%\RB \appear{\raisebox{9pt}{$^{2/3}$}}
+\end{minipage}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Tilatiheys (DOS)}
+\appear{}
+
+\begin{itemize}
+	\item Jatkossa meillä voisi olla 3 erilaista tilatiheyttä:
+\item[] \begin{itemize}
+	\item Tilatiheys $D$ pidetään vakiona \appear{(yksinkertaisuutensa takia Harrisin valinta)}
+\item $D=D(E)$ johdetaan kolmiulotteisen neliöpotentiaalin rakenteelle \appear{(edellisillä luennoilla)}
+\item $D=D(E)$ johdetaan monimutkaisemman Coulombisen potentiaalin tapauksessa \appear{(hienompi tapa)}
+
+\end{itemize}
+
+\item Lisäksi meitä kiinnostaa tarkastella tilannetta erilaisilla lämpötiloilla:
+\item[] \begin{itemize}
+	\item $T=0 \mathrm{~K}$
+	\item $T>0 \mathrm{~K}$
+	\end{itemize}
+	
+	\item Meillä on siis 6 erilaista lähestymistapaa \appear{kuten seuraavan kalvon taulukkoon on hahmoteltu}
+
+\end{itemize}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Tilatiheys (DOS)}
+\appear{}
+
+\begin{itemize}
+	
+\item Huomaa että näitä tapoja käytetään aika sattumanvaraisesti kuvaamaan samaa asiaa  
+\implies{ \Alert[fuchsia]{Elektronien} \CDAlert[fuchsia]{vyörakennetta} \Alert[fuchsia]{kiteisessä kiinteässä aineessa}}
+\vspace{4mm}
+
+{ \small
+\begin{tabular}{|c|c|c|} 
+\hline \Alert[blue]{Tilatiheys, $D$} & FD-statistiikka (\Alert[red]{$T=0 \mathrm{~K}$}) & FD-statistiikka (\Alert[tunired]{$T>0 \mathrm{~K}$}) \\
+\hline Vakio & X & X \\
+\hline Jaksollinen 3D-neliöpotentiaali & X & X \\
+\hline Jaksollinen Coulombinen potentiaali  & & \\
+\hline
+\end{tabular}
+}
+
+\end{itemize}
+
+\xdef\loc{south}%
+\begin{tikzpicture}[remember picture,overlay]% anchor=south
+    \node (A) [yshift=-0.25*\figYshift,xshift=0*\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,width=8cm]{Figures_booklet/SOM_10_Bonding_figures/Tikz_SOM_Bonding_EFermi_schematic}};%scale=\figscale. % 8cm max height
+\end{tikzpicture}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Vöiden päällekkäisyys}
+\appear{}
+
+\begin{itemize}
+	\item Tarkastellaan seuraavaksi elektronien energiatasoja alkuainetaulukon kevyissä alkuaineissa:
+	% 6.5 cm = midway, 10 cm = 3/4 
+\end{itemize}
+\vspace{1.5mm}
+
+\begin{minipage}{3.75cm} \small
+\begin{itemize}
+\item[\ii] \CDAlert[red]{Litiumilla ja natriumilla} \appear{ on molemmilla yksi valenssielektroni $2 \mathrm{s}$- ja $3 \mathrm{s}$-tilalla, vastaavasti.} \appear{Eli vyöt ovat puoliksi täynnä.} \appear{Näiden alkuaineiden kuvittelisi olevan sähkönjohteita.}\appear{ Ja ne ovatkin \CDAlert[red]{johteita}}
+
+\item[\ii] \CDAlert[blue]{Berylliumilla ja mag\-ne\-siu-} \CDAlert[blue]{milla} \appear{on vastaavasti kaksi elektronia tiloilla $2 \mathrm{s}$ ja $3s$}. \appear{Eli niiden korkein miehitetty vyö on täysi.} \appear{Niiden  \CDAlert[blue]{luulisi} olevan \CDAlert[blue]{eristeitä}}
+\end{itemize}
+\end{minipage}
+
+
+\xdef\loc{south east}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.25*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,width=10cm]{Figures_booklet/SOM_10_Bonding_figures/SOM_Atomic_Figure_14.png}}; %scale=\figscale. % 8cm max height
+\end{tikzpicture}
+\footnote{\HarrisCR[1-]}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Vöiden päällekkäisyys}
+\appear{}
+
+\begin{itemize}
+\item Atomitilojen $ \textrm{((}n, \ell, m_{\ell} \textrm{))}$ linkittäminen kiinteän aineen vöihin voi olla monimutkaista. \appear{Seuraavaksi tätä käsitellään vain kvalitatiivisesti, tarkastelemalla ensin tilannetta jossa eri vyöt eivät ole päällekkäin}
+
+\item \CDAlert[red]{Suurimman energian vyö} joka olisi  \Alert[red]{täysin miehitetty nollassa kelvinissä}\appear{ on määritelty \CDAlert[red]{valenssivyöksi}}
+	% 6.5 cm = midway, 10 cm = 3/4 
+
+\end{itemize}
+\vspace{2.5mm}
+
+\begin{minipage}{7.5cm}
+\begin{itemize}
+\item \CDAlert[blue]{Seuraava} (korkeampi) \Alert[blue]{sallittu vyö on nimeltään} \CDAlert[blue]{johtavuusvyö}
+
+\item Esimerkiksi litiumilla \appear{$2 \mathrm{s}$-vyö on joh\-ta\-vuus\-vyö}
+\item Natriumilla \appear{$3 \mathrm{s}$-vyö on johtavuusvyö}
+\end{itemize}
+\end{minipage}
+
+%% cropped image
+\xdef\loc{south east}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.35*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,width=6cm]{Figures_booklet/SOM_10_Bonding_figures/SOM_Bonding_Figure_30_cropped.png}}; %scale=\figscale. % 8cm max height
+\end{tikzpicture}
+\footnote{\HarrisCR[1-]}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Vöiden päällekkäisyys}
+\appear{}
+
+\begin{itemize}
+	\item Ylläoleva tieto\appear{ ei kuitenkaan riitä kertomaan onko joku alkuaine eriste vai johde}
+
+\item Pitää tietää myös \Alert[red]{oikeat energiatasot} \appear{ylläolevista tiloista}\appear{, eli siis  \CDAlert[red]{'energiavöistä'}}
+\end{itemize}
+
+% 6.5 cm = midway, 10 cm = 3/4 
+\vspace{2.5mm}
+\begin{minipage}{4.5cm}
+\begin{itemize}
+	\item Kuvassa 30 oletetaan virheellisesti \appear{että berylliumin miehitetyn $2 \mathrm{s}$ vyön ja} \appear{sen yläpuolella olevan $2 \mathrm{p}$ vyön välissä on energiavyöaukko}\appear{/energiarako} 
+	\item Jos kuva~30 olisi oikeassa niin \appear{Be olisi eriste (ei vapaita elektroneita)}
+\end{itemize}
+\end{minipage}
+
+
+\xdef\loc{south east}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.35*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,width=9cm]{Figures_booklet/SOM_10_Bonding_figures/SOM_Bonding_Figure_30.png}}; %scale=\figscale. % 8cm max height
+\end{tikzpicture}
+\footnote{\HarrisCR[1-]}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Vöiden päällekkäisyys}
+\appear{}
+
+\begin{itemize}
+	\item Sekä \CDAlert[red]{beryllium} ja \CDAlert[red]{magnesium} ovat kuitenkin \CDAlert[red]{sähkönjohteita}
+
+\item Eli  berylliumin (magnesiumin) \CDAlert[fuchsia]{$2p$ ($3 \mathrm{p}$)} vöiden energiat  \CDAlert[fuchsia]{ovat osittain päällekkäin 2s (3s) vöiden kanssa} 
+
+\item Jopa täydellä 2s vyöllä olevat berylliumin elektronit  \appear{(täydellä 3s vyöllä olevat magnesiumin)} \appear{voivat siirtyä}
+% 6.5 cm = midway, 10 cm = 3/4 
+\end{itemize}
+%\vspace{2.5mm}
+\begin{minipage}{7.1cm}
+\begin{itemize}
+	\item[]  $2 p$ vyölle (3p vyölle): 
+	\implies{ mahdollisuus liikkua vapaasti \appear{ja \\
+		      muodostaa vapaaelektronikaasu} } 
+	\implies{ mikä mahdollistaa  \CDAlert[blue]{sähkön johtumisen} }
+\end{itemize}
+\end{minipage}
+
+
+\xdef\loc{south east}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.25*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,width=6.5cm]{Figures_booklet/SOM_10_Bonding_figures/SOM_Bonding_Figure_31.png}}; %scale=\figscale. % 8cm max height
+\end{tikzpicture}
+\footnote{\HarrisCR[1-]}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Opettele kuva ulkoa!}
+\appear{}
+
+\seminormal
+\begin{itemize}
+	\item Kuva 32 näyttää eron \Alert[red]{eristeiden, johteiden ja puolijohteiden välillä}\appear{, ensin $T=0 \mathrm{~K}$ (vasen)}\appear{ ja sitten $\mathrm{T}>0 \mathrm{~K}$ (oikea).} \appear{Kuvassa näkyy myös Fermin–Diracin jakauma lämpötilassa $T=0 \mathrm{~K}$} \appear{(käytännössä askelfunktio fermienergiaan $E_{F}$ asti)} \appear{ja $\mathrm{T}>0 \mathrm{~K}$ (silotellumpi funktio $E_{F}$:n lähellä).} \appear{Aine on johde }\appear{jos korkeimman energian miehitetty tila ei ole täysin täynnä}\appear{, jolloin se on määritelmän mukaisesti johtavuusvyö}
+
+\item Jopa $T=0~\mathrm{K}$\appear{ elektronit voivat absorboida ulkoisen kentän energiaa}
+\end{itemize}
+
+\xdef\loc{south}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.35*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,width=13cm]{Figures_booklet/SOM_10_Bonding_figures/SOM_Bonding_Figure_32.png}}; %scale=\figscale. % 8cm max height
+\end{tikzpicture}
+\footnote{\HarrisCR[1-]}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Eristeet}
+\appear{}
+
+\begin{itemize}
+	\item Jos kiinteän aineen valenssivyö on täysin miehitetty\appear{, ja valenssivyön } \appear{ja tyhjän johtavuusvyön} \appear{välinen \CDAlert[blue]{energiarako}} \appear{\Alert[blue]{on suurempi kuin noin $2 \mathrm{~eV}$}}\appear{, niin aine määritellään eristeeksi} 
+	\item Seuraavaksi korkein sallitty energiavyö \appear{(johtavuusvyö)} \appear{on niin korkealla} \appear{etteivät tavallisen suuruiset kentät riitä kasvattamaan elektronien energiaa sen saavuttamiseksi}\appear{, jolloin elektronit jäävät aiemmille tiloilleen} 
+	\implies{ Tällöin aine ei juurikaan reagoi ulkoiseen kenttään }
+
+\item Esim. \CDAlert[blue]{ioniset kiteet ovat eristeitä} 
+\item $\mathrm{NaCl}$:n energivyöt syntyvät Na$^+$- ja Cl$^-$-ioneista. \appear{Molempien ionien elektronikonfiguraatiot ovat täysiä}\appear{, seuraavaksi korkein vyö on täysi, kun taas alempi on tyhjä}
+
+\end{itemize}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Ryhmä 14}
+\appear{}
+
+\semismall
+
+\begin{itemize}
+	 \item Hiilellä on kaksi  2s ja $2p$ elektronia. \appear{Periaatteessa p-vyö on miehittämätön.} \appear{Mutta} %\appear{However, the $2 \mathrm{s}$ and $2 \mathrm{p}$ states hybridize} \appear{(into sp$^3$)} \appear{when carbon forms the covalent diamond structure (Figure)}
+\end{itemize}
+
+% 6.5 cm = midway, 10 cm = 3/4 
+%\vspace{2.5mm}
+\begin{minipage}{7.4cm}
+\begin{itemize}
+	\item[] \CDAlert[fuchsia]{$2 \mathrm{s}$ ja $2 \mathrm{p}$ tilat hybiridisoituvat} \appear{(sp$^3$-vyöksi)\\}\appear{kun hiilet muodostavat kovalenttisen timanttirakenteen (kuva)}
+	
+	%\item In figure, the s- and p-levels split \appear{due to small atomic separation}\appear{, giving rise to hybridized sp$^3$ orbitals} \appear{and formation of covalent diamond structure.} %\appear{The energy of four space symmetric states} \appear{(one for $2 \mathrm{s}$, three for $2 \mathrm{p}$)} \appear{is lowered}\appear{, and the energy of four states is raised}
+
+\item Timanttirakenteen hilavakio on $0,154 \mathrm{~nm}$. \appear{Energiarako täyden valenssivyön ja tyhjän johta\-vuus\-vyön välillä on $\Approx 5,4 \mathrm{~eV}$.} \appear{$300 \mathrm{~K}$ lämpötilassa}\appear{ vain muutamat elektroneista voivat nousta johtavuusvyölle }
+\implies{Valenssivyöllä on neljä elektronia\\ 
+		(per atomi)\appear{ kun taas johtavuusvyö\\ 
+		on tyhjä}}
+\implies{\CDAlert[red]{Timantti on eriste}}	
+
+
+\item \CDAlert[blue]{Piin (Si) ja germaniumin (Ge)}\appear{ energiaraot\\ ovat vastaavasti $1,1 \mathrm{~eV}$ ja $0,7 \mathrm{~eV}$}\appear{, mikä tekee niistä \CDAlert[blue]{(itseis)}\CDAlert[blue]{puolijohteita}}
+\end{itemize}
+\end{minipage}
+%\vspace{2.5mm}
+
+
+\xdef\loc{south east}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.45*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,width=6.3cm]{Figures_booklet/SOM_Tipler_Solid_state_physics_figures/SoM_Bonding_of_solids_Tipler_Band_hybridization_C_Si_Ge.png}}; %scale=\figscale. % 8cm max height
+\end{tikzpicture}
+\footnote{\TiplerCR[1-]}
+
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Puolijohteet}
+\appear{}
+
+\begin{itemize}
+
+	\item Jos \CDAlert[fuchsia]{rako} valenssivyön ja johtavuusvyön välissä \CDAlert[fuchsia]{ on pieni niin aine on puolijohde}
+
+\item Huomaa että puolijohteet toimivat eristeinä $T=0 \mathrm{~K}$\appear{ mutta jotkut elektroneista virittyvät johtavuusvyölle huoneenlämpötilassa}\appear{, jolloin valenssvyölle jää (elektroni)aukkoja }
+
+\item Kuitenkin näiden viritettyjen elekronien lukumäärä on pieni \appear{(johteisiin verrattuna)}
+
+\item Fermienergia $E_F$ on noin puolivälissä energiarakoa 
+
+\item Näitä aineita kutsutaan \CDAlert[fuchsia]{itseispuolijohteiksi}\appear{, mikä tarkoittaa sitä ettei niissä ole lisättyjä seostusaineita} \appear{tai epäpuhtauksia} \appear{(tästä lisää myöhemmin kurssilla)}
+\end{itemize}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%
+%\begin{frame}
+%\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+%
+%\begin{itemize}
+%	\item More detailed presentation of sodium's energy bands
+%\end{itemize}
+%
+%%\xdef\loc{east}
+%%\begin{tikzpicture}[remember picture,overlay] % anchor=south
+%%    \node (A) [yshift=\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,height=7cm]{Figures_booklet/SOM_10_Bonding_figures/SOM_Bonding_Figure_1.png}}; %scale=\figscale. % 8cm max height
+%%\end{tikzpicture}
+%
+%\endofslide 
+%%\endofsection
+%\end{frame}
+%%%%%%%%%%%%%%%%
+
+
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Fermitaso}
+\appear{}
+%The Conductivity Gap
+
+\begin{itemize}
+	\item Elektronit noudattavat Fermin–Diracin statistiikkaa\appear{, ja niiden miehitysluku riippuu energiasta tutun yhtälön mukaisesti:}
+\[
+ \mathbb{N} (E)_{F D}  \equal \frac{1}{e^{ \textrm{((}E-E_{F} \textrm{))} / k_{B} T}+1} \appear{< 1} \qquad \appear{\text{(kieltosääntö)}}
+\]
+\end{itemize}
+\vspace{2.5mm}
+\begin{minipage}{7cm}
+\begin{itemize}
+%which is always less than 1 (exclusion principle). 
+	\item Korkeammissa $T$:ssa jotkut elektroneista virittyvät korkeammille energiatasoille 
+	
+	\item Jakauma säilyy $E_{F}$:n suhteen symmetrisenä \appear{jolloin johtavuusvyöllä olevien elektronien lukumäärän täytyy olla \CDAlert[fuchsia]{yhtäsuuri} valenssivyöltä hävinneiden elektronien kanssa} 
+	\implies{ \Alert[fuchsia]{Fermienergia $E_F$ on täsmälleen \\ energiaraon keskellä} }
+\end{itemize}
+\end{minipage}
+
+
+\xdef\loc{south east}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.25*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,width=6.5cm]{Figures_booklet/SOM_10_Bonding_figures/SOM_Bonding_Figure_33.png}}; %scale=\figscale. % 8cm max height
+\end{tikzpicture}
+\footnote{\HarrisCR[1-]}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Energiavyöväli}
+\appear{}
+
+\begin{itemize}
+	\item Huomaa että kuvassa \appear{tilatiheyden $D$ on oletettu olevan vakio} \appear{(Harrisin yksinkertaistus)}
+	% 6.5 cm = midway, 10 cm = 3/4 
+\end{itemize}
+\vspace{2.5mm}
+
+\begin{minipage}{7.3cm}
+\begin{itemize}
+	%\item[] assumed to be a constant \appear{(presentation by Harris)} 
+	
+	\item Kun $D=$\;vakio niin elektronien lukumäärä per energiaväli $d E$ voidaan nopeasti laskea\appear{, mikä on $ \mathbb{N} (E)_{FD} \times D$} \appear{eli  "elektronien lukumäärä per tila kertaa tilojen lukumäärä per $d E$"}
+	
+	\item Kun tiedämme elektronien lukumäärän per energiaväli\appear{ niin me voimme laskea kuinka elektronit miehittävät elektro\-ni\-vyö\-rakenteen}
+	\implies{ Kunhan miehitysluku tiedetään\appear{ \Alert[blue]{voidaan}\\ 
+		     \Alert[blue]{ennustaa onko aine eriste}}\appear{, \\
+		      \Alert[blue]{puolijohde}}\appear{ \Alert[blue]{vai metalli}} }	
+\end{itemize}
+\end{minipage}
+
+\xdef\loc{south east}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.25*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,height=7.3cm]{Figures_booklet/SOM_10_Bonding_figures/SOM_Bonding_Figure_34.png}}; %scale=\figscale. % 8cm max height
+\end{tikzpicture}
+\footnote{\HarrisCR[1-]}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Vyön miehitys}
+\appear{}
+
+\begin{itemize}
+	\item Arvioidaan seuraavaksi elektronien lukumäärä jotka ovat virittyneet energiaraon yli \appear{($D=$\;vakio)}
+
+\item Lasketaan ensiksi \CDAlert[red]{elektronien lukumäärä valenssivyöllä} kun $T=0$:
+\[
+N_{V}  \equal \appear{\nint_{E_{V, \text{pohja}}}^{E_{V, \text{yläosa}}}}  \appear{\mathbb{N} (E)_{F D}} \appear{D} \appear{d E} \equal \appear{\nint_{E_{V, \text{pohja}}}^{E_{V, \text{yläosa}}}} \appear{1 \cdot D} \appear{d E} \equal \appear{D \Delta E_{V}}
+\]
+
+\item lasketaan sitten \CDAlert[blue]{virittyneiden elektronien lukumäärä} lämpötilassa $T>0$:
+\[
+N_{\text {virittynyt}}  \equal \appear{\nint_{E_{F}+\Frac{1}{2} E_{rako}}^{\infty}} \frac{1}{e^{ \textrm{((}E-E_{F} \textrm{))} / k_{B} T}+1} \appear{D} \appear{d E} \equal \appear{D k_{B} T} \appear{\ln  \textrm{[[}}\appear{1+e^{-E_{rako} / 2 k_{B} T}} \appear{\textrm{]]}}
+\]
+\appear{Muistamalla että} $\appear{\ln (1+\varepsilon)} \approx \appear{\varepsilon}\appear{\,, \text { jos } \varepsilon \ll 1} $\appear{, saadaan}
+$$
+\Rightarrow \qquad \appear{N_{\text {virittynyt}}} \approx \appear{D} \appear{k_{B}} \appear{T} \appear{e^{-E_{rako} / 2 k_{B} T}}
+$$
+\end{itemize}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Vyön miehitys}
+\appear{}
+
+
+\begin{itemize}
+	\item Eli lämpötilassa $T>0$ virittyneiden elektroneiden \appear{ja $T=0$ valenssivyöllä olevan elektronien kokonaislukumäärän}\appear{ suhteeksi saadaan}
+\[
+\frac{N_{\text {virittynyt }}}{N_{V}}  \equal  \frac{k_{B} T}{\Delta E_{V}} \appear{e^{-E_{rako} / 2 k_{B} T}}
+\]
+\item Energiavyöt ovat yleensä ${\sim}10$~eV korkeita\appear{, ja $k_{B} T \cong \Frac{1}{40} \mathrm{~eV}$ huoneenlämpötilassa.} \appear{Yhtälön kerroin on siis noin $10^{-3}$}
+
+\item Mutta \CDAlert[fuchsia]{eksponenttitekijä dominoi}:
+\item[] \begin{itemize}
+	\item Jos energiarako on $5,4 \mathrm{~eV}$ (hiili)\appear{ niin eksponenttitekijäksi saadaan  $10^{-42}$}
+\item Jos energiarako on $1,1 \mathrm{~eV}$ (pii)\appear{ niin eksponenttitekijäksi saadaan  $10^{-8}$}
+\end{itemize}
+
+\end{itemize}
+
+%\xdef\loc{east}
+%\begin{tikzpicture}[remember picture,overlay] % anchor=south
+%    \node (A) [yshift=\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,height=7cm]{Figures_booklet/SOM_10_Bonding_figures/SOM_Bonding_Figure_1.png}}; %scale=\figscale. % 8cm max height
+%\end{tikzpicture}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Esimerkki}
+\appear{}
+
+\seminormal
+%Example 6.
+\begin{itemize}
+	\item \textbf{Kys}: \appear{Lähes huoneenlämpötilassa}\appear{, $1 $~K nousu pienentää kuparin johtavuutta noin $\Approx 0,4 \%$.} \appear{Tuntemattomalla puolijohteella}\appear{,  $\Delta T=+1\;K$ nousu kasvattaa johtavuutta noin $4,8 \%$.} \appear{Arvioi puolijohteen energiaraon suuruus.}
+	
+\item \textbf{Vas}: \appear{Arvioidaan virittyneiden elektronien lukumäärää sekä $300 \mathrm{~K}$} \appear{että $301 \mathrm{~K}$ lämpötilassa}\appear{, ja asetetaan näiden suhteeksi $1,048$}
+\[ \semismall
+\frac{N_{\text{vir,i}}}{N_{V}} \equal \frac{k_{B} T_{i}}{\Delta E_{V}} \appear{e^{-E_{rako} / 2 k_{B} T_{i}}} \appear{\,,} \qquad  \qquad  
+\frac{N_{\text{vir,f}}}{N_{V}}  \equal \frac{k_{B} T_{f}}{\Delta E_{V}} \appear{e^{-E_{rako} / 2 k_{B} T_{f}}}
+\]
+
+$$ \semismall
+\begin{aligned}
+&\Rightarrow& \qquad \frac{ \appear{N_{\text{vir,f}}} \bg[1.3]{/} \appear{\,N_{V}}}{ \appear{N_{\text {vir,i}}} \bg[1.3]{/}\, \appear{N_{V}}}& \equal \frac{T_{f}}{T_{i}} \appear{e^{\appear{- \textrm{[[}} \frac{E_{rako}}{ 2 k_{B} T_f } \appear{ \textrm{]]}}  \plus  \appear{\textrm{[[}} \frac{E_{rako}}{ 2 k_{B} T_i } \appear{ \textrm{]]}}  } }  \equal \appear{1,048} \\
+&\Rightarrow& \qquad \qquad \frac{E_{rako}}{2 k_{B}} \LB \frac{T_{f}-T_{i}}{T_{i} T_{f}} \;\RB & \equal \appear{\ln  \LB }\appear{1,048} \frac{T_{i}}{T_{f}} \;\RB \\
+ &\Rightarrow& \qquad  \appear{E_{rako}}& \equal \appear{2 k_{B}} \LB \frac{T_{i} T_{f}}{T_{f}-T_{i}} \;\RB \appear{\ln  \LB \appear{1,048}} \frac{T_{i}}{T_{f}} \;\RB  \equal \appear{0,68~eV} \qquad 
+\end{aligned}
+$$
+\appear{Saatu energiarako $(\sim 0,7 \;\mathrm{eV}$) vastaa hyvin \CDAlert[blue]{germaniumin} rakoa $E_{rako}$}
+\end{itemize}
+
+%\endofslide 
+\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%

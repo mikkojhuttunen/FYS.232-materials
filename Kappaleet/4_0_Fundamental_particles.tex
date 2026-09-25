@@ -1,0 +1,327 @@
+% !TEX root = ../bb_AiRa_Kappaleet.tex
+
+% ö = \%c3\%b6
+% ä = \%C3\%A4
+
+\xdef\sectiontitle{\IVsectiontitle} %aiheuttama
+\TOCrefs
+
+%%%%%%%%%%%%%%%
+\begin{frame}[label=4_1_a]%label= ; [label=4_0_TOC1]
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle}}
+\label{\TOCname}
+
+\vspace{-3mm}
+
+\begin{itemize}[leftmargin=0.5cm,itemsep=\chapterTOCitemsep]
+    \item[4.1]<1-> \hyperlink{4_1_a}{\CDAlert[blue]{\IVaSubsectiontitle}}
+    \item[4.2]<1-> \hyperlink{4_2_a}{\IVbSubsectiontitle}	
+    \item[4.3]<1-> \hyperlink{4_3_a}{\IVcSubsectiontitle}	
+    \item[4.4]<1-> \hyperlink{4_4_a}{\IVdSubsectiontitle}
+    \item[4.5]<1-> \hyperlink{4_5_a}{\IVeSubsectiontitle}
+    \item[4.6]<1-> \hyperlink{4_6_a}{\IVfSubsectiontitle}
+    \item[4.7]<1-> \hyperlink{4_7_a}{\IVgSubsectiontitle}
+\end{itemize}
+
+%\endofslide 
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%\xdef\sectiontitle{Prelude to fundamental particles} 
+\xdef\sectiontitle{\IVaSubsectiontitle} %aiheuttama
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\appear{}
+
+\semismall
+\begin{itemize}[leftmargin=2cm,labelsep=1cm]%,align=left
+	\item[450 eea.] Demokritos: \appear{Pienin särkymätön aineen osanen $\oldRightarrow$ \CDAlert[tunired]{atomi} }
+	
+	\item[1808] Dalton: \appear{\CDAlert[red]{Atomit} aineiden perustavanlaatuisina rakennuspalikoina}
+	
+	\item[1879] Thomson: \appear{myös \CDAlert[blue]{elektronit} löydettiin, atomeissa on elektroneita }
+	
+	\item[1913] Rutherford: \appear{\CDAlert[green]{protonit} löydettiin vetyatomista}
+	
+	\item[1923] Compton: \appear{Myös \CDAlert[fuchsia]{fotonit}  \Alert[fuchsia]{siroavat} kuin ne olisivat \CDAlert[fuchsia]{hiukkasia}} 
+	
+	\item[1932] Chadwick: \appear{\CDAlert[blue]{neutronit} löydettiin selittämään esim.\ ytimien mitatut massat }
+	
+	\item[\Alert{1932$\,\rightarrow$}] \Alert[red]{Positroni}\appear{, \Alert[red]{muoni}}\appear{, \Alert[red]{pioni}, \Alert[red]{sigma}, \Alert[red]{rho}, jne. ...}
+
+\item[1964] \CDAlert[fuchsia]{Gell-Mann} \& Zweig: \appear{ \CDAlert[fuchsia]{Kvarkkien} olemassaolon ennustaminen.} \appear{ Protonien, neutronien jne.\ koostuminen kvarkeista} \appear{(nukleoneilla on sisäinen rakenne)} 
+\end{itemize}
+\vspace{3mm}
+
+\implies{ Lopputuloksena meillä on \CDAlert[fuchsia!80!black]{nykyään} niin sanottu \CDAlert[fuchsia]{hiukkasfysiikan standardimalli} }
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\appear{}
+
+% 6.5 cm = midway, 10 cm = 3/4 
+%\vspace{2.5mm}
+\begin{minipage}{7.5cm}
+\begin{itemize}
+	\item Tavallinen aine koostuu \CDAlert[fuchsia]{protoneista}\appear{, \CDAlert[red]{neutroneista}} \appear{ja \CDAlert[blue]{elektroneista}}
+
+\item Viimeisten 70 vuoden aikana\appear{, kokeita on tehty \CDAlert[fuchsia]{hiukkaskiihdyttimillä}} \appear{alati kasvavilla energioilla}\appear{, paljastaen satoja muitakin '\CDAlert[fuchsia]{alkeishiukkasia}'}
+\implies{ esim. \CDAlert[fuchsia]{kvarkkien} löytyminen }
+
+\item Alkeishiukkasten ja niiden rakenteen ymmärtäminen on muuttunut huomattavasti vuosien kuluessa 
+%Understanding of the fundamental particles and their structure have changed during the years
+\end{itemize}
+\end{minipage}
+%\vspace{2.5mm}
+
+
+\xdef\loc{south east}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.25*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[height=9.5cm]{Figures_booklet/SOM_11_Fundamental_particles_figures/Tikz_SOM_Fundamental_figures.pdf}}; % 8cm max height
+\end{tikzpicture}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Voiman kantama?}%Range of a force?
+\appear{}
+
+\begin{itemize}
+	\item \CDAlert[blue]{Alkeishiukkaset vuorovaikuttavat vain muutamalla} \CDAlert[blue]{tyypillisellä tavalla}
+
+\item Mekaniikassa voima tarvitsee usein fyysisen kontaktin välittyäkseen \appear{(jännitys, kitka, ...)}\appear{, mutta gravitaatio vaikuttaa tyhjiön läpi}\appear{, kuten myös sähkömagneettiset voimat!}
+
+\item Nämä \appear{\CDAlert[red]{kenttävoimat}} \appear{ovat pikemminkin sääntö kuin poikkeus} %\appear{Such forces can be called as \CDAlert[red]{field forces}}%\CDAlert[red]{voimakentät}
+
+\item Lisäksi kontaktia vaativat voimat (jännitys, kitka, jne.) \appear{paljastuvat mikroskooppisessa tarkastelussa sähkömag-\\
+neettisiksi voimiksi}
+
+%\item More generally, having no contact is more of a rule than an exception. Also electromagnetic force acts through a vacuum. Gravity and electromagnetic forces are so called field forces. Furthermore, contact forces (tension etc.) eventually turn out to be a sum of microscopic electromagnetic forces
+\end{itemize}
+
+% 6.5 cm = midway, 10 cm = 3/4 
+\vspace{2.5mm}
+\begin{minipage}{8.0cm}
+\begin{itemize}
+	\item \CDAlert[fuchsia]{Vahva voima} vaikutti myös 'etäisyyksien päähän'%
+	\appear{\xdef\loc{south east}%
+\begin{tikzpicture}[remember picture,overlay]% anchor=south
+    \node (A) [yshift=-0.45*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[width=5cm]{Figures_booklet/SOM_11_Fundamental_particles_figures/SOM_Nuclear_Table_2}};% 8cm max height
+\end{tikzpicture}\CR[ref=h]{}}%
+\appear{, vaikkakin sen \CDAlert[fuchsia]{kantama oli} \CDAlert[fuchsia]{erittäin lyhyt}}
+\end{itemize}
+\end{minipage}
+%\vspace{2.5mm}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+
+
+%%%%%How Forces Act?
+\xdef\sectiontitle{\IVaSubsectiontitle} 
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Moderni tarkastelutapa}
+\appear{}
+
+\begin{itemize}
+%	\item \CDAlert[blue]{Moderni näkökulma}:
+%\item[] \begin{itemize}
+	 \item \CDAlert[tuniblue]{Voimat vaikuttavat vaihtamalla välittäjähiukkasia}
+\item Jokaisella voimalla \appear{(4:stä perusvoimasta)} \appear{on oma välittäjähiukkanen}
+\item Välittäjähiukkanen tunnetaan myös kyseisen kvanttikentän kvanttina
+%\end{itemize}
+\implies{  Kvanttikenttäteoria (QFT) }
+
+\item \CDAlert[red]{Kuinka vuorovaikutus selitetään?}
+
+\item On olemassa kahdenlaisia hiukkasia:
+\item[] \begin{itemize}
+	\item Hiukkaset jotka \CDAlert[blue]{kokevat} voiman
+\item Hiukkaset joiden vaihtaminen ilmentää voimaa\appear{, eli vuorovaikutuksen \CDAlert[tuniblue]{välittäjähiukkaset}} %Those particles which are exchanged to convey the force\appear{, i.e. to \CDAlert[tuniblue]{mediate} the interaction}
+
+\end{itemize}
+
+\item Huomaa että joissain tilanteissa välittäjähiukkaset kokevat itsekin välittämänsä voiman!
+\end{itemize}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\appear{}
+
+\begin{minipage}{7.5cm}
+\begin{itemize}
+	\item Kaksi fysiikanopiskelijaa\appear{, Anna ja Bob}\appear{, jotka liukuvat kitkattomalla jäällä}%
+	\appear{\xdef\loc{east}%
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[height=8cm]{Figures_booklet/SOM_11_Fundamental_particles_figures/SOM_Fundamental_particles_Figure_1.png}};% 8cm max height
+\end{tikzpicture}\CR[]{}%
+}%
+\appear{, vuorovaikuttavat niin että Anna heittää lumipallon Bobille, joka ottaa sen kiinni}
+
+\item Molempien henkilöiden liikemäärä muuttuu: \appear{Annan liikemäärä muuttuu $-\vec{p}_{\text {pallo}}$}\appear{, ja Bobin liikemäärä muuttuu  $+\vec{p}_{\text {pallo}}$}
+
+\item Tämä näyttää "\Alert[fuchsia]{lumipallon välittämältä hylkivältä voimalta}"\appear{, missä pallo siirtää Annan liikemäärää Bobille}
+
+\item \CDAlert[blue]{Feynmanin kaavio/diagrammi} kuvastaa tätä vuorovaikutusta
+\end{itemize}
+\end{minipage}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\appear{}
+
+%\seminormal
+\begin{itemize}[itemsep=1.7mm]
+	\item Esimerkki matkii onnistuneesti Annan ja Bobin välistä hylkivää voimaa\appear{, mutta \CDAlert[fuchsia]{analogia ei selitä puoleensavetäviä voimia}}
+	\appear{\xdef\loc{south east}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.35*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[scale=0.85,page=2]{Figures_booklet/SOM_11_Fundamental_particles_figures/Tikz_SOM_Fundamental_figures_combo.pdf}}; % 8cm max height
+\end{tikzpicture}}
+	\item Kuvatakseen puoleensavetävää voimaa\appear{, lumipallon heiton jälkeen}\appear{, Annan pitäisi liikkua Bobia kohti}\appear{, ja Bobin ottaessa pallon kiinni}\appear{, hänen täytyisi liikkua Annaa kohti} 
+	\implies{ \CDAlert[fuchsia]{Liikemäärä ei säilyisi!}}
+
+\item Esimerkissä\appear{ Annalla oli lumipallo jo ennen heittoa}\appear{, ja kun Bob otti pallon kiinni}\appear{, hän säilytti sen}
+\end{itemize}
+
+% 6.5 cm = midway, 10 cm = 3/4 
+\vspace{1.7mm}
+\begin{minipage}{9.0cm}
+\begin{itemize}[itemsep=1.7mm]
+	\item Todellisuudessa lumipallo \appear{(välittäjähiukkasena)} \appear{\CDAlert[red]{syntyisi vain} \CDAlert[red]{lennon ajaksi}} \appear{ja se \CDAlert[tunired]{annihiloituisi} välittömästi \CDAlert[tunired]{kiinnioton jälkeen}}
+	\implies{\CDAlert[blue]{Energia ei näytä säilyvän tällaisessa}\\ \CDAlert[blue]{makroskooppisessa esimerkissä!}}
+\end{itemize}
+\end{minipage}
+%\vspace{2.5mm}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Virtuaalihiukkaset}
+\appear{}
+
+\semismall
+\begin{itemize}[itemsep=1.5mm]
+	\item Välittäjähiukkaset ovat \CDAlert[fuchsia]{virtuaalihiukkasia}\appear{, ne ovat olemassa vain vuorovaikutuksen ajan}\appear{, eikä niiden tarvitse toteuttaa tavallisia energian ja liikemäärän säilymislakeja}\appear{, kuten 'oikeiden' hiukkasten tarvitsee}
+	
+	\item Ilmiö muistuttaa tunneloitumista\appear{, %the kinetic energy of particle is negative, and 
+	missä virtuaalihiukkasten esiintymistodennäköisyys pienenee} \appear{kun oikeiden hiukkasten välinen etäisyys kasvaa}
+\end{itemize}
+
+% 6.5 cm = midway, 10 cm = 3/4 
+\vspace{1.5mm}
+\begin{minipage}{8.3cm}
+\begin{itemize}[itemsep=1.5mm]
+%	\item[] The phenomenon resembles tunneling, the kinetic energy of particle is negative, and the probability for the occurence of the particle decreases when the separation between the interacting particles increases
+
+%\item This is the mechanism which \CDAlert[red]{H. Yukawa} (1935) suggested on how the strong nuclear force would act between two nucleons, the nucleons exchange virtual particles
+\item Tätä \CDAlert[fuchsia]{virtuaalihiukkasten vaihtoa} \appear{ehdotettiin kahden nukleonin välisen ydinvoiman mekanismiksi}\appear{ vuonna 1935 (\CDAlert[red]{H. Yukawa}) }
+\appear{\xdef\loc{south east}%
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.35*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[scale=0.85,page=1]{Figures_booklet/SOM_11_Fundamental_particles_figures/Tikz_SOM_Fundamental_figures_combo.pdf}};% 8cm max height
+\end{tikzpicture}}%
+
+\item Vahvan voiman kantama on \CDAlert[red]{lyhyt} \appear{koska  \CDAlert[red]{välittäjähiukkasella on massa}.} \appear{Ajatusta voidaan soveltaa myös sähkömagneettiseen vuorovaikutukseen.} \appear{Sähköiset varaukset lähettävät jatkuvasti ympärilleen virtuaalihiukkasia}
+ 
+\item Kantama on äärettömän pitkä koska virtuaalihiukkaset ovat \CDAlert[blue]{fotoneita}\appear{, joilla \CDAlert[blue]{ei ole} \CDAlert[blue]{lepomassaa}}
+\end{itemize}
+\end{minipage}
+%\vspace{2.5mm}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Virtuaaliset välittäjähiukkaset}
+\appear{}
+
+%Mediating particle \item mass vs. range
+\begin{itemize}
+	\item Mekanismin ja \CDAlert[tuniblue]{virtuaaalisten välittäjähiukksten} olemassaolo \appear{voidaan ymmärtää soveltamalla Heisenbergin \CDAlert[blue]{epätarkkuusperiaatetta} aika–energia (konjugaatti)muuttujapariin}
+
+\item Oletetaan että virtuaalihiukkasilla on tietty aikaväli $\Delta t$ vuorovaikuttaa \appear{(eli ajan epätarkkuus)}\appear{, silloin hiukkasen energiaan $\Delta E$ liittyvän epätarkkuuden täytyy toteuttaa yhtälö } $\appear{\Delta t \Delta E} \approx \appear{\hbar}$
+
+\item Hiukkasen energia voi vaihdella välillä $\Delta E$ säilymislakien rikkoontumatta. \appear{Toisin sanoen jopa energia $\Delta E=m c^{2}$ on sallittu virtuaalihiukkasille}\appear{, jos sillä on lepomassa}
+
+\item Tällöin $\Delta t \Approx \hbar / m c^{2}$\appear{, ja mahdolliseksi kantamaksi saadaan} $\appear{\Delta x} \approx \appear{c \Delta t} \approx \appear{\hbar / m c}$ 
+
+\item Yhteenvetona\appear{ \CDAlert[fuchsia]{virtuaalihiukkasten kantama} $\Approx \Frac{\hbar}{c} \Frac{1}{m}$}
+\end{itemize}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Välittäjähiukkanen, massa vs. kantama}%Virtual mediating particles, mass vs. range
+\appear{}
+
+\seminormal
+\begin{itemize}
+	\item \CDAlert[red]{Mitä suurempi massa} välittäjähiukkasella on\appear{, sitä \CDAlert[red]{lyhyempi kantama} on vuorovaikutuksella}\appear{, ja päinvastoin} 
+	
+	\item Vahvan vuorovaikutuksen kantama on ${\sim\;}1 \mathrm{\;fm}$ 
+	\implies{ Tästä saadaan arvio mesonin massalle:
+\[
+m  \equal \appear{3,5 \times 10^{-28} \mathrm{\;kg}} \approx \appear{300 \mathrm{m}_{\mathrm{e}}} \approx \appear{200 \mathrm{\;MeV} / \mathrm{c}^{2}}
+\] }
+\item Olettamalla välittäjähiukkanen fotoniksi\appear{, kuten sähkömagneettisissa vuorovaikutuksissa, kantamaksi saadaan:}
+\[
+\text {kantama} \approx \appear{c} \appear{\Delta t} \approx \frac{c \hbar}{\Delta E}  \equal \appear{c \hbar} \frac{\lambda}{h c} \equal \frac{\lambda}{2 \pi}
+\]
+
+\item Koska fotoneilla ei ole (lepo)massaa\appear{, niiden energioille ei ole alarajaa}\\
+\appear{(}$\Rightarrow$ \appear{kantama voi olla erittäin pitkä, lähestyen äärettömyyttä}\appear{)}
+
+\item Itse asiassa kahden elektronin \CDAlert[blue]{vuorovaikuttaessa sähköisesti}\appear{, molemmat elektronit lähettävät jatkuvasti \CDAlert[blue]{virtuaalisia fotoneita} joita toiset elektronit absorboivat}
+\end{itemize}
+
+%\endofslide 
+\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%

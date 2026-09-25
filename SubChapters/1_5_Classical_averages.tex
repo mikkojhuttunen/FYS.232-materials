@@ -1,0 +1,191 @@
+% !TEX root = ../aa_SoM_Chapters.tex
+
+% ö = \%c3\%b6
+% ä = \%C3\%A4
+
+\xdef\sectiontitle{\Isectiontitle} %aiheuttama
+
+%%%%%%%%%%%%%%%
+\begin{frame}[label=1_5_a]%[label=1_5_TOC1]
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+
+\vspace{0.5cm}
+
+\begin{itemize}[leftmargin=0.5cm,itemsep=2mm]
+    \item[1.1]<1-> \hyperlink{1_1_a}{\IaSubsectiontitle}
+    \item[1.2]<1-> \hyperlink{1_2_a}{\IbSubsectiontitle}	
+    \item[1.3]<1-> \hyperlink{1_3_a}{\IcSubsectiontitle}	
+    \item[1.4]<1-> \hyperlink{1_4_a}{\IdSubsectiontitle}
+    \item[1.5]<1-> \hyperlink{1_5_a}{\Alert[blue]{\IeSubsectiontitle}}
+    \item[1.6]<1-> \hyperlink{1_6_a}{\IfSubsectiontitle}
+    \item[1.7]<1-> \hyperlink{1_7_a}{\IgSubsectiontitle}
+\end{itemize}
+
+\vspace{-1cm}
+\begin{itemize}[leftmargin=9.5cm,itemsep=2mm]
+    \item[1.8]<1-> \hyperlink{1_8_a}{\IhSubsectiontitle}
+	\item[1.9]<1-> \hyperlink{1_9_a}{\IiSubsectiontitle}
+	\item[1.10]<1-> \hyperlink{1_10_a}{\IjSubsectiontitle}
+	\item[1.11]<1-> \hyperlink{1_11_a}{\IkSubsectiontitle}
+\end{itemize}
+
+\endofslide \end{frame}
+%%%%%%%%%%%%%%%
+
+%\xdef\IbSubsectiontitle{Entropy and Temperature}
+\xdef\sectiontitle{\IeSubsectiontitle}
+
+%% MAXWELL-BOLTZMANN
+%%%%%%%%%%%%%%%
+\begin{frame}%[label=1_5_a]
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+
+\begin{itemize}
+	\item Let's examine the \CDAlert[red]{system of an ideal gas}\appear{, where the energy of a single gas molecule is}
+\[
+E  \equal \frac{1}{2} \appear{m} \appear{\textrm{((} v_{x}^{2}+v_{y}^{2}+v_{z}^{2} \textrm{))}}  \equal \frac{1}{2} \appear{m \appear{v^{2}}}
+\]
+
+\item We \CDAlert[tunired]{assume that there is a probability distribution of speeds} of the gas molecules\appear{, but at this point we do not yet know the form of this distribution}
+
+\item To get an average of an arbitrary \appear{(yet unspecified)} \appear{function of speed $f=f(v)$}\appear{, we need to take integrals over space and velocity}\appear{, i.\,e. 3 components of the velocity vector}
+
+%\item The spatial integrations over volume $V$ cancel out, so we obtain:
+%\[
+%\overline{f(v)}=\frac{ \nint f(v) e^{-\frac{1}{2} m v^{2} / k_{B} T} d V d v_{x} d v_{y} d v_{z}}{ \nint e^{-\frac{1}{2} m v^{2} / k_{B} T} d V d v_{x} d v_{y} d v_{z}}=\frac{ \nint f(v) e^{-\frac{1}{2} m v^{2} / k_{B} T} d v_{x} d v_{y} d v_{z}}{ \nint e^{-\frac{1}{2} m v^{2} / k_{B} T} d v_{x} d v_{y} d v_{z}}
+%\[
+%Because we are searching for the speed distribution (not velocity), it is convenient to shift from cartesian to spherical coordinates using : $d v_{x} d v_{y} d v_{z}=v^{2} d v \sin \theta d \theta d  \phi $
+\end{itemize}
+
+%\xdef\loc{south west}
+%\begin{tikzpicture}[remember picture,overlay] % anchor=south
+%    \node (A) [yshift=2cm,xshift=-\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,width=6.8cm]{Figures_booklet/SOM_9_Statistical_mechanics_figures/SOM_Figure_4_cc.png}}; %scale=\figscale. % 8cm max hei
+%\end{tikzpicture}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+
+\begin{itemize}
+\item The spatial integrations over volume $V'$ cancel out\appear{, so we obtain:}
+\[
+\overline{f(v)}  \equal \fracc{ \appear{\nint} \appear{f(v)} \appear{e^{-\Frac{1}{2} \appear{m v^{2}} \appear{/ k_{B} T}}} \appear{d V'} \appear{d v_{x}} \appear{d v_{y}} \appear{d v_{z}}}{ \appear{\nint} \appear{e^{\appear{-\Frac{1}{2} m v^{2}} \appear{/ k_{B} T}}} \appear{d V' d v_{x} d v_{y} d v_{z}} }  \equal \fracc{ \nint \appear{f(v) e^{-\Frac{1}{2} m v^{2} / k_{B} T}} \appear{d v_{x} d v_{y} d v_{z}}}{ \nint e^{-\Frac{1}{2} m v^{2} / k_{B} T} d v_{x} d v_{y} d v_{z}}
+\]
+\appear{Because we are searching for the speed distribution (not velocity)}\appear{, it is convenient to \CDAlert[red]{transfer from cartesian to spherical coordinates} using: }
+\[
+d v_{x} d v_{y} d v_{z}  \equal \appear{v^{2} d v} \appear{\sin \theta \,d \theta} \appear{\,d \phi}
+\]
+\end{itemize}
+
+%\xdef\loc{south west}
+%\begin{tikzpicture}[remember picture,overlay] % anchor=south
+%    \node (A) [yshift=2cm,xshift=-\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,width=6.8cm]{Figures_booklet/SOM_9_Statistical_mechanics_figures/SOM_Figure_4_cc.png}}; %scale=\figscale. % 8cm max hei
+%\end{tikzpicture}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+
+\begin{itemize}
+	\item Therefore, the integral turns into:
+	\[
+	\overline{f(v)}  \equal  \frac{ \nint f(v) e^{-\Frac{1}{2} m v^{2} / k_{B} T} v^{2} d v \sin \theta d \theta d  \phi }{ \nint e^{-\Frac{1}{2} m v^{2} / k_{B} T} v^{2} d v \sin \theta d \theta d  \phi }
+	 \equal  \frac{ \nint_{0}^{\infty} f(v) e^{-\Frac{1}{2} m v^{2} / k_{B} T} v^{2} d v}{ \nint_{0}^{\infty} e^{-\Frac{1}{2} m v^{2} / k_{B} T} v^{2} d v}
+	\]
+	% ALAKERTA ON: $=\sqrt{\frac{\pi}{2}}\left(\frac{k_{B} T}{m}\right)^{3 / 2}$
+ \appear{where the integrals of the denominator}\appear{, and over variables $\theta$} \appear{and $\phi$} \appear{can be solved to obtain}
+\[
+\overline{f(v)}  \equal  \appear{\nint_{0}^{\infty}  }\appear{f(v)} \appear{\LB} \appear{\sqrt{2/\pi}} \appear{\bigg( \Frac{m}{k_{B} T}  \bigg)^{3 / 2}} \appear{v^{2} e^{-\Frac{1}{2} m v^{2} / k_{B} T}}\appear{\RB} \appear{d v}
+\]
+
+\item The integrand in the formula can be seen as something resembling a \CDAlert[red]{probability distribution} $P=P(v)$:
+\[
+\overline{f(v)}  \equal  \appear{\nint f(v) d P} \equal  \appear{\nint f(v)} \frac{d P}{d v} \appear{d v}
+\]
+
+\end{itemize}
+
+%\xdef\loc{south west}
+%\begin{tikzpicture}[remember picture,overlay] % anchor=south
+%    \node (A) [yshift=2cm,xshift=-\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,width=6.8cm]{Figures_booklet/SOM_9_Statistical_mechanics_figures/SOM_Figure_4_cc.png}}; %scale=\figscale. % 8cm max hei
+%\end{tikzpicture}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+
+\begin{itemize}
+\item Thus the quantity inside brackets may be interpreted as the probability distribution for the speed of gas molecules
+\[
+P(v)_{\text {Maxwell}}  \equal  \frac{d P}{d v}  \equal \appear{ \Sqrt{\Frac{2}{\pi}}   \bigg( \Frac{m}{k_{B} T} \bigg)^{3 / 2} v^{2} e^{-\Frac{1}{2} m v^{2} / k_{B} T}}
+\]
+\item If we \Alert[blue]{add the number density of the gas molecules $n=N / V$ into this formula}\appear{, we obtain a distribution which has units of particles per unit volume}\appear{, but which contains information of the probability distribution of the speeds for gas molecules}
+\[
+n(v)_{\text {Maxwell }}  \equal \frac{N}{V} \appear{\Sqrt{\Frac{2}{\pi}} } \appear{ \bigg( \Frac{m}{k_{B} T} \bigg)^{3 / 2}} \appear{v^{2}} \appear{e^{-\Frac{1}{2} m v^{2} / k_{B} T}}
+\]
+\appear{This distribution is called \Alert[tunired]{Maxwell speed distribution}}\appear{, or\\
+\CDAlert[red]{Maxwell–Boltzmann speed distribution}}
+
+\end{itemize}
+
+%\xdef\loc{south west}
+%\begin{tikzpicture}[remember picture,overlay] % anchor=south
+%    \node (A) [yshift=2cm,xshift=-\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,width=6.8cm]{Figures_booklet/SOM_9_Statistical_mechanics_figures/SOM_Figure_4_cc.png}}; %scale=\figscale. % 8cm max hei
+%\end{tikzpicture}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+
+% 6.5 cm = midway, 10 cm = 3/4 
+\begin{minipage}{7.5cm}
+	\begin{itemize}
+\item Note, that the speed distribution increases starting from zero speed (Fig.~8)
+	
+	\item At low velocities the \CDAlert[red]{probability} increases  with energy, because the quadratic dependence on velocity dominates
+
+\item At higher occupations/velocities, the probability \appear{\CDAlert[red]{decreases exponentially} \CDAlert[red]{with increasing energy}}
+
+\end{itemize}
+\end{minipage}
+\vspace{3mm}
+%\item The number of states \appear{(velocity vectors)} \appear{at a given speed depend quadratically of the speed}
+\begin{itemize}
+\item[]<1->
+$$
+n(v)_{\text {Maxwell }}  = \Frac{N}{V} \Sqrt{\Frac{2}{\pi}}  \bigg( \Frac{m}{k_{B} T} \bigg)^{3 / 2} v^{2} e^{-\Frac{1}{2} m v^{2} / k_{B} T}
+$$
+\end{itemize}
+
+
+\xdef\loc{north east}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,width=6cm]{Figures_booklet/SOM_9_Statistical_mechanics_figures/SOM_Figure_8.png}}; %scale=\figscale. % 8cm max hei
+\end{tikzpicture}
+
+%\endofslide 
+\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%

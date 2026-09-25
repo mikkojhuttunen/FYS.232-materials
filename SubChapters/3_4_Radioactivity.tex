@@ -1,0 +1,812 @@
+% !TEX root = ../aa_SoM_Chapters.tex
+
+%% HARRIS: Chapter 9
+%\xdef\Isectiontitle{Statistical Mechanics} 
+%%
+%\xdef\IaSubsectiontitle{A Simple Thermodynamic System} 
+%\xdef\IbSubsectiontitle{Entropy and Temperature}
+%\xdef\IcSubsectiontitle{Einstein's solid}
+%\xdef\IdSubsectiontitle{Boltzmann \& Maxwell–Boltzmann distributions}
+%\xdef\IeSubsectiontitle{Classical Averages}
+%
+%\xdef\IfSubsectiontitle{Quantum Distributions} 
+%\xdef\IgSubsectiontitle{The Quantum Gas} 
+%\xdef\IhSubsectiontitle{Photon Gas}
+%\xdef\IiSubsectiontitle{The Laser}
+%\xdef\IjSubsectiontitle{Specific Heats} 
+%\xdef\IkSubsectiontitle{Debye Model} 
+
+% ö = \%c3\%b6
+% ä = \%C3\%A4
+
+\xdef\sectiontitle{\IIIsectiontitle} %aiheuttama
+
+%%%%%%%%%%%%%%%
+\begin{frame}[label=3_4_a]%[label=3_4_TOC1]
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+
+\vspace{1cm}
+
+\begin{itemize}[leftmargin=0.5cm,itemsep=3mm]
+    \item[3.1] \hyperlink{3_1_a}{\IIIaSubsectiontitle}
+    \item[3.2] \hyperlink{3_2_a}{\IIIbSubsectiontitle}	
+    \item[3.3] \hyperlink{3_3_a}{\IIIcSubsectiontitle}	
+    \item[3.4] \hyperlink{3_4_a}{\CDAlert[red]{\IIIdSubsectiontitle}}
+    \item[3.5] \hyperlink{3_5_a}{\IIIeSubsectiontitle}
+    \item[3.6] \hyperlink{3_6_a}{\IIIfSubsectiontitle}
+    \item[3.7] \hyperlink{3_7_a}{\IIIgSubsectiontitle}
+\end{itemize}
+
+%\endofslide 
+\end{frame}
+%%%%%%%%%%%%%%%
+
+\xdef\sectiontitle{\IIIdSubsectiontitle} 
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Radioactive Decay processes}
+
+\semismall
+%On Radioactive Decay
+\begin{itemize}
+	\item Roughly \CDAlert[fuchsia]{3000 nuclide isotopes are known}\appear{, \CDAlert[red]{most} of them \CDAlert[red]{are radioactive}} 
+	
+	\item An \CDAlert[fuchsia]{unstable} radioactive nuclide \appear{has a tendency to spontaneously emit a small energetic particle} 
+	\item According to estimates\appear{, in addition to the known ones,} \appear{2000 more are to be found}\appear{, all metastable or radioactive in some ways}
+	
+	\item There are \CDAlert[blue]{several kinds of 'decay processes'}, e.g.
+\begin{itemize}
+	\item $\alpha$ emission ($\mathrm{He}^{2+}$-ion)
+	\item $\beta^{-}$ emission (electron)
+	\item $\gamma$ emission (energetic $1 \mathrm{\;keV}–10 \mathrm{\;MeV}$ electromagnetic radiation)
+\end{itemize}
+
+\item[] And some \CDAlert[tuniblue]{less common processes}:
+\begin{itemize}
+\item Proton emission
+\item Neutron emission
+\item Positron emission
+\item Double-beta emission (two electrons)
+\item Some combinations of these
+\end{itemize}
+
+\end{itemize}
+
+%\xdef\loc{south east}
+%\begin{tikzpicture}[remember picture,overlay] % anchor=south
+%    \node (A) [yshift=-0.25*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[width=7cm]{Figures_booklet/SOM_12_Nuclear_physics_figures/SOM_Nuclear_physics_Figure_1.png}}; % 8cm max height
+%\end{tikzpicture}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Radioactive Decay processes}
+
+% 6.5 cm = midway, 10 cm = 3/4 
+%\vspace{2.5mm}
+\begin{minipage}{8.5cm}
+\begin{itemize}
+	\item The \Alert[red]{semi-empirical binding energy} formula can be used to study the stability of each isotope 
+	
+	\item Verified by experiments, we can plot the binding energies\appear{, schematically shown in the figure} \appear{(z-axis scaled by $100 \mathrm{\;MeV}$)} 
+	
+	\item One can also derive \CDAlert[blue]{theoretical limits} of how many protons or neutrons one can have in the nucleus 
+	\implies{ These estimates for $N-Z$ boundaries \\
+		generate the 'driplines' shown in lower figure }
+\end{itemize}
+\end{minipage}
+
+\xdef\loc{south east}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.25*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[height=8.5cm]{Figures_booklet/SOM_Tipler_Nuclear_physics_figures/SOM_Tipler_Nuclear_physics_figure_20.png}}; % 8cm max height
+\end{tikzpicture}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Radioactive Decay processes}
+
+\seminormal
+% 6.5 cm = midway, 10 cm = 3/4 
+%\vspace{2.5mm}
+\begin{minipage}{8.5cm}
+\begin{itemize}
+	\item Radioactive processes follow physical \CDAlert[magenta]{conservation laws}, conserved quantities being:
+\begin{itemize}
+	\item Relativistic mass–energy
+	\item Electric charge
+	\item Linear momentum
+	\item Angular momentum
+\end{itemize}
+
+\item And also:
+\begin{itemize}
+	\item Nucleon number
+	\item Lepton number
+\end{itemize}
+
+\item For a radioactive isotope, to be found in the nature \appear{(on Earth)}\appear{, the \Alert[red]{half-life} of the isotope must be shorter than the age of Earth} \appear{($4.5\times 10^{9}$ years)}\appear{, or the nuclide must be \CDAlert[blue]{continuously generated} by another radioactive substance}
+\end{itemize}
+\end{minipage}
+
+\xdef\loc{south east}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.25*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[height=8.5cm]{Figures_booklet/SOM_Tipler_Nuclear_physics_figures/SOM_Tipler_Nuclear_physics_figure_20.png}}; % 8cm max height
+\end{tikzpicture}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Alpha decay}
+% 
+\semismall
+% 6.5 cm = midway, 10 cm = 3/4 
+%\vspace{2.5mm}
+\begin{minipage}{9.0cm}
+	\begin{itemize}
+	\item Alpha decay is a \Alert[red]{spontaneous emission of an energetic alpha particle}\appear{, i.e. He-4 nuclei.}
+\appear{\xdef\loc{north east}%
+\begin{tikzpicture}[remember picture,overlay]% anchor=south
+    \node (A) [yshift=1*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[width=4.7cm]{Figures_booklet/SOM_12_Nuclear_physics_figures/SOM_Nuclear_physics_Figure_18.png}}; % 8cm max height
+\end{tikzpicture}%
+} \appear{During the decay, an alpha particle is released out of the large nucleus} \appear{by tunneling through the potential energy barrier}
+\appear{\xdef\loc{south east}%
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.25*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[width=4.7cm]{Figures_booklet/SOM_Tipler_Nuclear_physics_figures/SOM_Tipler_Nuclear_physics_figure_1_cropped.png}};% 8cm max height
+\end{tikzpicture}}
+
+\item There is always reason for radioactive decay.
+\appear{First of all, for the nucleus to be radioactive at all}\appear{, its \Alert[blue]{mass must be greater than the sum of the masses of the decay products}.} \appear{The energy released is given by}
+\[
+Q  \equal \appear{\textrm{((} m_{i}}  \minus \appear{m_{f}-}\appear{m_{\alpha} \textrm{))}} \appear{ c^{2}}
+\]
+
+\item The $\alpha$-active \CDAlert[fuchsia]{parent} nucleus is large \appear{(usually $A>200)$}\appear{, thus also the \CDAlert[fuchsia]{daughter} nucleus is rather heavy}\appear{, whereas the $\alpha$-particle is light: }\appear{\quad (\CDAlert[fuchsia]{conservation of momentum})}
+
+\[
+\appear{m \vec{v_d}}  \plus  \appear{M \vec{V_p}} \equal \appear{0} \quad \Rightarrow \quad \appear{v_d=}\frac{M}{m} \appear{V_p} \quad  \Rightarrow \quad  \frac{1}{2} \appear{m v_d^{2}}  \equal \frac{M}{m} \frac{1}{2} \appear{M V_p^{2}}
+\]
+
+\end{itemize}
+\end{minipage}
+%\vspace{2.5mm}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Alpha decay}
+
+% 6.5 cm = midway, 10 cm = 3/4 
+%\vspace{2.5mm}
+\begin{minipage}{8.5cm}
+\begin{itemize}
+	\item Nucleons are bound by a strong nuclear force. \appear{However, sufficiently far from nucleus}\appear{, we are out of the range of the strong nuclear forces.} \appear{At that distance from core, there is a \CDAlert[blue]{positive Coulombic barrier}}
+	
+	\item Assumptions for explaining the $\alpha$ decay:
+\end{itemize}
+\end{minipage}
+%\vspace{2.5mm}
+
+\begin{itemize}
+\item[] \begin{itemize}
+		\item An $\alpha$-particle may exist as an entity within a heavy nucleus
+	\item Such a particle is in constant motion \appear{and is held in the nucleus by a potential barrier}
+	\item There is a small probability \appear{that the particle may tunnel through the barrier} \appear{with each collision with barrier}
+\end{itemize}
+
+\item Actually, it has also been suggested that\appear{, at least in the case of light nuclides}\appear{, the nucleons would be clustered into $\alpha$ particles...}
+\end{itemize}
+
+\xdef\loc{north east}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=1*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[width=4.7cm]{Figures_booklet/SOM_Tipler_Nuclear_physics_figures/SOM_Tipler_Nuclear_physics_figure_25.png}}; % 8cm max height
+\end{tikzpicture}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Alpha decay}
+
+\begin{itemize}
+	\item \CDAlert[red]{All heavy nuclei $(A > 210)$} \appear{\CDAlert[red]{are unstable} because the mass of the parent radioactive nucleus is greater} \appear{than the sum of the masses of decay products:} \appear{the daughter nucleus and an $\alpha$ particle}
+
+\item In $\alpha$ emission for the nucleus \appear{$\Delta Z=\Delta N=-2$} \appear{thus $\Delta A=-4$}\appear{, and therefore there are four possible $\alpha$ decay chains} \vspace{3mm}
+\[ 
+\footnotesize
+\begin{array}{r | c | c | c | c}
+& \text {A} & \text {Longest lived isotope} & t_{1/2} & \text {Stable daughter} \\
+\hline Thorium~series & 4 n  	   & n=58  & 1.4 \times 10^{10} \;a & Pb-208 \\
+ Neptunium~series & 4 n+1 & n=58 & 2.1 \times 10^{6} \;a & Tl-205\\
+ Uranium~series & 4 n+2 & n=59 & 4.5 \times 10^{9} \;a & Pb-206\\
+ Actinium~series & 4 n+3 & n=58 & 7.0 \times 10^{8} \;a & Pb-207
+\end{array}
+\vspace{3mm}
+\]
+
+\item In each chain, the process proceeds via \CDAlert[blue]{subsequent $\alpha$ decays} towards lighter daughters. \appear{For the chain to follow the stability line}\appear{, \CDAlert[red]{also $\beta$ emissions must happen} every once in a while} \appear{(to get rid of extra neutrons)}
+
+%\xdef\loc{south east}
+%\begin{tikzpicture}[remember picture,overlay] % anchor=south
+%    \node (A) [yshift=-0.25*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {$ \footnotesize
+%\begin{array}{r | c | c | c | c}
+%& \text {A} & \text {Longest lived isotope} & t_{1/2} & \text {Stable daughter} \\
+%\hline Thorium~series & 4 n  	   & n=58  & 1.4 \times 10^{10} \;a & Pb-208 \\
+% Neptunium~series & 4 n+1 & n=58 & 2.1 \times 10^{6} \;a & Tl-205\\
+% Uranium~series & 4 n+2 & n=59 & 4.5 \times 10^{9} \;a & Pb-206\\
+% Actinium~series & 4 n+3 & n=58 & 7.0 \times 10^{8} \;a & Pb-207
+%\end{array}
+%$}; % 8cm max height
+%\end{tikzpicture}
+
+\end{itemize}
+
+%\xdef\loc{south east}
+%\begin{tikzpicture}[remember picture,overlay] % anchor=south
+%    \node (A) [yshift=-0.25*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[width=7cm]{Figures_booklet/SOM_12_Nuclear_physics_figures/SOM_Nuclear_physics_Figure_1.png}}; % 8cm max height
+%\end{tikzpicture}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Line of stability and decay chains}
+
+% 6.5 cm = midway, 10 cm = 3/4 
+%\vspace{2.5mm}
+\begin{minipage}{9.0cm}
+\begin{itemize}
+	\item All series but one \CDAlert[fuchsia]{exist in nature}\appear{, except Neptunium-series (Np-237)}\appear{, because all the neptunium atoms have already decayed}
+
+\item In the Figure we see the decay graph of Thorium series %\appear{and Uranium series}
+
+\item The dashed line is the \CDAlert[blue]{line of stability}. \appear{The daughter nuclides of $\alpha$ decay are on the left side} \appear{, i.e. \CDAlert[fuchsia]{neutron rich side of the line}}\appear{, from where the process returns via sufficient numbers of $\beta$ decays}
+
+\end{itemize}
+\end{minipage}
+\vspace{2.5mm}
+
+\begin{itemize}
+\item The \CDAlert[red]{radon gas} existing in room air \appear{(typical in Finland)} \appear{is Rn-222} \appear{which belongs to the Radium-series (U-238).} \appear{Its half-life is 4 days}\appear{, but more of it is continuously formed in the chain}
+\end{itemize}
+
+
+\xdef\loc{north east}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=1*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[width=4.7cm]{Figures_booklet/SOM_Tipler_Nuclear_physics_figures/SOM_Tipler_Nuclear_physics_figure_26.png}}; % 8cm max height
+\end{tikzpicture}
+
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Decay chains}
+
+\seminormal
+% 6.5 cm = midway, 10 cm = 3/4 
+%\vspace{2.5mm}
+\begin{minipage}{9.0cm}
+\begin{itemize}
+	\item \CDAlert[blue]{Actinium-series}: \appear{The energy levels of Radium-223} \appear{after the $\alpha$ decay from Thorium-227}
+	\appear{\xdef\loc{north east}%
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=1*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[width=4.7cm]{Figures_booklet/SOM_Tipler_Nuclear_physics_figures/SOM_Tipler_Nuclear_physics_figure_29.png}}; % 8cm max height
+\end{tikzpicture}}
+\item Also the corresponding energy spectrum of $\alpha$ radiation from Th-227 is shown \appear{(with the $\gamma$ energy given as a subscript)}
+\appear{\xdef\loc{south west}%
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.25*\figYshift,xshift=-\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[width=8cm]{Figures_booklet/SOM_Tipler_Nuclear_physics_figures/SOM_Tipler_Nuclear_physics_figure_27.png}}; % 8cm max height
+\end{tikzpicture}}
+\item Note. Also here, as it very often happens\appear{, there will be a $\gamma$ quantum emitted in connection with the $\alpha$ emission}
+\end{itemize}
+\end{minipage}
+%\vspace{2.5mm}
+
+
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Beta decay}
+
+% 
+\begin{itemize}
+	\item Electrostatic attraction cannot trap an electron into the nucleus\appear{, yet electrons are emitted by the nucleus}\appear{, being apparently spontaneously created in the decay process}
+
+\item Note, \CDAlert[red]{in $\beta$ emission}\appear{, \CDAlert[red]{a neutron is converted into a proton}}\appear{, and thus the daughter nuclide will be a different element than the parent nuclide.} \appear{With a proton and an electron} 
+\end{itemize}
+
+% 6.5 cm = midway, 10 cm = 3/4 
+%\vspace{2.5mm}
+\begin{minipage}{8.2cm}
+\begin{itemize}
+	\item[] emitted\appear{, charge is conserved.} \appear{Energywise:}
+$$
+\begin{aligned}
+\appear{Q} & \equal  \appear{\textrm{((} m_{n}-m_{p}-m_{e} \textrm{))}}  \appear{c^{2}} \\
+& \equal \appear{(939.57-938.28-0.511) \mathrm{\;MeV}}  \equal \appear{0.78 \mathrm{\;MeV}}
+\end{aligned}
+$$
+\appear{We assume this to be the kinetic energy of the product particles}\appear{, mostly of the electron}\appear{, since $m_{p} / m_{e}=1840$.} \appear{Empirically, the energy of the electron varies from nearly zero to $Q$}
+\end{itemize}
+\end{minipage}
+%\vspace{2.5mm}
+
+
+%% TABLE 1
+%\xdef\loc{north east}
+%\begin{tikzpicture}[remember picture,overlay] % anchor=south
+%    \node (A) [yshift=0.9*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[width=5.3cm]{Figures_booklet/SOM_12_Nuclear_physics_figures/SOM_Nuclear_Table_1.png}}; % 8cm max height
+%\end{tikzpicture}
+
+
+\xdef\loc{south east}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.25*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[width=5.3cm]{Figures_booklet/SOM_12_Nuclear_physics_figures/SOM_Nuclear_physics_Figure_19.png}}; % 8cm max height
+\end{tikzpicture}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Beta decay}
+
+%\seminormal
+\begin{itemize}
+	\item Historically, still three puzzles existed:
+\begin{itemize}
+	\item The fact that some of electrons have nearly zero energy \appear{(and \Alert[red]{not always $0.78 \mathrm{\;MeV}$})}\appear{, was impossible to explain by having only two product particles}
+\end{itemize}
+\end{itemize}
+
+% 6.5 cm = midway, 10 cm = 3/4 
+\vspace{2.8mm}
+\begin{minipage}{8.5cm}
+\begin{itemize}
+\item[] \begin{itemize}[itemsep=2.8mm]
+	\item \appear{Neutron}\appear{, proton} \appear{and electron}\appear{, are all spin 1/2-fermions}\appear{, so final total spin of $p^{+}$ and $e^{-}$ is an integer.} \appear{\Alert[blue]{Spin is not conserved?}}
+	
+\item Also, occasionally, \appear{the electron energy is nearly $Q$}\appear{, so if there is a third product particle}\appear{, it needs to have a \Alert[fuchsia]{very small mass}}
+\end{itemize}
+
+%\item Wolfgang Pauli suggested that there would\appear{, indeed, be a third product particle, a neutrino}\appear{, for which:}
+%\begin{itemize}
+%	\item spin would be $1 / 2$
+%\item mass would be nearly zero \appear{(maybe $\textrm{((} \sim 2.2 \mathrm{ev} / \mathrm{c}^{2} \textrm{))} $}
+%\item \appear{interaction with practically anything would be very weak}  \implies{ so-called \CDAlert[fuchsia]{weak interaction} }
+
+%\end{itemize}
+%\item In fact, the third particle $\bar{v}_{e}$ \appear{is referred as an antineutrino}
+\end{itemize}
+\end{minipage}
+%\vspace{2.5mm}
+
+\xdef\loc{south east}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.25*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[width=5.3cm]{Figures_booklet/SOM_12_Nuclear_physics_figures/SOM_Nuclear_physics_Figure_20.png}}; % 8cm max height
+\end{tikzpicture}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Beta decay and neutrino}
+
+%\seminormal
+\begin{itemize}
+	\item Wolfgang Pauli suggested that there would\appear{, indeed, be a third product particle, a \CDAlert[red]{neutrino}}\appear{, for which:}
+\begin{itemize}
+	\item spin would be $1 / 2$
+
+\item mass would be nearly zero \appear{(maybe $\textrm{((}\sim 2.2 \mathrm{\;eV} / \mathrm{c}^{2} \textrm{))} $}
+
+\item \appear{interaction with practically anything would be very weak}  \implies{ so-called \CDAlert[fuchsia]{weak interaction} }
+\end{itemize}
+\item In fact, the third particle $\bar{\nu}_{e}$ \appear{is referred \\
+	to as an \CDAlert[blue]{antineutrino}}
+\end{itemize}
+
+
+\xdef\loc{south east}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.25*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[width=5.3cm]{Figures_booklet/SOM_12_Nuclear_physics_figures/SOM_Nuclear_physics_Figure_20.png}}; % 8cm max height
+\end{tikzpicture}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Example of a $\beta^{-}$decay}
+
+%
+\begin{itemize}
+	\item Let us consider the beta decay of boron-12:
+\[
+{ }_{5}^{12} B \quad \rightarrow \quad \appear{{ }_{6}^{12} C}  ~\plus~ \appear{{ }_{-1}^{~0} \beta^{-}}  ~\plus~ \appear{\bar{\nu}_{e}}
+\]
+
+\item Neutron is converted into proton\appear{, the new lighter nucleus is more tightly bound when $Z=N$} \appear{(and both are being even numbers).} \appear{Thus when boron decays, it will find lower energy}
+
+\item Calculate the energies \appear{(we omit the mass of $\beta^{-}$}\appear{, since the atomic mass of ${ }_{6}^{12} C$} \appear{already contains one extra electron):}
+$$
+\begin{aligned}
+\appear{Q} & \equal  \appear{\textrm{((} m_{\text {parent}}} \minus \appear{m_{\text {daughter }}}  \minus \appear{m_{\beta} \textrm{))}}  \appear{c^{2}}  \equal  \appear{\textrm{((} m_{B}-m_{C} \textrm{))}}  \appear{c^{2}} \\
+&  \equal \appear{ \textrm{((} 12.014352 \;u-12 \;u \textrm{))}} \appear{\times 931.5 \;MeV / u} \equal \appear{13.4 \mathrm{\;MeV}}
+\end{aligned}
+$$
+\end{itemize}
+
+%\xdef\loc{south east}
+%\begin{tikzpicture}[remember picture,overlay] % anchor=south
+%    \node (A) [yshift=-0.25*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[width=7cm]{Figures_booklet/SOM_12_Nuclear_physics_figures/SOM_Nuclear_physics_Figure_1.png}}; % 8cm max height
+%\end{tikzpicture}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Beta decay of nitrogen-12}
+
+\seminormal
+\begin{itemize}
+	\item Consider now $\beta^{+}$ decay of nitrogen-12\appear{ (${ }_{\,7}^{12} N$)}\appear{, during which a proton is converted into a neutron:}
+\[
+{ }_{7}^{12} N \quad \rightarrow \quad \appear{{ }_{6}^{12} C}  ~\plus~ \appear{{ }_{+1}^{\,0} \beta^{+}} \appear{~+~ \nu}
+\]
+\appear{where $\beta^{+}$ is a positive electron}\appear{, a positron}\appear{, taking care of the conservation of both charge and angular momentum}
+\end{itemize}
+
+% 6.5 cm = midway, 10 cm = 3/4 
+\vspace{2.5mm}
+\begin{minipage}{8.5cm}
+\begin{itemize}
+	\item[] \[ %what's this here
+p^{+} \quad \rightarrow \quad \appear{n}  ~\plus~  \appear{e^{+}} \appear{~+~e}
+\]
+\item Calculate again $Q$ for the reaction:
+$$
+\begin{gathered}
+Q = \textrm{((} m_{\text {parent}}-m_{\text {daughter}}-m_{\beta} \textrm{))}  c^{2}= \textrm{((} m_{N}-m_{C}-2 m_{e} \textrm{))}  c^{2} \\
+= \textrm{((} 12.018613 \;u-12 \;u-2 \cdot 5.486 \times 10^{-5} \;u \textrm{))}  c^{2} =16.3 \mathrm{\;MeV}
+\end{gathered}
+$$
+
+\item Note: A \Alert[blue]{free proton cannot decay into a neutron and a positron}, \appear{but a proton bound into a nucleus is able to do it}
+\end{itemize}
+
+\end{minipage}
+%\vspace{2.5mm}
+
+\xdef\loc{south east}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.25*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[width=4.6cm]{Figures_booklet/SOM_12_Nuclear_physics_figures/SOM_Nuclear_physics_Figure_21.png}}; % 8cm max height
+\end{tikzpicture}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Electron capture}
+
+%Electron capture
+\begin{itemize}
+	\item In the \CDAlert[red]{electron capture reaction}\appear{, proton in the nucleus captures an electron from the atomic electron shells} \appear{and changes into a neutron} 
+	
+	\item \CDAlert[red]{$Z$ decreases by one and $N$ increases by one}, just like in $\beta^{+}$ decay. \appear{In fact, many $\beta^{+}$-active nuclei}\appear{ can also capture electrons}
+
+\item Always, when the mass of a nucleus with a given atomic number $Z$ is larger than the mass of a nucleus with atomic number $Z-1$\appear{, the electron capture will be possible}
+\end{itemize}
+
+% 6.5 cm = midway, 10 cm = 3/4 
+\vspace{2.5mm}
+\begin{minipage}{8.5cm}
+\begin{itemize}
+	\item If the mass difference is at least $2 m_{e} c^{2}$\appear{, then also a $\beta^{+}$ decay is possible.} \appear{In this case these \CDAlert[blue]{two decay processes compete}}
+
+\item The probability of electron capture is usually negligible \appear{unless the atomic electron is in immediate vicinity of the nucleus}
+\end{itemize}
+\end{minipage}
+%\vspace{2.5mm}
+
+
+\xdef\loc{south east}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.25*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[width=4.8cm]{Figures_booklet/SOM_12_Nuclear_physics_figures/SOM_Nuclear_physics_Figure_22.png}}; % 8cm max height
+\end{tikzpicture}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Example of an electron capture}
+
+% 
+\begin{itemize}
+	\item Consider now electron capture reaction of carbon-11\appear{, ${ }_{6}^{11} C$}
+\[
+{ }_{6}^{11} C \appear{~+~} \appear{ _{-1}^{\;0} \beta^{-}} \quad \rightarrow \quad \appear{{ }_{5}^{11} B}  ~\plus~ \appear{\nu} \qquad \appear{\textrm{((}} \appear{p^{+}}  ~\plus~ \appear{e^{-}} \quad \rightarrow \quad  \appear{n~+~\nu} \appear{\textrm{))}}
+\]
+\appear{The energy released} \appear{will depend on the difference of the masses of parent and daughter:} 
+\[
+Q  \equal  \appear{\textrm{((} m_{\text {parent}}}  \minus \appear{m_{\text {daughter}} \textrm{))} } \appear{c^{2}}
+\]
+
+\item Another typical example of electron capture is 
+\[
+ { }_{24}^{51} C r  ~\plus~ \appear{{ }_{23}^{51} V}  ~\plus~ \appear{\nu_{e}} \appear{\,,~ \text{with}} \qquad  \appear{Q=}\appear{0.751 \mathrm{\;MeV}}
+ \]
+\end{itemize}
+
+%\xdef\loc{south east}
+%\begin{tikzpicture}[remember picture,overlay] % anchor=south
+%    \node (A) [yshift=-0.25*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[width=7cm]{Figures_booklet/SOM_12_Nuclear_physics_figures/SOM_Nuclear_physics_Figure_1.png}}; % 8cm max height
+%\end{tikzpicture}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Decay chains}
+
+\semismall
+% 6.5 cm = midway, 10 cm = 3/4 
+%\vspace{2.5mm}
+\begin{minipage}{9.0cm}
+\begin{itemize}[itemsep=1.5mm]
+	\item Revisit the presentation of the thorium and uranium series of alpha decay as a $N Z$-graph
+
+\item Note that to keep the isotopes in the vicinity of the \CDAlert[fuchsia]{line of stability}\appear{, there needs to be corrective beta decays}\appear{, especially if there's an abundance of neutrons}
+
+\item Eventually, the \CDAlert[red]{decay pathways end} at around isotopes of \Alert[red]{lead}: \appear{Pb-208}\appear{, Pb-206} \appear{and Pb-207 for the thorium}\appear{, uranium} \appear{and actininium series, respectively.} \appear{It is not that those isotopes of lead would be universally very stable}\appear{, it is just that they are the stable isotopes \CDAlert[red]{'first in line'}}\appear{, and there are no further decay pathways form those isotopes.} \appear{(unlike certain distinct smaller isotopes e.g. K-40, C-14 etc.)}
+
+\item Note also:
+\begin{itemize}
+	\item $\beta^{-}$ decay is directed diagonally down \& right 
+	\item $\beta^{+}$ decay is directed diagonally up \& left
+\end{itemize}
+
+\end{itemize}
+\end{minipage}
+%\vspace{2.5mm}
+
+\xdef\loc{east}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=0.*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[height=8cm]{Figures_booklet/SOM_12_Nuclear_physics_figures/SOM_Nuclear_physics_Figure_23.png}}; % 8cm max height
+\end{tikzpicture}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Valley of stability}
+
+\semismall
+% 6.5 cm = midway, 10 cm = 3/4 
+%\vspace{2.5mm}
+%\begin{minipage}{8.0cm}
+\begin{itemize}[itemsep=1.6mm]
+	\item One can also investigate the \CDAlert[blue]{stability valley} of nuclei\appear{, using $\beta$ decay processes}
+
+\item With the $\beta$ decays \appear{we move in perpendicular direction to the energy valley}
+
+\item The energy profiles of constant atomic mass show a parabolic type of energy valley
+
+\xdef\loc{south east}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.15*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[width=11cm]{Figures_booklet/SOM_Tipler_Nuclear_physics_figures/SOM_Tipler_Nuclear_physics_figure_33.png}}; % 8cm max height
+\end{tikzpicture}
+
+\item The energy values here were \Alert[red]{computed by the semi-empirical binding energy formula}
+
+\item For the odd $A$ series\appear{, the pairing term is zero \textrm{((}$C_{5}=0$\textrm{))}}\appear{, for the even $A$}\appear{, the $\beta$ decay}
+\end{itemize}
+% 6.5 cm = midway, 10 cm = 3/4 
+%\vspace{1.4mm}
+\begin{minipage}{2.8cm}
+\begin{itemize}
+	\item[] series jumps between two parabola\appear{, with $\pm C_{5}$.} \appear{(either $Z$-even/$N$-even or $Z$-odd/$N$-odd)}
+\end{itemize}
+\end{minipage}
+%\vspace{2.5mm}
+
+%\end{minipage}
+%\vspace{2.5mm}
+
+
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Gamma decay}
+
+%Gamma decay
+\begin{itemize}
+	\item In $\gamma$ decay\appear{, a \CDAlert[fuchsia]{nucleus of an excited state decays} to lower energy level and emits a photon}\appear{, maintaining the original isotope.} \appear{The process is analogous to emitting a photon from atomic energy states}
+
+\item \CDAlert[red]{ATOMIC}: For atomic processes the energies are in the range $\mathrm{\;eV}-\mathrm{\;MeV}$ \appear{and emitted wavelengths are $\mu \mathrm{m}-\mathrm{\;nm}$}
+
+\item \CDAlert[blue]{NUCLEAR}: For nuclear processes the energies exceed MeV\appear{, and wavelengths are $\appear{\lambda} \equal \frac{h c}{E} \approx \appear{10^{-3} \mathrm{\;nm}}$
+}
+\item Note, that for a given quantum of electromagnetic radiation in the keV–MeV energy range\appear{, there is fundamentally really no way to distinguish}\appear{, whether it is an X-ray} \appear{or a $\gamma$-ray}\appear{, if\\ no further information of the system is given!}
+\end{itemize}
+
+\xdef\loc{south east}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.25*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[width=4.3cm]{Figures_booklet/SOM_12_Nuclear_physics_figures/SOM_Nuclear_physics_Figure_24.png}}; % 8cm max height
+\end{tikzpicture}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Combined Alpha/beta and gamma decay}
+
+\begin{itemize}
+	\item After $\alpha$-, and $\beta$-decay\appear{, the \Alert[red]{nucleus is usually left into an excited state}}\appear{, and a $\gamma$ emission will follow} 
+	
+	\item The lifetimes of those excitation states are usually very short\appear{, unless selection rules restrict de-excitation of the excited states} 
+	
+	\item In practice, different $\gamma$ energies are often \Alert[red]{connected with specific decay processes}/shift in the nuclear energy levels
+
+\item In general, $\gamma$ energies are characteristic for given isotopes\appear{, and they can be used as a \CDAlert[red]{fingerprint}}\appear{, i.e. to give information to identify the isotopes}\appear{, and also give further information e.g. of the energies at the shell structure of the atomic nucleus} \appear{(recall earlier discussion of Th-227 emission spectra)}
+\end{itemize}
+
+%\xdef\loc{south east}
+%\begin{tikzpicture}[remember picture,overlay] % anchor=south
+%    \node (A) [yshift=-0.25*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[width=7cm]{Figures_booklet/SOM_12_Nuclear_physics_figures/SOM_Nuclear_physics_Figure_1.png}}; % 8cm max height
+%\end{tikzpicture}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Internal conversion}
+
+%Internal conversion
+\begin{itemize}
+	\item An alternative to $\gamma$-ray emission due to de-excitation of the excited nuclear state is \CDAlert[blue]{internal conversion}
+
+\item During this conversion, the energy from the excited nucleus is \Alert[blue]{transferred into an} \CDAlert[blue]{orbital electron}\appear{, which will be emitted from the atom}\appear{ at high velocities}
+ 
+ \item This concerns mostly \CDAlert[blue]{$s$-electrons of $K$- and $L$-shells}\appear{, which have a significant probability to reside close to the atomic core} 
+ 
+ \item The energy will be given by:
+\[
+hf  \equal \appear{ \textrm{((} E_{\text {high}}}\appear{-E_{\text {low}} \textrm{))}} \appear{-B_{\text {electron}}}
+\]
+
+\item This kind of internal conversion is a one-step many-particle process\appear{, although in principle it can be considered to consist of two stages}\appear{, emission and absorption of $\gamma$}
+\end{itemize}
+
+%\xdef\loc{south east}
+%\begin{tikzpicture}[remember picture,overlay] % anchor=south
+%    \node (A) [yshift=-0.25*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[width=7cm]{Figures_booklet/SOM_12_Nuclear_physics_figures/SOM_Nuclear_physics_Figure_1.png}}; % 8cm max height
+%\end{tikzpicture}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Spontaneous fission}
+\seminormal
+
+\begin{minipage}{8.6cm}
+\begin{itemize}
+	\item Some heavy radioactive nuclei have a tendency to decay differently, \appear{i.e. to \Alert[red]{split into two larger fragments} by \CDAlert[red]{spontaneous fission}}
+
+\item Driving force is \Alert[fuchsia]{minimization of total energy}
+
+\item Two separate nuclei will have \Alert[red]{larger surface area}\appear{ than the initial nucleus} \appear{(and thus a higher energy)} 
+\end{itemize}
+\end{minipage}
+\vspace{2.5mm}
+
+\begin{itemize}
+\item \appear{But the two separate nuclei can also \Alert[blue]{arrange the protons} of the nuclei further away from each other}
+\implies{ \Alert[blue]{Coulombic repulsion decreases}\appear{, increasing binding forces\\} \appear{and compensating the increased surface energy} }
+
+\item Another important detail in the spontaneous fission is\appear{, that the fragmentation will generate also \CDAlert[red]{free neutrons}}\appear{, which can induce further reactions in the system by colliding into the abundant parent nuclei}
+\end{itemize}
+
+\xdef\loc{north east}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=0.8*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[width=5cm]{Figures_booklet/SOM_12_Nuclear_physics_figures/SOM_Nuclear_physics_Figure_25.png}}; % 8cm max height
+\end{tikzpicture}
+
+%\endofslide 
+\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+

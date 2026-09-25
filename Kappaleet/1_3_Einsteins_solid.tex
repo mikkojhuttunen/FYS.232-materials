@@ -1,0 +1,288 @@
+% !TEX root = ../bb_AiRa_Kappaleet.tex
+
+% ö = \%c3\%b6
+% ä = \%C3\%A4
+
+\xdef\sectiontitle{\Isectiontitle} %aiheuttama
+\TOCrefs
+
+%%%%%%%%%%%%%%%
+\begin{frame}[label=1_3_a]%[label=1_3_TOC1]
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\label{\TOCname}
+
+\vspace{-0.5cm}
+
+\begin{itemize}[leftmargin=0.5cm,itemsep=2mm]
+    \item[1.1]<1-> \hyperlink{1_1_a}{\IaSubsectiontitle}
+    \item[1.2]<1-> \hyperlink{1_2_a}{\IbSubsectiontitle}	
+    \item[1.3]<1-> \hyperlink{1_3_a}{\CDAlert[blue]{\IcSubsectiontitle}}	
+    \item[1.4]<1-> \hyperlink{1_4_a}{\IdSubsectiontitle}
+    \item[1.5]<1-> \hyperlink{1_5_a}{\IeSubsectiontitle}
+    \item[1.6]<1-> \hyperlink{1_6_a}{\IfSubsectiontitle}
+    \item[1.7]<1-> \hyperlink{1_7_a}{\IgSubsectiontitle}
+\end{itemize}
+
+\vspace{-1cm}
+\begin{itemize}[leftmargin=8.5cm,itemsep=2mm]
+    \item[1.8]<1-> \hyperlink{1_8_a}{\IhSubsectiontitle}
+	\item[1.9]<1-> \hyperlink{1_9_a}{\IiSubsectiontitle}
+	\item[1.10]<1-> \hyperlink{1_10_a}{\IjSubsectiontitle}
+	\item[1.11]<1-> \hyperlink{1_11_a}{\IkSubsectiontitle}
+\end{itemize}
+
+%\endofslide 
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%\xdef\IbSubsectiontitle{Entropy and Temperature}
+\xdef\sectiontitle{\IcSubsectiontitle} 
+
+%%%%%%%%%%%%%%%
+\begin{frame}%[label=1_3_a]
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Mallin alkuoletukset}
+\appear{}
+\begin{itemize}
+	\item Einstein kehitti \CDAlert[violet]{yksinkertaisen mallin kiinteille aineille}: 
+	\item[] \begin{itemize}
+	\item Kiteen atomit voivat värähdellä kolmessa suunnassa ($x$, $y$, $z$)%
+	\appear{\xdef\loc{south}%
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.25*\figYshift,xshift=-4.5cm, anchor=\loc] at (current page.\loc) {\includegraphics[page=2,height=4cm]{Figures_booklet/SOM_9_Statistical_mechanics_figures/Tikz_SOM_Statistical_figures.pdf}}; %scale=\figscale. % 8cm max hei
+\end{tikzpicture}}
+	\item Atomit \Alert[blue]{värähtelevät muista atomeista riippumatta} \appear{(oletus/approksimaatio)}% 
+	\item Kiteen rakenne määrittelee tasapainotilan%
+	\appear{\xdef\loc{south}%
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.25*\figYshift,xshift=1cm, anchor=\loc] at (current page.\loc) {\includegraphics[page=3,height=4cm]{Figures_booklet/SOM_9_Statistical_mechanics_figures/Tikz_SOM_Statistical_figures.pdf}}; %scale=\figscale. % 8cm max hei
+\end{tikzpicture}}% 
+	\item \CDAlert[red]{Värähtely on harmonista} (oletus/approksimaatio)\appear{, ts. \CDAlert[red]{Hooken laki pätee}}\appear{:  $F=-kx$}%
+	\appear{\xdef\loc{south}%
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.25*\figYshift,xshift=5.25cm, anchor=\loc] at (current page.\loc) {\includegraphics[page=4,height=4cm]{Figures_booklet/SOM_9_Statistical_mechanics_figures/Tikz_SOM_Statistical_figures.pdf}}; %scale=\figscale. % 8cm max hei
+\end{tikzpicture}}%
+\end{itemize}
+
+\end{itemize}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Mallin alkuoletukset}
+\appear{}
+
+\begin{itemize}[itemsep=1.7mm]
+	\item Oletetaan kiinteän kappaleen koostuvan \CDAlert[blue]{$N$:stä atomista,} \CDAlert[blue]{jotka muodostavat siis $3N$ värähtelijää}
+\item Kaikilla on mikroskooppisen rakenteen määrittelemä \appear{sama perustila} %energian  \appear{minkä kappaleen mikroskooppinen rakenne määrittelee}
+\item \CDAlert[red]{Ratkaisemalla kvanttimekaanisen harmonisen värähtelijän ongelma}\appear{, systeemin sallituiksi energiatiloiksi saadaan $h f_{0}$:n välein esiintyvät energiatilat}\appear{, alkavat arvosta $1 / 2 h f_{0}$} 
+% 6.5 cm = midway, 10 cm = 3/4 
+%\vspace{2.5mm}
+\end{itemize}
+
+\begin{minipage}{7.5cm}
+\begin{itemize}[itemsep=1.6mm]
+	\item Yhden värähtelijän energia on
+\[ 
+ \varepsilon_{j} \equal \appear{\bigg( j } \appear{+\frac{1}{2}} \appear{\bigg)}\,  \appear{h f_{0} } \hspace{1.9cm}
+ \]
+\item $j=0 \Leftrightarrow$ \CDAlert[blue]{perustila}
+\[ 
+ \varepsilon_{j=0} \equal \frac{1}{2} \appear{h f_{0} } \hspace{1.9cm}
+ \]
+\appear{i.\,e. $j=$~energiatilan indeksi}
+\end{itemize}
+\end{minipage}
+
+\xdef\loc{south}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.25*\figYshift,xshift=1cm, anchor=\loc] at (current page.\loc) {\includegraphics[page=3,height=4cm]{Figures_booklet/SOM_9_Statistical_mechanics_figures/Tikz_SOM_Statistical_figures.pdf}}; %scale=\figscale. % 8cm max hei
+\end{tikzpicture}
+
+\xdef\loc{south}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.25*\figYshift,xshift=5.25cm, anchor=\loc] at (current page.\loc) {\includegraphics[page=4,height=4cm]{Figures_booklet/SOM_9_Statistical_mechanics_figures/Tikz_SOM_Statistical_figures.pdf}}; %scale=\figscale. % 8cm max hei
+\end{tikzpicture}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\appear{}
+
+\begin{itemize}[itemsep=4mm]
+	\item Sallittujen tilojen lukumäärä on periaatteessa \CDAlert[red]{rajoittamaton}
+	\appear{\xdef\loc{west}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-2cm,xshift=-\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=5,width=8.2cm]{Figures_booklet/SOM_9_Statistical_mechanics_figures/Tikz_SOM_Statistical_figures.pdf}}; %scale=\figscale. % 8cm max hei
+\end{tikzpicture}} 
+	\item Kaksi tai useampi värähtelijää \Alert[blue]{voi olla samassa tilassa}
+	\item Kappaleen harmoniset värähtelijät vaihtavat keskenään jatkuvasti energiakvantteja $h f_{0}$ \appear{(esim. \CDAlert[fuchsia]{termisiä viritystiloja})}
+	\appear{\xdef\loc{south east}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.25*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,width=6.8cm]{Figures_booklet/SOM_9_Statistical_mechanics_figures/SOM_Figure_5.png}}; 
+\end{tikzpicture}}
+	
+\end{itemize}
+
+
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Kokonaisenergia}
+\appear{}
+\begin{itemize}
+	\item Tarkastellaan vielä harmonisten \\
+		värähtelijöiden energiatiloja \\
+%		 \appear{$\Leftrightarrow$ \CDAlert[red]{Einsteinin kiinteää kappaletta}}
+
+	\item Aiemmin oletimme $N$\\
+	 identtistä \appear{mutta toisistaan erotet-\\
+	 tavissa olevaa} 
+	 \appear{harmonista värähtelijää/oskillaattoria}
+
+\item $i$:nen värähtelijän energia \appear{(riittää \\
+	laskea perustilasta ylöspäin...)} \\
+	\appear{on muotoa}
+\[ 
+ E_{n_{i}}  \equal  \appear{n_{i}} \appear{\hbar \omega_{0}} \quad \appear{\big( n_{i}} \equal \appear{0,1,2, \ldots \big) } \qquad \qquad
+\]
+\appear{jolloin \CDAlert[tunired]{systeemin kokonaisenergiaksi saadaan}:}
+\[
+ E  \equal \appear{\nsum_{i=1}^{N} } \appear{E_{n_{i}}}  \equal \appear{\nsum_{i=1}^{N} n_{i}} \appear{\hbar \omega_{0}}  \equal \appear{M \hbar \omega_{0}} \quad \appear{\text { \bigg(nyt: } M=\nsum_{i=1}^{N} n_{i} \bigg)} 
+\]
+
+\end{itemize}
+
+\xdef\loc{north east}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=1*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,width=6.8cm]{Figures_booklet/SOM_9_Statistical_mechanics_figures/SOM_Figure_5.png}}; %scale=\figscale. % 8cm max hei
+\end{tikzpicture}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Makroskooppiset ominaisuudet}
+\appear{}
+\begin{itemize}
+	\item Termisessä tasapainotilassa\appear{, systeemin \CDAlert[red]{värähtelijöillä} on erisuuret energiat}\appear{, energiat \CDAlert[red]{muodostavat jakauman}}
+
+\item  \CDAlert[tunired]{Tilastollisen analyysin} avulla \appear{yksittäisen värähtelijän $i$ todennäköisyys  olla energiatilalla $n_i$} \appear{voidaan laskea} 
+
+\item Todennäköisyys saada otos $n_i$ on
+\[ 
+ P_{n_i} \equal \fracc{\text { tilojen lukumäärä joilla voi saavuttaa otoksen $n_i$ }}{\text { kaikkien mahdollisten tilojen lukumäärä }} 
+ \]
+\item Oletamme siis että todennäköisyys seuraa tilojen lukumäärää $W$\appear{, joilla voi saavuttaa otoksen} 
+
+\item Oletamme myös että \CDAlert[blue]{jokainen (mikro)tila} \appear{\CDAlert[blue]{on yhtä todennäköinen}}
+%
+%\item So for the oscillators in our example case, Einstein's solid, the probability that an oscillator $i$ contains energy $E_{n_{i}}\bigg( =n_{i} $ quanta) will be
+%\[
+%P_{n_{i}}=\frac{\text { number of ways energy can be distributed with fixed } n_{i}}{\text { total number of ways energy can be distributed }}
+%\[
+\end{itemize}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Tilan todennäköisyys, binomikerroin}
+
+\begin{itemize}
+
+\item Todennäköisyys että värähtelijä $i$ on energiatilassa $E_{n_{i}}$~\appear{$(=n_{i} $ energian kvanttiluku)} \appear{on}
+\[ 
+ P_{n_{i}} \equal \fracc{\text { energiatilojen lukumäärä, joilla on sama } n_{i}}{\text { tilojen lukumäärä joihin energia voidaan jakaa}} 
+ \]
+
+\item Yhtälö on \CDAlert[fuchsia]{konseptuaalisesti intuitiivinen}\appear{, mutta ei helpota käytännön laskemista}
+\implies{ tarvitaan lisää \CDAlert[red]{tilastollista analyysiä} \appear{\CDAlert[tunired]{(tai todennäköisyyslaskennan perusteita)}}}
+
+\item Tilojen kokonaislukumäärä, eli kuinka $N$ värähtelijää ($i$:s värähtelijä tilalla $n_i$) voivat muodostaa kokonaisluvun $M \appear{= \sum_{i=1}^N n_i}$ \appear{vastaa \CDAlert[red]{binomikerrointa}}
+\[
+\Omega(N, M)  \equal \frac{(M+N-1) !}{M !(N-1) !} \equiv \appear{\bg[2.4]{\text{\bigsymbolsfont(}}\!\! \appear{\begin{array}{c}
+M+N-1 \\
+M
+\end{array} } \!\! \bg[2.4]{\text{\bigsymbolsfont)}} }
+\]
+
+\end{itemize}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}[label=1_3_Pn]
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Tilan todennäköisyys}
+\appear{}
+
+\begin{itemize}
+\item \CDAlert[blue]{Mahdollisuuksien/tilojen lukumäärä}, joiden kokonaisenergia vastaa kvanttilukua $n_i$ saadaan \Alert[blue]{binomikertoimella}
+\[
+ \bg[2.4]{\text{\bigsymbolsfont(}}\!\! \appear{\begin{array}{c}
+ \big( M-n_{i} \big) +(N-1)-1 \\
+ \big( M-n_{i} \big) 
+\end{array}} \!\!\bg[2.4]{\text{\bigsymbolsfont)}} 
+\]
+\item[] jolloin tämän makrotilan todennäköisyydeksi saadaan
+%\vspace{2.5mm}
+\end{itemize}
+
+\begin{minipage}{6cm}
+\begin{itemize}
+\item[]  %Jolloin tämän makrotilan todennäköisyydeksi saadaan
+	\[
+P_{n_{i}}  \equal  \frac{ \bg[2.4]{\text{\bigsymbolsfont(}}\!\! \appear{\begin{array}{c}
+ \big( M-n_{i} \big) +(N-1)-1 \\
+ \big( M-n_{i} \big) 
+\end{array} } \!\!\bg[2.4]{\text{\bigsymbolsfont)}}  }{
+ \bg[2.4]{\text{\bigsymbolsfont(}}\!\! \appear{\begin{array}{c}
+M+N-1 \\
+M
+\end{array}} \!\!\bg[2.4]{\text{\bigsymbolsfont)}} }
+\]%
+\appear{\xdef\loc{south east}%
+\begin{tikzpicture}[remember picture,overlay]% anchor=south
+    \node (A) [yshift=-0.25*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,width=8.2cm]{Figures_booklet/SOM_9_Statistical_mechanics_figures/SOM_Figure_6.png}};%scale=\figscale. % 8cm max hei
+\end{tikzpicture}%
+}%
+\\[-2\baselineskip]
+\item Binomikertoimien ongelma on \appear{että niitä on vaivalloista käyttää}
+\implies{ motivoi \CDAlert[red]{Boltzmannin jakauman} \\ kehittämisen }
+\end{itemize}
+\end{minipage}
+
+%\endofslide 
+\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%

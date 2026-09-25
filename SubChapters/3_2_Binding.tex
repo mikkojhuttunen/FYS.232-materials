@@ -1,0 +1,1110 @@
+% !TEX root = ../aa_SoM_Chapters.tex
+
+%% HARRIS: Chapter 9
+%\xdef\Isectiontitle{Statistical Mechanics} 
+%%
+%\xdef\IaSubsectiontitle{A Simple Thermodynamic System} 
+%\xdef\IbSubsectiontitle{Entropy and Temperature}
+%\xdef\IcSubsectiontitle{Einstein's solid}
+%\xdef\IdSubsectiontitle{Boltzmann \& Maxwell–Boltzmann distributions}
+%\xdef\IeSubsectiontitle{Classical Averages}
+%
+%\xdef\IfSubsectiontitle{Quantum Distributions} 
+%\xdef\IgSubsectiontitle{The Quantum Gas} 
+%\xdef\IhSubsectiontitle{Photon Gas}
+%\xdef\IiSubsectiontitle{The Laser}
+%\xdef\IjSubsectiontitle{Specific Heats} 
+%\xdef\IkSubsectiontitle{Debye Model} 
+
+% ö = \%c3\%b6
+% ä = \%C3\%A4
+
+\xdef\sectiontitle{\IIIsectiontitle} %aiheuttama
+
+%%%%%%%%%%%%%%%
+\begin{frame}[label=3_2_a]%[label=3_2_TOC1]
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+
+\vspace{1cm}
+
+\begin{itemize}[leftmargin=0.5cm,itemsep=3mm]
+    \item[3.1] \hyperlink{3_1_a}{\IIIaSubsectiontitle}
+    \item[3.2] \hyperlink{3_2_a}{\CDAlert[red]{\IIIbSubsectiontitle}}	
+    \item[3.3] \hyperlink{3_3_a}{\IIIcSubsectiontitle}	
+    \item[3.4] \hyperlink{3_4_a}{\IIIdSubsectiontitle}
+    \item[3.5] \hyperlink{3_5_a}{\IIIeSubsectiontitle}
+    \item[3.6] \hyperlink{3_6_a}{\IIIfSubsectiontitle}
+    \item[3.7] \hyperlink{3_7_a}{\IIIgSubsectiontitle}
+\end{itemize}
+
+\endofslide \end{frame}
+%%%%%%%%%%%%%%%
+
+\xdef\sectiontitle{\IIIbSubsectiontitle} 
+
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Binding forces}
+
+%  Binding
+\begin{itemize}
+	\item We call the force between the nucleons the \CDAlert[red]{strong force}. It is one of the four fundamental forces:
+\begin{itemize}
+	\item Strong $(\leftrightarrow$ internucleon attraction)
+\item \CDAlert[blue]{Electromagnetic}
+\item Weak
+\item Gravitational
+\end{itemize}
+
+\item Strong force reaches only to roughly 1-2 fm, then, for larger distances it is practically zero. This fact leads to stability of the nucleus
+\end{itemize}
+
+% 6.5 cm = midway, 10 cm = 3/4 
+\vspace{2.5mm}
+\begin{minipage}{8.25cm}
+\begin{itemize}
+	\item For larger distances, electromagnetic forces are significant
+	\implies{ \CDAlert[blue]{Heavier elements}\appear{, that are larger in size than ${\sim}$2~fm}\appear{, are affected by the electrostatic forces} \appear{(repulsion between protons)} }
+\end{itemize}
+\end{minipage}
+%\vspace{2.5mm}
+
+%% TABLE 2
+\xdef\loc{south east}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.25*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[width=5cm]{Figures_booklet/SOM_12_Nuclear_physics_figures/SOM_Nuclear_Table_2.png}}; % 8cm max height
+\end{tikzpicture}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Binding forces}
+
+\seminormal
+\begin{itemize}%[itemsep=2.1mm]
+	\item Figure 4 gives an outline of the strong force:
+\begin{itemize} \small
+	\item \CDAlert[red]{Short range attraction}
+\item \CDAlert[blue]{Strong repulsion for hard core}
+\item Independent on whether we deal with proton or neutron
+\item Depends on the orientation of nuclear spins
+\item \CDAlert[fuchsia]{No formula yet exists for the strong force}
+\end{itemize}
+
+\end{itemize}
+
+% 6.5 cm = midway, 10 cm = 3/4 
+\vspace{2.4mm}
+\begin{minipage}{8.7cm}
+\begin{itemize}%[itemsep=2.1mm]
+	\item Combined with a Coulombic repulsive force between protons\appear{, the strong force potential well of Figure 4} \appear{is modified to have a repulsive barrier for the larger radii}
+	\appear{\xdef\loc{south east}%
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.25*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[width=4.5cm]{Figures_booklet/SOM_12_Nuclear_physics_figures/SOM_Tipler_Nuclear_physics_figure_1_cropped.png}};% 8cm max height
+\end{tikzpicture}}
+
+\item From the model presented, one might expect that we could combine any number of protons and neutrons together and form stable nuclei. \appear{However \Alert[fuchsia]{only some combinations form a stable nucleus} while others are unstable}
+\end{itemize}
+
+\end{minipage}
+
+
+\xdef\loc{north east}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=0.75*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[width=4.5cm]{Figures_booklet/SOM_12_Nuclear_physics_figures/SOM_Nuclear_physics_Figure_4.png}}; % 8cm max height
+\end{tikzpicture}
+
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Theoretical model for the stability}
+  
+\begin{itemize}
+	\item \CDAlert[red]{Two-Nucleon Nuclei}\\
+	Consider two nucleons bound together by strong force\appear{, in a narrow deep potential well shown previously}
+
+\item[] \begin{itemize}
+	 \item \CDAlert[fuchsia]{Two protons (p-p):} Internucleon attraction \appear{plus Coulombic repulsion}\appear{, probably the most unstable of these three}
+
+\item \CDAlert[red]{Two neutrons $(\mathrm{n}-\mathrm{n})$:} Only internucleon attraction 
+\item \CDAlert[blue]{Proton-neutron pair (p-n):} Only internucleon attraction $\rightarrow$ \appear{deuteron}
+
+\end{itemize}
+
+\item It turns out, that only p-n combination of these three forms a bound nucleus. \appear{\CDAlert[blue]{Why?}} \appear{The \CDAlert[fuchsia]{internucleon attraction is spin-dependent}}\appear{, being stronger if the spins are aligned.} \appear{Secondly, \CDAlert[red]{exclusion principle} kicks in}\appear{, which is crucial for all nuclei.} \appear{Protons and neutrons are spin-1/2 fermions}\appear{, which cannot occupy the same state in a same system}
+\end{itemize}
+
+%\xdef\loc{south east}
+%\begin{tikzpicture}[remember picture,overlay] % anchor=south
+%    \node (A) [yshift=-0.25*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[width=7cm]{Figures_booklet/SOM_12_Nuclear_physics_figures/SOM_Nuclear_physics_Figure_1.png}}; % 8cm max height
+%\end{tikzpicture}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+
+\begin{itemize}
+	\item The lowest energy possible for two nucleons is a ground state with spins aligned \appear{(orientation of stronger attraction).} \appear{Such a state is forbidden for $\mathrm{n}-\mathrm{n}$} \appear{and $\mathrm{p}-\mathrm{p}$ systems} \appear{due to the \CDAlert[red]{exclusion principle}}
+	
+	\item It turns out that deuteron is only barely bound \appear{and does not have any excited bound states}
+
+\end{itemize}
+
+% 6.5 cm = midway, 10 cm = 3/4 
+\vspace{2.5mm}
+\begin{minipage}{8cm}
+\begin{itemize}
+	\item And if deuteron cannot find any other way to bind\appear{, then the other two pairs should not bind at all}
+
+\item In Figure 5 the energy in a deuteron is depicted.
+\appear{\xdef\loc{south east}%
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.25*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[width=5.5cm]{Figures_booklet/SOM_12_Nuclear_physics_figures/SOM_Nuclear_physics_Figure_5.png}};% 8cm max height
+\end{tikzpicture}}
+ \appear{Two nucleons occupy the lone bound state in a potential well arising from their mutual attraction}
+\end{itemize}
+\end{minipage}
+%\vspace{2.5mm}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Strong internucleon attraction}
+% 
+\semismall
+\begin{itemize}
+	\item[] \begin{itemize}[itemsep=0.9mm] \semismall
+	 \item A two-nucleon has one bond, i.e, half a bond per nucleon 
+	 \item A three nucleon has three, i.e. one bond per nucleon 
+	 \item A four-nucleon has six, i.e. $1.5$ bonds per nucleon 
+	 \implies{number of bonds increases}
+\end{itemize}
+\end{itemize}
+
+% 6.5 cm = midway, 10 cm = 3/4 
+\vspace{2.5mm}
+\begin{minipage}{7.4cm}
+\begin{itemize}
+	\item This increasing trend continues only until the \Alert[red]{nucleons are packed tightly together} and the nearest neighbours surround each other. \appear{Then each surrounded nucleon will have the same maximum number of bonds}
+
+\item This ratio is essentially area over volume $=\frac{4 \pi r^{2}}{4 / 3 \pi r^{3}} \propto \frac{1}{r}$ 
+\item The average number of bonds per nucleon approach a \Alert[blue]{constant-valued  binding energy per nucleon} (not bonds per nucleon)\appear{, i.e, the energy required to pull all nucleons apart}
+\end{itemize}
+\end{minipage}
+%\vspace{2.5mm}
+
+
+\xdef\loc{south east}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.25*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[width=6cm]{Figures_booklet/SOM_12_Nuclear_physics_figures/SOM_Nuclear_physics_Figure_6.png}}; % 8cm max height
+\end{tikzpicture}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Coulomb repulsion}
+
+% 6.5 cm = midway, 10 cm = 3/4 
+%\vspace{2.5mm}
+\begin{minipage}{9.0cm}
+%\begin{itemize}
+\begin{itemize}
+	\item All pairs of protons repel each other\appear{, which shifts the proton energies slightly up}\appear{, closer to the top of the finite well}
+	
+\item In small nuclei, all nucleons touch\appear{, and there is a net attraction between them.} \appear{But there are only few bonds per nucleon}
+
+\item In larger nuclei\appear{, pairs of protons shift apart so that the strong force cannot affect anymore} \implies{ These pairs add a net repulsion }
+
+\item Combining these two effects\appear{, we expect a \CDAlert[fuchsia]{maximum in the binding energy per nucleon}}
+\appear{\xdef\loc{south east}%
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.0*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[width=4.3cm]{Figures_booklet/SOM_12_Nuclear_physics_figures/SOM_Nuclear_physics_Figure_8.png}};% 8cm max height
+\end{tikzpicture}}
+\end{itemize}
+\end{minipage}
+%\vspace{2.5mm}
+
+
+\xdef\loc{north east}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=0.65*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[width=4.3cm]{Figures_booklet/SOM_12_Nuclear_physics_figures/SOM_Nuclear_physics_Figure_7.png}}; % 8cm max height
+\end{tikzpicture}
+
+
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{The exclusion principle}
+
+%  
+\begin{itemize}
+	\item According to exclusion principle \appear{the lowest energy would correspond to a case with equal number of protons and neutrons}
+	
+	\item In Figure 9, we have initially equal number of protons and neutrons. \appear{Keeping $A$ fixed, we change one proton to neutron.} \appear{Because lower energy levels are filled, we need to place the neutron at higher state,}% 
+
+\end{itemize}
+
+% 6.5 cm = midway, 10 cm = 3/4 
+%\vspace{2.5mm}
+\begin{minipage}{6.5cm}
+\begin{itemize}
+\item[] i.e. total energy will increase 
+
+\item The same argument applies\appear{, if we change a neutron to a proton}
+	\item Thus the \Alert[blue]{state $Z=N$ is of the lowest energy}
+\end{itemize}
+\end{minipage}
+%\vspace{2.5mm}
+
+
+\xdef\loc{south east}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.25*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[width=6cm]{Figures_booklet/SOM_12_Nuclear_physics_figures/SOM_Nuclear_physics_Figure_9.png}}; % 8cm max height
+\end{tikzpicture}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+
+\seminormal
+% 6.5 cm = midway, 10 cm = 3/4 
+%\vspace{2.5mm}
+\begin{minipage}{8.75cm}
+%\begin{itemize}
+	\begin{itemize}
+	\item Now we take into account the \Alert[red]{Coulomb repulsion between the protons}. \appear{Consider a small nuclei where all nucleons touch}\appear{, all proton repulsions are overwhelmed by the strong attraction}\appear{, so $Z \cong N$ should be more stable}
+
+\item In a large nuclei, uncompensated Coulomb repulsions shift the proton states upwards. \appear{Thus is could be expected that at lowest energy state}\appear{, the tops of neutron and proton levels should be equal}\appear{, thus this case should have $N>Z$}
+
+\item This reasoning predicts that the nucleons should be most tightly bound in a nuclei with intermediate mass number. \appear{The binding energy per nucleon should have a relative maximum at $Z \cong N$ for small nuclei} \appear{and at \CDAlert[red]{$N>Z$ for larger nuclei}}
+\end{itemize}
+\end{minipage}
+%\vspace{2.5mm}
+
+
+\xdef\loc{east}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.25*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[height=8.5cm]{Figures_booklet/SOM_12_Nuclear_physics_figures/SOM_Nuclear_physics_Figure_10.png}}; % 8cm max height
+\end{tikzpicture}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Experimental facts regarding stability}
+
+%  
+\begin{itemize}
+	\item The \CDAlert[fuchsia]{validity for our model} on the nuclear forces \appear{comes from the sums of the \CDAlert[fuchsia]{experimentally extracted nuclear masses}}
+
+\item If we need to use energy to pull separate nucleons out of the nuclei\appear{, it must be that the mass of the nuclei is less than the sum of the masses of the parts}
+
+\item Clearly, \CDAlert[red]{e.g. deuteron weighs less than the sum of its parts:}
+
+\end{itemize}
+
+% 6.5 cm = midway, 10 cm = 3/4 
+\vspace{2.5mm}
+\begin{minipage}{8cm}
+\begin{itemize}
+	%\item Clearly, \Alert[red]{e.g. deuteron weighs less than the sum of its parts:}
+
+\item[] \begin{itemize}[itemsep=2.5mm]
+	 \item Deuteron mass $m_D = 2.013553 \mathrm{\;u}$ 
+	\item ~\vspace{-\baselineskip}
+	$$\begin{aligned}
+	m_p  \plus  \appear{m_n} \appear{&= 1.007276 \mathrm{\;u}+1.008665 \mathrm{\;u}} \\\appear{&=2.015941 \mathrm{\;u}}
+	\end{aligned}$$
+	 
+\item Mass of parts $-$ mass of whole 
+$$
+\appear{=2.015941 \;u}   \minus \appear{2.013553 \;u}  \equal  \appear{+ 0.002388 \;u}
+$$
+\end{itemize}
+
+\item[] \implies{ We need to do work to pull the deuteron apart }
+ 
+\end{itemize}
+\end{minipage}
+%\vspace{2.5mm}
+
+
+\xdef\loc{south east}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.25*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[width=5cm]{Figures_booklet/SOM_12_Nuclear_physics_figures/SOM_Nuclear_physics_Figure_11.png}}; % 8cm max height
+\end{tikzpicture}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Binding energy of the nucleus}
+
+\begin{itemize}
+	\item We define \CDAlert[fuchsia]{binding energy $B E$} for an arbitrary nucleus\appear{, as the energy to pull all of the nucleons apart:}
+\[
+BE  \equal \appear{m_{f} c^{2}}  \minus \appear{m_{i} c^{2}}  \equal   \appear{\textrm{((} \text{mass of parts}}  \minus \appear{\text {mass of whole} \textrm{))}\, c^{2}}
+\]
+
+\item For deuteron:
+$$
+\begin{aligned}
+\appear{B E} &  \equal  \appear{\textrm{((}  0.002388 \;u \times 1.661 \times 10^{-27} \mathrm{\;kg} \textrm{))} }  \appear{\textrm{((}  3 \times 10^{8} \Frac{\mathrm{m}}{s} \textrm{))}^{2}} \\
+&  \equal \appear{3.57 \times 10^{-13} \mathrm{\;J}}  \equal \appear{2.22 \mathrm{\;MeV}}
+\end{aligned}
+$$
+\appear{Also e.g. for hydrogen \CDAlert[red]{atom}}\appear{, one needs $13.6 \mathrm{\;eV}$ to pull the electron apart.} \appear{The atom weighs $2.4 \times 10^{-35} \mathrm{\;kg}$ less than its parts separately}
+
+\item Note that the \CDAlert[red]{fractional mass change $\Delta m$ of hydrogen atom} is $2.4 \times 10^{-35} \mathrm{\;kg} / 1.67 \times 10^{-27} \mathrm{\;kg} \cong 10^{-8}$ 
+\item But $\Delta m$ for deuteron is $0.002388 \mathrm{\;u} / 2.013553 \mathrm{\;u} \cong 10^{-3}$, a \CDAlert[fuchsia]{large value!}
+\end{itemize}
+
+%\xdef\loc{south east}
+%\begin{tikzpicture}[remember picture,overlay] % anchor=south
+%    \node (A) [yshift=-0.25*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[width=7cm]{Figures_booklet/SOM_12_Nuclear_physics_figures/SOM_Nuclear_physics_Figure_1.png}}; % 8cm max height
+%\end{tikzpicture}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Binding energy of the nucleus}
+
+\begin{itemize}
+	\item The theoretical model gives us the binding energy per nucleon\appear{, for e.g. deuteron this would be:} \appear{$2.22 \mathrm{\;MeV} / 2=1.11 \mathrm{\;MeV}$ per nucleon.} \appear{In general:}
+\[
+BE  \equal  \appear{\textrm{((}} \appear{Z m_{H}}  \plus \appear{N m_{n}}  \minus \appear{M_{{}^{A}_{Z}X}} \appear{\textrm{))} c^{2}} \appear{\,,} \qquad \appear{M_{{}^{A}_{Z}X}} \equiv \appear{m_a}
+\]
+
+\item The formula \CDAlert[blue]{contains the mass of hydrogen atom $m_H$} \appear{($m_p+m_e$),} %more or less also cancels it by having the atomic masses, which also contain the electron masses
+\end{itemize}
+% 6.5 cm = midway, 10 cm = 3/4 
+\vspace{-1mm}
+\begin{minipage}{6.5cm}
+\begin{itemize}
+	\item[] which cancels the electrons' masses in the \CDAlert[red]{atomic mass} term $M_{{}^{A}_{Z}X}$\appear{, that also contains the electron masses}
+	
+	\item Still, this is an approximation\appear{, since e.g.~\Alert[red]{electron binding energies} are not taken into account} \appear{(being rather small)}
+	
+\end{itemize}
+\end{minipage}
+\vspace{2.5mm}
+
+%The binding energy per nucleon: $\frac{B E}{\text { nucleon }}$ for the naturally occurring isotopes. (fig caption?)
+\xdef\loc{south east}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.25*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[width=7cm]{Figures_booklet/SOM_12_Nuclear_physics_figures/SOM_Nuclear_physics_Figure_12.png}}; % 8cm max height
+\end{tikzpicture}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Binding energy of the nucleus}
+
+\seminormal
+% 6.5 cm = midway, 10 cm = 3/4 
+%\vspace{2.5mm}
+\begin{minipage}{7.4cm}
+\begin{itemize}
+	\item It is very informative to plot the neutron number vs. proton number \appear{for the known nuclides}
+
+\item The 266 stable nuclides are indicated as black dots\appear{, and a \CDAlert[fuchsia]{line of stability} has been fitted into that data} 
+
+\item It is worth to note that for small nuclei\appear{, the line of stability follows the line $N=Z$}\appear{, but for larger nuclei, as $A$ increases}\appear{, it tends toward $N>Z$}\appear{, \CDAlert[red]{agreeing with} our previously discussed \CDAlert[red]{simple model}}
+
+\item The shaded area represents the known unstable (\CDAlert[fuchsia]{radioactive})\appear{, nuclides whose lifetimes are longer than about a millisecond}
+\end{itemize}
+\end{minipage}
+%\vspace{2.5mm}
+
+
+\xdef\loc{east}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=0*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[height=8.5cm]{Figures_booklet/SOM_12_Nuclear_physics_figures/SOM_Tipler_Nuclear_physics_figure_13.png}}; % 8cm max height
+\end{tikzpicture}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Binding energy per nucleon}
+
+\seminormal
+% 6.5 cm = midway, 10 cm = 3/4 
+%\vspace{2.5mm}
+\begin{minipage}{9cm}
+\begin{itemize}[itemsep=1.8mm]
+	\item Figure 14 is a cross section of Figure 12 showing
+		 the \CDAlert[fuchsia]{BE/nucleon}\appear{, taken roughly at the line of stability}
+
+\item Because $BE/$nucleon varies with both $N$ and $Z$\appear{, 
+	the plot cannot show all the isotopes, but the trend is clear}
+
+\item For small nuclei, $BE/$nucleon increases with $A$\appear{, but for larger nuclei, it decreases with $A$}
+
+\end{itemize}
+\end{minipage}
+
+\vspace{2.5mm}
+\begin{minipage}{6.5cm}
+\begin{itemize}[itemsep=1.8mm]
+	\item For deuteron we have $1.1 \mathrm{\;MeV}$\appear{, and for large $A$ the curve approaches $7.57 \mathrm{\;MeV}$ }
+	
+	\item The maximum for BE/nucleon ($8.79 \mathrm{\;MeV}$) is obtained at about $A=60$ (for \Alert[blue]{iron}-56, iron-58 and \Alert[blue]{nickel}-62). \appear{From all of the elements, these have the \Alert[blue]{most stable, tightly bound nuclei}}
+\end{itemize}
+\end{minipage}
+%\vspace{2.5mm}
+
+
+\xdef\loc{north east}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=0.75*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[width=4.5cm]{Figures_booklet/SOM_12_Nuclear_physics_figures/SOM_Nuclear_physics_Figure_8.png}}; % 8cm max height
+\end{tikzpicture}
+
+\xdef\loc{south east}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.25*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[width=7cm]{Figures_booklet/SOM_12_Nuclear_physics_figures/SOM_Nuclear_physics_Figure_14.png}}; % 8cm max height
+\end{tikzpicture}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%
+%\begin{frame}
+%\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+%\framesubtitle{Shape of the nucleus}
+%
+%\begin{itemize}
+%	\item Most of the atomic nuclei are \CDAlert[red]{nearly spherical}
+%	\item Mostly only rare earth elements \appear{$(Z=57-71)$} \appear{are \CDAlert[blue]{ellipsoidal}}\appear{, with the major axis differing from the minor axis about 20 percent}
+%
+%\item In those heavy nuclei, their inner atomic electron wave functions even slightly penetrate the nucleus. \appear{Deviations from the spherical shape}\appear{, which correspond to \Alert[fuchsia]{deviations in the nuclear charge distributions}}\appear{, show up as small changes in the atomic energy levels}
+%
+%\item The \CDAlert[blue]{shape of the nucleus} is shown in the average value of the \CDAlert[tuniblue]{electric quadrupole moment}:
+%\[
+%< Q >  \equal \appear{Z} \appear{\nint} \appear{\psi^{*}} \appear{\textrm{[[} 3} \appear{\textrm{((}z_{a v}^{2} \textrm{))}_{a v}}  \minus  \appear{\textrm{((}x^{2}+y^{2}+z^{2} \textrm{))}_{a v}\textrm{]]}} \appear{\psi}  \, \appear{d V}
+%\]
+%\end{itemize}
+%
+%%\xdef\loc{south east}
+%%\begin{tikzpicture}[remember picture,overlay] % anchor=south
+%%    \node (A) [yshift=-0.25*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[width=7cm]{Figures_booklet/SOM_12_Nuclear_physics_figures/SOM_Nuclear_physics_Figure_1.png}}; % 8cm max height
+%%\end{tikzpicture}
+%
+%\endofslide 
+%%\endofsection
+%\end{frame}
+%%%%%%%%%%%%%%%%
+%
+%%%%%%%%%%%%%%%%
+%\begin{frame}
+%\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+%\framesubtitle{Shape of the nucleus}
+%
+%%\vspace{2.5mm}
+%\begin{minipage}{10.0cm}
+%\begin{itemize}
+%	\item So, if the quadrupole moment is \CDAlert[blue]{positive}\appear{, the shape is \CDAlert[blue]{prolate ellipsoid}}\appear{, i.e. like a 'vertical watermelon'} 
+%	\item If the moment is \CDAlert[red]{zero}\appear{, the shape is a \CDAlert[red]{sphere}} 
+%%	\item If the quadrupole moment is \CDAlert[fuchsia]{negative}\appear{, then the shape is \CDAlert[fuchsia]{oblate ellipsoid}, i.e. more like a 'flattened pumpkin'}
+%\end{itemize}
+%\end{minipage}
+%\vspace{2.5mm}
+%
+%\begin{minipage}{6.5cm}
+%\begin{itemize}
+%	\item If the quadrupole moment is \CDAlert[fuchsia]{negative}\appear{, then the shape is an \CDAlert[fuchsia]{oblate ellipsoid}, i.e. more like a 'flattened pumpkin'}
+%\end{itemize}
+%\end{minipage}
+%%\vspace{2.5mm}
+%
+%\xdef\loc{south east}
+%\begin{tikzpicture}[remember picture,overlay] % anchor=south
+%    \node (A) [yshift=-0.15*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[height=8.75cm]{Figures_booklet/SOM_12_Nuclear_physics_figures/SOM_Tipler_Nuclear_physics_figure_10.png}}; % 8cm max height
+%\end{tikzpicture}
+%
+%\xdef\loc{south east}
+%\begin{tikzpicture}[remember picture,overlay] % anchor=south
+%    \node (A) [yshift=-0.15*\figYshift,xshift=-3.5cm, anchor=\loc] at (current page.\loc) {\includegraphics[width=4cm]{Figures_booklet/SOM_12_Nuclear_physics_figures/SOM_Tipler_Nuclear_physics_figure_11_cropped.png}}; % 8cm max height
+%\end{tikzpicture}
+%
+%\endofslide 
+%%\endofsection
+%\end{frame}
+%%%%%%%%%%%%%%%%
+%
+%%%%%%%%%%%%%%%%
+%\begin{frame}
+%\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+%\framesubtitle{Nuclear models}
+%
+%%\seminormal
+%\begin{itemize}[itemsep=1.7mm]
+%	\item There are several theoretical models to describe the atomic nucleus. \appear{Two most useful ones are:}
+%\item[] \begin{itemize}
+%	\item \CDAlert[red]{Liquid drop model}
+%\begin{itemize}
+%	\item Assumes nucleus as a round droplet of incompressible liquid
+%\item Allows to predict the \CDAlert[tunired]{binding energy of the nucleus}
+%\end{itemize}
+%
+%\item \CDAlert[blue]{Shell model}
+%\item[] \begin{itemize}
+%	\item Adapts the models for electrons as oscillators in a deep quantum well
+%\item Predicts e.g. the most stable nuclei\appear{, based on so-called \CDAlert[tuniblue]{magic numbers}}
+%\end{itemize}
+%
+%\end{itemize}
+%
+%\item Each model has its emphasis. \appear{Although they agree in some ways}\appear{, they are still \CDAlert[fuchsia]{only approximate}}\appear{, relying on unique assumptions and simplifications.} \appear{To understand the atomic nucleus, there is still room for complementary models}
+%\end{itemize}
+%
+%%\xdef\loc{south east}
+%%\begin{tikzpicture}[remember picture,overlay] % anchor=south
+%%    \node (A) [yshift=-0.25*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[width=7cm]{Figures_booklet/SOM_12_Nuclear_physics_figures/SOM_Nuclear_physics_Figure_1.png}}; % 8cm max height
+%%\end{tikzpicture}
+%
+%\endofslide 
+%%\endofsection
+%\end{frame}
+%%%%%%%%%%%%%%%%
+%
+%%%%%%%%%%%%%%%%
+%\begin{frame}
+%\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+%\framesubtitle{The liquid drop model}
+%
+%%
+%\begin{itemize}
+%	\item Since the density of the nucleus was seen to be radial rather homogeneous\appear{, and also since all nuclei seem to have nearly the same density}\appear{, one natural way to describe the nucleus is the \Alert[red]{liquid drop model}}
+%
+%\item Analogy with a droplet of liquid works fairly well on the atomic nuclei: 
+%\item[] \begin{itemize}
+%	\item Liquid consists of relatively closely packed\appear{, disorganised molecules}\appear{, which \CDAlert[red]{attract} each other for larger separations} 
+%	\item At small separations become strongly \CDAlert[red]{repulsive}\appear{, leading to \CDAlert[red]{incompressibility}, such as e.g. in the case of water}
+%\end{itemize}
+%
+%
+%\item To move a water molecule to the surface of a droplet\appear{, we need to pull it away from those molecules}\appear{, that would otherwise attract it from the sides.} \appear{This requires energy, and the lowest energy state}\appear{, to minimize the surface, will then be a sphere}
+%\end{itemize}
+%
+%%\xdef\loc{south east}
+%%\begin{tikzpicture}[remember picture,overlay] % anchor=south
+%%    \node (A) [yshift=-0.25*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[width=7cm]{Figures_booklet/SOM_12_Nuclear_physics_figures/SOM_Nuclear_physics_Figure_1.png}}; % 8cm max height
+%%\end{tikzpicture}
+%
+%\endofslide 
+%%\endofsection
+%\end{frame}
+%%%%%%%%%%%%%%%%
+%
+%%%%%%%%%%%%%%%%
+%\begin{frame}
+%\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+%\framesubtitle{The liquid drop model}
+%
+%\semismall
+%\begin{itemize}
+%	\item In liquid the interior particles are attracted to all particles in the immediate vicinity
+%
+%\item If all the particles would be inside the droplet\appear{, then the binding energy would be directly proportional to the number of particles.}%
+%\appear{\xdef\loc{south east}%
+%\begin{tikzpicture}[remember picture,overlay] % anchor=south
+%    \node (A) [yshift=-0.25*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[width=5cm]{Figures_booklet/SOM_12_Nuclear_physics_figures/Tikz_SOM_Nuclear_liquid_drop.pdf}};% 8cm max height
+%\end{tikzpicture}}
+% \appear{However, the \Alert[fuchsia]{particles on the surface have fewer neighbours}}\appear{, i.e. fewer contacts}\appear{, or bonds, with others} \implies{ Reduction of the binding energy }
+%
+%\end{itemize}
+%
+%% 6.5 cm = midway, 10 cm = 3/4 
+%\vspace{2.5mm}
+%\begin{minipage}{8.5cm}
+%\begin{itemize}
+%	\item Idea is to build a \Alert[fuchsia]{general formula for the binding energy} for a droplet of nucleons
+%
+%\item Altogether \CDAlert[red]{five contributions} (i.e. five terms) affect the total binding energy of the nucleus
+%
+%\item We will use $c_{1}\appear{, c_{2}}\appear{, c_{3}, c_{4}$, and $c_{5}$} \appear{as appropriate constants, which are fitted to empirical data}
+%
+%\item Our aim is to build a \CDAlert[blue]{semi-empirical formula} for the binding energy of known nuclei
+%\end{itemize}
+%\end{minipage}
+%%\vspace{2.5mm}
+%
+%
+%
+%
+%\endofslide 
+%%\endofsection
+%\end{frame}
+%%%%%%%%%%%%%%%%
+%
+%%%%%%%%%%%%%%%%
+%\begin{frame}
+%\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+%\framesubtitle{Volume term}
+%
+%%
+%\begin{itemize}
+%	\item \CDAlert[red]{Particles totally inside the droplet}\appear{, are fully surrounded by neighbouring particles.} \appear{If all the particles in the droplet would be in the interior}\appear{, then the binding energy would be directly proportional to the number of particles in the droplet}\appear{, i.e. nucleons in the nucleus.}
+%\[
+%BE \propto \appear{c_{1}} \appear{A}
+%\]
+%
+%\end{itemize}
+%
+%% 6.5 cm = midway, 10 cm = 3/4 
+%\vspace{2.5mm}
+%\begin{minipage}{8.5cm}
+%\begin{itemize}
+%\item The proportionality constant $c_{1}$ can be theoretically estimated\appear{, but here it is more convenient to first build the whole formula and then \Alert[fuchsia]{fit the constants to empirical data}}
+%
+%	\item So, \CDAlert[red]{volume term} is given by  \[
+%c_{1} A
+%\]
+%\end{itemize}
+%\end{minipage}
+%%\vspace{2.5mm}
+%
+%
+%\xdef\loc{south east}%
+%\begin{tikzpicture}[remember picture,overlay] % anchor=south
+%    \node (A) [yshift=-0.25*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[width=5cm]{Figures_booklet/SOM_12_Nuclear_physics_figures/Tikz_SOM_Nuclear_liquid_drop_interior.pdf}};% 8cm max height
+%\end{tikzpicture}
+%
+%\endofslide 
+%%\endofsection
+%\end{frame}
+%%%%%%%%%%%%%%%%
+%
+%%%%%%%%%%%%%%%%
+%\begin{frame}
+%\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+%\framesubtitle{Volume term}
+%
+%\semismall
+%\begin{itemize}[itemsep=1.5mm]
+%	\item Q: Is fitting constants $c_{i}$ to empirical data really a theory\appear{/useful theory?}
+%\item A: It is a \CDAlert[fuchsia]{model of a very complex system}\appear{, guided by experimental information}
+%
+%\item The known binding energies per nucleon describe a certain shape of a function of $\mathrm{N}$ and $\mathrm{Z}$\appear{, for which the mathematical form cannot be explicitly seen}
+%
+%	\item With a simple polynomial fit on $Z$ and $N$, such as e.g.:
+%\[
+%c_{1} \appear{Z^{2}}  \plus \appear{c_{2} N}  \plus \appear{c_{3}}
+%\]
+%
+%\end{itemize}
+%
+%% 6.5 cm = midway, 10 cm = 3/4 
+%\vspace{2.5mm}
+%\begin{minipage}{6.5cm}
+%\begin{itemize}[itemsep=1.5mm]
+%\item[] it would be impossible fo fulfil the task\appear{, and also, not much of physical insight would be obtained }
+%
+%\item The fact that the liquid drop model fits so well to the data\appear{, gives strong evidence that the made assumptions are valid }
+%
+%\item It can also be used for further \CDAlert[fuchsia]{predictions} of yet unknown nuclides
+%\end{itemize}
+%\end{minipage}
+%%\vspace{2.5mm}
+%
+%
+%\xdef\loc{south east}
+%\begin{tikzpicture}[remember picture,overlay] % anchor=south
+%    \node (A) [yshift=-0.25*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[width=7cm]{Figures_booklet/SOM_12_Nuclear_physics_figures/SOM_Nuclear_physics_Figure_14.png}}; % 8cm max height
+%\end{tikzpicture}
+%
+%\endofslide 
+%%\endofsection
+%\end{frame}
+%%%%%%%%%%%%%%%%
+%
+%%%%%%%%%%%%%%%%
+%\begin{frame}
+%\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+%\framesubtitle{Surface term}
+%
+%%
+%\begin{itemize}
+%	\item For \CDAlert[blue]{surface nucleons}\appear{, there are \Alert[blue]{fewer neighbours} attracting them than in the interior.} \appear{So, they should be easier to extract} \implies{ Binding energy of surface nucleons is lower than for the interior nucleons }
+%
+%\item Recalling
+%$ \quad 
+%\appear{\text {Volume}}  \equal \frac{4}{3} \appear{\pi r^{3}} \quad \Rightarrow \quad \appear{r =} \appear{\textrm{((}} \frac{3}{4 \pi} \appear{\text {Volume}} \appear{\textrm{))}^{1 / 3}}
+%$
+%\item[] The surface area becomes $\appear{=4 \pi r^{2}} \appear{=4 \pi ( \Frac{3}{4 \pi} \text{Volume})^{2 / 3}} \propto$ \appear{Volume$^{2 / 3}$}
+%
+%\end{itemize}
+%
+%% 6.5 cm = midway, 10 cm = 3/4 
+%\vspace{2.5mm}
+%\begin{minipage}{8.5cm}
+%\begin{itemize}
+%\item The total binding energy should be reduced by a factor proportional to the surface area\appear{, which is proportional to Volume$^{2 / 3}$}
+%
+%	\item And, we know that \Alert[red]{volume is proportional to the number of nucleons}\appear{, resulting in:}
+%\[
+%BE \propto  \minus \appear{c_{2}} \appear{A^{2 / 3}}
+%\]
+%
+%\end{itemize}
+%\end{minipage}
+%%\vspace{2.5mm}
+%
+%\xdef\loc{south east}%
+%\begin{tikzpicture}[remember picture,overlay] % anchor=south
+%    \node (A) [yshift=-0.25*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[width=5cm]{Figures_booklet/SOM_12_Nuclear_physics_figures/Tikz_SOM_Nuclear_liquid_drop_surface.pdf}};% 8cm max height
+%\end{tikzpicture}
+%
+%\endofslide 
+%%\endofsection
+%\end{frame}
+%%%%%%%%%%%%%%%%
+%
+%%%%%%%%%%%%%%%%
+%\begin{frame}
+%\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+%\framesubtitle{Coulomb term}
+%
+%%
+%\begin{itemize}
+%	\item Coulomb interaction between the protons raises the overall potential energy $\Rightarrow$ \appear{\Alert[red]{Coulomb interaction reduces the binding energy}} 
+%
+%\item There are $Z$ protons in the nucleus\appear{, which each interact (\CDAlert[red]{repel}) with the $Z-1$ other protons}
+%
+%\item Therefore, the Coulombic energy term\appear{, proportional to $\frac{e^{2}}{r}$}\appear{, will contribute a term proportional to:}
+%\end{itemize}
+%
+%% 6.5 cm = midway, 10 cm = 3/4 
+%%\vspace{2.5mm}
+%\begin{minipage}{8.5cm}
+%\begin{itemize}
+%	\item[] 
+%	$$
+%	\begin{aligned}
+%\frac{Z(Z-1)}{\text {average proton separation}} &\propto \frac{Z(Z-1)}{\text{droplet radius}}\\ 
+%&\propto \frac{Z(Z-1)}{A^{1 / 3}}
+%\end{aligned}
+%$$
+%\item[]  $$ \Rightarrow \qquad 
+%\appear{B E \propto} \appear{-c_{3}} \frac{Z(Z-1)}{A^{1 / 3}} \hspace{4cm}
+%$$
+%\end{itemize}
+%\end{minipage}
+%
+%\xdef\loc{south east}%
+%\begin{tikzpicture}[remember picture,overlay] % anchor=south
+%    \node (A) [yshift=-0.25*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[width=5cm]{Figures_booklet/SOM_12_Nuclear_physics_figures/Tikz_SOM_Nuclear_liquid_drop_coulomb.pdf}};% 8cm max height
+%\end{tikzpicture}
+%
+%\endofslide 
+%%\endofsection
+%\end{frame}
+%%%%%%%%%%%%%%%%
+%
+%%%%%%%%%%%%%%%%
+%\begin{frame}
+%\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+%\framesubtitle{Asymmetry term}
+%
+%% 6.5 cm = midway, 10 cm = 3/4 
+%%\vspace{2.5mm}
+%\begin{minipage}{8cm}
+%\begin{itemize}
+%	\item For smaller nuclei $N \cong Z$ \appear{but for larger nuclei $N>Z$.} \appear{This has an effect on the energy level occupation balance between neutrons and protons.} \appear{The effect is quantum mechanical, and occurs due to the \Alert[blue]{exclusion principle}}
+%
+%\item If there is an excess of neutrons\appear{, for example, then a larger number of energy levels gets filled up} \appear{(two neutrons per level)} \appear{and the energy of the system increases}
+%
+%\item And, because we have a process that increases the energy\appear{, then it will \Alert[blue]{decrease the binding energy}}
+%\end{itemize}
+%\end{minipage}
+%%\vspace{2.5mm}
+%
+%
+%\xdef\loc{east}
+%\begin{tikzpicture}[remember picture,overlay] % anchor=south
+%    \node (A) [yshift=0*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[height=8cm]{Figures_booklet/SOM_12_Nuclear_physics_figures/SOM_Nuclear_physics_Figure_13.png}}; % 8cm max height
+%\end{tikzpicture}
+%
+%\endofslide 
+%%\endofsection
+%\end{frame}
+%%%%%%%%%%%%%%%%
+%
+%%%%%%%%%%%%%%%%
+%\begin{frame}
+%\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+%\framesubtitle{Asymmetry term}
+%
+%\small
+%\begin{itemize}
+%	\item Examine now a situation where the neutrons and protons have filled the energy levels at equal heights\appear{, $E_{F}$}\appear{, and assume also that the energy levels are equally spaced, $\delta E$ apart}
+%\appear{\xdef\loc{south east}%
+%\begin{tikzpicture}[remember picture,overlay]% anchor=south
+%    \node (A) [yshift=-0.25*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[width=5cm]{Figures_booklet/SOM_12_Nuclear_physics_figures/SOM_Nuclear_physics_Figure_15.png}};% 8cm max height
+%\end{tikzpicture}}
+%\end{itemize}
+%
+%% 6.5 cm = midway, 10 cm = 3/4 
+%\vspace{1.7mm}
+%\begin{minipage}{8.75cm}
+%\begin{itemize}[itemsep=1.6mm]
+%	\item If \Alert[fuchsia]{$j$ neutrons are now changed to protons} \appear{(or vice versa)}\appear{, the top neutrons must go from neutron level $E_{F}$ to proton level $E_{F}+(j / 2) \delta E$.} \appear{The others must make an equal jump.} \appear{If the energy of each particle increases by $(j / 2) \delta E$} \appear{the total energy increases by $\textrm{((}j^{2} / 2\textrm{))} \delta E$}
+%
+%\item Now, $j$ is expressed by terms of $N$ and $Z$. \appear{First $N=Z$}\appear{, and gain $j$ protons and lose $j$ neutrons.} \appear{$Z-N$ must now be $2 j$, giving $j=\frac{1}{2}(Z-N)$.} \appear{Thus, an asymmetry between $Z$ and $N$ should decrease the binding energy (increase the total energy), by a factor of}
+%\[
+%(N-Z)^{2} \appear{\delta E}  \equal \appear{(A-2 Z)^{2}} \appear{\delta E} \quad \Rightarrow \quad \appear{BE} \propto \appear{-c_{4}} \frac{(A-2 Z)^{2}}{A}
+%\]
+%\appear{where division by $A$ normalizes the term}
+%\end{itemize}
+%\end{minipage}
+%%\vspace{2.5mm}
+%
+%
+%\endofslide 
+%%\endofsection
+%\end{frame}
+%%%%%%%%%%%%%%%%
+%
+%%%%%%%%%%%%%%%%
+%\begin{frame}
+%\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+%\framesubtitle{Pairing term}
+%
+%%
+%\begin{itemize}
+%	\item As known from the data\appear{, \CDAlert[fuchsia]{nuclear force favours pairing} of protons and of neutrons.} \appear{This last term$^{*}$ gives a better fit to the data}
+%
+%\item The term takes into account the fact that the \Alert[fuchsia]{nucleon–nucleon interaction} does not merely give rise to an overall average potential for the nucleons\appear{, but has also some \CDAlert[blue]{special characteristics} \CDAlert[blue]{similar to} the pairing interaction between two electrons in the superconductor forming a \Alert[blue]{Cooper pair}}
+%
+%\item This energy term is:
+%\item[] \begin{itemize}
+%	\item positive \appear{(more binding)} \appear{if both $Z$ and $N$ are even,}
+%\item negative \appear{(less binding)} \appear{if both $Z$ and $N$ are odd}\appear{, zero otherwise}
+%
+%\footnoteleft{{$^*$Note, this  5$^{\text {th}}$ term (pairing term) is not included by the textbook by Harris}}
+%
+%\end{itemize}
+%
+%%$$
+%%\pm c_{5} A^{-4 / 3}
+%%$$
+%\end{itemize}
+%
+%%\xdef\loc{south east}
+%%\begin{tikzpicture}[remember picture,overlay] % anchor=south
+%%    \node (A) [yshift=-0.25*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[width=7cm]{Figures_booklet/SOM_12_Nuclear_physics_figures/SOM_Nuclear_physics_Figure_1.png}}; % 8cm max height
+%%\end{tikzpicture}
+%
+%\endofslide 
+%%\endofsection
+%\end{frame}
+%%%%%%%%%%%%%%%%
+%
+%%%%%%%%%%%%%%%%
+%\begin{frame}
+%\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+%\framesubtitle{Semi-empirical binding energy formula}
+%
+%\begin{itemize}
+%	\item Summing up the results\appear{, we have a semi-empirical formula for the binding energy of the atomic nucleus}\appear{, sometimes also called \CDAlert[fuchsia]{Weizsäcker's formula}:}
+%	\[
+%B E \equal \appear{c_{1} A}  \minus \appear{c_{2} A^{2 / 3}}  \minus \appear{c_{3} \frac{Z(Z-1)}{A^{1 / 3}}}  \minus \appear{c_{4} \frac{(A-2 Z)^{2}}{A}} \appear{\pm c_{5} A^{-4 / 3}}
+%\]
+%\item[] where 
+%$$
+%\begin{aligned}
+%&c_{1}=15.8 \mathrm{\;MeV} \\
+%&\appear{c_{2}=17.8 \mathrm{\;MeV}} \\
+%&\appear{c_{3}=0.71 \mathrm{\;MeV}} \\
+%&\appear{c_{4}=23.7 \mathrm{\;MeV}} \\
+%&\appear{c_{5}=15.8 \mathrm{\;MeV}}
+%\end{aligned}
+%$$
+%\end{itemize}
+%
+%%\xdef\loc{south east}
+%%\begin{tikzpicture}[remember picture,overlay] % anchor=south
+%%    \node (A) [yshift=-0.25*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[width=7cm]{Figures_booklet/SOM_12_Nuclear_physics_figures/SOM_Nuclear_physics_Figure_1.png}}; % 8cm max height
+%%\end{tikzpicture}
+%
+%\endofslide 
+%%\endofsection
+%\end{frame}
+%%%%%%%%%%%%%%%%
+%
+%
+%%%%%%%%%%%%%%%%
+%\begin{frame}
+%\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+%\framesubtitle{Semiempirical binding energy formula}
+%
+%\begin{itemize}
+%	\item Figure 16 shows how well the semi-empirical formula \appear{(\Alert[fuchsia]{pink line})} \appear{predicts the binding energy per nucleon (experimental: \Alert[black]{black line})}
+%
+%\item Note again, that the forms of the terms in the semi-empirical formula have a physical basis\appear{, they are \Alert[fuchsia]{based on justified theoretical arguments}}\appear{, but the numerical values of the \CDAlert[blue]{coefficients} (in this formula) are \Alert[blue]{chosen to fit the experimental data} on the binding energies of \\
+%different nuclides}
+%\end{itemize}
+%
+%\xdef\loc{south east}
+%\begin{tikzpicture}[remember picture,overlay] % anchor=south
+%    \node (A) [yshift=-0.25*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[width=7cm]{Figures_booklet/SOM_12_Nuclear_physics_figures/SOM_Nuclear_physics_Figure_16.png}}; % 8cm max height
+%\end{tikzpicture}
+%
+%\endofslide 
+%%\endofsection
+%\end{frame}
+%%%%%%%%%%%%%%%%
+%
+%%%%%%%%%%%%%%%%
+%\begin{frame}
+%\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+%\framesubtitle{Shell model}
+%
+%\semismall
+%\begin{itemize}
+%	\item In addition to the liquid drop model\appear{, another successful model to explain the structure of atomic nucleus is the shell model}
+%	
+%	\item Note, that these two models differ from each other to a great extent. \appear{That can be considered as an indication of the complexity of strong force, in general}
+%
+%\end{itemize}
+%
+%% 6.5 cm = midway, 10 cm = 3/4 
+%\vspace{2.5mm}
+%\begin{minipage}{8.5cm}
+%\begin{itemize}
+%	\item Whereas liquid drop model is mostly classical \appear{(except the asymmetry and pairing terms)}\appear{, shell model has a quantum mechanical basis.} 
+%
+%\item In the shell model, particles are treated as occupying quantum states in an average potential well \appear{that largely ignores the inter-particle forces}
+%
+%\item The shell model's unique success are predictions of nuclear angular momenta\appear{, and the tendencies for both $N$ and $Z$ to be magic numbers}\appear{, or at least even numbers}
+%\end{itemize}
+%\end{minipage}
+%%\vspace{2.5mm}
+%
+%\xdef\loc{south east}%
+%\begin{tikzpicture}[remember picture,overlay] % anchor=south
+%    \node (A) [yshift=-0.25*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[width=5cm]{Figures_booklet/SOM_12_Nuclear_physics_figures/Tikz_SOM_Nuclear_liquid_drop_just_interior.pdf}};% 8cm max height
+%\end{tikzpicture}
+%
+%\endofslide 
+%%\endofsection
+%\end{frame}
+%%%%%%%%%%%%%%%%
+%
+%
+%%%%%%%%%%%%%%%%
+%\begin{frame}
+%\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+%\framesubtitle{Magic numbers}
+%%
+%
+%
+%% 6.5 cm = midway, 10 cm = 3/4 
+%%\vspace{2.5mm}
+%\begin{minipage}{8.5cm}
+%\begin{itemize}
+%	\item The shell model was proposed when it was found that nuclear stability exhibited some periodicity\appear{, see e.g. the figures where $N$ or $Z$ equals} \appear{2}\appear{, 8}\appear{, 20}\appear{, 28, 50, 82, 126} 
+%	
+%	\item Apparently great stability accompanies these values\appear{, fairly similar to atomic numbers} \appear{2}\appear{, 10}\appear{, 18}\appear{, 36}\appear{, 54, $\ldots$}
+%\end{itemize}
+%\end{minipage}
+%%\vspace{2.5mm}
+%
+%
+%\xdef\loc{east}
+%\begin{tikzpicture}[remember picture,overlay] % anchor=south
+%    \node (A) [yshift=0.*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[height=8cm]{Figures_booklet/SOM_12_Nuclear_physics_figures/SOM_Nuclear_physics_Figure_13.png}}; % 8cm max height
+%\end{tikzpicture}
+%
+%\endofslide 
+%%\endofsection
+%\end{frame}
+%%%%%%%%%%%%%%%%
+%
+%%%%%%%%%%%%%%%%
+%\begin{frame}
+%\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+%\framesubtitle{Example 3}
+%%
+%\begin{itemize}
+%	\item Nuclei in excited states can lower their energy by emitting gamma-rays \appear{(i.e. photons).} \appear{Assume (as a rough approximation) that a nucleon of $A=100$} \appear{is trapped in an infinite 1D quantum well.} \appear{What is the order of magnitude of the energy of the emitted photon?}
+%
+%\item Energy levels in a 1D quantum well: \appear{$\appear{E=}\frac{\hbar^{2} \pi^{2}}{2 m_{p} L^{2}} \appear{n^{2}}$}
+%
+%\item Assume $\appear{A=100} \quad \Rightarrow \quad \appear{L=2 r}\appear{=2 \times R_{0} A^{1 / 3}}\appear{=2 \times 1.2 \;fm \times 100^{1 / 3}=1.11 \times 10^{-14} \mathrm{\;m}}$
+%
+%\item Mass of a nucleon: $\appear{m_{p}=1.67 \times 10^{-27} \mathrm{\;kg} }\quad \Rightarrow \appear{r \sim 5.5 \mathrm{\;fm}}$
+%
+%\item[] $\Rightarrow$ \appear{The energy:} $\quad \appear{E=\Frac{\hbar^{2} \pi^{2}}{2 m_{p} L^{2}} n^{2}}\appear{=3.3 \times 10^{-13} \;J \cdot n^{2}} \appear{\cong(2 \mathrm{\;MeV}) \cdot n^{2}}$
+%
+%\item Note, that the energies of $\gamma$-quanta are usually in the order of $1 \mathrm{\;MeV}$\appear{, so the result obtained is fairly OK}
+%\end{itemize}
+%
+%%\endofslide 
+%\endofsection
+%\end{frame}
+%%%%%%%%%%%%%%%%

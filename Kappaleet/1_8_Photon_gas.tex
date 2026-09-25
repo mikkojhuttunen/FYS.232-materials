@@ -1,0 +1,320 @@
+% !TEX root = ../bb_AiRa_Kappaleet.tex
+
+% ö = \%c3\%b6
+% ä = \%C3\%A4
+
+\xdef\sectiontitle{\Isectiontitle} %aiheuttama
+\TOCrefs
+
+%%%%%%%%%%%%%%%
+\begin{frame}[label=1_8_a]%[label=1_8_TOC1]
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\label{\TOCname}
+
+\vspace{-0.5cm}
+
+\begin{itemize}[leftmargin=0.5cm,itemsep=2mm]
+    \item[1.1]<1-> \hyperlink{1_1_a}{\IaSubsectiontitle}
+    \item[1.2]<1-> \hyperlink{1_2_a}{\IbSubsectiontitle}	
+    \item[1.3]<1-> \hyperlink{1_3_a}{\IcSubsectiontitle}	
+    \item[1.4]<1-> \hyperlink{1_4_a}{\IdSubsectiontitle}
+    \item[1.5]<1-> \hyperlink{1_5_a}{\IeSubsectiontitle}
+    \item[1.6]<1-> \hyperlink{1_6_a}{\IfSubsectiontitle}
+    \item[1.7]<1-> \hyperlink{1_7_a}{\IgSubsectiontitle}
+\end{itemize}
+
+\vspace{-1cm}
+\begin{itemize}[leftmargin=8.5cm,itemsep=2mm]
+    \item[1.8]<1-> \hyperlink{1_8_a}{\CDAlert[red]{\IhSubsectiontitle}}
+	\item[1.9]<1-> \hyperlink{1_9_a}{\IiSubsectiontitle}
+	\item[1.10]<1-> \hyperlink{1_10_a}{\IjSubsectiontitle}
+	\item[1.11]<1-> \hyperlink{1_11_a}{\IkSubsectiontitle}
+\end{itemize}
+
+%\endofslide 
+\end{frame}
+%%%%%%%%%%%%%%%
+
+
+\xdef\sectiontitle{\IhSubsectiontitle} 
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Tilatiheys}
+\appear{}
+\begin{itemize}
+	\item Toisin kuin elektronit (ja He-4 atomit), fotonit ovat bosoneita (spin $=1$) 
+	%\item The behavior of  
+	\item Fotonikaasun kuvaamiseksi\appear{ meidän täytyy laskea fotonien \CDAlert[fuchsia]{tilatiheys}}
+
+\item Fotonien energia liittyy suoraan niiden taajuuteen $f$ \appear{(eikä niinkään energiatason kvanttilukuun $n$):} $ \qquad \appear{E =h f } \equal \appear{h \frac{c}{\lambda}} $
+\end{itemize}
+
+\newcommand\myeq{\stackrel{\mathclap{\footnotesize\mbox{suhtautuu}}}{~\Leftrightarrow~}}
+\begin{minipage}{8cm}
+\begin{itemize}
+
+	\item Tarkastellaan aluksi 3D-kvanttikaivoa jonka leveys on  $L$\appear{, mihin mahtuu pie\-nim\-millään $\lambda=2 L$ kokoinen kvantti/fotoni}
+	\appear{\xdef\loc{south east}%
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.25*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,width=5.2cm]{Figures_booklet/SOM_Tipler_Statistics_and_Bonding_figures/SOM_Tipler_figure.png}};%scale=\figscale. % 8cm max hei
+\end{tikzpicture}}%
+	\[
+\begin{aligned}
+n_{x}^{2} \plus \appear{n_{y}^{2}} \plus \appear{n_{z}^{2}}  \equal  \appear{n^{2}}  \qquad \myeq \qquad  \appear{R^{2}}  \equal  \appear{ \bigg( \Frac{L}{\lambda / 2}  \bigg)^{2}}
+\end{aligned}
+\]
+\item[] jonka avulla tilojen $n$ täyttämän pallon säde tila-avaruudessa  voidaan laskea:
+\[
+R  \equal  \frac{L}{\lambda / 2}  \equal  \frac{2 L}{\lambda}  \equal  \frac{2 L E}{h c}
+\]
+\end{itemize}
+\end{minipage}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Tilatiheys}
+
+\appear{}
+\begin{itemize}
+	\item Montako 'hilapistettä' \appear{mahtuu $n$-avaruuden palloon jonka säde on  $R$?}
+\[
+\begin{aligned}
+& & R& \equal \frac{2 L E}{h c} \\ 
+&\appear{\Rightarrow} \qquad& \appear{N} &\equal \appear{2 \cdot} \frac{1}{8} \appear{\cdot} \frac{4}{3} \appear{\pi R^{3}}  \equal  \frac{\pi}{3} \appear{ \bigg( \frac{2 L E}{h c}} \appear{ \bigg)^{3}}  
+\equal  \frac{8 \pi}{3} \frac{E^{3}}{h^{3} c^{3}} \appear{L^{3}}  
+\equal \frac{8 \pi}{3} \frac{E^{3}}{h^{3} c^{3}} \appear{V}
+\end{aligned}
+\]
+
+\item[] missä $N$ on tilojen lukumäärä \appear{säteeltään $R=2 L E /(h c)$ olevan pallon sisällä}
+\item Nyt energiavälillä $d E$ olevien pisteiden lukumäärä voidaan laskea:
+\[
+\frac{d N}{d E}  \equal \frac{8 \pi}{3} \frac{3 E^{2}}{h^{3} c^{3}} \appear{V}
+ \equal \frac{8 \pi E^{2}}{h^{3} c^{3}} \appear{V} 
+ \qquad \Rightarrow \qquad 
+ \frac{d N}{d f}  \equal \frac{8 \pi f^{2}}{c^{3}} \appear{V} \qquad \appear{(E=h f} \quad \Rightarrow \quad \appear{d E=h d f)}
+\]
+
+\end{itemize}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Tilatiheys}
+
+\appear{}
+\begin{itemize}[itemsep=2.5mm]
+	\item Eli olemme laskeneet tilojen lukumäärän \appear{jotka ovat tietyllä taajuusvälillä:}
+\[
+\frac{\text { differentiaalinen tilojen lukumäärä taajuusvälillä }}{d f}  \equal \frac{8 \pi V}{c^{3}} \appear{f^{2}}
+\]
+\item Tai vastaava energian avulla ilmaistuna:
+\[
+\frac{\text { differentiaalinen tilojen lukumäärä energiavälillä dE }}{d E / h}  \equal \frac{8 \pi V}{c^{3}} \appear{(E / h)^{2}}
+\]
+
+\item Eli fotonikaasun \CDAlert[red]{tilatiheydeksi $D=D(E)$} \appear{(tilavuudessa $V$)} \appear{saadaan:}
+\[
+D(E)  \equal \frac{8 \pi V}{h^{3} c^{3}} \appear{E^{2}}
+\]
+\end{itemize}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Miehitysluvun normeeraus}
+\appear{}
+\begin{itemize}[itemsep=1.7mm]
+	\item Fotonikaasu eroaa harmonisen värähtelijän tapauksesta\appear{, tai esim. nestemäisen heliumin tapauksesta}
+
+\item Fotonikaasussa \CDAlert[blue]{fotonien lukumäärää ei ole etukäteen rajoitettu}\appear{, systeemi absoboi ja emittoi fotoneita koko ajan}\appear{, fotonien hetkellinen lukumäärä määräytyy systeemin tilan} \appear{ja sen ominaisuuksien mukaan}
+
+\item \CDAlert[red]{Bosen–Einsteinin statistiikka} bosoneille oli muotoa: 
+\[ \mathbb{N} (E)_{B E}  \equal  \frac{1}{B e^{E / k_{B} T}-1}
+\] 
+\item[] missä parametri $B$ täytyisi liittää hiukkasten lukumäärään $N$ 
+
+\item Koska fotonikaasussa $N$ on vapaa muuttuja\appear{, ratkaisu on määritellä $B\equiv\appear{1}$} \appear{(fotonikaasulle)}
+\[
+ \mathbb{N} (E)_{B E, \text {fotonikaasu}}=\frac{1}{e^{E / k_{B} T}-1}
+\]
+\end{itemize}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Esimerkki}
+
+\appear{}
+\begin{itemize}[itemsep=3mm]
+	\item \textbf{K}: Vertaa kvantitatiivisesti sähkömagneettisen säteilyn ja aineen sisäisiä energiatiloja
+\item \textbf{A}: Voisimme laskea keskimääräiset energiat: 
+\[
+<E>\,  \equal  \frac{\nint E  \mathbb{N} (E) D(E) d E}{\nint  \mathbb{N} (E) D(E) d E}
+\]
+\item[] missä osoittaja vastaa systeemin energiaa \appear{(ja nimittäjä vastaa hiukkasten lukumäärää)} 
+
+\item Voisimme myös vain käyttää osoittajaa SMG-säteilyn \appear{(eli fotonikaasun)} \appear{sisäisen energian laskemiseksi} 
+\end{itemize}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Esimerkki}
+
+\appear{}
+\begin{itemize}
+%\item But, we could as well use only the nominator to obtain the internal energy of EM-radiation\appear{, or 'photon gas'} 
+
+\item Käyttämällä muuttujanvaihdosta $\appear{E}  \equal \appear{k_{B} T x} \quad \Rightarrow \quad \appear{x}  \equal \appear{E/(k_{B} T)}$\appear{, osoittajaksi saadaan}
+\[
+\begin{aligned}
+U_{fotoni}  &\equal  \appear{\nint_{0}^{\infty}} \appear{E  \mathbb{N} (E)} \appear{D(E)} \appear{d E}
+ \equal  
+ \appear{\nint_{0}^{\infty} E} \frac{1}{e^{E / k_{B} T}-1} \frac{8 \pi V}{h^{3} c^{3}} \appear{E^{2}} \appear{d E} \\
+& \equal 
+\frac{8 \pi V}{h^{3} c^{3}} \appear{\nint_{0}^{\infty}} \appear{k_{B} T x} \frac{1}{e^{x}-1} \appear{\textrm{((} k_{B} T x \textrm{))} ^{2}} \appear{k_{B} T} \appear{d x}
+ \equal 
+ \frac{8 \pi V k_{B}^{4} T^{4}}{h^{3} c^{3}} \appear{\nint_{0}^{\infty}} \frac{x^{3} d x}{e^{x}-1}  \\
+ &\equal 
+ \frac{8 \pi V k_{B}^{4} T^{4}}{h^{3} c^{3}} \appear{\cdot} \frac{\pi^{4}}{15}
+\end{aligned}
+\]
+\end{itemize}
+
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Esimerkki}
+\appear{}
+
+\begin{itemize}
+	\item Fotonikaasulle saadaan siis
+	\[
+	U_{fotoni}=\frac{8 \pi V k_{B}^{4} T^{4}}{h^{3} c^{3}} \appear{\cdot} \frac{\pi^{4}}{15}  \equal \frac{8 \pi^{5} V k_{B}^{4} T^{4}}{15 h^{3} c^{3}}
+	\]
+\item[] $300 \mathrm{~K}$ lämpötilassa \appear{arvoksi saadaan:} $\quad \frac{U_{fotoni}}{V} \appear{=6,1 \times 10^{-6} \mathrm{~J} / \mathrm{m}^{3}}$
+
+\item Tavallisille kaasuille \appear{(\CDAlert[fuchsia]{yksiatominen} ideaalikaasu)} \appear{sisäenergiaksi NTP:ssä saadaan}
+\[
+\frac{U_{\text {aine}}}{V}
+ \equal 
+ \frac{N \times \Frac{3}{2} k_{B} T}{V}
+  \equal 
+  \frac{\Frac{3}{2} p V}{V} \equal \frac{3}{2} \appear{p} \equal \appear{1,5 \times 10^{5} \mathrm{~J} / \mathrm{m}^{3}}
+\]
+\item Eli suhde on pieni: $\frac{U_{\text {fotoni}}}{U_{\text {aine}}}\appear{=4 \times 10^{-11}$}
+
+ \implies{ Eli NTP-olosuhteissa suhde on sellainen että
+ 		\Alert[red]{systeemin termo-\\
+		dynaamisesta kokonaisenergiasta \appear{erittäin pieni osa on \\
+		} \appear{SMG-säteilyä}} }
+\end{itemize}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Planckin laki, musta kappale ja Wienin siirtymälaki}
+\appear{}
+%\framesubtitle{Planckin laki, mustan kappaleen säteily ja Wienin laki}
+
+\begin{itemize}
+	\item Edellisen esimerkin sisäenergiaa kuvaavan integraalin integrandi voidaan ajatella \appear{systeemin kokonaisenergiana tietyllä fotonienergian välillä} \appear{[[$E , E+d E$]]:}
+\[
+d U_{fotoni}(E, E+d E)
+ \equal 
+ \appear{E} \frac{1}{e^{E / k_{B} T}-1} \frac{8 \pi V}{h^{3} c^{3}} \appear{E^{2}} \appear{d E}
+  \equal \frac{h f^{3}}{e^{h f / k_{B} T}-1} \frac{8 \pi V}{c^{3}} \appear{d f}
+\]
+\item[] tämä on \CDAlert[blue]{Planckin laki},  joka antaa meille
+\vspace{0.3mm}
+\end{itemize}
+\begin{minipage}{6.5cm}
+\begin{itemize}
+	\item[] spektrisen energiatiheyden sähkömagneettiselle säteilylle, tai niinsanotun \CDAlert[red]{mustan kappaleen säteilyn}%
+	\appear{\xdef\loc{south east}%
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.25*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,width=7.2cm]{Figures_booklet/SOM_9_Statistical_mechanics_figures/SOM_Figure_20.png}}; %scale=\figscale. % 8cm max hei
+\end{tikzpicture}%
+}
+\item Käyrän maksimikohta riippuu lineaarisesti lämpötilasta, eli toteuttaa \CDAlert[tunired]{Wienin siirtymälain} 
+\end{itemize}
+
+\end{minipage}
+
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Stefanin–Boltzmannin laki}
+\appear{}
+
+\begin{itemize}
+	\item Käyrän alle jäävän pinta-alan integrointi antaa meille \CDAlert[red]{Stefanin–Boltzmannin lain}:
+\[
+U \propto \appear{T^{4}}
+\]
+\item Yhteenvetona\appear{, \CDAlert[fuchsia]{bosoninen fotonikaasun malli}} \appear{mahdollistaa usean erittäin perustavanlaatuisen yhtälön}\appear{/lain johtamisen} \appear{yhdistäen termodynamiikan} \appear{sähködynamiikkaan}
+\item[] \begin{itemize}[itemsep=2.5mm]
+	 \item Planckin laki
+	 \item Mustan kappaleen säteily
+	 \item Wienin laki
+	 \item Stefanin–Boltzmannin laki
+\end{itemize}
+
+\end{itemize}
+
+\xdef\loc{south east}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.25*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,width=7.2cm]{Figures_booklet/SOM_9_Statistical_mechanics_figures/SOM_Figure_20.png}}; %scale=\figscale. % 8cm max hei
+\end{tikzpicture}
+
+
+%\endofslide 
+\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%

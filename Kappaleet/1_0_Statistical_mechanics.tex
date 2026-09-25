@@ -1,0 +1,263 @@
+% !TEX root = ../bb_AiRa_Kappaleet.tex
+
+% ö  \equal  \%c3\%b6
+% ä  \equal  \%C3\%A4
+
+\xdef\sectiontitle{\Isectiontitle} %aiheuttama
+\TOCrefs
+
+%%%%%%%%%%%%%%%
+\begin{frame}[label=1_1_a]%[label \equal 1_0_TOC1]
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\label{\TOCname}
+
+\vspace{-0.5cm}
+
+\begin{itemize}[leftmargin = 0.5cm,itemsep = 2mm]
+    \item[1.1]<1-> \hyperlink{1_1_a}{\CDAlert[blue]{\IaSubsectiontitle}}
+    \item[1.2]<1-> \hyperlink{1_2_a}{\IbSubsectiontitle}	
+    \item[1.3]<1-> \hyperlink{1_3_a}{\IcSubsectiontitle}	
+    \item[1.4]<1-> \hyperlink{1_4_a}{\IdSubsectiontitle}
+    \item[1.5]<1-> \hyperlink{1_5_a}{\IeSubsectiontitle}
+    \item[1.6]<1-> \hyperlink{1_6_a}{\IfSubsectiontitle}
+    \item[1.7]<1-> \hyperlink{1_7_a}{\IgSubsectiontitle}
+\end{itemize}
+
+\vspace{-1cm}
+\begin{itemize}[leftmargin = 8.5cm,itemsep = 2mm]
+    \item[1.8]<1-> \hyperlink{1_8_a}{\IhSubsectiontitle}
+	\item[1.9]<1-> \hyperlink{1_9_a}{\IiSubsectiontitle}
+	\item[1.10]<1-> \hyperlink{1_10_a}{\IjSubsectiontitle}
+	\item[1.11]<1-> \hyperlink{1_11_a}{\IkSubsectiontitle}
+\end{itemize}
+
+%\endofslide 
+\end{frame}
+%%%%%%%%%%%%%%%
+
+\xdef\sectiontitle{\IaSubsectiontitle} 
+
+%%%%%%%%%%%%%%%
+\begin{frame}%[label \equal 1_1_a]
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+
+\begin{itemize}[itemsep=1.7mm]
+	\item Statistisen mekaniikan työkalujen avulla voidaan ymmärtää ja ennustaa \appear{\Alert[red]{systeemeitä, joiden hiukkaslukumäärä on valtava}}
+%	Statistical mechanics makes predictions about properties and behaviour of \appear{\Alert[red]{systems whose number of particles is enormous}}
+	
+\item Mitä enemmän on hiukkasia/kappaleita\appear{, sitä enemmän on tuntemattomia suureita}
+\item Suuri hiukkaslukumäärä parantaa \appear{systeemin käyttäytymisen ennustettavuutta:}\appear{ keskiarvojen} \appear{ja niiden kehityksen} \appear{edustavuus paranee} 
+
+\item \CDAlert[red]{Termodynaaminen systeemi} on systeemi\appear{, jonka hiukkaslukumäärä on tarpeeksi suuri}\appear{, jotta ennusteista alkaa tulemaan tarkkoja}
+
+\item \CDAlert[blue]{Statistinen mekaniikka}:
+	\item[] \begin{itemize}[itemsep=2.5mm]
+		\item klassinen
+		\item ei ole 'modernia' fysiikkaa \appear{(ts. ei pohjaudu kvanttimekaniikkaan)}
+		\item MUTTA \CDAlert[tunired]{sovelletaan monilla fysiikan osa-alueilla!}
+	\end{itemize}
+\end{itemize}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%
+%\begin{frame}
+%\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+%
+%%\begin{minipage}{10.4cm}
+%\begin{itemize}
+%	\item Examine a two-sided room \appear{with $N$ point-like\\
+%		 particles placed in the room} \appear{(see Fig.~1)}
+%
+%	\item For each particle\appear{, there are two alternatives:}\\ 
+%		\appear{\Alert[red]{left}} \appear{or \Alert[blue]{right} } 
+%	\item This is a thermodynamic \CDAlert[fuchsia]{'two-state system'} \\
+%		\appear{(Recall coins or paramagnets in Thermal physics)}
+%	\item Estimate in \CDAlert[fuchsia]{how many ways} we can place $N$ particles into the room \appear{so that $N_{R}$ number of particles are on the right-hand side?}
+%	\item The answer is \CDAlert[fuchsia]{binomial coefficients}:	
+%	\[
+%\Omega \textrm{((} N, N_{R} \textrm{))}  \equal \appear{ W_{N_{R}}^{N} } \equal  \appear{\LP} 
+%\begin{array}{l}
+%N \\
+%N_{R}
+%\end{array} 
+%\appear{\RP}   \equal \frac{N !}{N_{R} ! \textrm{((} N-N_{R} \textrm{))} !}
+%\]
+%\appear{giving us the '\Alert[tunired]{multiplicity}' or the ''\CDAlert[tunired]{number of ways to arrange...}"}
+%
+%\end{itemize}
+%%\end{minipage}
+%
+%\xdef\loc{north east}
+%\begin{tikzpicture}[remember picture,overlay] % anchor \equal south
+%    \node (A) [yshift = 1*\figYshift,xshift = \figXshift, anchor = \loc] at (current page.\loc) {\includegraphics[page = 1,width = 4cm]{Figures_booklet/SOM_9_Statistical_mechanics_figures/SOM_Figure_1.png}}; %scale \equal \figscale. % 8cm max hei
+%\end{tikzpicture}
+%
+%
+%\endofslide 
+%%\endofsection
+%\end{frame}
+%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{$N = 4$}
+
+\appear{}
+%\begin{minipage}{10.4cm}
+\begin{itemize}
+	\item Kuinka neljä \appear{(\CDAlert[fuchsia]{erotettavissa olevaa})} \appear{hiukkasta voidaan järjestää kaksiosaiseen huoneeseen:}
+\appear{	\xdef\loc{center}
+\begin{tikzpicture}[remember picture,overlay] % anchor \equal south
+    \node (A) [yshift = 1*\figYshift,xshift = -3.5cm, anchor = \loc] at (current page.\loc) {\includegraphics[page = 1,width = 5cm]{Figures_booklet/SOM_9_Statistical_mechanics_figures/SOM_Figure_2_a.png}}; %scale \equal \figscale. % 8cm max hei
+\end{tikzpicture}
+}
+\appear{%\xdef\loc{north east}
+\begin{tikzpicture}[remember picture,overlay] % anchor \equal south
+    \node (A) [yshift = 4*\figXshift,xshift = 3.5cm, anchor = \loc] at (current page.\loc) {\includegraphics[page = 1,width = 5cm]{Figures_booklet/SOM_9_Statistical_mechanics_figures/SOM_Figure_2_b.png}}; %scale \equal \figscale. % 8cm max hei
+\end{tikzpicture}}
+
+\end{itemize}
+%\end{minipage}
+
+
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{$N$ kasvaa}
+
+\begin{minipage}{6.5cm}
+\begin{itemize}[itemsep=1.9mm]
+	\item Kun $N = 4$\appear{, on yhteensä 5 vaihto\-eh\-toista arvoa $N_{R}\;\appear{(\,= 0,1,2,3,4)$}}
+	\item \appear{Kuvan~3a} \appear{jakaumassa $\Omega = \Omega \textrm{((} N_{R} \textrm{))}$ näkyy heikohko maksimi} $\appear{N_{R}} \equal \appear{2} \equal \appear{1 / 2 N}$ 
+	
+	\item Kun $N = 4$, jakauma on leveä\appear{, mutta jos $N$:ää kasvatetaan}\appear{, \Alert[red]{jakauma kaventuu}}
+	
+	\item Kaikissa tapauksissa maksimi saavutetaan kun $\appear{N_{R}}  \equal  \frac{1}{2} \appear{N}$
+	\end{itemize}
+\end{minipage}
+
+\vspace{1.9mm}
+\begin{itemize}[itemsep=1.9mm]
+	
+	
+	\item Huomaa että suurilla ja samankokoisilla huoneilla \appear{ja $N$:n arvoilla}\appear{, molemmissa huoneissa on todennäköisesti lähes sama määrä hiukkasia}\appear{, vaikka yksittäisen hiukkasen paikasta ei tiedetä mitään}
+\end{itemize}
+
+
+\xdef\loc{north east}
+\begin{tikzpicture}[remember picture,overlay] % anchor \equal south
+    \node (A) [yshift = 1*\figYshift,xshift = \figXshift, anchor = \loc] at (current page.\loc) {\includegraphics[page = 1,width = 7cm]{Figures_booklet/SOM_9_Statistical_mechanics_figures/SOM_Figure_3.png}}; %scale \equal \figscale. % 8cm max hei
+\end{tikzpicture}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\appear{}
+\begin{itemize}
+	\item Oletetaan hiukkaset 'ilma-molekyyleiksi'\appear{ ja huoneet samankokoisiksi,} \appear{ todennäköisintä on \Alert[red]{molemmissa huoneissa on lähes sama määrä molekyylejä}} 
+	\item Tämä voidaan sanoa suurella suhteellisella tarkkuudella/luotettavuudella...
+	\vspace{4.5cm}
+	\item[] ...vaikkei yksittäisten molekyylien sijainteja tiedetäkään
+\end{itemize}
+
+\xdef\loc{center}
+\begin{tikzpicture}[remember picture,overlay] % anchor \equal south
+    \node (A) [yshift = 1.45*\figYshift,xshift = 0cm, anchor = \loc] at (current page.\loc) {\includegraphics[page =1,width =12cm]{Figures_booklet/SOM_9_Statistical_mechanics_figures/FYS_1627_SSP-4.pdf}}; %scale \equal \figscale. % 8cm max hei
+\end{tikzpicture}
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Mikro- ja makrotilat}
+
+\appear{}
+\begin{minipage}{8.5cm}
+	\begin{itemize}[itemsep=1.7mm]
+	\item Esimerkki selventää \CDAlert[red]{mikrotilan} \appear{ja \CDAlert[blue]{makrotilan} käsitteitä} 
+
+\item Kuvassa 3d %
+\xdef\loc{north east}%
+\begin{tikzpicture}[remember picture,overlay] % anchor \equal south
+    \node (A) [yshift =1*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,width=4.8cm]{Figures_booklet/SOM_9_Statistical_mechanics_figures/SOM_Figure_3_d.png}}; %scale \equal \figscale. % 8cm max hei
+\end{tikzpicture}%
+ \appear{jakauman piikki nousee arvoon $10^{3 \cdot 10^{22}}$} \appear{, eli on olemassa $10^{3 \cdot 10^{22}}$ erilaista tapaa järjestää molekyylit huoneeseen}\appear{, jos molekyylit on jaettu kahteen yhtäsuureen osaan}\\
+	 \end{itemize}
+\end{minipage}
+\vspace{-4.3mm}
+\begin{itemize}[itemsep=1.7mm]
+	\item[]  (vasempaan ja oikeaan) \appear{\textrm{((}joiden hiukkaslukumääriä kuvaa $ N_{\mathrm{R}} \textrm{))}$} 
+
+\item Jokainen 'tapa' vastaa yhtä \CDAlert[red]{mikrotilaa}.
+\appear{Jos tietäisimme jokaisen molekyylin tilan (sijainnin)}\appear{, voisimme määritellä jokaisen (mikro)tilan}
+
+\item Kaikki $10^{3 \times 10^{22}}$ mikrotilaa \appear{kuuluvat ryhmään jossa molekyylit ovat jakautuneet tasaisesti kahteen yhtäsuureen puoliskoon.} \appear{Kaikilla $10^{3 \times 10^{22}}$ mikrotilalla $N_{R} \equal \frac{1}{2} \appear{N}$}
+
+\item Tämä on yksi \CDAlert[blue]{makrotila}. \appear{Muilla makrotiloilla $N_{R}$:n arvo poikkeaa arvosta $N_{R} \equal \frac{1}{2} \appear{N}$}
+\end{itemize}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Tasapainotila}
+
+\seminormal
+\appear{}
+\begin{itemize}%[itemsep=2mm]
+	\item Lähtemällä liikkeelle tilanteesta, jossa kaksiosaisessa huoneessa on huomattavan erisuuret määrät hiukkasia eri osissa\appear{, systeemi \CDAlert[tunired]{kehittyy kohti tilaa} \CDAlert[tunired]{jonka todennäköisyys on suurin}}\appear{, ts. kohti makrotilaa jonka mikrotilojen lukumäärä on suurin}\appear{, eli kohti tilannetta jossa molekyylejä on sama määrä molemmissa osissa huonetta}
+
+\item Todennäköisintä makrotilaa kutsutaan \CDAlert[red]{tasapainotilaksi}
+
+\item Termodynaaminen systeemi kehittyy spontaanisti kohti tasapainotilaa \appear{ja saavuttaa lopulta tasapainotilan}
+\end{itemize}
+
+% 6.5 cm  \equal  midway, 10 cm  \equal  3/4 
+\vspace{2.5mm}
+\begin{minipage}{8.5cm}
+\begin{itemize}%[itemsep=2mm]
+	\item Lähtiessä liikkeellä epätasapainotilasta\appear{, systeemin makro- ja mikrotilat muuttuvat}
+
+\item \CDAlert[blue]{Tasapainossa} systeemin \Alert[tuniblue]{mikrotilat muuttuvat}\appear{, mutta ne kaikki kuuluvat yhteen \Alert[blue]{ja samaan makrotilaan}} \appear{(tai ovat sitä lähellä...)}\appear{, makrotilaa jolla on tietty  $ N_{\mathrm{R}}$}
+\end{itemize}
+\end{minipage}
+\vspace{3mm}
+
+\xdef\loc{south east}
+\begin{tikzpicture}[remember picture,overlay] % anchor \equal south
+    \node (A) [yshift=-0.25*\figYshift,xshift =\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,width=4.8cm]{Figures_booklet/SOM_9_Statistical_mechanics_figures/SOM_Figure_3_d.png}}; %scale \equal \figscale. % 8cm max hei
+\end{tikzpicture}
+
+%\endofslide 
+\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+
+

@@ -1,0 +1,259 @@
+% !TEX root = ../aa_SoM_Chapters.tex
+
+% ö  \equal  \%c3\%b6
+% ä  \equal  \%C3\%A4
+
+\xdef\sectiontitle{\Isectiontitle} %aiheuttama
+
+%%%%%%%%%%%%%%%
+\begin{frame}[label=1_1_a]%[label \equal 1_0_TOC1]
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+
+\vspace{0.5cm}
+
+\begin{itemize}[leftmargin = 0.5cm,itemsep = 2mm]
+    \item[1.1]<1-> \hyperlink{1_1_a}{\Alert[blue]{\IaSubsectiontitle}}
+    \item[1.2]<1-> \hyperlink{1_2_a}{\IbSubsectiontitle}	
+    \item[1.3]<1-> \hyperlink{1_3_a}{\IcSubsectiontitle}	
+    \item[1.4]<1-> \hyperlink{1_4_a}{\IdSubsectiontitle}
+    \item[1.5]<1-> \hyperlink{1_5_a}{\IeSubsectiontitle}
+    \item[1.6]<1-> \hyperlink{1_6_a}{\IfSubsectiontitle}
+    \item[1.7]<1-> \hyperlink{1_7_a}{\IgSubsectiontitle}
+\end{itemize}
+
+\vspace{-1cm}
+\begin{itemize}[leftmargin = 9.5cm,itemsep = 2mm]
+    \item[1.8]<1-> \hyperlink{1_8_a}{\IhSubsectiontitle}
+	\item[1.9]<1-> \hyperlink{1_9_a}{\IiSubsectiontitle}
+	\item[1.10]<1-> \hyperlink{1_10_a}{\IjSubsectiontitle}
+	\item[1.11]<1-> \hyperlink{1_11_a}{\IkSubsectiontitle}
+\end{itemize}
+
+%\endofslide 
+\end{frame}
+%%%%%%%%%%%%%%%
+
+\xdef\sectiontitle{\IaSubsectiontitle} 
+
+%%%%%%%%%%%%%%%
+\begin{frame}%[label \equal 1_1_a]
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+
+\begin{itemize}
+	\item Statistical mechanics makes predictions about properties and behaviour of \appear{\Alert[red]{systems whose number of particles is enormous}}
+	
+\item The more particles\appear{, the more details are unknown}
+\item For precise predictions\appear{, large number of particles improves the representativeness of averages}\appear{, and their evolution}
+% \implies{ the more reliable are our predictions on evolution of the averages,  }
+% \hspace{1cm}\implies{ the more precise are our predictions }
+
+\item \CDAlert[red]{Thermodynamic system} is a system\appear{, whose number of particles is large enough for the predictions to become very precise}
+
+\item Statistical mechanics:
+	\item[] \begin{itemize}[itemsep=2.5mm]
+		\item classical
+		\item not 'modern' physics \appear{(i.\,e. not based on quantum mechanics)}
+		\item BUT \CDAlert[tunired]{supports many areas of physics!}
+	\end{itemize}
+\end{itemize}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%
+%\begin{frame}
+%\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+%
+%%\begin{minipage}{10.4cm}
+%\begin{itemize}
+%	\item Examine a two-sided room \appear{with $N$ point-like\\
+%		 particles placed in the room} \appear{(see Fig.~1)}
+%
+%	\item For each particle\appear{, there are two alternatives:}\\ 
+%		\appear{\Alert[red]{left}} \appear{or \Alert[blue]{right} } 
+%	\item This is a thermodynamic \CDAlert[fuchsia]{'two-state system'} \\
+%		\appear{(Recall coins or paramagnets in Thermal physics)}
+%	\item Estimate in \CDAlert[fuchsia]{how many ways} we can place $N$ particles into the room \appear{so that $N_{R}$ number of particles are on the right-hand side?}
+%	\item The answer is \CDAlert[fuchsia]{binomial coefficients}:	
+%	\[
+%\Omega \textrm{((} N, N_{R} \textrm{))}  \equal \appear{ W_{N_{R}}^{N} } \equal  \appear{\LP} 
+%\begin{array}{l}
+%N \\
+%N_{R}
+%\end{array} 
+%\appear{\RP}   \equal \frac{N !}{N_{R} ! \textrm{((} N-N_{R} \textrm{))} !}
+%\]
+%\appear{giving us the '\Alert[tunired]{multiplicity}' or the ''\CDAlert[tunired]{number of ways to arrange...}"}
+%
+%\end{itemize}
+%%\end{minipage}
+%
+%\xdef\loc{north east}
+%\begin{tikzpicture}[remember picture,overlay] % anchor \equal south
+%    \node (A) [yshift = 1*\figYshift,xshift = \figXshift, anchor = \loc] at (current page.\loc) {\includegraphics[page = 1,width = 4cm]{Figures_booklet/SOM_9_Statistical_mechanics_figures/SOM_Figure_1.png}}; %scale \equal \figscale. % 8cm max hei
+%\end{tikzpicture}
+%
+%
+%\endofslide 
+%%\endofsection
+%\end{frame}
+%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+
+%\begin{minipage}{10.4cm}
+\begin{itemize}
+	\item The ways how four \appear{(\CDAlert[fuchsia]{distinguishable})} \appear{particles can be arranged into a two-sided room:}
+\appear{	\xdef\loc{center}
+\begin{tikzpicture}[remember picture,overlay] % anchor \equal south
+    \node (A) [yshift = 1*\figYshift,xshift = -3.5cm, anchor = \loc] at (current page.\loc) {\includegraphics[page = 1,width = 5cm]{Figures_booklet/SOM_9_Statistical_mechanics_figures/SOM_Figure_2_a.png}}; %scale \equal \figscale. % 8cm max hei
+\end{tikzpicture}
+}
+\appear{%\xdef\loc{north east}
+\begin{tikzpicture}[remember picture,overlay] % anchor \equal south
+    \node (A) [yshift = 4*\figXshift,xshift = 3.5cm, anchor = \loc] at (current page.\loc) {\includegraphics[page = 1,width = 5cm]{Figures_booklet/SOM_9_Statistical_mechanics_figures/SOM_Figure_2_b.png}}; %scale \equal \figscale. % 8cm max hei
+\end{tikzpicture}}
+
+\end{itemize}
+%\end{minipage}
+
+
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+
+\begin{minipage}{6.5cm}
+\begin{itemize}[itemsep=1.9mm]
+	\item In the case $N = 4$\appear{, there are altogether 5 alternative values for $N_{R}\;\appear{(\,= 0,1,2,3,4)$}}
+	\item Distribution $\Omega = \Omega \textrm{((} N_{R} \textrm{))}$ shows a slight maximum at $\appear{N_{R}} \equal \appear{2} \equal \appear{1 / 2 N}$ \appear{(Fig.~3)}
+	
+	\item The distribution in the case $N = 4$ is broad\appear{, but if we increase value of $N$}\appear{, the \Alert[red]{distribution becomes narrower}}
+	\end{itemize}
+\end{minipage}
+
+\vspace{1.9mm}
+\begin{itemize}[itemsep=1.9mm]
+	\item In all the cases, the maximum lies at $N_{R} = \frac{1}{2} \appear{N}$
+	
+	\item Note that for large equally-sized rooms and value of $N$\appear{, probably both rooms have almost exactly equal amount of particles}\appear{, although it would be impossible to know anything of a single molecule}
+\end{itemize}
+
+
+\xdef\loc{north east}
+\begin{tikzpicture}[remember picture,overlay] % anchor \equal south
+    \node (A) [yshift = 1*\figYshift,xshift = \figXshift, anchor = \loc] at (current page.\loc) {\includegraphics[page = 1,width = 7cm]{Figures_booklet/SOM_9_Statistical_mechanics_figures/SOM_Figure_3.png}}; %scale \equal \figscale. % 8cm max hei
+\end{tikzpicture}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+
+\begin{itemize}
+	\item If we assume that the particles are air molecules in a room\appear{, and the two sides of the room are of equal size,} \appear{ then at highest probability \Alert[red]{both sides have almost exactly equal numbers of particles}} 
+	\item This can be said with high relative accuracy/confidence...
+	\vspace{4.5cm}
+	\item[] ...although it would be impossible to know anything about the position of a single molecule
+\end{itemize}
+
+\xdef\loc{center}
+\begin{tikzpicture}[remember picture,overlay] % anchor \equal south
+    \node (A) [yshift = 1.45*\figYshift,xshift = 0cm, anchor = \loc] at (current page.\loc) {\includegraphics[page =1,width =12cm]{Figures_booklet/SOM_9_Statistical_mechanics_figures/FYS_1627_SSP-4.pdf}}; %scale \equal \figscale. % 8cm max hei
+\end{tikzpicture}
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+
+
+%\begin{itemize}
+	% 6.5 cm  \equal  midway, 10 cm  \equal  3/4 
+%\item[] 
+\begin{minipage}{8.5cm}
+	\begin{itemize}[itemsep=1.8mm]
+	\item The example above can be used to clarify
+		 the terms \CDAlert[red]{microstate} \appear{and \CDAlert[blue]{macrostate}}
+
+\item In Fig. 3d \appear{the highest peak of the distribution rises to value of $10^{3 \times 10^{22}}$} \appear{so, there are $10^{3 \times 10^{22}}$ different 'ways' of how
+	 to arrange molecules in the room} \appear{if they are split into two equal}\\
+	 \end{itemize}
+\end{minipage}
+\vspace{-4mm}
+\begin{itemize}[itemsep=1.8mm]
+	\item[]  fractions between left and right \textrm{((}specified by $ N_{\mathrm{R}} \textrm{))}$ 
+
+\item Each 'way' is a different \CDAlert[red]{microstate}.
+\appear{If we would know the states of all individual particles}\appear{, we could define each (micro)state}
+
+\item All those $10^{3 \times 10^{22}}$ states \appear{belong into group where all the molecules are split into to equal halves.} \appear{Thus, all those $10^{3 \times 10^{22}}$ states are \CDAlert[blue]{microstates}, associated with $N_{R} \equal \frac{1}{2} \appear{N}$}
+
+\item This is one \CDAlert[blue]{macrostate}. \appear{Others are those with different values of $N_{R}$}
+\end{itemize}
+
+\xdef\loc{north east}
+\begin{tikzpicture}[remember picture,overlay] % anchor \equal south
+    \node (A) [yshift =1*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,width=4.8cm]{Figures_booklet/SOM_9_Statistical_mechanics_figures/SOM_Figure_3_d.png}}; %scale \equal \figscale. % 8cm max hei
+\end{tikzpicture}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\seminormal
+
+\begin{itemize}%[itemsep=2mm]
+	\item Starting with the two-sided room and significantly different amounts of molecules on each side\appear{, the system \CDAlert[tunired]{evolves towards the case} \CDAlert[tunired]{of highest probability}}\appear{, i.\,e. towards the macrostate with highest number of 'ways'}\appear{, i.e. the one with molecules equally on both sides}
+
+\item The most probable macrostate is known as the \CDAlert[red]{equilibrium state}
+
+\item If left alone, a thermodynamic system will evolve towards equilibrium \appear{and eventually reach an equilibrium}
+\end{itemize}
+
+% 6.5 cm  \equal  midway, 10 cm  \equal  3/4 
+\vspace{2.5mm}
+\begin{minipage}{8.5cm}
+\begin{itemize}%[itemsep=2mm]
+	\item Starting with non-equilibrium\appear{, both macrostate and microstate of the system will change}
+
+\item \CDAlert[blue]{At equilibrium}, the system still continues \Alert[tuniblue]{changing microstates}\appear{, but they all correspond to the \Alert[blue]{same macrostate}} \appear{(or the ones close to it...)}\appear{, macrostate specified by $ N_{\mathrm{R}}$}
+\end{itemize}
+\end{minipage}
+\vspace{3mm}
+
+\xdef\loc{south east}
+\begin{tikzpicture}[remember picture,overlay] % anchor \equal south
+    \node (A) [yshift=-0.25*\figYshift,xshift =\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,width=4.8cm]{Figures_booklet/SOM_9_Statistical_mechanics_figures/SOM_Figure_3_d.png}}; %scale \equal \figscale. % 8cm max hei
+\end{tikzpicture}
+
+%\endofslide 
+\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+
+

@@ -1,0 +1,609 @@
+% !TEX root = ../bb_AiRa_Kappaleet.tex
+
+%% HARRIS: Chapter 10
+
+% ö = \%c3\%b6
+% ä = \%C3\%A4
+
+\xdef\sectiontitle{\IIsectiontitle} %aiheuttama
+\TOCrefs
+
+%%%%%%%%%%%%%%%
+\begin{frame}[label=2_9_a]%[label=2_8_TOC1]
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\label{\TOCname}
+
+\vspace{\chapterTOCvksip}
+\begin{itemize}[leftmargin=0.5cm,itemsep=3mm]
+    \item[2.1]<1-> \hyperlink{2_1_a}{\IIaaSubsectiontitle}
+    \item[2.2]<1-> \hyperlink{2_2_a}{\IIaSubsectiontitle}
+    \item[2.3]<1-> \hyperlink{2_3_a}{\IIbSubsectiontitle}	
+    \item[2.4]<1-> \hyperlink{2_4_a}{\IIcSubsectiontitle}	
+    \item[2.5]<1-> \hyperlink{2_5_a}{\IIdSubsectiontitle}
+    \item[2.6]<1-> \hyperlink{2_6_a}{\IIeSubsectiontitle}
+    \item[2.7]<1-> \hyperlink{2_7_a}{\IIfSubsectiontitle}
+    \item[2.8]<1-> \hyperlink{2_8_a}{\IIgSubsectiontitle}
+    \item[2.9]<1-> \hyperlink{2_9_a}{\CDAlert[red]{\IIhSubsectiontitle}}
+    \item[2.10]<1-> \hyperlink{2_10_a}{\IIiSubsectiontitle}
+\end{itemize}
+
+%\endofslide 
+\end{frame}
+%%%%%%%%%%%%%%%
+
+\xdef\sectiontitle{\IIhSubsectiontitle} 
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Suprajohtavat alkuaineet}%Superconducting elements
+%Superconducting elements
+\appear{}
+\begin{itemize}
+	\item Joidenkin metallisten alkuaineiden \appear{resistiivisyys voi yllättäen laskea nollaan kun lämpötila lähestyy absoluuttista nollapistettä $T=0$\;K}% 
+	\appear{\xdef\loc{south east}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.25*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,width=6.7cm]{Figures_booklet/SOM_10_Bonding_figures/SOM_Bonding_Figure_48.png}}; %scale=\figscale. % 8cm max height
+\end{tikzpicture}%
+\footnote{\HarrisCR[1-]}}%
+\appear{(vertaa tinaa ja kuparia) }
+%	The critical temperature for this to happen, $T_{c}$, is a characteristic of the material. For those elements which behave like this, the critical temperature $T_{c}$ is usually in the order of few Kelvins. $0.15$
+\end{itemize}
+
+\vspace{2.5mm}
+\begin{minipage}{7cm}
+\begin{itemize}%[itemsep=1.7mm]
+\item  \CDAlert[red]{Kriittinen lämpötila} \appear{(\CDAlert[red]{$T_{c}$})} \appear{ilmiön ta\-pah\-tu\-miselle} \appear{ riippuu materiaalin omi\-nai\-suuk\-sista}
+
+\item Näin käyttäytyvillä alkuaineilla\appear{ kriit\-tinen lämpötila $T_{c}$ on yleensä \\ \CDAlert[red]{muutaman kelvinin luokkaa}}
+	\end{itemize}
+\end{minipage}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Suprajohtavat alkuaineet}
+\appear{}
+\begin{itemize}[itemsep=1.9mm]
+	\item Yli 20 \CDAlert[red]{metallista alkuainetta} voi muuttua suprajohteeksi (superconductor, SC) \appear{(taulukko)%
+	\xdef\loc{south east}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.25*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {%
+    {\scriptsize
+\begin{tabular}{llr} 
+Tyyppi & Materiaali & $T_{c}(\mathrm{~K})$ \\
+\hline Yksinkertainen & $\mathrm{Al}$ & $1,17$ \\
+metallinen & $\mathrm{ln}$ & $3,41$ \\
+suprajohde &  $\mathrm{Hg}$ & $4,20$ \\
+& $\mathrm{Sn}$ & $3,72$ \\
+& $\mathrm{Pb}$ & $7,20$ \\
+& $\mathrm{Nb}$ & $9,25$ \\
+& $\mathrm{Nb}_{3} \mathrm{Sn}$ & $18,0$ \\
+& $\mathrm{Nb}_{3} \mathrm{Ge}$ & $23,2$ \\
+& $\mathrm{C}_{60} \mathrm{Rb}_{3}$ & 31 \\
+& $\mathrm{La}_{2-\mathrm{S}} \mathrm{Sr}_{\mathrm{x}} \mathrm{CuO}_{4}$ & 38 \\
+& $\mathrm{YBa}_{2} \mathrm{Cu}_{3} \mathrm{O}_{7}$ & 93 \\
+& $\mathrm{Bi}_{2} \mathrm{Sr}_{2} \mathrm{Ca}_{2} \mathrm{Cu}_{3} \mathrm{O}_{10}$ & 107 \\
+& $\mathrm{Tl}_{2} \mathrm{Ba}_{2} \mathrm{Ca}_{2} \mathrm{Cu}_{3} \mathrm{O}_{10}$ & 125 \\
+& $\mathrm{HgBa}_{2} \mathrm{Ca}_{2} \mathrm{Cu}_{3} \mathrm{O}_{8}$ & 135 \\
+Magnesiumdiboridi & $\mathrm{MgB}_{2}$ & 39 \\
+Rautapohjaiset & $\mathrm{FeSe}$ & 8 \\
+suprajohteet & $\mathrm{LaO}_{0,89} \mathrm{~F}_{0,11} \mathrm{FeAs}$ & 26 \\
+& $\mathrm{Sr}_{0,5} \mathrm{Sm}_{0,5} \mathrm{FeAsF}$ & 56
+\end{tabular}
+}%
+}; %scale=\figscale. % 8cm max height
+\end{tikzpicture}}%
+	\item Myös jotkin \CDAlert[blue]{puolijohteet} voivat olla suprajohtavia \appear{oikeissa olosuhteissa (esim. korkeissa pai-\\}
+	\appear{neissa, tai ohutkalvorakenteina)}
+	
+\end{itemize}
+
+\vspace{1.9mm}
+\begin{minipage}{6.4cm}
+\begin{itemize}[itemsep=1.9mm]
+\item Myös \CDAlert[fuchsia]{2D materiaalit} \appear{(kaksi/kolme tietyssä kulmassa olevaa gra\-fee\-ni\-kalvoa)} \appear{voivat muodostaa suprajohteita (vuodelta 2018)}
+	
+	\item Niin sanottu \CDAlert[fuchsia]{korkean lämpötilan} \Alert[fuchsia]{suprajohtavuus} ei ole vielä hyvin ymmärretty ilmiö
+	
+	\end{itemize}
+\end{minipage}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Suprajohteiden ominaisuuksia}%Properties of superconductors
+\appear{}
+\begin{itemize}
+	\item \CDAlert[tunired]{Ominaisuus 1:} \appear{\CDAlert[red]{Ei sähköistä resistiivisyyttä}}
+	\appear{\xdef\loc{south east}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.25*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {%
+    {\scriptsize
+\begin{tabular}{lllr} 
+Materiaali & Metalli/eriste/SC & $\rho(\mathrm{ohm} \mathrm{m})$ & $T_{\mathrm{c}}(\mathrm{K})$ \\
+\hline hopea & $\mathrm{M}$ & $1,6 \times 10^{-8}$ & $-$ \\
+Kupari & $\mathrm{M}$ & $1,7 \times 10^{-8}$ & $-$ \\
+Kulta & $\mathrm{M}$ & $2,4 \times 10^{-8}$ & $-$ \\
+Alumiini & M/SC & $2,8 \times 10^{-8}$ & $1,17$ \\
+Lyijy & M/SC & $2,2 \times 10^{-7}$ & $7,20$ \\
+Elophopea & M/SC & $9,8 \times 10^{-7}$ & $4,20$ \\
+Posliini & Eriste & $5 \times 10^{12}$ & $-$ \\
+Kumi & Eriste & $6 \times 10^{14}$ & $-$ \\
+Kvartsi (sulatettu) & Eriste & $7,5 \times 10^{17}$ & $-$ \\
+\hline
+\end{tabular}
+}%
+}; %scale=\figscale. % 8cm max height
+\end{tikzpicture}}
+
+\item Puolijohde käyttäytyy kuin sillä  \Alert[red]{ei olisi mitattavaa (tasavirta)resistiivisyyttä} 
+
+\item Suprajohteisiin on muodostettu virtoja, joiden ei ole kokeellisesti nähty juurikaan heikkenevän useankaan vuoden kuluessa
+
+\item Tämä ominaisuus on \CDAlert[fuchsia]{teknologisesti relevantti}\appear{, koska resistiivisyys aiheuttaa (ohmisia) häviöitä ja laitteiden lämpenemistä}
+\implies{ Sähkömagneetteihin perustuvat \\
+  	laitteet voivat hyödyntää \\ suprajohteita } 
+
+\end{itemize}
+
+
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Suprajohteiden ominaisuuksia}
+\appear{}
+\semismall
+\begin{itemize}[itemsep=1.6mm]
+	\item \CDAlert[tunired]{Ominaisuus 2:} \appear{\Alert[red]{Täydellinen diamagnetismi} }
+	\appear{\xdef\loc{south east}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.35*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,width=7.3cm]{Figures_booklet/SOM_10_Bonding_figures/SOM_Bonding_Figure_49.png}}; %scale=\figscale. % 8cm max height
+\end{tikzpicture}
+\footnote{\HarrisCR[1-]}}
+	\item Kun termisessä tasapainossa olevaan näytteeseen kohdistetaan ulkoinen magneettikenttä, sen pinnalle muodostuu sähkövirtoja (silmukoita)
+	
+	\item Nämä virrat indusoivat magneettikentän \appear{joka täydellisesti sammuttaa ulkoisen magneettikentän suprajohteen sisältä }
+
+\end{itemize}
+
+\vspace{1.6mm}
+\begin{minipage}{6.4cm}
+\begin{itemize}[itemsep=1.6mm]
+	\item Kun $T<T_{c}$ ulkoinen magneettikenttä \Alert[red]{kaareutuu kappaleen ympärille}
+
+\item Jos $R=0$\appear{, niin Faradayn lain nojalla} \appear{äärettömän voimakkaita pintavirtoja voi muodostua}\appear{, mikä mahdollistaa sisäkenttien täydellisen sammumisen}
+
+\item Suprajohteissa olevat virtasilmukat voivat vastustaa ulkoista kenttää \appear{koska $R \Approx 0$.}\appear{ Tätä suprajohteen täydellistä magneettikentän hylkimistä kutsutaan nimellä \CDAlert[red]{Meissnerin efektiksi}}
+	\end{itemize}
+\end{minipage}
+
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Suprajohteiden ominaisuuksia}
+\appear{}
+\begin{itemize}
+	\item Meisnerin efektin takia \appear{ suprajohde \CDAlert[red]{hylkii aina magneettia}}
+
+\item Tällöin kestomagneetti jää \Alert[red]{levitoimaan} suprajohteen päälle
+\end{itemize}
+
+\vspace{2.5mm}
+\begin{minipage}{6.4cm}
+\begin{itemize}%[itemsep=1.6mm]
+	\item Kun magneetti on suprajohteen päällä\appear{, se indusoi suprajohteeseen virtasilmukoita }
+	
+	\item Nämä \Alert[fuchsia]{virrat synnyttävät Meissnerin efektin} \appear{mikä synnyttää magneettiin suprajohdetta hylkivän voiman }
+	
+	\item Tietyllä etäisyydellä hylkivä voima on yhtäsuuri gravitaatiovoiman kanssa\appear{, ja magneetti alkaa le\-vi\-toi\-maan}
+	\end{itemize}
+\end{minipage}
+
+\xdef\loc{south east}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.35*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,width=7cm]{Figures_booklet/SOM_10_Bonding_figures/SOM_Bonding_Figure_50.png}}; %scale=\figscale. % 8cm max height
+\end{tikzpicture}
+\footnote{\HarrisCR[1-]}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Ominaisuus 3} %Property number 3
+%Property No3
+\appear{}
+\begin{itemize}
+	\item Suprajohde käyttäytyy usein niin kuin sillä olisi \Alert[fuchsia]{$2 \Delta$-levyinen energiarako keskellä sen fermienergiaa} sen mahdollisissa \CDAlert[fuchsia]{yhden elektronin tiloissa} 
+	
+	\item Tällöin suprajohteen elektronin energiaa $\mathcal{E}$ voidaan kasvattaa  \appear{(tai vähentää)} \appear{vain jos $\mathcal{E}-E_{F}$} \appear{(tai $E_{F}-\mathcal{E}$) ylittää arvon $\Delta$ }
+	\item Energiarako $\Delta$ kasvaa lämpötilan laskiessa\appear{, tasoittuen maksimiarvoonsa $\Delta(0)$ todella matalissa lämpötiloissa}
+\end{itemize}
+
+\xdef\loc{south}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.15*\figYshift,xshift=0*\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,width=10cm]{Figures_booklet/SOM_BCS_band_gap_X_Zhang_phd_thesis.png}};%SOM_supeconductor_deltaE.png
+\end{tikzpicture}
+\footnote{\tiny Figure from the \href{https://scholar.colorado.edu/concern/graduate\_thesis\_or\_dissertations/2f75r8102}{PhD Thesis of X. Zhang}.}%(\EMPH{link}{https://scholar.colorado.edu/concern/graduate\_thesis\_or\_dissertations/2f75r8102})
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+%\framesubtitle{Property number 3}
+\appear{}
+\begin{itemize}
+	\item Siirtymän kriittinen lämpötila madaltuu ulkoisen magneettikentän kasvaessa\appear{, ja lopulta kentän ylittäessä \CDAlert[red]{kriittisen arvon} $B_{c}$}\appear{ vaihe\-muu\-tosta ei enää tapahdu.} \appear{Voi ajatella niin että ulkoinen $B$-kenttä on niin vahva että se hävittää suprajohtavuuden}
+\end{itemize}
+
+\vspace{2.5mm}
+\begin{minipage}{7.1cm}
+\begin{itemize}%[itemsep=1.6mm]
+	\item Kriittisen kenttäarvon $B_{c}$ lämpötilariippuvuus on likimain muotoa
+\[
+B_{c}(T)  \equal \appear{B_{c}(0)} \LP \appear{1-} \frac{T^{2}}{T_{c}^{2}} \;\RP
+\]
+
+\item Huomaa että koska materiaalit kestävät vain tietyn määrän magneettikenttää\appear{, vastaavasti on olemassa myös \CDAlert[red]{maksimivirta} joka materiaalissa voi kulkea/kiertää}
+
+	\end{itemize}
+\end{minipage}
+
+\xdef\loc{south east}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.35*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,width=6.5cm]{Figures_booklet/SOM_Tipler_Solid_state_physics_figures/SOM_Tipler_SSP_figure_61.png}}; %scale=\figscale. % 8cm max height
+\end{tikzpicture}
+\footnote{\TiplerCR[1-]}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Tyypin-I suprajohteet}%I:n lajin suprajohteet,  Type-I superconductors
+\appear{}
+%Type-| Superconductors
+\begin{itemize}[itemsep=1.8mm]
+	\item \CDAlert[red]{Tyypin-I suprajohteilla tapahtuu täydellinen Meissnerin efekti} 
+	
+	\item Kun ulkoinen magneettikenttä on pienempi kuin $B_{c}$ \appear{($B<B_c$)}\appear{, suprajohteen sisälle indusoitunut kenttä on yhtäsuuri ja vastakkaismerkkinen ulkoiseen kenttään nähden.} \appear{Tyypin-I suprajohteille on tyypillistä että ulkoisen kentän kasvaessa vaihesiirtymä tapahtuu nopeasti}
+\end{itemize}
+
+\vspace{1.8mm}
+\begin{minipage}{4.6cm}
+\begin{itemize}[itemsep=1.8mm]
+	\item Suprajohtavat alkuaineet ovat usein tyypin-I suprajohteita
+	
+	\item Niiden kriittiset kentät ja lämpötilat ovat suhteellisen matalia\appear{, tyypillisesti 0,01–0,1\;T ja 1–9\;K}\appear{, joten niiden \Alert[red]{käyttöarvo on rajallinen}}
+\end{itemize}
+\end{minipage}
+
+\xdef\loc{south east}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.1*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,width=9cm]{Figures_booklet/SOM_10_Bonding_figures/SOM_Bonding_Figure_51.png}}; %scale=\figscale. % 8cm max height
+\end{tikzpicture}
+\footnote{\HarrisCR[1-]}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Tyypin-II suprajohteet}
+%Type-II Superconductors
+\appear{}
+\seminormal
+\begin{itemize}[itemsep=1.4mm]
+	\item \Alert[red]{Kun $B<B_{c1}$ (ja $T<T_{c}$), tyypin-II aineissa voi tapahtua täydellinen Meissnerin efekti}
+
+\item Tällöin materiaalin sisäinen kenttä on nolla ($B=0$)
+
+\item Kun $B_{c 1}<B<B_{c 2}$ \appear{kenttäviivat alkavat lävistää materiaalin} \appear{mutta \Alert[blue]{viivat ovat rajoittuneet tavallisen aineen tavoin käyttäytyvien vuoputkien sisälle}} \appear{jotka muodostavat niin sanotun \CDAlert[blue]{pyörrehilan}} \appear{(engl. vortex lattice)}
+\end{itemize}
+
+\vspace{1.4mm}
+\begin{minipage}{4.6cm}
+\begin{itemize}[itemsep=1.4mm]
+	\item Lämpötilassa $T<T_{c}$\appear{, kun $B$-kenttä lähestyy arvoa $B_{c 2}$} \appear{suprajohtavan aineen määrä pienenee}\appear{, ja vastaavasti vuoputkien sisältämä tilavuus kasvaa}
+	 \item Kun $B>B_{c 2}$ \appear{koko materiaali käyttäytyy tavallisen aineen tavoin}
+\end{itemize}
+\end{minipage}
+
+\xdef\loc{south east}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.1*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,width=8.8cm]{Figures_booklet/SOM_10_Bonding_figures/SOM_Bonding_Figure_54.png}}; %scale=\figscale. % 8cm max height
+\end{tikzpicture}
+\footnote{\HarrisCR[1-]}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Tyypin-II suprajohteet}
+\appear{}
+\seminormal
+
+\vspace{1.5mm}
+\begin{minipage}{9.1cm}
+\begin{itemize}[itemsep=2mm]
+	\item Kun magneettikenttä on välillä $B_{c 1}<B<B_{c 2}$, suprajohteen ei-suprajohtaviin alueisiin\appear{ muodostuu niin sanottuja \CDAlert[fuchsia]{normaaleja ytimiä (normal cores)}}\appear{, joiden läpi kenttäviivat kulkevat} 
+	
+	\item Normaalien ytimien ympärille muodostuu \CDAlert[fuchsia]{pyörretiloja (vorteksitiloja)}\appear{, joissa esiintyy ulkoista kenttää heikentäviä virtasilmukoita} 
+\end{itemize}
+\end{minipage}
+
+\vspace{3mm}
+\begin{minipage}{6.5cm}
+\begin{itemize}[itemsep=2mm]
+		\item Kriittisen arvon $B_{c 1}$ yläpuolella\appear{ kenttäviivat alkavat läpäistä materiaalin normaalien ytimien muodostuessa}\appear{, kun taas niiden \Alert[red]{ulkopuoliset alueet säilyttävät suprajohtavuutensa}}
+	
+	\item  Tätäkin suuremmilla B-kentän arvoilla \appear{ pyörteet tiivistyvät (kuva)}\appear{ ja suprajohtavan aineen \Alert[red]{alue pienenee}}
+\end{itemize}
+\end{minipage}
+
+\xdef\loc{north east}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=0.7*\figYshift,xshift=1*\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,height=4.25cm]{Figures_booklet/SOM_10_Bonding_figures/SOM_Bonding_Figure_52.png}}; %scale=\figscale. % 8cm max height
+\end{tikzpicture}
+
+\xdef\loc{south east}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.27*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,height=4.4cm]{Figures_booklet/SOM_10_Bonding_figures/SOM_Bonding_Figure_53.png}}; %scale=\figscale. % 8cm max height
+\end{tikzpicture}
+\footnote{\HarrisCRshort[1-]}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{BCS-teoria}
+\appear{}
+%BSC Theory
+\begin{itemize}[itemsep=1.5mm]
+	\item \Alert[fuchsia]{Ensimmäinen suprajohtavuuteen liittyvä Nobel-palkinto myönnettiin jo 1913} (Kammerlingh Onnesille) \appear{kun hän löysi joidenkin alkuaineiden suprajohtavuuden matalissa lämpötiloissa}
+	
+	\item Myöhemmin selvisi että matalan lämpötilan suprajohtavuuden selittää aineessa ilmenevät elektroniparit \appear{eli \CDAlert[red]{Cooperin parit}}\appear{, ja elektronien väliset korrelaatiot/vuorovaikutukset} \appear{(\Alert[fuchsia]{toinen Nobel-palkinto suprajohtavuudelle vuonna 1972})}
+
+\item Elektronit ovat fermioneita\appear{ mutta \CDAlert[blue]{elektroniparit} \Alert[blue]{muodostavat bosoneita}!}
+
+ \item Parin elektronikorrelaatiot voivat säilyä pitkiä matkoja 
+ 
+ \item Ilmiö on seurausta \Alert[red]{elektronien ja fononien välisistä vuorovaikutuksista} \appear{(fononi on atomihilan ionien hilavärähtelykvantti).}\appear{ Kun elektronit vuorovaikuttavat keskenään}\appear{, niiden välille muodostuu heikko puoleensavetävä voima}
+\end{itemize}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{BCS-teoria}
+\appear{}
+\begin{itemize}
+	\item Kaksi vihjettä opasti tutkijat ajatukseen fononien \appear{(atomihilan värähtelyiden)} \appear{välittämistä elektronien välisistä vuorovaikutuksista} 
+	
+	\item \CDAlert[red]{Vihje 1}: \appear{Materiaalin kriittinen lämpötila $T_c$ riippuu atomihilan ionien keskimääräisestä massasta:} $\appear{T_{c}} \propto \appear{M^{-1 / 2}}$\appear{, mikä havaittiin \CDAlert[red]{isotooppikokeilla}}
+
+\item Tarkalleen ottaen riippuvuus on muotoa $ M^{\alpha} T_{c}=$ vakio\appear{,
+missä eksponentti $\alpha$ riippuu materiaalista}
+\implies{ Tämä kokeellinen havainto atomimassojen vaikutuksesta $T_{C}$:an implikoi että \\
+	atomihilalla on ilmiön muodostumisessa rooli}
+	
+\item \CDAlert[blue]{Vihje 2}: \appear{Kokeiden perusteella matalan $T$:n suprajohtavat alkuaineet ovat \Alert[blue]{huonoja johteita huoneenlämmössä}}\appear{, ja päinvastoin} 
+\implies{ Vahva vuorovaikutus elektronien ja ionien välillä huoneenlämmössä on, enemmän\\ tai vähemmän tarpeellista matalan T:n suprajohtavuudessa}
+	
+	\end{itemize}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{BCS-teoria}
+\appear{}
+\seminormal
+\begin{itemize}[itemsep=1.5mm]
+	\item Matalissa $T$:ssa kaksi elektronia voi muodostaa Cooperin parin%, mediated by a phonon 
+	\item Elektroni liikkuu aineen läpi \CDAlert[red]{muokaten paikallisesti atomihilaa}\appear{, mikä vaikuttaa muiden elektronien etenemiseen}
+\end{itemize}
+
+\vspace{1.9mm}
+\begin{minipage}{6.7cm}
+\begin{itemize}[itemsep=2.2mm]
+\item Elektronit emittoivat fononeita\appear{, minkä toinen elektroni absorboi} 
+
+\item Kokonaisuutena prosessi näyttäytyy elektroneita \Alert[blue]{puoleensavetävänä voimana} \appear{(vaikuttaa analogiselta voimien kanssa joita virtuaalisten hiukkasten vaihdot synnyttävät kvanttikenttäteorioissa)}
+
+\item Cooperin parin \CDAlert[fuchsia]{sitoutumisenergia} on pieni \appear{(${\sim}1$\;meV)}\appear{, ja elektronien välinen etäisyys aika suuri}\appear{ (${\sim}\,1\;\mu \mathrm{m}$).} \appear{Monet Cooperin parit menevät siis limittäin.} %(see Slide 12)
+\end{itemize}
+\end{minipage}
+
+\xdef\loc{south east}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.4*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,width=6.8cm]{Figures_booklet/SOM_10_Bonding_figures/SOM_Bonding_Figure_55.png}}; %scale=\figscale. % 8cm max height
+\end{tikzpicture}
+\footnote{\HarrisCR[1-]}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{BCS-teoria}
+\appear{}
+\begin{itemize}
+	\item Vuoden 1972 fysiikan Nobel-palkinto myönnettiin \Alert[red]{John Bardeenille, Leon Cooperille ja John Robert Schriefferille heidän \CDAlert[red]{BCS-teoriastaan}}\appear{, joka selitti kahden tyyppisten suprajohteiden olemassaolon}\appear{, Meissnerin efektin}\appear{, kriittisen lämpötilan olemassaolon, jne.} \appear{Alla joitakin BCS-teorian pääkohdista:}
+
+\item[] \begin{itemize} \seminormal
+	\item Systeemin globaalisti \CDAlert[red]{matalimman energian} tila tapahtuu kun \appear{energeettisimmät johtavuuselektronit (lähellä $E_{F}$:a) muodostavat \Alert[red]{vastakkaisen spinin Cooperin pareja}}
+	
+\item Vain \Alert[blue]{fermienergian $E_{F}$ lähellä olevat elektronit osallistuvat} suprajohtavaan tilaan. \appear{Matalampienergisten elektronien nousu lähelle fermienergiaa}\appear{ kasvattaisi energiaa enemmän kuin minkä heikko elektronien vuorovaikutus kestäisi}
+
+\item Cooperin parin \CDAlert[fuchsia]{sitoutumisenergia} on pieni \appear{(${\sim}1$\;meV)}\appear{, ja elektronien välinen etäisyys aika suuri} \appear{(${\sim}\,1\;\mu \mathrm{m}$).} \appear{Monet Cooperin parit menevät siis limittäin.} %(see Slide 12)
+
+\end{itemize}
+\end{itemize}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{BCS-teoria}
+\appear{}
+\begin{itemize}
+	\item[] \begin{itemize}  \seminormal
+	\item \Alert[blue]{Tyypin-I suprajohteissa olevien elektronien keskimääräiset vapaat matkan ovat suhteellisen pitkiä}\appear{, tyypin-II suprajohteissa matkat ovat lyhyempiä}\appear{, mikä mahdollistaa mikroskooppisen normaalien ytimien (B-kenttä läpäisi suprajohteen näiden kautta) verkoston muodostumisen suprajohtavan aineen sisälle}
+	
+	\item Cooperin parien sitoutumisenergia \appear{(eli suprajohtavuuden energiarako)} \appear{on $\Approx 3.5 k_{B} T_{c}$}\appear{, johtaen $\Approx 10^{-3} \;\mathrm{eV}$.} \appear{\Alert[fuchsia]{Sitoutumisenergian olemassaolo näkyy vasta matalissa lämpötiloissa}}
+	
+\item BCS-teorian mukaan \appear{\Alert[red]{magneetivuo on kvantisoitunut}.} \appear{Magneettivuo joka läpäisee suprajohtavan virtasilmukan (vorteksitila)}\appear{, täytyy olla $\pi \hbar / e$:n monikerta}
+
+\end{itemize}
+
+\item Suprajohtavan aineen tilatiheyden energiarako voidaan arvioida 
+
+\item Esimerkiksi cadmiumille $T_{c}=0,517 \mathrm{~K}$ jolloin:
+\[
+E_{g}  \equal \appear{3,5 \,k_{B} T_{c}} \equal \appear{1,56 \times 10^{-4} \;\mathrm{eV}}
+\]
+\end{itemize}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Korkean $T_c$:n suprajohteet}%High-$T_c$ superconductors
+\appear{}
+%$\underline{\text { High-T }_{c} \text { Superconductors }}$
+\begin{itemize}
+	\item Suprajohteiden tutkimuksessa keskitytään korkean lämpötilan suprajohteisiin\appear{, graalin maljana suprajohtavuus huoneenlämmössä} 
+	
+	\item Lupaavia yhdisteitä ovat\appear{ yllättäen \CDAlert[red]{keraamit} jotka sisältävät esim. kuparia ja happea }
+	
+	\item Nestemäisen typen kiehumispisteen saavuttaminen \appear{($T=77 \mathrm{~K}=-196^{\circ} \mathrm{C}$)} \appear{tapahtui historiallisesti tärkeillä yhdisteillä} \appear{$\mathrm{YBa}_{2} \mathrm{Cu}_{3} \mathrm{O}_{7}$} \appear{ja $\mathrm{Hg}_{0,8} \mathrm{Tl}_{0,2} \mathrm{Ba}_{2} \mathrm{Ca}_{3} \mathrm{Cu}_{3} \mathrm{O}_{8,33}$}\appear{, ja viimeaikainen ennätys Fm-3m rakenteella  $\mathrm{LaH}_{10}$ ($P \sim 170 \mathrm{\;GPa})$, $T=250 \mathrm{~K}=$ $-23^{\circ} \mathrm{C}$, Drozdov et al., 2018)!!}
+
+\item Huomaa että tämä on vain lämpötilaennätys\appear{, uudet korkean $T$:n suprajohteet \CDAlert[fuchsia]{eivät kestä suuria sähkövirtoja}}
+
+\item \CDAlert[blue]{2D-materiaaleissa} tapahtuva suprajohtavuuteen johtava mekanismi vaikuttaa samanlaiselta kuin korkean $T$:n materiaaleissa\appear{, toivon mukaan johtaen \CDAlert[blue]{uusiin teoreettisiin läpimurtoihin}}
+\end{itemize}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Korkean $T_c$:n suprajohteet}
+\appear{}
+\begin{itemize}
+	\item Teknologisesti merkittävissä sovelluskohteissa\appear{, on usein tärkeämpää maksimoida tripletti:} \appear{a) \CDAlert[red]{lämpötila}}\appear{, b) \CDAlert[blue]{sähköinen varaustiheys}} \appear{ja c) \CDAlert[fuchsia]{magneettikentän voimakkuus}}
+
+\end{itemize}
+
+\vspace{2.5mm}
+\begin{minipage}{6cm}
+\begin{itemize}[itemsep=1.6mm]
+\item Joitakin käytännön sovelluskohteita korkean lämpötilan suprajohteille löytyy jo voimansiirrosta: \appear{erityisiä kaapeliratkaisuita on olemassa}\appear{, joissa suprajohtavuus ylläpidetään tehokkaalla \Alert[red]{konsent\-ri\-sella jäähdytyksellä} }
+
+\item \Alert[red]{Nestemäisen typen lämpötilojen} saavuttaminen oli tärkeää, ja on johtanut lukuisiin sovelluskohteisiin! 
+
+\end{itemize}
+\end{minipage}
+
+\appear{\xdef\loc{south east}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.25*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\scriptsize 
+\begin{tabular}{|cc|} 
+%&\text { High-Temperature Superconductors }\\
+%&\begin{array}{c|c}
+\hline
+\text { \Alert[red]{Elektroniikka} } & \text { \Alert[blue]{Perustutkimus} } \\
+\text { Sensorit } & \text { Suurtehomagneetit } \\
+\text{Supertietokoneet} & \text { SQUID-sensorit } \\
+\text{\!\!Kryoelektroniset komponentit\!\!\!\!\!\!} & \text { Bolometrit } \\
+  & \text { Hiukkasilmaisimet } \\
+ \text { \Alert[blue]{Lääketieteelliset tekniikat} } &  \\
+\text { SQUID-diagnostiikka } & \text { \Alert[red]{Mikroaaltoteknologia} } \\
+\text { Magneettiresonanssi- } & \text { Filterit } \\
+\text { kuvantaminen (MRI) } & \text { Resonaattorit } \\
+& \text { Antennit } \\
+\text { \Alert[red]{Tehoelektroniikka} } &  \text { Viivelinjat}\\
+\text { Generaattorit } & \text { Aktiiviset komponentit } \\
+%\text { Motors } &  \\
+\text { Muuntajat } & \\
+\text { Virranrajoittimet } & \text { \Alert[blue]{Liikennetekniikka} }  \\
+\text { Kytkimet } & \text { Maglev-junat} \\
+\text { Kaapelit } &  \text {Maglev-tekniikka\!\!} \\
+\text { Energian varastointi } & \text { Laivojen koneet }  \\
+\hline
+%\end{array}
+\end{tabular}
+}; %scale=\figscale. % 8cm max height
+\end{tikzpicture}}
+
+%\endofslide 
+\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%

@@ -1,0 +1,572 @@
+% !TEX root = ../bb_AiRa_Kappaleet.tex
+
+%% HARRIS: Chapter 10
+
+% ö = \%c3\%b6
+% ä = \%C3\%A4
+
+\xdef\sectiontitle{\IIsectiontitle} %aiheuttama
+\TOCrefs
+
+%%%%%%%%%%%%%%%
+\begin{frame}[label=2_3_a]%[label=2_2_TOC1]
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\label{\TOCname}
+
+\vspace{\chapterTOCvksip}
+\begin{itemize}[leftmargin=0.5cm,itemsep=3mm]
+    \item[2.1]<1-> \hyperlink{2_1_a}{\IIaaSubsectiontitle}
+    \item[2.2]<1-> \hyperlink{2_2_a}{\IIaSubsectiontitle}
+    \item[2.3]<1-> \hyperlink{2_3_a}{\CDAlert[red]{\IIbSubsectiontitle}}	
+    \item[2.4]<1-> \hyperlink{2_4_a}{\IIcSubsectiontitle}	
+    \item[2.5]<1-> \hyperlink{2_5_a}{\IIdSubsectiontitle}
+    \item[2.6]<1-> \hyperlink{2_6_a}{\IIeSubsectiontitle}
+    \item[2.7]<1-> \hyperlink{2_7_a}{\IIfSubsectiontitle}
+    \item[2.8]<1-> \hyperlink{2_8_a}{\IIgSubsectiontitle}
+    \item[2.9]<1-> \hyperlink{2_9_a}{\IIhSubsectiontitle}
+    \item[2.10]<1-> \hyperlink{2_10_a}{\IIiSubsectiontitle}
+\end{itemize}
+
+%\endofslide 
+\end{frame}
+%%%%%%%%%%%%%%%
+
+\xdef\sectiontitle{\IIbSubsectiontitle} 
+
+%%%%%%%%%%%%%%%
+\begin{frame}%[label=2_2_a]
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Absorptio- ja emissiospektrit}
+\appear{}
+
+\begin{itemize}
+	\item Molekyylin elektroneilla on useita energiatasoja/-tiloja\appear{, minkä takia ne voivat absorboida ja emittoida sähkömagneettista säteilyä} 
+	
+	\item Molekyylien \CDAlert[red]{absorptio- ja emissiospektrit antavat tietoa} niiden \Alert[red]{energiatiloista} \appear{ja jopa \Alert[red]{rakenteesta}.}\appear{ Tätä tietoa voidaan hyödyntää arvioimaan esim. materiaalien \Alert[red]{lämpökapasiteetteja} }
+\implies{ kemiallisilla yhdisteillä on \CDAlert[blue]{spektriset sormenjäljet} \appear{joiden avulla niitä voidaan tunnistaa ja mitata pitoisuuksia }\appear{(ts.~konsentraatioita)}}
+
+\item Molekyylien energiaspektri sisältää tietoa:
+\item[] \begin{itemize}
+	\item Elektronitiloista ja -siirtymistä\appear{, ${\sim}$1–1000 eV} $\rightarrow$  \appear{${\sim}$\Alert[red]{näkyvä valo} ja \CDAlert[fuchsia]{röntgensäteet}}
+\item Vibraatiotiloista\appear{, 1–100 meV} $\rightarrow$ \appear{mikroaallot ja \CDAlert[blue]{infrapuna}}
+\item Rotaatiotiloista\appear{, 1–10 meV} $\rightarrow$ \appear{mikroaallot ja infrapuna}
+\end{itemize}
+
+\end{itemize}
+%
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Kaksiatominen molekyyli}
+\appear{}
+
+% 6.5 cm = midway, 10 cm = 3/4 
+\vspace{1mm}
+\begin{minipage}{9.2cm}
+	\begin{itemize}
+	\item Tarkastellaan \CDAlert[red]{kaksiatomista molekyyliä}.\\ \appear{Oletetaan potentiaalienergiakaivo likimain pa\-ra\-bo\-liseksi} \appear{tasapainopisteen $x_r$ läheisyydessä}
+\[ 
+ U \textrm{((}x_{r} \textrm{))} \appear{\cong} \appear{U_{0}}  \plus \frac{1}{2} \appear{\kappa x_r^{2}} \appear{\,,\qquad \text{missä}~x_{r}} \equiv \appear{x-a}
+ \] 
+
+\item Kerroin $\kappa$ \appear{on \CDAlert[tunired]{värähtelevän molekyylin} \\\CDAlert[red]{jousivakio} }
+\[ 
+ \kappa \equiv \frac{d^{2} U(x)}{d x^{2}} \appear{\,, \qquad kun~x}\approx \appear{a} 
+ \]
+\appear{Tällöin \CDAlert[red]{harmoniselle värähtelijälle} saadaan energiaksi} 
+\[
+E_{vib, n}  \equal   \appear{\textrm{((}n}  \plus  \frac{1}{2} \appear{\textrm{))}} \appear{\hbar \omega_{0}}
+\]
+\end{itemize}
+
+\end{minipage}
+\vspace{2.5mm}
+
+\xdef\loc{north east}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=0.9*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,width=4cm]{Figures_booklet/SOM_10_Bonding_figures/SOM_Bonding_Figure_16.png}}; %scale=\figscale. % 8cm max height
+\end{tikzpicture}
+
+\xdef\loc{south east}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.35*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,width=4cm]{Figures_booklet/SOM_10_Bonding_figures/SOM_Bonding_Figure_17.png}}; %scale=\figscale. % 8cm max height
+\end{tikzpicture}
+\footnote{\HarrisCRshort[1-]}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Kaksiatomisen molekyylin vibraatiotilat}
+\appear{}
+
+\begin{itemize}
+	\item Mikä on kaksiatomisen molekyylin \CDAlert[red]{resonanssitaajuus $\omega_{0}$}? 
+	
+	\item värähtelytaajuus $\omega_{0}$ liittyy atomien välisiin voimiin. \appear{Jos kaksi massaa $m_{1}$} \appear{ja $m_{2}$} \appear{(}$\appear{\mu}\equiv$\appear{\,\CDAlert[red]{systeemin redusoitu massa})} \appear{on kytketty toisiinsa jousella}\appear{, systeemin potentiaalienergiaksi saadaan}
+\[
+\begin{aligned}
+U(x)&  \equal \frac{1}{2} \appear{\kappa x^{2}}  \equal \frac{1}{2} \appear{\mu \omega_{0}{ }^{2} x^{2}} \\
+\appear{\omega_{0}}&  \equal \appear{2 \pi f_{0}}  \equal \appear{\Sqrt{\Frac{\kappa}{\mu}} }\appear{\,, \qquad \mu}  \equal \fraca{m_{1} m_{2}}{m_{1}+m_{2}}
+\end{aligned}
+\]
+\appear{ja \CDAlert[tunired]{vibraatiotiloiksi} muodostuu:}
+\[ 
+ E_{v i b, n}  \equal  \appear{\textrm{((}n}  \plus \frac{1}{2} \appear{\textrm{))}} \appear{\hbar} \appear{\Sqrt{\Frac{\kappa}{\mu}}} \appear{\,, \qquad n=0,1,2,3, \ldots }
+ \]
+
+\item Huomaa että tarkastelu on suoritettu yksiulotteiselle mallille
+\end{itemize}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Kaksiatomisen molekyylin rotaatiotilat}
+\appear{}
+
+\seminormal
+% 6.5 cm = midway, 10 cm = 3/4 
+\vspace{1mm}
+\begin{minipage}{9.5cm}
+	\begin{itemize}[itemsep=1.6mm]
+	\item Klassisesti pyörimiseen/\CDAlert[blue]{rotaatioon liittyvä kineettinen} \CDAlert[blue]{energia} on:\vspace{-3mm}  
+%	$$
+%	E=\frac{1}{2} I \omega^{2}=\frac{(I \omega)^{2}}{2 I}=\frac{L^{2}}{2 I} \,, \qquad where~I=moment~of~inertia
+%	$$
+%	 $$
+%E=\frac{1}{2} I \omega^{2}=\frac{(I \omega)^{2}}{2 I}=\frac{L^{2}}{2 I} \,, \qquad 
+%\begin{aligned}
+% I&=moment~of~inertia  \\
+% \omega&=angular~velocity~of~rotation \\
+% L&=I \omega = molecule's~angular~momentum
+%\end{aligned}
+%$$ 
+\[
+\hspace{1.5cm} E  \equal \frac{1}{2} \appear{I} \appear{\omega^{2}}  \equal \frac{(I \omega)^{2}}{2 I}  \equal \frac{L^{2}}{2 I} \appear{\,,} 
+\] \vspace{1mm} 
+\appear{missä $I$ = hitausmomentti}\appear{, $\omega=$~kulmanopeus}\appear{, ja \\ $L=I \omega = $~kulmaliikemäärä}
+
+\item Schrödingerin yhtälön ratkaisu pyörivälle kiin\-teäl\-le kappaleelle johtaa kulmaliikemäärän\\ \CDAlert[fuchsia]{kvantisoitumiseen} \appear{(kuten yksittäisillä atomeilla):}
+\[ 
+ L^{2}  \equal \appear{\ell} \appear{(\ell+1)} \appear{\hbar^{2}} \appear{\,, \qquad \ell=1,2,3, \ldots\Equiv \CDAlert[blue]{rotationaalinen kvanttiluku}} 
+ \]
+ \end{itemize}
+\end{minipage}
+%\vspace{2.5mm}
+
+%Where $\ell$ is the rotational quantum number
+\begin{itemize}
+\item Huomaa että $L$ viittaa koko molekyyliin\appear{ joka pyörii massakeskipisteensä ympäri}\appear{, ja jolla on \CDAlert[tuniblue]{energiatasot}:}\vspace{-2mm} 
+\[ 
+ E_{r o t, \ell}  \equal \frac{\ell(\ell+1) \hbar^{2}}{2 I}  \equal \frac{\ell(\ell+1)}{2} \appear{E_{r}}  \quad  \qquad 
+ \begin{aligned}
+ \appear{E_r}  \equal  \frac{\hbar^2}{I}  \equal \appear{&~\text{karakteristinen}\\
+ 	&~\text{pyörimisenergia}}
+ \end{aligned}
+ \] %E_r = ~characteristic~rotational~energy of
+\end{itemize}
+
+\xdef\loc{north east}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=0.5*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,width=4cm]{Figures_booklet/SOM_Tipler_Statistics_and_Bonding_figures/SOM_Tipler_figure_21.png}}; %scale=\figscale. % 8cm max height
+\end{tikzpicture}
+\footnoteleft{\TiplerCRshort[1-]}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Kaksiatomisen molekyylin rotaatiotilat}
+\appear{}
+
+\seminormal
+\vspace{1mm}
+\begin{minipage}{9.5cm}
+	\begin{itemize}[itemsep=1.4mm]
+	\item \CDAlert[blue]{Rotaatiotilat} sisältävät informaatiota mm. mo\-le\-kyy\-lien hitausmomentista \appear{eli myös \CDAlert[blue]{sidosten} \CDAlert[blue]{pituuksista}} 
+	
+	\item Pyörivän molekyylin hitausmomentti \appear{(massat $m_{1}$ ja $m_{2}$) on muotoa }
+	\[ 
+	I  \equal \appear{m_{1} r_{1}^{2}}  \plus \appear{m_{2} r_{2}^{2}}
+	\]
+\item \CDAlert[fuchsia]{Vipusäännön} (Arkhimedes!) \appear{$m_{1} r_{1}=m_{2} r_{2}$} \appear{ja $a \Equiv r_{1}+r_{2}$} \appear{avulla saadaan}
+\[
+I  \equal \appear{\mu a^{2}} \appear{\,,\qquad \text{missä redusoitu massa}~\mu}  \equal \frac{m_{1} m_{2}}{m_{1}+m_{2}}
+\]
+\end{itemize}
+\vspace{1.25mm}
+\end{minipage} 
+\begin{itemize}[itemsep=1.6mm]
+\item Yhtäsuurille massoille\appear{, kuten $\mathrm{H}_{2}$ tai $\mathrm{O}_{2}$}\appear{, saadaan $\mu=\Frac{1}{2} m_{1}  \equal \frac{1}{2} \appear{m_{2}}$} \appear{ja hitausmomentiksi tulee $I=\Frac{1}{2} m a^{2}$}
+
+\item Yleisesti ottaen rotaatiotiloiksi saadaan \vspace{-0.7mm}
+\[ 
+ E  \equal \frac{\ell(\ell+1) \hbar^{2}}{2 I}  \equal \frac{\ell(\ell+1) \hbar^{2}}{2 \mu a^{2}} \equal \frac{\ell(\ell+1)}{2} \appear{E_{r}} \appear{\,\,, \qquad E_{r}=}\frac{\hbar^{2}}{\mu a^{2}} 
+ \]
+\end{itemize}
+
+\xdef\loc{north east}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=0.5*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,width=4cm]{Figures_booklet/SOM_Tipler_Statistics_and_Bonding_figures/SOM_Tipler_figure_21.png}}; %scale=\figscale. % 8cm max height
+\end{tikzpicture}
+\footnoteleft{\TiplerCRshort[1-]}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Kaksiatomisen molekyylin energiatilat}
+\appear{}
+
+\begin{itemize}[itemsep=1.6mm]
+	\item \CDAlert[violet]{(Kaksiatomisen) molekyylin} energiatasot sisältävät siis tietoa \CDAlert[violet]{kahdesta kvanttiluvusta}: \appear{\CDAlert[red]{$n$}} \appear{ja \CDAlert[blue]{$\ell$}}\appear{, jotka liittyvät vastaavasti \CDAlert[red]{vibraatio-}} \appear{ja \CDAlert[blue]{rotaatio}energioihin:}
+$$ \seminormal
+\appear{E_{n, \ell}}  \equal \appear{E_{v i b}}  \plus \appear{E_{r o t}}  \equal  \appear{\textrm{((}n+\Frac{1}{2} \textrm{))}} \appear{\hbar} \appear{\Sqrt{\Frac{\kappa}{\mu}}} \plus \frac{\ell(\ell+1) \hbar^{2}}{2 \mu a^{2}}\appear{\,,} \quad \quad 
+\begin{aligned}
+&\appear{n=0,1,2,3, \ldots} \\
+&\appear{\ell=0,1,2,3, \ldots}
+\end{aligned}
+$$
+\vspace{-2mm}
+\item Vaikka $\ell$ on seurausta samanlaisesta differentiaaliyhtälöstä \appear{kuin millä kuvataan vetyatomin elektronin kiertoliikettä}\appear{, se liittyy \CDAlert[blue]{molekyylin pyörimiseen}}
+
+\item Kuten vedylle\appear{, erilaiset (kvantisoituneet) pyörimissuunnat ovat mahdollisia}\appear{, jota kuvataan kvanttiluvulla $m_{\ell}$} \appear{jolle pätee $m_{\ell}=0, \pm 1, \pm 2, \ldots, \pm \ell$} 
+
+\item Huomaa myös että massa $\mu$ \appear{on molekyylin redusoitu massa} 
+
+\item \CDAlert[violet]{Suurempien molekyylien} energiat\appear{ ja spektrit} \appear{\CDAlert[violet]{ovat vastaavanlaisia}}
+\end{itemize}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Kaksiatomisen molekyylin energiatilat}
+\appear{}
+
+\begin{itemize}
+	\item \CDAlert[blue]{Rotaatioenergiat}: 
+	\begin{itemize} \small
+	\item Elektronitilojen viritysenergiat ovat suuruusluokkaa $1$~eV\appear{, kun taas tyypillisten rotaatiotilojen energiat ovat luokkaa $10^{-4}-10^{-3}$~eV} 
+	\item Transitiot rotaatiotilojen välillä synnyttävät fotoneita joiden aallonpituus on kaukoinfrapuna-alueella
+	\item Rotaatioenergiat ovat myös pieniä \appear{verrattuna tyypilliseen} $\appear{k_{B} T} \approx \appear{0,026 ~\mathrm{eV}$} \appear{kun $T=300 \mathrm{~K}$} 
+	\item \Alert[blue]{Normaaleissa lämpötiloissa molekyyli voi helposti virittyä alemmille rotaatiotiloille molekyylien törmätessä}
+
+\end{itemize}
+
+\item \CDAlert[red]{Vibraatioenergiat}: 
+\begin{itemize} \small
+	\item Normaaleissa lämpötiloissa \appear{vibraatioenergiat ovat tyypillisesti $0,1-0,2~\mathrm{eV}$ (eli $>k_{B} T $) }
+	\item \Alert[red]{Suurin osa} molekyyleistä \appear{on siis \Alert[red]{alimmalla vibraatiotilalla}} \appear{missä $n=0$ ja $E_{0}=1 / 2 h f$}
+\end{itemize}
+
+\item \CDAlert[violet]{Huoneenlämpötilassa} \appear{molekyyli on elektronisessa perustilassa}\appear{, ja \CDAlert[red]{alimmalla  vibraatiotilalla}}\appear{, mutta voi olla \CDAlert[blue]{korkeammallakin rotaatiotilalla}}
+
+\end{itemize}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Esimerkki}
+\appear{}
+
+%\vspace{2.5mm}
+\begin{minipage}{5.75cm}
+\begin{itemize}
+\item \CDAlert[red]{Kysymys}: Tarkastellaan kaksiatomista HD molekyyliä \appear{(D = deuterium = vety + neutroni}\appear{, massat $m_H=1,007$ amu ja $m_D=2,013$ amu}\appear{, ja sidospituus on $0,074 \mathrm{~nm}$).} \appear{Käyttäen Boltzmannin jakaumaa}\appear{, määritä lämpötila jossa rotaatiotiloilla $\ell=1$ ja $\ell=0$} \appear{olevien tilojen populaatioiden suhde on $1 / 10$}
+\end{itemize}
+\end{minipage}
+%\vspace{-2.5mm}
+\begin{itemize}
+\item[]
+	
+	\item \CDAlert[blue]{Vastaus}: \appear{Tilalla $\ell=1$ on kolme kvantittunutta rotaatiosuuntaa } \appear{($m_{\ell}$:n arvot)}\appear{, ja tilalla $\ell=0$ on vain yksi}\appear{. Populaatioiden suhteeksi saadaan siis}\vspace{-4mm}
+\[ 
+ \hspace{2cm} \frac{\text { Tilatiheys } E_{n=0, \ell=1}}{\text { Tilatiheys } E_{n=0, \ell=0}} \equal \frac{3}{1} \appear{\times} \frac{e^{-E_{0,1} / k_{B} T}}{e^{-E_{0,0} / k_{B} T}}  \equal \appear{3 e^{- \textrm{((}E_{0,1}-E_{0,0} \textrm{))} / k_{B} T} }
+ \]
+\end{itemize}
+
+\xdef\loc{north east}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=0.9*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,width=7.8cm]{Figures_booklet/SOM_10_Bonding_figures/SOM_Bonding_Figure_18.png}}; %scale=\figscale. % 8cm max height
+\end{tikzpicture}
+\footnote{\HarrisCR[1-]}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Esimerkki}
+\appear{}
+
+\begin{itemize}[itemsep=1.7mm]
+	\item Molekyylin redusoitu massa on 
+	$
+\appear{\mu}  \equal \frac{1,007 \mathrm{\;amu} \,\times\, 2,013 \mathrm{\;amu}}{1,007 \mathrm{\;amu} \,+\,2,013 \mathrm{\;amu}}  \equal \appear{0,671 \mathrm{\;amu}}
+$
+	\appear{ja energia-ero on}
+	$$
+	 \begin{aligned}  \small
+	 \appear{E_{0,1}-E_{0,0}} & \equal \frac{1(1+1) \hbar^{2}}{2 \mu a^{2}}  \minus \frac{0(0+1) \hbar^{2}}{2 \mu a^{2}}  \equal \frac{\hbar^{2}}{\mu a^{2}} \\
+	 & \equal \fraca{ \textrm{((}1,055 \times 10^{-34} \,Js \textrm{))}^{2}}{0,671 \times 1,66 \times 10^{-27} \mathrm{\,kg} \times \textrm{((}0,074 \times 10^{-9} \mathrm{\,m} \textrm{))}^{2}}  \equal \appear{1,82 \times 10^{-21} J}  \equal \appear{0,011 \mathrm{\,eV}}
+	 \end{aligned} 
+	 $$ 
+	
+\item Asettamalla suhteeksi $1 / 10$ \appear{lämpötila voidaan ratkaista:}
+\[ \small
+\frac{1}{10}  \equal \appear{3 \exp}  \LB[3] \frac{-1,82 \times 10^{-21} \,J}{1,38 \times 10^{-23} \,J / K \times T} \RB[3] \qquad \Rightarrow \qquad \appear{ \cutline{red}{T \cong 40 \,K}}
+\]
+\vspace{-2mm}\implies{ \CDAlert[red]{Alle $40 \mathrm{~K}$, HD molekyylit voivat vain liikkua (eivät pyöriä!)} } 
+
+\item Tämä käy yhteen kuvan 18 $\mathrm{H}_{2}$ molekyylien kanssa\appear{, joissa siirtymä translaatioenergioista rotaatioenergioihin tapahtuu vähän yli 40–50 K}
+\end{itemize}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Valintasäännöt}
+\appear{}
+
+\begin{itemize}
+	\item Vibraatiotilojen \appear{ja rotaatiotilojen \CDAlert[red]{energiat voivat saada vain} \CDAlert[red]{diskreettejä arvoja}}\appear{, minkä kuuluisi näkyä myös molekyylien absorptio- ja emissiospektreissä}
+
+\item Jos fotoni emittoituu\appear{, osa molekyylin rotaatio- ja vibraatioenergiasta siirtyy fotonille}\appear{, ja $n$:n tai $\ell$:n tai molempien täytyy pienentyä}
+\implies{ ~\CDAlert[red]{Valintasäännöt}: $\qquad \appear{\Delta \ell}  \equal \appear{\pm 1} \quad$ \appear{ja} $\appear{\quad \Delta n}  \equal \appear{\pm 1}$ }
+
+\item  Fotonin spin on 1\appear{, joten systeemin kokonaiskulmaliikemäärä voi säilyä emissioprosessin aikana vain} \appear{jos $\ell$ muuttuu yhdellä}$\quad \rightarrow \quad \appear{\Delta \ell=\pm 1}$
+\item Molekyylin varaustiheys värähtelee dipolin tavoin vibraatiotilojen välisissä sirtymissä. \appear{Varautunut harmoninen värähtelijä oskilloi} \appear{(ei osoiteta)} \appear{\CDAlert[blue]{sähködipolin tavoin} vain tilojen välisissä transitioissa joissa kvanttiluku muuttuu yhdellä} $\quad \rightarrow \quad \appear{\Delta n=\pm 1}$
+\end{itemize}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Valintasäännöt}
+\appear{}
+
+\begin{itemize}
+	\item Jos molekyylin vibraatioenergia pienenee\appear{, vibraatiotilan täytyy relaksoitua alemmalle elektroniselle tilalle ($\Delta n=-1$) }
+
+\item Mutta koska vibraatiotilat ovat kauempana toisistaan kuin rotaatiotilat\appear{, vibraatiotilan relaksoituminen}\appear{ voi johtaa joko rotaatiotilan kasvuun tai pienenemiseen.}\appear{ Toisin sanoen \CDAlert[red]{$\ell$ voi joko pienentyä tai kasvaa yhdellä} }
+
+\item Emittoituneen fotonin energia on siis yhteensä muotoa
+\[ 
+ E_{\text {fotoni}}  \equal \appear{\hbar} \appear{\Sqrt{\Frac{\kappa}{\mu}}} \appear{\pm} \appear{i \times} \frac{\hbar^{2}}{\mu a^{2}}  \appear{\,, \qquad i=1,2,3, \ldots }
+ \]
+\end{itemize}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Valintasäännöt}
+\appear{}
+
+\begin{itemize}[itemsep=1.8mm]
+	\item Kuvassa 19\appear{ näkyy vibraatiotilat $n=0$ ja $n=1$}\appear{, sekä rotaatiotilat $\ell=0,1,2$ ja 3}\appear{, siis $\Frac{\ell(\ell+1)}{2}=0,1,3$ ja 6} 
+
+\item Me \Alert[red]{löydämme kuusi transitiota jotka toteuttavat valintasäännöt} 
+\end{itemize}
+
+% 6.5 cm = midway, 10 cm = 3/4 
+\vspace{1mm}
+\begin{minipage}{7cm}
+\begin{itemize}[itemsep=1.8mm]
+	\item Huomaa että rotaatiotilojen välisen energia-eron kvantti on
+	\[
+	\delta E_{r}  \equal \frac{\hbar^{2}}{\mu a^{2}}
+	\]
+
+\item Spektrin keskellä on 'aukko'\appear{, koska transitiota $\Delta \ell=0$ ei tapahdu}\appear{, se on kielletty}
+
+\item Säännöt, joita nuolet kuvassa selventävät\appear{, pätevät \CDAlert[red]{sekä } \CDAlert[red]{absorptiolle}} \appear{että \CDAlert[red]{emissiolle}}
+\end{itemize}
+\end{minipage}
+
+
+\xdef\loc{south east}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.25*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,height=6.4cm]{Figures_booklet/SOM_10_Bonding_figures/SOM_Bonding_Figure_19.png}}; %scale=\figscale. % 8cm max height
+\end{tikzpicture}
+\footnote{\HarrisCR[1-]}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Rotaatio–vibraatiospektri}
+\appear{}
+
+\begin{itemize}[itemsep=1.8mm]
+	\item Mahdollisten transitioiden joukko\appear{, tai vastaavasti emittoituneiden fotonien energiat} \appear{(tai absorboituneiden fotonien)}\appear{, muodostavat \CDAlert[red]{rotaatio–vibraatiospektrin}}
+	\item Transitioita joissa sekä vibraatiotila \appear{että rotaatiotila muuttuu} \appear{kutsutaan  \CDAlert[red]{rotaatio–vibraatiotransitioksi}}
+\appear{\xdef\loc{south east}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.35*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,width=7.5cm]{Figures_booklet/SOM_10_Bonding_figures/SOM_Bonding_Figure_20.png}}; %scale=\figscale. % 8cm max height
+\end{tikzpicture}\footnote{\HarrisCR[1-]}}
+\item Kuvassa~20 näemme $\mathrm{HCl}$:n absorptiospektrin\appear{, jossa absorptioviivat } \appear{ muodostavat ylläkuvatun rakenteen.}\appear{ Jopa spektrin keskellä olevan \CDAlert[blue]{'aukon'}}
+\end{itemize}
+
+% 6.5 cm = midway, 10 cm = 3/4
+\vspace{2mm} 
+\begin{minipage}{6.8cm}
+\begin{itemize}[itemsep=1.8mm]
+	\item[] \begin{itemize} \small
+	 \item \CDAlert[tunired]{Piikit eivät ole yhtä kaukana toisistaan}\appear{, koska $\ell$:n kasvaessa}\appear{ molekyylit venyvät } \appear{muuttaen niiden energioita}
+	\item Piikit ovat \CDAlert[tunired]{leventyneet}\appear{, koska kloorilla on kaksi yleistä  \CDAlert[fuchsia]{isotooppia}} \appear{${ }^{35} \mathrm{Cl}$ ja ${ }^{37} \mathrm{Cl}$} \appear{joilla on poikkeavat massat } \appear{(muista: $M_{C l}=35,45 \mathrm{~g} / \mathrm{mol} $)}
+\end{itemize}
+\end{itemize}
+\end{minipage}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%% LET's SKIP THE REAL TRANSMISSION SPECTRUM OF HCl SLIDE for time being
+%%%%%%%%%%%%%%%%
+%\begin{frame}
+%\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+%
+%\begin{itemize}
+%	\item Note, that the absorption spectrum of HCl shown in Fig.~20 was actually processed from the real transmission spectrum, by first removing the background and further inverting the $y$-axis
+%\end{itemize}
+%
+%\xdef\loc{east}
+%\begin{tikzpicture}[remember picture,overlay] % anchor=south
+%    \node (A) [yshift=\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,width=6cm]{Figures_booklet/SOM_10_Bonding_figures/SOM_Bonding_Figure_20.png}}; %scale=\figscale. % 8cm max height
+%\end{tikzpicture}
+%
+%\xdef\loc{west}
+%\begin{tikzpicture}[remember picture,overlay] % anchor=south
+%    \node (A) [yshift=0*\figYshift,xshift=-\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,width=6cm]{Figures_booklet/SOM_10_Bonding_figures/SOM_Bonding_Figure_20.png}}; %scale=\figscale. % 8cm max height
+%\end{tikzpicture}
+%
+%\xdef\loc{east}
+%\begin{tikzpicture}[remember picture,overlay] % anchor=south
+%    \node (A) [yshift=\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,width=6cm]{Figures_booklet/SOM_10_Bonding_figures/SOM_Bonding_Figure_20.png}}; %scale=\figscale. % 8cm max height
+%\end{tikzpicture}
+%
+%
+%\endofslide 
+%%\endofsection
+%\end{frame}
+%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Energioiden suuruusluokista}
+\appear{}
+
+\begin{itemize}[itemsep=1.6mm]
+	\item Elektronitilojen väliset energiaerot ovat molekyyleille usein $>\!1~\mathrm{eV}$\appear{, vibraatiotiloille $>\!0,1~\mathrm{eV}$} \appear{ja rotaatiotiloille $<\!0,1~ \mathrm{eV}$ }
+	
+	\item Kuva 21 ei ole mittakaavassa\appear{, mutta kuvaa hyvin tilojen energioiden välisiä suuruusluokkia}
+	
+% 6.5 cm = midway, 10 cm = 3/4 
+%\vspace{2.5mm}
+\item[] \begin{minipage}{8.2cm} \small
+ 	\begin{itemize}
+	\item  Punaiset käyrät esittävät kahta elektronista tilaa
+	
+	\item Kun elektroni on \CDAlert[fuchsia]{virittyneessä tilassa}\appear{, atomit ovat kauempana toisistaan} \appear{($a$ muuttuu)} \appear{mutta silti sidoksissa toisiinsa} 
+	
+	\item Potentiaalikaivo on leveämpi ja matalampi \appear{(= kuten kuvan ylempi kaivo)}
+	
+	\item \CDAlert[red]{Kummallakin elektronitilalla}\appear{ on useita vib\-raa\-tiotiloja $n$} \appear{ja vielä useampia ja lähempänä toisiaan olevia rotaatiotiloja $\ell$}
+\end{itemize}
+
+\end{minipage}
+\vspace{2.5mm}
+
+\end{itemize}
+
+\xdef\loc{south east}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.35*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,height=6.1cm]{Figures_booklet/SOM_10_Bonding_figures/SOM_Bonding_Figure_21.png}}; %scale=\figscale. % 8cm max height
+\end{tikzpicture}
+\footnote{\HarrisCR[1-]}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Monimutkaisemmat molekyylit}
+\appear{}
+
+\begin{itemize}
+	\item Huomaa että olemme tarkastelleet vain \CDAlert[red]{kaksiatomista molekyyliä} 
+	
+	\item Suurimmalla osalla molekyyleistä \CDAlert[blue]{on monimutkaisempi rakenne}\appear{, ja vastaavasti sekä niiden rotaatio-} \appear{että vibraatioenergiaspektrit \CDAlert[tuniblue]{ovat monimutkaisempia}}
+
+\item Esimerkiksi $\mathrm{CO}_{2}$ (vasen) \appear{ja $\mathrm{H}_{2} \mathrm{O}$ (oikea)} \appear{ovat kaksi yleistä molekyyliä} \appear{jotka voivat värähdellä monella eri tavalla, kuten kuvassa näkyy}
+
+\end{itemize}
+
+\appear{\xdef\loc{south}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.5*\figYshift,xshift=0*\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1, height=4cm]{Figures_booklet/SOM_10_Bonding_figures/Tikz_SOM_Bonding_vibrational_modes_fixed}};
+\end{tikzpicture}}
+
+%\endofslide 
+\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%

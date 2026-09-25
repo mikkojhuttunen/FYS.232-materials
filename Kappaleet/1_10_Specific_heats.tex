@@ -1,0 +1,307 @@
+% !TEX root = ../bb_AiRa_Kappaleet.tex
+
+% ö = \%c3\%b6
+% ä = \%C3\%A4
+
+\xdef\sectiontitle{\Isectiontitle} %aiheuttama
+\TOCrefs
+
+%%%%%%%%%%%%%%%
+\begin{frame}[label=1_10_a]%[label=1_10_TOC1]
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\label{\TOCname}
+
+\vspace{-0.5cm}
+
+\begin{itemize}[leftmargin=0.5cm,itemsep=2mm]
+    \item[1.1]<1-> \hyperlink{1_1_a}{\IaSubsectiontitle}
+    \item[1.2]<1-> \hyperlink{1_2_a}{\IbSubsectiontitle}	
+    \item[1.3]<1-> \hyperlink{1_3_a}{\IcSubsectiontitle}	
+    \item[1.4]<1-> \hyperlink{1_4_a}{\IdSubsectiontitle}
+    \item[1.5]<1-> \hyperlink{1_5_a}{\IeSubsectiontitle}
+    \item[1.6]<1-> \hyperlink{1_6_a}{\IfSubsectiontitle}
+    \item[1.7]<1-> \hyperlink{1_7_a}{\IgSubsectiontitle}
+\end{itemize}
+
+\vspace{-1cm}
+\begin{itemize}[leftmargin=8.5cm,itemsep=2mm]
+    \item[1.8]<1-> \hyperlink{1_8_a}{\IhSubsectiontitle}
+	\item[1.9]<1-> \hyperlink{1_9_a}{\IiSubsectiontitle}
+	\item[1.10]<1-> \hyperlink{1_10_a}{\CDAlert[red]{\IjSubsectiontitle}}
+	\item[1.11]<1-> \hyperlink{1_11_a}{\IkSubsectiontitle}
+\end{itemize}
+
+%\endofslide 
+\end{frame}
+%%%%%%%%%%%%%%%
+
+\xdef\sectiontitle{\IjSubsectiontitle} 
+
+%%%%%%%%%%%%%%%
+\begin{frame}%[label=1_10_a]
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Energian tasanjakautumisen periaate}
+\appear{}
+
+\begin{itemize}[itemsep=1.6mm]
+	\item Selvitetään kuinka systeemit varastoivat energiaa mikrotasolla %internally 
+	\item \CDAlert[red]{Energian tasanjakautumisen periaate} kertoo että \appear{jokaisen} \appear{neliöllisesti E:sta riippuvan} \appear{muuttujan} \appear{jokainen vapausaste} $\appear{\textrm{((} E} \propto \appear{x^{2}} \appear{\textrm{))}} $\appear{, varastoi $\frac{1}{2} \appear{k_{B}} \appear{T}$} \appear{verran energiaa}\appear{:}\vspace{-0.5mm}
+\[
+<E>_{\text{yksi hiukkanen}}  \equal \frac{1}{2} \appear{k_{B} T} \,\appear{,} \qquad \appear{\textrm{per~vapausaste}}
+\] 
+\vspace{-0.5mm}
+\item Koko materiaalin sisäinen energia $U$ on tällöin
+\vspace{-0.5mm}
+\[
+U_{\text{per mooli}}  \equal \appear{N_{A}} \frac{1}{2} \appear{k_{B} T} \equal \frac{1}{2} \appear{R T} \appear{\,, \qquad \textrm{per~vapausaste}}
+\]
+\vspace{-0.5mm}
+\item Lämpökapasiteetti \Alert[fuchsia]{määritellään} joko massan tai moolin suhteen
+
+\item \CDAlert[blue]{Moolinen} \CDAlert[blue]{ominaislämpökapasiteetti} on muotoa \vspace{-10.5mm}
+\[
+\hspace{10.0cm} C_{V}  \equal \frac{\partial U_{\text {per mooli}}}{\partial T}
+\]
+\vspace{-1.0mm}
+\item Tasanjakautumisen periaate siis liittää $U$:n \appear{ja $T$:n} \appear{ja mahdollistaa ominaislämpökapasiteetin $C_{V}$ laskemisen}
+\end{itemize}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Kaasut}
+\appear{}
+
+\begin{minipage}{6.5cm}
+\small
+\begin{itemize}
+	% 6.5 cm = midway, 10 cm = 3/4 
+%\vspace{2.5mm}
+	\item \CDAlert[red]{Yksiatomisen kaasun molekyyleillä}\appear{,  on vain kolme translaatiosta johtuvaa vapausastetta} \appear{$(x, y, z)$} \appear{jolloin ominaislämpökapasiteetiksi saadaan} \vspace{-3mm}\implies[\small]{ Kineettinen $C_V$: $\quad C_{V}  \equal \appear{3} \appear{\cdot \frac{1}{2}} \appear{R}  \equal \frac{3}{2} \appear{R}$ }
+
+\item  \CDAlert[blue]{Kaksiatomisen kaasun molekyyleillä}\appear{, \Alert[blue]{rotaatiotilat} alkavat vaikuttamaan kor\-keammissa lämpötiloissa} \appear{(huoneenlämmössä)} \appear{kasvattaen systeemin vapausasteita kahdella} 
+
+\item Vielä korkeammissa lämpötiloissa \appear{(noin yli $1000 \mathrm{~K}$)} \appear{myös \CDAlert[fuchsia]{molekyylien vibraatiot} muodostuvat tärkeiksi}\appear{, kasvattaen vapausasteiden lukumäärää edelleen kahdella}
+
+\item Ominaislämpökapasiteetti voi siis saada arvoja \vspace{-1.5mm}
+\[
+C_{V}  \equal \frac{3}{2} \appear{R}\,\appear{,} \qquad \frac{5}{2}  \appear{R}\appear{\,,} \qquad \appear{\text{tai}} \qquad \frac{7}{2} \appear{R}
+\]
+\end{itemize}
+\end{minipage}
+
+\appear{\xdef\loc{south east}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.25*\figYshift,xshift=0.5*\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,width=7cm]{Figures_booklet/SOM_9_Statistical_mechanics_figures/SOM_Figure_28.png}}; %scale=\figscale. % 8cm max hei
+\end{tikzpicture}}
+
+\xdef\loc{north east}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=12,width=7cm]{Figures_booklet/SOM_9_Statistical_mechanics_figures/Tikz_SOM_Statistical_figures.pdf}}; %scale=\figscale. % 8cm max height
+\end{tikzpicture}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Harmonisten värähtelijöiden joukko}
+\appear{}
+
+\begin{itemize}[itemsep=1.7mm]
+	\item Kun \CDAlert[red]{vibraatiotilojen} \Alert[red]{vaikutusta kaasun ominaislämpökapasiteet-}\\ \Alert[red]{tiin lasketaan}\appear{, Boltzmannin jakauman integrointi antaa väärän vastauksen} \appear{(ehto} $\appear{E_{n+1}} \minus \appear{E_n} \appear{\ll} \appear{k_B T}$ \appear{ei päde)} 
+	
+	\item Meidän pitää summata tilojen yli: % (see Slide 8/2):
+\[
+<E>\,  \equal  \fracc{\nsum_{n=0}^{\infty} n \hbar \omega_{0} e^{-n \hbar \omega_{0} / k_{B} T}}{\nsum_{n=0}^{\infty} e^{-n \hbar \omega_{0} / k_{B} T}} \appear{=\ldots=} \fracc{\hbar \omega_{0}}{e^{\hbar \omega_{0} / k_{B} T}-1}
+\]
+
+\item Yhdelle moolille harmonisia värähtelijöitä
+\[
+U_{\text {per mooli}}^{(vib)}  \equal \appear{N_{A}} \fracc{\hbar \omega_{0}}{e^{\hbar \omega_{0} / k_{B} T}-1}
+\]
+
+\item[] joka derivoimalla saadaan (ominais)lämpökapasiteetti
+\[
+C_{V}^{(vib)}  \equiv \fracc{\partial U_\text{per mooli}^{(vib)}}{\partial T}
+ \equal \appear{N_{A} k_{B}} \fracc{ \textrm{((} \hbar \omega_{0} \textrm{))}^{2} \appear{e^{\hbar \omega_{0} / k_{B} T}} }{ \textrm{((} k_{B} T \textrm{))} ^{2}\appear{ \textrm{((} e^{\hbar \omega_{0} / k_{B} T}-1 \textrm{))} ^{2}} }
+\]
+\end{itemize}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Vibraatiotilojen vaikutus}
+\appear{}
+
+\begin{itemize}
+	\item \CDAlert[red]{Korkeissa T:ssa} $\appear{\textrm{((} k_{B} T} \appear{\gg} \appear{\hbar} \appear{\omega_{0}} \textrm{))} $\appear{, verrannollisuus } \Alert[red]{$\appear{<E>} \propto \appear{k_{B} T}$} \appear{tuntuu pätevän } \appear{(2 vibraatiovapausastetta)}%Fig 29(a)
+\appear{\xdef\loc{south east}%
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.25*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,width=8.5cm]{Figures_booklet/SOM_9_Statistical_mechanics_figures/SOM_Figure_29.png}};%scale=\figscale. % 8cm max hei
+\end{tikzpicture}}
+\item \CDAlert[blue]{Matalissa lämpötiloissa} \appear{$ \textrm{((} k_{B} T \ll \hbar \omega_{0} \textrm{))}$}\appear{, keskimääräinen energia \Alert[blue]{$<E>\,$ nousee nollasta hitaasti},} \appear{koska vain muutamilla molekyyleillä on tarpeeksi energiaa virittyä muulle kuin perustilalle}
+
+\item Kuvassa b hahmoteltu $C_{V}$ \appear{vastaa käytännössä $<E>\,$:n derivaattaa (kuva~a) }
+% 6.5 cm = midway, 10 cm = 3/4 
+\end{itemize}
+\vspace{2.5mm}
+
+\begin{minipage}{5cm} \small
+\begin{itemize}
+\item Muutos $C_{V}\appear{=0} \quad \Rightarrow \quad \appear{C_{V}=R}$ \appear{muistuttaa kuvaa~28}\appear{, missä kasvanut \Alert[fuchsia]{lämpötila mahdollistaa vibraatio\-ti\-lojen virittymisen}} 
+
+\item Tämä tapahtuu kun: \vspace{-3mm}
+\[
+k_{B} T  \equal \appear{0.3} \appear{\;...\; 0.5} \appear{\hbar \omega_{0}}
+\]
+
+%\item For hydrogen molecule $\omega_{0}=8.28 \times 10^{14} \mathrm{rad} / \mathrm{s}$, giving significant rise at $T=0.3 \frac{\hbar \omega_{0}}{k_{B}} \approx 1900 \mathrm{~K} .$ This agrees with Fig $28 .$
+\end{itemize}
+\end{minipage}
+
+
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Vibraatiotilojen vaikutus}
+\appear{}
+
+\begin{itemize}
+
+\item Vetymolekyylille \appear{resonanssienergia on $\omega_{0}=8,28 \cdot 10^{14}~\mathrm{rad} / \mathrm{s}$}\appear{, joka nostaa tarvittavan lämpötilan huomattavan korkealle} $\appear{T} \equal \appear{0,3} \frac{\hbar \omega_{0}}{k_{B}} \approx \appear{1900 \mathrm{~K}}$ 
+\item Tämä täsmää todella hyvin kuvan 28 kanssa
+
+\end{itemize}
+
+\xdef\loc{south}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.25*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,width=10.3cm]{Figures_booklet/SOM_9_Statistical_mechanics_figures/SOM_Figure_28.png}}; %scale=\figscale. % 8cm max hei
+\end{tikzpicture}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Kiinteä olomuoto}
+\appear{}
+
+\begin{itemize}
+	\item \CDAlert[red]{Kiinteissä aineissa}\appear{ atomit/elektronit eivät voi liikkua vapaasti}\appear{/pyöriä} 
+	\item Ne voivat  \CDAlert[red]{vain oskilloida/värähdellä kolmessa suunnassa} 
+	\item Koska yksiulotteisella värähtelijällä \appear{on kaksi vapausastetta}\appear{, kolmiulotteisella kiinteällä aineella on jo kuusi vapausastetta, johtaen} 
+\[
+C_{V}  \equal  \appear{6 \cdot} \frac{1}{2} \appear{R}  \equal \appear{3 R} \appear{\,,} \qquad \appear{\textrm{(dielektriset aineet)}}
+\]
+
+\item Sähköä johtavilla aineilla \appear{(esim.~metallit)}\appear{, \CDAlert[blue]{johtavuuselektronit} eivät ole sidoksissa atomien ytimiin}\appear{, vaan \CDAlert[tuniblue]{liikkuvat vapaasti kuten kaasussa}}
+
+\item Klassisesti ajatellen\appear{, johtavuuselektroneilla on \CDAlert[blue]{3 vapausastetta}}\appear{, joiden kuuluisi nostaa lämpökapasiteettia $C_V$} \appear{tekijällä $3 \times \Frac{1}{2}=1,5$}
+\implies{ johteiden lämpökapasiteetin pitäisi siis olla $\appear{C_{V}}  \equal  \appear{4,5 R}$ }
+\end{itemize}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Johtavuuselektronien vaikutus}
+\appear{}
+
+\begin{itemize}
+	\item Klassiset odotusarvot eivät vastaa mitattua todellisuutta  
+	
+	\item Monille kiinteille aineille, lämpökapasiteetin arvo on lähellä $3R$ \appear{(\CDAlert[red]{$C_V \Approx 3R$})}\appear{, \CDAlert[red]{sekä eristeillä että johteilla}}
+
+\item Elektronit ovat pakkautuneet alimmille energiatiloilleen\appear{, ja koska }% 6.5 cm = midway, 10 cm = 3/4 
+\end{itemize}
+%\vspace{-2.5mm}
+\begin{minipage}{6.4cm}
+\begin{itemize}
+\item[] huoneenlämmössä, arvo $k_{B} T$ on paljon pienempi kuin $E_{F}$\appear{, käytännössä vastaa lähes tilannetta $T=0$}
+
+\item Johteissa vain \Alert[blue]{pieni osuus elektroneista liikkuu}\appear{, aiheuttaen merkityksettömän pienen vaikutuksen lämpökapasiteettiin $C_V$}
+\end{itemize}
+\end{minipage}
+
+
+\xdef\loc{south east}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.25*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,width=7cm]{Figures_booklet/SOM_Tables/SOM_Statistical_Table_3.png}}; %scale=\figscale. % 8cm max hei
+\end{tikzpicture}
+
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Akustiset hilavärähtelyt eli fononit}
+\appear{}
+
+\begin{itemize}
+\item Kiinteän aineen atomit ovat vahvasti kytkeytyneet toisiinsa (ks.~kuva)
+
+\item Yhden atomin poikkeuttaminen \appear{poikkeuttaa myös naapuriatomeita} \appear{(jolloin koko kappale värähtelee)}
+\end{itemize}
+	 
+\vspace{2.3mm}
+\begin{itemize}
+	\item[] \begin{itemize}[itemsep=2.2mm] \small
+	\item Täytyy tarkastella \Alert[red]{kollektiivisia vibrationaalisia virityksiä}, ts.~aineessa eteneviä ääniaaltoja eli \CDAlert[red]{fononeita}
+	\item Fononit käyttäytyvät bosonikaasun tavoin 
+\end{itemize}
+\end{itemize}
+\begin{minipage}{7.8cm}
+\begin{itemize}
+	\item[] \begin{itemize}[itemsep=2.2mm] \small
+%	\item Täytyy tarkastella \Alert[red]{kollektiivisia vibrationaalisia virityksiä}, ts.~aineessa eteneviä ääniaaltoja eli \CDAlert[red]{fononeita}
+%	\item Fononit käyttäytyvät bosonikaasun tavoin 
+	\item Fononit toimivat atomivärähtelyjen bosonisina kvantteina
+	\item Fononin spin on nolla\appear{, ja se kuljettaa aineessa pienen määrän/kvantin energiaa} \appear{($\,h f \sim$10 meV)} 
+	\item Fononi ei ole oikea hiukkanen, samassa mielessä kuin fotoni on\appear{, vaan sitä kutsutaan \appear{\CDAlert[tunired]{'kollektiiviseksi viritykseksi'} tai\\ }\appear{\CDAlert[red]{'kvasihiukkaseksi'}} }  
+	\implies[\small]{ Fononeita on vain aineen sisällä }
+\end{itemize}
+
+%\item Vibrations in the solid may be treated as comprising of discrete phonons rather than diffuse waves
+\end{itemize}
+\end{minipage}
+
+\xdef\loc{south east}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.25*\figYshift,xshift=1*\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=13,width=6cm]{Figures_booklet/SOM_9_Statistical_mechanics_figures/Tikz_SOM_Statistical_figures.pdf}}; %scale=\figscale. % 8cm max height
+\end{tikzpicture}
+
+%\endofslide 
+\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%

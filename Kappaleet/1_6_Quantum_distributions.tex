@@ -1,0 +1,483 @@
+% !TEX root = ../bb_AiRa_Kappaleet.tex
+
+% ö = \%c3\%b6
+% ä = \%C3\%A4
+
+\xdef\sectiontitle{\Isectiontitle} %aiheuttama
+\TOCrefs
+
+%%%%%%%%%%%%%%%
+\begin{frame}[label=1_6_a]%[label=1_6_TOC1]
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\label{\TOCname}
+
+\vspace{-0.5cm}
+
+\begin{itemize}[leftmargin=0.5cm,itemsep=2mm]
+    \item[1.1]<1-> \hyperlink{1_1_a}{\IaSubsectiontitle}
+    \item[1.2]<1-> \hyperlink{1_2_a}{\IbSubsectiontitle}	
+    \item[1.3]<1-> \hyperlink{1_3_a}{\IcSubsectiontitle}	
+    \item[1.4]<1-> \hyperlink{1_4_a}{\IdSubsectiontitle}
+    \item[1.5]<1-> \hyperlink{1_5_a}{\IeSubsectiontitle}
+    \item[1.6]<1-> \hyperlink{1_6_a}{\CDAlert[red]{\IfSubsectiontitle}}
+    \item[1.7]<1-> \hyperlink{1_7_a}{\IgSubsectiontitle}
+\end{itemize}
+
+\vspace{-1cm}
+\begin{itemize}[leftmargin=8.5cm,itemsep=2mm]
+    \item[1.8]<1-> \hyperlink{1_8_a}{\IhSubsectiontitle}
+	\item[1.9]<1-> \hyperlink{1_9_a}{\IiSubsectiontitle}
+	\item[1.10]<1-> \hyperlink{1_10_a}{\IjSubsectiontitle}
+	\item[1.11]<1-> \hyperlink{1_11_a}{\IkSubsectiontitle}
+\end{itemize}
+
+%\endofslide 
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%\xdef\IbSubsectiontitle{Entropy and Temperature}
+\xdef\sectiontitle{\IfSubsectiontitle}
+
+%%%%%%%%%%%%%%%
+\begin{frame}%[label=1_6_a]
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Hiukkasten erotettavuus}
+
+\appear{}
+\begin{itemize}[itemsep=7.5mm]
+	\item Tähän asti on tarkasteltu \CDAlert[red]{klassisesti käyttäytyviä} hiukkasia\appear{, jotka ovat identtisiä mutta \Alert[red]{erotettavissa} toisistaan} 
+	\item Todennäköisyysjakauma \appear{(tietylle energialle ja lämpötilalle)} \appear{johdettiin muotoon:}
+\[
+P \textrm{((} E_{n} \textrm{))}  \equal  \appear{A e^{-E_{n} / k_{B} T}}  \equal \frac{e^{-E_{n} / k_{B} T}}{\nsum_{n} e^{-E_{n} / k_{B} T}}  \equal \frac{1}{\nsum_{n} e^{-E_{n} / k_{B} T}} \frac{1}{e^{E_{n} / k_{B} T}}  \equal \frac{1}{B e^{E_{n} / k_{B} T}}  \equal \frac{1}{e^{\alpha} e^{E_{n} / k_{B} T}}
+\]
+
+\item Kun jakauma johdettiin\appear{, tarkastelimme yksittäistä energian $E_{n}$ omaavaa hiukkasta} \appear{ja laskimme \CDAlert[blue]{monellako tapaa}} \appear{jäljelle jäävä \Alert[blue]{energia voidaan jakaa} muiden hiukkasten kesken}
+
+%\item \appear{We implicitly assumed that e.g. the case $n_{j}=5$ and $n_{k}=2$ for particles $j$ and $k$ was one way}\appear{, and the case $n_{j}=2$ and $n_{k}=5$ for particles $j$ and $k$ was another way}\appear{, a different way} 
+%
+%\item So we assumed that switching the labels of any two particles yielded a different way. We assumed that the particles were distinguishable
+%
+%\item If particles are indistinguishable, those two ways mentioned above are not different ways!
+\end{itemize}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}%[label=1_6_a]
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Hiukkasten erotettavuus}
+
+\appear{}
+\begin{itemize}[itemsep=7.5mm]
+	
+	\item \appear{Oletimme implisiittisesti että esim. vaihtoehto $n_{j}=5$ ja $n_{k}=2$ hiukkasille $j$ ja $k$ oli yksi tapa}\appear{, ja vaihtoehto $n_{j}=2$ ja $n_{k}=5$ hiukkasille $j$ ja $k$ oli toinen tapa}\appear{, erilainen tapa jakaa systeemin energia} 
+
+\item Eli oletimme että hiukkasten indeksien muuttaminen vastaa erilaista tapaa jakaa energia (on fysikaalisesti järkevää)
+\implies{ \CDAlert[red]{Hiukkasten oletettiin olevan erotettavissa toisistaan} }
+
+\item Jos hiukkasia ei voida \CDAlert[blue]{erottaa toisistaan}\appear{, yllä olevat kaksi tapaa \CDAlert[tuniblue]{eivät ole eri tapoja}!}
+\end{itemize}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{4:n hiukkasen tapaus}
+
+\appear{}
+\begin{itemize}
+	\item Tarkastellaan yksinkertaista \Alert[red]{neljän hiukkasen} tapausta \appear{$a$}\appear{, $b$}\appear{, $c$}\appear{ ja $d$}\appear{, joita sitoo harmonisen värähtelijän potentiaalienergia.} \appear{Oletamme energian perustilan olevan 0}\appear{, jolloin hiukkasten energiatiloiksi saadaan} 
+	\[ 
+	E_{i}  \equal  \appear{n_{i}} \appear{\hbar \omega_{0}}  \equal \appear{n_{i} \delta E} \,\qquad \appear{(n_{i}=0,1,2, \ldots )}
+	\]
+
+\item Tarkastellaan tilannetta jossa systeemin kokonaisenergia on $2 \delta E$\appear{, eli $\appear{n_{a}} \appear{+n_{b}} \appear{+n_{c}+n_{d} }  \equal \appear{2}$}
+
+\end{itemize} 
+\vspace{3mm}
+\begin{minipage}{3.0cm}
+\begin{itemize}
+	\item Kuinka systeemin\\
+		energia voidaan \\
+		ja\-kaa hiuk\-kasten kesken?
+\end{itemize}
+
+\end{minipage}
+ 
+\xdef\loc{south east}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.25*\figYshift,xshift=1*\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,height=4.7cm]{Figures_booklet/SOM_Tables/SOM_Statistical_Table_1.png}}; %scale=\figscale. % 8cm max height
+\end{tikzpicture}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{4:n hiukkasen tapaus}
+\appear{}
+\begin{itemize}[itemsep=1.6mm]
+	\item Olemme nyt ottaneet huomioon kuinka monta kertaa kvanttiluvut ovat ilmaantuneet\appear{, yhteensä 40.} \appear{Luvut siis normeerataan} \appear{jotta saisimme todennäköisyysjakauman, eli vaadimme että on voimassa}
+\[
+\nsum P_{i}  \equal \appear{1}
+\]
+\item Todennäköisyydet on lopuksi kerrottu 4:llä että saamme todennäköisen\\
+\end{itemize}  
+% 6.5 cm = midway, 10 cm = 3/4 
+%\vspace{2.5mm}
+\begin{minipage}{7.05cm}
+\begin{itemize}[itemsep=1.6mm]
+\item[] \appear{hiukkaslukumäärän (joista jokaisella on omat kvanttilukunsa)}\appear{, summaksi tulee nyt 4}\appear{, ts. yhteensä 4 hiukkasta}
+
+	\item Huomio: Todennäköinen hiukkas\-luku\-määrä tietyllä tilalla pienenee energian kasvaessa 
+\end{itemize}
+\end{minipage}
+
+\xdef\loc{south east}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.1*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=6,height=5.25cm,angle=90,origin=c]{Figures_booklet/SOM_9_Statistical_mechanics_figures/Tikz_SOM_Statistical_figures.pdf}}; %scale=\figscale. % 8cm max height
+\end{tikzpicture}
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Ei-erotettavat hiukkaset}
+\appear{}
+\begin{itemize}
+	\item Kvanttimekaanisten hiukkasten aaltoluonteen takia\appear{, ja \CDAlert[red]{Heisenbergin epätarkkuusperiaatteen takia}}\appear{, menetämme mahdollisuuden erottaa yksittäisiä hiukkasia}
+
+\item Esimerkiksi kuvassa%
+\appear{\xdef\loc{south east}%
+\begin{tikzpicture}[remember picture,overlay]% anchor=south
+    \node (A) [yshift=-0.25*\figYshift,xshift=0*\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=7,width=7.5cm]{Figures_booklet/SOM_9_Statistical_mechanics_figures/Tikz_SOM_Statistical_figures.pdf}};%
+\end{tikzpicture}%
+}%
+\appear{, emme pysty määrittämään mikä neljästä vaihtoehdosta} \appear{tapahtui kun kaksi identtistä \CDAlert[blue]{ei-erotettavaa hiukkasta} käyvät de Broglien aallonpituuden etäisyydellä toisistaan}
+\end{itemize}
+\vspace{3mm}
+
+\begin{minipage}{6.5cm}
+\begin{itemize}
+	\item \CDAlert[blue!90!black]{Hiukkasia ei voida indeksöidä}\appear{, ja toisistaan oikeasti \Alert[blue]{eroavat tilat eroavat toisistaan vain kun} \CDAlert[blue!90!black]{erisuuri määrä} \Alert[blue]{hiukkasia on \CDAlert[blue!90!black]{toisistaan poikkeavilla} \Alert[blue]{energiatiloilla}}}
+\end{itemize}
+\end{minipage}
+
+
+%\xdef\loc{south east}
+%\begin{tikzpicture}[remember picture,overlay] % anchor=south
+%    \node (A) [yshift=-0.25*\figYshift,xshift=0*\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,width=7.5cm]{Figures_booklet/SOM_todo_figures/SOM_SSP_Figure_10.png}}; %scale=\figscale. % 8cm max height
+%\end{tikzpicture}
+
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Bosonit vs. fermionit}
+\appear{}
+\begin{itemize}
+	\item Kvanttimekaniikasta muistamme että aaltofunktioiden täytyy toteuttaa seuraavat ehdot:
+
+\item[] \Alert[red]{Bosonit}: {\small \appear{Identtisten bosonien aaltofunktioiden täytyy olla symmetrisiä kahden bosonin vaihdon suhteen.} \appear{Oletetaan kaksi identtistä bosonia yksihiukkastiloissa} \appear{$n$} \appear{ja $n'$} \appear{ja kuvataan näitä tiloja aaltofunktioilla $\psi_{n}$} \appear{ja $\psi_{n'}$.} \appear{Jos merkitsemme bosonit 1 ja 2}\appear{, yhdistetyn kahden hiukkasen systeemin tilaa} \appear{kuvataan aaltofunktiolla joka on muotoa $\psi_{n}(1) \psi_{n'}(2)$.}
+\appear{ Mutta koska hiukkaset ovat erottamattomia}\appear{, voisimme kirjoittaa systeemin aaltofunktion muotoon $\psi_{n}(2) \psi_{n'}(1)$.} \appear{Emme voi tietää onko bosoni 1 (vai 2) tilalla $n$ vai $n'$.} \appear{\CDAlert[tunired]{Koko systeemin aaltofunktion} täytyy olla symmetrinen:}}
+\[
+\psi_{B E}(1,2)  \equal \appear{\psi_{S}}  \equal \appear{\psi_{n}(1) \psi_{n'}(2)}  \plus \appear{\psi_{n'}(1) \psi_{n}(2)} \, \qquad \appear{(\Alert[red]{symmetrinen})}
+\]
+
+\item[] \Alert[blue]{Fermionit}: {\small \appear{Identtisten fermionien}\appear{ aaltofunktion pitää olla antisymmetrinen:}} 
+\[
+\quad \psi_{F D}(1,2)  \equal \appear{\psi_{A}}  \equal \appear{\psi_{n}(1) \psi_{n^{\prime}}(2)}  \minus \appear{\psi_{n'}(1) \psi_{n}(2)} \, \qquad \appear{(\text{\Alert[blue]{antisymmetrinen}})}
+\]
+\end{itemize}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Bosonit vs. fermionit}
+\appear{}
+\begin{itemize}
+	\item \appear{On siis olemassa kahdenlaisia erottamattomia hiukkasia:} \appear{\CDAlert[red]{bosonit} (joiden \CDAlert[tunired]{spin on kokonaisluku})} \appear{ja \CDAlert[blue]{fermionit} (joiden \CDAlert[tuniblue]{spin on kokonaisluvun puolikas}).} \appear{Tarkastellaan vielä neljän hiukkasen tilaa, jonka kokonaisenergia on $2 \delta E$}
+	\item \appear{Katsomalla taulukkoa 2}%
+	\appear{\xdef\loc{south}%
+\begin{tikzpicture}[remember picture,overlay]% anchor=south
+    \node (A) [yshift=-0.25*\figYshift,xshift=0*\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,width=14.5cm]{Figures_booklet/SOM_Tables/SOM_Statistical_Table_2.png}};%scale=\figscale. % 8cm max height
+\end{tikzpicture}}%
+\appear{, nähdään että tavat jakaa energia selkeästi riippuvat hiukkasten tyypistä!}
+\end{itemize}
+	
+
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Todennäköisyysjakaumat}
+\appear{}
+\begin{itemize}
+	\item Todennäköinen hiukkaslukumäärä edelleen pienenee energian funktiona 
+\end{itemize}
+
+% 6.5 cm = midway, 10 cm = 3/4 
+\begin{minipage}{7.5cm}
+\begin{itemize}
+	\item \CDAlert[red]{Bosonit} selkeästi tykkäävät toisistaan. \appear{Yleisestikin ottaen käy niin että kun bosoni on jollain kvanttitilalla}\appear{, tämä kasvattaa todennäköisyyttä että toinen identtinen bosoni on samalla kvantti\-tilalla}
+
+\item Erottamattomat \CDAlert[blue]{fermionit} \appear{(\Alert[tuniblue]{$s=1/2$})}\appear{, eivät puolestaan voi olla samalla kvanttitilalla.} \appear{Eli fermionin miehittäessä tietyn kvanttitilan}\appear{, toiset fermionit eivät voi olla tällä samalla kvanttitilalla}
+\end{itemize}
+
+\end{minipage}
+	 
+
+\xdef\loc{south east}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.25*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,height=7cm]{Figures_booklet/SOM_9_Statistical_mechanics_figures/SOM_Figure_9.png}}; %scale=\figscale. % 8cm max height
+\end{tikzpicture}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Todennäköisyysjakaumat}
+\appear{}
+\begin{itemize}
+	\item Toisistaan erotettavissa olevilla hiukkasilla\appear{, tilanteista riippuvat todennäköisyysjakaumat konvergoituvat Boltzmannin jakaumaa kohti}
+
+\item Kvanttimekaanisilla hiukkasilla \CDAlert[fuchsia]{(toisistaan erottamattomia)}\appear{, jakaumat konvergoivat kohti erilaisia jakaumia:}
+\item[] \begin{itemize}[itemsep=2.5mm]
+	\item \Alert[red]{Bosonit} $\rightarrow$ \appear{\CDAlert[red]{Bosen–Einsteinin jakauma} }
+	\item \Alert[blue]{Fermionit} $\rightarrow$ \appear{\CDAlert[blue]{Fermin–Diracin jakauma}}
+\end{itemize}
+
+\[
+\begin{aligned}
+\mathbb{N}(E) & \equal  \frac{1}{B e^{E / k_{\mathrm{B}} T}} \appear{\,,} \qquad \appear{Boltzmann~(erotettavat)} \\
+\appear{\mathbb{N}(E)} & \equal  \frac{1}{B e^{E / k_{\mathrm{B}} T}-1} \appear{\,,} \qquad \appear{Bose–Einstein~(bosonit)} \\
+\appear{\mathbb{N}(E)} & \equal  \frac{1}{B e^{E / k_{\mathrm{B}} T}+1} \appear{\,,} \qquad \appear{Fermi–Dirac~(fermionit)}
+\end{aligned}
+\]
+
+\end{itemize}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Jakaumien lämpötilariippuvuus}
+\appear{}
+\begin{itemize}
+	\item Suoritetaan esimerkkilaskuja näillä kolmelle jakaumalle käyttäen yksinkertaista \CDAlert[fuchsia]{yksiulotteista värähtelijää mallisysteeminä} \appear{(lisää kurssin esimerkeissä)}
+		
+	\item \CDAlert[red]{Muutetaan lämpötilaa} \appear{ja määritellään referenssilämpötila sellaiseksi että $k_{B} T$ on lähellä erästä energian arvoa $\mathcal{E}$.} \appear{Implisiittisesti oletetaan että $\mathcal{E}$ on korkein energia jolla hiukkaset voivat olla, jos hiukkaset täyttäisivät kaikki yksihiukkastilat} \appear{(eli $\mathcal{E}=$~\CDAlert[blue]{fermienergia})}
+	
+	\item Suoritetaan lasku \Alert[red]{kolmelle eri lämpötilalle}:
+	\item[] \begin{itemize}
+		\item $k_{B} T=\Frac{1}{5} \mathcal{E}$ \qquad \appear{matala lämpötila}
+		\item $k_{B} T=\mathcal{E}$ \qquad  \appear{keskisuuri lämpötila}
+		\item $k_{B} T=5 \varepsilon$ \qquad  \appear{suuri lämpötila}
+	\end{itemize}
+
+\end{itemize}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Jakaumien lämpötilariippuvuus}
+\appear{}
+% 6.5 cm = midway, 10 cm = 3/4 
+\begin{minipage}{9.5cm}
+\begin{itemize}
+	\item Saadut kuvaajat kertovat miehitysluvut $\mathbb{N}$ \appear{jotka käyttäytyvät kuten aiemmassa 4:n hiukkasen tapauksessa:}
+	\item[] {\normalsize $k_{B} T=5 \mathcal{E} \quad$ (korkea lämpötila) }
+	\begin{itemize}
+		\scriptsize
+		\item Korkealla $T$:llä\appear{, \CDAlert[red]{kaikki kolme jakaumaa selvästikin levenevät} samalla tapaa.} \appear{Sillä ei ole merkitystä ovatko hiukkaset bosoneita}\appear{, fermioneita} \appear{vai klassisesti erotettavissa olevia hiukkasia} 
+	\end{itemize}
+
+\item[] {\normalsize $k_{B} T=\mathcal{E} \quad$ (keskisuuri T) }
+\begin{itemize}
+\scriptsize
+\item Keskisuurella $T$:llä\appear{, meillä on aika samanlaiset jakaumat}\appear{, Bose–Einstein on klassisen jakauman alapuolella keskisuurilla energiatasoilla}
+\end{itemize}
+
+\item[] {\normalsize $ k_{B} T=\Frac{1}{5} \mathcal{E} \quad \text { (matala lämpötila) }$ }
+	\begin{itemize}
+	\scriptsize
+	\item Matalissa $T$:ssa\appear{, \CDAlert[blue]{Bose–Einstein} on selkeästi korkeammalla kuin Boltzmann matalilla energian arvoilla}\appear{, eli bosonit pakkautuvat matalimmille energiatiloille}
+	\item Fermi–Dirac muodostaa kummun noin $\mathcal{E}$ arvoon asti \CDAlert[red]{(fermienergia)} 
+	\end{itemize}
+\end{itemize}
+\end{minipage}
+
+\xdef\loc{east}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=0cm,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,height=8cm]{Figures_booklet/SOM_9_Statistical_mechanics_figures/SOM_Figure_10.png}}; %scale=\figscale. % 8cm max height
+\end{tikzpicture}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Jakaumien lämpötilariippuvuus}
+\appear{}
+\begin{itemize}
+	\item \CDAlert[red]{Korkeilla lämpötiloilla} \appear{$k_{B} T \gg \mathcal{E}$} \appear{sekä bosonit että fermionit käyttäytyvät lineaarisesti} \appear{$<E>\,=k_{B} T$} \appear{seuraavat klassista tulosta}\appear{ (\CDAlert[red]{erotettavuus ei ole tärkeää näillä lämpötiloilla})}
+\end{itemize}
+\vspace{3mm}
+\appear{\xdef\loc{south east}%
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.25*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,width=5.5cm]{Figures_booklet/SOM_9_Statistical_mechanics_figures/SOM_Figure_11.png}};%scale=\figscale. % 8cm max height
+\end{tikzpicture}%
+}%
+\begin{minipage}{8cm}
+\begin{itemize}
+	\item Energia on matalampi bosoneilla \appear{(jotka pakkautuvat pienemmille energiatiloille)}
+\item Energia on korkeampi fermioneilla \appear{(jotka välttelevät jo täytettyjä matalamman ener\-gian tiloja)}
+\item Matalilla $T$:lla\appear{, bosonien keskimääräinen energia lähestyy nollaa}\appear{, kun taas fermionien energia lähestyy $\Frac{1}{2} \mathcal{E}$}
+\item Matalassa $T$:ssä\appear{, bosonit alkavat relaksoitua perustilalleen} \appear{$\Rightarrow$} \appear{\CDAlert[blue]{supraneste}}
+\end{itemize}
+\end{minipage}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Matalat lämpötilat}
+\appear{}
+\begin{itemize}[itemsep=1.65mm]
+	\item Kuva 10 näytti Fermin–Diracin jakauman miehitysluvun $\mathbb{N}$, \appear{matalassa}\\ 
+\end{itemize} 
+%\vspace{3mm}
+\begin{minipage}{7.85cm}
+\begin{itemize}[itemsep=1.65mm]
+	\item[] lämpötilassa luku lähestyy 1:tä \appear{kun $E<\mathcal{E}$} \appear{ja putoaa nollaan kun $E>\mathcal{E}$} 
+	\item Energia $\mathcal{E}$ tunnetaan \CDAlert[red]{fermienergiana $E_{F}$} 
+	
+	\item Fermienergia on seurausta siitä että \CDAlert[tunired]{fermionisen systeemin}\appear{ kaikki tilat ovat täysin miehitettyjä tähän energian arvoon asti} \appear{T = 0 K lämpötilassa} \appear{(kuva 12)}
+	\appear{\xdef\loc{south east}%
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.25*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,width=5.5cm]{Figures_booklet/SOM_9_Statistical_mechanics_figures/SOM_Figure_12.png}};%scale=\figscale. % 8cm max height
+\end{tikzpicture}}
+\item $E_{F}$ määritellään %\CDAlert[red]{lämpötilassa} 
+\CDAlert[red]{$T=0\;K$:ssa} relaatiolla
+\[
+\mathbb{N} \textrm{((} E_{F} \textrm{))}_{F D}  \equal \frac{1}{B e^{E_{F} / k_{B} T}+1}  \equiv \frac{1}{2} \quad \appear{\Rightarrow} \quad \appear{B=e^{-E_{F} / k_{B} T}}
+\]
+\item[] Eli \vspace{-7mm}
+
+\[
+\mathbb{N}(E)_{F D}  \equal  \frac{1}{e^{ \textrm{((} E-E_{F} \textrm{))}  / k_{B} T}+1}
+\]
+\end{itemize}
+\end{minipage}
+
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Fermitaso}
+\appear{}
+\begin{itemize}[itemsep=1.3mm]
+	\item On nähty että kun $T \rightarrow \appear{0}$\appear{, Fermin–Diracin (FD) jakauma alkaa näyttämään askelfunktiolta}
+	\appear{\xdef\loc{south}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.00*\figYshift,xshift=0*\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=8,width=14cm]{Figures_booklet/SOM_9_Statistical_mechanics_figures/Tikz_SOM_Statistical_figures.pdf}}; %scale=\figscale. % 8cm max height
+\end{tikzpicture}}
+	\item Terminologia on epäselvähkö\appear{/monikäsitteinen}\appear{, joissakin lähteissä \CDAlert[blue]{fermienergia} vastaa miehitystasoa $\mathbb{N}(E)_{F D}=1/2$} \appear{\CDAlert[blue]{nollan kelvinin} \CDAlert[blue]{lämpötilassa ($T=0$\;K)}}
+	\item Termillä \CDAlert[red]{fermitaso} puolestaan vastaa  miehityslukua $\mathbb{N}(E)_{F D}=1/2$ \CDAlert[red]{äärellisessä lämpötilassa}
+\end{itemize}
+
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Fermitaso vs. fermienergia, fermikaasu}
+\appear{}
+\begin{itemize}[itemsep=1.7mm] 
+	\item Fermitaso/energia $E_{F}$  \appear{on käytännössä vain \Alert[blue]{tapa kuvata normeerausvakiota $B$}}\appear{, mikä on oikeasti lämpötilariippuvainen}
+	
+\item Eli käytännössä fermitaso \Alert[red]{$E_{F}$} nousee hieman lämpötilan funktiona fermienergian arvosta \Alert[blue]{$E_{F0}$}. \appear{Kun fermitasosta puhutaan, yleensä tarkoitetaan lämpötilaa $T \approx \appear{0}$}\appear{, ja fermitason voidaan ajatella olevan vakioarvoinen} \appear{(eli $E_{F} \Approx E_{F0}$)}
+\end{itemize}
+
+% 6.5 cm = midway, 10 cm = 3/4 
+\vspace{2.5mm}
+\begin{minipage}{6.5cm}
+\begin{itemize}[itemsep=1.7mm]
+	\item Monet fysiikassa tärkeät fermioniset systeemit \appear{(\Alert[tunired]{johtavuuselektronien kaasu} jne.)} \appear{ovat kaukana MB-raja-arvoa} \appear{$T \rightarrow \appear{0}$} \appear{(ne ovat usein tiheitä ja voimakkaasti dege\-ne\-roituneita)}
+	\item[] \begin{itemize} \normalsize
+	 \item \CDAlert[red]{Systeemejä täytyy tarkastella} \CDAlert[red]{kvanttimekaanisesti}
+\end{itemize}
+\end{itemize}
+\end{minipage}
+
+
+\xdef\loc{south east}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.25*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,width=7cm]{Figures_booklet/SOM_9_Statistical_mechanics_figures/SOM_Figure_13.png}}; %scale=\figscale. % 8cm max height
+\end{tikzpicture}
+
+%\endofslide 
+\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+

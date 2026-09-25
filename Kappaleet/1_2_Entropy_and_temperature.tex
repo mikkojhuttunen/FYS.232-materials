@@ -1,0 +1,170 @@
+% !TEX root = ../bb_AiRa_Kappaleet.tex
+
+% ö = \%c3\%b6
+% ä = \%C3\%A4
+
+\xdef\sectiontitle{\Isectiontitle} %aiheuttama
+\TOCrefs
+
+%%%%%%%%%%%%%%%
+\begin{frame}[label=1_2_a]%[label=1_2_TOC1]
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\label{\TOCname}
+
+\vspace{-0.5cm}
+
+% can we simply override the appearing of items when needed with <1-> etc.
+\begin{itemize}[leftmargin=0.5cm,itemsep=2mm]
+    \item[1.1]<1-> \hyperlink{1_1_a}{\IaSubsectiontitle}
+    \item[1.2]<1-> \hyperlink{1_2_a}{\CDAlert[red]{\IbSubsectiontitle}}	
+    \item[1.3]<1-> \hyperlink{1_3_a}{\IcSubsectiontitle}	
+    \item[1.4]<1-> \hyperlink{1_4_a}{\IdSubsectiontitle}
+    \item[1.5]<1-> \hyperlink{1_5_a}{\IeSubsectiontitle}
+    \item[1.6]<1-> \hyperlink{1_6_a}{\IfSubsectiontitle}
+    \item[1.7]<1-> \hyperlink{1_7_a}{\IgSubsectiontitle}
+\end{itemize}
+
+\vspace{-1cm}
+\begin{itemize}[leftmargin=8.5cm,itemsep=2mm]
+    \item[1.8]<1-> \hyperlink{1_8_a}{\IhSubsectiontitle}
+	\item[1.9]<1-> \hyperlink{1_9_a}{\IiSubsectiontitle}
+	\item[1.10]<1-> \hyperlink{1_10_a}{\IjSubsectiontitle}
+	\item[1.11]<1-> \hyperlink{1_11_a}{\IkSubsectiontitle}
+\end{itemize}
+
+%\endofslide 
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%\xdef\IbSubsectiontitle{Entropy and Temperature}
+\xdef\sectiontitle{\IbSubsectiontitle} 
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Entropia}
+
+\appear{}
+\begin{itemize}[itemsep=1.9mm]
+	\item \CDAlert[red]{Entropia $S$} on suure joka on verrannollinen  \CDAlert[tunired]{'eri tapojen' $W$} logaritmiin \appear{(ts. \CDAlert[red]{multiplisiteetin $\Omega$} logaritmiin).} \appear{Boltzmannin vakio $k_B$ määrittelee entropian $S$ yksiköt}
+	\[
+S  \equal \appear{k_{B} \appear{\ln W}} \qquad \appear{\&} \qquad \appear{S}  \equal  \appear{k_{B} \appear{\ln \Omega}} \qquad \appear{\&} \qquad \appear{[S]=\frac{J}{K}}
+\]
+
+\item Aiemmin näimme että systeemi pyrkii \CDAlert[blue]{kehittymään kohti} \CDAlert[blue]{tasapainotilaa}\appear{, ts. kohti suurinta $W$:n arvoa}
+
+\item \CDAlert[red]{Termodynamiikan toisen pääsäännön} mukaan\appear{, (suljetun systeemin) entropia kasvaa: }
+\[
+\Delta S \appear{\geq 0}
+\]
+\appear{Tarkastellaan tilojen lukumäärää $W$:} 
+\[
+\Delta S  \equal \appear{S_{f}}  \minus \appear{S_{i}}  \equal \appear{k_{B} \textrm{[[} } \appear{\ln W_{f}} \appear{-\ln W_{i} \textrm{]]}}  \equal \appear{k_{B} \ln \frac{W_{f}}{W_{i}} }
+\]
+
+\end{itemize}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Entropia suljetussa systeemissä}
+
+\appear{}
+\appear{\footnote{{Kertaa eristetyn, \Alert[red]{suljetun}, ja avoimen systeemin määritelmät.}}}
+	% 6.5 cm = midway, 10 cm = 3/4 
+\begin{minipage}{8.5cm}
+\begin{itemize}
+	\item Tarkastellaan kahta kappaletta\appear{, 1 ja 2}\appear{, \CDAlert[red]{termisessä} \CDAlert[red]{kontaktissa}.} \appear{Lämpöä siirtyy ja entropia muuttuu:}
+\[ 
+ d S_{t o t} \equal \appear{d S_{1} } \appear{+ d S_{2}} 
+ \] \vspace{-4mm}
+\item Oletetaan että entropia muuttuu vain energianmuutoksen takia \appear{(ok, jos vain lämpö} 
+\end{itemize}
+\end{minipage}
+\vspace{-0mm}
+\begin{itemize}
+\item[] siirtyy, ei esim. hiukkaset)\appear{, joten $S=S(E)$,~jolloin}%\EMPH{Eristetyn}{https://fi.wikipedia.org/wiki/Systeemi_(termodynamiikka)}
+\[ 
+ d S \equal  \appear{\bigg(} \frac{\partial S}{\partial E} \appear{\bigg)} \,\appear{d E} 
+ \] \vspace{-2mm}
+\item Eli $\appear{d S_{t o t} =} \appear{\textrm{((} \frac{\partial S}{\partial E}} \appear{\textrm{))}_{2}} \appear{d E_{2}}  \plus  \appear{\textrm{((} } \frac{\partial S}{\partial E} \appear{\textrm{))}_{1}} \appear{d E_{1}}$\appear{,
+ja koska energiaa siirtyy vain kappaleiden 1 ja 2 välillä}\appear{, ehto $d E_{1}=-d E_{2}$ johtaa yhtälöön}
+\[ 
+ d S_{tot} \equal   \LB   \appear{\bigg( \frac{\partial S}{\partial E}  \bigg)_{2}} \minus  \appear{\bigg( \frac{\partial S}{\partial E}  \bigg)_{1}}  \;\RB \appear{d E_{2}}
+ \]
+\end{itemize}
+
+\xdef\loc{north east}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=1*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,width=4.8cm]{Figures_booklet/SOM_9_Statistical_mechanics_figures/SOM_Figure_4.png}}; %scale=\figscale. % 8cm max hei
+\end{tikzpicture}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Lämpötilan ja entropian yhteys}
+
+\appear{}
+\begin{itemize}
+	\item \CDAlert[tunired]{Tasapainossa kappaleilla on sama lämpötila}
+
+\item Tiedämme myös että tasapainotilassa\appear{ entropia $S$ ei enää kasva}\appear{, eli $d S_{t o t}=0$} \appear{mistä seuraa} 
+\[ 
+  \bigg(  \Frac{\partial S}{\partial E}  \bigg)_{2} \equal  \appear{ \bigg( \Frac{\partial S}{\partial E}  \bigg)_{1}} 
+ \]
+\item Tämä ehto johtaa näppärään lämpötilan määritelmään: 
+
+\item[] \begin{itemize}
+	\item Tasapainossa lämpötilat $\appear{T_1}  \equal  \appear{ T_2} \equiv \appear{T}$ 
+	\item  \CDAlert[red]{Lämpötila $T$ voidaan siis määritellä} yhtälöllä 
+	 \[
+	 \frac{1}{T} \equiv \appear{\bigg(} \frac{\partial S}{\partial E} \appear{\bigg)\,,} \qquad \appear{\,\textrm{~missä}} \qquad \appear{S}  \equal \appear{k_{B} \ln W}
+	 \]
+\end{itemize}
+\end{itemize}
+ 
+ 
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+
+\appear{}
+\begin{itemize}	
+\item \CDAlert[blue]{Mitä tarkoittaa entropian $S$ derivaatta energian $E$ suhteen?} 
+\begin{itemize}
+	\item Fysikaalisessa systeemissä tilojen lukumäärä \appear{($W$)} \appear{riippuu energiasta} \appear{(suurempi energia, suurempi multiplisiteetti).} \appear{Fysikaalisesti järkevää derivoida}
+\end{itemize}
+ 
+
+\item Usein $W=W(E)$ \appear{eli myös entropia $S=S(E)$}
+\item Koska energian muutos $dE$ \appear{on kappaleiden välillä siirtyneen lämmön määrä} \appear{($dE=dQ$)}\appear{,  saadaan}
+\[
+	 \Frac{1}{T}  \equal   \frac{\partial S}{\partial E}  \qquad \Rightarrow \qquad \appear{dS}  \equal  \frac{dQ}{T} 
+	 \]
+\appear{minkä avulla \CDAlert[red]{entropian muutokselle $\Delta S$} saadaan relaatio}
+\[ 
+ \Delta S  \equal \appear{S_{2}}  \minus  \appear{S_{1}} \equal \appear{\nint_{i}^{f}} \frac{d Q}{T} 
+ \]
+
+\end{itemize}
+ 
+%\endofslide 
+\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+

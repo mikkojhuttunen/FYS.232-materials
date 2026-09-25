@@ -1,0 +1,463 @@
+% !TEX root = ../aa_SoM_Chapters.tex
+
+% ö = \%c3\%b6
+% ä = \%C3\%A4
+
+\xdef\sectiontitle{\Isectiontitle} %aiheuttama
+
+%%%%%%%%%%%%%%%
+\begin{frame}[label=1_6_a]%[label=1_6_TOC1]
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+
+\vspace{0.5cm}
+
+\begin{itemize}[leftmargin=0.5cm,itemsep=2mm]
+    \item[1.1]<1-> \hyperlink{1_1_a}{\IaSubsectiontitle}
+    \item[1.2]<1-> \hyperlink{1_2_a}{\IbSubsectiontitle}	
+    \item[1.3]<1-> \hyperlink{1_3_a}{\IcSubsectiontitle}	
+    \item[1.4]<1-> \hyperlink{1_4_a}{\IdSubsectiontitle}
+    \item[1.5]<1-> \hyperlink{1_5_a}{\IeSubsectiontitle}
+    \item[1.6]<1-> \hyperlink{1_6_a}{\Alert[red]{\IfSubsectiontitle}}
+    \item[1.7]<1-> \hyperlink{1_7_a}{\IgSubsectiontitle}
+\end{itemize}
+
+\vspace{-1cm}
+\begin{itemize}[leftmargin=9.5cm,itemsep=2mm]
+    \item[1.8]<1-> \hyperlink{1_8_a}{\IhSubsectiontitle}
+	\item[1.9]<1-> \hyperlink{1_9_a}{\IiSubsectiontitle}
+	\item[1.10]<1-> \hyperlink{1_10_a}{\IjSubsectiontitle}
+	\item[1.11]<1-> \hyperlink{1_11_a}{\IkSubsectiontitle}
+\end{itemize}
+
+\endofslide \end{frame}
+%%%%%%%%%%%%%%%
+
+%\xdef\IbSubsectiontitle{Entropy and Temperature}
+\xdef\sectiontitle{\IfSubsectiontitle}
+
+%%%%%%%%%%%%%%%
+\begin{frame}%[label=1_6_a]
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+test
+\begin{itemize}[itemsep=7.5mm]
+	\item In the above we discussed \CDAlert[red]{classical particles}\appear{, which were identical but \CDAlert[red]{distinguishable}} 
+	\item A probability distribution \appear{(for a certain energy at a given temperature)} \appear{was derived for the particles:}
+\[
+P \textrm{((} E_{n} \textrm{))}  \equal  \appear{A e^{-E_{n} / k_{B} T}}  \equal \frac{e^{-E_{n} / k_{B} T}}{\nsum_{n} e^{-E_{n} / k_{B} T}}  \equal \frac{1}{\nsum_{n} e^{-E_{n} / k_{B} T}} \frac{1}{e^{E_{n} / k_{B} T}}  \equal \frac{1}{B e^{E_{n} / k_{B} T}}  \equal \frac{1}{e^{\alpha} e^{E_{n} / k_{B} T}}
+\]
+
+\item When deriving this\appear{, we fixed one particle with energy $E_{n}$} \appear{and then calculated the \CDAlert[blue]{number of ways}} \appear{of \Alert[blue]{distributing the rest of the energy} among the other particles}
+
+%\item \appear{We implicitly assumed that e.g. the case $n_{j}=5$ and $n_{k}=2$ for particles $j$ and $k$ was one way}\appear{, and the case $n_{j}=2$ and $n_{k}=5$ for particles $j$ and $k$ was another way}\appear{, a different way} 
+%
+%\item So we assumed that switching the labels of any two particles yielded a different way. We assumed that the particles were distinguishable
+%
+%\item If particles are indistinguishable, those two ways mentioned above are not different ways!
+\end{itemize}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}%[label=1_6_a]
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+
+\begin{itemize}[itemsep=7.5mm]
+	
+	\item \appear{We implicitly assumed that e.g. the case $n_{j}=5$ and $n_{k}=2$ for particles $j$ and $k$ was one way}\appear{, and the case $n_{j}=2$ and $n_{k}=5$ for particles $j$ and $k$ was another way}\appear{, a different way} 
+
+\item So we assumed that switching the labels of any two particles yielded a different way
+\implies{ \CDAlert[red]{We assumed that the particles were distinguishable} }
+
+\item If particles are \CDAlert[blue]{indistinguishable}\appear{, those two ways mentioned above \CDAlert[tuniblue]{are not different ways}!}
+\end{itemize}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+
+\begin{itemize}
+	\item Consider a simple case of \Alert[red]{four particles} \appear{$a$}\appear{, $b$}\appear{, $c$}\appear{ and $d$}\appear{, bound by harmonic oscillator potential energy.} \appear{For conveniency, we set the ground state energy level to 0}\appear{, resulting in the particles to have energy levels:} 
+	\[ 
+	E_{i}  \equal  \appear{n_{i}} \appear{\hbar \omega_{0}}  \equal \appear{n_{i} \delta E} \,\qquad \appear{(n_{i}=0,1,2, \ldots )}
+	\]
+
+\item Let's examine a case where the system has an energy of $2 \delta E$\appear{, i.\,e. $\appear{n_{a}} \appear{+n_{b}} \appear{+n_{c}+n_{d} }  \equal \appear{2}$}
+
+\end{itemize} 
+\vspace{3mm}
+\begin{minipage}{3.0cm}
+\begin{itemize}
+	\item How the energy can be distributed among the particles?
+\end{itemize}
+
+\end{minipage}
+ 
+\xdef\loc{south east}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.25*\figYshift,xshift=1*\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,height=4.7cm]{Figures_booklet/SOM_Tables/SOM_Statistical_Table_1.png}}; %scale=\figscale. % 8cm max height
+\end{tikzpicture}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%% JÄIN TÄHÄN AJASTUKSESSA %%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+
+\begin{itemize}[itemsep=1.6mm]
+	\item Here we accounted for the number of how many times quantum number appeared\appear{, the total being 40.} \appear{Therefore the numbers were then normalized} \appear{to obtain the probability distribution, i.\,e. to fulfill}
+\[
+\nsum P_{i}  \equal \appear{1}
+\]
+\item Finally, the probabilities were multiplied by 4 to obtain a probable\\
+\end{itemize}  
+% 6.5 cm = midway, 10 cm = 3/4 
+%\vspace{2.5mm}
+\begin{minipage}{7.05cm}
+\begin{itemize}[itemsep=1.6mm]
+\item[] \appear{number of particles (which each had a quantum number)}\appear{, the total now
+giving a sum of 4}\appear{, i.\,e. 4 particles in total}
+
+	\item Note: The probable number of particles in a given state decreases with increasing energy 
+\end{itemize}
+\end{minipage}
+
+
+\xdef\loc{south east}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.1*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=6,height=5.25cm,angle=90,origin=c]{Figures_booklet/SOM_9_Statistical_mechanics_figures/Tikz_SOM_Statistical_figures.pdf}}; %scale=\figscale. % 8cm max height
+\end{tikzpicture}
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+
+\begin{itemize}
+	\item Due to the wave nature of quantum-mechanical particles\appear{, and \CDAlert[red]{Heisenberg uncertainty principle}}\appear{, we lose the ability to distinguish the individual particles}
+
+\item For instance in the figure%
+\appear{\xdef\loc{south east}%
+\begin{tikzpicture}[remember picture,overlay]% anchor=south
+    \node (A) [yshift=-0.25*\figYshift,xshift=0*\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=7,width=7.5cm]{Figures_booklet/SOM_9_Statistical_mechanics_figures/Tikz_SOM_Statistical_figures.pdf}};%
+\end{tikzpicture}%
+}%
+\appear{, we are unable to determine which of the four possibilities shown} \appear{actually occurred when the two identical \CDAlert[blue]{indistinguishable particles} passed within a de Broglie wavelength of each other}
+\end{itemize}
+\vspace{3mm}
+
+\begin{minipage}{6.5cm}
+\begin{itemize}
+	\item Therefore, we cannot put the labels onto particles\appear{, and truly \Alert[blue]{different states are distinguished only by having different numbers of particles at different levels}}
+\end{itemize}
+\end{minipage}
+
+
+%\xdef\loc{south east}
+%\begin{tikzpicture}[remember picture,overlay] % anchor=south
+%    \node (A) [yshift=-0.25*\figYshift,xshift=0*\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,width=7.5cm]{Figures_booklet/SOM_todo_figures/SOM_SSP_Figure_10.png}}; %scale=\figscale. % 8cm max height
+%\end{tikzpicture}
+
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+
+\begin{itemize}
+	\item From quantum mechanics we recall that wave functions must obey the below rules:
+
+\item[] \Alert[red]{Bosons}: {\small \appear{The wave functions of identical bosons must be symmetric if two bosons are interchanged.} \appear{Assume we have two identical bosons in the single particle states} \appear{$n$} \appear{and $n'$} \appear{and let the $\psi_{n}$} \appear{and $\psi_{n'}$}\appear{ be the wave functions of the two states.} \appear{If we label two bosons 1 and 2}\appear{, then the state of the combined two-particle system} \appear{is described by a wave function of form $\psi_{n}(1) \psi_{n'}(2)$.}
+\appear{ But, since the particles are indistinguishable}\appear{, we could equally write the wave function of this state as $\psi_{n}(2) \psi_{n'}(1)$.} \appear{We cannot insist on calling the bosons in state $n$ and state $n'$ by the labels 1 and 2, respectively.} \appear{The \CDAlert[tunired]{total wave function} of this state must be symmetric:}}
+\[
+\psi_{B E}(1,2)  \equal \appear{\psi_{S}}  \equal \appear{\psi_{n}(1) \psi_{n'}(2)}  \plus \appear{\psi_{n'}(1) \psi_{n}(2)} \, \qquad \appear{(\Alert[red]{symmetric})}
+\]
+
+\item[] \Alert[blue]{Fermions}: {\small \appear{For identical fermions}\appear{, on the other hand, the wave function must be antisymmetric:}} 
+\[
+\quad \psi_{F D}(1,2)  \equal \appear{\psi_{A}}  \equal \appear{\psi_{n}(1) \psi_{n^{\prime}}(2)}  \minus \appear{\psi_{n'}(1) \psi_{n}(2)} \, \qquad \appear{(\text{\Alert[blue]{antisymmetric}})}
+\]
+\end{itemize}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+
+\begin{itemize}
+	\item \appear{So, we have two kinds of indistinguishable particles:} \appear{\CDAlert[red]{bosons} (with \CDAlert[tunired]{integer spin})} \appear{and \CDAlert[blue]{fermions} (with \CDAlert[tuniblue]{half integer spin}).} \appear{Next, we turn our attention back to the example of 4 particles with energy of $2 \delta E$}
+	\item \appear{Looking at Table 2}%
+	\appear{\xdef\loc{south}%
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.25*\figYshift,xshift=0*\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,width=14.5cm]{Figures_booklet/SOM_Tables/SOM_Statistical_Table_2.png}};%scale=\figscale. % 8cm max height
+\end{tikzpicture}}
+\appear{, the ways of distributing the energy clearly depend on the type of the particles!}
+\end{itemize}
+	
+
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+
+\begin{itemize}
+	\item We see that the probable number of particles again decreases with increasing energy
+
+\end{itemize}
+
+% 6.5 cm = midway, 10 cm = 3/4 
+\begin{minipage}{7.5cm}
+\begin{itemize}
+	\item \CDAlert[red]{Bosons} clearly 'like' being together. \appear{In fact it becomes apparent that generally, when a boson occupies a quantum state}\appear{, it also increases the probability of another identical boson to occupy the same quantum state}
+
+\item For indistinguishable \CDAlert[blue]{fermions} \appear{(\Alert[tuniblue]{$s=1/2$})}\appear{, on the other hand, it is forbidden to have two particles with same quantum number.} \appear{Thus, when a fermion occupies a quantum state}\appear{, it forbids other fermions to occupy the same quantum state}
+\end{itemize}
+
+\end{minipage}
+	 
+
+\xdef\loc{south east}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.25*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,height=7cm]{Figures_booklet/SOM_9_Statistical_mechanics_figures/SOM_Figure_9.png}}; %scale=\figscale. % 8cm max height
+\end{tikzpicture}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+
+\begin{itemize}
+	\item For distinguishable particles\appear{, detailed, case-specific probabilities converge to Boltzmann distribution}
+
+\item For quantum-mechanically \CDAlert[fuchsia]{indistinguishable particles}\appear{, they converge to two different distributions:}
+\item[] \begin{itemize}[itemsep=2.5mm]
+	\item \Alert[red]{Bosons} $\rightarrow$ \appear{\CDAlert[red]{Bose–Einstein distribution} }
+	\item \Alert[blue]{Fermions} $\rightarrow$ \appear{\CDAlert[blue]{Fermi–Dirac distribution}}
+\end{itemize}
+
+\[
+\begin{aligned}
+\mathbb{N}(E) & \equal  \frac{1}{B e^{E / k_{\mathrm{B}} T}} \appear{\,,} \qquad \appear{Boltzmann~(distinguishable)} \\
+\appear{\mathbb{N}(E)} & \equal  \frac{1}{B e^{E / k_{\mathrm{B}} T}-1} \appear{\,,} \qquad \appear{Bose–Einstein~(bosons)} \\
+\appear{\mathbb{N}(E)} & \equal  \frac{1}{B e^{E / k_{\mathrm{B}} T}+1} \appear{\,,} \qquad \appear{Fermi–Dirac~(fermions)}
+\end{aligned}
+\]
+
+\end{itemize}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+
+\begin{itemize}
+	\item We perform an example calculation for these three distributions using simple \CDAlert[fuchsia]{one-dimensional oscillators as a model system} \appear{(furthermore, see course examples)}
+		
+	\item We \CDAlert[red]{vary the temperature} \appear{and set the reference temperature so that $k_{B} T$ is comparable to a fixed energy value $\mathcal{E}$.} \appear{On the background, we assume here that $\mathcal{E}$ is highest energy value that would be occupied if particles would fill all individual-particle states} \appear{(i.\,e. $\mathcal{E}=$~\CDAlert[blue]{Fermi energy})}
+	
+	\item Then we can perform the calculation for \Alert[red]{three different temperatures}:
+	\item[] \begin{itemize}
+		\item $k_{B} T=\Frac{1}{5} \mathcal{E}$ \qquad \appear{low temperature}
+		\item $k_{B} T=\mathcal{E}$ \qquad  \appear{intermediate temperature}
+		\item $k_{B} T=5 \varepsilon$ \qquad  \appear{high temperature}
+	\end{itemize}
+
+\end{itemize}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+
+% 6.5 cm = midway, 10 cm = 3/4 
+\begin{minipage}{9.5cm}
+\begin{itemize}
+	\item The resulting graph shows occupation number $\mathbb{N}$ \appear{with the same trend as the previous graph for 4 particles:}
+	\item[] {\normalsize $k_{B} T=5 \varepsilon \quad$ (high temp) }
+	\begin{itemize}
+		\scriptsize
+		\item At high $T$\appear{, clearly \CDAlert[red]{all the three distributions spread out} to higher energies in a similar way.} \appear{It really does not matter whether they are bosons}\appear{, fermions} \appear{or classically distinguishable} 
+	\end{itemize}
+
+\item[] {\normalsize $k_{B} T=\mathcal{E} \quad$ (intermediate) }
+\begin{itemize}
+\scriptsize
+\item At intermediate $T$\appear{, we still have fairly similar graphs}\appear{, Bose-Einstein lies below the classical curve at intermediate energy levels}
+\end{itemize}
+
+\item[] {\normalsize $ k_{B} T=\Frac{1}{5} \mathcal{E} \quad \text { (low temp) }$ }
+	\begin{itemize}
+	\scriptsize
+	\item At low $T$\appear{, \CDAlert[blue]{Bose–Einstein} is significantly higher than Boltzmann at low energies}\appear{, thus bosons tend to congregate in the lowest energy levels}
+	\item Fermi–Dirac forms a 'hump' at around $\mathcal{E}$ \CDAlert[red]{(the Fermi energy)} 
+	\end{itemize}
+\end{itemize}
+\end{minipage}
+
+\xdef\loc{east}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=0cm,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,height=8cm]{Figures_booklet/SOM_9_Statistical_mechanics_figures/SOM_Figure_10.png}}; %scale=\figscale. % 8cm max height
+\end{tikzpicture}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+
+\begin{itemize}
+	\item \CDAlert[red]{At high temperatures} \appear{$k_{B} T \gg \mathcal{E}$} \appear{both bosons and fermions show a linear relationship} \appear{$<E>\,=k_{B} T$} \appear{following the classical result}\appear{ (\CDAlert[red]{indistinguishability is not important})}
+\end{itemize}
+\vspace{3mm}
+\appear{\xdef\loc{south east}%
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.25*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,width=5.5cm]{Figures_booklet/SOM_9_Statistical_mechanics_figures/SOM_Figure_11.png}};%scale=\figscale. % 8cm max height
+\end{tikzpicture}%
+}%
+\begin{minipage}{8cm}
+\begin{itemize}
+	\item Energy is lower for bosons \appear{(tending to congregate at lower levels)}
+\item Energy is higher for fermions \appear{(avoiding already occupied lower levels)}
+\item At low $T$\appear{, energy of bosons approach zero}\appear{, while that for fermions approach $\Frac{1}{2} \mathcal{E}$}
+\item At low $T$\appear{, bosons are dropping into the ground state} \appear{$\Rightarrow$} \appear{\CDAlert[blue]{superfluid}}
+\end{itemize}
+\end{minipage}
+
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+
+\begin{itemize}[itemsep=1.65mm]
+	\item Figure 10 showed that at low temperatures\appear{, Fermi–Dirac occupation}\\ 
+\end{itemize} 
+%\vspace{3mm}
+\begin{minipage}{7.75cm}
+\begin{itemize}[itemsep=1.65mm]
+	\item[] number approaches 1 \appear{at $E<\mathcal{E}$} \appear{and drops to zero at $E>\mathcal{E}$} 
+	\item This energy value $\mathcal{E}$ is known as \CDAlert[red]{Fermi energy $E_{F}$} 
+	
+	\item It arises from the fact that for \CDAlert[tunired]{fermionic system}\appear{, all the states will be eventually fully occupied}
+	\appear{\xdef\loc{south east}%
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.25*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,width=5.5cm]{Figures_booklet/SOM_9_Statistical_mechanics_figures/SOM_Figure_12.png}};%scale=\figscale. % 8cm max height
+\end{tikzpicture}}
+\item Officially, $E_{F}$ is defined \CDAlert[red]{at $T=0\;K$} via
+\[
+\mathbb{N} \textrm{((} E_{F} \textrm{))}_{F D}  \equal \frac{1}{B e^{E_{F} / k_{B} T}+1}  \equiv \frac{1}{2} \quad \appear{\Rightarrow} \quad \appear{B=e^{-E_{F} / k_{B} T}}
+\]
+\item[] Thus
+\[
+\mathbb{N}(E)_{F D}  \equal  \frac{1}{e^{ \textrm{((} E-E_{F} \textrm{))}  / k_{B} T}+1}
+\]
+\end{itemize}
+\end{minipage}
+
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+
+\begin{itemize}[itemsep=1.3mm]
+	\item It is seen that as $T \rightarrow \appear{0}$\appear{, we will get a step function for Fermi–Dirac (DR) particles}
+	\appear{\xdef\loc{south}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.00*\figYshift,xshift=0*\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=8,width=14cm]{Figures_booklet/SOM_9_Statistical_mechanics_figures/Tikz_SOM_Statistical_figures.pdf}}; %scale=\figscale. % 8cm max height
+\end{tikzpicture}}
+	\item The terminology gets confusing\appear{/ambiguous}\appear{, some use \CDAlert[blue]{Fermi energy} to strictly mean the level of occupation $\mathbb{N}(E)_{F D}=1/2$} \appear{\CDAlert[blue]{at zero} \CDAlert[blue]{temperature ($T=0$)}}
+	\item Term \CDAlert[red]{Fermi level} is used to describe the occupation level $\mathbb{N}(E)_{F D}=1/2$ \CDAlert[red]{at finite temperatures}
+\end{itemize}
+
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+
+\begin{itemize}
+	\item Introduction of $E_{F}$ \appear{is practically just \Alert[blue]{another way to express the normalization factor $B$}}\appear{, which in reality is temperature dependent}
+	
+\item Thus, in practice the value of \Alert[red]{$E_{F}$} slightly moves with temperature away from \Alert[blue]{$E_{F0}$}. \appear{Still, when Fermi level is discussed, we usually refer to $T \approx \appear{0}$}\appear{, and so Fermi level can be considered a constant} \appear{(i.\,e. equal to the fermi energy, $E_{F} \Approx E_{F0}$)}
+\end{itemize}
+
+% 6.5 cm = midway, 10 cm = 3/4 
+\vspace{2.5mm}
+\begin{minipage}{6.5cm}
+\begin{itemize}
+	\item Many important fermion systems in physics \appear{(\Alert[tunired]{conduction electron gas} etc.)} \appear{are far from MB-limit} \appear{$T \rightarrow \appear{\infty}$} \appear{(they are dense and strongly degenerate)}
+	\item[] \begin{itemize}
+	 \item \CDAlert[red]{Need to treat systems} \CDAlert[red]{quantum mechanically}
+\end{itemize}
+\end{itemize}
+\end{minipage}
+
+
+\xdef\loc{south east}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.25*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,width=7cm]{Figures_booklet/SOM_9_Statistical_mechanics_figures/SOM_Figure_13.png}}; %scale=\figscale. % 8cm max height
+\end{tikzpicture}
+
+%\endofslide 
+\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+

@@ -1,0 +1,288 @@
+% !TEX root = ../bb_AiRa_Kappaleet.tex
+
+% ö = \%c3\%b6
+% ä = \%C3\%A4
+
+\xdef\sectiontitle{\IVsectiontitle} %aiheuttama
+\TOCrefs
+
+%%%%%%%%%%%%%%%
+\begin{frame}[label=4_7_a]
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\label{\TOCname}
+
+\vspace{-3mm}
+
+%\vspace{\chapterTOCvksip}%
+\begin{itemize}[leftmargin=0.5cm,itemsep=\chapterTOCitemsep]
+    \item[4.1]<1-> \hyperlink{4_1_a}{\IVaSubsectiontitle}
+    \item[4.2]<1-> \hyperlink{4_2_a}{\IVbSubsectiontitle}	
+    \item[4.3]<1-> \hyperlink{4_3_a}{\IVcSubsectiontitle}	
+    \item[4.4]<1-> \hyperlink{4_4_a}{\IVdSubsectiontitle}
+    \item[4.5]<1-> \hyperlink{4_5_a}{\IVeSubsectiontitle}
+    \item[4.6]<1-> \hyperlink{4_6_a}{\IVfSubsectiontitle}
+    \item[4.7]<1-> \hyperlink{4_7_a}{\CDAlert[blue]{\IVgSubsectiontitle}}
+\end{itemize}
+
+%\endofslide 
+\end{frame}
+%%%%%%%%%%%%%%%
+
+\xdef\sectiontitle{\IVgSubsectiontitle} 
+\xdef\sectiontitle{GUT ja Kosmologia} 
+
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Alkeishiukkaset \& taustasäteily}%Fundamental Particles \& background radiation
+\appear{}
+
+\seminormal
+\begin{itemize}[itemsep=1.65mm]
+	\item Viime aikoina \appear{\CDAlert[red]{hiukkasfysiikka}}\appear{\CDAlert[red]{/suurenergiafysiikka}} \appear{ja \CDAlert[blue]{kosmologia}  ovat lähestyneet toisiaan}
+	
+	\item Tämä johtuu siitä että \CDAlert[fuchsia]{perusvuorovaikutuksia kuvaavat} teoriat \appear{liittyvät maailmankaikkeuden alkuhetkiin}\appear{, \CDAlert[fuchsia]{alkuräjähdyksen} jälkeisiin hetkiin}\appear{, ja maailmankaikkeudesta löytyvien alkeishiukkasten ja aineen alkuperään}
+
+	\item Alkuräjähdyksen jälkeiset \appear{energiat olivat aika suuria}\appear{, ja ylittivät atomien sidosenergiat.}\appear{ Aine koostui tällöin \Alert[red]{elektronien ja positiivisesti varautuneiden ionien plasmasta}} \appear{\Alert[tunired]{(säteilylle läpinäkymätöntä)}}
+	
+	\item Lämpötilat laskivat hitaasti, aine muuttui läpinäkyväksi ja mahdollisti \CDAlert[blue]{kosmisen taustasäteilyn etenemisen avaruudessa} 
+	\item \Alert[tuniblue]{Kosminen taustasäteily} on nykyisin $\Approx 2,7 \mathrm{\;K}$\appear{, mikä sopii yhteen nykyisten \CDAlert[blue]{laajenevaa} \CDAlert[blue]{maailmankaikkeutta} kuvaavien teorioiden kanssa }
+	\implies{ Kuinka alkuperäinen kuumista kappaleista emittoitunut säteily on jäähtynyt nykyarvoonsa ${\Approx}\;2,7$\;K?}
+\end{itemize}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Laajeneva maailmankaikkeus}
+\appear{}
+
+\begin{itemize}
+	\item \CDAlert[fuchsia]{Laajenevaa maailmankaikkeutta} voidaan kvalitatiivisesti kuvata yksinkertaisella mallilla. \appear{Tarkastellaan kappaletta}\appear{, tai satelliittia $(m)$} \appear{joka laukaistaan suoraan ylöspäin planeetalta ($M$).} \appear{Olettaen satelliitin ja planeetan massakeskipisteen etäisyydeksi $r$}\appear{, ja että planeetan tiheys on $\rho$.}\appear{ Satelliitin energiaksi saadaan tällöin:}
+\[
+E  \equal \frac{1}{2} \appear{m v^2}   \plus  \appear{E_{pot} } \equal \frac{m}{2}  \LP \frac{d r}{d t} \,\RP\appear{\raisebox{8pt}{$^{2}$}}  \minus \fraca{G m M}{r}  \equal \frac{m}{2}  \LP \frac{d r}{d t} \,\RP\appear{\raisebox{8pt}{$^{2}$}}   \minus \frac{G m}{r} \appear{\rho} \frac{4}{3} \appear{\pi r^{3}}
+\]
+\item[] Jos \CDAlert[red]{$E<0$}\appear{, niin kappale palaa takaisin planeetalle }
+\item[] Jos \CDAlert[blue]{$E>0$}\appear{, niin \CDAlert[blue]{kappale voi paeta}}
+
+\item Järjestelemällä termejä saamme yhtälön
+\[
+ \LP \frac{d r / d t}{r} \,\RP\appear{\raisebox{8pt}{$^{2}$}}   \equal \frac{8 \pi G \rho}{3}  \plus \frac{2 E / m}{r^{2}}
+\]
+\end{itemize}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Friedmannin yhtälö}
+\appear{}
+
+\begin{itemize}
+	\item Kuten \Alert[fuchsia]{pakenevan kappaleen esimerkissä}\appear{, voimme olettaa että \CDAlert[fuchsia]{maailmankaikkeus} on laajeneva pallo}\appear{, jonka säde on $R=R(t)$}\appear{, kutsutaan \CDAlert[red]{kokotekijäksi}} 
+	
+	\item Laajenemista kuvataan \Alert[blue]{Friedmannin yhtälöllä}:
+\[
+ \LP \frac{d R / d t}{R} \,\RP\appear{\raisebox{8pt}{$^{2}$}}  \equal \frac{8 \pi G \rho}{3}  \minus \frac{K}{R^{2}}
+\]
+\appear{missä vakio $K$ vastaa pakenevan kappaleen energiaa}
+
+\item Jos \Alert[red]{$K>0$}: \appear{positiivisesti kaareutunut maailmankaikkeus}\appear{, laajeneminen pysähtyy}\appear{, ja maailmankaikkeus rutistuu takaisin kasaan $R=0$}
+
+\item Jos \Alert[green]{$K=0$}: \appear{universumi on tasainen}\appear{, laajeneminen vakioarvoistuu universumin vanhetessa $t \oldrightarrow \infty$ }
+\item Jos \Alert[blue]{$K<0$}: \appear{negatiivisesti kaareutunut universumi}\appear{, laajeneminen kiihtyy loputtomiin}
+\end{itemize}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Friedmannin yhtälö}
+
+\begin{itemize}
+	\item \appear{Muokataan seuraavaksi yhtälön tiheystermiä:} $\appear{\rho} \rightarrow \appear{\rho_{M} /{R^{3}}}  \plus \appear{\rho_{\Lambda}}$ \appear{missä $\rho_{M} /R^{3}$ on maailmankaikkeuden nykyinen tiheys} \appear{ja $\rho_{\Lambda}$ on \CDAlert[fuchsia]{kosmologiseen vakioon} liittyvä termi} \appear{(käydään läpi myöhemmin):}
+\[
+ \LP \frac{d R / d t}{R} \,\RP\appear{\raisebox{8pt}{$^{2}$}}   \equal \frac{8 \pi G \rho_{M}}{3 R^{3}}  \plus \frac{8 \pi G \rho_{\Lambda}}{3}  \minus \frac{K}{R^{2}}
+\]
+\appear{Järjestellään sitten \CDAlert[blue]{Friedmannin yhtälö} lopulliseen muotoonsa:}
+\[
+ \LP \frac{d R / d t}{R} \,\RP\appear{\raisebox{8pt}{$^{2}$}}   \equal \frac{\Omega_{M}}{R^{3}}  \plus \appear{\Omega_{\Lambda}}  \minus \frac{K^{\prime}}{R^{2}} \quad \appear{\text { jossa } R_{\text {nykyinen}}=1} \appear{\text { ~ja~ }(d R / d t)_{\text {nykyinen}}=1}
+\]
+\item[] Meillä on käytännössä \CDAlert[blue]{kolme vapaata parametriä} \appear{$\Omega_{M}$}\appear{, $\Omega_{\Lambda}$} \appear{ja $K^{\prime}$}
+\end{itemize}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Einsteinin kosmologinen vakio}
+
+\begin{itemize}[itemsep=1.65mm]
+	\item \appear{Vapaat paremetrit ovat:} %\vspace{1mm}
+	\begin{itemize}
+	\item $K^{\prime}=0$\appear{, oletetaan tasainen maailmankaikkeus}\appear{,
+jonka laajeneminen on lähestulkoon vakioarvoista}
+\item $\Omega_{M}=1$ \appear{nykyisin $\Leftrightarrow$ kriittinen tiheys}
+\item $\Omega_{\Lambda} \Approx 0$
+
+\end{itemize}
+\item Ylläolevin oletuksin saamme
+\end{itemize}
+
+% 6.5 cm = midway, 10 cm = 3/4 
+%\vspace{2.5mm}
+\begin{minipage}{7.5cm}
+\begin{itemize}[itemsep=1.65mm]
+	\item[] $$
+	\begin{aligned}
+	\LP \frac{d R / d t}{R} \,\RP\appear{\raisebox{8pt}{$^{2}$}} & \equal  \frac{1}{R^{3}} \quad \Rightarrow \quad \appear{\nint_{1}^{R}} \appear{R^{1 / 2}} \appear{\rmd R}  \equal \appear{\nint_{1}^{t} d t} \\
+\Rightarrow \quad \appear{R(t)} & \equal  \LB \frac{3}{2} \appear{( t-\Frac{1}{3} )} \,\RB\appear{\raisebox{8pt}{$^{2/3}$}}
+	\end{aligned}
+$$
+\item[] $\Omega_{\Lambda}=$ \CDAlert[red]{kosmologinen vakio}\appear{, määrittelee potentiaalisesti onko maailmankaikkeuden \CDAlert[red]{laajeneminen}  \Alert[red]{vakioarvoista vai ei}} \appear{(Kuva~17)}
+\end{itemize}
+\end{minipage}
+%\vspace{2.5mm}
+
+\appear{\xdef\loc{south east}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.32*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,width=6.5cm]{Figures_booklet/SOM_11_Fundamental_particles_figures/SOM_Fundamental_particles_Figure_17.png}}; %scale=\figscale. % 8cm max hei
+\end{tikzpicture}\CR[]{}}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Maailmankaikkeuden aikajärjestys}
+
+\begin{itemize}[itemsep=1.65mm]
+	\item \appear{Aiemmin perehdyttiin tähdissä tapahtuvaan protoni–protoni-sykliin}
+
+\item Itse asiassa sykli oli tärkeä myös maailmankaikkeuden alkuhetkillä
+
+\item Nykytiedon valossa \appear{((maailmankaikkeuden historian standardimallin mukaan))}\appear{, universumin lämpötila ajan hetkellä $t\Approx10^{-46} \mathrm{\;s}$ oli noin $10^{32} \mathrm{\;K}$}\appear{, ja kappaleen keskimääräinen energia oli:} %\vspace{-4mm}
+\[
+\appear{E} \approx \LP \appear{10^{-13}} \frac{\mathrm{\;GeV}}{\mathrm{K}} \,\RP  \appear{10^{32} \mathrm{\;K}}  \equal \appear{10^{19} \mathrm{\;GeV}}
+\]
+
+\item Tätä hetkeä on ehdotettu hetkeksi jolloin tapahtui siirtymä \CDAlert[red]{kaiken teoriasta (Theory of Everything, TOE)} \appear{\CDAlert[blue]{suureen yhtenäisteoriaan (grand unified theory, GUT)}}
+
+\item Hetkellä $t=10^{-36} \mathrm{\;s}$ lämpötila oli laskenut arvoon ${\sim}10^{27} \mathrm{\;K}$\appear{, ja energiat arvoon ${\sim}10^{14} \mathrm{\;GeV}$.} \appear{\Alert[fuchsia]{Näillä energiatasoilla} \CDAlert[fuchsia]{vahva voima erottui} \CDAlert[fuchsia]{sähköheikosta voimasta}} \appear{\CDAlert[black!20!fuchsia]{(suuren yhtenäisyyden loppu)}}
+\end{itemize}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Maailmankaikkeuden aikajärjestys}
+
+\semismall
+\begin{itemize}[itemsep=1.7mm]
+	\item \appear{Hetkellä $\mathrm{t}=10^{-32} \mathrm{\;s}$} \appear{lämpötila oli laskenut arvoon ${\sim}10^{25} \mathrm{\;K}$} \appear{ja universumista oli tullut sekoitus \CDAlert[fuchsia]{kvarkkeja}}\appear{, \CDAlert[blue]{leptoneita}} \appear{ja vuorovaikutuksien \CDAlert[red]{välittäjäbosoneita}}
+	
+	\item Kun $\mathrm{t}=10^{-6} \mathrm{\;s}$ \appear{lämpötila oli laskenut arvoon $10^{13} \mathrm{\;K}$} \appear{ja hiukkasten tyypilliset energiat olivat $1 \mathrm{\;GeV}$} \appear{($\Approx$ nukleonin lepomassa).} \appear{\CDAlert[fuchsia]{Kvarkit alkoivat sitoutua} \CDAlert[fuchsia]{muodostaen nukleoneita}}
+	
+	\item Kun $\mathrm{t}=1 \mathrm{\;s}$\appear{, protonien ja neutronien suhdeluvun määritteli Boltzmannin tekijä $e^{-\Delta E / k_{B} T}$}\appear{, jossa $\Delta E$ on neutronin ja protonin lepo-energioiden erotus} $\appear{\Delta E}  \equal \appear{1,29 \mathrm{\;MeV}}$
+	
+	\item Kun $T \Approx10^{10} \mathrm{\;K}$ \appear{jakauma antaa suhteeksi noin $4,5$}\appear{ (kertaa enemmän protoneita kuin neutroneita)}
+	
+%	\item Deuteronien muodostuminen alkoi kun \CDAlert[red]{$\mathrm{t}\Approx225 \mathrm{\;s}$}\appear{, ytimien muodostuminen alkoi} \appear{\CDAlert[red]{alkuräjähdyksenaikaisessa nukleosynteesissä}} \appear{tai primordiaalisessa nukleosynteesissä}
+\item Deuteronien muodostuminen alkoi kun \CDAlert[red]{$\mathrm{t}\Approx225 \mathrm{\;s}$}\appear{, ytimien muodostuminen alkoi} \appear{\CDAlert[red]{alkuräjähdyksen aikaisessa}, tai pian \CDAlert[red]{sen jälkeen tapahtuneessa} \CDAlert[red]{("primordiaalinen aika") nukleosynteesissä}} 
+	\item \appear{\CDAlert[blue]{Tähdissä tapahtuva nukleosynteesi}} \appear{käynnistyi paljon myöhemmin \CDAlert[blue]{$t=10^{13} \mathrm{\;s}$}} \appear{kun $T \sim 3000 \mathrm{\;K}$}\appear{, ja keskimääräinen energia oli $\sim 0,1$ eV}
+	
+\end{itemize}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Maailmankaikkeuden historia (a la Harris)}
+\appear{}
+
+\xdef\loc{south}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.35*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,height=8.8cm]{Figures_booklet/SOM_11_Fundamental_particles_figures/SOM_Fundamental_particles_Figure_18.png}}; %scale=\figscale. % 8cm max hei
+\end{tikzpicture}
+\CR[]{}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Maailmankaikkeuden historia (a la Tipler)}
+\appear{}
+
+\xdef\loc{south}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.25*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,height=8.8cm]{Figures_booklet/SOM_11_Fundamental_particles_figures/SOM_tipler_Cosmology_1.png}}; %scale=\figscale. % 8cm max hei
+\end{tikzpicture}
+\CR[ref = t]{}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Mutta ISOJA kysymyksiä on vastaamatta..}
+\appear{}
+
+\vspace{2.5mm}
+\begin{minipage}{5.0cm}
+\begin{itemize}
+	\item \appear{Vain 4\,\% massasta on \Alert[fuchsia]{baryonista}?} \appear{(Ei-baryonista:} \appear{neutriinot}\appear{, vapaat elektronit}\appear{, mustat aukot}\appear{, pimeä aine}\appear{, supersymmetriset hiukkaset}\appear{,\,...)}
+	
+	\item Galaksien \Alert[blue]{rotaatiokäyrät} \appear{implikoivat \CDAlert[blue]{pimeän aineen} olemassaolosta?}
+	\item Maailmankaikkeuden laajeneminen \CDAlert[red]{kiihtyy} \appear{\Alert[red]{pimeän energian} takia?} 
+	\item Painovoiman kvanttikenttäteoria\,...
+\end{itemize}
+\end{minipage}
+%\vspace{2.5mm}
+
+
+\xdef\loc{south east}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.25*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,height=8.8cm]{Figures_booklet/SOM_11_Fundamental_particles_figures/SOM_tipler_Cosmology_2.png}}; %scale=\figscale. % 8cm max hei
+\end{tikzpicture}
+\CR[ref= t]{}
+
+%\endofslide 
+\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+

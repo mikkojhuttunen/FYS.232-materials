@@ -1,0 +1,526 @@
+% !TEX root = ../aa_SoM_Chapters.tex
+
+%% HARRIS: Chapter 9
+%\xdef\Isectiontitle{Statistical Mechanics} 
+%%
+%\xdef\IaSubsectiontitle{A Simple Thermodynamic System} 
+%\xdef\IbSubsectiontitle{Entropy and Temperature}
+%\xdef\IcSubsectiontitle{Einstein's solid}
+%\xdef\IdSubsectiontitle{Boltzmann \& Maxwell–Boltzmann distributions}
+%\xdef\IeSubsectiontitle{Classical Averages}
+%
+%\xdef\IfSubsectiontitle{Quantum Distributions} 
+%\xdef\IgSubsectiontitle{The Quantum Gas} 
+%\xdef\IhSubsectiontitle{Photon Gas}
+%\xdef\IiSubsectiontitle{The Laser}
+%\xdef\IjSubsectiontitle{Specific Heats} 
+%\xdef\IkSubsectiontitle{Debye Model} 
+
+% ö = \%c3\%b6
+% ä = \%C3\%A4
+
+\xdef\sectiontitle{\IIIsectiontitle} %aiheuttama
+
+%%%%%%%%%%%%%%%
+\begin{frame}[label=3_5_a]%[label=3_5_TOC1]
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+
+\vspace{1cm}
+
+\begin{itemize}[leftmargin=0.5cm,itemsep=3mm]
+    \item[3.1] \hyperlink{3_1_a}{\IIIaSubsectiontitle}
+    \item[3.2] \hyperlink{3_2_a}{\IIIbSubsectiontitle}	
+    \item[3.3] \hyperlink{3_3_a}{\IIIcSubsectiontitle}	
+    \item[3.4] \hyperlink{3_4_a}{\IIIdSubsectiontitle}
+    \item[3.5] \hyperlink{3_5_a}{\CDAlert[blue]{\IIIeSubsectiontitle}}
+    \item[3.6] \hyperlink{3_6_a}{\IIIfSubsectiontitle}
+    \item[3.7] \hyperlink{3_7_a}{\IIIgSubsectiontitle}
+\end{itemize}
+
+%\endofslide 
+\end{frame}
+%%%%%%%%%%%%%%%
+
+\xdef\sectiontitle{\IIIeSubsectiontitle} 
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Radioactive Decay Law}
+
+%
+\begin{itemize}
+	\item A radioactive decay for each nucleus can happen only once. \appear{The process is of \CDAlert[fuchsia]{statistical nature}}\appear{, and for an individual nucleus}\appear{, only an estimated average time can be given for the decay}
+
+\item If the amount of nuclei $N$ is large enough\appear{, the statistical nature of the decay process will result in a distinct \CDAlert[fuchsia]{law of decay}} 
+
+\item The number of decayed nuclei\appear{, i.e. change in the number of nuclei}\appear{, $d N$}\appear{, will be \CDAlert[blue]{proportional to both time}} \appear{\CDAlert[blue]{and number} of radioactive nuclei:}
+\[
+\bg[2.5]{\text{\bigsymbolsfont\{}\!} \begin{array}{l}
+\appear{d N} \propto \appear{d t} \\
+\appear{d N} \propto \appear{N}
+\end{array} \qquad \Rightarrow \qquad \appear{d N} \propto \appear{N d t}
+\]
+\appear{and} 
+\[
+\Rightarrow \qquad \frac{d N}{d t} \propto \appear{N} \quad \appear{\text { i.e. }} \quad \frac{d N}{d t} \equal  \minus \appear{\lambda N} \quad \text { \appear{or} } \quad \frac{d N}{N}  \equal  \minus \appear{\lambda d t}
+\]
+\end{itemize}
+
+%\xdef\loc{south east}
+%\begin{tikzpicture}[remember picture,overlay] % anchor=south
+%    \node (A) [yshift=-0.25*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[width=7cm]{Figures_booklet/SOM_12_Nuclear_physics_figures/SOM_Nuclear_physics_Figure_1.png}}; % 8cm max height
+%\end{tikzpicture}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Radioactive Decay Law}
+
+\begin{itemize}
+	\item We can solve the differential equation \appear{and thereby obtain \Alert[red]{time dependence} of the number of remaining radioactive nuclei:}
+\[
+\Frac{d N}{N}  \equal  \minus \appear{\lambda d t} \quad \Rightarrow \quad \appear{\nint_{N_{0}}^{N}} \frac{d N^{\prime}}{N^{\prime}}  \equal  \minus \appear{\lambda} \appear{\nint_{0}^{t} d t} \quad \Rightarrow \quad \appear{\ln} \frac{N}{N_{0}} \equal  \minus \appear{\lambda t} \quad \Rightarrow \quad \appear{N(t)=} \appear{N_{0}} \appear{e^{-\lambda t}}
+\]
+\item[] where \Alert[blue]{decay constant $\lambda$} \appear{($[\lambda]=\Frac{1}{s}$)} \appear{is characteristic to each radioactive nuclei}%,  decay constant $[\lambda]=\frac{1}{s}$
+
+
+\item Define a positive quantity $R\appear{=\lambda N(t)}  \equal  \bg[1.9]{\text{\bigsymbolsfont|}\!} \frac{d N}{dt} \!\bg[1.9]{\text{\bigsymbolsfont|}} $\appear{,  known as the} \appear{\CDAlert[fuchsia]{decay rate}}
+
+\item We can also write the decay rate as: 
+\[
+ R(t)= \bg[2.5]{\text{\bigsymbolsfont|}} \frac{d N}{d t} \bg[2.5]{\text{\bigsymbolsfont|}}  \equal \appear{\lambda N(t)} \equal \appear{\lambda N_{0} e^{-\lambda t}} \equal \appear{R_{0} e^{-\lambda t}}
+\]
+
+\item Note, that both the number of nuclei $N$ \appear{and the decay rate $R$} \appear{decrease exponentially with time}
+
+\end{itemize}
+
+%\xdef\loc{south east}
+%\begin{tikzpicture}[remember picture,overlay] % anchor=south
+%    \node (A) [yshift=-0.25*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[width=7cm]{Figures_booklet/SOM_12_Nuclear_physics_figures/SOM_Nuclear_physics_Figure_1.png}}; % 8cm max height
+%\end{tikzpicture}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Radioactive Decay Law}
+
+\seminormal
+\begin{itemize}[itemsep=1.7mm]
+	\item The time when half of the original nuclei are left \appear{is called \CDAlert[red]{half-life $T_{1 / 2}$}:}%\vspace{-3mm}
+\appear{\xdef\loc{south east}%
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.1*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[width=6.9cm]{Figures_booklet/SOM_12_Nuclear_physics_figures/SOM_Nuclear_physics_Figure_26.png}}; % 8cm max height
+\end{tikzpicture}}%
+\[
+ N ( T_{1 / 2} )   \equal  \appear{N_0 e^{-\lambda T_{1 / 2}}}  \equal \frac{1}{2} \appear{N_{0}} \qquad
+\Rightarrow \qquad  \minus \appear{\lambda T_{1 / 2}} \equal \appear{\ln} \frac{1}{2} \qquad \Rightarrow \qquad \appear{\lambda} \equal \frac{\ln 2}{T_{1 / 2}}
+\]
+\item Nuclear binding processes are complex\appear{, and often several alternative decay channels exist.} \appear{Therefore it is difficult to predict $T_{1 / 2}$ of a nuclide.} \appear{Data for most of the isotopes exists}\appear{, and \Alert[red]{$T_{1 / 2}$ varies from $10^{-22} s$ to $10^{17}$ years}}
+\end{itemize}
+
+% 6.5 cm = midway, 10 cm = 3/4 
+\vspace{1.7mm}
+\begin{minipage}{6.5cm}
+\begin{itemize}[itemsep=1.7mm]
+
+\item For example the half-life of \Alert[blue]{carbon-14}\appear{, an isotope used in \CDAlert[blue]{carbon dating}}\appear{, is 5730 years.} \appear{For americium-241}\appear{, used in ordinary household smoke alarms}\appear{, $T_{1 / 2}=432.2$ years}
+
+\item An example of a somewhat short-lived isotope is \Alert[fuchsia]{fluorine-18}\appear{, an isotope commonly used in \CDAlert[fuchsia]{nuclear medicine}}\appear{, has a half-life of 109 min}  
+\end{itemize}
+\end{minipage}
+%\vspace{2.5mm}
+
+%% table 3
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Radioactive Decay Law}
+
+\begin{itemize}
+	\item The decay rate\appear{, $R(t)=\lambda N$}\appear{, is also used to indicate the activity} \appear{(or \CDAlert[fuchsia]{'radioactivity'})} \appear{of the given amount of \CDAlert[fuchsia]{radioactive nuclei}} 
+\[
+[ R ]  \equal  \appear{\text{number of radioactive nuclei decaying per unit time}}
+\]
+\vspace{-3mm}
+\item The SI-unit of radioactivity is becquerel (Bq)\appear{, while the old unit (still widely used) is curie (Ci)}
+\[
+1 \mathrm{\;Bq}  \equal \appear{1 \text {\;decay} / \mathrm{s}} \quad \appear{,} \quad 
+\appear{1 \mathrm{\;Ci}}  \equal  \appear{3.7 \times 10^{10} \text {\;decay} / \mathrm{s}}\appear{=3.7 \times 10^{10} \mathrm{\;Bq}}
+\]
+\item $1 \mathrm{\;Ci}$ equals activity of a $1 \mathrm{\;g}$ of radium \appear{$({ }_{~88}^{226}Ra$,  $T_{1/2}=1600$ years)}
+
+\item A radiation source with activity of $1 \mathrm{\;mCi}=37 \mathrm{\;MBq}$ \appear{may be considered a significantly strong source} \appear{(slightly depending on the kind of radiation emitted)}
+
+\item The activity of ${ }^{241} \mathrm{Am}$ in a household smoke alarm \appear{is typically $1 \;\mu \mathrm{Ci}=37 \mathrm{\;kBq}$}
+% mean radioactivity of air in finnish households is 94 Bq/m³
+\end{itemize}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Example calculation}
+
+\begin{itemize}
+	\item \textbf{Q}: A vessel holds $2 \;\mu$g of tritium (half-life $T_{1/2}=12.3\;a$, atomic mass 3.02\;u).
+\appear{(a) What are its initial decay rate and activity?}
+\appear{(b) How much time will elapse before the decay rate falls to $1 \%$ of its initital value?}
+
+\item \textbf{A}: (a) Decay rate is $R(t)=\lambda N$\appear{, so the initial decay rate will be:}
+\[
+R_{0} \equal \appear{R(t=0)} \equal \appear{\lambda N_{0}} \equal \frac{\ln 2}{T_{1 / 2}} \frac{m_{tot}}{m_{1}}  \equal \frac{\ln 2}{12.3 \;y} \frac{2 \times 10^{-9} \;kg}{3.02 \;u \cdot 1.66 \times 10^{-27} \;kg / u}  \equal \appear{7.1 \times 10^{8} \;s^{-1}}
+\]
+\appear{And, the corresponding activity} \appear{will be $7.1 \times 10^{8} \mathrm{\;Bq}=710 \mathrm{\;MBq}$}
+
+\item (b) We ask, at which time $\lambda N(t)=\Frac{1}{100} \lambda N_{0}$? 
+$$
+\begin{aligned}
+ &\Rightarrow \qquad& \appear{\lambda N_{0} e^{-\lambda t}} & \equal \frac{1}{100} \appear{\lambda N_{0}} 
+\qquad \Rightarrow \qquad  \minus \appear{\lambda t} \equal \appear{\ln} \frac{1}{100} \\
+ &\Rightarrow \qquad&  \appear{t}& \equal  \minus \appear{\ln} \frac{1}{100} \appear{/} \LP \frac{\ln 2}{12,3 \;a} \,\RP \equal \appear{2,6 \times 10^{9} \;s}\appear{=82 \;a}
+\end{aligned}
+$$
+
+\end{itemize}
+
+% table 3
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Chain of radioactive decays}
+
+%
+\begin{itemize}[itemsep=2.0mm] % stackrel breaks lecturing mode?!
+	\item Consider a \CDAlert[fuchsia]{chain of radioactive decays}: $\appear{A} \appear{\stackrel{\lambda_{A}}{\oldrightarrow}} \appear{B} \appear{\stackrel{\lambda_{B}}{\oldrightarrow}} \appear{C}$\appear{, decay constants for $A$ and $B$ being $\lambda_{A}$ and $\lambda_{B}$, respectively} 
+	\item Our goal is to find the variation of nuclide $B$ as a function of time\appear{, $N_{B}=N_{B}(t)$}\appear{, assuming that the initial numbers (at $t=0)$} \appear{of the radioactive nuclides $A$ and $B$ would be $N_{A0}$ and $N_{B0}$, respectively}
+
+\item Substance A decays at rate $\frac{d N_{A}}{d t} \appear{=}\appear{-\lambda_{A} N_{A}}$\appear{, resulting in $N_{A}(t)=N_{A 0} e^{-\lambda_{A} t}$}
+
+\item Substance $B$ is formed by decay of A\appear{, and also decays itself:}
+\[
+\Frac{d N_{B}}{d t}  \equal  \plus \appear{\lambda_{A} N_{A}} \minus \appear{\lambda_{B} N_{B}} \equal  \plus \appear{\lambda_{A} N_{A 0}} \appear{e^{-\lambda_{A} t}} \minus \appear{\lambda_{B} N_{B}}
+\]
+
+\item[] This is a \CDAlert[red]{differential equation} for $N_{B}$. \appear{To solve $N_{B}=N_{B}(t)$}\appear{, first we make an educated guess with a \Alert[red]{trial function} of the form:} 
+\[
+N_{B}(t)  \equal \appear{N_{A 0}} \appear{(c_{A} e^{-\lambda_{A} t}} \plus \appear{c_{B} e^{-\lambda_{B} t} )}
+\]
+\end{itemize}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Chain of radioactive decays}
+
+\begin{itemize}
+	\item Plug in the trial form for $N_B$ and differentiate:
+$$
+\begin{aligned}
+& & \frac{d N_{B}}{d t} \equal \appear{N_{A 0}} \appear{(-\lambda_{A} c_{A} e^{-\lambda_{A} t}}  \minus \appear{\lambda_{B} c_{B} e^{-\lambda_{B} t} )} & \equal  \plus \appear{\lambda_{A} N_{A 0} e^{-\lambda_{A} t}} \minus \appear{\lambda_{B} N_{A 0}} \appear{(c_{A} e^{-\lambda_{A} t}} \plus \appear{c_{B} e^{-\lambda_{B} t} )} \qquad \\
+&\Rightarrow &  \minus \appear{\lambda_{A} c_{A} e^{-\lambda_{A} t}-\lambda_{B} c_{B} e^{-\lambda_{B} t}}& \equal  \plus \appear{\lambda_{A} e^{-\lambda_{A} t}} \minus \appear{\lambda_{B}} \appear{(c_{A} e^{-\lambda_{A} t}+c_{B} e^{-\lambda_{B} t} )} \\
+&\Rightarrow& \appear{(\lambda_{A}-\lambda_{B} c_{A}+\lambda_{A} c_{A} )} \appear{e^{-\lambda_{A} t}}& \equal \appear{0} \\
+&\Rightarrow& \appear{\lambda_{A}-\lambda_{B} c_{A}+\lambda_{A} c_{A}}&\appear{=0} \\
+&\Rightarrow& \appear{c_{A}}& \equal \fraca{\lambda_{A}}{\lambda_{B}-\lambda_{A}}
+\end{aligned}
+$$
+\appear{Therefore, we obtain:} 
+\[
+N_{B}(t)  \equal \appear{N_{A 0}} \LP \frac{\lambda_{A}}{\lambda_{B}-\lambda_{A}} \appear{e^{-\lambda_{A} t}} \plus \appear{c_{B} e^{-\lambda_{B} t}} \RP
+\]
+\item[] where the factor $c_{B}$ is still unknown
+\end{itemize}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Chain of radioactive decays}
+
+\begin{itemize}
+	\item If the initial value for $N_{B}$ would be 0 at $t=0$, i.e.
+\[
+N_{B}(t=0)  \equal \appear{N_{A 0}} \LP \frac{\lambda_{A}}{\lambda_{B}-\lambda_{A}} \appear{e^{-\lambda_{A} \cdot 0}}  \plus \appear{c_{B} e^{-\lambda_{B} \cdot 0}} \RP \appear{=0} \quad \Rightarrow \quad \appear{c_{B}=}\frac{-\lambda_{A}}{\lambda_{B}-\lambda_{A}}
+\]
+
+\item Thus, we get the number of B nuclei $N_{B}(t)$:
+\[
+N_{B}(t)  \equal \appear{N_{A 0}} \frac{\lambda_{A}}{\lambda_{B}-\lambda_{A}}
+\LP \appear{e^{-\lambda_{A} t}-e^{-\lambda_{B} t}} \,\RP
+\]
+
+\item In practice, activity is an often-used quantity
+
+\item In this case, the activities for nuclei $A$ and $B$ are:
+$$
+\begin{aligned}
+\appear{R_A = \lambda_{A} N_{A}} & \equal \appear{\lambda_{A} N_{A 0} e^{-\lambda_{A} t}} \\
+\appear{R_B = \lambda_{B} N_{B}} & \equal \appear{N_{A 0}} \frac{\lambda_{A} \lambda_{B}}{\lambda_{B}-\lambda_{A}} \LP \appear{e^{-\lambda_{A} t}}\appear{-e^{-\lambda_{B} t}} \,\RP 
+\end{aligned}
+$$
+\end{itemize}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Generation of radioactive nuclides}%by nuclear bombardment
+
+%
+\begin{itemize}
+	\item Radioactive nuclei are produced as a result of \CDAlert[blue]{neutron capture} by the nuclei \appear{(occasionally also \Alert[red]{electron and proton} beams are used)} 
+	
+	\item For instance \Alert[blue]{${ }^{59} \mathrm{Co}$ is bombarded with neutrons} \appear{\Alert[blue]{to \CDAlert[blue]{generate} ${ }^{60} \mathrm{Co}$}} \appear{which is radioactive with a half-life of $5.27$ years}
+
+\item We assume that the radioactive nuclei is generated at constant rate $g$ nuclei per second\appear{, and a decay constant of $\lambda$}\appear{, and calculate the number of radioactive nuclei produced per unit time:}
+$$
+\begin{aligned}
+\frac{d N}{d t} & \equal \appear{g-\lambda N} \\
+\appear{\nint_{N_{0}}^{N} } \frac{d N}{N-g / \lambda} & \equal  \minus \appear{\lambda} \appear{\nint_{0}^{t} d t} \quad \Rightarrow  \quad \appear{\ln} \fraca{N-g / \lambda}{N_{0}-g / \lambda}  \equal  \minus \appear{\lambda t}
+\end{aligned}
+$$
+\end{itemize}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Generation of radioactive nuclides}%by nuclear bombardment
+
+\begin{itemize}
+	\item[] $$
+\begin{aligned}
+& & \appear{\ln} \frac{N-g / \lambda}{N_{0}-g / \lambda} & \equal  \minus \appear{\lambda t} \qquad \Rightarrow \qquad \appear{N-g} \appear{/ \lambda}& \equal  \LP \appear{N_{0}-g} \appear{/ \lambda} \RP  \appear{e^{-\lambda t}} \\
+&\Rightarrow \quad& \appear{N(t)}& \equal \frac{g}{\lambda} \LP \appear{1-e^{-\lambda N}} \RP \appear{+N_{0} e^{-\lambda t}}
+\end{aligned}
+$$
+
+\item If we start with zero nuclides\appear{, i.e. $N_{0}=0$}\appear{, then the number of radioactive nuclei will be:}
+\[
+N(t)  \equal \frac{g}{\lambda} \LP \appear{1-e^{-\lambda t}} \RP 
+\]
+
+\item Note, that the maximum number of produced nuclei \appear{is $N_{\max }=\frac{g}{\lambda}$}
+
+\item Furthermore, the activity of the sample is $\appear{\lambda N(t)=}\appear{g} \LP \appear{1-e^{-\lambda t}} \RP $\appear{, and its maximum value is $g$.} \appear{Note, this example applies directly to \Alert[blue]{neutron activation analysis}} \appear{(see later)}
+\end{itemize}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Cross section}%and exponential attenuation
+
+%
+\begin{itemize}
+	\item Consider a constant flux of small projectile particles \appear{towards a slab of target particles.} \appear{Let's make some simplifying assumptions:}
+\begin{itemize}
+	\item Projectile particles are \CDAlert[red]{small}\appear{, point-like}
+\item Target particles have a cross sectional area of $\sigma\appear{,~[\sigma]=m^{2}}$
+\item Target particles have \CDAlert[blue]{a low number density} \appear{so that they do not cover or shadow each other}
+\end{itemize}
+
+\item Total (projected) area of target particles in the slab is:
+\[
+A^{\prime}  \equal \appear{\Underlinecomment{red}{n \cdot(A d x)}{\qquad Number of target particles within volume Adx}} \appear{\cdot \sigma}
+\]
+%\Underlinecomment{red}{\textrm{((} \Frac{\sin \,N \beta}{\sin \,\beta} \textrm{))} ^{2}}{}}
+
+\item \CDAlert[fuchsia]{Fractional coverage} \appear{(projected area)} \appear{of target particles}
+\[
+\fraca{A^{\prime}}{A}  \equal \frac{n A d x \sigma}{A} \equal \appear{n \sigma d x}
+\]
+\end{itemize}
+
+%\xdef\loc{south east}
+%\begin{tikzpicture}[remember picture,overlay] % anchor=south
+%    \node (A) [yshift=-0.25*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[width=7cm]{Figures_booklet/SOM_12_Nuclear_physics_figures/SOM_Nuclear_physics_Figure_1.png}}; % 8cm max height
+%\end{tikzpicture}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Exponential attenuation}%and 
+
+\seminormal
+\begin{itemize}
+	\item If each projectile \CDAlert[blue]{interacts only once}\appear{, the fraction of the projectile particles} \appear{(of the incoming $N$ particles)} \appear{which will be colliding within the slab thickness $d x$}\appear{, will be:}
+\[
+\Frac{d N}{N}  \equal \appear{n \sigma d x}
+\]
+\item[] but it's more practical to consider the collided particles as being removed from the beam:
+\[
+\Frac{d N}{N}  \equal  \minus \appear{n \sigma d x}
+\]
+
+\item Now, consider number of particles $N$ \appear{incoming into a slab of thickness $x$.} \appear{Thus, we obtain the number of projectile particles} \appear{which will remain in the beam}\appear{, as a function of distance:}
+\[
+\nint_{N_{0}}^{N} \fraca{d N}{N} \equal \appear{\nint_{0}^{x}} \minus \appear{n \sigma d x} \qquad \Rightarrow \qquad \appear{N(x)} \equal \appear{N_{0}} \appear{e^{-n \sigma x}}
+\]
+\appear{Thus, we have obtained the \CDAlert[red]{law of exponential attenuation}}
+\end{itemize}
+
+%\xdef\loc{south east}
+%\begin{tikzpicture}[remember picture,overlay] % anchor=south
+%    \node (A) [yshift=-0.25*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[width=7cm]{Figures_booklet/SOM_12_Nuclear_physics_figures/SOM_Nuclear_physics_Figure_1.png}}; % 8cm max height
+%\end{tikzpicture}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Cross section}%and exponential attenuation
+
+\begin{itemize}
+	\item In the above\appear{, the projectile particles were for simplicity assumed to be point-like:}
+\[
+\sigma  \equal \appear{\pi r^{2}}
+\]
+
+\item If both the projectile \appear{and the target have non-zero radii}\appear{, then:}
+\[
+\sigma  \equal \appear{\pi} \appear{( r_{1}}  \plus \appear{r_{2} )^{2}}
+\]
+
+\item Quite often the actual effective cross sectional area is a \Alert[blue]{function of collision energy}
+
+\item In this case, the cross section of the interaction may differ markedly from the \CDAlert[red]{geometrical cross section} of the target particle\appear{, and/or of the projectile} %(see the conceptual Fig 12.12)
+\end{itemize}
+
+%\xdef\loc{south east}
+%\begin{tikzpicture}[remember picture,overlay] % anchor=south
+%    \node (A) [yshift=-0.25*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[width=7cm]{Figures_booklet/SOM_12_Nuclear_physics_figures/SOM_Nuclear_physics_Figure_1.png}}; % 8cm max height
+%\end{tikzpicture}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Cross section}%and exponential attenuation
+
+\seminormal
+\begin{itemize}[itemsep=1.7mm]
+	\item The customary unit for nuclear cross section is barn, where:
+\[
+1 \text { barn}  \equal \appear{1 \mathrm{~b}}  \equal \appear{10^{-28} \mathrm{~m}^{2}} \equal \appear{100 \mathrm{\;fm}^{2}}
+\]
+\item Barn is not an SI unit\appear{, but it is convenient because its order of magnitude is the same as the geometrical cross section of atomic nucleus} \appear{(the name barn comes from a common target)} 
+
+\item Cross sections of most nuclear reactions depend on energy of the incident particle 
+
+\item E.g. the neutron \CDAlert[red]{capture reaction} of ${ }_{48}^{113} Cd$ \appear{varies with neutron energy} %as shown in Figure $12.14 .$
+
+\item This nuclear reaction includes also emission of a gamma ray:
+\[
+{ }_{48}^{113} Cd(n, \gamma)  \plus  \appear{n}  \quad \rightarrow \quad \appear{{}_{48}^{114} Cd}  \plus  \appear{\gamma}
+\]
+\appear{Although ${ }_{\;48}^{113} C d$ isotopes constitute only $12 \%$ of natural cadmium}\appear{, this neutron capture cross section is so large}\appear{, that \Alert[red]{cadmium is widely used in \CDAlert[red]{control rods} for nuclear reactors}}
+\end{itemize}
+
+%\xdef\loc{south east}
+%\begin{tikzpicture}[remember picture,overlay] % anchor=south
+%    \node (A) [yshift=-0.25*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[width=7cm]{Figures_booklet/SOM_12_Nuclear_physics_figures/SOM_Nuclear_physics_Figure_1.png}}; % 8cm max height
+%\end{tikzpicture}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Cross section}%and exponential attenuation
+
+% 6.5 cm = midway, 10 cm = 3/4 
+%\vspace{2.5mm}
+\begin{minipage}{7.0cm}
+\begin{itemize}
+	\item For a given incoming particle $a$\appear{, many different outgoing particles may result as reaction products}\appear{, corresponding to \Alert[blue]{several}} \appear{(alternative)} \appear{\CDAlert[blue]{'reaction channels'}}
+	\appear{\xdef\loc{north east}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=0.75*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[]{Figures_booklet/SOM_12_Nuclear_physics_figures/SOM_Nuclear_cross_section_a}}; % 8cm max height
+\end{tikzpicture}}
+	
+\end{itemize}
+\end{minipage}
+\vspace{2.5mm}
+
+\begin{itemize}
+\item And, each of these reaction channels may have its own cross section\appear{, such as $\sigma(a, b)$}\appear{, $\sigma ( a, b^{\prime} )$}\appear{, $\sigma (a, b^{\prime \prime} )$ and so on }
+
+\item Then, the total reaction cross section for the particle $a$ will be:
+\[
+\sigma_{t o t}(a)  \equal \appear{\sigma(a, b)} \appear{+\sigma (a, b^{\prime})}  \plus \appear{\sigma (a, b^{\prime \prime} )} \appear{+\ldots}
+\]
+
+\item And again, each of the \Alert[red]{cross sections may have different \CDAlert[red]{dependency on the energy} of the incoming particle}
+\end{itemize}
+
+%\endofslide 
+\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+
+

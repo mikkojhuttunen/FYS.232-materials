@@ -1,0 +1,245 @@
+% !TEX root = ../bb_AiRa_Kappaleet.tex
+
+% ö = \%c3\%b6
+% ä = \%C3\%A4
+
+\xdef\sectiontitle{\IVsectiontitle} %aiheuttama
+\TOCrefs
+
+%%%%%%%%%%%%%%%
+\begin{frame}[label=4_6_a]
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\label{\TOCname}
+
+\vspace{-3mm}
+
+%\vspace{\chapterTOCvksip}%
+\begin{itemize}[leftmargin=0.5cm,itemsep=\chapterTOCitemsep]
+    \item[4.1]<1-> \hyperlink{4_1_a}{\IVaSubsectiontitle}
+    \item[4.2]<1-> \hyperlink{4_2_a}{\IVbSubsectiontitle}	
+    \item[4.3]<1-> \hyperlink{4_3_a}{\IVcSubsectiontitle}	
+    \item[4.4]<1-> \hyperlink{4_4_a}{\IVdSubsectiontitle}
+    \item[4.5]<1-> \hyperlink{4_5_a}{\IVeSubsectiontitle}
+    \item[4.6]<1-> \hyperlink{4_6_a}{\CDAlert[red]{\IVfSubsectiontitle}}
+    \item[4.7]<1-> \hyperlink{4_7_a}{\IVgSubsectiontitle}
+\end{itemize}
+
+%\endofslide 
+\end{frame}
+%%%%%%%%%%%%%%%
+
+\xdef\sectiontitle{\IVfSubsectiontitle} 
+
+\xdef\sectiontitle{Pariteetti (P), Varauksen konjugointi (C) ja Ajan Kääntö (T)} 
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+%
+\appear{}
+
+\begin{itemize}
+	\item \appear{Aiemmin keskusteltiin joistakin ilmeisistä \CDAlert[fuchsia]{säilymislaista} hiukkasten reaktioissa}\appear{, kuten \CDAlert[blue]{baryoniluvun}}\appear{, \CDAlert[fuchsia]{leptoniluvun}} \appear{ja \CDAlert[green]{outouden}} \appear{säilymisestä}
+	\appear{\xdef\loc{south}%
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.25*\figYshift,xshift=0*\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,width=14cm]{Figures_booklet/SOM_11_Fundamental_particles_figures/SOM_Fundamental_Table_4.png}}; %scale=\figscale. % 8cm max hei
+\end{tikzpicture}\CR[ref= h]{}} 
+	\item Tarkastellaan seuraavaksi lakeja \appear{jotka liittyvät perustavanlaatuisemmin} \appear{maailmankaikkeuden symmetrioihin}\appear{, sekä ajan} \appear{että avaruuden luonteisiin} \appear{(\CDAlert[fuchsia]{aika-avaruuteen})}
+\end{itemize}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+\xdef\sectiontitle{P, C ja T} 
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Pariteetti-inversio (P)}
+\appear{}
+
+\semismall
+\begin{itemize}[itemsep=1.6mm]
+	\item \CDAlert[blue]{Pariteetti-inversio} muuttaa kaikkien koordinaattien merkin: 
+	\[
+	 \vec{r} \equal  \appear{(x, y, z)} \quad \rightarrow \quad \appear{(-x,-y,-z)}  \equal  \appear{-\vec{r}} \appear{\,, \qquad \text{esim.}} \qquad \appear{P:~ \psi(\vec{r})} \rightarrow \appear{\psi'(-\vec{r})}
+	 \]
+
+\item Vahva ja sähkömagneettinen vuorovaikutus \CDAlert[fuchsia]{säilyttävät pariteetin}\appear{, heikko vuorovaikutus ei}
+
+\end{itemize}
+
+% 6.5 cm = midway, 10 cm = 3/4 
+\vspace{2.5mm}
+\begin{minipage}{8.3cm}
+\begin{itemize}[itemsep=1.6mm]
+	\item Tarkastellaan tapausta missä hiukkanen kiertää $z$-akselia myötäpäivään \appear{(\CDAlert[gray]{harmaa nuoli}).} %
+	\appear{\xdef\loc{south east}%
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.45*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,width=5cm]{Figures_booklet/SOM_11_Fundamental_particles_figures/SOM_Fundamental_particles_Figure_13.png}};%scale=\figscale. % 8cm max hei
+\end{tikzpicture}\CR[]{}}%
+ \appear{Pariteettimuunnoksessa}\appear{ otamme hiukkasen radasta peilikuvan origon suhteen (\CDAlert[fuchsia]{pinkki nuoli}).} \appear{Molemmissa tapauksissa}\appear{, hiukkanen pyörii identtisesti myötäpäivään $z$-akselin suhteen}
+	
+	\item \Alert[fuchsia]{Pyörimisliike on symmetrinen pariteettimuunnoksen suhteen} 
+	\item Vastaavasti \CDAlert[red]{kulmaliikemäärä} \appear{ja \CDAlert[blue]{spin}} \appear{säilyvät \CDAlert[fuchsia]{muuttumattomina pariteettimuunnoksessa}} \appear{(kiinnostuneen lukijan kannattaa tutustua} \appear{\CDAlert[green]{vektoreihin}}\appear{, \CDAlert[violet]{pseudovektoreihin}} \appear{ja \CDAlert[violet]{ristituloon})}
+\end{itemize}
+\end{minipage}
+
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Pariteetti-inversio (P)}
+\appear{}
+
+\seminormal
+\begin{itemize}
+	\item Tarkastellaan nyt $\beta^{+}$-hajoamista: $\qquad \appear{p^{+}} \quad \rightarrow \quad \appear{n} ~ \plus~ \appear{e^{+}}  ~\plus~ \appear{\nu_{e}}$
+	\appear{\xdef\loc{south east}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.35*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,width=5cm]{Figures_booklet/SOM_11_Fundamental_particles_figures/SOM_Fundamental_particles_Figure_14.png}}; %scale=\figscale. % 8cm max hei
+\end{tikzpicture}\CR[]{}}
+\item Protoni muuttuu neutroniksi\appear{, positroniksi} \appear{ja neutriinoksi.} \appear{Neutroni säilyy ytimessä} \appear{mutta positroni ja neutriino emittoituvat}\appear{, molempien spin on $1/2$} 
+\end{itemize}
+
+% 6.5 cm = midway, 10 cm = 3/4 
+\vspace{0.2mm}
+\begin{minipage}{8.5cm}
+\begin{itemize}
+	\item Niiden spinit ovat samansuuntaiset. \appear{Positronin spin on samansuuntainen sen liikemäärävektorin kanssa}\appear{, neutriinon spin puolestaan vastakkaissuuntainen liikemäärän kanssa}
+
+	\item Tehdään nyt \CDAlert[red]{pariteettimuunnos}. \appear{$e^{+}$:n ja $\nu_{e}$:n liikemäärät muuttuvat}\appear{, mutta spinit eivät} \appear{kuten nähdään kuvassa~14\,b.} \appear{Tämän reaktion pitäisi tapahtua samalla todennäköisyydellä kuin kuvassa 14\,a hahmotellun reaktion}\appear{, mutta se ei tapahdu.} \appear{Kuvan~14\,b reaktiota ei tapahdu.} \appear{Eli \Alert[blue]{heikko vuorovaikutus ei ole pariteettimuunnoksen suhteen invariantti}!} \appear{(\CDAlert[blue]{Pariteetin rikkoutuminen})}
+\end{itemize}
+\end{minipage}
+%\vspace{2.5mm}
+
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Varauksen konjugointi (C)}%conjugation
+\appear{}
+
+\seminormal
+\begin{itemize}
+	\item \appear{\CDAlert[fuchsia]{Varauksen konjugointi muuttaa} kaikki hiukkaset \CDAlert[fuchsia]{antihiukkasikseen}.} \appear{Tarkastellaan aiempaa $\beta^{+}$-hajoamista}\appear{, ja tehdään \CDAlert[red]{varauksen konjugointi}.}
+	\appear{\xdef\loc{south east}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.35*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,width=5cm]{Figures_booklet/SOM_11_Fundamental_particles_figures/SOM_Fundamental_particles_Figure_15.png}}; %scale=\figscale. % 8cm max hei
+\end{tikzpicture}\CR[]{}}
+ \appear{Antiprotoni muuttuu nyt antineutroniksi}\appear{, elektroniksi ja antineutriinoksi.} \appear{Kuvan~15a hahmottelemaa prosessia ei tapahdu}
+\end{itemize}
+
+% 6.5 cm = midway, 10 cm = 3/4 
+\vspace{2.5mm}
+\begin{minipage}{8.4cm}
+\begin{itemize}
+	\item Syy tähän on että antineutriinon spin ei ole vastakkaissuuntainen liikemäärän kanssa\appear{, vaan samansuuntainen (ks.\ aiempi luento).} \appear{Joten heikko vuorovaikutus ei ole invariantti varauksen konjugoinnin suhteen}
+
+	\item Mutta jos tehdään \CDAlert[fuchsia]{sekä} \CDAlert[blue]{pariteettimuunnos} \appear{ja \CDAlert[red]{varauksen konjugointi}}\appear{, niin saadaan kuvan~15b reaktio.} \appear{Tämä reaktio tapahtuu.}
+\end{itemize}
+\end{minipage}
+%\vspace{2.5mm}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Yhdistetty pariteettimuunnos ja varauksen konjugointi (CP)}%transformation (charge + parity)s
+\appear{}
+
+\semismall
+\begin{itemize}
+	\item \appear{Eli jos tehdään \CDAlert[blue]{sekä pariteetti-inversio}} \appear{ja \CDAlert[red]{varauksen konjugointi}}\appear{, saadaan reaktio joka  \CDAlert[black]{tapahtuu}}\appear{/\CDAlert[black]{on sallittu}} 
+	
+	\item Heikko vuorovaikutus on selvästikin invariantti (muuttumaton) näiden kahden muunnoksen tulolle \appear{$ \quad \oldRightarrow \quad $ Tätä symmetriaa sanotaan \CDAlert[fuchsia]{CP-invarianssiksi}} 
+
+\item Neutriinon spin on vastakkaissuuntainen \appear{(ei samansuuntainen)}
+\appear{ja antineutriinon samansuuntainen} \appear{liikemäärän kanssa.}\appear{ Tätä ominaisuutta sanotaan \CDAlert[fuchsia]{neutriinon helisiteetiksi}} \appear{('\CDAlert[fuchsia]{kätisyydeksi}')}
+
+\item Elektroneilla ei ole tiettyä kätisyyttä. \appear{Otetaan nopeudella $500 \mathrm{\;m}/\mathrm{s}$ liikkuva elektroni}
+
+\item Nopeudella 1000 m/s liikkuvassa koordinaatistossa \appear{sama elektroni näyttäisi liikkuvan taaksepäin}\appear{,
+negatiiviseen suuntaan}\appear{, jolloin sen \CDAlert[fuchsia]{spinin} ja liikemäärän} \appear{keskinäiset suunnat}\appear{ riippuvat \CDAlert[fuchsia]{valitusta koordinaatistosta}}
+
+\item Massattomat hiukkaset etenevät nopeudella $c$ joka koordinaatistossa\appear{, jolloin spinin ja liikemäärän täytyy osoittaa aina samaan suuntaan.}\appear{ \CDAlert[blue]{Standardimallin}}\appear{ mukaan tämä liittyy oletukseen \CDAlert[tuniblue]{neutriinoiden massattomuudesta}}
+\end{itemize}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Yhdistetty pariteettimuunnos ja varauksen konjugointi (CP)}
+\appear{}
+
+\begin{itemize}
+	\item \appear{Kokeet osoittavat, että neutriinot voivat muuttaa leptoniperheensä} \appear{(leptonin maun),} \appear{prosessissa jota kutsutaan \CDAlert[blue]{neutriino-oskillaatioksi}}
+	\appear{\xdef\loc{south east}%
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.35*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,width=8cm]{Figures_booklet/SOM_11_Fundamental_particles_figures/SOM_Fundamental_particles_Figure_16.png}};%scale=\figscale. % 8cm max hei
+\end{tikzpicture}\CR[]{}}
+%	\item Furthermore, the neutrino's parity violation has also led to speculation that the neutrino and antineutrino might not be different particles, after all
+\end{itemize}
+
+% 6.5 cm = midway, 10 cm = 3/4 
+\vspace{2.5mm}
+\begin{minipage}{5.5cm}
+\begin{itemize}
+	\item Lisäksi neutriinon pariteetin rikkoutuminen on johtanut spekulaatioihin \appear{että neutriinot ja antineutriinot voisivat \Alert[fuchsia]{olla yksi ja sama hiukkanen}}
+
+	\item On myös koetuloksia (vuodelta 1964?) \Alert[red]{CP-rikkomuksesta heikossa vuorovaikutuksessa}.\appear{ Pieni osa $K_{L}^{0}$:n hajoamisista ei ole CP-invariantteja}
+\end{itemize}
+\end{minipage}
+%\vspace{2.5mm}
+
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Ajan kääntö (T) ja CPT-invarianssi}
+\appear{}
+
+\begin{itemize}[itemsep=1.9mm]
+	\item \appear{Ajan käännössä aikakoordinaatti $t$} \appear{korvataan $-t$,} $\qquad \appear{T:} ~~ \appear{t} \rightarrow \appear{-t} $
+
+\item Lähes kaikki mikroskooppiset fysikaaliset prosessit ovat \CDAlert[blue]{symmetrisiä ajan} \CDAlert[blue]{käännön suhteen}\appear{, eli täysin \CDAlert[tuniblue]{samat fysiikan} \CDAlert[tuniblue]{lait pätevät}} \appear{eteni aika sitten \Alert[blue]{eteen- vai taaksepäin}}
+
+\item Huomaa että \CDAlert[blue]{symmetria ajan käännön suhteen} on erilainen kuin \CDAlert[red]{ajastariippumattomuus}
+\item Kvanttikenttäteorioiden mukaan kaikki vuorovaikutukset ovat invariantteja yhdistetyn \CDAlert[green]{varauksen konjugoinnin} (C)\appear{, \CDAlert[fuchsia]{pariteettimuunnoksen} (P)}\appear{, ja \CDAlert[blue]{ajan käännön} (T)}\appear{ suhteen $\Leftrightarrow$ \CDAlert[fuchsia]{CPT-invarianssi}}
+
+\item Jos prosessi on CP-invariantti\appear{, sen täytyy olla myös T-invariantti} 
+
+\item Jos tapahtuu \CDAlert[fuchsia]{CP-rikkomus}\appear{, myös ajan käännön täytyy rikkoutua} \appear{((jotta \CDAlert[fuchsia]{CPT-invarianssi}\, säilyy))}
+\end{itemize}
+
+%\endofslide 
+\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+
+

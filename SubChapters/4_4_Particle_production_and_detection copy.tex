@@ -1,0 +1,132 @@
+% !TEX root = ../aa_SoM_Chapters.tex
+
+%% HARRIS: Chapter 9
+%\xdef\Isectiontitle{Statistical Mechanics} 
+%%
+%\xdef\IaSubsectiontitle{A Simple Thermodynamic System} 
+%\xdef\IbSubsectiontitle{Entropy and Temperature}
+%\xdef\IcSubsectiontitle{Einstein's solid}
+%\xdef\IdSubsectiontitle{Boltzmann \& Maxwell–Boltzmann distributions}
+%\xdef\IeSubsectiontitle{Classical Averages}
+%
+%\xdef\IfSubsectiontitle{Quantum Distributions} 
+%\xdef\IgSubsectiontitle{The Quantum Gas} 
+%\xdef\IhSubsectiontitle{Photon Gas}
+%\xdef\IiSubsectiontitle{The Laser}
+%\xdef\IjSubsectiontitle{Specific Heats} 
+%\xdef\IkSubsectiontitle{Debye Model} 
+
+% ö = \%c3\%b6
+% ä = \%C3\%A4
+
+\xdef\sectiontitle{\IVsectiontitle} %aiheuttama
+
+%%%%%%%%%%%%%%%
+\begin{frame}[label=4_4_a]
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+
+%\vspace{\chapterTOCvksip}%
+\begin{itemize}[leftmargin=0.5cm,itemsep=\chapterTOCitemsep]
+    \item[4.1] \hyperlink{4_1_a}{\IVaSubsectiontitle}
+    \item[4.2] \hyperlink{4_2_a}{\IVbSubsectiontitle}	
+    \item[4.3] \hyperlink{4_3_a}{\IVcSubsectiontitle}	
+    \item[4.4] \hyperlink{4_4_a}{\CDAlert[red]{\IVdSubsectiontitle}}
+    \item[4.5] \hyperlink{4_5_a}{\IVeSubsectiontitle}
+    \item[4.6] \hyperlink{4_6_a}{\IVfSubsectiontitle}
+    \item[4.7] \hyperlink{4_7_a}{\IVgSubsectiontitle}
+\end{itemize}
+
+
+\end{frame}
+%%%%%%%%%%%%%%%
+
+\xdef\sectiontitle{\IVdSubsectiontitle} 
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{A Short history}
+
+\semismall
+\begin{itemize}
+\item \appear{Early experiments with \CDAlert[red]{$\alpha$ sources}} \appear{e.g. Pb-210}\appear{, \CDAlert[red]{with 5.3\;MeV of kinetic energy} were used:} 
+
+\item[] \begin{itemize}
+	 \item \CDAlert[red]{Electron}\appear{, found in 1897} \appear{((J.J. Thomson, cathode ray, e/m))}\appear{, its charge was measured in 1909 (by Millikan)}
+	\item \CDAlert[blue]{Proton}\appear{, found in 1919} \appear{((E. Rutherford, $\alpha$ particles on gold foil))}
+	\item \CDAlert[fuchsia]{Neutron}\appear{, found in 1932} \appear{((J. Chadwick, electrically neutral heavy radiation emitted from a bombardment experiment, with mass close to proton))} \appear{$\tau \sim 882 \mathrm{\;s}$}
+\end{itemize}
+
+\item Later, \CDAlert[blue]{$\gamma$ rays and cosmic rays} were used $\appear{\oldrightarrow$ energies of \CDAlert[blue]{$\sim 1 \mathrm{\;GeV}$ and higher}:}
+\item[] \begin{itemize}
+\item \CDAlert[red]{Positron}\appear{, found in 1932} \appear{((Anderson, using Wilson's cloud chamber \& $\gamma$ rays))}
+\item Muon\appear{, found in 1936 (cosmic rays)} \appear{$m_{\mu}=0.106 \mathrm{\;GeV}, ~\tau \sim 2.2 \;\mu\mathrm{s}$}
+\item Pion\appear{, found in 1947}\appear{, (cosmic rays) $m_{\pi}=0.140 \mathrm{\;GeV}, ~\tau \sim 26 \mathrm{\;ns}$}
+\item \appear{Kaon}\appear{, found in 1947}\appear{, (cosmic rays) $m_{K}=0.490 \mathrm{\;GeV}, ~\tau \sim 5 \mathrm{\;ns}$}
+\end{itemize}
+
+\item Kaons $\oldrightarrow$ containing \CDAlert[fuchsia]{quarks}: \appear{up, down \& strange in 1967}
+\end{itemize}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Modern accelerators}
+
+\semismall
+\begin{itemize}
+	\item And still later on, \appear{more and heavier particles were found:}
+\begin{itemize} \small
+	 \item in 1974: \appear{$3.1 \mathrm{\;GeV} ~J/\psi$-\CDAlert[fuchsia]{meson}}\appear{, consisting of the charm quark and antiquark}
+	\item in 1975: \appear{$1.8 \mathrm{\;GeV}$ tauon}
+	\item in 1977: \appear{$9.5 \mathrm{\;GeV}$ Upsilon meson}\appear{, consisting of bottom quark and its antiquark}
+	\item in 1983: \appear{$80 \mathrm{\;GeV} ~\&~ 91 \mathrm{\;GeV}$ $W$- and $Z$-bosons}
+	\item In 1994: \appear{$180 \mathrm{\;GeV}$ \CDAlert[fuchsia]{top quark}}\appear{, the most massive quark that \CDAlert[fuchsia]{doesn't 'hadronize'}}
+\end{itemize}
+
+\item Modern accelerators reach >500\;TeV\appear{, either using a \CDAlert[blue]{2-beam collider} scheme} \appear{or a \CDAlert[red]{stationary target with one incident beam}}
+
+\end{itemize}
+
+%
+\appear{\xdef\loc{south west}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.15*\figYshift,xshift=-\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[width=6.6cm]{Figures_booklet/SOM_11_Fundamental_particles_figures/SOM_Fundamental_particles_Figure_4.png}}; %scale=\figscale. % 8cm max hei
+\end{tikzpicture}
+
+\xdef\loc{south east}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.15*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[width=6.3cm]{Figures_booklet/SOM_11_Fundamental_particles_figures/SOM_Fundamental_particles_Figure_6.png}}; %scale=\figscale. % 8cm max hei
+\end{tikzpicture}}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Particle detectors}
+
+\seminormal
+\begin{itemize}
+	 \item Having left cloud chambers in the past\appear{, there are several fundamental techniques on how to identify} \appear{and characterize particles which burst out from a collision}\appear{, determination of charge}\appear{, momentum}\appear{, mass etc.}
+
+\item \CDAlert[fuchsia]{Scintillator counter}: \appear{light-flashing material due to particle (e.g. Th doped NaI crystal)}
+\item \CDAlert[black]{Multiwire proportional counter}: \appear{mesh of conductive wires to determine particle trajectory by observing the ions left on the track}
+\item \CDAlert[red]{Cerenkov detector}: \appear{particle speed can be determined from the radiation}
+\item \CDAlert[blue]{Silicon detector}: \appear{semiconductors with electron–hole pairs excited by the particle} \appear{$\oldrightarrow$ particle trajectory}
+\item \CDAlert[green]{Calorimeter}: \appear{energy determined from the particle showers induced by the incoming particle}
+
+\end{itemize}
+
+%\endofslide 
+\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%

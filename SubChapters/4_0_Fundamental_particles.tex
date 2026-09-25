@@ -1,0 +1,342 @@
+% !TEX root = ../aa_SoM_Chapters.tex
+
+%% HARRIS: Chapter 9
+%\xdef\Isectiontitle{Statistical Mechanics} 
+%%
+%\xdef\IaSubsectiontitle{A Simple Thermodynamic System} 
+%\xdef\IbSubsectiontitle{Entropy and Temperature}
+%\xdef\IcSubsectiontitle{Einstein's solid}
+%\xdef\IdSubsectiontitle{Boltzmann \& Maxwell–Boltzmann distributions}
+%\xdef\IeSubsectiontitle{Classical Averages}
+%
+%\xdef\IfSubsectiontitle{Quantum Distributions} 
+%\xdef\IgSubsectiontitle{The Quantum Gas} 
+%\xdef\IhSubsectiontitle{Photon Gas}
+%\xdef\IiSubsectiontitle{The Laser}
+%\xdef\IjSubsectiontitle{Specific Heats} 
+%\xdef\IkSubsectiontitle{Debye Model} 
+
+% ö = \%c3\%b6
+% ä = \%C3\%A4
+
+\xdef\sectiontitle{\IVsectiontitle} %aiheuttama
+
+%%%%%%%%%%%%%%%
+\begin{frame}[label=4_1_a]%[label=4_0_TOC1]
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+
+%\vspace{\chapterTOCvksip}%
+\begin{itemize}[leftmargin=0.5cm,itemsep=\chapterTOCitemsep]
+    \item[4.1] \hyperlink{4_1_a}{\CDAlert[blue]{\IVaSubsectiontitle}}
+    \item[4.2] \hyperlink{4_2_a}{\IVbSubsectiontitle}	
+    \item[4.3] \hyperlink{4_3_a}{\IVcSubsectiontitle}	
+    \item[4.4] \hyperlink{4_4_a}{\IVdSubsectiontitle}
+    \item[4.5] \hyperlink{4_5_a}{\IVeSubsectiontitle}
+    \item[4.6] \hyperlink{4_6_a}{\IVfSubsectiontitle}
+    \item[4.7] \hyperlink{4_7_a}{\IVgSubsectiontitle}
+\end{itemize}
+
+%\endofslide 
+\end{frame}
+%%%%%%%%%%%%%%%
+
+\xdef\sectiontitle{Prelude to fundamental particles} 
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+
+\semismall
+\begin{itemize}[leftmargin=2cm,labelsep=1cm]%,align=left
+	\item[450 BC] \appear{Democritus:} \appear{Smallest indestructible constituent of matter $\oldRightarrow$ \CDAlert[tunired]{atom} }
+	
+	\item[1808] \appear{Dalton:} \appear{\CDAlert[red]{Atoms} as fundamental building blocks of matter }
+	
+	\item[1879] \appear{Thomson:} \appear{also \CDAlert[blue]{electrons} were found to exist, atoms contain electrons }
+	
+	\item[1913] \appear{Rutherford:} \appear{\CDAlert[green]{protons} were found in hydrogen atom }
+	
+	\item[1923] \appear{Compton:} \appear{\CDAlert[fuchsia]{photons} also \Alert[fuchsia]{scatter as} they were \CDAlert[fuchsia]{particles}} 
+	
+	\item[1932] \appear{Chadwick:} \appear{\CDAlert[blue]{neutrons} were found to e.g. explain mass of nuclei}
+	
+	\item[\Alert{1932$\,\rightarrow$}] \appear{\Alert[red]{Positron}}\appear{, \Alert[red]{muon}}\appear{, \Alert[red]{pion}, \Alert[red]{sigma}, \Alert[red]{rho}, etc. ...}
+
+\item[1964] \appear{\CDAlert[fuchsia]{Gell-Mann} \& Zweig:} \appear{Prediction of \CDAlert[fuchsia]{quarks} as the constituents of the protons, neutrons etc.} \appear{(nucleons have internal structure)} 
+\end{itemize}
+\vspace{3mm}
+
+\implies{ As a result, we \CDAlert[fuchsia!80!black]{presently} have the so-called \CDAlert[fuchsia]{Standard Model} }
+
+%\xdef\loc{south east}
+%\begin{tikzpicture}[remember picture,overlay] % anchor=south
+%    \node (A) [yshift=-0.25*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[width=7cm]{Figures_booklet/SOM_12_Nuclear_physics_figures/SOM_Nuclear_physics_Figure_1.png}}; % 8cm max height
+%\end{tikzpicture}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+
+% 6.5 cm = midway, 10 cm = 3/4 
+%\vspace{2.5mm}
+\begin{minipage}{7.5cm}
+\begin{itemize}
+	\item Ordinary matter is composed of \CDAlert[fuchsia]{protons}\appear{, \CDAlert[red]{neutrons}} \appear{and \CDAlert[blue]{electrons}}
+
+\item During the last 60 years\appear{, experiments with \CDAlert[fuchsia]{particle accelerators} using ever increasing energies have revealed hundreds of other 'fundamental particles'}
+\implies{ e.g. discovery of \CDAlert[fuchsia]{quarks} }
+
+\item Understanding of the fundamental particles and their structure have changed during the years
+\end{itemize}
+\end{minipage}
+%\vspace{2.5mm}
+
+
+\xdef\loc{south east}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.25*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[height=9.5cm]{Figures_booklet/SOM_11_Fundamental_particles_figures/Tikz_SOM_Fundamental_figures.pdf}}; % 8cm max height
+\end{tikzpicture}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Range of a force?}
+
+\begin{itemize}
+	\item \CDAlert[blue]{Elementary particles interact only in a few distinct ways}
+
+\item In mechanics, a force requires physical contact \appear{(tension, normal forces, friction, ...)}\appear{, but gravity acts through a vacuum}\appear{, so do electromagnetic forces!}
+
+\item Contact-free forces turn out to be more of a rule than an exception. \appear{Such forces can be called as \CDAlert[red]{field forces}}
+
+\item In addition, contact forces (tension etc.) \appear{turn out to arise from microscopic electromagnetic forces}
+
+%\item More generally, having no contact is more of a rule than an exception. Also electromagnetic force acts through a vacuum. Gravity and electromagnetic forces are so called field forces. Furthermore, contact forces (tension etc.) eventually turn out to be a sum of microscopic electromagnetic forces
+\end{itemize}
+
+% 6.5 cm = midway, 10 cm = 3/4 
+\vspace{2.5mm}
+\begin{minipage}{8.0cm}
+\begin{itemize}
+	\item \CDAlert[fuchsia]{Strong force} was also seen to act 'remotely'%
+	\appear{\xdef\loc{south east}%
+\begin{tikzpicture}[remember picture,overlay]% anchor=south
+    \node (A) [yshift=-0.25*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[width=5cm]{Figures_booklet/SOM_11_Fundamental_particles_figures/SOM_Nuclear_Table_2}};% 8cm max height
+\end{tikzpicture}}%
+\appear{, although the \CDAlert[fuchsia]{range was} \CDAlert[fuchsia]{very short}}
+\end{itemize}
+\end{minipage}
+%\vspace{2.5mm}
+
+
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+
+
+%%%%%How Forces Act?
+\xdef\sectiontitle{\IVaSubsectiontitle} 
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+%\framesubtitle{How Forces Act?}
+
+\begin{itemize}
+	\item \CDAlert[blue]{Modern view}:
+\item[] \begin{itemize}
+	 \item \CDAlert[tuniblue]{Forces act via exchange of mediating particles}
+\item Each force \appear{(of the 4 fundamental)} \appear{has its own mediating particle}
+\item The mediating particle is also known as field quantum
+\end{itemize}
+\implies{  Quantum field theory }
+
+\item \CDAlert[red]{How do we explain the interaction?}
+
+\item There are obviously two kinds of particles:
+\item[] \begin{itemize}
+	\item Those particles that \CDAlert[blue]{experience} the force
+\item Those particles which are exchanged to
+convey the force\appear{, i.e. to \CDAlert[tuniblue]{mediate} the interaction}
+
+\end{itemize}
+
+\item Note, in some cases the particles convey the force they experience themselves!
+\end{itemize}
+
+%\xdef\loc{south east}
+%\begin{tikzpicture}[remember picture,overlay] % anchor=south
+%    \node (A) [yshift=-0.25*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[width=7cm]{Figures_booklet/SOM_12_Nuclear_physics_figures/SOM_Nuclear_physics_Figure_1.png}}; % 8cm max height
+%\end{tikzpicture}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+
+
+% 6.5 cm = midway, 10 cm = 3/4 
+%\vspace{2.5mm}
+\begin{minipage}{7.5cm}
+\begin{itemize}
+	\item Two physics students\appear{, Anna and Bob}\appear{, sliding on frictionless ice}%
+	\appear{\xdef\loc{east}%
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[height=8cm]{Figures_booklet/SOM_11_Fundamental_particles_figures/SOM_Fundamental_particles_Figure_1.png}};% 8cm max height
+\end{tikzpicture}%
+}
+\appear{, interact by Anna throwing a snowball to Bob, who catches it}
+
+\item Momentum of each person changes: \appear{Anna's momentum changes $-\vec{p}_{\text {snowball}}$}\appear{, and Bob's momentum changes $+\vec{p}_{\text {snowball}}$}
+
+\item This would represent "\Alert[fuchsia]{a snowball-mediated repulsive force}"\appear{, where the snowball transfers momentum from Anna to Bob}
+
+\item A \CDAlert[blue]{Feynman diagram} represents this interaction schematically
+\end{itemize}
+\end{minipage}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+
+\seminormal
+\begin{itemize}[itemsep=1.7mm]
+	\item The above example successfully mimics a repulsive force between Anna and Bob\appear{, but the \CDAlert[fuchsia]{analogy fails to explain an attractive force}}
+	\appear{\xdef\loc{south east}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.25*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[scale=0.85,page=2]{Figures_booklet/SOM_11_Fundamental_particles_figures/Tikz_SOM_Fundamental_figures_combo.pdf}}; % 8cm max height
+\end{tikzpicture}}
+	\item To convey an attractive force\appear{, when throwing the snowball}\appear{, Anna would have to move towards Bob}\appear{, and when catching the snowball}\appear{, Bob would have to move towards Anna} 
+	\implies{ \CDAlert[fuchsia]{Conservation of momentum would be violated!}}
+
+\item In the example\appear{, Anna had the snowball already before throwing it}\appear{, and when catching the snowball}\appear{, Bob would have kept it}
+\end{itemize}
+
+% 6.5 cm = midway, 10 cm = 3/4 
+\vspace{1.7mm}
+\begin{minipage}{9.0cm}
+\begin{itemize}[itemsep=1.7mm]
+	\item In reality, the snowball \appear{(mediating particle)} \appear{would be \CDAlert[red]{created only for the} \CDAlert[red]{time of flight}} \appear{and be \CDAlert[tunired]{annihilated} immediately \CDAlert[tunired]{after its capture}}
+	\implies{\CDAlert[blue]{Energy doesn't seem conserved}\\ \CDAlert[blue]{in this macroscopic example!}}
+\end{itemize}
+\end{minipage}
+%\vspace{2.5mm}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Virtual particles}
+
+\semismall
+\begin{itemize}[itemsep=1.5mm]
+	\item The mediating particles are \CDAlert[fuchsia]{virtual particles}\appear{, they are there only for the interaction}\appear{, they do not need to obey the usual conservation rules of momentum and energy}\appear{, like 'real' particles do}
+	
+	\item Phenomenon resembles tunnelling\appear{, %the kinetic energy of particle is negative, and 
+	as the probability for the occurence of the virtual particle decreases} \appear{with the increase in the real particle separation}
+\end{itemize}
+
+% 6.5 cm = midway, 10 cm = 3/4 
+\vspace{1.5mm}
+\begin{minipage}{8.3cm}
+\begin{itemize}[itemsep=1.5mm]
+%	\item[] The phenomenon resembles tunneling, the kinetic energy of particle is negative, and the probability for the occurence of the particle decreases when the separation between the interacting particles increases
+
+%\item This is the mechanism which \CDAlert[red]{H. Yukawa} (1935) suggested on how the strong nuclear force would act between two nucleons, the nucleons exchange virtual particles
+\item This \CDAlert[fuchsia]{exchange of virtual particles} \appear{was suggested as the mechanism for the strong nuclear force acting between two nucleons}\appear{, by \CDAlert[red]{H. Yukawa} (1935) }
+\appear{\xdef\loc{south east}%
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.25*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[scale=0.85,page=1]{Figures_booklet/SOM_11_Fundamental_particles_figures/Tikz_SOM_Fundamental_figures_combo.pdf}};% 8cm max height
+\end{tikzpicture}}%
+
+\item Range of strong force is \CDAlert[red]{short} \appear{because the mediating \CDAlert[red]{virtual particle has a mass}.} \appear{The idea can be applied also to electromagnetic interaction.} \appear{Electrical charges continuously send out virtual particles}
+ 
+\item Range is infinite because the virtual particles are \CDAlert[blue]{photons}\appear{, which have a \CDAlert[blue]{zero rest mass}}
+\end{itemize}
+\end{minipage}
+%\vspace{2.5mm}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Virtual particles}
+%Mediating particle \item mass vs. range
+\begin{itemize}
+	\item The mechanism and existence of \CDAlert[tuniblue]{virtual mediating particles} \appear{can be understood based on Heisenberg's \CDAlert[blue]{uncertainty principle} between time and energy}
+
+\item Assuming the virtual particle has a time interval $\Delta t$ to act \appear{(i.e. uncertainty of time)}\appear{, then the uncertainty of its energy $\Delta E$ would need to obey the equation} $\appear{\Delta t \Delta E} \approx \appear{\hbar}$
+
+\item Energy of the particle could vary within $\Delta E$ without violating the conservation laws. \appear{In other words, even an energy of $\Delta E=m c^{2}$ would be allowed for the virtual particle}\appear{, if we demand that it has non-zero mass}
+
+\item This means $\Delta t \Approx \hbar / m c^{2}$\appear{, and for a possible range} $\appear{\Delta x} \approx \appear{c \Delta t} \approx \appear{\hbar / m c}$ 
+
+\item To conclude\appear{, \CDAlert[fuchsia]{range of virtual particle} $\Approx \Frac{\hbar}{c} \Frac{1}{m}$}
+\end{itemize}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Virtual mediating particles, mass vs. range}
+\seminormal
+\begin{itemize}
+	\item \CDAlert[red]{Larger the mass} for the mediating particle\appear{, the \CDAlert[red]{shorter the range} of the interaction}\appear{, and vice versa} 
+	
+	\item The range of nuclear force is ${\sim\;}1 \mathrm{\;fm}$ 
+	\implies{ We obtain an estimate for the mass of the meson:
+\[
+m  \equal \appear{3.5 \times 10^{-28} \mathrm{\;kg}} \approx \appear{300 \mathrm{m}_{\mathrm{e}}} \approx \appear{200 \mathrm{\;MeV} / \mathrm{c}^{2}}
+\] }
+\item Assuming the mediating particles to be photons\appear{, such as in the case electromagnetic interaction, we have the range:}
+\[
+\text {range} \approx \appear{c} \appear{\Delta t} \approx \frac{c \hbar}{\Delta E}  \equal \appear{c \hbar} \frac{\lambda}{h c} \equal \frac{\lambda}{2 \pi}
+\]
+
+\item Since the photons have no (rest) mass\appear{, there is no lower limit for the energy}
+\appear{(}$\Rightarrow$ \appear{the range could be very large, approaching infinity}\appear{)}
+
+\item In fact, when two electrons \CDAlert[blue]{interact electromagnetically}\appear{, both electrons continuously emit \CDAlert[blue]{virtual photons} that are absorbed by the other electron}
+\end{itemize}
+
+%\endofslide 
+\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%

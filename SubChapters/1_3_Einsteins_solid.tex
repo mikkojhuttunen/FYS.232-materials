@@ -1,0 +1,277 @@
+% !TEX root = ../aa_SoM_Chapters.tex
+
+% ö = \%c3\%b6
+% ä = \%C3\%A4
+
+\xdef\sectiontitle{\Isectiontitle} %aiheuttama
+
+%%%%%%%%%%%%%%%
+\begin{frame}[label=1_3_a]%[label=1_3_TOC1]
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+
+\vspace{0.5cm}
+
+\begin{itemize}[leftmargin=0.5cm,itemsep=2mm]
+    \item[1.1]<1-> \hyperlink{1_1_a}{\IaSubsectiontitle}
+    \item[1.2]<1-> \hyperlink{1_2_a}{\IbSubsectiontitle}	
+    \item[1.3]<1-> \hyperlink{1_3_a}{\Alert[blue]{\IcSubsectiontitle}}	
+    \item[1.4]<1-> \hyperlink{1_4_a}{\IdSubsectiontitle}
+    \item[1.5]<1-> \hyperlink{1_5_a}{\IeSubsectiontitle}
+    \item[1.6]<1-> \hyperlink{1_6_a}{\IfSubsectiontitle}
+    \item[1.7]<1-> \hyperlink{1_7_a}{\IgSubsectiontitle}
+\end{itemize}
+
+\vspace{-1cm}
+\begin{itemize}[leftmargin=9.5cm,itemsep=2mm]
+    \item[1.8]<1-> \hyperlink{1_8_a}{\IhSubsectiontitle}
+	\item[1.9]<1-> \hyperlink{1_9_a}{\IiSubsectiontitle}
+	\item[1.10]<1-> \hyperlink{1_10_a}{\IjSubsectiontitle}
+	\item[1.11]<1-> \hyperlink{1_11_a}{\IkSubsectiontitle}
+\end{itemize}
+
+%\endofslide 
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%\xdef\IbSubsectiontitle{Entropy and Temperature}
+\xdef\sectiontitle{\IcSubsectiontitle} 
+
+%%%%%%%%%%%%%%%
+\begin{frame}%[label=1_3_a]
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+
+\begin{itemize}
+	\item Einstein proposed a \CDAlert[violet]{simple model for solids}: 
+	\item[] \begin{itemize}
+	\item Atoms in a crystal can oscillate along three directions
+	\item Atoms \Alert[blue]{oscillate independently} of nearby atoms \appear{(assumption/approximation)} 
+	\item Equilibrium state is determined by the crystalline structure 
+	\item \CDAlert[red]{Oscillators are harmonic} (assumption/approximation)\appear{, i.\,e. comply with \CDAlert[red]{Hooke's law}}\appear{:  $F=-kx$}
+\end{itemize}
+
+\end{itemize}
+
+\xdef\loc{south}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.25*\figYshift,xshift=-4.5cm, anchor=\loc] at (current page.\loc) {\includegraphics[page=2,height=4cm]{Figures_booklet/SOM_9_Statistical_mechanics_figures/Tikz_SOM_Statistical_figures.pdf}}; %scale=\figscale. % 8cm max hei
+\end{tikzpicture}
+
+\xdef\loc{south}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.25*\figYshift,xshift=1cm, anchor=\loc] at (current page.\loc) {\includegraphics[page=3,height=4cm]{Figures_booklet/SOM_9_Statistical_mechanics_figures/Tikz_SOM_Statistical_figures.pdf}}; %scale=\figscale. % 8cm max hei
+\end{tikzpicture}
+
+\xdef\loc{south}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.25*\figYshift,xshift=5.25cm, anchor=\loc] at (current page.\loc) {\includegraphics[page=4,height=4cm]{Figures_booklet/SOM_9_Statistical_mechanics_figures/Tikz_SOM_Statistical_figures.pdf}}; %scale=\figscale. % 8cm max hei
+\end{tikzpicture}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+
+\begin{itemize}[itemsep=1.8mm]
+	\item A solid body where \CDAlert[blue]{$N$ atoms form a set of $3N$ oscillators}
+\item All have the same ground state frequency \appear{which depends on the crystal structure}
+\item \CDAlert[red]{Treating oscillators quantum mechanically}\appear{, the allowed energy states for harmonic oscillators occur with spacing of $h f_{0}$}\appear{, starting from $1 / 2 h f_{0}$} 
+% 6.5 cm = midway, 10 cm = 3/4 
+%\vspace{2.5mm}
+\end{itemize}
+
+\begin{minipage}{7.5cm}
+\begin{itemize}[itemsep=1.8mm]
+	\item Energies of a single oscillator are
+\[ 
+ \varepsilon_{j} \equal \appear{\textrm{((} j } \appear{+\frac{1}{2}} \appear{\textrm{))}}\,  \appear{h f_{0} }
+ \]
+\item $j=0 \Leftrightarrow$ \CDAlert[blue]{ground state}
+\[ 
+ \varepsilon_{j=0} \equal \frac{1}{2} \appear{h f_{0} }
+ \]
+\appear{i.\,e. $j=$~Energy state index}
+\end{itemize}
+\end{minipage}
+
+\xdef\loc{south}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.25*\figYshift,xshift=1cm, anchor=\loc] at (current page.\loc) {\includegraphics[page=3,height=4cm]{Figures_booklet/SOM_9_Statistical_mechanics_figures/Tikz_SOM_Statistical_figures.pdf}}; %scale=\figscale. % 8cm max hei
+\end{tikzpicture}
+
+\xdef\loc{south}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.25*\figYshift,xshift=5.25cm, anchor=\loc] at (current page.\loc) {\includegraphics[page=4,height=4cm]{Figures_booklet/SOM_9_Statistical_mechanics_figures/Tikz_SOM_Statistical_figures.pdf}}; %scale=\figscale. % 8cm max hei
+\end{tikzpicture}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+
+\begin{itemize}[itemsep=4mm]
+	\item Number of allowed states have in principle \CDAlert[red]{no upper limit}
+	\appear{\xdef\loc{west}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-2cm,xshift=-\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=5,width=8.2cm]{Figures_booklet/SOM_9_Statistical_mechanics_figures/Tikz_SOM_Statistical_figures.pdf}}; %scale=\figscale. % 8cm max hei
+\end{tikzpicture}} 
+	\item Two or more oscillators \Alert[blue]{can be in the same state}
+	\item The harmonic oscillators in the solid body continuously exchange quanta of $h f_{0}$ with each other \appear{(e.\,g. via \CDAlert[fuchsia]{thermal excitations})}
+	\appear{\xdef\loc{south east}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.25*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,width=6.8cm]{Figures_booklet/SOM_9_Statistical_mechanics_figures/SOM_Figure_5.png}}; 
+\end{tikzpicture}}
+	
+\end{itemize}
+
+
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+
+\begin{itemize}
+	\item Return to the system of harmonic \\
+		oscillators exchanging energy\\
+		quanta \appear{$\Leftrightarrow$ \CDAlert[red]{Einstein's solid}}
+
+	\item Assume the system contains $N$\\
+	 identical \appear{but separately identifiable}\\ 
+	 \appear{(=\,distinguishable)} \appear{harmonic oscillators}
+
+\item Energy of $i$:th oscillator \appear{(for simplicity,\\
+	counted from ground level...)} \appear{is given by}
+\[ 
+ E_{n_{i}}  \equal  \appear{n_{i}} \appear{\hbar \omega_{0}} \quad \appear{\textrm{((} n_{i}} \equal \appear{0,1,2, \ldots \textrm{))} } 
+\]
+\appear{And hereby, \CDAlert[tunired]{total energy of the system ($N$ oscillators)}:}
+\[
+ E  \equal \appear{\nsum_{i=1}^{N} } \appear{E_{n_{i}}}  \equal \appear{\nsum_{i=1}^{N} n_{i}} \appear{\hbar \omega_{0}}  \equal \appear{M \hbar \omega_{0}} \quad \appear{\text { \textrm{((}here: } M=\nsum_{i=1}^{N} n_{i} \textrm{))}} 
+\]
+
+\end{itemize}
+
+\xdef\loc{north east}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=1*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,width=6.8cm]{Figures_booklet/SOM_9_Statistical_mechanics_figures/SOM_Figure_5.png}}; %scale=\figscale. % 8cm max hei
+\end{tikzpicture}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+
+\begin{itemize}
+	\item At thermal equilibrium\appear{, the \CDAlert[red]{oscillators} in the system have different energies}\appear{, in fact, \CDAlert[red]{form an energy distribution}}
+
+\item The probability for a single oscillator to be in a given energy state $i$ \appear{is obtained from \CDAlert[tunired]{statistical analysis}} 
+
+\item The probability to obtain subset $a$:
+\[ 
+ P_{a} \equal \fracc{\text { number of ways to obtaining subset a }}{\text { total number of ways of obtaining all possibilities }} 
+ \]
+\item[] Here we assume that the probability for a certain subset of the system \appear{follows the number of ways $W$ to have arrangements within that subset} 
+
+\item We also assume that \CDAlert[blue]{each 'way', i.\,e. each microstate,} \appear{\CDAlert[blue]{is equally probable}}
+%
+%\item So for the oscillators in our example case, Einstein's solid, the probability that an oscillator $i$ contains energy $E_{n_{i}}\textrm{((} =n_{i} $ quanta) will be
+%\[
+%P_{n_{i}}=\frac{\text { number of ways energy can be distributed with fixed } n_{i}}{\text { total number of ways energy can be distributed }}
+%\[
+\end{itemize}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+
+\begin{itemize}
+
+\item So for the oscillators, which in our example form an Einstein's solid\appear{, the probability that an oscillator $i$ contains energy $E_{n_{i}}$ $(=n_{i} $ quanta) will be}
+\[ 
+ P_{n_{i}} \equal \fracc{\text { number of ways energy can be distributed with fixed } n_{i}}{\text { total number of ways energy can be distributed }} 
+ \]
+
+\item The above equation gives us \CDAlert[fuchsia]{conceptual understanding} of the situation\appear{, but not yet simple tools to calculate things}
+\implies{ more detailed \CDAlert[red]{statistical analysis} is necessary }
+
+\item The total number of ways how $N$ quantum numbers can form the integer $M \appear{= \sum_{i=1}^N n_i}$ \appear{is given by \Alert[red]{binomial coefficient}}
+\[
+\Omega(N, M)  \equal \frac{(M+N-1) !}{M !(N-1) !} \equiv \appear{\bg[2.4]{\text{\bigsymbolsfont(}}\!\! \appear{\begin{array}{c}
+M+N-1 \\
+M
+\end{array} } \!\! \bg[2.4]{\text{\bigsymbolsfont)}} }
+\]
+
+\end{itemize}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}[label=1_3_Pn]
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+
+\begin{itemize}
+\item The \CDAlert[blue]{number of ways the energy can be distributed} for a fixed $n_i$ is given by 
+\[
+ \bg[2.4]{\text{\bigsymbolsfont(}}\!\! \appear{\begin{array}{c}
+ \textrm{((} M-n_{i} \textrm{))} +(N-1)-1 \\
+ \textrm{((} M-n_{i} \textrm{))} 
+\end{array}} \!\!\bg[2.4]{\text{\bigsymbolsfont)}} 
+\]
+%\vspace{2.5mm}
+\end{itemize}
+
+\begin{minipage}{6cm}
+\begin{itemize}
+\item[]  in total resulting in
+	\[
+P_{n_{i}}  \equal  \frac{ \bg[2.4]{\text{\bigsymbolsfont(}}\!\! \appear{\begin{array}{c}
+ \textrm{((} M-n_{i} \textrm{))} +(N-1)-1 \\
+ \textrm{((} M-n_{i} \textrm{))} 
+\end{array} } \!\!\bg[2.4]{\text{\bigsymbolsfont)}}  }{
+ \bg[2.4]{\text{\bigsymbolsfont(}}\!\! \appear{\begin{array}{c}
+M+N-1 \\
+M
+\end{array}} \!\!\bg[2.4]{\text{\bigsymbolsfont)}} }
+\]%
+\appear{\xdef\loc{south east}%
+\begin{tikzpicture}[remember picture,overlay]% anchor=south
+    \node (A) [yshift=-0.25*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,width=8.2cm]{Figures_booklet/SOM_9_Statistical_mechanics_figures/SOM_Figure_6.png}};%scale=\figscale. % 8cm max hei
+\end{tikzpicture}%
+}%
+\\[-2\baselineskip]
+\item Problem of above equation is \appear{that it is cumbersome to use}
+\implies{ motivates the development of\\ \CDAlert[red]{Boltzmann distribution} }
+\end{itemize}
+\end{minipage}
+
+%\endofslide 
+\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%

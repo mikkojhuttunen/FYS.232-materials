@@ -1,0 +1,513 @@
+% !TEX root = ../bb_AiRa_Kappaleet.tex
+
+% ö = \%c3\%b6
+% ä = \%C3\%A4
+
+\xdef\sectiontitle{\IIIsectiontitle} %aiheuttama
+\TOCrefs
+
+%%%%%%%%%%%%%%%
+\begin{frame}[label=3_2_a]%[label=3_2_TOC1]
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\label{\TOCname}
+
+\vspace{-0.5cm}\label{\TOCname} % vertical spacing is off, 0.7cm doesn't work
+
+\begin{itemize}[leftmargin=0.5cm,itemsep=\chapterTOCitemsep]
+    \item[3.1]<1-> \hyperlink{3_1_a}{\IIIaSubsectiontitle}
+    \item[3.2]<1-> \hyperlink{3_2_a}{\CDAlert[red]{\IIIbSubsectiontitle}}	
+    \item[3.3]<1-> \hyperlink{3_3_a}{\IIIcSubsectiontitle}	
+    \item[3.4]<1-> \hyperlink{3_4_a}{\IIIdSubsectiontitle}
+    \item[3.5]<1-> \hyperlink{3_5_a}{\IIIeSubsectiontitle}
+    \item[3.6]<1-> \hyperlink{3_6_a}{\IIIfSubsectiontitle}
+    \item[3.7]<1-> \hyperlink{3_7_a}{\IIIgSubsectiontitle}
+\end{itemize}
+
+%\endofslide 
+\end{frame}
+%%%%%%%%%%%%%%%
+
+\xdef\sectiontitle{\IIIbSubsectiontitle} 
+
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Sitovat voimat}%Binding forces
+\appear{}
+
+%  Binding
+\begin{itemize}
+	\item Nukleoneja toisiinsa sitovaa voimaa kutsutaan \CDAlert[red]{vahvaksi} \CDAlert[red]{vuorovaikutukseksi}. \appear{Se on yksi neljästä perusvuorovaikutuksesta:}
+\begin{itemize}
+	\item Vahva $(\leftrightarrow$ nukleonien välinen vetovoima)
+\item \CDAlert[blue]{Sähkömagneettinen}
+\item Heikko
+\item Painovoima
+\vspace{-4mm}
+\end{itemize}
+\appear{\xdef\loc{south east}%
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.32*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[width=5cm]{Figures_booklet/SOM_12_Nuclear_physics_figures/SOM_Nuclear_Table_2.png}}; % 8cm max height
+\end{tikzpicture}
+\footnote{\HarrisCRshort}}
+\item Vahva voima vaikuttaa vain ${\sim}$1–2 fm päähän. \appear{Pidemmillä etäisyyksillä sen vaikutus on olematon}\appear{, mikä vaikuttaa ytimien vakauteen}
+\end{itemize}
+
+% 6.5 cm = midway, 10 cm = 3/4 
+\vspace{2.5mm}
+\begin{minipage}{8.25cm}
+\begin{itemize}
+	\item Suuremmilla etäisyyksillä sähkömagneettiset voimat ovat huomattavia
+	\implies{ \CDAlert[blue]{Painavammat alkuaineet}\appear{, joiden koko on \\
+	suu\-rempi kuin ${\sim}$2~fm}\appear{, alkavat kokea \\
+	sähköstaattisia voimia } \\ \appear{(protonit hylkivät toisiaan)} }
+\end{itemize}
+\end{minipage}
+%\vspace{2.5mm}
+
+
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Sitovat voimat}%Binding forces
+\appear{}%
+\seminormal%
+\begin{itemize}%[itemsep=2.1mm] 
+	\item Kuva 4 havainnollistaa vahvaa voimaa:
+	\appear{\xdef\loc{north east}%
+\begin{tikzpicture}[remember picture,overlay]% anchor=south
+    \node (A) [yshift=0.45*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[width=4.5cm]{Figures_booklet/SOM_12_Nuclear_physics_figures/SOM_Nuclear_physics_Figure_4.png}};% 8cm max height
+\end{tikzpicture}\CR[ref = h and t]{}}%
+\begin{itemize} \small
+	\item \CDAlert[red]{Lyhyen kantaman vetovoima}
+\item \CDAlert[blue]{Kovat ytimet hylkivät voimakkaasti}
+\item Samanlainen protonille ja neutronille %Independent on whether we deal with proton or neutron
+\item Riippuu ytimen spinien suunnista %Depends on the orientation of nuclear spins
+\item \CDAlert[fuchsia]{Kaavaa ei olla vielä löydetty vahvalle voimalle}
+\end{itemize}
+
+\end{itemize}
+
+% 6.5 cm = midway, 10 cm = 3/4 
+\vspace{2.4mm}
+\begin{minipage}{8.7cm}
+\begin{itemize}%[itemsep=2.1mm]
+	\item Yhdistettynä sähköstaattisen (protoneita hylkivän) voiman kanssa\appear{, kuvan 4 vahvaa voimaa kuvaava potentiaalikaivo} \appear{sisältää myös hylkivän seinämän suurilla säteen arvoilla}
+	\appear{\xdef\loc{south east}%
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.45*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[width=4.5cm]{Figures_booklet/SOM_12_Nuclear_physics_figures/SOM_Tipler_Nuclear_physics_figure_1_cropped.png}};% 8cm max height
+\end{tikzpicture}}
+
+\item Mallin perusteella \appear{vakaita ytimiä voitaisiin muodostaa millä tahansa protonien ja neutronien kombinaatioilla.} \appear{Kuitenkin \Alert[fuchsia]{vain tietyt nukleonien kombinaatiot muodostavat vakaita ytimiä}} \appear{kun taas muut kombinaatiot ovat epävakaita}
+\end{itemize}
+
+\end{minipage}
+
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Malli vakaudelle/stabiilisuudelle}%Theoretical model for the stability
+  \appear{}
+
+\begin{itemize}
+	\item \CDAlert[red]{Kaksinukleoninen ydin:}\\
+	Tarkastellaan kahta vahvan voiman toisiinsa sitomaa nukleonia\appear{ kapeassa mutta syvässä potentiaalikaivossa (ks.\ kuva 4)}
+
+\item[] \begin{itemize}
+	 \item \CDAlert[fuchsia]{Kaksi protonia (p-p):} Nukleonienvälinen vetovoima \appear{+ sähköstaattinen repulsio} $\rightarrow$ \appear{luultavasti epävakain vaihtoehto}
+
+\item \CDAlert[red]{Kaksi neutronia (n-n):} Vain nukleonienvälinen vahva vuorovaikutus
+\item \CDAlert[blue]{Protoni–neutroni-pari (p-n):} Vain nukleonienvälinen vahva vuorovaikutus $\rightarrow$ \appear{deuteroni}
+
+\end{itemize}
+
+\item Lopulta vain p-n (deuteroni) kombinaatio muodostaa vakaan ytimen. \appear{\CDAlert[blue]{Miksi?}} \appear{\CDAlert[fuchsia]{Vahva vuorovaikutus riippuu spinistä}}\appear{, ja on vahvempi kun spinit ovat samansuuntaiset.} \appear{Lisäksi \CDAlert[red]{kieltosääntö} vaikuttaa}\appear{ kaikkien ytimien muodostumiseen.} \appear{Protonit ja  neutronit ovat 1/2-spinin fermioneita}\appear{, eivätkä voi olla samassa kvanttitilassa}
+\end{itemize}
+
+%\xdef\loc{south east}
+%\begin{tikzpicture}[remember picture,overlay] % anchor=south
+%    \node (A) [yshift=-0.25*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[width=7cm]{Figures_booklet/SOM_12_Nuclear_physics_figures/SOM_Nuclear_physics_Figure_1.png}}; % 8cm max height
+%\end{tikzpicture}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\appear{}
+
+\begin{itemize}
+	\item Kahden nukleonin tapauksessa matalimman energian tila on perustila jossa spinit ovat samansuuntaiset \appear{(suurempi vahva vuorovaikutus).} \appear{\CDAlert[red]{Paulin kieltosääntö} kieltää tällaiset tilat} \appear{kombinaatioille n-n} \appear{ja p-p}
+	
+	\item Itse asiassa deuteronikin pysyy kasassa vain heikosti \appear{eikä sillä ole virittyneitä tiloja}
+
+\end{itemize}
+
+% 6.5 cm = midway, 10 cm = 3/4 
+\vspace{2.5mm}
+\begin{minipage}{8cm}
+\begin{itemize}
+	\item Kun kerta jo deuteroni on heikosti sitoutunut\appear{, ei ole yllättävää että toiset kombinaatiot muodostavat epävakaita ytimiä}
+\appear{\xdef\loc{south east}%
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.32*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[width=5.5cm]{Figures_booklet/SOM_12_Nuclear_physics_figures/SOM_Nuclear_physics_Figure_5.png}};% 8cm max height
+\end{tikzpicture}\footnote{\HarrisCRshort}}%
+\item Deuteronin energiakaavio näkyy kuvassa 5. \appear{Kaksi nukleonia on vahvan vuorovai\-ku\-tuksen synnyttämässä potentiaalikaivossa, ja niillä on vain perustilansa}
+\end{itemize}
+\end{minipage}
+%\vspace{2.5mm}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Nukleonien välinen vahva vetovoima}%Strong internucleon attraction
+% 
+\appear{}
+
+\semismall
+\begin{itemize}
+	\item[] \begin{itemize}[itemsep=0.9mm] \semismall
+	 \item Kaksinukleonisessa ytimessä on vain yksi sidos\appear{, eli 1/2 sidosta per nukleoni}
+	 \item Kolminukleonisessa ytimessä on kolme\appear{, eli 1 sidos per nukleoni}  
+	 \item Nelinukleonisessa ytimessä on jo kuusi, eli 1,5 sidosta per nukleoni 
+	 \implies{sidosten lukumäärä kasvaa}
+\end{itemize}
+\end{itemize}
+
+% 6.5 cm = midway, 10 cm = 3/4 
+\vspace{2.5mm}
+\begin{minipage}{7.4cm}
+\begin{itemize}
+	\item Tämä kasvava trendi jatkuu vain siihen asti että \Alert[red]{nukleonit ovat pakkautuneet tii\-viis\-ti vierekkäin} ja lähimmät naapurit ympäröivät täysin toisensa. \appear{Tällöin nukleonien väliset sidokset maksimoituvat}
+\appear{\xdef\loc{south east}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.25*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[width=6cm]{Figures_booklet/SOM_12_Nuclear_physics_figures/SOM_Nuclear_physics_Figure_6.png}}; % 8cm max height
+\end{tikzpicture}
+\footnote{\HarrisCR}}
+\item Sidoslukumäärä/nukleoni \appear{on verrannollinen pallon alaan}\appear{/tilavuus} \appear{$=\frac{4 \pi r^{2}}{4 / 3 \pi r^{3}} \propto \frac{1}{r}$} 
+\item Keskimääräinen sidoslukumäärä per nukleoni joh\-taa \Alert[blue]{vakioarvoiseen sidosenergiaan per nukleoni}\appear{, mikä energia vaaditaan irrottamaan nukleonit toisistaan} \appear{(\CDAlert[blue]{sidososuus}} $\approx$ \appear{\CDAlert[blue]{irrotustyö})}
+\end{itemize}
+\end{minipage}
+%\vspace{2.5mm}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Sähköstaattinen hylkivä voima}%Coulomb repulsion
+\appear{}
+
+% 6.5 cm = midway, 10 cm = 3/4 
+%\vspace{2.5mm}
+\begin{minipage}{9.0cm}
+%\begin{itemize}
+\begin{itemize}
+	\item Kaikki protoniparit hylkivät toisiaan\appear{, mikä nostaa niiden energioita hiukan ylöspäin}\appear{, kohti potentiaalikaivon pintaa}
+\appear{\xdef\loc{north east}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=0.65*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[width=4.3cm]{Figures_booklet/SOM_12_Nuclear_physics_figures/SOM_Nuclear_physics_Figure_7.png}}; % 8cm max height
+\end{tikzpicture}\footnote{\HarrisCRshort}}	
+\item \CDAlert[red]{Pienissä ytimissä} kaikki nukleonit ovat vierekkäin\appear{, jolloin kaikkien välillä on att\-rak\-tiivinen vuorovaikutus.} \appear{Mutta sidoslukumäärä/nukleoni on pienehkö}
+
+\item \CDAlert[blue]{Suuremmissa ytimissä}\appear{, protoniparit ovat niin kaukana toisistaan etteivät ne enää koe vahvaa vuorovaikutusta} \implies{ Näiden parien välillä on on sähköinen hylkivä voima}
+
+\item Molempien kontribuutioiden huomioon ottaminen johtaa \appear{\Alert[fuchsia]{maksimiin} \CDAlert[fuchsia]{sidosenergiassa/nukleoni}} \appear{eli} \appear{\CDAlert[fuchsia]{sidososuudessa}} \appear{(BE/A)} \appear{(kuva 8)}
+\appear{\xdef\loc{south east}%
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.24*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[width=4.3cm]{Figures_booklet/SOM_12_Nuclear_physics_figures/SOM_Nuclear_physics_Figure_8.png}};% 8cm max height
+\end{tikzpicture}}
+\end{itemize}
+\end{minipage}
+%\vspace{2.5mm}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Kieltosääntö}%The exclusion principle
+\appear{}
+
+%  
+\begin{itemize}
+	\item Kieltosäännön mukaan  \appear{matalimman energian tila vastaa tapausta jossa on sama määrä protoneita ja neutroneita}
+	\appear{\xdef\loc{south east}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.35*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[width=6cm]{Figures_booklet/SOM_12_Nuclear_physics_figures/SOM_Nuclear_physics_Figure_9.png}}; % 8cm max height
+\end{tikzpicture}
+\footnote{\HarrisCRshort}}
+	\item Kuvassa 9 on vasemmalla sama määrä protoneita ja neutroneita. \appear{Kun protoni muutetaan neutroniksi, ytimen massaluku $A$ ei muutu.} \appear{Koska matalimman energiatason tilat on nyt täytetty, meidän täytyy nostaa neutroni korkeammalle energiatilalle,}% 
+
+\end{itemize}
+
+% 6.5 cm = midway, 10 cm = 3/4 
+%\vspace{2.5mm}
+\begin{minipage}{6.5cm}
+\begin{itemize}
+\item[] jolloin \CDAlert[red]{kokonaisenergia kasvaa} 
+
+\item Sama argumentti pätee\appear{ jos muuttaisimme neutronin protoniksi}
+	\item Eli \Alert[blue]{tapaus $Z=N$ minimoi (koko\-nais)energian}
+\end{itemize}
+\end{minipage}
+%\vspace{2.5mm}
+
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\appear{}
+
+\seminormal
+% 6.5 cm = midway, 10 cm = 3/4 
+%\vspace{2.5mm}
+\begin{minipage}{8.75cm}
+%\begin{itemize}
+	\begin{itemize}[itemsep=1.6mm]
+	\item Otetaan seuraavaksi huomioon \Alert[red]{protonien välinen sähköinen repulsiovoima}. \appear{Tarkastellaan pientä ydintä jonka kaikki nukleonit koskevat toi\-siin\-sa.}\appear{ Kaikkien protonien välisen sähköisen repulsiovoiman peittoaa vahva vuorovaikutus}\appear{, jolloin $Z \cong N$ kuuluisi olla vakaampi konfiguraatio}
+\appear{\xdef\loc{east}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.25*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[height=8.5cm]{Figures_booklet/SOM_12_Nuclear_physics_figures/SOM_Nuclear_physics_Figure_10.png}}; % 8cm max height
+\end{tikzpicture}
+\footnote{\HarrisCRshort}}
+\item Suuressa ytimessä sähköinen repulsiovoima nostaa näkyvästi protonien energiatiloja ylöspäin. \appear{Voisi siis olettaa että matalimman kokonaisenergian tilassa}\appear{, korkeimmat neutroni- ja protonitilat ovat yhtä energeettiset}\appear{, johtaen tilanteeseen $N>Z$}
+
+\item Tällöin nukleonien pitäisi olla tiukimmin sidottuja ytimissä joissa on keskisuuri massaluku. \appear{Sidososuuden olettaisi maksimoituvan pienillä ytimillä kun $Z \cong N$} \appear{ja \CDAlert[red]{isojen ytimien} tapauksessa kun \CDAlert[red]{$N>Z$}}
+\end{itemize}
+\end{minipage}
+%\vspace{2.5mm}
+
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Vakauteen liittyvät kokeelliset faktat}%Experimental facts regarding stability
+\appear{}
+
+%  
+\begin{itemize}
+	\item \CDAlert[fuchsia]{Mallin paikkansapitävyys} kuvata ytimissä vaikuttavia voimia \appear{voidaan varmistaa tarkastelemalla \CDAlert[fuchsia]{kokeellisten mitattujen ytimien massojen} summia }
+\appear{\xdef\loc{south east}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.45*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[width=5cm]{Figures_booklet/SOM_12_Nuclear_physics_figures/SOM_Nuclear_physics_Figure_11.png}}; % 8cm max height
+\end{tikzpicture}
+\footnote{\HarrisCR}}
+\item Mikäli energiaa tarvitaan vetämään nukleonit erilleen ytimestä\appear{, ytimen massan täytyy olla pienempi kuin sen osasten massojen summan}
+
+\item Selvästikin \CDAlert[red]{esim. deuteroni painaa vähemmän kuin osiensa summa:}
+
+\end{itemize}
+
+% 6.5 cm = midway, 10 cm = 3/4 
+\vspace{2.5mm}
+\begin{minipage}{8cm}
+\begin{itemize}
+	%\item Clearly, \Alert[red]{e.g. deuteron weighs less than the sum of its parts:}
+
+\item[] \begin{itemize}[itemsep=2.5mm] \semismall
+	 \item Deuteronin massa $m_D = 2,013553 \mathrm{\;u}$ 
+	\item[] ~\vspace{-\baselineskip}
+	$$\begin{aligned}
+	m_p  \plus  \appear{m_n} \appear{&= 1,007276 \mathrm{\;u}+1,008665 \mathrm{\;u}} \\\appear{&=2,015941 \mathrm{\;u}}
+	\end{aligned}$$
+	 
+\item Osien massa $-$ kokonaisuuden massa 
+$$
+\appear{=2,015941 \;u}   \minus \appear{2,013553 \;u}  \equal  \appear{+ 0,002388 \;u}
+$$
+\end{itemize}
+
+\item[] \implies{ Deuteronin hajottamiseksi \CDAlert[red]{täytyy tehdä työtä} }
+ 
+\end{itemize}
+\end{minipage}
+%\vspace{2.5mm}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Ytimen sidosenergia}%Binding energy of the nucleus
+\appear{}
+
+\begin{itemize}
+	\item Määritellään mielivaltaisen ytimen \CDAlert[fuchsia]{sidosenergia $B E$} \appear{energiaksi mikä tarvitaan hajottamaan ydin osiinsa:}
+\[
+BE  \equal \appear{m_{f} c^{2}}  \minus \appear{m_{i} c^{2}}  \equal   \appear{\textrm{((} \text{osien massa}}  \minus \appear{\text {ytimen massa} \textrm{))}\, c^{2}}
+\]
+
+\item Deuteronille:\vspace{-7mm}
+$$
+\begin{aligned}
+\hspace{2cm} \appear{B E} &  \equal  \appear{\textrm{((}  0,002388 \;u \cdot 1,661 \cdot 10^{-27} \mathrm{\;kg} \textrm{))} }  \appear{\textrm{((}  3 \cdot 10^{8} \Frac{\mathrm{m}}{s} \textrm{))}^{2}} \\
+&  \equal \appear{3,57 \cdot 10^{-13} \mathrm{\;J}}  \equal \appear{2,22 \mathrm{\;MeV}}
+\end{aligned}
+$$
+\appear{Myös esim.\ elektronin irrottaminen vety\CDAlert[red]{atomista}}\appear{ vaatii energiaa  ($13,6 \mathrm{\;eV}$).} \appear{Atomi painaa $2,4 \times 10^{-35} \mathrm{\;kg}$ vähemmän kuin sen osaset erillään (protoni + elektroni)}
+
+\item Huomaa että \CDAlert[red]{vetyatomin massan suhteellinen muutos $\Delta m$} on $2,4 \cdot 10^{-35} \mathrm{\;kg} / 1,67 \cdot 10^{-27} \mathrm{\;kg} \cong 10^{-8}$ 
+\item Mutta deuteronin $\Delta m$ on $0,002388 \mathrm{\;u} / 2,013553 \mathrm{\;u} \cong 10^{-3}$, huomattavan \CDAlert[fuchsia]{suuri arvo!}
+\end{itemize}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Ytimen sidosenergia}%Binding energy of the nucleus
+\appear{}
+
+\begin{itemize}
+	\item Teoreettinen malli antaa meille sidososuuden\appear{}\appear{, joka esim.\ deuteronille olisi:} \appear{$2,22 \mathrm{\;MeV} / 2=1,11 \mathrm{\;MeV}$ per nukleoni.} \appear{Yleisesti:}
+\[
+BE  \equal  \appear{\textrm{((}} \appear{Z m_{H}}  \plus \appear{N m_{n}}  \minus \appear{M_{{}^{A}_{Z}X}} \appear{\textrm{))} c^{2}} \appear{\,,} \qquad \appear{M_{{}^{A}_{Z}X}} \equiv \appear{m_a}
+\]
+\vspace{-4mm}
+\appear{\xdef\loc{south east}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.25*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[width=7cm]{Figures_booklet/SOM_12_Nuclear_physics_figures/SOM_Nuclear_physics_Figure_12.png}}; % 8cm max height
+\end{tikzpicture}
+\footnote{\HarrisCRshort}}
+\item Kaava \CDAlert[blue]{sisältää vetyatomin massan $m_H$} \appear{($m_p+m_e$),} %more or less also cancels it by having the atomic masses, which also contain the electron masses
+\end{itemize}
+% 6.5 cm = midway, 10 cm = 3/4 
+\vspace{-1mm}
+\begin{minipage}{6.5cm}
+\begin{itemize}
+	\item[] mikä vähentää elektronien massat \CDAlert[red]{atomimassatermistä} $M_{{}^{A}_{Z}X}$\appear{, mikä sisältää myös elektronien massat}
+	
+	\item Tämä on vain approksimaatio\appear{, koska esim.\ \Alert[red]{elektronien sidosenergioita} ei ole otettu huomioon} \appear{(koska ovat pieniä suhteessa ytimen sidosenergiaan)}
+	
+\end{itemize}
+\end{minipage}
+\vspace{2.5mm}
+
+%The binding energy per nucleon: $\frac{B E}{\text { nucleon }}$ for the naturally occurring isotopes. (fig caption?)
+
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Ytimen sidosenergia}%Binding energy of the nucleus
+\appear{}
+
+\seminormal
+% 6.5 cm = midway, 10 cm = 3/4 
+%\vspace{2.5mm}
+\begin{minipage}{7.4cm}
+\begin{itemize}%\appear{niiden neutronilukujen $N$} \appear{ja protonilukujen $Z$ funktiona}
+	\item Hahmotellaan tunnettuja nuklideja ((Z,N))-kuvaajaan  (eli ns.\ \CDAlert[blue]{nuklidikarttaan}) %It is very informative to plot the neutron number vs. proton number \appear{for the known nuclides}
+\appear{\xdef\loc{east}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=0*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[height=8.5cm]{Figures_booklet/SOM_12_Nuclear_physics_figures/SOM_Tipler_Nuclear_physics_figure_13.png}}; % 8cm max height
+\end{tikzpicture}
+\footnote{\TiplerCR}}
+\item 266 tunnettua vakaata nuklidia on esitetty mustilla pisteillä\appear{, ja dataan on sovitettu  \CDAlert[fuchsia]{stabiilisuuden viiva}} 
+
+\item On merkillepantavaa että kevyillä nuklideilla \appear{viiva noudattaa trendiä $N=Z$}\appear{, mutta painavammilla ytimillä (kun massaluku $A$ kasvaa)}\appear{ stabiilisuusviiva jyrkkenee} \appear{($N>Z$).}\appear{ Tämä \CDAlert[red]{käy yksiin} aiemmin läpikäydyn \CDAlert[red]{yksinkertaisen mallin} kanssa}
+
+\item Sinisillä ääriviivoilla on hahmoteltu epä\-sta\-biilien (\CDAlert[fuchsia]{radioaktiivisten}) nuklidien alue\appear{, joiden elinajat ovat yli millisekunnin kestoisia}
+\end{itemize}
+\end{minipage}
+%\vspace{2.5mm}
+
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Ytimen sidosenergia}%Binding energy of the nucleus
+%\appear{}
+\seminormal
+% 6.5 cm = midway, 10 cm = 3/4 
+%\vspace{2.5mm}
+\begin{minipage}{9cm}
+\begin{itemize}[itemsep=1.8mm]
+	\item \appear{Kuvassa 14}%
+	\appear{\xdef\loc{north east}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=0.75*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[width=4.5cm]{Figures_booklet/SOM_12_Nuclear_physics_figures/SOM_Nuclear_physics_Figure_8.png}}; % 8cm max height
+\end{tikzpicture}%
+\xdef\loc{south east}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.35*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[width=7cm]{Figures_booklet/SOM_12_Nuclear_physics_figures/SOM_Nuclear_physics_Figure_14.png}}; % 8cm max height
+\end{tikzpicture}\CR[ref = h]{}}%
+\appear{näkyy poikkileikkaus kuvasta 12} \appear{(stabiilisuusviivaa pitkin)}\appear{, y-akselina \CDAlert[fuchsia]{sidososuus}}
+
+\item Koska sidososuus riippuu sekä $N$:stä \appear{että $Z$:sta}\appear{, 
+	kuvaajaa ei voida hahmotella kaikille isotoopeille}\appear{, mutta trendi on selkeä} 
+
+\item Kevyillä ytimillä BE/nukleoni kasvaa $A$:n funktiona\appear{, mutta isommilla ytimillä se pienenee}
+
+\end{itemize}
+\end{minipage}
+
+\vspace{2.5mm}
+\begin{minipage}{6.5cm}
+\begin{itemize}[itemsep=1.8mm]
+	\item Deuteronilla sidosenergia on $1,1 \mathrm{\;MeV}$\appear{, ja painavilla ytimillä ($A$ suuri) käyrä lähestyy arvoa $7,57 \mathrm{\;MeV}$ }
+	
+	\item Sidososuus maksimoituu ($8,79 \mathrm{\;MeV}$) kun $A=60$ (\Alert[blue]{rauta}-56, Fe-58 ja \Alert[blue]{Ni-62}). \appear{Nämä ytimet ovat \Alert[blue]{kaikkein vakaimpia ja voimakkaimmin toi\-siin\-sa sidottuja}}
+\end{itemize}
+\end{minipage}
+
+
+
+%\endofslide 
+\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%%

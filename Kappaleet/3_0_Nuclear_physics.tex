@@ -1,0 +1,485 @@
+% !TEX root = ../bb_AiRa_Kappaleet.tex
+
+% ö = \%c3\%b6
+% ä = \%C3\%A4
+
+\xdef\sectiontitle{\IIIsectiontitle} %aiheuttama
+\TOCrefs
+
+%%%%%%%%%%%%%%%
+\begin{frame}[label=3_1_a]%[label=3_0_TOC1]
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle}}
+
+\vspace{-0.5cm}\label{\TOCname} % vertical spacing is off, 0.7cm doesn't work
+
+\begin{itemize}[leftmargin=0.5cm,itemsep=\chapterTOCitemsep]%,itemsep=3mm
+    \item[3.1]<1-> \hyperlink{3_1_a}{\CDAlert[blue]{\IIIaSubsectiontitle}}
+    \item[3.2]<1-> \hyperlink{3_2_a}{\IIIbSubsectiontitle}	
+    \item[3.3]<1-> \hyperlink{3_3_a}{\IIIcSubsectiontitle}	
+    \item[3.4]<1-> \hyperlink{3_4_a}{\IIIdSubsectiontitle}
+    \item[3.5]<1-> \hyperlink{3_5_a}{\IIIeSubsectiontitle}
+    \item[3.6]<1-> \hyperlink{3_6_a}{\IIIfSubsectiontitle}
+    \item[3.7]<1-> \hyperlink{3_7_a}{\IIIgSubsectiontitle}
+\end{itemize}
+
+%\endofslide 
+\end{frame}
+%%%%%%%%%%%%%%%
+
+\xdef\sectiontitle{\IIIaSubsectiontitle} 
+
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Yleisiä asioita ydinfysiikasta}%General aspects of nuclear physics
+ \appear{} 
+
+ \seminormal
+\begin{itemize}[itemsep=1.5mm]
+	\item Ennen \CDAlert[blue]{neutronien} löytymistä\appear{ ajateltiin että atomit koostuvat vain \CDAlert[red]{protoneista}} \appear{ja \CDAlert[fuchsia]{elektroneista}}\appear{, vaikkei atomin koossapitäviä periaatteita täysin ymmärrettykään }
+	
+	\item Neutronin löytyminen \appear{(Rutherfordin teoreettinen ennustus 1920}\appear{, Chadwickin kokeellinen havainto 1932)} \appear{auttoi nopeasti atomiydinten mallien muodostamisessa }
+	
+	\item Tosin vieläkään atomiydinmallit eivät ole täysin tyydyttäviä 
+	
+\item \Alert[fuchsia]{Jotkut ytimistä ovat inerttejä ja vakaita.} \appear{\CDAlert[fuchsia]{Toiset taas ovat epävakaita}}\appear{, ja vapauttavat hajotessaan valtavia määriä energiaa}
+
+\item \CDAlert[fuchsia]{Ydinfysiikalle} on löydetty useita sovelluskohteita:
+\item[] \begin{itemize} \semismall
+	\item  Ydinreaktioiden hyödyntäminen \CDAlert[fuchsia]{energiantuotannossa} 
+\item Radioaktiivisuus\;\&\;radioaktiiviset isotoopit \appear{(\CDAlert[blue]{radiohiiliajoitus}, merkkiaineet,...)}
+\item magneettiresonanssikuvaus (NMR) \appear{(\CDAlert[fuchsia]{lääketieteessä})}
+\item Neutroniaktivaatioanalyysi (NAA) \appear{(\CDAlert[red]{alkuaineiden pitoisuudet})}
+
+
+\end{itemize}
+
+\end{itemize}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Yleisiä asioita ydinfysiikasta}%General aspects of nuclear physics
+\appear{} 
+
+% 
+\begin{itemize}
+	\item Atomin koko on $0,1–1 \mathrm{\;nm}$, \appear{mistä \CDAlert[red]{ydin vie vain 1–10\;fm}} \appear{($10^{-5}$ koko atomin koosta)}
+
+\item Vaikka elektronit ovatkin sidoksissa ytimeen\appear{, niiden \CDAlert[fuchsia]{sidosenergiat} ovat mitättömiä ytimen sidosenergioihin verrattuna}
+
+\item Toisaalta ytimen magneettinen momentti $ \appear{\textrm{((}  \Frac{e \hbar}{2 m_{p}} \textrm{))}} $ \appear{on pieni} \appear{$\sim 1/2000$ verrattuna elektronien magneettiseen momenttiin} \appear{(\CDAlert[fuchsia]{Bohrin magnetoni} $\Frac{e \hbar}{2 m_{e}}$)}
+
+\end{itemize}
+
+
+\xdef\loc{south east}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.4*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,width=5.75cm]{Figures_booklet/SOM_12_Nuclear_physics_figures/SOM_Nuclear_Table_1.png}}; %scale=\figscale. % 8cm max height
+\end{tikzpicture}
+\footnote{\HarrisCRshort}
+
+\xdef\loc{south west}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.1*\figYshift,xshift=-1*\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,width=8.5cm]{Figures_booklet/SOM_12_Nuclear_physics_figures/Tikz_SOM_Nuclear_atom_vs_nucleus.pdf}}; %scale=\figscale. % 8cm max height
+\end{tikzpicture}
+
+
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Atomiytimen perusrakenne}%Basic structure of atomic nucleus
+\appear{} 
+
+% 
+\begin{itemize}
+	\item Alkuaineen \CDAlert[red]{isotoopille}\appear{, eli \CDAlert[fuchsia]{nuklidille}} \appear{käytetään merkintää} \appear{${}_{Z}^{A}X$:}
+$$\small
+\begin{array}{rl} 
+  \appear[+(2)-]{{A}&{\!=}  \text{~Atomimassa$^*$ = kokonaisluku} \Approx \text {atomin paino atomimassayksiköissä}} \\ %(amu)
+\appear{A=Z+N} \appear{\,,~\text{missä}} \appear[+(2)-]{\quad {Z}&{\!=}\text {~\CDAlert[blue]{Järjestysluku} = Atomiluku (protonien lkm)}^\dagger \rightarrow \text {ytimen varaus}}\\ 
+\appear[+(1)-]{{N}&{\!=}\text {~Neutroniluku}}
+\end{array}
+$$
+\footnoteleft{\appear[+(-2)-]{$^*$Tunnetaan myös massalukuna tai \CDAlert[blue]{nukleonilukuna}, eli \CDAlert[blue]{A = 'All'}}}
+\footnoteleft{,\appear[+(-2)-]{$^\dagger$tai \CDAlert[red]{protoniluku} }}
+\item Ytimen massa $\Approx A \cdot m$, missä $m \Approx m_{p} \Approx m_{n}$
+
+\end{itemize}
+
+% 6.5 cm = midway, 10 cm = 3/4 
+\vspace{2.5mm}
+\begin{minipage}{6.5cm}
+\begin{itemize}
+	
+\item<+-> Yksi \CDAlert[fuchsia]{atomimassayksikkö} vastaa
+\[
+ 1 \;u \equiv \frac{m_{C-12}}{12} \equal \appear{1,660540 \times 10^{-27} \mathrm{\;kg}}
+\]
+
+\item \CDAlert[blue]{Vakaalla ytimellä} \appear{on tyypillisesti noin \Alert[blue]{saman verran protoneita ja neutroneita}:} 
+\[
+ Z \approx \appear{N}
+ \]
+\end{itemize}
+\end{minipage}
+
+
+\xdef\loc{south east}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.25*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[width=6.3cm]{Figures_booklet/SOM_12_Nuclear_physics_figures/SOM_Nuclear_physics_Figure_1.png}}; % 8cm max height
+\end{tikzpicture}
+\footnote{\HarrisCR}
+
+%\footnoteleft{{$^*$Tunnetaan myös massalukuna tai \CDAlert[blue]{nukleonilukuna}, eli \CDAlert[blue]{A = 'All'}},{$^\dagger$tai \CDAlert[red]{protoniluku} }}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Atomiytimen perusrakenne}%Basic structure of atomic nucleus
+\appear{} 
+
+% 6.5 cm = midway, 10 cm = 3/4 
+%\vspace{2.5mm}
+\begin{minipage}{6.5cm}
+\begin{itemize} \seminormal
+\item Perusterminologiaa:
+	\begin{itemize}
+	 \item ${ }^{12} \mathrm{C}$ ja ${ }^{13} \mathrm{C}$ ovat '\CDAlert[red]{isotooppeja}' 
+	\item ${ }^{13} \mathrm{C}$ ja ${ }^{14} \mathrm{N}$ ovat '\CDAlert[blue]{isotooneja}' 
+	\item ${ }^{14} \mathrm{C}$ ja ${ }^{14} \mathrm{N}$ ovat '\CDAlert[fuchsia]{isobaareja}'
+\end{itemize}
+
+	
+	\item Vedyllä on kolme isotooppia:
+	\begin{itemize}
+		\item Vakaa vety (vety-1)
+		\item Vakaa deuterium (vety-2)
+		\item \Alert[red]{Epävakaa} tritium (vety-3)
+	\end{itemize}
+
+\item Näistä vety-1 on luonnossa yleisimmin löytyvä isotooppi\appear{, $99,985 \%$.} \appear{Vety-2 on pieni määrä luonnossa ($0,015 \%$)}\appear{, ja vety-3:sta ei sen epävakauden takia käytännössä löydy.}
+
+\end{itemize}
+\end{minipage}
+%\vspace{2.5mm}
+
+
+
+\xdef\loc{north east}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=0.5*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\tiny \begin{tabular}{lcccc} 
+\shortstack{Alkuaine \\ja isotooppi} & \shortstack{Atomi-\\ luku $Z$} & \shortstack{Neutroni-\\ luku $N$} & \shortstack{Atomi-\\ massa (u)} & \shortstack{Massa-\\ luku $A$} \\
+\hline Vety $ \textrm{((}  { }_{1}^{1} \mathrm{H} \textrm{))}  $ & 1 & 0 & $1,007825$ & 1 \\
+Deuterium $ \textrm{((}  { }_{1}^{2} \mathrm{H} \textrm{))}  $ & 1 & 1 & $2,014102$ & 2 \\
+Tritium $ \textrm{((}  { }_{1}^{3} \mathrm{H} \textrm{))}  $ & 1 & 2 & $3,016049$ & 3 \\
+Helium $ \textrm{((}  { }_{2}^{3} \mathrm{He} \textrm{))}  $ & 2 & 1 & $3,016029$ & 3 \\
+Helium $ \textrm{((}  { }_{2}^{4} \mathrm{He} \textrm{))}  $ & 2 & 2 & $4,002603$ & 4 \\
+Litium $ \textrm{((}  { }_{3}^{6} \mathrm{Li} \textrm{))}  $ & 3 & 3 & $6,015122$ & 6 \\
+Litium $ \textrm{((}  { }_{3}^{7} \mathrm{Li} \textrm{))}  $ & 3 & 4 & $7,016004$ & 7 \\
+Beryllium $ \textrm{((}  { }_{4}^{9} \mathrm{Be} \textrm{))}  $ & 4 & 5 & $9,012182$ & 9 \\
+Boori $ \textrm{((}  { }_{5}^{10} \mathrm{B} \textrm{))}  $ & 5 & 5 & $10,012937$ & 10 \\
+Boori $ \textrm{((}  { }_{5}^{11} \mathrm{B} \textrm{))}  $ & 5 & 6 & $11,009305$ & 11 \\
+Hiili $ \textrm{((}  { }_{6}^{12} \mathrm{C} \textrm{))}  $ & 6 & 6 & $12,000000$ & 12 \\
+Hiili $ \textrm{((}  { }_{6}^{13} \mathrm{C} \textrm{))}  $ & 6 & 7 & $13,003355$ & 13 \\
+Typpi $ \textrm{((}  { }_{7}^{14} \mathrm{N} \textrm{))}  $ & 7 & 7 & $14,003074$ & 14 \\
+Typpi $ \textrm{((}  { }_{7}^{15} \mathrm{N} \textrm{))}  $ & 7 & 7 & $15,000109$ & 15 \\
+Happi $ \textrm{((}  { }_{8}^{16} \mathrm{O} \textrm{))}  $ & 8 & 8 & $15,994915$ & 16 \\
+Happi $ \textrm{((}  { }_{8}^{17} \mathrm{O} \textrm{))}  $ & 8 & 8 & $16,999132$ & 17 \\
+Happi $ \textrm{((}  { }_{8}^{18} \mathrm{O} \textrm{))}  $ & 8 & 9 & $17,999160$ & 18
+\end{tabular}
+%
+}; % 8cm max height
+\end{tikzpicture}
+%\end{itemize}
+\footnoteleft{{A. H. Wapstra ja G. Audi, Nuclear Physics A595, 4 (1995).}}
+
+\xdef\loc{south east}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.3*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[width=6.4cm]{Figures_booklet/SOM_12_Nuclear_physics_figures/SOM_Nuclear_physics_Figure_2.png}}; % 8cm max height
+\end{tikzpicture}
+\footnote{\HarrisCRshort}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Atomiytimen perusrakenne}%Basic structure of atomic nucleus
+\appear{} 
+
+\semismall
+\begin{itemize}[itemsep=1.7mm]
+	\item Yli 3000 nuklidia on löydetty\appear{, joista \Alert[red]{266 on vakaita}}\appear{\Alert[red]{/stabiileja}}
+\item<.->[] \begin{itemize}
+	 \item \CDAlert[red]{Stabiileita ytimiä löytyy runsaasti luonnosta}
+	\item \CDAlert[blue]{Kaikki luonnosta löytymättömät isotoopit ovat epästabiileja }%No isotopes absent from nature are stable
+\end{itemize}
+
+\item Kutakin järjestyslukua $Z$ \appear{vastaavien stabiilien isotooppien lukumäärä vaihtelee:}%
+\item<.->[] \begin{itemize}
+	 \item Luonnosta löytyy kahta He-isotooppia: \appear{He-3 (99,99986\%)} \appear{ja He-4 $(0,00014 \%)$}
+\item Hiilellä on myös kaksi luonnollista isotooppia: \appear{C-12 (98,90\%)} \appear{ja C-13 (1,10\%)}
+\item Alumiinilla on vain yksi luonnosta runsaasti löytyvä isotooppi Al-27 \appear{(Al-26 on radioaktiivinen)}
+\item Tinalla on 10: \appear{Sn-112} $\rightarrow$ \appear{Sn-124} \appear{(Sn-121 on radioaktiivinen, $T_{1/2} = 55 \;a$))}
+\end{itemize}
+
+
+\item Epävakaita isotooppeja voidaan keinotekoisesti valmistaa\appear{, mutta ne \CDAlert[fuchsia]{häviävät radioaktiivisen hajoamisen kautta}}
+
+\item Epästabiileja isotooppeja löytyy kuitenkin runsaasti luonnosta\appear{, jos niitä syntyy toisista nuklideista radioaktiivisen hajoamisen seurauksena}
+
+\item Esimerkiksi\appear{ uraani-238 ja torium-232 ovat epävakaita}\appear{, mutta niitä löytyy \CDAlert[fuchsia]{luonnosta enemmän kuin hopeaa}}
+\end{itemize}
+
+%\xdef\loc{south east}
+%\begin{tikzpicture}[remember picture,overlay] % anchor=south
+%    \node (A) [yshift=-0.25*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[width=7cm]{Figures_booklet/SOM_12_Nuclear_physics_figures/SOM_Nuclear_physics_Figure_1.png}}; % 8cm max height
+%\end{tikzpicture}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Ytimen koko}%Size of the nucleus
+\appear{} 
+
+% 
+\begin{itemize}[itemsep=1.7mm]
+	\item On olemassa kolme kokeellista menetelmää ytimen koon määrittämiseksi 
+	\item Jokainen niistä antaa hieman poikkeavan arvion\appear{, mutta kaikki antavat samaa suuruusluokkaa olevia tuloksia} \vspace{2mm}
+\begin{itemize}[itemsep=1.8mm] \seminormal
+	\item \CDAlert[red]{Alfahiukkassironta}
+	\begin{itemize} \small
+		\item Rutherford pommitti ohutta kultakalvoa $\alpha$-hiukkasilla \appear{$ \textrm{((}\!={ }^{4} \mathrm{He}$-ydin\textrm{))}}%
+		\appear{\xdef\loc{south east}%
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.25*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[width=5cm]{Figures_booklet/SOM_12_Nuclear_physics_figures/SOM_Nuclear_physics_Figure_3.png}}; % 8cm max height
+\end{tikzpicture}\footnote{\HarrisCRshort}}%
+	\end{itemize}
+\item \CDAlert[blue]{Elektronisironta}
+	\begin{itemize} \small
+		\item Hofstadter pommitti ytimiä 200–500 MeV elektroneilla
+	\end{itemize}
+
+\item \CDAlert[green]{Nopeiden neutronien vaimeneminen}
+	\begin{itemize} \small
+		\item Neutronisäteen vaimenemisvuorovaikutusala antaa informaatiota ytimen koosta
+	\end{itemize}
+
+\end{itemize}
+
+\end{itemize}
+
+% 6.5 cm = midway, 10 cm = 3/4 
+\vspace{2.5mm}
+\begin{minipage}{8.5cm}
+\begin{itemize}[itemsep=1.7mm]
+	\item Kaikki menetelmät antavat samansuuruisen säteen \CDAlert[fuchsia]{pyöreähkölle ytimelle}:
+\[
+r  \equal  \appear{R_{0}} \appear{A^{1 / 3}}
+\]
+\appear{missä $R_{0} \Approx 1,2 \mathrm{\;fm}$ (mitattu arvo on 1,1--1,4 fm)} 
+\end{itemize}
+\end{minipage}
+%\vspace{2.5mm}
+
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Ytimen koko}%Size of the nucleus
+\appear{} 
+
+%\seminormal
+\begin{itemize}
+
+\item Verrannollisuukerroin \appear{\textrm{((}}$\appear{r} \propto \appear{A^{1/3}$\textrm{))}} \appear{implikoi että  \CDAlert[fuchsia]{ytimen tilavuus} on}
+\[
+V_{t o t}  \equal \frac{4}{3} \appear{\pi r^{3}}  \equal \frac{4}{3} \appear{\pi \textrm{((}}  \appear{R_{0} A^{1 / 3}} \appear{\textrm{))}  ^{3}}  \equal \frac{4}{3} \appear{\pi R_{0}^{3} \times A}
+\]
+\item Neutroneilla ja protoneilla on lähestulkoon samat massat \appear{($m_{p} \Approx m_{n} \Approx m_{nukleoni}$)}\appear{, jolloin ytimen kokonaismassa on verrannollinen $A$\,:\,han}\appear{, implikoiden että \CDAlert[red]{kaikki ytimet ovat lähes yhtä tiheitä}:}
+\[
+\rho  \equal \fraca{\text {massa}}{\text {tilavuus}}  \equal \fraca{A \times m_{\text {nukleoni}}}{A \times \Frac{4}{3} \pi R_{0}^{3}} \approx \appear{2,3 \times 10^{17} \mathrm{\;kg} / \mathrm{m}^{3}}
+\]
+
+\item Vakioarvoinen tiheys implikoi\appear{ että \Alert[red]{nukleonit ovat} \CDAlert[red]{kokoonpuristumattomia}} \appear{ja tiiviisti pakkautuneita}\appear{, eli että nukleoneilla on \CDAlert[blue]{voimakkaasti hylkivät kovat ytimet}}
+
+\item Yksittäisen nukleonin efektiivinen säde  on noin $ R_{0} \sim 1 \mathrm{\;fm}$
+\end{itemize}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Rutherfordin atomimalli}%Rutherford's model
+\appear{}
+% 
+\semismall  
+%\vspace{2.5mm}
+\begin{minipage}{8.5cm}
+\begin{itemize}
+	\item Rutherford pommitti $\mathrm{Pb}$:ä eri energian omaa\-vil\-la alfahiukkasilla. \appear{Kun energiat ylittivät arvon $\Approx 27 \mathrm{\;MeV}$}\appear{, tulevat alfahiukkaset alkoivat vuorovaikuttaa lyijy-ytimen kanssa \CDAlert[red]{attraktiivisen vahvan voiman välityksellä}}
+
+\item Myös peilinuklidien \appear{(\CDAlert[fuchsia]{isobaarien})} \appear{$ \textrm{((}  A_{1}=A_{2} \textrm{))}$}\appear{, mutta $Z_{1}=N_{2}$} \appear{ja $\textrm{((} N_{1}=Z_{2} \textrm{))}$} \appear{beetahajoaminen}  \appear{antoi informaatiota ytimien koosta} 
+\implies{ Kahden ytimen väliset erot, esim. ${ }^{15} \mathrm{O}$ ja ${ }^{15} \mathrm{N}$\appear{, johtuvat vain \CDAlert[blue]{sähköstaattisesta voimasta}} }
+
+\item On helppoa osoittaa laskemalla että $R$-säteisen pallon, jonka varaus on $Q=Z e$,  \CDAlert[blue]{sähköstaattinen energia} on:
+\[
+U  \equal \frac{3}{5} \frac{1}{4 \pi \varepsilon_{0}} \frac{Q^2}{R}  \equal \frac{3}{5} \frac{k Q^{2}}{R} \equal \frac{3}{5} \frac{k Z^{2} e^{2}}{R}
+\]
+\end{itemize}
+\end{minipage}
+%\vspace{2.5mm}
+
+\xdef\loc{east}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=0*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[height=8.5cm]{Figures_booklet/SOM_12_Nuclear_physics_figures/SOM_Tipler_Nuclear_physics_figure_3.png}}; % 8cm max height
+\end{tikzpicture}
+\footnote{\TiplerCRshort}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Rutherfordin atomimalli}%Rutherford's model
+\appear{} 
+
+\begin{itemize}
+	\item Eli jos radioaktiivinen ${ }^{15} \mathrm{O}$ hajoaa ${ }^{15} \mathrm{N}$:ksi \appear{emittoimalla beetahiukkasen} \appear{(elektronin)}\appear{, niin \CDAlert[blue]{energiaero} ${ }^{15} \mathrm{O}$:n ja ${ }^{15} \mathrm{N}$:n välillä olisi}
+\[
+\Delta U  \equal \frac{3}{5} \frac{k e^{2}}{R} \appear{\textrm{[[}Z^{2}-(Z-1)^{2} \textrm{]]}}
+\]
+\item[] kun $Z=8$\appear{, jonka avulla voidaan laskea ytimen säde $R$}
+
+\item \CDAlert[fuchsia]{Esimerkki:} \appear{Laske kevyimmän ja painavimman ytimen}\appear{, eli ${ }_{2}^{4} \mathrm{He}$:n} \appear{ja ${ }^{238}_{\,92}U$:n} \appear{säteet.} \appear{Säde saadaan yhtälöllä $r_{0}=1,2 \times A^{1/3} \mathrm{fm}$ jolloin:}
+$$
+\begin{aligned}
+ \appear{r_{He}} & \equal \appear{1,2 \times (4)^{1/3} \mathrm{\;fm}}\appear{=1,90 \mathrm{\;fm}} \\
+\appear{r_{U}} & \equal \appear{1,2 \times (238)^{1/3} \mathrm{\;fm}}\appear{=7,42 \mathrm{\;fm}}
+\end{aligned}
+$$
+ \implies{ Kevyimmän ja painavimman ytimen välinen kokoero on\\ \CDAlert[fuchsia]{vain noin nelinkertainen} }
+\end{itemize}
+
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Hofstadterin malli}%Hofstadter's model
+%  
+\appear{} 
+
+\semismall
+% 6.5 cm = midway, 10 cm = 3/4 
+%\vspace{2.5mm}
+\begin{minipage}{7.5cm}
+\begin{itemize}
+	%\item Suurenergisten elektronien sironta ytimistä riippuu johdonmukaisesti atomien massasta 
+	\item Suurenergisten elektronien sironta ytimistä riippuu johdonmukaisesti järjestysluvusta $Z$
+
+\item Oletetaan että ytimillä on 'pintakerros'\appear{, jonka tiheys on $10-90 \%$ ytimen tiheydestä}\appear{, ja että $r_{0}$ vastaa sädettä jolla varaustiheys on puolittunut} \appear{(ks. kuva)}
+\appear{\xdef\loc{east}%
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.0*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[height=8cm]{Figures_booklet/SOM_12_Nuclear_physics_figures/SOM_Tipler_Nuclear_physics_figure_7.png}}; % 8cm max height
+\end{tikzpicture}%
+\xdef\loc{north east}%
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=1.4*\figYshift,xshift=2.7*\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[width=4cm]{Figures_booklet/SOM_12_Nuclear_physics_figures/SOM_Tipler_Nuclear_physics_figure_8.png}}; % 8cm max height
+\end{tikzpicture}
+\footnote{\TiplerCRshort}}%
+\item Tällöin nukleonitiheyttä voidaan approksimoida yhtälöllä: 
+\vspace{-3mm}
+\[
+\hspace{2cm} \rho(r)=\fraca{\rho_{n}}{1+e^{ \textrm{((}  r-r_{0} \textrm{))}   / a}}
+\]
+\appear{missä}
+$$
+\begin{aligned}
+&\appear{\rho_{n}=0,17 \;\Frac{\text {nukleoni}}{\;fm^{3}}} \\
+&\appear{r_{0}= \textrm{((}  1,18 A^{1/3}-0,48 \textrm{))}   \;fm} \\
+&\appear{a=0,55 \mathrm{\;fm}} %\qquad r_{0}=1.07 A^{1/3} \mathrm{\;fm}
+\end{aligned}
+$$
+%\[
+%r_{0}=1.07 A^{\frac{1}{3}} \mathrm{fm}
+%\]
+\end{itemize}
+\end{minipage}
+%\vspace{2.5mm}
+
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Lyhyt yhteenveto}%Short summary
+\appear{} 
+
+\seminormal
+\begin{itemize}
+	\item \CDAlert[red]{Faktat:}
+\item<.->[] \begin{itemize}
+	 \item Ytimen nukleonitiheys on ${\sim}$vakioarvoinen, eikä riipu alkuaineesta 
+	 \item Ytimen varaustiheys on ${\sim}$vakio, eikä riipu alkuaineesta
+\end{itemize}
+
+
+\item \CDAlert[fuchsia]{Yhteenveto:}
+Jos tiheys on vakioarvoinen\appear{, nukleonin lisääminen $(A \oldrightarrow A+1)$ ei kasvata tiheyttä.} \appear{Eli jos on olemassa attraktiivinen voima,} \appear{sen luonne poikkeaa sähköisestä vuorovaikutuksesta}\appear{, mikä kasvaisi tekijällä $A$ mikäli yksi sähkövaraus lisättäisiin ytimeen.} \appear{\Alert[red]{Vahvan vuorovaikutuksen täytyy siis olla} \CDAlert[red]{lyhyen kantaman voima} \Alert[red]{(noin nukleonin etäisyyden luokkaa)}}
+
+\item \CDAlert[fuchsia]{Ytimissä vaikuttavat voimat ovat erittäin vahvoja}\appear{ verrattuna sähköisiin voimiin} \appear{(vedyn ionisaatioenergia on $13,6 \mathrm{\;eV}$}\appear{, mutta tarvitaan ${\sim}8 \mathrm{\;MeV}$ irrottamaan nukleoni ytimestä)}
+
+\item Attraktiivinen vuorovaikutusenergia on lähestulkoon yhtäsuuri protoneille ja neutroneille. \appear{\CDAlert[blue]{Vahva vuorovaikutus ei siis riipu sähköisestä varauksesta}}
+\end{itemize}
+
+%\endofslide 
+\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%

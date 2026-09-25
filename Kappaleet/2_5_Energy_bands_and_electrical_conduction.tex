@@ -1,0 +1,697 @@
+% !TEX root = ../bb_AiRa_Kappaleet.tex
+
+%% HARRIS: Chapter 10
+
+% ö = \%c3\%b6
+% ä = \%C3\%A4
+
+\xdef\sectiontitle{\IIsectiontitle} %aiheuttama
+\TOCrefs
+
+%%%%%%%%%%%%%%%
+\begin{frame}[label=2_5_a]%[label=2_4_TOC1]
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\label{\TOCname}
+
+\vspace{\chapterTOCvksip}
+\begin{itemize}[leftmargin=0.5cm,itemsep=3mm]
+    \item[2.1]<1-> \hyperlink{2_1_a}{\IIaaSubsectiontitle}
+    \item[2.2]<1-> \hyperlink{2_2_a}{\IIaSubsectiontitle}
+    \item[2.3]<1-> \hyperlink{2_3_a}{\IIbSubsectiontitle}	
+    \item[2.4]<1-> \hyperlink{2_4_a}{\IIcSubsectiontitle}	
+    \item[2.5]<1-> \hyperlink{2_5_a}{\CDAlert[red]{\IIdSubsectiontitle}}
+    \item[2.6]<1-> \hyperlink{2_6_a}{\IIeSubsectiontitle}
+    \item[2.7]<1-> \hyperlink{2_7_a}{\IIfSubsectiontitle}
+    \item[2.8]<1-> \hyperlink{2_8_a}{\IIgSubsectiontitle}
+    \item[2.9]<1-> \hyperlink{2_9_a}{\IIhSubsectiontitle}
+    \item[2.10]<1-> \hyperlink{2_10_a}{\IIiSubsectiontitle}
+\end{itemize}
+
+%\endofslide 
+\end{frame}
+%%%%%%%%%%%%%%%
+
+\xdef\sectiontitle{\IIdSubsectiontitle} 
+
+%%%%%%%%%%%%%%%%
+%\begin{frame}
+%\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+%\framesubtitle{Energiavyöt}
+%\appear{}
+%
+%\vspace{1.2mm}
+%\begin{minipage}{9.5cm}
+%\begin{itemize}[itemsep=2.5mm] \small
+%	% 6.5 cm = midway, 10 cm = 3/4 
+%
+%	\item Kiinteän aineen atomeilla on monta valenssielektronia\appear{, mutta vain osa näistä osallistuu sähkön johtumiseen}
+%
+%\item Dielektrisissä aineissa (eristeissä)\appear{ pitää olla joku} \appear{mekanismi mikä estää valenssielektronien vapaan liikkumisen}
+%
+%\item Atomien ja niiden elektronien käyttäytymistä kuvaava poten\-tiaa\-likaivo \appear{ei siis ole yksinkertainen}\appear{, vaan sen muoto rajoittaa elektronit  jotenkin \CDAlert[red]{energiavöihin}}
+%
+%\item Kun kaksi kaivoa on lähekkäin \appear{niiden energiatasot hajoavat ja spektriin muodostuu \CDAlert[blue]{hienorakenne}} 
+%
+%\item Kun $N$ atomia on lähekkäin\appear{ syntyy $N$:stä tasosta koostuvia e\-ner\-giavöitä} 
+%
+%\item Tämä on hyvä lähtökohta lähteä ymmärtämään kiteisen aineen positiivisten ioni-ydinten ja niitä ympäröivien elektro\-nien vuorovaikutuksia
+%\implies{ Monimutkaisempaan ja tarkempaan kuvaukseen tutustutaan \appear{kiinteän olomuodon fysiikan kurssilla}}
+%\end{itemize}
+%\end{minipage}
+%
+%\xdef\loc{north east}
+%\begin{tikzpicture}[remember picture,overlay] % anchor=south
+%    \node (A) [yshift=\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,width=4cm]{Figures_booklet/SOM_10_Bonding_figures/SOM_Bonding_Figure_1.png}}; %scale=\figscale. % 8cm max height
+%\end{tikzpicture}
+%
+%\xdef\loc{south east}
+%\begin{tikzpicture}[remember picture,overlay] % anchor=south
+%    \node (A) [yshift=-0.35*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,width=4cm]{Figures_booklet/SOM_10_Bonding_figures/SOM_Bonding_Figure_2.png}}; %scale=\figscale. % 8cm max height
+%\end{tikzpicture}
+%\footnote{\HarrisCRshort[1-]}
+%
+%\endofslide 
+%%\endofsection
+%\end{frame}
+%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Energiavyöt}
+\appear{}
+
+%\vspace{1.2mm}
+%\begin{minipage}{9.5cm}
+\begin{itemize}[itemsep=2.0mm] \small
+	% 6.5 cm = midway, 10 cm = 3/4 
+
+	\item Vain osa kiinteän aineen valenssielektroneista osallistuu sähkön johtumiseen %\appear{, mutta vain osa näistä osallistuu sähkön johtumiseen}
+
+\item Dielektrisissä aineissa\appear{ on joku} \appear{mekanismi mikä estää valenssielektronien vapaan liikkumisen}
+
+\item Atomien ja niiden elektronien käyttäytymistä kuvaava poten\-tiaa\-likaivo \appear{ei siis ole yksinkertainen}\appear{, vaan sen muoto määrää elektronien sijoittumisen \CDAlert[red]{energiavöihin}}
+
+\item Kahden lähekkäisen kaivon \appear{energiatasot hajoavat ja spektriin muodostuu \CDAlert[blue]{hienorakenne}} 
+
+\item Kun $N$ atomia on lähekkäin\appear{ syntyy $N$:stä tasosta koostuvia e\-ner\-giavöitä} 
+
+\item Tämä on hyvä lähtökohta lähteä ymmärtämään kiteisen aineen positiivisten ioni-ydinten ja niitä ympäröivien elektro\-nien vuorovaikutuksia
+\implies{\small Monimutkaisempaan ja tarkempaan kuvaukseen \\
+		tutustutaan \appear{kiinteän olomuodon fysiikan kurssilla}}
+\end{itemize}
+%\end{minipage}
+
+\xdef\loc{south west}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.15*\figYshift,xshift=-\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,width=8.5cm]{Figures_booklet/SOM_10_Bonding_figures/SOM_Bonding_Figure_1.png}}; %scale=\figscale. % 8cm max height
+\end{tikzpicture}
+
+\xdef\loc{south east}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.35*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,width=4cm]{Figures_booklet/SOM_10_Bonding_figures/SOM_Bonding_Figure_2.png}}; %scale=\figscale. % 8cm max height
+\end{tikzpicture}
+\footnote{\HarrisCRshort[1-]}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Energiavyöt}
+\appear{}
+
+\begin{minipage}{9cm}
+\begin{itemize}
+	\item Verrataan ensin äärettömän syvän, $4L$-levyisen yksiulotteisen kvanttikaivon energiatasoja:
+$$\semismall
+\begin{aligned} 
+\appear{E_{4,4L}}  &\equal \appear{16} \frac{\pi^{2} \hbar^{2}}{2 m(4 L)^{2}} \appear{=}\frac{16}{16} \frac{\pi^{2} \hbar^{2}}{2 m L^{2}} \\
+\appear{E_{3,4 L}} &\equal \appear{9} \frac{\pi^{2} \hbar^{2}}{2 m(4 L)^{2}} \equal \frac{9}{16} \frac{\pi^2 \hbar^{2}}{2 m L^{2}} \\
+\appear{E_{2,4 L}} &\equal \appear{4} \frac{\pi^{2} \hbar^{2}}{2 m(4 L)^{2}}  \equal \frac{4}{16} \frac{\pi^{2} \hbar^{2}}{2 m L^{2}} \\
+\appear{E_{1,4 L}} &\equal \frac{\pi^{2} \hbar^{2}}{2 m(4 L)^{2}} \equal \frac{1}{16} \frac{\pi^{2} \hbar^{2}}{2 m L^{2}}
+\end{aligned}
+$$
+\appear{$L$-levyisten kaivojen suhteen:}\vspace{3mm}
+\[ \semismall
+%\begin{aligned}
+\appear{E_{1, L}} \equal \frac{\pi^{2} \hbar^{2}}{2 m L^{2}}\appear{\,,} \qquad
+\appear{E_{2, L}} \equal \appear{4} \frac{\pi^{2} \hbar^{2}}{2 m L^{2}} \equal \appear{4 E_{1, L}}\appear{\,,} \qquad
+\appear{E_{3, L}} \equal  \appear{9 E_{1, L}}%\appear{9} \frac{\pi^{2} \hbar^{2}}{2 m L^{2}}  \equal
+%\end{aligned}
+\]
+
+\end{itemize}
+\end{minipage}
+
+\xdef\loc{south east}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.1*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,height=9cm]{Figures_booklet/SOM_10_Bonding_figures/SOM_Bonding_Figure_23.png}}; %scale=\figscale. % 8cm max height
+\end{tikzpicture}
+\footnote{\HarrisCR[1-]}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Energiavyöt}
+ \appear{}
+ 
+%\vspace{2.5mm}
+\begin{minipage}{9cm}
+\begin{itemize}
+	\item Kun meillä on äärellisen syviä kaivoja\appear{, joissa 4:stä atomista koostuvan kiteen elektronit majailevat}\appear{, esim. 12. energiatila on muotoa}
+\[
+E_{12,4 L} \equal \frac{144}{16} \frac{\pi^{2} \hbar^{2}}{2 m L^{2}}  \equal \appear{9} \frac{\pi^{2} \hbar^{2}}{2 m L^{2}}
+\]
+
+\item Periaate 4:stä atomista koostuvalle kiteelle on hahmoteltu kuvan 23 keskelle
+
+\item Muodostuu energiavöitä yksittäisten atomien ener\-gia\-tasojen lähelle
+
+\item Huomaa että energiat ovat alhaisempia kun 12 elektronia asetetaan $4L$-levyiseen kaivoon\appear{ kuin pistettäessä elektronit $L$-levyiseen kaivoon}
+\end{itemize}
+\end{minipage}
+
+\xdef\loc{south east}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.1*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,height=9cm]{Figures_booklet/SOM_10_Bonding_figures/SOM_Bonding_Figure_23.png}}; %scale=\figscale. % 8cm max height
+\end{tikzpicture}
+\footnote{\HarrisCR[1-]}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Energiavyöt}
+\appear{}
+
+\begin{minipage}{9cm}
+\begin{itemize}
+	\item Tilat jakautuvat 4:ään eri tasoon: 
+	
+	\item[] \begin{itemize}[itemsep=2.2mm] \semismall
+	\item Esimerkiksi korkeimman energian aaltofunktiolla vyöllä $n=2$\appear{ on 8 solmukohtaa}\appear{, jotka ovat atomien/ionien välissä, missä jaksollinen potentiaalienergia on maksimissaan}
+	\item Tämä tila ei juurikaan eroa yksittäisen atomin aaltofunktiosta 
+	
+	\item $n=2$ vyön pienimmän energian aaltofunktiolla \appear{on kuitenkin n.~5 solmukohtaa}\appear{ ja funktion kupukohdat ovat potentiaalikaivojen seinämien sisällä (kor\-keassa potentiaalissa) } 
+	 
+	\end{itemize}
+
+\end{itemize}
+\end{minipage}
+
+\xdef\loc{south east}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.1*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,height=9cm]{Figures_booklet/SOM_10_Bonding_figures/SOM_Bonding_Figure_23.png}}; %scale=\figscale. % 8cm max height
+\end{tikzpicture}
+\footnote{\HarrisCR[1-]}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Energiavyöt}
+\appear{}
+\begin{minipage}{9cm}
+\begin{itemize}
+	\item Eli 4-atomisen kiteen elektronit \appear{muodostavat 4:n kvanttikaivon systeemin}\appear{, jossa \CDAlert[red]{energiavyöt}} \appear{muodostuvat yksittäisen yksiatomisen $L$-levyisen kaivon tilojen läheisyyteen}
+
+\item \CDAlert[fuchsia]{Aaltofunktiot} aallonpituuksineen \appear{näyttävät kuitenkin enemmän \CDAlert[fuchsia]{yksiatomisen 4L-kaivon} aaltofunktioilta}
+
+\item Tarkastellaan seuraavaksi elektronien aallonpituuksia \appear{käyttämällä tuttua aaltoluvun määritelmää}
+\[
+k  \equal \frac{2 \pi}{\lambda}
+\]
+\end{itemize}
+\end{minipage}
+
+\xdef\loc{south east}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.1*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,height=9cm]{Figures_booklet/SOM_10_Bonding_figures/SOM_Bonding_Figure_23.png}}; %scale=\figscale. % 8cm max height
+\end{tikzpicture}
+\footnote{\HarrisCR[1-]}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Energiavyöt}
+\appear{}
+\begin{itemize}
+	\item Kun aaltoluku $k$ on saatu laskettua\appear{, me voimme laskea kullakin tilalla olevan elektronin kineettisen energian:} 
+\end{itemize}
+
+\begin{minipage}{7.3cm}
+\begin{itemize}
+\item[] \[
+E_{kin} \equal \frac{p^{2}}{2 m} \equal \frac{\hbar^{2} k^{2}}{2 m}
+\]
+
+\item[] \begin{itemize}[itemsep=2.5mm] \small
+ \item Kuvassa näkyy oikea \CDAlert[fuchsia]{kokonaisenergia} $k$:n funktiona\appear{, sekä \CDAlert[black]{kineettinen energia} (\CDAlert[black]{paraabeli})} \appear{(}$\appear{E_{kin}} \propto \appear{k^{2}} $\appear{)} \appear{ja sitä merkitään \CDAlert[black]{katkoviivalla}} 
+	 \item Kokonaisenergia on \CDAlert[red]{suurempi} kuin \CDAlert[red]{kineettinen energia}\appear{, ja näiden välinen erotus vastaa tilojen potentiaalienergiaa} $ \appear{\textrm{((}E_{\text {tot}}=}\appear{E_{\text {kin}}} \plus \appear{E_{\text {pot}} \textrm{))}}$ 
+	 
+	 \item Jokaisen vyön matalimman energiatilan \CDAlert[tunired]{potentiaalienergia on huomattavan korkea}
+\end{itemize}
+
+\end{itemize}
+\end{minipage}
+
+\xdef\loc{south east}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.35*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,height=7.6cm]{Figures_booklet/SOM_10_Bonding_figures/SOM_Bonding_Figure_24.png}}; %scale=\figscale. % 8cm max height
+\end{tikzpicture}
+\footnote{\HarrisCR[1-]}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Energiavyöt}
+\appear{}
+
+\begin{itemize}
+	\item Kasvatetaan seuraavaksi kiteen muodostavien atomien lukumäärää\appear{ (hilavakio pidetään $a$:na)} 
+	\implies{ \CDAlert[red]{$N$:stä tilasta koostuvia energiavöitä} \\ \CDAlert[red]{muodostuu} }  
+\end{itemize}
+
+\vspace{1.3mm}
+\begin{minipage}{7.4cm}
+\begin{itemize}
+	\item[] \begin{itemize}[itemsep=2.1mm] \small
+	 \item Jokaisen vyön korkeimmassa tilassa\appear{ aaltofunktion solmukohdat osuvat atomien väliin}%$(\mathrm{x})$
+
+\item Jokaisella tilalla\appear{/aaltofunktiolla} \appear{vyöllä $n$ on $n$ kupukohtaa}\appear{, ja atomien välinen etäisyys $a$} \appear{liittyy aallon aallonpituuteen yhtälön kautta}
+\[
+a  \equal \appear{n \cdot} \frac{1}{2} \appear{\lambda} \quad \Rightarrow \quad \appear{k} \equal \appear{n} \frac{\pi}{a}
+\]
+\vspace{-2mm}
+\item Jokaisen vyön pohjalla \appear{olevalla tilalla on suu\-rin potentiaalienergia} 
+
+%\item Koska $N$ on suuri vöiden pohjalla ja huipulla olevien tilojen aallonpituudet ovat käytännössä samoja
+
+\end{itemize}
+
+\end{itemize}
+\end{minipage}
+
+\xdef\loc{south east}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.25*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,height=8.2cm]{Figures_booklet/SOM_10_Bonding_figures/SOM_Bonding_Figure_25.png}}; %scale=\figscale. % 8cm max height
+\end{tikzpicture}
+\footnote{\HarrisCR[1-]}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%
+%\begin{frame}
+%\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+%
+%\begin{itemize}
+%	\item Selkeästikin hyppäys tilalta $n$ tilalle $n+1$ tapahtuu nopeasti kun 
+%	\end{itemize}
+%
+%	% 6.5 cm = midway, 10 cm = 3/4 
+%\vspace{2.5mm}
+%\begin{minipage}{7cm}
+%\begin{itemize}
+%	\item[] $k=n \Frac{\pi}{a}$. \appear{ Vyöllä $n$ on $n$ kupukohtaa per atomi}\appear{ ja koska kiteessä on $N$ atomia}\appear{, niin tilalla on yhteensä $n N$ kupukohtaa}
+%
+%\item Vyön $n+1$ huipulla on $n+1$ kupukohtaa per atomi\appear{, ja koska meillä on  edelleen $N$:n atomin systeemi}\appear{, niin tällä tilalla on yhteensä $(n+1) N$ kupukohtaa.} \appear{So the number of states from one band top to the next band top to will be $N$}
+%
+%\item So clearly: \Alert[red]{Each band consists of N} 
+%		\CDAlert[red]{states}
+%\end{itemize}
+%\end{minipage}
+%
+%\xdef\loc{south east}
+%\begin{tikzpicture}[remember picture,overlay] % anchor=south
+%    \node (A) [yshift=-0.25*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,height=8.2cm]{Figures_booklet/SOM_10_Bonding_figures/SOM_Bonding_Figure_25.png}}; %scale=\figscale. % 8cm max height
+%\end{tikzpicture}
+%
+%\endofslide 
+%%\endofsection
+%\end{frame}
+%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Energiavöiden leveneminen}
+\appear{}
+
+\begin{itemize}
+	\item Koska $N$ on suuri \CDAlert[blue]{energiavyöt ovat käytännössä jatkumoita}
+
+\item Kun $a$ ei ole liian pieni\appear{ energiavyö leviää yksittäisatomin energiatilan ylä- ja alapuolelle}
+
+\item \CDAlert[red]{Vyön leviämisen suuruus riippuu} kuinka paljon vierekkäisten atomien \CDAlert[red]{aaltofunktioiden välillä} on \CDAlert[red]{päällekkäisyyttä} (\Alert[red]{overlap}) 
+\end{itemize}
+% 6.5 cm = midway, 10 cm = 3/4 
+\vspace{2.5mm}
+\begin{minipage}{4cm}
+\begin{itemize}
+	\item \CDAlert[tunired]{Vyön leveys}: 
+\item[] \begin{itemize}
+	\item ei riipu atomien lukumäärästä 
+	\item riippuu \Alert[tunired]{ato\-mien välisestä e\-täi\-syy\-destä $a$ eli hilavakiosta}
+\end{itemize}
+
+\end{itemize}
+\end{minipage}
+
+
+\xdef\loc{south  east}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.25*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,width=9.75cm]{Figures_booklet/SOM_10_Bonding_figures/SOM_Bonding_Figure_26.png}}; %scale=\figscale. % 8cm max height
+\end{tikzpicture}
+\footnote{\HarrisCR[1-]}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+%\framesubtitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{Summary}}{Summary} }
+%\framesubtitle{\texorpdfstring{\DUTline[\sectiontitleulinecolor]{Summary}}{Summary} }
+\framesubtitle{Yhteenveto}
+\appear{}
+
+\begin{itemize}
+	\item[] \begin{itemize}[itemsep=1.5mm,leftmargin=0mm] \small
+	 \item Kide on makroskooppinen ($N$ on suuri)\appear{, jolloin syntyy energioiden jatkumo} 
+	 \end{itemize}
+\end{itemize}
+	 	
+\vspace{1.8mm}
+\begin{minipage}{8.2cm} %,itemindent=0pt,leftmargin=*
+\begin{itemize}
+	\item[] \begin{itemize}[itemsep=1.5mm,leftmargin=0mm] \small
+%	 \item Kide on makroskooppinen ($N$ on suuri)\appear{, jolloin syntyy energioiden jatkumo} 
+	 
+	 \item Mikroskooppiset sähköiset potentiaalienergiat  jakavat jatkumon $n$:än energiavyöhön\appear{, jotka liittyvät yksittäisiin atomitiloihin}
+	
+	\item Vyörakennne  \appear{($E$ vs. aaltoluku $k$)} \appear{ esitetään usein kuvaajana jota kutsutaan \CDAlert[fuchsia]{dispersiorelaatioksi}} \appear{(kuva~27)}  
+	
+	\item Huomaa että $k$ voi olla sekä positiivinen että nega\-tii\-vinen\appear{, riippuen tilan etenemissuunnasta}
+	
+	\item (\Alert[fuchsia]{fuchsia}) kuvaaja \appear{\CDAlert[red]{seuraa lähestulkoon} paraabeliä (musta katkoviiva)}
+	\vspace{-1mm}
+	 \implies{Elektronilla on  \Alert[red]{enimmäkseen kineettistä \\ energiaa}\appear{,
+	 eli \CDAlert[tunired]{se voi liikkua vapaasti}} }
+	 %in the macroscopic infinite well  
+	\item Tilat lähellä $\appear{k} \equal \appear{n} \frac{\pi}{a}$ \appear{poikkeavat tästä}
+
+\item Lopuksi mainitaan että olemme vasta keskustelleet tiloista\appear{, emme siitä kuinka nämä tilat täyttyvät elektroneista}
+\end{itemize}
+
+\end{itemize}
+\end{minipage}
+
+
+\xdef\loc{south east}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.35*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,height=8cm]{Figures_booklet/SOM_10_Bonding_figures/SOM_Bonding_Figure_27.png}}; %scale=\figscale. % 8cm max height
+\end{tikzpicture}
+\footnote{\HarrisCR[1-]}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+%\framesubtitle{\texorpdfstring{\DUTline[\sectiontitleulinecolor]{Sähkön johtuminen}}{Sähkön johtuminen} }
+\framesubtitle{Sähkön johtuminen}
+\appear{}
+
+\begin{itemize}
+	\item \Alert[red]{Klassinen} malli ('Druden malli') sähkön johtumiselle:\\
+	\item[] \begin{itemize}[itemsep=1.8mm] \small
+	 \item 1900, kolme vuotta \CDAlert[red]{elektronin löytymisen jälkeen (Thomson)} 
+	 \item Paul Drude ehdotti että metalleissa olisi \CDAlert[blue]{vapaita elektroneita}
+	 \appear{\xdef\loc{south east}%
+\begin{tikzpicture}[remember picture,overlay]% anchor=south
+    \node (A) [yshift=-0.25*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,width=5cm]{Figures_booklet/SOM_10_Bonding_figures/Tikz_SOM_Bonding_e_conduction_schematic_fixed}};%scale=\figscale. % 8cm max height
+\end{tikzpicture}}
+	 \item Malli toimii monimutkaisempien mallien perustana \appear{ja selittää sähkön- ja lämmönjohtavuuden} \appear{(\CDAlert[red]{Druden–Lorentzin malli})}\appear{, ja siitä voidaan jopa tehdä yhteensopiva kvanttimekaniikan kanssa} \appear{(\CDAlert[violet]{Druden–Sommerfeldin malli})}
+\end{itemize}
+%broken pipe, 2025?
+
+\item Tätä mallia, jota Lorentz jatkokehitti \appear{(Druden–Lorentzin malli)}\appear{ kutsutaan \CDAlert[tunired]{sähkönjohtavuuden klassiseksi malliksi}}
+\end{itemize}
+
+\vspace{2.5mm}
+\begin{minipage}{8.5cm}
+\begin{itemize}
+
+\item  \CDAlert[blue]{Sähkökentän puuttuessa}\appear{ johtavuuselektronien keskinopeus on muotoa} 
+% 6.5 cm = midway, 10 cm = 3/4 
+\[
+< v >\,  \equal \LP \frac{8 k_{B} T}{\pi m_{e}} \;\RP\appear{\raisebox{8pt}{$^{1/2}$}}  \equal  \appear{1,08 \times} \appear{10^{5}} \appear{\mathrm{~m} / \mathrm{s}} \appear{\,, \quad T=293~K}
+\]
+\end{itemize}%\appear{\textrm{))}^{1/2}}
+\end{minipage}
+\vspace{2.5mm}
+
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+%\framesubtitle{\texorpdfstring{\DUTline[\sectiontitleulinecolor]{Sähkön johtuminen}}{Sähkön johtuminen} }
+\framesubtitle{Sähkön johtuminen}
+
+\begin{itemize}[itemsep=1.8mm]
+	\item[] 
+$$
+< v >\,= \LP \frac{8 k_{B} T}{\pi m_{e}} \;\RP\appear{\raisebox{8pt}{$^{1/2}$}} \appear{=1,08 \times 10^{5} \mathrm{~m} / \mathrm{s} \,, \quad T=293~K}
+$$
+
+\item Aineessa tapahtuvien törmäyksien takia\appear{, elektronien suunnat ovat sattumanvaraisia}\appear{, eikä sähkövirtaa muodostu}
+
+\item \CDAlert[red]{Potentiaaliero sähkönjohteen eri kohdissa} synnyttää kohtien välille sähkökentän 
+\implies{ Tämä kenttä synnyttää elektroniin kohdistuvan (Lorentzin) voiman $F=e E$ } 
+
+\item Vapaat elektronit liikkuvat vapaasti\appear{, \\
+	törmäillen positiivisesti varautuneisiin ioneihin} 
+	 
+\item Elektroni ajautuu (drift) \appear{sähkökentän}  \\
+	\appear{vaikutuksesta}\appear{, kiihtyen törmäyksien välissä} \\
+	\appear{(analoginen tilanne pallon vierimiseen \\
+	 kaltevalla tasolla jossa on esteitä)}
+\end{itemize}
+
+\xdef\loc{south east}%
+\begin{tikzpicture}[remember picture,overlay]% anchor=south
+    \node (A) [yshift=-0.25*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,width=5cm]{Figures_booklet/SOM_10_Bonding_figures/Tikz_SOM_Bonding_e_conduction_schematic_fixed}};%scale=\figscale. % 8cm max height
+\end{tikzpicture}
+%broken pipe, 2025
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\appear{}
+
+\begin{itemize}
+	\item \Alert[red]{Törmäyksien välinen keskimääräinen aika} on $\tau$
+	\item Tämän ajan kuluessa \appear{elektronit kiihtyvät nopeuteen} $\appear{\mathrm{e} \mathrm{E}}  \appear{\tau} \appear{/ \mathrm{m}_{\mathrm{e}}}$
+
+\item Kun törmäyksiä on useita\appear{, syntyy \Alert[red]{keskimääräinen nopeus}} eli \CDAlert[red]{ajautumisnopeus $v_{drift}$} \appear{aiheuttaen lopulta sähköisen virtatiheyden $\boldsymbol{j}$}
+
+\item Sähkömagnetismin perusteella:
+$$ \seminormal
+%\begin{aligned}
+\appear{j} \equal \frac{\text {varaus}}{\text{aika} \cdot \text{ala}} \equal \frac{\text{varaus}}{\text {etäisyys} \cdot \text{ala}} \appear{\cdot} \frac{\text{etäisyys}}{\text {aika}}
+ \equal \frac{e \times \text {varausluku}}{\text {tilavuus}} \appear{\cdot} \frac{\text{etäisyys}}{\text {aika}}
+%\end{aligned}
+$$
+\appear{Siis: }
+\[
+ j \equal \appear{e} \appear{\rho} \appear{v_{\text {drift}}}  \equal \appear{e \rho} \frac{e E}{m_{e}} \appear{\tau}  \equal \frac{e^{2} \rho \tau}{m_{e}} \appear{E}
+\]
+\item[] missä $\rho$ on sähköinen varaustiheys 
+\end{itemize}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Ohmin laki}
+\appear{}
+
+\begin{itemize}
+	\item Ylläoleva yhtälö vastaa \appear{käytännössä \CDAlert[red]{Ohmin lakia}}\appear{, missä \CDAlert[blue]{verrannollisuuskerroin $\sigma$ tunnetaan aineen konduktiivisuutena}}\appear{, ja sen käänteisluku \CDAlert[red]{resistiivisyytenä}} \appear{($\rho_{res} \equiv \sigma^{-1}$):} 
+\[
+j  \equal \appear{\sigma} \appear{E\,,} \qquad \appear{ \text {missä}} \qquad \appear{\sigma}  \equal \frac{e^{2} \appear{\rho \tau}}{m_{e}}
+\]
+
+\item Tarkasteltu Druden malli ei johda oikeaan sähkönjohtavuuden\appear{, eli konduktanssin arvoon} 
+
+\item Ajautumisnopeuksien arvot ovat myös epärealistisen pieniä \appear{(ainakin kertaluokan pienempiä kuin kokeellisesti mitatut arvot) }
+
+\end{itemize}
+
+%\xdef\loc{south east}
+%\begin{tikzpicture}[remember picture,overlay] % anchor=south
+%    \node (A) [yshift=-0.25*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=4,width=5cm]{Figures_booklet/Tikz_SOM_Bonding_figures}}; %scale=\figscale. % 8cm max height
+%\end{tikzpicture}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Johtavuuteen vaikuttavat asiat}
+\appear{}
+
+\begin{itemize}
+	
+\item Mutta \Alert[red]{klassinen malli on yhteensopiva kvanttimekaniikan kanssa}: 
+\item[] \begin{itemize}
+	 \item \CDAlert[tunired]{Sähköisen resisitiivisyyden nähdään aiheutuvan törmäyksistä} 
+	 
+	 \item Mutta kvanttimekaanisesti laskettuna \appear{\CDAlert[blue]{törmäysaika} on paljon suurempi kuin mitä saadaan klassisesti laskettua,} \appear{kun elektronit voivat törmätä jokaisen ionin kanssa} 
+	 
+	 \item Elektronit eivät kuitenkaan juurikaan törmäile ionien kanssa 
+	 \item Jaksollisessa kiteessä vapaat elektronit voivat käyttäytyä lähestulkoon vapaiden hiukkasten tavoin 
+	 \item  \CDAlert[fuchsia]{Elektronit ovat fermionisia aaltoja}\appear{, jolloin positiivisilla \\
+	 	 ioneilla on heikko vaikutus}\appear{, ja elektronien miehitysjakauma poikkeaa klassisesta jakaumasta}\appear{, siksi \Alert[red]{törmäyksiä\\
+		 täytyy tarkastella eri tavalla}}
+\end{itemize}
+ \implies{ Meidän täytyy ottaa huomioon \CDAlert[fuchsia]{aineen vyörakenne} }
+\end{itemize}
+
+%\xdef\loc{south east}
+%\begin{tikzpicture}[remember picture,overlay] % anchor=south
+%    \node (A) [yshift=-0.25*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=4,width=5cm]{Figures_booklet/Tikz_SOM_Bonding_figures}}; %scale=\figscale. % 8cm max height
+%\end{tikzpicture}
+
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Paulin kieltosääntö}
+\appear{}
+
+\begin{itemize}[itemsep=1.7mm]
+\item Valenssielektronien oletetaan liikkuvan vapaasti jaksollisessa kvanttikaivossa, jolloin niiden energiat noudattavat fermikaasun tiloja
+
+	\item Metalleissa fermioniset elektronit \appear{täyttävät energiavyöt alimmasta tilasta ylemmäs}\appear{ noudattaen \CDAlert[red]{Paulin kieltosääntöä}}
+
+\end{itemize}
+
+% 6.5 cm = midway, 10 cm = 3/4 
+\vspace{1.7mm}
+\begin{minipage}{3.5cm}
+\begin{itemize}[itemsep=1.7mm]
+
+\item \appear{Korkeimman miehitetyn tilan energiaa kutsutaan\\ \CDAlert[fuchsia]{fermienergiaksi $E_{F}$}}
+
+\item Johteessa \appear{korkein vyö on vain osittain miehitetty}\appear{, ja tämä on vyö jossa johtavuuselektronit majailevat}
+
+%	\item If no external electric field is applied, the random net movement of the electrons would be zero. If an external electric field is applied, then some of the electrons shift oppositely in field's direction, and slightly above $E_{F}$
+\end{itemize}
+\end{minipage}
+
+
+\xdef\loc{south east}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.35*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,width=10cm]{Figures_booklet/SOM_10_Bonding_figures/SOM_Bonding_Figure_28.png}}; %scale=\figscale. % 8cm max height
+\end{tikzpicture}
+\footnote{\HarrisCR[1-]}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Paulin kieltosääntö}
+\appear{}
+
+\begin{itemize}[itemsep=1.7mm]
+%	\item In metals the electrons, as fermions, fill the energy bands from lowest states, following the \CDAlert[red]{Pauli exclusion principle}
+%
+%\item In a conductor, the topmost band is only partially filled, and this is the band where the conduction electrons reside
+	\item<1-> Valenssielektronien oletetaan liikkuvan vapaasti jaksollisessa kvanttikaivossa, jolloin niiden energiat noudattavat fermikaasun tiloja
+
+	\item<1-> Metalleissa fermioniset elektronit täyttävät energiavyöt alimmasta tilasta ylemmäs noudattaen \CDAlert[red]{Paulin kieltosääntöä}
+
+\end{itemize}
+
+% 6.5 cm = midway, 10 cm = 3/4 
+\vspace{1.7mm}
+\begin{minipage}{3.6cm}
+\begin{itemize}[itemsep=1.7mm]
+	\item Jos ulkoista säh\-kö\-kent\-tää ei ole\appear{, elektronien satunnainen liike ei siirrä niitä}
+	\item Kun ulkoinen kenttä on olemassa\appear{, jotkut elektronit alkavat siir\-ty\-mään hiukan fermienergian $E_{F}$ ylä\-puolelle}
+\end{itemize}
+\end{minipage}
+
+
+\xdef\loc{south east}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.35*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,width=10cm]{Figures_booklet/SOM_10_Bonding_figures/SOM_Bonding_Figure_28.png}}; %scale=\figscale. % 8cm max height
+\end{tikzpicture}
+\footnote{\HarrisCR[1-]}
+
+%\endofslide 
+\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%

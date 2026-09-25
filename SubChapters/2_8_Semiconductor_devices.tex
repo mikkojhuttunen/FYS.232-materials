@@ -1,0 +1,723 @@
+% !TEX root = ../aa_SoM_Chapters.tex
+
+%% HARRIS: Chapter 10
+
+% ö = \%c3\%b6
+% ä = \%C3\%A4
+
+\xdef\sectiontitle{\IIsectiontitle} 
+
+%%%%%%%%%%%%%%%
+\begin{frame}[label=2_8_a]%[label=2_7_TOC1]
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+
+%\vspace{0.5cm}
+%\begin{itemize}[leftmargin=0.5cm,itemsep=3mm]
+%    \item[2.1] \hyperlink{2_1_a}{\IIaSubsectiontitle}
+%    \item[2.2] \hyperlink{2_2_a}{\IIbSubsectiontitle}	
+%    \item[2.3] \hyperlink{2_3_a}{\IIcSubsectiontitle}	
+%    \item[2.4] \hyperlink{2_4_a}{\IIdSubsectiontitle}
+%    \item[2.5] \hyperlink{2_5_a}{\IIeSubsectiontitle}
+%    \item[2.6] \hyperlink{2_6_a}{\IIfSubsectiontitle}
+%    \item[2.7] \hyperlink{2_7_a}{\CDAlert[blue]{\IIgSubsectiontitle}}
+%    \item[2.8] \hyperlink{2_8_a}{\IIhSubsectiontitle}
+%    \item[2.9] \hyperlink{2_9_a}{\IIiSubsectiontitle}
+%\end{itemize}
+
+\vspace{0.2cm}
+\begin{itemize}[leftmargin=0.5cm,itemsep=3mm]
+    \item[2.1] \hyperlink{2_1_a}{\IIaaSubsectiontitle}
+    \item[2.2] \hyperlink{2_2_a}{\IIaSubsectiontitle}
+    \item[2.3] \hyperlink{2_3_a}{\IIbSubsectiontitle}	
+    \item[2.4] \hyperlink{2_4_a}{\IIcSubsectiontitle}	
+    \item[2.5] \hyperlink{2_5_a}{\IIdSubsectiontitle}
+    \item[2.6] \hyperlink{2_6_a}{\IIeSubsectiontitle}
+    \item[2.7] \hyperlink{2_7_a}{\IIfSubsectiontitle}
+    \item[2.8] \hyperlink{2_8_a}{\CDAlert[blue]{\IIgSubsectiontitle}}
+    \item[2.9] \hyperlink{2_9_a}{\IIhSubsectiontitle}
+    \item[2.10] \hyperlink{2_10_a}{\IIiSubsectiontitle}
+\end{itemize}
+
+
+\endofslide \end{frame}
+%%%%%%%%%%%%%%%
+
+\xdef\sectiontitle{\IIgSubsectiontitle} 
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+
+\framesubtitle{Binary compound semiconductors}
+\seminormal
+
+%Compound semiconductors
+\begin{itemize}[itemsep=1.7mm]
+	\item Elemental semiconductors are mostly the elements in group IV: \appear{Si, Ge}
+	
+\item \CDAlert[fuchsia]{Compound semiconductors}, i.e. mostly mixtures of III-V\appear{, II-VI} \appear{and IV-IV elements}\appear{, are also widely used} \appear{(also Si$_{1-x}$Ge$_{x}$)}
+\appear{\xdef\loc{south east}%
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.5*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,height=5.8cm]{Figures_booklet/SOM_semiconductor_table_figure.png}};%scale=\figscale. % 8cm max height
+\end{tikzpicture}}
+\item Varying of the concentration of the components is used to tailor the properties of the semiconduc-\\ 
+\end{itemize}
+% 6.5 cm = midway, 10 cm = 3/4 
+%\vspace{2.5mm}
+\begin{minipage}{5.1cm}
+	\begin{itemize}[itemsep=1.7mm]
+	\item[] tors (most notably the band gap\appear{, and the curvatures of the bands)}
+
+\item Figure shows the \Alert[red]{band gap \appear{vs. lattice constant}} \appear{for some common binary compound semiconductors\footnote{www.tf.uni-kiel.de} }
+
+\item This tunability is useful when forming functional circuit components and devices!
+\end{itemize}
+
+\end{minipage}
+
+% great WWW: https://www.tf.uni-kiel.de/matwis/amat/semi_en/kap_5/backbone/r5_1_4.html
+%\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Diode junction}
+%The Diode
+ 
+ \seminormal
+\begin{itemize}
+	\item Perhaps the most common semiconductor device is a \CDAlert[fuchsia]{diode} \appear{(or a diode junction)}\appear{, allowing electrical \Alert[fuchsia]{current to flow only along one direction} }
+	
+	\item A diode is assembled using blocks of p-type \appear{and n-type doped semiconductors}\appear{, 'glued' on atomic level together with some appropriate impurity element}\appear{, in overall forming a so-called \CDAlert[fuchsia]{p–n junction}}	
+	
+	\item If we apply a potential difference with the p-type at higher potential\appear{, known as \Alert[red]{forward-biased condition}}\appear{, electrons flow to the left and  holes to the right, both toward the junction }
+\end{itemize}
+	
+% 6.5 cm = midway, 10 cm = 3/4 
+\vspace{2.5mm}
+\begin{minipage}{6.5cm}
+	\begin{itemize}	
+	\item When they meet, they recombine \implies{ \Alert[red]{current flows continuously} } 
+
+\end{itemize}
+
+\end{minipage}
+
+\xdef\loc{south east}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.25*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,width=8cm]{Figures_booklet/SOM_10_Bonding_figures/SOM_Bonding_Figure_41.png}}; %scale=\figscale. % 8cm max height
+\end{tikzpicture}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Diode junction}
+%The Diode
+ 
+ \seminormal
+\begin{itemize}
+	\item One of the most common semiconductor devices is \CDAlert[fuchsia]{diode} (or diode junction), allowing electrical \Alert[fuchsia]{current to flow only along one direction} 
+	
+	\item A diode is assembled using blocks of p-type and n-type doped semiconductors, 'glued' on atomic level together with some appropriate impurity element, in overall forming a so-called \CDAlert[fuchsia]{p–n junction}	
+	 
+	
+	\item The other bias is to connect high potential to $n$-type side\appear{, i.e. \CDAlert[blue]{reverse-biased condition} }
+	\implies{ Both electrons and holes move\\
+		      away from the junction, and\\
+		      \Alert[blue]{current stops almost instantly}  }
+		      
+	\item Note that this behavior is very\\ 
+		different from e.g. resistors\appear{, that\\
+		comply with the Ohm's law}
+\end{itemize}
+	
+\xdef\loc{south east}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.25*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,width=8cm]{Figures_booklet/SOM_10_Bonding_figures/SOM_Bonding_Figure_41.png}}; %scale=\figscale. % 8cm max height
+\end{tikzpicture}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{p-n junction}
+%p-n junction
+
+\begin{itemize}[itemsep=1.5mm]
+	\item Thus, we connect two doped semiconductors\appear{, let's say p-type Ge on the left and n-type Ge on the right} \appear{to make a \CDAlert[fuchsia]{p–n junction}}
+	
+	\item When they are separate\appear{, they have different Fermi levels $E_F$} 
+	
+	\item After connecting, electrons 'high' on the n-type side cross to the p-type
+\end{itemize}
+
+% 6.5 cm = midway, 10 cm = 3/4 
+%\vspace{2.5mm}
+\begin{minipage}{5.4cm}
+	\begin{itemize}[itemsep=1.5mm]
+	\item[] side, and holes from p-type cross to the n-side 
+	
+	\item After a short migration of carriers to either sides\appear{, the system finds a new macroscopic equilibrium state}
+	
+	\item In equilibrium, the Fermi levels will be equal on both sides \appear{forming an energy level scheme shown in Figure (a)}
+	
+%	\item In addition, there will be a small build up of negative and positive charges into either sides of the depletion zone
+\end{itemize}
+
+\end{minipage}
+
+\appear{\xdef\loc{south east}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.25*\figYshift,xshift=1*\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,height=5.8cm]{Figures_booklet/SOM_10_Bonding_figures/SOM_Bonding_Figure_42.png}}; %scale=\figscale. % 8cm max height
+\end{tikzpicture}}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Reverse-biased p-n junction}
+
+\begin{itemize}[itemsep=1.5mm]
+	\item The energy level diagrams in Fig.~42 clarify the behaviour of the diode.
+ \appear{In the unbiased case (a)}\appear{, in fact, only few electrons need to cross the junction until an equilibrium is achieved}
+	
+	\item The immediate region of the junction (the impregnated semiconductor 
+\end{itemize}
+
+\begin{minipage}{5.3cm}
+	\begin{itemize}[itemsep=1.5mm]
+	\item[] paint or glue), called \Alert[red]{depletion zone}, is free of charge carriers \appear{(it is too wide to tunnel through)}
+	
+	\item In the case of \Alert[blue]{reverse-biasing} (b, the difference of the energy bands is exaggerated)\appear{, minority carriers (the opposite sign carriers) are scarce}
+
+\end{itemize}
+\end{minipage}
+
+\xdef\loc{south east}%
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.25*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,height=5.8cm]{Figures_booklet/SOM_10_Bonding_figures/SOM_Bonding_Figure_42.png}};%scale=\figscale. % 8cm max height
+\end{tikzpicture}
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Forward-biased p-n junction}
+
+\begin{itemize}[itemsep=1.5mm]
+	\item The energy level diagrams in Fig.~42 clarify the behaviour of the diode. In the unbiased case (a), in fact, only few electrons need to cross the junction until an equilibrium is achieved
+	
+	\item The immediate region of the junction (the impregnated semiconductor %paint or glue), called depletion zone, is free of charge carriers. It is too wide to tunnel through. In the case of reverse-biasing (b), the difference of the energy bands is exaggarated, and minority carriers (the opposite sign carriers) are scarce
+\end{itemize}
+
+%\vspace{2.5mm}
+\begin{minipage}{5.3cm}
+	\begin{itemize}[itemsep=1.5mm]
+	\item[] paint or glue), called \Alert[red]{depletion zone}, is free of charge carriers (it is too wide to tunnel through) 
+	
+	\item The \Alert[red]{forward-biasing} (c) shifts the $\mathrm{n}$-type conduction band upward %relative to that of the $\mathrm{p}$-type 
+	\implies{ Electrons and holes near the\\ 
+		      \CDAlert[red]{depletion zone} diffuse across it\appear{, \\%diffuse cross
+		      recombine and induce a \CDAlert[red]{current} }}
+\end{itemize}
+\end{minipage}
+
+\xdef\loc{south east}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.25*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,height=5.8cm]{Figures_booklet/SOM_10_Bonding_figures/SOM_Bonding_Figure_42.png}}; %scale=\figscale. % 8cm max height
+\end{tikzpicture}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Currents inside the depletion zone}%of the p-n junction
+
+\seminormal%
+\begin{itemize}[itemsep=1.5mm]
+	\item There are actually four different currents across the junction: \appear{two currents} \appear{(drift and diffusion)} \appear{for both \CDAlert[red]{majority carriers}} \appear{and two for the \CDAlert[blue]{minority carriers}} 
+	\appear{\xdef\loc{south east}%
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.25*\figYshift,xshift=1*\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=2,width=5cm]{Figures_booklet/Tikz_SOM_Bonding_figures_pn_junction}};%
+\end{tikzpicture}%
+}
+
+	\item Electrons are swept opposite to the field to the n-side, and holes are swept correspondingly to the p-side
+	
+	\item Diffusion of states then leads to \CDAlert[red]{recombination currents} for holes and electrons\appear{, denoted by $i_{\text {holes,rec}} \Equiv i_{p, r}$} \appear{and $i_{\text {electrons,rec}} \Equiv i_{n, r}$}
+
+\item Electron–hole pairs are also generated near the\\
+	junction due to thermal excitation%\appear{, and are swept through the junction due to the build-up E-field in the \CDAlert[fuchsia]{depletion region} }
+
+ 
+\end{itemize}
+
+\vspace{1.5mm}
+\begin{minipage}{8.45cm}
+	\begin{itemize}[itemsep=1.5mm]
+\item The corresponding currents\appear{, called \Alert[blue]{(thermal)} \CDAlert[blue]{generation currents}, can be labelled by $i_{\text {holes,gen}} \Equiv i_{p,g} \quad$} \appear{and $\quad i_{\text {electrons,gen}} \Equiv i_{n,g}$}
+
+\item At equilibrium\appear{, the generation and recombination currents are equal:} %
+$
+ \appear{| i_{p, g} |}  \equal \appear{| i_{p, r} |} \appear{~and~} \appear{| i_{n, g} |}  \equal  \appear{| i_{n, r} |}
+$
+\end{itemize}
+\end{minipage}
+
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%% LEAVE DIFFUSION REGIONS AND THE DEPLETION REGION TO FOLLOW-UP COURSES??
+%%%%%%%%%%%%%%%%
+%\begin{frame}
+%\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+%
+%\begin{itemize}
+%	\item Taking a closer look at the junction area, There are actually three zones:
+%
+%\item Depletion region in the middle, across the junction
+%
+%\item Diffusion regions on both sides of the depletion region, from there the electrons and holes diffuse to the junction area
+%
+%\item Homogeneous regions far away from Home the junction, which are actually not much affected by the junction
+%\end{itemize}
+%
+%%\xdef\loc{south east}
+%%\begin{tikzpicture}[remember picture,overlay] % anchor=south
+%%    \node (A) [yshift=-0.25*\figYshift,xshift=1*\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=6,height=4cm]{Figures_booklet/Tikz_SOM_Bonding_figures}}; %scale=\figscale. % 8cm max height
+%%\end{tikzpicture}
+%
+%\endofslide 
+%%\endofsection
+%\end{frame}
+%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Currents in p-n junction}
+
+\seminormal%
+
+\begin{itemize}[itemsep=1.5mm]
+	\item Now we apply \CDAlert[fuchsia]{forward bias}\appear{, i.e. positive potential difference across the junction }
+	\appear{\xdef\loc{south east}%
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.25*\figYshift,xshift=1*\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=3,width=5cm]{Figures_booklet/Tikz_SOM_Bonding_figures_pn_junction}};%
+\end{tikzpicture}%
+}
+	\item A forward bias decreases the electric field in the depletion region\appear{, as well as it decreases the differences between the energy levels on the p- and n-sides by an amount of:}
+\[
+	\Delta E  \equal \appear{-e \cdot V}
+\]
+\appear{It becomes easier for electrons to diffuse to $p$-region} \appear{and for the holes to $n$-region.} \appear{This effect \CDAlert[fuchsia]{increases both recombination currents} by the Boltzmann factor:}
+%$$
+%e^{-\Delta E / k_{B} T}=e^{e \cdot V / k_{B} T}
+%$$
+%(We don't need Fermi-Dirac statistics, since most of the available states of diffusing electrons and holes are empty) 
+\end{itemize}
+
+% 6.5 cm = midway, 10 cm = 3/4 
+\vspace{2.5mm}
+\begin{minipage}{8.45cm}
+	\begin{itemize}[itemsep=1.5mm]
+\item[] \[
+\appear{e^{-\Delta E / k_{B} T}}  \equal \appear{e^{e \cdot V / k_{B} T}}
+\]
+\appear{where use of Fermi–Dirac statistics is omitted}\appear{, since most of the available states of diffusing electrons and holes are empty}
+
+\item A current from p- to n-side is generated
+\end{itemize}
+\end{minipage}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%
+%\begin{frame}
+%\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+%
+%\begin{itemize}
+%	\item Now we apply forward bias, i.e. positive potential difference across the junction. A forward bias decreases the electric field in the junction region, as well as it decreases the differences between the energy levels on the $p$ - and $n$-sides by an amount of:
+%$$
+%\Delta E=-e \cdot V
+%$$
+%It becomes easier for electrons to diffuse to $p$-region and for the holes to $n$-region. This effect increases both recombination currents by the Boltzmann factor:
+%$$
+%e^{-\Delta E / k_{B} T}=e^{e \cdot V / k_{B} T}
+%$$
+%(We don't need Fermi-Dirac statistics, since most of the available states of diffusing electrons and holes are empty).
+%\end{itemize}
+%
+%%\xdef\loc{south east}
+%%\begin{tikzpicture}[remember picture,overlay] % anchor=south
+%%    \node (A) [yshift=-0.25*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,width=7cm]{Figures_booklet/SOM_10_Bonding_figures/SOM_Bonding_Figure_42.png}}; %scale=\figscale. % 8cm max height
+%%\end{tikzpicture}
+%
+%\endofslide 
+%%\endofsection
+%\end{frame}
+%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Currents in p-n junction}
+
+\begin{itemize}
+	\item Now we can 'calculate' the total current for e.g. the holes:
+\[
+i_{p, t o t}   \equal \appear{i_{p, r}}  \minus \appear{| i_{p, g} | }  \equal  \appear{| i_{p, g} | }\appear{e^{e \cdot V / k_{B} T}}  \minus \appear{ | i_{p, g} |}  \equal  \appear{| i_{p, g} | }\appear{(e^{e \cdot V / k_{B} T}-1)}
+\]
+\appear{The same calculation can be performed also for electrons}\appear{, thus we get the total current:}
+\[
+ I  \equal \appear{i_{p, t o t}}  \plus \appear{i_{n, t o t}} \equal \appear{I_{S}(T) ( e^{e \cdot V / k_{B} T}-1 )}
+ \]
+\appear{where $I_{S}$ is called the \Alert[red]{(reverse bias)} \CDAlert[red]{saturation current}}\appear{, and equation is known as the \CDAlert[fuchsia]{Shockley diode equation} }
+
+\item Discussion can be repeated for reverse bias as well\appear{, and it turns out that the same equation is valid for both positive and negative values }
+
+\item The obtained I–V curve, representing the behaviour of a typical \CDAlert[fuchsia]{diode rectifier}\appear{, showing $I=I(V)$}\appear{, \Alert[fuchsia]{differs markedly from Ohm's law}}
+\end{itemize}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{I–V curve of the p-n junction}
+
+\begin{itemize}
+	\item By plotting the current $I(V)$\appear{, given by the \CDAlert[fuchsia]{Shockley diode equation}}
+\[
+I(V)  \equal  \appear{I_{S}(T)} \appear{( e^{e \cdot V / k_{B} T}-1 )}
+\]
+\appear{as a function of external voltage $V$}\appear{, we see that the behavior \CDAlert[fuchsia]{differs markedly from Ohm's law}}
+\appear{\xdef\loc{south east}%
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.25*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,width=7cm]{Figures_booklet/SOM_Tipler_Solid_state_physics_figures/SOM_Tipler_SSP_figure_46}};%scale=\figscale. % 8cm max height
+\end{tikzpicture}}
+\end{itemize}
+
+\vspace{2.5mm}
+\begin{minipage}{6.7cm}
+	\begin{itemize}%[itemsep=1.5mm]
+\item This is a characteristic behaviour of a diode\appear{, and is difficult to achieve using conventional electronic components} \appear{(resistors}\appear{, capacitors} \appear{and inductors)}
+
+\item At very large reverse-biased voltage values \appear{(\CDAlert[blue]{breakdown voltage} = threshold)}\appear{, the pn-junction starts to pass current in the opposite direction}
+\end{itemize}
+\end{minipage}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Light-emitting diode (LED)}
+
+\seminormal
+\begin{itemize}[itemsep=1.7mm]
+	\item \CDAlert[red]{Light-emitting diode (LED) is a p-n junction that emits light }
+	
+	\item When the junction is forward biased\appear{, many holes are pushed from their $\mathrm{p}$-region to the junction region}\appear{, and many electrons are pushed from $n$-region to the junction region }
+	\implies{ Many electrons recombine with holes in the junction region }
+
+\item During recombination\appear{, the electron can emit a photon with energy approximately equal to the band gap }
+
+\end{itemize}
+
+\vspace{1.7mm}
+\begin{minipage}{8.7cm}
+	\begin{itemize}[itemsep=1.7mm]
+	\item This energy \appear{(i.e. colour of emitted light)} \appear{can be varied by using materials with different band gaps (see earlier slide) }
+
+\item LEDs are widely used for lighting \appear{and for digital displays in electronic equipments} \appear{etc.}
+
+\item  A diode of band gap $1$\;eV would need a forward bias of $1$\;V before turning on
+\end{itemize}
+\end{minipage}
+
+\xdef\loc{south east}%
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.25*\figYshift,xshift=1*\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=5,width=5cm]{Figures_booklet/Tikz_SOM_Bonding_figures_pn_junction}};%
+\end{tikzpicture}%
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Photodiode}
+
+\seminormal
+%A Photodiode
+\begin{itemize}[itemsep=2.2mm]
+	\item Consider an unbiased diode with band gap of $1$\,eV\appear{, illuminated  with photons whose energies slightly exceed $1$\;eV} 
+	\item \Alert[red]{Junction absorbs photons in all regions lifting electrons into the conduction band} (and holes into the valence band) %A conduction electron in the p-side (where it is a minor carrier) is eager to slide down to the lower conduction band in the entype. Similarly holes created in either the depletion zone or $\mathrm{n}$-type valence zone would happily float up to the p-type valence. Thus, as long as the photons arrive from an external source, the component acts like a battery,
+\end{itemize}
+
+\vspace{2.2mm}
+\begin{minipage}{7.8cm}
+	\begin{itemize}[itemsep=2.2mm]
+	%\item[] a hole in the valence band. 
+	
+	\item Conduction \CDAlert[red]{electron} in the p-side \appear{(where it is a minor carrier)} \appear{is eager to \CDAlert[red]{slide down} to the lower conduction band in the n-side} 
+	
+	\item Similarly \CDAlert[blue]{holes} created in either the depletion zone or n-side valence zone\appear{, would happily \CDAlert[blue]{float up} to the p-side}
+	
+	\item Thus, as long as the photons arrive from an external source\appear{, the component acts like a battery} \appear{(\Alert[fuchsia]{creates a voltage that generates a current})}
+	\end{itemize}
+\end{minipage}
+
+\xdef\loc{south east}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.15*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,width=5.7cm]{Figures_booklet/SOM_10_Bonding_figures/SOM_Bonding_Figure_43.png}}; %scale=\figscale. % 8cm max height
+\end{tikzpicture}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Photovoltaic cell}
+
+\seminormal
+\begin{itemize}[itemsep=1.8mm]
+	\item If the band gap is $1$\;eV\appear{, then the photon energy must be at least the band gap energy:}
+\[
+\lambda \equal \frac{h c}{E_{gap}}  \equal \frac{1240\;eV \cdot nm}{1\; eV} \equal \appear{1240\;nm}
+\]
+
+\item Connecting this device to an external circuit\appear{, it becomes a source of emf and power }
+\implies{ Such a device is often called a \CDAlert[fuchsia]{solar cell or photovoltaic cell} } 
+
+\item Sunlight is not necessarily required\appear{, since photon energies greater than the band gap will suffice}
+
+\item Here we treated the essence of the photovoltaic cell\appear{, which turns light into energy}\appear{, providing the tools for \CDAlert[fuchsia]{solar energy conversion}} %We may also add layers of intrinsic semiconductor between the n-type and $p$-type regions, widening the depletion zone where the electron-hole pairs are sorted quickly and contributing to improved efficiengy in high-frequency applications
+
+\item But the same physics applies also to other light-sensitive devices \appear{(i.e. \Alert[red]{photodiodes}):} \appear{charge-coupled device (CCD) image detectors}\appear{, complementary metal–oxide–semiconductor (\CDAlert[fuchsia]{CMOS}) detectors}\appear{, digital cameras} \appear{and camcorders}
+\end{itemize}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Diode laser}
+%The Diode Laser
+
+\seminormal
+\begin{itemize}[itemsep=1.7mm]
+	\item As in the LED, the energy given up in electron–hole recombination \appear{is the source of light in a \CDAlert[fuchsia]{diode laser} }
+	
+	\item Large concentrations of electrons and holes at the pn-junction \appear{provide the condition of \CDAlert[fuchsia]{population inversion}}\appear{, required for lasing action}
+
+	\item A resonant \CDAlert[fuchsia]{cavity} is also needed to amplify the desired wavelength, but %due to the high refractive indices of many semiconductors (specifically for Si, $n \sim 3.7$), semiconductor–air interfaces often act as good enough cavity mirrors
+\end{itemize}
+
+%\vspace{1.7mm}
+\begin{minipage}{8.2cm}
+\begin{itemize}[itemsep=1.7mm]
+\item[] due to the high refractive indices of many semiconductors \appear{(e.g. for Si, $n\,{\sim}\,3.7$)}\appear{, semiconductor–air interfaces often act as good enough cavity mirrors}
+
+\item \CDAlert[red]{Indirect band gap Si} is not the optimal choice for diode lasers\appear{, since it easily gives up its recombination energy in forms other than light}
+
+\item \CDAlert[blue]{GaAs} is a III-V semiconductor\appear{, and a good material due it its \CDAlert[blue]{direct band gap} }
+
+	\end{itemize}
+\end{minipage}
+
+\xdef\loc{south east}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.25*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,width=5.3cm]{Figures_booklet/SOM_Tipler_Solid_state_physics_figures/SOM_Tipler_SSP_figure_52.png}}; %scale=\figscale. % 8cm max height
+\end{tikzpicture}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Transistor}
+% The Transistor
+
+\begin{itemize}[itemsep=1.7mm]
+	\item Transistors in their simplest configuration consist of three extrinsic semiconductor blocks\appear{, either in \CDAlert[fuchsia]{npn}} \appear{or pnp configuration (see Figure)}
+	\appear{\xdef\loc{south east}%
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.25*\figYshift,xshift=1*\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,width=13cm]{Figures_booklet/SOM_Tipler_Solid_state_physics_figures/SOM_Tipler_SSP_figure_53.png}};%scale=\figscale. % 8cm max height
+\end{tikzpicture}}
+%\item Here npn is discussed
+
+\item The \Alert[red]{p-type in the middle is the \CDAlert[red]{base}}\appear{, and the \Alert[blue]{n-type blocks are the \CDAlert[blue]{emitter}} \appear{and the \CDAlert[blue]{collector}}}
+
+\item Emitter and collector are of different size and dopant levels\appear{, tailored for their role}
+\end{itemize}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{npn-junction transistor}
+
+\begin{itemize}[itemsep=1.7mm]
+	\item \CDAlert[blue]{Forward-biased emitter} diode allows conduction electrons to flow from emitter into the base
+
+\item Thin and \CDAlert[red]{lightly-doped base} is p-type
+	\implies{ electrons are minority carriers, but do not likely recombine with holes
+ }
+\end{itemize}
+\begin{minipage}{5cm}
+\begin{itemize}[itemsep=1.7mm]
+\item Collector is an n-type semiconductor\appear{, and the \Alert[blue]{collector–base diode is reverse biased} }
+
+\item Small fraction of electrons recombine with holes in the collector\appear{, while majority 'slide down' to the collector's conduction band}\appear{, creating a \Alert[fuchsia]{current which can be controlled with the base}}
+	\end{itemize}
+\end{minipage}
+
+\xdef\loc{south east}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.25*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,width=8.5cm]{Figures_booklet/SOM_10_Bonding_figures/SOM_Bonding_Figure_44.png}}; %scale=\figscale. % 8cm max height
+\end{tikzpicture}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Transistor amplifier}
+
+\begin{itemize}
+	\item The fraction of the electrons that flows out the collector \appear{(eventually returning to the emitter through the output circuit)} \appear{is \CDAlert[red]{proportional} to} %and typically 100 times greater than that which flows out the base (returning through the input circuit).
+\end{itemize}
+
+\begin{minipage}{6.6cm}
+\begin{itemize}%[itemsep=1.7mm]
+\item[]  and \Alert[red]{typically 100 times greater than the signal flowing into the base} 
+
+\item In Fig.~45,%
+\appear{\xdef\loc{south east}%
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.25*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,width=6.8cm]{Figures_booklet/SOM_10_Bonding_figures/SOM_Bonding_Figure_45.png}}; %scale=\figscale. % 8cm max height
+\end{tikzpicture}%
+}%
+the input introduces a minute voltage variations in the emitter-base bias\appear{, with proportional variations in the rate at which electrons flow into the base from the emitter.} \appear{A tiny fraction of this current leaves the base and circulates as a varying current in the input (emitter-base) circuit}
+	\end{itemize}
+\end{minipage}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Field-effect transistor (FET)}
+
+\semismall
+\begin{itemize}[itemsep=1.4mm]
+	\item Very common switching devices in \CDAlert[fuchsia]{integrated circuits} are \Alert[red]{field-effect transistors (FETs)} 
+	
+	\item A FET can be formed into a p-type silicon slab\appear{, by introducing two n-type regions to the top}\appear{, called '\CDAlert[blue]{source}' and '\CDAlert[tuniblue]{drain}'}
+	
+	\item  A third electrode\appear{, called '\CDAlert[red]{gate}'} \appear{is separated from the slab}\appear{, source and drain by an insulating layer of silicon dioxide ($\mathrm{SiO}_{2}$)} 	
+		
+\end{itemize}
+
+\vspace{1.4mm}
+\begin{minipage}{7.3cm}
+\begin{itemize}[itemsep=1.4mm]
+	\item With uncharged gate\appear{, negligible current passes through the drain and source}\appear{, because one of the pn-junctions is reverse biased} 
+	
+	\item But for a positively-charged gate\appear{, already small charge} \appear{(because gate is minuscule)} \appear{provides a substantial electric field}\appear{, which enables \CDAlert[red]{current to flow through the npn-junction}  }
+	
+	\item FETs are tiny \appear{(${\sim}\,1\;\mu m$)} \appear{integrated transistors}
+	
+	\item \Alert[red]{MOSFET}{https://en.wikipedia.org/wiki/MOSFET\#Importance} = Metal–oxide–semiconductor FET
+	\end{itemize}
+\end{minipage}
+
+\xdef\loc{south east}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.25*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,width=6.5cm]{Figures_booklet/SOM_10_Bonding_figures/SOM_Bonding_Figure_46.png}}; %scale=\figscale. % 8cm max height
+\end{tikzpicture}
+
+%\endofslide 
+\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%
+%\begin{frame}
+%\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+%
+%\begin{itemize}
+%	\item A single-electron transistor (SET) is a sensitive electronic device based on the Coulomb blockade effect
+%
+%\item In this device the electrons flow through a tunnel junction between source/drain to a quantum dot (conductive island)
+%\end{itemize}
+%
+%%\xdef\loc{south east}
+%%\begin{tikzpicture}[remember picture,overlay] % anchor=south
+%%    \node (A) [yshift=-0.25*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,width=7cm]{Figures_booklet/SOM_10_Bonding_figures/SOM_Bonding_Figure_42.png}}; %scale=\figscale. % 8cm max height
+%%\end{tikzpicture}
+%
+%\endofslide 
+%%\endofsection
+%\end{frame}
+%%%%%%%%%%%%%%%%

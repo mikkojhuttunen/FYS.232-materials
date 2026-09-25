@@ -1,0 +1,179 @@
+% !TEX root = ../aa_SoM_Chapters.tex
+
+% ö = \%c3\%b6
+% ä = \%C3\%A4
+
+\xdef\sectiontitle{\Isectiontitle} %aiheuttama
+
+%%%%%%%%%%%%%%%
+\begin{frame}[label=1_2_a]%[label=1_2_TOC1]
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+
+\vspace{0.5cm}
+
+\begin{itemize}[leftmargin=0.5cm,itemsep=2mm]
+    \item[1.1]<1-> \hyperlink{1_1_a}{\IaSubsectiontitle}
+    \item[1.2]<1-> \hyperlink{1_2_a}{\Alert[red]{\IbSubsectiontitle}}	
+    \item[1.3]<1-> \hyperlink{1_3_a}{\IcSubsectiontitle}	
+    \item[1.4]<1-> \hyperlink{1_4_a}{\IdSubsectiontitle}
+    \item[1.5]<1-> \hyperlink{1_5_a}{\IeSubsectiontitle}
+    \item[1.6]<1-> \hyperlink{1_6_a}{\IfSubsectiontitle}
+    \item[1.7]<1-> \hyperlink{1_7_a}{\IgSubsectiontitle}
+\end{itemize}
+
+\vspace{-1cm}
+\begin{itemize}[leftmargin=9.5cm,itemsep=2mm]
+    \item[1.8]<1-> \hyperlink{1_8_a}{\IhSubsectiontitle}
+	\item[1.9]<1-> \hyperlink{1_9_a}{\IiSubsectiontitle}
+	\item[1.10]<1-> \hyperlink{1_10_a}{\IjSubsectiontitle}
+	\item[1.11]<1-> \hyperlink{1_11_a}{\IkSubsectiontitle}
+\end{itemize}
+
+%\endofslide 
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%\xdef\IbSubsectiontitle{Entropy and Temperature}
+\xdef\sectiontitle{\IbSubsectiontitle} 
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+
+\begin{itemize}[itemsep=1.9mm]
+	\item \CDAlert[red]{Entropy $S$} is a quantity proportional to the logarithm of the \CDAlert[tunired]{'number of ways' $W$} \appear{(i.\,e. to the log of \CDAlert[red]{multiplicity $\Omega$}).} \appear{Boltzmann constant $k_B$ sets the dimensions for the entropy $S$}
+	\[
+S  \equal \appear{k_{B} \ln W} \qquad \appear{\&} \qquad \appear{S}  \equal  \appear{k_{B} \ln \Omega} \qquad \appear{\&} \qquad \appear{[S]=\frac{J}{K}}
+\]
+
+\item We saw that the system has a tendency to \CDAlert[blue]{evolve towards} \CDAlert[blue]{equilibrium}\appear{, i.\,e. towards highest $W$}
+
+\item According to the \CDAlert[red]{second law of thermodynamics}\appear{,  entropy tends to increase (in a closed system): }
+\[
+\Delta S \appear{\geq 0}
+\]
+\appear{Considering the number of ways $W$:} 
+\[
+\Delta S  \equal \appear{S_{f}}  \minus \appear{S_{i}}  \equal \appear{k_{B} \textrm{[[} } \appear{\ln W_{f}} \appear{-\ln W_{i} \textrm{]]}}  \equal \appear{k_{B} \ln \frac{W_{f}}{W_{i}} }
+\]
+
+\end{itemize}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+
+\appear{\footnote{{Recap the definitions for isolated, \Alert[red]{closed}, and open systems.}}} 
+\begin{minipage}{8.5cm}
+\begin{itemize}
+	\item Consider two bodies\appear{, 1 and 2}\appear{, in \CDAlert[red]{thermal} \CDAlert[red]{contact}.} \appear{Heat will flow, and entropy will change:}
+\[ 
+ d S_{t o t} \equal \appear{d S_{1} } \appear{+ d S_{2}} 
+ \]
+\appear{Assume that entropy changes due to changes in the energy} \appear{(ok, since here, only heat}
+\end{itemize}
+\end{minipage}
+\vspace{-0mm}
+\begin{itemize}
+\item[] flows), so $S=S(E)$\appear{, and therefore}
+\[ 
+ d S \equal  \appear{\bigg(} \frac{\partial S}{\partial E} \appear{\bigg)} \,\appear{d E} 
+ \]
+\item Thus $\appear{d S_{t o t} =} \appear{\textrm{((} \frac{\partial S}{\partial E}} \appear{\textrm{))}_{2}} \appear{d E_{2}}  \plus  \appear{\textrm{((} } \frac{\partial S}{\partial E} \appear{\textrm{))}_{1}} \appear{d E_{1}}$\appear{,
+and since energy is transferred only between 1 and 2}\appear{, condition $d E_{1}=-d E_{2}$ applies leading to}
+\[ 
+d S_{tot} \equal   \LB   \appear{\bigg( \frac{\partial S}{\partial E}  \bigg)_{2}} \minus  \appear{\bigg( \frac{\partial S}{\partial E}  \bigg)_{1}}  \;\RB \appear{d E_{2}}
+ \]
+\end{itemize}
+
+\xdef\loc{north east}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=1*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,width=4.8cm]{Figures_booklet/SOM_9_Statistical_mechanics_figures/SOM_Figure_4.png}}; %scale=\figscale. % 8cm max hei
+\end{tikzpicture}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+
+\begin{itemize}
+	\item \CDAlert[tunired]{At equilibrium the two bodies will have the same temperature}
+
+\item We also know that when equilibrium is reached\appear{,  the entropy $S$ does not increase anymore}\appear{, so $d S_{t o t}=0$ resulting in} 
+\[ 
+  \bigg(  \Frac{\partial S}{\partial E}  \bigg)_{2} \equal  \appear{ \bigg( \Frac{\partial S}{\partial E}  \bigg)_{1}} 
+ \]
+\item The above condition leads to a convenient definition for the temperature: 
+
+\item[] \begin{itemize}
+	\item At equilibrium the temperatures are equal $\appear{T_1}  \equal  \appear{ T_2} \equiv \appear{T}$
+	\item We can \CDAlert[red]{define temperature $T$} via equation 
+	 \[
+	 \frac{1}{T} \equiv \appear{\bigg(} \frac{\partial S}{\partial E} \appear{\bigg)\,,} \qquad \appear{\,\textrm{~where}} \qquad \appear{S}  \equal \appear{k_{B} \ln W}
+	 \]
+\end{itemize}
+\end{itemize}
+ 
+ 
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+
+\begin{itemize}
+	
+\item \CDAlert[blue]{How can we take a derivative of $S$ with respect to $E$?} 
+\begin{itemize}
+	\item In a physical system usually also the number of possibilities \appear{(number of 'ways' $W$)} \appear{is a function of energy} \appear{(more energy, higher multiplicity)} \appear{so there is no contradiction}
+\end{itemize}
+ 
+
+\item In many cases $W=W(E)$ \appear{and thus also the entropy $S=S(E)$}
+\item Recalling that the change in energy $dE$ \appear{is equal to the heat transferred between objects} \appear{($dE=dQ$)}\appear{,  we get }
+\[
+	 \Frac{1}{T}  \equal   \frac{\partial S}{\partial E}  \qquad \Rightarrow \qquad \appear{dS}  \equal  \frac{dQ}{T}  
+	 \]
+\appear{allowing us to calculate the \CDAlert[red]{change of entropy $\Delta S$} of the system:}
+\[ 
+ \Delta S  \equal \appear{S_{2}}  \minus  \appear{S_{1}} \equal \appear{\nint_{i}^{f}} \frac{d Q}{T} 
+ \]
+
+\end{itemize}
+ 
+
+%\endofslide 
+\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%
+%\begin{frame}
+%\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+%
+%\begin{itemize}
+%	\item 
+%\end{itemize}
+%
+%%\xdef\loc{north east}
+%%\begin{tikzpicture}[remember picture,overlay] % anchor=south
+%%    \node (A) [yshift=1*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,width=4.8cm]{Figures_booklet/SOM_9_Statistical_mechanics_figures/SOM_Figure_4.png}}; %scale=\figscale. % 8cm max hei
+%%\end{tikzpicture}
+%
+%\endofslide 
+%%\endofsection
+%\end{frame}
+%%%%%%%%%%%%%%%%
+

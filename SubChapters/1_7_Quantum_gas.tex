@@ -1,0 +1,562 @@
+% !TEX root = ../aa_SoM_Chapters.tex
+
+% ö = \%c3\%b6
+% ä = \%C3\%A4
+
+\xdef\sectiontitle{\Isectiontitle} %aiheuttama
+
+%%%%%%%%%%%%%%%
+\begin{frame}[label=1_7_a]%[label=1_7_TOC1]
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+
+\vspace{0.5cm}
+
+\begin{itemize}[leftmargin=0.5cm,itemsep=2mm]
+    \item[1.1]<1-> \hyperlink{1_1_a}{\IaSubsectiontitle}
+    \item[1.2]<1-> \hyperlink{1_2_a}{\IbSubsectiontitle}	
+    \item[1.3]<1-> \hyperlink{1_3_a}{\IcSubsectiontitle}	
+    \item[1.4]<1-> \hyperlink{1_4_a}{\IdSubsectiontitle}
+    \item[1.5]<1-> \hyperlink{1_5_a}{\IeSubsectiontitle}
+    \item[1.6]<1-> \hyperlink{1_6_a}{\IfSubsectiontitle}
+    \item[1.7]<1-> \hyperlink{1_7_a}{\Alert[blue]{\IgSubsectiontitle}}
+\end{itemize}
+
+\vspace{-1cm}
+\begin{itemize}[leftmargin=9.5cm,itemsep=2mm]
+    \item[1.8]<1-> \hyperlink{1_8_a}{\IhSubsectiontitle}
+	\item[1.9]<1-> \hyperlink{1_9_a}{\IiSubsectiontitle}
+	\item[1.10]<1-> \hyperlink{1_10_a}{\IjSubsectiontitle}
+	\item[1.11]<1-> \hyperlink{1_11_a}{\IkSubsectiontitle}
+\end{itemize}
+
+%\endofslide 
+\end{frame}
+%%%%%%%%%%%%%%%
+
+\xdef\sectiontitle{\IgSubsectiontitle}
+
+%%%%%%%%%%%%%%%
+\begin{frame}%[label=1_7_a]
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+
+\begin{itemize}[itemsep=3.5mm]
+	\item We have studied distributions for particles which \CDAlert[red]{obey quantum statistics} 
+	
+	\item In the following\appear{, we will form a \CDAlert[blue]{3-dimensional system} of these particles}\appear{, bound to some region}\appear{, a more or less confined volume}\appear{, where they \CDAlert[blue]{can move freely}}
+
+\item Because the \CDAlert[fuchsia]{volume is confined}\appear{, the particles will occupy \CDAlert[fuchsia]{discrete quantum states}}
+
+\item In these systems the particle concentration $(N / V)$ \appear{is high enough that the quantum \CDAlert[red]{indistinguishability} needs to be taken into account}
+\end{itemize}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Particle in an infinite quantum well}
+
+\begin{itemize}
+	\item Depending on the dimensionality of the problem\appear{, the confined volume can either be} 
+	\item[] \begin{itemize}[itemsep=6mm]
+	 \item one-dimensional%
+\appear{\xdef\loc{south}%
+\begin{tikzpicture}[remember picture,overlay]% anchor=south
+    \node (A) [yshift=-0.2*\figYshift,xshift=0*\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=9,width=14cm]{Figures_booklet/SOM_9_Statistical_mechanics_figures/Tikz_SOM_Statistical_figures.pdf}};%scale=\figscale. % 8cm max height
+\end{tikzpicture}%
+}% 
+{\small \appear{ (quantum wells}\appear{, \CDAlert[fuchsia]{nanowires}}\appear{, \CDAlert[fuchsia]{carbon nanotubes})} }
+	 \item two-dimensional {\small\appear{(graphene}\appear{, and other \CDAlert[blue]{2D-materials}}\appear{, e.\,g. MoS$_2$}\appear{, hBN, ...)} }
+	 \item three-dimensional  {\small \appear{(\CDAlert[red]{conduction electrons in metals})} }
+\end{itemize}
+
+\end{itemize}
+
+
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+
+\begin{itemize}
+	\item Qualitative description of the three different types of particles \appear{(Classical}\appear{/distinguishable}\appear{, fermions} \appear{and bosons) in the well}
+
+\end{itemize}
+
+\xdef\loc{south}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.5*\figYshift,xshift=0, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,width=11cm]{Figures_booklet/SOM_9_Statistical_mechanics_figures/SOM_Figure_14.png}}; %scale=\figscale. % 8cm max hei
+\end{tikzpicture}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+
+\begin{itemize}
+	\item Let us compute the \CDAlert[fuchsia]{density of states $D(E)$} for the 3D oscillator 
+	
+	\item The energy levels are known to be:
+\[
+E_{n_{x}, n_{y}, n_{z}}  \equal  \appear{\textrm{((}n_{x}^{2}} \appear{+n_{y}^{2}} \appear{+n_{z}^{2} \textrm{))}} \frac{\pi^{2} \hbar^{2}}{2 m L^{2}}
+\]
+\appear{and using:}
+\[
+ n  \equiv \appear{\sqrt{n_{x}^{2}+n_{y}^{2}+n_{z}^{2}}}
+\]
+\item[] we get the \CDAlert[red]{energy of the oscillator} as a function of quantum number $n$ [[$E(n)$]]\appear{, and vice versa the \CDAlert[blue]{quantum number as a} \CDAlert[blue]{function of energy $n=n(E)$}:}
+\[
+E  \equal \frac{\pi^{2} \hbar^{2}}{2 m L^{2}} \appear{n^{2}} \qquad \appear{\Rightarrow} \qquad \appear{n}  \equal \appear{\sqrt{\Frac{2 m L^{2} E}{\pi^{2} \hbar^{2}}}}  \equal  \appear{n(E)}
+\]
+\end{itemize}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+
+% 6.5 cm = midway, 10 cm = 3/4 
+\begin{minipage}{8cm}
+	\begin{itemize}[itemsep=1.8mm] \small
+	\item The illustrated (eighth of a sphere) is in $ \textrm{((}n_{x}, n_{y}, n_{z} \textrm{))}$ space\appear{, and the quantum numbers $n_{x}, n_{y}$ and $n_{z}$ can \Alert[red]{only have integer values}} 
+	\item If energy increases by $d E$ then the radius of the sphere will increase by $d n$\appear{, but the \Alert[blue]{number of states will increase proportional to the volume of the added shell}} \appear{(=\;area of the shell $\times$ thickness $=4 \pi r^{2} d n$)}
+
+\item We are dealing with only positive numbers\appear{, and due to \CDAlert[tuniblue]{symmetry of the problem} we need to consider only $1 / 8$ of the spherical shell}\appear{, which turn the \Alert[blue]{differential number of states in range $d E$}} \appear{to be equal to} $\frac{1}{8} \appear{4 \pi n^{2} d n}$
+
+\item Thus, the \CDAlert[fuchsia]{density of states} will be:
+\[
+\begin{aligned} 
+D(E)  &\equal  \frac{\text { differential number of states in range } d E}{d E}  \\
+	&\equal \frac{1}{8} \appear{4 \pi n^{2}} \frac{d n}{d E}
+\end{aligned}
+\]
+\end{itemize}
+\end{minipage}
+%\vspace{3mm}
+
+\xdef\loc{east}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=0cm,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,width=5.5cm]{Figures_booklet/SOM_9_Statistical_mechanics_figures/SOM_Figure_15.png}}; %scale=\figscale. % 8cm max hei
+\end{tikzpicture}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+
+\begin{itemize}
+	\item[]  \vspace{-6mm}
+	\[
+\Rightarrow \qquad \qquad \appear{D(E)=} \frac{1}{8} \appear{4 \pi n^{2}} \frac{d n}{d E} \appear{=\ldots=} \frac{m^{3 / 2} L^{3}}{\pi^{2} \hbar^{3} \sqrt{2}} \appear{\sqrt{E}} \qquad \qquad
+\]
+\item Often it is more practical to deal with the volume of the well \appear{$\textrm{((}L^{3}=V \textrm{))}$} 
+
+\item Recall that two spin-1/2 particles can have the same energy. $D(E)$ should thus be multiplied with \appear{$(2 s+1)$:}\\[-6mm]
+\[
+ \hspace{8cm} D(E) \equal \frac{(2 s+1) m^{3 / 2} V}{\pi^{2} \hbar^{3} \sqrt{2}} \appear{\sqrt{E}}
+\]
+\end{itemize}
+%\footnote{$^*$Two 1/2-spin states can be in the same (energy) state.}
+\xdef\loc{south}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.25*\figYshift,xshift=0*\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=5,width=13cm]{Figures_booklet/SOM_9_Statistical_mechanics_figures/Tikz_SOM_Statistical_figures.pdf}}; 
+\end{tikzpicture}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+
+\begin{itemize}[itemsep=1.7mm]
+	\item We are interested of the average particle energy:\\
+\item[] \begin{itemize} \small
+	 \item One could try to calculate the \CDAlert[red]{exact} average particle energy 
+	 \item In general case, it proves to be \CDAlert[tunired]{tedious}, since e.g. the parameters \CDAlert[blue]{$B$ and $T$ depend on the system}\appear{, systems are often complex and \CDAlert[blue]{$D(E)$ prevents a closed form calculation of $B$ and $<E(T)>\,$} for a quantum gas}
+
+\end{itemize}
+
+\item But, we can at least derive an \CDAlert[red]{approximate solution} for the average energy \appear{as a function of particle number density $N / V$ (Exercise):}
+\[
+\overline{E}  \equal \frac{3}{2} \appear{k_{B} T} \bg[2.8]{\text{\bigsymbolsfont[}}\! \appear{1 \mp} \frac{\pi^{3} \hbar^{3} \sqrt{2}}{ \appear{(2 s+1)} \appear{(2 \pi m k_{B} T )^{3/2}}  } \bg[2.4]{\text{\bigsymbolsfont(}} \frac{N}{V} \bg[2.4]{\text{\bigsymbolsfont)}} \appear{+\ldots} \bg[2.8]{\text{\bigsymbolsfont]}}\!\!
+\]
+% classical term = internal energy of an ideal gas
+% quantum term = something that reflects the quantum indistinguishability
+% \pm , - = bosons, + = fermions
+\item[] Thus, average energy depends both on temperature \appear{and particle number density}
+\item With higher density $N/V$\appear{, energy increases for fermions $(+)$}\appear{, decreases for bosons $(-)$}
+\end{itemize}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+
+\begin{itemize}
+	\item Classical particle behaviour \appear{$\leftrightarrow$} \appear{the \CDAlert[blue]{1st term dominates}}
+\appear{$\leftrightarrow$} \appear{when particles have short (de Broglie) wavelength} \appear{and large separation ($N/V$ is small)}
+
+\item In terms of wavelength: 
+\[
+\lambda  \equal \frac{h}{p}  \equal \frac{h}{m v}  \equal \frac{h}{m \sqrt{3 k_{B} T / m}} \propto \frac{h}{\sqrt{m k_{B} T}} \qquad \appear{\Rightarrow} \qquad \frac{1}{T^{3 / 2}} \propto \appear{\lambda^{3}}
+\]
+\item In terms of particle separation:
+\[
+\frac{d^{3}}{1} \propto \frac{V}{N} \qquad \appear{\Rightarrow} \qquad \appear{d} \propto \appear{\textrm{((}\frac{V}{N} \textrm{))}^{1 / 3}}
+\]
+
+\item We have a \CDAlert[red]{quantum term} of form 
+\[
+\text {Quantum term}  \equiv \frac{\pi^{3} \hbar^{3} \sqrt{2}}{(2 s+1) \textrm{((}2 \pi m k_{B} T \textrm{))}^{\Frac{3}{2}}} \appear{\bg[2.4]{\text{\bigsymbolsfont(}} \frac{N}{V} \bg[2.4]{\text{\bigsymbolsfont)}} } \,\propto \appear{\textrm{((}\Frac{\lambda}{d} \textrm{))}^{3}}
+\]
+%\item The 2nd term in Eq (40), i.e. the quantum term, is clearly:
+%\item[] \begin{itemize}
+%	 \item small when $\lambda$ is small
+%\item small when $\lambda<d$
+%\item large when $\lambda$ is large
+%\item large when $d$ is small
+%\end{itemize}
+\end{itemize}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+
+\begin{itemize}
+	
+\item We have a \CDAlert[red]{quantum term} of form 
+\[
+\text {Quantum term}  \equiv \frac{\pi^{3} \hbar^{3} \sqrt{2}}{(2 s+1) \textrm{((}2 \pi m k_{B} T \textrm{))}^{\frac{3}{2}}} \appear{ \bg[2.4]{\text{\bigsymbolsfont(}} \frac{N}{V} \bg[2.4]{\text{\bigsymbolsfont)}} } \propto \appear{\textrm{((}\Frac{\lambda}{d} \textrm{))}^{3}}
+\]
+
+\item The 2nd term (the \CDAlert[red]{quantum term}) in the approximate solution for the mean energy $\overline{E}$, is clearly:
+\item[] \begin{itemize}[itemsep=3.5mm]
+	 \item small when $\lambda$ is small
+\item small when $\lambda<d$
+\item large when $\lambda$ is large
+\item large when $d$ is small
+\end{itemize}
+
+
+\end{itemize}
+
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+
+\begin{itemize}
+	\item Another angle of approach discusses how the particles are spread to different energy levels 
+	\item We discuss fermions as an example, and calculate the Fermi energy $E_F$ at $T=0$
+
+\item \CDAlert[blue]{Total number of particles}: $\qquad N=\nint_{0}^{\infty}  \mathbb{N} (E)_{F D} D(E) d E$
+
+\item At $T=0$ \appear{the occupation number $ \mathbb{N} $ is a step function for fermions} \appear{($ \mathbb{N} =1$ for $\mathrm{E}<E_{F}$}\appear{,  $\mathbb{N} =0$ for $\mathrm{E}>E_{F}$)} 
+\[ 
+\begin{aligned} 
+&\Rightarrow& \qquad \appear{N}  &\equal  \appear{\nint_{0}^{E_{F}}} \frac{1\cdot (2 s+1) m^{3 / 2} V}{\pi^{2} \hbar^{3} \sqrt{2}} \appear{\sqrt{E}} \appear{d E}  \equal  \frac{(2 s+1) m^{3 / 2} V}{\pi^{2} \hbar^{3} \sqrt{2}} \appear{\textrm{((} \Frac{2}{3} E_{F}^{3 / 2} \textrm{))}} \\ 
+&\Rightarrow& \qquad \appear{E_{F}}  &\equal \frac{\pi^{2} \hbar^{2}}{m} \appear{\Bigg[}\frac{3}{(2 s+1) \pi 2^{1/2}} \frac{N}{V} \appear{\Bigg]^{2 / 3}}
+\end{aligned} 
+\]
+\end{itemize}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+
+\begin{itemize}
+	\item The result indicates that even at zero temperature\appear{, energy increases with increasing fermion concentration:} $\qquad \appear{E_{F}} \propto \appear{\textrm{((}\Frac{N}{V} \textrm{))}^{2 / 3}}$
+
+\item Re-arrangement of terms results in
+\[
+\begin{aligned}
+& & E_{F}  &\equal \frac{\pi^{2} \hbar^{2}}{m} \appear{\Bigg[}\frac{3}{(2 s+1) \pi 2^{1/2}} \frac{N}{V} \appear{\Bigg]^{2 / 3}} \\
+&\Rightarrow& \qquad \appear{E_{F}^{3 / 2}}  &\equal  \appear{ \bigg( \Frac{\pi^{2} \hbar^{2}}{m}  \bigg)^{3 / 2}} \frac{3}{(2 s+1) \pi 2^{1/2}} \frac{N}{V}  \equal  \frac{3 \pi^{2}}{2^{1/2}} \frac{\hbar^{3}}{(2 s+1) m^{3 / 2}} \frac{N}{V}
+\end{aligned}
+\]
+\item Thus, we see a proportionality $\frac{\hbar^{3}}{(2 s+1) m^{3 / 2}} \frac{N}{V} \propto \appear{E_{F}^{3 / 2}}$ \appear{which can be used to analyze the quantum term in the equation for mean energy:}
+\[
+\overline{E}  \equal \frac{3}{2} \appear{k_{B} T} \bg[2.6]{\text{\bigsymbolsfont[}}\! \appear{1} \appear{\mp \frac{\pi^{3} \hbar^{3} \sqrt{2}}{(2 s+1) \textrm{((}2 \pi m k_{B} T \textrm{))}^{\Frac{3}{2}} \textrm{((}\Frac{N}{V} \textrm{))} } } \appear{+\ldots} \bg[2.6]{\text{\bigsymbolsfont]}}
+\]
+\end{itemize}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+
+\begin{itemize}
+	\item So, the \CDAlert[red]{quantum term is proportional to} \Alert[red]{$\big( \Frac{E_{F}}{k_{B} T}  \big)^{3 / 2}$}
+\item In the case \CDAlert[blue]{$k_{B} T \gg E_{F}$} \appear{the classical first term survives}\appear{, and the second term, i.e the quantum term}\appear{, is small} 
+
+\item The particles are spread diffusely among different states\appear{, so quantum \CDAlert[tuniblue]{indistinguishability can be ignored}}
+\item \CDAlert[fuchsia]{Summarum}: A gas will behave classically
+If 
+\[
+\begin{aligned}
+& & \qquad \bigg( \Frac{\lambda}{d}  \bigg)^{3} &\ll 1  \\
+\appear{&\textrm{or if}\quad& &} \\
+& & \qquad \frac{N}{V} \frac{\hbar^{3}}{ \textrm{((}m k_{B} T \textrm{))}^{3 / 2}} \appear{&\ll} \appear{1} \qquad \Rightarrow \qquad \text {\appear{\CDAlert[blue]{Classical limit}}} \\
+\end{aligned}
+\]
+\end{itemize}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+
+% 6.5 cm = midway, 10 cm = 3/4 
+\begin{minipage}{10.5cm}
+	\begin{itemize}
+	\item In metals, some of the valence electrons are shared among all atoms
+	\implies{ They move freely through the solid material in a quantum \\
+		well formed by the positive ions of the metal }
+
+\item \CDAlert[red]{Free electrons} in metals are a good example of a \CDAlert[tunired]{fermion gas}. \appear{They are known as \CDAlert[red]{conduction} \CDAlert[red]{electrons}}
+
+\item Figure 16 a shows \CDAlert[pink]{Coulombic potential} for one electron around one metal ion
+\appear{\xdef\loc{east}%
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=0cm,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,height=9cm]{Figures_booklet/SOM_9_Statistical_mechanics_figures/SOM_Figure_16.png}};%scale=\figscale. % 8cm max hei
+\end{tikzpicture}}%
+\item Once the ions become sufficiently many \appear{and sufficiently concentrated} \appear{(Fig 16b–d)}\appear{, they form a \CDAlert[blue]{finite well} for the quantum gas of the valence electrons}
+
+\item The situation can be modelled using an \CDAlert[tuniblue]{infinite well}
+\end{itemize}
+\end{minipage}
+\vspace{3mm}
+
+
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+
+\begin{itemize}
+	\item Due to the \CDAlert[fuchsia]{exclusion principle for fermions}\appear{, the conduction electrons fill up states that are very high from classical point of view}
+
+\item \appear{Historically}\appear{, it wasn't first understood how many of the electrons in the material actually contributed to the electron gas} \appear{and, furthermore, to \CDAlert[red]{specific heat capacity}} 
+
+\item If every conduction electron would contribute \appear{and would move freely within the material}\appear{, then this would cause a high value of heat capacity}\appear{, which would have shown up in experiments}\appear{/real life}
+
+\item Later, it became apparent that \Alert[red]{only the electrons near the Fermi energy} \appear{are the ones to \CDAlert[tunired]{move around freely}}\appear{, and gain energy}\appear{, and most of the electrons did not actually contribute to storing the energy within the material (specific heat capacity)} 
+
+\vspace{-1.4mm} \seminormal
+\item[] (see Chapter 9 from Harris\appear{, and our Lecture regarding specific heats)}
+\end{itemize}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+
+% 6.5 cm = midway, 10 cm = 3/4 
+\begin{minipage}{8.5cm}
+	\begin{itemize}
+	\item There is a minimum energy $\phi$ \appear{that is required to remove an electron from a metal}\appear{, the difference between top of the finite well} \appear{and Fermi energy:}
+\[
+\phi  \equal \appear{U_{0}}  \minus  \appear{E_{F}}
+\]
+
+\item This energy $\phi$ is known as the \CDAlert[red]{work function}\appear{, and is clearly material specific}\appear{, depending on both:}
+\item[] \begin{itemize}[itemsep=4mm]
+	\item $U_{0}$ the depth of the finite well 
+	\item $E_{F}$ Fermi energy of the material
+\end{itemize}
+
+\end{itemize}
+\end{minipage}
+\vspace{3mm}
+
+\xdef\loc{east}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=0cm,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,height=7cm]{Figures_booklet/SOM_9_Statistical_mechanics_figures/SOM_Figure_17.png}}; %scale=\figscale. % 8cm max hei
+\end{tikzpicture}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+
+\begin{itemize}[itemsep=1.6mm]
+	\item When two metals are put into contact%
+	\appear{\xdef\loc{south east}%
+\begin{tikzpicture}[remember picture,overlay]% anchor=south
+    \node (A) [yshift=-0.25*\figXshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,height=4.3cm]{Figures_booklet/SOM_9_Statistical_mechanics_figures/SOM_Figure_18.png}};%scale=\figscale. % 8cm max hei
+\end{tikzpicture}}%
+\appear{, the \Alert[fuchsia]{most energetic electrons from metal 2 move to metal 1}}\appear{, \Alert[red]{shifting the energy levels of metal 1 upwards}} \appear{(due to electrostatic repulsion)}\appear{, and the \Alert[blue]{energy levels in metal 2 downwards}} 
+	
+	\item As a result, a potential difference $\Delta U$ \appear{will develop between the materials}
+	
+	\item Electrons move\appear{, \CDAlert[fuchsia]{until the Fermi energies $E_F$ are at the same level}}
+	
+	\item[] {\small %scriptsize
+	\begin{itemize}[itemsep=2.2mm]
+	\item \CDAlert[red]{Seebeck effect},\\ 
+		application as\\
+		a \Alert[tunired]{thermocouple} to\\
+		measure temperature
+		\item A related \CDAlert[red]{Peltier}\\ 
+		\CDAlert[red]{effect},
+		giving \\
+		us \Alert[tunired]{thermoelectric} \\
+		\Alert[tunired]{coolers}
+
+		\item e.g. \Alert[blue]{accelerated corrosion}
+\end{itemize}
+}
+\end{itemize}
+
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+
+\begin{itemize}
+	\item Occupation number for bosons was found to be: $\appear{ \mathbb{N} (E)_{B E}} \equal \frac{1}{B e^{E / k_{B} T}-1}$
+
+\item When $E \rightarrow \appear{0}$\appear{, for bosons the occupation number goes high up}\appear{, thus particles drop down into the lowest energy quantum state} 
+
+\item Helium-4 atom has two protons and two neutrons\appear{, it is thus a boson with spin $=0$} \appear{(total spin of nucleus $=0$}\appear{, two 1s electrons with total spin $=0$)}
+
+\item \CDAlert[red]{Helium-4 does not solidify easily}\appear{, it remains gaseous down to very low temperatures \appear{(>4.15~K)}}
+
+\item At low enough temperatures\appear{, the inter-particle forces become significant}\appear{, and the gaseous He-4 becomes a liquid}
+
+\item At very low temperatures a fraction of its \Alert[blue]{atoms condense into lowest energy}
+\end{itemize}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+
+% 6.5 cm = midway, 10 cm = 3/4 
+\begin{minipage}{9cm}
+	\begin{itemize}
+	\item At low temperature of \Alert[red]{$2.17$ K Helium-4 becomes a} \CDAlert[red]{superfluid}
+\begin{itemize}
+	\item \Alert[tunired]{Negligible viscosity}
+\item \Alert[tunired]{High thermal conductivity}
+\end{itemize}
+\appear{(One could use the classical limit criteria} \appear{to have a rough estimate when this would be expected to happen)}
+
+\item Alfred Leitner has prepared \CDAlert[fuchsia]{famous videos}{https://www.youtube.com/watch?v=2Z6UJbwxBZI} \appear{about the behaviour of He-4 scooped from a cold pool by a bowl}
+%https://www.youtube.com/watch?v=2Z6UJbwxBZI 
+%\Alert[red]{yleissivistyksen}{https://www.youtube.com/watch?v=K5XpNONcsNw}
+\item Helium \CDAlert[blue]{adheres} into the inner surface of the bowl \appear{and eventually \Alert[blue]{creeps away from the bowl} via its surfaces}
+\end{itemize}
+\end{minipage}
+\vspace{3mm}
+
+\xdef\loc{east}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=0cm,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,height=9cm]{Figures_booklet/SOM_9_Statistical_mechanics_figures/SOM_Figure_19.png}}; %scale=\figscale. % 8cm max hei
+\end{tikzpicture}
+
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+
+% 6.5 cm = midway, 10 cm = 3/4 
+\begin{minipage}{8.5cm}
+	\begin{itemize}
+	\item Hot atoms in a sample of dilute gas \appear{in any macroscopic container are distributed over a very large number of levels}\appear{, making the probability of any level being occupied quite small}
+
+\item \CDAlert[tuniblue]{Cooled} to the point where de Broglie wavelength \appear{becomes larger than the interatomic spacing}\appear{, atoms fall into the ground state}\appear{, \Alert[tuniblue]{all occupying the same quantum mechanical state}}
+\implies{formation of a new material phase, \\ \appear{\CDAlert[blue]{Bose–Einstein Condensate (BEC)}}}
+ \end{itemize}
+
+\end{minipage}
+\vspace{3mm}
+\xdef\loc{east}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=0cm,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,height=8.5cm]{Figures_booklet/SOM_Tipler_Statistics_and_Bonding_figures/SOM_Tipler_figure_3.png}}; %scale=\figscale. % 8cm max hei
+\end{tikzpicture}
+
+
+%\endofslide 
+\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%

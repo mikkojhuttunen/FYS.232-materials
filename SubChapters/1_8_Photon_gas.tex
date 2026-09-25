@@ -1,0 +1,331 @@
+% !TEX root = ../aa_SoM_Chapters.tex
+
+% ö = \%c3\%b6
+% ä = \%C3\%A4
+
+\xdef\sectiontitle{\Isectiontitle} %aiheuttama
+
+%%%%%%%%%%%%%%%
+\begin{frame}[label=1_8_a]%[label=1_8_TOC1]
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+
+\vspace{0.5cm}
+
+\begin{itemize}[leftmargin=0.5cm,itemsep=2mm]
+    \item[1.1]<1-> \hyperlink{1_1_a}{\IaSubsectiontitle}
+    \item[1.2]<1-> \hyperlink{1_2_a}{\IbSubsectiontitle}	
+    \item[1.3]<1-> \hyperlink{1_3_a}{\IcSubsectiontitle}	
+    \item[1.4]<1-> \hyperlink{1_4_a}{\IdSubsectiontitle}
+    \item[1.5]<1-> \hyperlink{1_5_a}{\IeSubsectiontitle}
+    \item[1.6]<1-> \hyperlink{1_6_a}{\IfSubsectiontitle}
+    \item[1.7]<1-> \hyperlink{1_7_a}{\IgSubsectiontitle}
+\end{itemize}
+
+\vspace{-1cm}
+\begin{itemize}[leftmargin=9.5cm,itemsep=2mm]
+    \item[1.8]<1-> \hyperlink{1_8_a}{\CDAlert[red]{\IhSubsectiontitle}}
+	\item[1.9]<1-> \hyperlink{1_9_a}{\IiSubsectiontitle}
+	\item[1.10]<1-> \hyperlink{1_10_a}{\IjSubsectiontitle}
+	\item[1.11]<1-> \hyperlink{1_11_a}{\IkSubsectiontitle}
+\end{itemize}
+
+%\endofslide 
+\end{frame}
+%%%%%%%%%%%%%%%
+
+
+\xdef\sectiontitle{\IhSubsectiontitle} 
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+
+\begin{itemize}
+	\item Unlike electrons (and He-4 atoms), photons are bosons with spin $=1$ 
+	%\item The behavior of  
+	\item To describe photon gas\appear{, we need to know their \CDAlert[fuchsia]{density of states}}
+
+\item The energy of photons is linked to frequency $f$ \appear{(instead of a quantum number $n$ of energy level):} $ \qquad \appear{E =h f } \equal \appear{h \frac{c}{\lambda}} $
+\end{itemize}
+
+\newcommand\myeq{\stackrel{\mathclap{\footnotesize\mbox{analogous to}}}{~\Leftrightarrow~}}
+\begin{minipage}{8cm}
+\begin{itemize}
+
+	\item First, consider 3D-quantum well of width $L$\appear{, where quanta with $\lambda=2 L$ (at minimum) can fit}
+	\[
+\begin{aligned}
+n_{x}^{2} \plus \appear{n_{y}^{2}} \plus \appear{n_{z}^{2}}  \equal  \appear{n^{2}}  \qquad \myeq \qquad  \appear{R^{2}}  \equal  \appear{ \bigg( \Frac{L}{\lambda / 2}  \bigg)^{2}}
+\end{aligned}
+\]
+\item[] allowing us to calculate the radius in phase space:
+\[
+R  \equal  \frac{L}{\lambda / 2}  \equal  \frac{2 L}{\lambda}  \equal  \frac{2 L E}{h c}
+\]
+\end{itemize}
+\end{minipage}
+
+
+\xdef\loc{south east}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.25*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,width=5.2cm]{Figures_booklet/SOM_Tipler_Statistics_and_Bonding_figures/SOM_Tipler_figure.png}}; %scale=\figscale. % 8cm max hei
+\end{tikzpicture}
+
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+
+\begin{itemize}
+	\item How many 'lattice points' \appear{can we have in a $n$-space volume with radius $R$?}
+\[
+\begin{aligned}
+& & R& \equal \frac{2 L E}{h c} \\ 
+&\appear{\Rightarrow} \qquad& \appear{N} &\equal \appear{2 \cdot} \frac{1}{8} \appear{\cdot} \frac{4}{3} \appear{\pi R^{3}}  \equal  \frac{\pi}{3} \appear{\textrm{((} \frac{2 L E}{h c} \textrm{))} ^{3}}  
+\equal  \frac{8 \pi}{3} \frac{E^{3}}{h^{3} c^{3}} \appear{L^{3}}  
+\equal \frac{8 \pi}{3} \frac{E^{3}}{h^{3} c^{3}} \appear{V}
+\end{aligned}
+\]
+
+\item[] where $N$ is the number of states within a sphere of radius $R=2 L E /(h c)$ 
+
+\item Now we can calculate the number of points within an infinitesimal energy range $d E$:
+%With the obtained number of points $N$ \appear{within a sphere of radius $R=2 L E /(h c)$ in the $n$-space}\appear{, we can derive how many points we have per infinitesimal energy range $d E$:}
+\[
+\frac{d N}{d E}  \equal \frac{8 \pi}{3} \frac{3 E^{2}}{h^{3} c^{3}} \appear{V}
+ \equal \frac{8 \pi E^{2}}{h^{3} c^{3}} \appear{V} 
+ \qquad \Rightarrow \qquad 
+ \frac{d N}{d f}  \equal \frac{8 \pi f^{2}}{c^{3}} \appear{V} \qquad \appear{(E=h f} \quad \Rightarrow \quad \appear{d E=h d f)}
+\]
+
+\end{itemize}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+
+\begin{itemize}[itemsep=2.5mm]
+	\item So, to interpret the result\appear{, we have obtained the number of states within a certain frequency range:}
+\[
+\frac{\text { different number of states in range df }}{d f}  \equal \frac{8 \pi V}{c^{3}} \appear{f^{2}}
+\]
+\item Or, if energy is considered:
+\[
+\frac{\text { different number of states in range dE }}{d E / h}  \equal \frac{8 \pi V}{c^{3}} \appear{(E / h)^{2}}
+\]
+
+\item Thus, for the \CDAlert[red]{density of states $D=D(E)$} \appear{in a system of photons (in a volume $V$)}\appear{, we obtain:}
+\[
+D(E)  \equal \frac{8 \pi V}{h^{3} c^{3}} \appear{E^{2}}
+\]
+\end{itemize}
+
+%\xdef\loc{east}
+%\begin{tikzpicture}[remember picture,overlay] % anchor=south
+%    \node (A) [yshift=0cm,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,height=7cm]{Figures_booklet/SOM_9_Statistical_mechanics_figures/SOM_Figure_17.png}}; %scale=\figscale. % 8cm max hei
+%\end{tikzpicture}
+
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+
+\begin{itemize}[itemsep=1.7mm]
+	\item Note, that the photon gas differs from the harmonic oscillator\appear{, or e.\,g. liquid helium case}
+
+\item In the photon gas, we \Alert[blue]{do not actually fix the number of photons beforehand}\appear{, since all systems absorb and emit photons continuously}\appear{, and therefore the temporary number of photons is rather dictated by the physics of the system} \appear{and its conditions}
+
+\item The \CDAlert[red]{Bose–Einstein statistics} for bosons were given by: 
+\[ \mathbb{N} (E)_{B E}  \equal  \frac{1}{B e^{E / k_{B} T}-1}
+\] 
+\item[] where the parameter $B$ should be linked to number of particles $N$ 
+
+\item Since $N$ is not fixed\appear{, a solution is to set $B\equiv\appear{1}$} \appear{(for photon gas)}
+\[
+ \mathbb{N} (E)_{B E, \text { photon } g a s}=\frac{1}{e^{E / k_{B} T}-1}
+\]
+\end{itemize}
+
+%\xdef\loc{east}
+%\begin{tikzpicture}[remember picture,overlay] % anchor=south
+%    \node (A) [yshift=0cm,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,height=7cm]{Figures_booklet/SOM_9_Statistical_mechanics_figures/SOM_Figure_17.png}}; %scale=\figscale. % 8cm max hei
+%\end{tikzpicture}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+
+\begin{itemize}[itemsep=3mm]
+	\item \textbf{Q}: Compare quantitatively the internal energies in electromagnetic radiation and matter
+\item \textbf{A}: We could calculate the average energy as given before: 
+\[
+<E>\,  \equal  \frac{\nint E  \mathbb{N} (E) D(E) d E}{\nint  \mathbb{N} (E) D(E) d E}
+\]
+\item[] where the nominator stands for the energy of the system \appear{(and denumerator stands for total number of particles)} 
+
+\item But, we could as well use only the nominator to obtain the internal energy of EM-radiation\appear{, or 'photon gas'} 
+
+%\item Using $E=k_{B} T x$, we get:
+%\[
+%\begin{aligned}
+%&U_{p h o t o n}=\nint_{0}^{\infty} E  \mathbb{N} (E) D(E) d E=\nint_{0}^{\infty} E \frac{1}{e^{E / k_{B} T}-1} \frac{8 \pi V}{h^{3} c^{3}} E^{2} d E \\
+%&=\frac{8 \pi V}{h^{3} c^{3}} \nint_{0}^{\infty} k_{B} T x \frac{1}{e^{x}-1} \textrm{((} k_{B} T x \textrm{))} ^{2} k_{B} T d x=\frac{8 \pi V k_{B}^{4} T^{4}}{h^{3} c^{3}} \nint_{0}^{\infty} \frac{x^{3} d x}{e^{x}-1}=\frac{8 \pi V k_{B}^{4} T^{4}}{h^{3} c^{3}} \cdot \frac{\pi^{4}}{15}
+%\end{aligned}
+%\]
+\end{itemize}
+
+%\xdef\loc{east}
+%\begin{tikzpicture}[remember picture,overlay] % anchor=south
+%    \node (A) [yshift=0cm,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,height=7cm]{Figures_booklet/SOM_9_Statistical_mechanics_figures/SOM_Figure_17.png}}; %scale=\figscale. % 8cm max hei
+%\end{tikzpicture}
+
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+
+\begin{itemize}
+%\item But, we could as well use only the nominator to obtain the internal energy of EM-radiation\appear{, or 'photon gas'} 
+
+\item Using the change of variables, $\appear{E}  \equal \appear{k_{B} T x} \quad \Rightarrow \quad \appear{x}  \equal \appear{E/(k_{B} T)}$, the nominator turns into:
+\[
+\begin{aligned}
+U_{photon}  &\equal  \appear{\nint_{0}^{\infty}} \appear{E  \mathbb{N} (E)} \appear{D(E)} \appear{d E}
+ \equal  
+ \appear{\nint_{0}^{\infty} E} \frac{1}{e^{E / k_{B} T}-1} \frac{8 \pi V}{h^{3} c^{3}} \appear{E^{2}} \appear{d E} \\
+& \equal 
+\frac{8 \pi V}{h^{3} c^{3}} \appear{\nint_{0}^{\infty}} \appear{k_{B} T x} \frac{1}{e^{x}-1} \appear{\textrm{((} k_{B} T x \textrm{))} ^{2}} \appear{k_{B} T} \appear{d x}
+ \equal 
+ \frac{8 \pi V k_{B}^{4} T^{4}}{h^{3} c^{3}} \appear{\nint_{0}^{\infty}} \frac{x^{3} d x}{e^{x}-1}  \\
+ &\equal 
+ \frac{8 \pi V k_{B}^{4} T^{4}}{h^{3} c^{3}} \appear{\cdot} \frac{\pi^{4}}{15}
+\end{aligned}
+\]
+\end{itemize}
+
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+
+\begin{itemize}
+	\item So, for photon gas we obtain 
+	\[
+	U_{p h o t o n}=\frac{8 \pi V k_{B}^{4} T^{4}}{h^{3} c^{3}} \appear{\cdot} \frac{\pi^{4}}{15}  \equal \frac{8 \pi^{5} V k_{B}^{4} T^{4}}{15 h^{3} c^{3}}
+	\]
+\item[] At temperature of $300 \mathrm{~K}$ \appear{we obtain a value of:} $\quad \frac{U_{p h o t o n}}{V} \appear{=6.1 \times 10^{-6} \mathrm{~J} / \mathrm{m}^{3}}$
+
+\item For ordinary \appear{(\CDAlert[fuchsia]{monatomic} ideal)} \appear{gas the internal energy at NTP is given by}
+\[
+\frac{U_{\text {material }}}{V}
+ \equal 
+ \frac{N \times \Frac{3}{2} k_{B} T}{V}
+  \equal 
+  \frac{\Frac{3}{2} p V}{V} \equal \frac{3}{2} \appear{p} \equal \appear{1.5 \times 10^{5} \mathrm{~J} / \mathrm{m}^{3}}
+\]
+\item So, the ratio is small: $\frac{U_{\text {photon }}}{U_{\text {matter }}}\appear{=4 \times 10^{-11}$}
+
+ \implies{ Thus, we conclude that under NTP conditions the fraction of \\
+ 		\Alert[red]{thermodynamic system's total energy \appear{in the form of \\
+		electromagnetic radiation} \appear{is very small}} }
+\end{itemize}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+
+\begin{itemize}
+	\item We may interpret the integrand in the previous example for internal energy \appear{as the (total) energy of the system within a certain photon energy range} \appear{[[$E , E+d E$]]:}
+\[
+d U_{photon}(E, E+d E)
+ \equal 
+ \appear{E} \frac{1}{e^{E / k_{B} T}-1} \frac{8 \pi V}{h^{3} c^{3}} \appear{E^{2}} \appear{d E}
+  \equal \frac{h f^{3}}{e^{h f / k_{B} T}-1} \frac{8 \pi V}{c^{3}} \appear{d f}
+\]
+\item[] this is the \CDAlert[blue]{Planck's law}, giving us the
+\vspace{2.5mm}
+\end{itemize}
+\begin{minipage}{6.5cm}
+\begin{itemize}
+	\item[] spectral energy density for electromagnetic radiation or so called \CDAlert[red]{blackbody radiation}
+
+\item The maximum peak of the curve moves linearly with temperature, following the \CDAlert[tunired]{Wien's law} 
+\end{itemize}
+
+\end{minipage}
+
+\xdef\loc{south east}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.25*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,width=7.2cm]{Figures_booklet/SOM_9_Statistical_mechanics_figures/SOM_Figure_20.png}}; %scale=\figscale. % 8cm max hei
+\end{tikzpicture}
+
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+
+\begin{itemize}
+	\item Integration of the area under the curve gives the \CDAlert[red]{Stefan–Boltzmann's law}:
+\[
+U \propto \appear{T^{4}}
+\]
+\item To summarize\appear{, the \CDAlert[fuchsia]{bosonic photon gas model}} \appear{allows to derive many of the foundational equations}\appear{/laws} \appear{connecting thermodynamics} \appear{with electrodynamics}
+\item[] \begin{itemize}[itemsep=2.5mm]
+	 \item Planck's law
+	 \item Blackbody radiation
+	 \item Wien's law
+	 \item Stefan–Boltzmann's law
+\end{itemize}
+
+\end{itemize}
+
+\xdef\loc{south east}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.25*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,width=7.2cm]{Figures_booklet/SOM_9_Statistical_mechanics_figures/SOM_Figure_20.png}}; %scale=\figscale. % 8cm max hei
+\end{tikzpicture}
+
+
+%\endofslide 
+\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%

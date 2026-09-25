@@ -1,0 +1,256 @@
+% !TEX root = ../aa_SoM_Chapters.tex
+
+% ö = \%c3\%b6
+% ä = \%C3\%A4
+
+\xdef\sectiontitle{\Isectiontitle} %aiheuttama
+\TOCrefs
+
+%%%%%%%%%%%%%%%
+\begin{frame}[label=1_11_a]%[label=1_2_TOC1]
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\label{\TOCname}
+
+\vspace{0.5cm}
+% can we simply override the appearing of items when needed with <1-> etc.
+\begin{itemize}[leftmargin=0.5cm,itemsep=2mm]
+    \item[1.1]<1-> \hyperlink{1_1_a}{\IaSubsectiontitle}
+    \item[1.2]<1-> \hyperlink{1_2_a}{\IbSubsectiontitle}	
+    \item[1.3]<1-> \hyperlink{1_3_a}{\IcSubsectiontitle}	
+    \item[1.4]<1-> \hyperlink{1_4_a}{\IdSubsectiontitle}
+    \item[1.5]<1-> \hyperlink{1_5_a}{\IeSubsectiontitle}
+    \item[1.6]<1-> \hyperlink{1_6_a}{\IfSubsectiontitle}
+    \item[1.7]<1-> \hyperlink{1_7_a}{\IgSubsectiontitle}
+\end{itemize}
+
+\vspace{-1cm}
+\begin{itemize}[leftmargin=8.5cm,itemsep=2mm]
+    \item[1.8]<1-> \hyperlink{1_8_a}{\IhSubsectiontitle}
+	\item[1.9]<1-> \hyperlink{1_9_a}{\IiSubsectiontitle}
+	\item[1.10]<1-> \hyperlink{1_10_a}{\IjSubsectiontitle}
+	\item[1.11]<1-> \hyperlink{1_11_a}{\CDAlert[blue]{\IkSubsectiontitle}}
+\end{itemize}
+
+%\endofslide 
+\end{frame}
+%%%%%%%%%%%%%%%
+
+\xdef\sectiontitle{\IkSubsectiontitle} 
+
+%%%%%%%%%%%%%%%
+\begin{frame}%[label=1_11_a]
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+%\framesubtitle{Phonons}
+
+\begin{itemize}[itemsep=1.5mm]
+	\item There is a lower limit to phonon wavelengths 
+	\vspace{-1mm}\implies{In practice: \qquad $\frac{1}{2} \appear{\lambda_{\min}}  \equal \appear{a=$} \appear{the lattice constant} } 
+	
+	\item A minimum wavelength indicates maximum frequency \appear{and maximum energy $E_{\max }$ for the phonons}
+\end{itemize}
+
+% 6.5 cm = midway, 10 cm = 3/4 
+%\vspace{2.5mm}
+\begin{minipage}{8.5cm}
+\begin{itemize}[itemsep=1.5mm]
+	\item The \CDAlert[fuchsia]{speed of phonons} is not the speed of light\appear{, but rather the \CDAlert[fuchsia]{speed of sound $v_{s}$} in the material}
+
+\item Phonons can oscillate along two \CDAlert[red]{transverse} directions\appear{, but also \CDAlert[blue]{longitudinal} vibrations are allowed}
+
+\item With equal speeds for both transverse and longitudinal oscillations\appear{, the phononic density of states must be multiplied by $3 / 2$}
+\end{itemize}
+\end{minipage}
+
+
+\xdef\loc{south east}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,height=6.7cm]{Figures_booklet/SOM_9_Statistical_mechanics_figures/SOM_Figure_30_cropped.png}}; %scale=\figscale. % 8cm max hei
+\end{tikzpicture}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+
+\begin{itemize}[itemsep=1.55mm]
+	\item Now we can write the formula for the energy of a phonon system:
+\[
+U_{\text {phonon }}  \equal \appear{\nint_{0}^{E_{\max}}} \appear{E} \appear{\mathbb{N}(E)} \appear{D(E)} \appear{d E}
+ \equal 
+ \appear{\nint_{0}^{E_{\max }} E} \frac{1}{e^{E / k_{B} T}-1} \frac{12 \pi V}{h^{3} v_{S}{ }^{3}} \appear{E^{2}} \appear{d E}
+\]
+
+\item To perform the integral\appear{, we need an \Alert[red]{estimate for the maximum}}
+% 6.5 cm = midway, 10 cm = 3/4 
+\vspace{2.5mm}
+\end{itemize}
+
+\begin{minipage}{7.3cm}
+\begin{itemize}[itemsep=1.55mm]
+
+	 \item[] \appear{\Alert[red]{energy} $E_{\max }$}\appear{, and link it to the smallest wavelength} \appear{$2 a$}
+
+\item Consider the atoms in a \Alert[blue]{cubic volume of a crystalline solid} 
+
+\item Number of atoms on one edge is $N^{1 / 3}$\appear{, and spacing between atoms is $L / N^{1 / 3}$} 
+\item[] \vspace{-2.2mm}\implies{ Solid supports phonons, with the smallest phonon wavelength being $2 L / N^{1 / 3}$}
+
+\end{itemize}
+\end{minipage}
+
+
+\xdef\loc{south east}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.25*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,height=5.35cm]{Figures_booklet/SOM_9_Statistical_mechanics_figures/SOM_Figure_31.png}}; %scale=\figscale. % 8cm max hei
+\end{tikzpicture}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%
+%\begin{frame}
+%\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+%
+%\begin{itemize}
+%	\item Minimum wavelength leads to a maximum wave number $k=\frac{2 \pi}{\lambda}  \equal  \frac{\pi N^{1 / 3}}{L }$ 
+%	
+%	\item Note, $\mathbf{k}$ is basically a vector (k=$|\mathbf{k}|$)\appear{, it may point at any direction}\appear{, allowed phononic states form a sphere!}
+%% 6.5 cm = midway, 10 cm = 3/4 
+%\item[] \begin{minipage}{8.5cm}
+%\item We consider a cube in $\mathbf{k}$-space, with edge of $\pi N^{1 / 3} / L$, and we set the volume of the cube to be equal to $1 / 8$ of a sphere with radius $k_{\max }$
+%\[
+%\begin{aligned}
+% \textrm{((} \frac{\pi N^{1 / 3}}{L} \textrm{))} ^{3} &= \frac{1}{8} \textrm{((} \frac{4 \pi}{3} k_{\max }^{3} \textrm{))}  \\
+%\Rightarrow \qquad k_{\max } &= \textrm{((} \frac{3}{4 \pi} 8 \textrm{((} \frac{\pi N^{1 / 3}}{L} \textrm{))} ^{3} \textrm{))} ^{1 / 3} \\
+%&= \textrm{((} \frac{6 \pi^{2} N}{L^{3}} \textrm{))} ^{1 / 3}= \textrm{((} \frac{6 \pi^{2} N}{V} \textrm{))} ^{1 / 3}
+%\end{aligned}
+%\]
+%\end{minipage}
+%\vspace{3mm}
+%\end{itemize}
+%
+%
+%\xdef\loc{south east}
+%\begin{tikzpicture}[remember picture,overlay] % anchor=south
+%    \node (A) [yshift=-0.25*\figXshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,height=7cm]{Figures_booklet/SOM_9_Statistical_mechanics_figures/SOM_Figure_32.png}}; %scale=\figscale. % 8cm max hei
+%\end{tikzpicture}
+%
+%
+%\endofslide 
+%%\endofsection
+%\end{frame}
+%%%%%%%%%%%%%%%%
+%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+
+\begin{itemize}[itemsep=1.7mm] \fontsize{11.5}{13}\selectfont %\small
+%	\item Minimum wavelength leads to a maximum wave number $k=\frac{2 \pi}{\lambda}  \equal  \frac{\pi N^{1 / 3}}{L }$ 
+	\item \CDAlert[blue]{Due to the periodicity} of the solid\appear{, the allowed \Alert[blue]{wave vector $\mathbf{k}$ values are discretized}:} \appear{a single phononic state occupies a volume of  $( 2 \pi /L )^{3}$} \appear{(in the so-called $\mathbf{k}$-space}\appear{/state space)}
+\end{itemize}
+\vspace{1.5mm}
+	 
+% 6.5 cm = midway, 10 cm = 3/4 
+\begin{minipage}{8cm} %\small
+\begin{itemize}[itemsep=1.7mm] \fontsize{11.5}{13}\selectfont %\small
+
+\item Note, $\mathbf{k}$ is basically a vector \appear{(k=$|\mathbf{k}|$)}\appear{, it may point at any direction}\appear{, allowed phononic states form a sphere!}
+
+\item \CDAlert[red]{The system has in total $N$ states}\appear{, which must be equal to the product of the density} \appear{and the volume of states} \appear{(in $\mathbf{k}$-space):}
+\[
+\begin{aligned}
+N & \equal  \appear{\bigg( \Frac{L}{2\pi} \bigg)^{3}} \appear{\bigg( \Frac{4 \pi}{3} k_{\max }^{3} \bigg)}  \\
+\appear{\Rightarrow} \qquad \appear{k_{\max }} & \equal  \appear{\bigg( \frac{8\pi^3}{L^3}} \frac{3N}{4\pi} \appear{\bigg) ^{1 / 3}} \\
+& \equal  \appear{\bigg(} \frac{6 \pi^{2} N}{L^{3}} \appear{\bigg) ^{1 / 3}}  \equal  \appear{\bigg(} \frac{6 \pi^{2} N}{V} \appear{\bigg) ^{1 / 3}}
+\end{aligned}
+\]
+\end{itemize}
+\end{minipage}
+
+
+\xdef\loc{south east}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.25*\figXshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,height=7cm]{Figures_booklet/SOM_9_Statistical_mechanics_figures/SOM_Figure_32.png}}; %scale=\figscale. % 8cm max hei
+\end{tikzpicture}
+
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+
+\begin{itemize}
+	\item Having derived the maximum wave number\appear{, we can now estimate maximum energy of the phonons:}
+\[
+E_{\max }  \equal  \frac{h v_{s} k_{\max }}{2 \pi}  \equal  \frac{h v_{s}}{2 \pi} \appear{\textrm{((}} \frac{6 \pi^{2} N}{V} \appear{\textrm{))} ^{1 / 3}}  \equal  \appear{h v_{s}} \appear{\textrm{((}} \frac{3 N}{4 \pi V} \appear{\textrm{))} ^{1 / 3}} \appear{\,, \qquad E=\hbar \omega ~\textrm{and}~\omega = v_s k}
+\]
+
+\item Here, we have \CDAlert[red]{assumed} \appear{that the speed of the propagating waves in the solid is the same as the speed of sound}\appear{, verified experimentally}\appear{, and that \CDAlert[red]{all phonons move with same speed}} 
+
+\item Setting $E_{\max }=k_{B} T_{D}$ \appear{we get the maximum energy expressed in units of temperature}\appear{, with so-called \CDAlert[blue]{Debye temperature} }\appear{, which obviously depends on properties of the given material}\appear{, such as $N / V$ and $v_{s}$:}
+\[
+T_{D}  \equal \frac{E_{\max }}{k_{B}}  \equal \frac{h v_{S}}{k_{B}} \appear{\bigg(} \frac{3 N}{4 \pi V} \appear{\bigg) ^{1 / 3}}
+\]
+\end{itemize}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+
+\begin{itemize}
+	\item With the maximum energy derived\appear{, we can return to the original integral for the total energy of the system:}
+	\appear{$$
+	U_{\text {phonon}}  \equal   \appear{\nint_{0}^{k_{B} T_{D}}} \appear{E} \fracc{1}{e^{E / k_{B} T}-1} \fracc{9 N}{ \textrm{((} k_{B} T_{D} \textrm{))} ^{3}} \appear{E^{2}} \appear{d E}  \equal \appear{9 k_{B} N} \frac{T^{4}}{T_{D}^{3}} \appear{\nint_{0}^{T_{D} / T}} \frac{x^{3}}{e^{x}-1} \appear{d x}
+	$$
+	\appear{where we have changed the variable $E$} \appear{into $x$} $\appear{(x} \equiv \appear{E/k_{B} T)}$}
+\item For a mole of material $N=N_{A}$\appear{, and since $k_{B} N_{A}=R$}\appear{, we obtain finally:}
+\[
+U_{\text{phonon,\,per mole}}  \equal \appear{9 R} \frac{T^{4}}{T_{D}^{3}} \appear{\nint_{0}^{T_{D} / T}} \frac{x^{3}}{e^{x}-1} \appear{d x} \qquad
+\]
+
+\item Unfortunately, the \CDAlert[red]{integral cannot be calculated analytically}\appear{, we need to rely on numerical integration}\appear{, and compare with experimental data}
+\end{itemize}
+
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+
+\begin{itemize}
+	\item The \CDAlert[fuchsia]{Debye model} described above\appear{, \Alert[fuchsia]{fits well with experimental data on heat capacities}}\appear{, as is seen in the below Figure}
+	
+	\item \appear{The \CDAlert[red]{derivation was quick\;\&\;dirty}}\appear{, rigorous one will be given in our introductory course on solid-state physics!}
+\end{itemize}
+
+\xdef\loc{south}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.25*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,width=14cm]{Figures_booklet/SOM_9_Statistical_mechanics_figures/SOM_Figure_33.png}}; %scale=\figscale. % 8cm max hei
+\end{tikzpicture}
+
+
+%\endofslide 
+\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%

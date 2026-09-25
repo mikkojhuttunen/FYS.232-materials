@@ -1,0 +1,294 @@
+% !TEX root = ../bb_AiRa_Kappaleet.tex
+ 
+% ö = \%c3\%b6
+% ä = \%C3\%A4
+
+\xdef\sectiontitle{\IVsectiontitle} %aiheuttama
+\TOCrefs
+
+%%%%%%%%%%%%%%%
+\begin{frame}[label=4_2_a]%4_2_a \TOCname
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\label{\TOCname}
+
+\vspace{-3mm}
+
+\begin{itemize}[leftmargin=0.5cm,itemsep=\chapterTOCitemsep]
+    \item[4.1]<1-> \hyperlink{4_1_a}{\IVaSubsectiontitle}
+    \item[4.2]<1-> \hyperlink{4_2_a}{\CDAlert[red]{\IVbSubsectiontitle}}	
+    \item[4.3]<1-> \hyperlink{4_3_a}{\IVcSubsectiontitle}	
+    \item[4.4]<1-> \hyperlink{4_4_a}{\IVdSubsectiontitle}
+    \item[4.5]<1-> \hyperlink{4_5_a}{\IVeSubsectiontitle}
+    \item[4.6]<1-> \hyperlink{4_6_a}{\IVfSubsectiontitle}
+    \item[4.7]<1-> \hyperlink{4_7_a}{\IVgSubsectiontitle}
+\end{itemize}
+
+%\endofslide 
+\end{frame}
+%%%%%%%%%%%%%%%
+\xdef\sectiontitle{\IVbSubsectiontitle} 
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Ensilöytö}%First discovery
+\appear{}
+
+\semismall
+\begin{itemize}[itemsep=1.5mm]
+	\item Vuonna 1932, jolloin neutroni löydettiin\appear{, löydettiin myös  \CDAlert[blue]{positroni} }
+	\item Hiukkasella oli sama massa ja luontainen kulmaliikemäärä kuin elektronilla\appear{, mutta se oli positiivisesti varautunut} 
+	\item Positroni on \CDAlert[tuniblue]{elektronin antihiukkanen}\appear{, jota kuvataan symbolilla $e^{+}$}\appear{, joskus radioaktiivisten hajoamisten tapauksissa myös symbolilla $\beta^{+}$}
+	\item Elektroni–positroni-pareja syntyy esim.\ $300 \mathrm{\;MeV}$ synkrotronisäteilyssä (röntgensäteitä) \appear{(kuva)}%
+	\appear{\xdef\loc{south east}%
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.35*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[width=9cm]{Figures_booklet/SOM_11_Fundamental_particles_figures/SOM_Tipler_Fundamental_Figure_1.png}};% 8cm max height
+\end{tikzpicture}\CR[ref = t]{}} 
+	\item Positroni syntyy samalla elektronin kanssa \CDAlert[red]{parinmuodostusprosessissa}\appear{, ja positronit}% are
+	\end{itemize}
+
+% 6.5 cm = midway, 10 cm = 3/4 
+%\vspace{1.5mm}
+\begin{minipage}{5.0cm}
+\begin{itemize}[itemsep=1.5mm]
+	\item[]  myös annihiloituvat elektronien kanssa \appear{prosessissa joka muistuttaa elektronin ja aukon rekombinaatiota (puolijohteissa)}\appear{, synnyttäen fotonin}
+\end{itemize}
+\end{minipage}
+%\vspace{2.5mm}
+
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+%\framesubtitle{Antiparticles}
+\appear{}
+
+\seminormal
+\begin{itemize}
+	\item Lähes kaikilla alkeishiukkasilla on niiden oma  \CDAlert[red]{antihiukkasensa}:
+\begin{itemize}
+	\item Protoneilla $(p)$ on antiprotonit $(\bar{p})$
+\item Neutroneilla $(n)$ on antineutronit $(\bar{n})$\appear{, joita on \Alert[blue]{hankalaa erottaa toisistaan}}\appear{, koska ne ovat sähköisesti neutraaleita.} \appear{Mutta antineutronit annihiloituvat neutronien kanssa}\appear{, kaksi neutronia ei annihiloidu}
+
+\item Tunnetuimpien leptonien \appear{(elektroni ja positroni)}\appear{ lisäksi on myös muita leptoneita kuten} \appear{\CDAlert[red]{myoni} ($\mu^{-}$)} \appear{ja \CDAlert[red]{antimyoni} ($\mu^{+}$)}
+
+\item Jotkin \CDAlert[blue]{varautumattomat hiukkaset} \appear{(kuten $\pi^{o}$)} \appear{ovat \CDAlert[blue]{itsensä antihiukkasia}}
+\end{itemize}
+
+\item Vaikka antihiukkasia voidaan muodostaa\appear{, antimateriaa ei ole löydetty makroskooppisessa mittakaavassa}
+
+\item \Alert[red]{Standardimalli} \appear{tai \CDAlert[fuchsia]{yleinen suhteellisuusteoria} ei selitä tätä.} \appear{Maailmankaikkeuden oletetaan olevan sähköisesti neutraali}\appear{, ja \CDAlert[fuchsia]{alkuräjähdyksen} pitäisi tuottaa sama määrä materiaa ja antimateriaa}\appear{, mutta jostain syystä tasapaino on järkkynyt}
+
+\end{itemize}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Teoreettinen selitys(yritys)}%Theoretical explanation for antiparticles
+\appear{}
+
+%
+\begin{itemize}
+	\item \CDAlert[blue]{Dirac muodosti relativistisen aaltoyhtälön} \appear{(\CDAlert[tuniblue]{Diracin yhtälö})}\appear{, mikä ennustaa positronin olemassaolon yhtenä ratkaisuna}
+	
+	\item Tarkastellaan seuraavaksi kuinka antihiukkasten etsimistä voisi motivoida. \appear{ Aloitetaan vapaan hiukkasen Schrödingerin yhtälöllä: }
+\[
+-\frac{\hbar^{2}}{2 m} \frac{\partial^{2}}{\partial x^{2}} \appear{\Psi(x, t)}  \equal \appear{i \hbar} \frac{\partial}{\partial t} \appear{\Psi(x, t)}
+\]
+\appear{mikä operaattorien} \appear{($\hat{p}$ ja $\hat{E}$) avulla}\appear{ voidaan kirjoittaa muotoon }
+\[
+-\frac{1}{2 m} \appear{\hat{p}^{2}} \appear{\Psi(x, t)}  \equal \appear{\hat{E}} \appear{\Psi(x, t)}
+\]
+\appear{missä  \CDAlert[blue]{kineettisen energian}} \appear{pitäisi olla \CDAlert[blue]{relativistista} muotoa} \appear{(ei $p^{2} / 2 m$):} 
+\[
+(p c)^{2}  \plus  \appear{(m c^{2} )^{2}}  \equal \appear{E^{2}}
+\]
+%So, using operators, we obtain: $\quad c^{2} \hat{p}^{2} \Psi(x, t)+m^{2} c^{4} \Psi(x, t)=\hat{E}^{2} \Psi(x, t)$, and the so called Klein-Gordon equation: $-c^{2} \hbar^{2} \frac{\partial^{2}}{\partial x^{2}} \Psi(x, t)+m^{2} c^{4} \Psi(x, t)=-\hbar^{2} \frac{\partial^{2}}{\partial t^{2}} \Psi(x, t)$
+%Finally, Dirac's equation would extend this, but also taking spin into account
+\end{itemize}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Teoreettinen selitys(yritys)}%Theoretical explanation for antiparticles
+\appear{}
+
+%
+\begin{itemize}
+%	\item \CDAlert[blue]{Dirac formulated the relativistic wave equation}, which more or less predicted positron as one of its solutions 
+%	
+%	\item Let us see how we get to option of having antiparticles.
+%First, the Schrödinger equation for a free particle is given: 
+%\[
+%-\frac{\hbar^{2}}{2 m} \frac{\partial^{2}}{\partial x^{2}} \Psi(x, t)=i \hbar \frac{\partial}{\partial t} \Psi(x, t)
+%\]
+%which, using the operators, can be written in the form: 
+%\[
+%-\frac{1}{2 m} \hat{p}^{2} \Psi(x, t)=\hat{E} \Psi(x, t)
+%\]
+%where the kinetic energy should be in relativistic form (not $p^{2} / 2 m$): 
+%\[
+%(p c)^{2}+ (m c^{2} )^{2}=E^{2}
+%\]
+\item Käyttämällä operaattoreita, saamme esitettyä edellisen yhtälön muodossa: 
+\[
+c^{2} \appear{\hat{p}^{2}} \appear{\Psi(x, t)}  \plus \appear{m^{2} c^{4}} \appear{\Psi(x, t)}  \equal \appear{\hat{E}^{2}} \appear{\Psi(x, t) \,,}
+\]
+\appear{ja niin sanotun  \CDAlert[fuchsia]{Kleinin–Gordonin yhtälön}:} 
+\[
+-c^{2} \hbar^{2} \frac{\partial^{2}}{\partial x^{2}} \appear{\Psi(x, t)}  \plus \appear{m^{2} c^{4} \Psi(x, t)}  \equal \appear{-\hbar^{2}} \frac{\partial^{2}}{\partial t^{2}} \appear{\Psi(x, t)}
+\]
+\appear{mikä on \CDAlert[red]{relativistinen (skalaarinen) aaltoyhtälö}} \appear{(\Alert[red]{Lorentz-kovariantti}).}\appear{ Yhtälön ratkaisut kuvastavat relativistisia mutta \CDAlert[red]{spinittömiä hiukkasia/kenttiä}}
+
+\item Lopuksi \CDAlert[blue]{Diracin yhtälö} yleistäisi tarkastelun relativistisiin vektorikenttiin\appear{, \CDAlert[blue]{ottamalla spinit huomioon}}
+\implies{ Ratkaisut esittäisivät relativistisia ja massallisia hiukkasia \\
+		\appear{joilla on spin (esim.\ \CDAlert[blue]{elektronit})}}
+\end{itemize}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Teoreettinen selitys(yritys)}%Theoretical explanation for antiparticles
+\appear{}
+
+\seminormal
+\begin{itemize}
+	\item Ylläolevat yhtälöt vihjaavat meille kuinka voitaisiin muodostaa kaksi aaltofunktiota\appear{, toinen \CDAlert[red]{hiukkasille}} \appear{ja toinen \CDAlert[blue]{antihiukkasille}}
+
+\item Relativistisen hiukkasen energia saadaan yhtälöstä 
+\[
+E^{2}  \equal \appear{(p c)^{2}}  \plus \appear{\textrm{((}m c^{2}\textrm{))}^{2}} \qquad \Rightarrow \qquad \appear{E}  \equal \appear{ \pm \textrm{((}(p c)^{2}+(m c^{2})^{2} \textrm{))}^{1/2}}
+\]
+\appear{eli löydetään kaksi arvoa (\CDAlert[red]{positiivinen}/\CDAlert[blue]{negatiivinen})}
+\appear{\xdef\loc{south east}%
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.25*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[scale=0.67,page=3]{Figures_booklet/SOM_11_Fundamental_particles_figures/Tikz_SOM_Fundamental_figures_combo.pdf}};% 8cm max height
+\end{tikzpicture}}
+
+\end{itemize}
+
+% 6.5 cm = midway, 10 cm = 3/4 
+\vspace{2.5mm}
+\begin{minipage}{9.1cm}
+\begin{itemize}
+	\item Positiivinen $E$ on intuitiivinen\appear{, energiat ovat korkeammalla kuin lepomassaa vastaava energia $m c^{2}$} 
+	\item Mutta negatiivisen energian aaltofunktiot voisivat myös olla olemassa\appear{, joiden energia on alle $-m c^{2}$\;? }
+	
+	\item Vaikka positiivinen juuri yleensä valitaan\appear{, ei ole mitään  \CDAlert[blue]{fysikaalista syytä unohtaa} \CDAlert[blue]{ negatiivista juurta}}
+\end{itemize}
+\end{minipage}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%
+%%\begin{frame}
+%%\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+%%%\framesubtitle{Antiparticles}
+%%\framesubtitle{Teoreettinen selitys}%Theoretical explanation for antiparticles
+%%\appear{}
+%%
+%%\semismall
+%%\begin{itemize}
+%%	\item Jos on mahdollista löytää negatiivisia energioita jotka laskeutuvat aina arvoon $E=-\infty$ asti\appear{, miksi elektronit eivät putoa näihin negatiivisen energian tiloihin?}
+%%
+%%\item Dirac ehdotti tarkastella positroneja samalla tavalla kuin puolijohteiden aukkotiloja 
+%%
+%%\item Tällöin olisi  \Alert[blue]{'ääretön meri' negatiivisen energian energiatiloja, joita elektronit jo miehittäisivät}. \appear{Jos negatiiviset tilat ovat tavallisesti jo miehitettyjä}\appear{, Paulin kieltosääntö estäisi muiden elektronien tipahtamisen näille tiloille}
+%%
+%%\item Jos negatiivisen energian omaavalle elektronille annetaan tarpeeksi energiaa \appear{(esim.\ absorboimalla fotonin $h f>2 m c^{2}$)}\appear{, niin se voi nousta merestä ylös ja muuttua positiivisen energian elektroniksi}
+%%\appear{\xdef\loc{south east}
+%%\begin{tikzpicture}[remember picture,overlay] % anchor=south
+%%    \node (A) [yshift=-0.25*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[scale=0.67,page=4]{Figures_booklet/SOM_11_Fundamental_particles_figures/Tikz_SOM_Fundamental_figures_combo.pdf}}; % 8cm max height
+%%\end{tikzpicture}}
+%%\end{itemize}
+%%
+%%% 6.5 cm = midway, 10 cm = 3/4 
+%%\vspace{2.5mm}
+%%\begin{minipage}{8.2cm}
+%%\begin{itemize}
+%%	
+%%\item Prosessi jättäisi jälkeensä aukon meressä\appear{, mikä käyttäytyisi positiivisesti varautuneen hiukkasen tavoin}
+%%
+%%\item Hiukkanen voi myös pudota aukkoon ja kadota\appear{, mutta vain jos aukko on jo olemassa}
+%%\end{itemize}
+%%\end{minipage}
+%%%\vspace{2.5mm}
+%%
+%%\endofslide 
+%%%\endofsection
+%%\end{frame}
+%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+%\framesubtitle{Antiparticles}
+\framesubtitle{QED ja antihiukkaset}
+\appear{}
+
+\begin{itemize}
+%	\item Ajatus että meitä ympäröisi äärettömän monta negatiivisen energian omaavaa elektronia\appear{, on vähän häiritsevä} 
+	
+%	\item Ajatus kävi myös tarpeettomaksi kun kvanttielektrodynamiikka \appear{(\CDAlert[fuchsia]{QED})} \appear{kehitettiin} \appear{\CDAlert[fuchsia]{R. Feynmanin} ja muiden toimesta 1940-luvulla}
+
+\item Ratkaisu negatiivisen juuren ja energian ongelmaan kuitenkin löydettiin ymmärryksen kypsyessä, eli kun kvanttielektrodynamiikka \appear{(\CDAlert[fuchsia]{QED})} \appear{kehitettiin} \appear{\CDAlert[fuchsia]{R. Feynmanin} ja muiden toimesta 1940-luvulla} 
+
+\item QED:n \appear{ennustukset on varmistettu tarkimmilla mittauksilla millä fysikaalista teoriaa on testattu.}\appear{ QED:n mukaan jokaisella hiukkasella on antihiukkanen}\appear{, jolla on sama massa mutta vastakkainen varaus} 
+
+\item \CDAlert[blue]{Positroni} on \CDAlert[red]{elektronin} antihiukkanen 
+\item Myös muilla $1 / 2$-spinin hiukkasilla\appear{, kuten protonilla ja neutronilla}\appear{ on antihiukkasensa (löydettiin vastaavasti 1955 ja 1957)}
+
+\item \CDAlert[fuchsia]{protoni–antiprotoni-parin muodostuminen} \appear{vaatii ainakin $2 m_{p} c^{2}=$ \CDAlert[fuchsia]{1877 \;MeV} verran energiaa}
+\end{itemize}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+%\framesubtitle{Antiparticles}
+\framesubtitle{QED ja antihiukkaset}
+\appear{}
+
+\begin{itemize}
+	\item Diracin konsepti äärettömästä elektronimerestä voitiin siis hylätä \appear{(myöhään 1940-luvulla)} \appear{kun Diracin teoriaa ja QED:tä paranneltiin}
+
+\item Yhtenä vaihtoehtoisena hypoteesinä\appear{, \CDAlert[blue]{Ernst Stueckelberg} ja \CDAlert[tuniblue]{Feynman} ehdottivat että}\appear{, matemaattisesti \CDAlert[blue]{positronia} voidaan kuvata \Alert[blue]{elektronina joka kulkee ajassa taaksepäin}}
+
+\item Joka tapauksessa on tosiasia että elektroni–positroni-pareja \appear{voi syntyä ja annihiloitua}\appear{, kuten se että jokaisella hiukkasella on antihiukkasensa}
+
+\item \CDAlert[fuchsia]{Diracin teoria} on luontaisesti usean kappaleen teoria\appear{, ja se antaa teoreettiset raamit operaattoreille jotka synnyttävät ja/tai tuhoavat hiukkasen.} \appear{Perinteisessä kvanttimekaniikassa hiukkasia ei synny}\appear{/tuhoudu.}
+\end{itemize}
+
+%\endofslide 
+\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+

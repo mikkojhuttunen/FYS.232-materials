@@ -1,0 +1,330 @@
+% !TEX root = ../bb_AiRa_Kappaleet.tex
+
+% ö = \%c3\%b6
+% ä = \%C3\%A4
+
+\xdef\sectiontitle{\Isectiontitle} %aiheuttama
+\TOCrefs
+
+%%%%%%%%%%%%%%%
+\begin{frame}[label=1_4_a]%[label=1_4_TOC1]
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\label{\TOCname}
+
+\vspace{-0.5cm}
+
+\begin{itemize}[leftmargin=0.5cm,itemsep=2mm]
+    \item[1.1]<1-> \hyperlink{1_1_a}{\IaSubsectiontitle}
+    \item[1.2]<1-> \hyperlink{1_2_a}{\IbSubsectiontitle}	
+    \item[1.3]<1-> \hyperlink{1_3_a}{\IcSubsectiontitle}	
+    \item[1.4]<1-> \hyperlink{1_4_a}{\CDAlert[red]{\IdSubsectiontitle}}
+    \item[1.5]<1-> \hyperlink{1_5_a}{\IeSubsectiontitle}
+    \item[1.6]<1-> \hyperlink{1_6_a}{\IfSubsectiontitle}
+    \item[1.7]<1-> \hyperlink{1_7_a}{\IgSubsectiontitle}
+\end{itemize}
+
+\vspace{-1cm}
+\begin{itemize}[leftmargin=8.5cm,itemsep=2mm]
+    \item[1.8]<1-> \hyperlink{1_8_a}{\IhSubsectiontitle}
+	\item[1.9]<1-> \hyperlink{1_9_a}{\IiSubsectiontitle}
+	\item[1.10]<1-> \hyperlink{1_10_a}{\IjSubsectiontitle}
+	\item[1.11]<1-> \hyperlink{1_11_a}{\IkSubsectiontitle}
+\end{itemize}
+
+%\endofslide 
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%\xdef\IbSubsectiontitle{Entropy and Temperature}
+\xdef\sectiontitle{\IdSubsectiontitle}
+
+%%%%%%%%%%%%%%%
+\begin{frame}%[label=1_4_a]
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Boltzmann vs. binomikerroin}
+\appear{\xdef\loc{south east}%
+\begin{tikzpicture}[remember picture,overlay]% anchor=south
+    \node (A) [yshift=-0.25*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,width=8.2cm]{Figures_booklet/SOM_9_Statistical_mechanics_figures/SOM_Figure_6.png}};%scale=\figscale. % 8cm max hei
+\end{tikzpicture}}%
+\vspace{-5.5mm}
+\begin{itemize}
+	\item Todennäköisyyden $P_{n_{i}}$ laskeminen binomikertoimien avulla \appear{(ks. edellinen luku)} \appear{on työlästä suurille systeemeille}\appear{, on järkevämpää käyttää \CDAlert[red]{Boltzmannin jakaumaa}:}
+\[ 
+ P \textrm{((} E_{n} \textrm{))}  \equal \appear{A} \appear{e^{-E_{n} / k_{B} T} }
+ \]
+\appear{Kuvassa 6 nähdään että jakauma toimii aika hyvin} \appear{jopa kuvaa pienemmille systeemeille}
+\end{itemize}
+
+\vspace{2.5mm}
+% 6.5 cm = midway, 10 cm = 3/4 
+\begin{minipage}{5.5cm}
+\begin{itemize}
+	\item Jotta $P \textrm{((} E_{n} \textrm{))} $ voi olla todennäköisyysjakauma\appear{, täytyy se normeerata}\appear{, eli vakio $A$ täytyy löytää/skaalata oikein}
+%\[
+%\sum P \textrm{((} E_{n} \textrm{))} =\sum_{n} A e^{-E_{n} / k_{B} T}=1 \Rightarrow A=\frac{1}{\sum_{n} e^{-E_{n} / k_{B} T}} \Rightarrow P \textrm{((} E_{n} \textrm{))} =\frac{e^{-E_{n} / k_{B} T}}{\sum_{n} e^{-E_{n} / k_{B} T}}
+%\[
+%And thus, e.g. average energy can be obtained by
+%\[
+% < E >\, =\sum_{n} E_{n} P \textrm{((} E_{n} \textrm{))} =\sum_{n} E_{n} \frac{e^{-E_{n} / k_{B} T}}{\sum_{n} e^{-E_{n} / k_{B} T}}=\frac{\sum_{n} E_{n} e^{-E_{n} / k_{B} T}}{\sum_{n} e^{-E_{n} / k_{B} T}}
+%\[
+\end{itemize}
+\end{minipage}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}%[label=1_4_a]
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Keskimääräinen energia $< E >$}
+\begin{itemize}
+\item[] \[
+\begin{aligned}
+\nsum \appear{P \textrm{((} E_{n} \textrm{))}} &  \equal  \appear{\nsum_{n}} \appear{A} \appear{e^{-E_{n} / k_{B} T} } \equal  \appear{1} \qquad \Rightarrow \qquad \appear{A}  \equal \frac{1}{\nsum_{n} e^{-E_{n} / k_{B} T}} \\
+ \appear{\Rightarrow} \qquad \quad \appear{P \textrm{((} E_{n} \textrm{))}} & \equal \frac{e^{-E_{n} / k_{B} T}}{\nsum_{n} e^{-E_{n} / k_{B} T}}
+\end{aligned}
+\]
+\item Nyt, esim. \CDAlert[red]{keskimääräinen energia $< E >\,$}$^*$ voidaan laskea\footnote{{\appear{$^*$\;$< E >\,$ on itseasiassa energian \CDAlert[red]{odotusarvo}{https://fi.wikipedia.org/wiki/Odotusarvo}, joka määritellään yhtälöllä $\mathrm{E}(X) \Equiv \sum_{i=1}^n x_i p_i \,$.} \appear{Opettele~ulkoa.}}}
+\[
+\begin{aligned}
+ < E >\, &  \equal \appear{\nsum_{n}} \appear{E_{n}} \appear{P \textrm{((} E_{n} \textrm{))}} \\
+ & \equal \appear{\nsum_{n} E_{n}} \frac{e^{-E_{n} / k_{B} T}}{\nsum_{n} e^{-E_{n} / k_{B} T}} \\
+ & \equal \fracc{\nsum_{n} E_{n} e^{-E_{n} / k_{B} T}}{\nsum_{n} e^{-E_{n} / k_{B} T}}
+\end{aligned}
+\]
+\end{itemize}
+
+%\xdef\loc{south east}
+%\begin{tikzpicture}[remember picture,overlay] % anchor=south
+%    \node (A) [yshift=-0.25*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,width=8.2cm]{Figures_booklet/SOM_9_Statistical_mechanics_figures/SOM_Figure_6.png}}; %scale=\figscale. % 8cm max hei
+%\end{tikzpicture}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Jakauman lämpötilariippuvuus}
+
+\begin{itemize}
+	\item Einsteinin kiinteälle kappaleelle \appear{päti $E_{n}=n \hbar \omega_{0}$}\appear{, sijoitetaan tämä aiempaan yhtälöön, ja hahmotellaan Boltzmannin jakaumaa (kuva~7)}
+	\appear{\xdef\loc{south east}%
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.25*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,width=8cm]{Figures_booklet/SOM_9_Statistical_mechanics_figures/SOM_Figure_7.png}}; %scale=\figscale. % 8cm max hei
+\end{tikzpicture}}%
+
+\item Kuvassa näkyy Boltzmannin (todennäköisyys)jakauma $P \textrm{((} E_{n} \textrm{))}$ kolmelle eri lämpötilalle  \appear{(tilanteesta $k_{\mathrm{B}} T\!<\!\hbar \omega_{0}$ tilanteeseen $k_{\mathrm{B}} T\!>\!\hbar \omega_{0}$):}
+% 6.5 cm = midway, 10 cm = 3/4 
+\end{itemize}
+
+\begin{minipage}{6cm}
+\begin{itemize}
+	\item[] \begin{itemize}[itemsep=2mm]
+	\item $T=\Frac{1}{5} \hbar \omega_{0} / k_{B}$
+\item $T=\hbar \omega_{0} / k_{B}$
+\item $T=5 \hbar \omega_{0} / k_{B}$
+\end{itemize}
+
+\item Kylmemmillä lämpötiloilla on selvästi epätodennäköistä että värähtelijät omaisivat useamman energiakvantin \appear{($n\hbar \omega_{0}$)}
+\end{itemize}
+\end{minipage}
+\vspace{2.5mm}
+
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Miehitysluku}
+
+\appear{}
+\begin{minipage}{7cm}
+\begin{itemize}
+	\item Meitä kiinnostaa usein tietää montako hiukkasta\appear{/kappaletta}\\  \appear{(värähtelijää)} \appear{on tietyllä tilalla}
+		\appear{(omaavat tietyn kvanttiluvun)}
+
+\item Hiukkasten kokonaislukumäärä on edelleen $N$
+\end{itemize}
+\end{minipage}
+
+\vspace{2.5mm}
+\begin{itemize}
+
+\item Määritellään \CDAlert[red]{miehitysluku} $\mathbb{N}$: %$\mathcal{N}$
+\[ 
+ \mathbb{N} \textrm{((} E_{n} \textrm{))} _{B o l t z m a n n}  \equal  \appear{N P \textrm{((} E_{n} \textrm{))}}  \equal  \appear{N\,} \appear{A e^{-E_{n} / k_{B} T}} \appear{\,, \qquad  < E >\,  \equal \frac{\sum_{n} E_{n} \mathbb{N} \textrm{((} E_{n} \textrm{))} }{\sum_{n} \mathbb{N} \textrm{((} E_{n} \textrm{))} } }
+ \]
+
+\item Miehitysluvun $\mathbb{N}$ \appear{avulla  saadaan:}
+\[ \bg[2.4]{\text{\bigsymbolsfont(}}\!\! 
+\appear{{\footnotesize
+\begin{array}{c}
+\text {Energialla $E$} \\ \text {olevien hiukkasten} \\ \text {lukumäärä}
+\end{array}  }}
+ \!\!\bg[2.4]{\text{\bigsymbolsfont)}}   \equal  \appear{\bg[2.4]{\text{\bigsymbolsfont(}\! }
+\appear{{\footnotesize
+\begin{array}{c}
+\mathbb{N} \text {, hiukkasten} \\ \text{lukumäärä tietyllä} \\ 
+\text {tilalla E}
+\end{array}}}
+\!\!\bg[2.4]{\text{\bigsymbolsfont)}}  } \appear{\times} \appear{ \bg[2.4]{\text{\bigsymbolsfont(}}\!\!  
+\appear{{\footnotesize 
+\begin{array}{c}
+\text {Energian E} \\ \text{omaavien tilojen} \\ \text {lukumäärä}
+\end{array}}}
+\!\!\bg[2.4]{\text{\bigsymbolsfont)}} }
+\]
+\end{itemize}
+
+\xdef\loc{north east}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,width=6.5cm]{Figures_booklet/SOM_9_Statistical_mechanics_figures/SOM_Figure_7.png}}; %scale=\figscale. % 8cm max hei
+\end{tikzpicture}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Tilojen yli summaaminen vs. integrointi}
+\appear{}
+\begin{itemize}
+	\item Nyt voidaan kirjoittaa: 
+	\[
+	< E >\,  \equal \fracc{\sum_{n} E_{n} \mathbb{N} \textrm{((} E_{n} \textrm{))} }{\sum_{n} \mathbb{N} \textrm{((} E_{n} \textrm{))} }
+	\]
+\item Kvanttienergiatilat ovat usein niin lähellä toisiaan, että niiden summaaminen voidaan korvata \CDAlert[red]{integroinnilla}
+
+\item Yleisesti ottaen, kahden vierekkäisen energiatilan todennäköisyyksien suhde on
+\[ 
+ \Frac{P \textrm{((} E_{n} \textrm{))} }{P \textrm{((} E_{n+1} \textrm{))} }  \equal \fracc{e^{-E_{n} / k_{B} T}}{e^{-E_{n+1} / k_{B} T}} \equal \appear{e^{ \textrm{((} E_{n+1}-E_{n} \textrm{))}  / k_{B} T} }
+ \]
+\item Jos $E_{n+1}-E_{n}$ on paljon pienempi kuin $k_{B} T$\appear{, suhdeluku on lähellä 1:stä}\appear{, ja summat voidaan muuntaa integraaleiksi}
+
+\end{itemize}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Tilojen yli integrointi}
+\appear{}
+\begin{itemize}
+	\item Tämä voidaan näennäisesti tehdä myös raja-arvon käsitteen avulla
+\[ 
+  < E >\,  \equal \frac{\sum_{n} E_{n} \mathbb{N} \textrm{((} E_{n} \textrm{))} }{\sum_{n} \mathbb{N} \textrm{((} E_{n} \textrm{))} } \qquad \appear{\Rightarrow} \qquad \frac{\int_{n} E \mathbb{N}(E) d n}{\int_{n} \mathbb{N}(E) d n} 
+ \]
+	\item Tosin summien muuttamisessa integraaleiksi kannattaa olla tarkka
+	
+\item Kvanttiluku $n$ ei välttämättä ole hyödyllisin integrointimuuttuja\appear{, Energia on parempi muuttuja}
+
+\item Eli meidän pitäisi integroida E:n suhteen:
+\[ 
+  < E >\,  \equal \frac{\int E \mathbb{N}(E) d n}{\int \mathbb{N}(E) d n} \equal \frac{\int E \mathbb{N}(E) \frac{d n}{d E} \appear{d E}}{\int \mathbb{N}(E) \appear{\Frac{d n}{d E} d E}} \equal \frac{\int E \mathbb{N}(E) D(E) d E}{\int \mathbb{N}(E) D(E) d E} 
+ \]
+
+\end{itemize}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Tilatiheys}
+
+\begin{itemize}
+\item[] %Therefore we should have:
+\[ 
+  < E >\,  = \Frac{\int E \mathbb{N}(E) d n}{\int \mathbb{N}(E) d n}  = \Frac{\int E \mathbb{N}(E) \Frac{d n}{d E} d E}{\int \mathbb{N}(E) \Frac{d n}{d E} d E} = \Frac{\int E \mathbb{N}(E) D(E) d E}{\int \mathbb{N}(E) D(E) d E} 
+ \]
+\item Missä on nyt otettu käyttöön uusi suure nimeltään \CDAlert[fuchsia]{energiatilatiheys} \CDAlert[fuchsia]{$D(E)$}\appear{, joka kertoo kuinka tiheästi energiatilat ovat pakkautuneet:}
+\[ 
+ D(E) \equiv \fracc{\text{\small differentiaalinen tilojen lukumäärä energiavälillä dE lähellä energiaa E}}{d E} \equal \fracc{d n}{d E} 
+ \]
+
+%\fontsize{13}{15}\selectfont 
+\item Käytännössä suurin osa (jos ei kaikki) keskimääräisten suureiden laskuista \appear{lasketaan integroimalla}
+\implies[\normal]{ \CDAlert[red]{Energiatilatiheys $D$ (or DOS)} \appear{\CDAlert[red]{on keskeinen}} \\ \appear{\CDAlert[red]{käsite kiinteän olomuodon fysiikassa!}} }
+\implies[\normal]{ \Alert[tunired]{Käsitellään uudelleen/lisää mm.~kiinteän olomuodon fysiikan kurssilla..} }
+\end{itemize}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Esimerkki}
+
+\appear{}
+\begin{itemize}
+\item \CDAlert[red]{Harmoninen värähtelijä} on havainnollistava esimerkki näyttää \appear{kuinka energiatilatiheys $D(E)$ voidaan laskea:} 
+\[
+\begin{aligned}
+E_{n}  \equal \appear{n \hbar \omega_{0}} \qquad &\Rightarrow& \qquad
+\frac{d n}{d E} &\equal \frac{\text{differentiaalinen tilojen lukumäärä}}{d E} \\
+&\Rightarrow& \qquad \appear{d n} &  \equal \frac{1}{\hbar \omega_{0}} \appear{d E} \\
+&\Rightarrow &    \frac{d n}{d E} & \equal \frac{1}{\hbar \omega_{0}}  \equal \appear{D(E)}
+ \end{aligned}
+\]
+
+\item Esimerkki on kieltämättä vähän tylsä\appear{/triviaali}\appear{, kun energiatilatiheys on vakio}\appear{, mutta ainakin tulos on järkevä} \appear{(harmonisen värähtelijän energiatilathan ovat yhtä kaukana toisistaan)}
+\end{itemize}
+
+%\xdef\loc{south west}
+%\begin{tikzpicture}[remember picture,overlay] % anchor=south
+%    \node (A) [yshift=2cm,xshift=-\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,width=6.8cm]{Figures_booklet/SOM_9_Statistical_mechanics_figures/SOM_Figure_4_cc.png}}; %scale=\figscale. % 8cm max hei
+%\end{tikzpicture}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Harmonisten värähtelijöiden energiat}
+\appear{}
+\begin{itemize}
+	\item Identtisille (mutta erotettaville) harmonisille värähtelijöille\appear{, saadaan keskimääräiseksi energiaksi nyt integroitua:}
+\[ 
+  < E >\,  \equal \fracc{\nint E \mathbb{N}(E) D(E) d E}{\nint \mathbb{N}(E) D(E) d E}  \equal \frac{\nint E N A e^{-E_{n} / k_{B} T} \frac{1}{\hbar \omega_{0}} d E}{\nint N A e^{-E_{n} / k_{B} T} \frac{1}{\hbar \omega_{0}} d E}  \equal \appear{\ldots} \equal \appear{k_{B} T} 
+ \]
+\item Aiemmin on disktreetille systeemille saatu tulokseksi:
+\[ 
+  < E >\,  \equal \frac{\hbar \omega_{0}}{e^{\hbar \omega_{0} / k_{B} T}-1} 
+ \]
+\item Jos on voimassa $\hbar \omega_{0} \ll k_{B} T$\appear{, niin $\appear{x=}\frac{\hbar \omega_{0}}{k_{B} T} \appear{\ll 1}$}\appear{, ja käyttämällä} $\appear{e^{x}} \approx \appear{1+x}$\appear{, saadaan $ \appear{< E >\;} \approx \appear{k_{B} T}$}
+
+\item Molemmat laskutavat antavat saman ennustuksen!
+\end{itemize}
+
+%\endofslide 
+\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+

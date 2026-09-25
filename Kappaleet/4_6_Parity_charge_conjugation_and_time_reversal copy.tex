@@ -1,0 +1,254 @@
+% !TEX root = ../aa_SoM_Chapters.tex
+
+%% HARRIS: Chapter 9
+%\xdef\Isectiontitle{Statistical Mechanics} 
+%%
+%\xdef\IaSubsectiontitle{A Simple Thermodynamic System} 
+%\xdef\IbSubsectiontitle{Entropy and Temperature}
+%\xdef\IcSubsectiontitle{Einstein's solid}
+%\xdef\IdSubsectiontitle{Boltzmann \& Maxwell–Boltzmann distributions}
+%\xdef\IeSubsectiontitle{Classical Averages}
+%
+%\xdef\IfSubsectiontitle{Quantum Distributions} 
+%\xdef\IgSubsectiontitle{The Quantum Gas} 
+%\xdef\IhSubsectiontitle{Photon Gas}
+%\xdef\IiSubsectiontitle{The Laser}
+%\xdef\IjSubsectiontitle{Specific Heats} 
+%\xdef\IkSubsectiontitle{Debye Model} 
+
+% ö = \%c3\%b6
+% ä = \%C3\%A4
+
+\xdef\sectiontitle{\IVsectiontitle} %aiheuttama
+
+%%%%%%%%%%%%%%%
+\begin{frame}[label=4_6_a]
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+
+%\vspace{\chapterTOCvksip}%
+\begin{itemize}[leftmargin=0.5cm,itemsep=\chapterTOCitemsep]
+    \item[4.1] \hyperlink{4_1_a}{\IVaSubsectiontitle}
+    \item[4.2] \hyperlink{4_2_a}{\IVbSubsectiontitle}	
+    \item[4.3] \hyperlink{4_3_a}{\IVcSubsectiontitle}	
+    \item[4.4] \hyperlink{4_4_a}{\IVdSubsectiontitle}
+    \item[4.5] \hyperlink{4_5_a}{\IVeSubsectiontitle}
+    \item[4.6] \hyperlink{4_6_a}{\CDAlert[red]{\IVfSubsectiontitle}}
+    \item[4.7] \hyperlink{4_7_a}{\IVgSubsectiontitle}
+\end{itemize}
+
+%\endofslide 
+\end{frame}
+%%%%%%%%%%%%%%%
+
+\xdef\sectiontitle{\IVfSubsectiontitle} 
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+%
+\begin{itemize}
+	\item Previously we already discussed some apparent \CDAlert[fuchsia]{conservation laws} in particle reactions, such as conservation of \CDAlert[blue]{baryon number}, \CDAlert[fuchsia]{lepton number} and \CDAlert[green]{strangeness}
+	\appear{\xdef\loc{south}%
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.25*\figYshift,xshift=0*\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,width=14cm]{Figures_booklet/SOM_11_Fundamental_particles_figures/SOM_Fundamental_Table_4.png}}; %scale=\figscale. % 8cm max hei
+\end{tikzpicture}} 
+	\item Next we study laws that are more closely linked with symmetries in the universe and the fundamental ideas of space and time (\CDAlert[fuchsia]{space–time})
+\end{itemize}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Parity}
+
+\seminormal
+\begin{itemize}[itemsep=1.8mm]
+	\item \CDAlert[blue]{Parity inversion} changes the sign of all the spatial coordinates. $ \appear{\vec{r}}  \equal  \appear{(x, y, z)} \quad \rightarrow \quad \appear{(-x,-y,-z)}  \equal  \appear{-\vec{r}}$
+
+\item Strong and electromagnetic interaction conserve parity, weak interaction does not
+
+\end{itemize}
+
+% 6.5 cm = midway, 10 cm = 3/4 
+\vspace{2.5mm}
+\begin{minipage}{8.3cm}
+\begin{itemize}[itemsep=1.8mm]
+	\item To see this, let's examine a case where a particle circles clockwise around $z$-axis. When inverting the sign of all the coordinates, we in practice make a mirror image of the particle's track with respect to origin. The inverted pink and grey arrows are shown in figure, the result being still clockwise rotation with respect to $z$-axis
+	
+	\item Thus nothing was changed, the direction of rotation remains the same. In the similar manner, angular momentum and spin will also be unchanged in parity inversion
+\end{itemize}
+\end{minipage}
+%\vspace{2.5mm}
+
+
+%
+\xdef\loc{south east}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.25*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,width=5cm]{Figures_booklet/SOM_11_Fundamental_particles_figures/SOM_Fundamental_particles_Figure_13.png}}; %scale=\figscale. % 8cm max hei
+\end{tikzpicture}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+%\framesubtitle{test}
+
+\seminormal
+\begin{itemize}
+	\item Now, examine a $\beta^{+}$-decay: $\qquad \appear{p^{+}} \quad \rightarrow \quad n ~ \plus~ \appear{e^{+}}  ~\plus~ \appear{\nu_{e}}$
+	
+\item Proton is converted to a neutron, a positron and a neutrino. The neutron stays in the nucleus but the positron and neutrino will be emitted, both having spin $1/2$ 
+\end{itemize}
+
+% 6.5 cm = midway, 10 cm = 3/4 
+\vspace{0.2mm}
+\begin{minipage}{8.4cm}
+\begin{itemize}
+	\item Their spins are aligned. The spin of the positron is parallel with the momentum of the positron, Neutrino's spin is antiparallel with its momentum
+
+	\item Now we change parity. The momenta of positron and neutrino will be changed, but the spins stay the same (due to the result of the previous slide) as shown in Fig. 14b. This reaction should in principle happen with equal probability as the one in Fig. 14a, but it does not. The reaction shown in Fig 14b does not happen. Thus, weak interaction is not invariant with parity inversion!
+\end{itemize}
+\end{minipage}
+%\vspace{2.5mm}
+
+
+\xdef\loc{south east}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.25*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,width=5cm]{Figures_booklet/SOM_11_Fundamental_particles_figures/SOM_Fundamental_particles_Figure_14.png}}; %scale=\figscale. % 8cm max hei
+\end{tikzpicture}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Charge}%conjugation
+
+\seminormal
+\begin{itemize}
+	\item Charge conjugation changes all the particles to their antiparticles. Take the previous $\beta^{+}$-decay reaction, and make a charge conjugation. Now an antiproton converts to an antineutron, electron and an antineutrino. The process described in Fig 15 a is not observed
+\end{itemize}
+
+% 6.5 cm = midway, 10 cm = 3/4 
+%\vspace{2.5mm}
+\begin{minipage}{8.4cm}
+\begin{itemize}
+	\item The reason being that an antineutrino does not have its spin antiparallel with its momentum but parallel (see lecture 23, Slide 11). So, weak interaction is not invariant under charge conjugation
+
+	\item But, if make both parity inversion and charge conjugation, combined, then we get reaction shown in Fig 15b. This reaction is observed
+\end{itemize}
+\end{minipage}
+%\vspace{2.5mm}
+
+%\xdef\loc{south}
+%\begin{tikzpicture}[remember picture,overlay] % anchor=south
+%    \node (A) [yshift=-0.25*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,width=5cm]{Figures_booklet/SOM_11_Fundamental_particles_figures/SOM_Fundamental_particles_Figure_14.png}}; %scale=\figscale. % 8cm max hei
+%\end{tikzpicture}
+
+\xdef\loc{south east}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.25*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,width=5cm]{Figures_booklet/SOM_11_Fundamental_particles_figures/SOM_Fundamental_particles_Figure_15.png}}; %scale=\figscale. % 8cm max hei
+\end{tikzpicture}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{CP}%transformation (charge + parity)s
+
+\semismall
+\begin{itemize}
+	\item So, if we perform \CDAlert[blue]{both parity inversion} and \CDAlert[red]{charge conjugation}, we obtain a reaction that will happen 
+	
+	\item Weak interaction is obviously invariant under the product of these two transformations \appear{$ \quad \oldRightarrow \quad $This is called \CDAlert[fuchsia]{CP invariance}} 
+
+\item The phenomenon, that a neutrino has its spin antiparallel (and not parallel)
+and an antineutrino has its spin parallel (and not antiparallel) with
+the momentum, is called \CDAlert[fuchsia]{helicity of the neutrino} ('\CDAlert[fuchsia]{handedness}')
+
+\item Electrons do not have a definite helicity. Take an electron moving at $500 \mathrm{\;m}/\mathrm{s}$
+
+\item In a frame moving with speed 1000 m/s the same electron would move backwards,
+to the negative direction, thus whether \CDAlert[fuchsia]{its spin} is parallel or antiparallel to the
+momentum, will \CDAlert[fuchsia]{depend on the coordinate frame}
+
+\item Massless particles propagate at speed $c$ in any frame, thus the relation with spin and momentum must be same in any coordinates. According to the \CDAlert[blue]{Standard Model}, this is connected to assumption that \CDAlert[tuniblue]{neutrinos are massless}
+\end{itemize}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{test}
+
+\begin{itemize}
+	\item Story gets more complicated, since 'recent' studies on the cosmic neutrino fluxes suggest that the neutrinos can change their lepton family (lepton flavour). This is called \CDAlert[blue]{neutrino oscillation}
+	
+%	\item Furthermore, the neutrino's parity violation has also led to speculation that the neutrino and antineutrino might not be different particles, after all
+\end{itemize}
+
+% 6.5 cm = midway, 10 cm = 3/4 
+\vspace{2.5mm}
+\begin{minipage}{5.5cm}
+\begin{itemize}
+	\item Furthermore, the neutrino's parity violation has also led to speculation that the neutrino and antineutrino might \Alert[fuchsia]{not be different particles}, after all
+
+	\item There is also data on \Alert[red]{CP-violation in weak interactions}, i.e. a small fraction of the decays of a $K_{L}^{0}$ are not $\mathrm{CP}$ invariant
+\end{itemize}
+\end{minipage}
+%\vspace{2.5mm}
+
+
+\xdef\loc{south east}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.25*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,width=8cm]{Figures_booklet/SOM_11_Fundamental_particles_figures/SOM_Fundamental_particles_Figure_16.png}}; %scale=\figscale. % 8cm max hei
+\end{tikzpicture}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Time reversal}
+
+\begin{itemize}
+	\item Time reversal replaces time coordinate $t$ with $-t$
+
+\item Almost all microscopic physical processes are \CDAlert[blue]{time invariant}, i.e.~exactly \CDAlert[tuniblue]{same physical laws apply} independent of whether \Alert[blue]{time runs forward or backwards}
+
+\item Quantum field theory states that under a combined operation of \CDAlert[red]{charge conjugation} (C), \CDAlert[fuchsia]{parity} (P), and \CDAlert[blue]{time reversal} (T), all interactions are invariant $\Leftrightarrow$ \CDAlert[fuchsia]{CPT-invariance}
+
+\item If there is CP-invariance, this requires also time invariance 
+
+\item If there is CP violation, this requires that also time reversal is violated ((in order to ensure \CDAlert[fuchsia]{CPT-invariance}\,))
+\end{itemize}
+
+%\endofslide 
+\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+
+

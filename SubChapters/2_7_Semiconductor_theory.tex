@@ -1,0 +1,835 @@
+% !TEX root = ../aa_SoM_Chapters.tex
+
+%% HARRIS: Chapter 10
+
+% ö = \%c3\%b6
+% ä = \%C3\%A4
+
+\xdef\sectiontitle{\IIsectiontitle} %aiheuttama
+
+%%%%%%%%%%%%%%%
+\begin{frame}[label=2_7_a]%[label=2_6_TOC1]
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+
+%\vspace{0.5cm}
+%\begin{itemize}[leftmargin=0.5cm,itemsep=3mm]
+%    \item[2.1] \hyperlink{2_1_a}{\IIaSubsectiontitle}
+%    \item[2.2] \hyperlink{2_2_a}{\IIbSubsectiontitle}	
+%    \item[2.3] \hyperlink{2_3_a}{\IIcSubsectiontitle}	
+%    \item[2.4] \hyperlink{2_4_a}{\IIdSubsectiontitle}
+%    \item[2.5] \hyperlink{2_5_a}{\IIeSubsectiontitle}
+%    \item[2.6] \hyperlink{2_6_a}{\CDAlert[red]{\IIfSubsectiontitle}}
+%    \item[2.7] \hyperlink{2_7_a}{\IIgSubsectiontitle}
+%    \item[2.8] \hyperlink{2_8_a}{\IIhSubsectiontitle}
+%    \item[2.9] \hyperlink{2_9_a}{\IIiSubsectiontitle}
+%\end{itemize}
+
+\vspace{0.2cm}
+\begin{itemize}[leftmargin=0.5cm,itemsep=3mm]
+    \item[2.1] \hyperlink{2_1_a}{\IIaaSubsectiontitle}
+    \item[2.2] \hyperlink{2_2_a}{\IIaSubsectiontitle}
+    \item[2.3] \hyperlink{2_3_a}{\IIbSubsectiontitle}	
+    \item[2.4] \hyperlink{2_4_a}{\IIcSubsectiontitle}	
+    \item[2.5] \hyperlink{2_5_a}{\IIdSubsectiontitle}
+    \item[2.6] \hyperlink{2_6_a}{\IIeSubsectiontitle}
+    \item[2.7] \hyperlink{2_7_a}{\CDAlert[red]{\IIfSubsectiontitle}}
+    \item[2.8] \hyperlink{2_8_a}{\IIgSubsectiontitle}
+    \item[2.9] \hyperlink{2_9_a}{\IIhSubsectiontitle}
+    \item[2.10] \hyperlink{2_10_a}{\IIiSubsectiontitle}
+\end{itemize}
+
+\endofslide \end{frame}
+%%%%%%%%%%%%%%%
+
+\xdef\sectiontitle{\IIfSubsectiontitle} 
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+
+\begin{itemize}[itemsep=1.8mm]
+	\item \CDAlert[red]{Switching on/off} \appear{and \CDAlert[blue]{amplification}} \appear{are essential properties of the components in modern electronic circuits} \appear{(in electronic communication}\appear{, mobiles}\appear{, computers}\appear{, displays}\appear{, lighting, digital communication}\appear{, etc.)} 
+	
+	\item \Alert[fuchsia]{Simple resistors, capacitors and inductors are not able to do those things}\appear{, we need components based on semiconductor materials} 
+	
+	\item Such components include:
+	\item[] \begin{itemize} \seminormal
+	\item  \CDAlert[fuchsia]{Diode}
+\item \CDAlert[fuchsia]{Transistor}
+\item Metal–oxide–semiconductor \appear{field-effect transistor} \appear{(MOSFET)}
+\item Light-emitting diode \appear{(LED)}
+\item Detectors \appear{(incident light/electrons generate an electrical current)}
+\item Charge-coupled devices \appear{(CCDs)}
+\item \CDAlert[fuchsia]{Complementary metal–oxide–semiconductor (CMOS) technology}
+\item $\ldots$
+\end{itemize}
+
+
+\end{itemize}
+
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Hall effect}
+
+\begin{itemize}
+	\item In semiconductors charge carriers are of both polarities: \appear{negative \CDAlert[red]{electrons}} \appear{and positive \CDAlert[red]{holes}} 
+	
+	\item This can be experimentally verified by so called \CDAlert[red]{Hall effect}. \appear{A current is arranged through a doped semiconductor}\appear{, which is arranged into a magnetic field}\appear{. Lorentz force creates drifting of the charge carriers sideways}\appear{, perpendicular to the direction of current: }
+\[
+\vec{F}  \equal  \appear{q} \appear{(\vec{v}} \appear{\times \vec{B})}
+\]
+
+\end{itemize}
+
+\xdef\loc{south}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.25*\figYshift,xshift=0*\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,height=3.5cm]{Figures_booklet/SOM_Tipler_Solid_state_physics_figures/SOM_Tipler_SSP_figure_39_cropped.png}}; %scale=\figscale. % 8cm max height
+\end{tikzpicture}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Hall effect}
+
+\begin{itemize}
+\item Since the polarity of the charge carrier in the formula is\appear{, in fact, taken into account twice} \appear{(sign of charge and direction of movement, sign of $v_d$)}\appear{, in both cases, the charge carriers will eventually drift into the same direction}\appear{, revealing their sign by the induced perpendicular electric field $E_{Hall}$}
+
+\item This induced \CDAlert[fuchsia]{Hall field $E_{Hall}$} then results in a measurable potential difference of form 
+\[
+V_{\text {Hall}}  \equal  \appear{v_{d}} \appear{B} \appear{w} \appear{\,, \quad ~where} \qquad w=width~of~the~strip
+\]
+\end{itemize}
+
+\xdef\loc{south}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.25*\figYshift,xshift=0*\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,height=3.5cm]{Figures_booklet/SOM_Tipler_Solid_state_physics_figures/SOM_Tipler_SSP_figure_39_cropped.png}}; %scale=\figscale. % 8cm max height
+\end{tikzpicture}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Holes as charge carriers}
+
+\begin{itemize}
+	\item As charge carriers, the concept of holes is more complicated than just current going to the direction opposite to the movement of electrons
+	
+	\item At zero temperature in a semiconducting solid\appear{, the valence band is full and the conduction band is empty} 
+	\implies{ The material will not respond to \\
+			an external electric field }
+\end{itemize}
+	
+% 6.5 cm = midway, 10 cm = 3/4 
+\vspace{2.5mm}
+\begin{minipage}{7.8cm}
+\begin{itemize}
+	\item At non-zero $T$\appear{, with thermal excitations taking place in the solid}\appear{, an electron will move from valence band to conduction band}\appear{, leaving behind a hole} 
+	\implies{ \Alert[red]{Electron} is then free to move within \\
+			 the conduction band }
+	\implies{ A \Alert[blue]{hole} is also free to move within \\
+			 the valence band }
+\end{itemize}
+\end{minipage}
+\vspace{2.5mm}
+
+\xdef\loc{south east}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.25*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,height=6cm]{Figures_booklet/SOM_10_Bonding_figures/SOM_Bonding_Figure_35.png}}; %scale=\figscale. % 8cm max height
+\end{tikzpicture}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Holes as charge carriers}
+
+\begin{itemize}
+	\item As charge carriers, the concept of holes is more complicated than just current going to the direction opposite to the movement of electrons
+	
+	\item At zero temperature in a semiconducting solid, the valence band is full and the conduction band is empty 
+	\implies{ The material will not respond to \\
+			an external electric field }
+\end{itemize}
+	
+% 6.5 cm = midway, 10 cm = 3/4 
+\vspace{2.5mm}
+\begin{minipage}{7.8cm}
+\begin{itemize}
+	\item The hole will not 'actually' move\appear{, but it gives rise to certain freedom of electrons to move} 
+	\item \Alert[fuchsia]{Another electron can move to the empty state}\appear{, and another one to replace it }
+	\implies{ While the valence electrons themselves are not free\appear{, the unoccupied state, the hole}\appear{, is free to move} }
+\end{itemize}
+\end{minipage}
+\vspace{2.5mm}
+
+\xdef\loc{south east}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.25*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,height=6cm]{Figures_booklet/SOM_10_Bonding_figures/SOM_Bonding_Figure_35.png}}; %scale=\figscale. % 8cm max height
+\end{tikzpicture}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Holes as charge carriers}
+
+\begin{itemize}
+	\item Note the energy states in connection with the position of the hole in the energy scheme:
+\item[] \begin{itemize}[itemsep=3mm]
+	 \item When the hole gets higher in the band\appear{, a lower state results}
+	 \end{itemize}
+\end{itemize}
+
+% 6.5 cm = midway, 10 cm = 3/4 
+\vspace{2.5mm}
+\begin{minipage}{7.6cm}
+\begin{itemize}
+\item[] \begin{itemize}[itemsep=3mm]
+	\item This phenomenon may be compared to a \CDAlert[fuchsia]{rising air bubble in water}. \appear{While the bubble gets up}\appear{, a part of water sinks down}\appear{, resulting in a lower energy for the system.}
+\item As an electron tends to sink\appear{, the hole tends to "float".} \appear{In moving among the states in the valence band}\appear{, a hole's energy varies in the opposite sense form that of an electron}
+\end{itemize}
+\end{itemize}
+\end{minipage}
+\vspace{2.5mm}
+
+
+\xdef\loc{south east}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.25*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,height=6cm]{Figures_booklet/SOM_10_Bonding_figures/SOM_Bonding_Figure_36.png}}; %scale=\figscale. % 8cm max height
+\end{tikzpicture}
+
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%
+%\begin{frame}
+%\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+%\framesubtitle{Note on the density of states}
+%
+%\begin{itemize}
+%	\item We saw that the density of states for free electrons in a quantum well formed a parabolic curve: $D=D(E) \propto \sqrt{E}$, increasing with increasing energy. The actual shape of $D$, depends on structure of the crystal lattice and the position of the band. In fact, it needs to be that the density is almost symmetric for the band: 
+%	\item Suppose that a band is completelty filled. If one electron is removed (perhaps to the conduction band...), then it is possible to say that a hole has been created, since a vacant state is there. When an external force is applied, some elecron may be moved into the vacant state. But by doing so, the electron leaves a new hole, corresponding to a state that was previously occupied. We can say that the hole moves in a manner opposite to electron, i.e. it 'floats'. The zero energy for the holes is at the top of the band and their energy is measured downwards, i.e. $\quad\left(E-E_{\min }\right) \rightarrow\left(E_{\max }-E\right)$
+%	
+%\end{itemize}
+%
+%%\xdef\loc{east}
+%%\begin{tikzpicture}[remember picture,overlay] % anchor=south
+%%    \node (A) [yshift=\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,height=7cm]{Figures_booklet/SOM_10_Bonding_figures/SOM_Bonding_Figure_1.png}}; %scale=\figscale. % 8cm max height
+%%\end{tikzpicture}
+%
+%\endofslide 
+%%\endofsection
+%\end{frame}
+%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Effective mass of the charge carrier}
+
+\seminormal
+\begin{itemize}
+	\item If a moving particle is treated as a wave\appear{, its velocity is described using so-called group velocity:}\vspace{-4mm}
+\[
+v_{\text {particle }}  \equal \appear{v_{\text {group }}}  \equal \frac{d \omega}{d k}
+\]
+\item The functional form of $\omega=\omega(k)$ in each case\appear{, and in each medium}\appear{, is called "\CDAlert[fuchsia]{dispersion relation}".} \appear{The acceleration of a particle would be:}
+\[
+a  \equal \frac{d \textrm{((}v_{\text {hiukkanen}} \textrm{))}}{d t}  \equal \frac{d}{d t} \LP \frac{d \omega}{d k} \,\RP  \equal \frac{d^{2} \omega}{d k^{2}} \frac{d k}{d t}
+\]
+
+\item Consider an external force acting on the particle\appear{. Then the work done by the force per unit time (power) is given by force times velocity:}
+$$
+\begin{aligned}
+F_{\text {ext}} \appear{v_{\text {particle}}} & \equal \frac{d E}{d t}  \equal \frac{d(\hbar \omega)}{d t}  \equal \appear{\hbar} \frac{d \omega}{d t} \equal \appear{\hbar} \frac{d \omega}{d k} \frac{d k}{d t}  \equal \appear{\hbar v_{\text {particle}}} \frac{d k}{d t} \qquad \\
+\Rightarrow \qquad \qquad \appear{F_{ext}}&  \equal \appear{\hbar} \frac{d k}{d t}
+\end{aligned}
+$$
+\end{itemize}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Effective mass of the charge carrier}
+
+\begin{itemize}
+	\item We now use the form of Newton's 2nd law \appear{$(F=m a)$} \appear{to define \CDAlert[fuchsia]{effective mass} of the charge carrier:}
+\end{itemize}
+% 6.5 cm = midway, 10 cm = 3/4 
+%\vspace{2.5mm}
+\begin{minipage}{8.2cm}
+\begin{itemize}
+	\item[] 
+	$$
+	\begin{aligned}
+m^{*} & \equal \frac{F_{e x t}}{a}  \equal \frac{\hbar \frac{d k}{d t}}{\frac{d^{2} \omega}{d k^{2}} \frac{d k}{d t}}  \equal \frac{\hbar}{\frac{d^{2} \omega}{d k^{2}}}  \equal \hbar^{2} \appear{\textrm{((}} \frac{d^{2} E}{d k^{2}} \appear{\textrm{))}^{-1}} \qquad \\
+\Rightarrow \qquad \frac{1}{m^{*}}&  \equal \frac{1}{\hbar^{2}} \frac{d^{2} E}{d k^{2}}
+\end{aligned}
+$$
+
+\item Let's verify that this choice for the definition for mass complies with the energy of the (free) particle:
+\[
+ E  \equal \frac{p^{2}}{2 m_e}  \equal \frac{\hbar^{2} k^{2}}{2 m_e}
+\]
+\end{itemize}
+\end{minipage}
+\vspace{2.5mm}
+
+
+\xdef\loc{south east}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.25*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,height=7cm]{Figures_booklet/SOM_10_Bonding_figures/SOM_Bonding_Figure_27.png}}; %scale=\figscale. % 8cm max height
+\end{tikzpicture}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Effective mass of the charge carrier}
+
+% 6.5 cm = midway, 10 cm = 3/4 
+%\vspace{2.5mm}
+\begin{minipage}{8.2cm}
+\begin{itemize}
+	\item[] %\vspace{-4mm}
+	$$
+ E =\frac{p^{2}}{2 m_e}=\frac{\hbar^{2} k^{2}}{2 m_e}
+$$
+\item Let's look at Figure 27\appear{, showing the energy of the electrons \textrm{((}mass $m_{e} $\textrm{))} in a solid as a function of wavenumber $k$} 
+
+\item The second derivative of energy with respect to $k$, will then also give:
+\[
+\frac{d^{2} E}{d k^{2}}  \equal  \appear{\hbar^{2}} \frac{1}{m_{e}} \quad \Rightarrow \quad \appear{m_{e}} \equal \appear{\hbar^{2}} \appear{\textrm{((}} \frac{d^{2} E}{d k^{2}} \appear{\textrm{))}^{-1}} \equiv \appear{m^*}
+\]
+\item Therefore the concept of an effective mass $m^*$ \appear{agrees with the mass for an electron}\appear{, for the case when the electron behaves like a free particle} \appear{(in the middle of the bands)}
+\end{itemize}
+\end{minipage}
+\vspace{2.5mm}
+
+
+\xdef\loc{south east}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.25*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,height=7cm]{Figures_booklet/SOM_10_Bonding_figures/SOM_Bonding_Figure_27.png}}; %scale=\figscale. % 8cm max height
+\end{tikzpicture}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Effective mass of the charge carrier}
+
+\semismall
+\begin{itemize}
+%	\item[] \vspace{-2mm}
+%	$$
+%m_{e}=\hbar^{2} \textrm{((}\Frac{d^{2} E}{d k^{2}} \textrm{))}^{-1} \qquad \& \qquad \frac{1}{m_{e}} \equal \frac{1}{\hbar^{2}} \frac{d^{2} E}{d k^{2}}
+%$$
+\item The curvature \appear{(= second derivative)} \appear{of $E=E(k)$} \appear{gives the reciprocal mass (inverse of mass) }
+\end{itemize}
+
+\vspace{1.5mm}
+
+\begin{minipage}{7.8cm}
+\begin{itemize}[itemsep=1.5mm]
+
+\item When the pink curve follows the dashed curve\appear{, i.e. the parabola $E \propto k^{2}$}\appear{, then the energy follows that of a free electron}\appear{, and we have $m^{*}=m_{e}$}
+
+\item Near band edges\appear{, on both sides of the gap}\appear{, effective mass deviates from $m_{e}$.} \appear{Starting from $k=0$, near $k=\pi / a$ the curvature becomes large} \appear{and very close to the boundary even negative.} \appear{Just above the gap the curvature is large and positive. And so on.}
+
+\item For the regions, where the gap energy is small compared to the width of the band\appear{, \Alert[blue]{effective masses $m^{*}$ may become $0.01$ or $0.1$ times the mass of a free electron}}
+\end{itemize}
+\end{minipage}
+
+\xdef\loc{south east}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.25*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,height=7cm]{Figures_booklet/SOM_10_Bonding_figures/SOM_Bonding_Figure_37.png}}; %scale=\figscale. % 8cm max height
+\end{tikzpicture}
+
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Conductivity due to both e's and h's}
+
+\seminormal
+
+\begin{itemize}
+	\item In an ordinary conductor (such as copper)\appear{, electrons fill the states around the middle of the band}\appear{, where they are essentially free particles of mass $m$} 
+	\item In a semiconductor\appear{, electrons fill the states to the top of valence band}\appear{, where the effective mass is negative }
+	\item Hole energy varies in the opposite sense\appear{ (because the valence band is oppositely curved than the conduction band),}
+\end{itemize}
+
+% 6.5 cm = midway, 10 cm = 3/4 
+%\vspace{2.5mm}
+\begin{minipage}{8.5cm}
+\begin{itemize}
+	\item[] therefore at the top of a band and only there, a hole has positive mass and thus\appear{, it moves in the direction of the external field}
+
+\item In total, both conduction electrons and valence holes act as \CDAlert[fuchsia]{charge carriers} \appear{and respond to external field}\appear{, and contribute to electrical conductivity:}\vspace{-2.5mm}
+\[
+\sigma  \equal \frac{n_{e} e^{2} \tau_{e}}{m_{e}^{*}}  \plus \frac{n_{h} e^{2} \tau_{h}}{m_{h}^{*}}
+\]
+\end{itemize}
+\end{minipage}
+
+\xdef\loc{south east}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,height=6cm]{Figures_booklet/SOM_10_Bonding_figures/SOM_Bonding_Figure_38.png}}; %scale=\figscale. % 8cm max height
+\end{tikzpicture}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Number densities of charge carriers}
+
+%
+\begin{itemize}
+	\item Recall the density of states $D=D(E)$ and occupation number $ \mathbb{N} = \mathbb{N} (E)_{F D}$ for fermions:
+\[
+D(E)  \equal \frac{(2 s+1) m^{3 / 2} V}{\pi^{2} \hbar^{3} \appear{\sqrt{2}}} \appear{\sqrt{E} }\qquad \appear{\&} \qquad  \appear{\mathbb{N} (E)_{F D}}  \equal \frac{1}{e^{ \textrm{((}E-E_{F} \textrm{))} / k_{B} T}+1}
+\]
+
+\item We can estimate the number density of the charge carriers in a semiconductor \appear{by integrating $D(E) \times  \mathbb{N} (E)_{F D}$ over an appropriate energy range}
+\end{itemize}
+
+% 6.5 cm = midway, 10 cm = 3/4 
+\vspace{2.5mm}
+\begin{minipage}{7cm}
+\begin{itemize}
+	\item Let $E_{c}$ and $E_{v}$ be the energies of the bottom of the conduction band and top of the valence band, respectively
+
+\item In this case, the band gap energy is simply $\appear{E_g}  \equal \appear{E_{c}} \minus \appear{E_{v}}$
+\end{itemize}
+\end{minipage}
+
+\xdef\loc{south east}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.25*\figYshift,xshift=1*\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,height=4cm]{Figures_booklet/SOM_10_Bonding_figures/Tikz_SOM_Bonding_figures5}}; %scale=\figscale. % 8cm max height
+\end{tikzpicture}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Number densities of charge carriers}
+
+\begin{itemize}
+	\item For \CDAlert[blue]{negative charge carriers} $(s=1 / 2)$ we write $D(E) \times  \mathbb{N} (E)_{F D}$:
+\[
+D(E) \appear{\times  \mathbb{N} (E)_{F D}} \equal \fraca{2 m_{e}^{* 3 / 2} V}{\pi^{2} \hbar^{3} \sqrt{2} \appear{\sqrt{E-E_{c}}}} \fraca{1}{e^{ \textrm{((}E-E_{F} \textrm{))} / k_{B} T}+1}
+\]
+\appear{We can use this directly in the following}
+
+\item But, for \CDAlert[red]{positive charge carriers} $(s=1 / 2)$\appear{, i.e. the holes}\appear{, the shape of the band is different at the top of the valence band}\appear{, and so the square root of the energy needs to be replaced by $\sqrt{E_{v}-E}$}
+
+\item Finally, the Fermi–Dirac distribution $  \mathbb{N} (E)_{F D}=\Frac{1}{e^{ \textrm{((}E-E_{F} \textrm{))} / k_{B} T}+1}$
+\appear{needs to be replaced by:} $\appear{1}  \minus  \frac{1}{e^{ \textrm{((}E-E_{F} \textrm{))} / k_{B} T}+1}$
+
+\item The combined probability of hole occurring for certain energy\appear{, added to the probability of the state being occupied}\appear{, must be unity} \appear{(\Alert[fuchsia]{the electron must be \CDAlert[fuchsia]{somewhere}})}
+%\item The probability of hole occurring for certain energy when added to the probability of the state being occupied, must be unity
+\end{itemize}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Number densities of charge carriers}
+
+\begin{itemize}
+	\item We obtain:
+\[
+1 \minus \frac{1}{e^{\frac{E-E_{F}}{k_{B} T}}+1} \equal \frac{e^{\frac{E-E_{F}}{k_{B} T}}}{e^{\frac{E-E_{F}}{k_{B} T}}+1} \equal \frac{1}{1+e^{\frac{- \textrm{((}E-E_{F} \textrm{))}}{k_{B} T}}} \equal \frac{1}{1+e^{\frac{E_{F}-E}{k_{B} T}}} \approx \appear{e^{\frac{- \textrm{((}E_{F}-E \textrm{))}}{k_{B} T}}}
+\]
+
+\item So, for positive charge carriers:
+\[
+D(E) \appear{\times  \mathbb{N} (E)_{F D}} \equal \frac{2 m_{h}^{* 3 / 2} V}{\pi^{2} \hbar^{3} \sqrt{2}} \appear{\sqrt{E_{v}-E}} \appear{e^{- \textrm{((}E_{F}-E \textrm{))} /k_{B} T}}
+\]
+\item Now, we can calculate the number densities for negative and positive charge carriers
+\end{itemize}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Number densities of charge carriers}
+
+\begin{itemize}
+	\item For negative charge carriers we get $n_{e}$:
+$$
+\begin{aligned} 
+\appear{n_{e}}&  \equal  \appear{\nint_{E_{c}}^{\infty}} \frac{2 m_{e}^{* 3 / 2} V}{\pi^{2} \hbar^{3} \sqrt{2}} \appear{\sqrt{E-E_{c}}} \appear{e^{\frac{- \textrm{((}E-E_{F} \textrm{))}}{k_{B} T}}} \appear{d E}  \equal \frac{2 m_{e}^{* 3 / 2} V}{\pi^{2} \hbar^{3} \sqrt{2}} \appear{e^{E_{F / k_{B}}}} \appear{\nint_{E_{c}}^{\infty}} \appear{\sqrt{E-E_{c}}} \appear{e^{\frac{-E}{k_{B} T}} d E} \\ 
+& \equal \frac{1}{4} \appear{\textrm{((}} \frac{2 m_{e}^{*} k_{B} T}{\pi \hbar^{2}} \appear{\textrm{))}} \appear{^{3 / 2}} \appear{e^{- \textrm{((}E_{c}-E_{F} \textrm{))} / k_{B} T} }
+\end{aligned}
+$$
+
+\item And for positive charge carriers $n_{h}$:
+$$
+\begin{aligned} 
+\appear{n_{h}}&  \equal  \appear{\nint_{-\infty}^{E_{v}}} \frac{2 m_{h}^{* 3 / 2} V}{\pi^{2} \hbar^{3} \sqrt{2}} \appear{\sqrt{E_{v}-E}} \appear{e^{\frac{- \textrm{((}E_{F}-E \textrm{))}}{k_{B} T}} d E}  \equal \frac{2 m_{e}^{* 3 / 2} V}{\pi^{2} \hbar^{3} \sqrt{2}} \appear{e^{-E_{F / k_{B}}} } \appear{\nint_{-\infty}^{E_{v}}} \appear{\sqrt{E_{v}-E}} \appear{e^{\frac{E}{k_{B} T}} d E  }\\ 
+& \equal \frac{1}{4} \appear{\textrm{((}} \frac{2 m_{h}^{*} k_{B} T}{\pi \hbar^{2}} \appear{\textrm{))}^{3 / 2}} \appear{e^{- \textrm{((}E_{F}-E_{v} \textrm{))} / k_{B} T}} \\ 
+\end{aligned}
+$$
+\item Verification of these results in the Exercises !! 
+\end{itemize}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Mass action law: \quad $n_e n_h =n_i^2$}
+
+\begin{itemize}
+	\item So now, as an overall result we obtain:
+\[
+n_{e} \appear{n_{h}}  \equal \frac{1}{2} \appear{\textrm{((}} \frac{k_{B} T}{\pi \hbar^{2}} \appear{\textrm{))}^{3}} \appear{\textrm{((}m_{e}^{*} m_{h}^{*} \textrm{))}^{3 / 2}} \appear{e^{-\Delta E / k_{B} T}} \appear{\,, \qquad \Delta E}  \equal  \appear{E_g}  \equal  \appear{E_c - E_v}
+\]
+
+\item Note, for intrinsic semiconductors \appear{the number densities of negative and positive charge carriers are equal:}
+\[
+n_{e}  \equal  \appear{n_{h}}  \equal  \frac{1}{4} \appear{\textrm{((}} \frac{2 k_{B} T}{\pi \hbar^{2}} \appear{\textrm{))}^{3 / 2}} \appear{\textrm{((}m_{e}^{*} m_{h}^{*} \textrm{))}^{3 / 4}} \appear{e^{-\Delta E / 2 k_{B} T}} \equiv \appear{n_i^2}
+\]
+\item[] where $n_i$ is the carrier density of an intrinsic semiconductor\appear{, using which we can write the highly useful \CDAlert[red]{mass action law}:} 
+\[
+n_{e} \appear{n_{h}}  \equal \appear{n_i} \qquad \appear{\textrm{(applies also to \Alert[red]{extrinsic semiconductors}!)}}
+\]
+\item Note also, that charge carriers numbers vary with both temperature \appear{and energy gap $\Delta E$}\appear{, i.e. depend also on the material}
+\end{itemize}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+
+\framesubtitle{Intrinsic semiconductors}
+% On intrinsic semiconductors
+
+\seminormal
+\begin{itemize}[itemsep=1.6mm]
+%	\item Previously, we discussed materials which are defined as \Alert[fuchsia]{intrinsic semiconductors}\appear{, undoped elements} \appear{(or compounds)} \appear{with a band gap smaller than $2$\;eV} \appear{(the choice of $2$\;eV is somewhat arbitrary)} 
+	
+	\item We have so far discussed of \CDAlert[red]{elemental semiconductors} \appear{(e.g. Si}\appear{, Ge)}\appear{, or \CDAlert[blue]{compound semiconductors}} \appear{(e.g. SiC}\appear{, Si$_{1-x}$Ge$_{x}$}\appear{, GaAs)}\appear{, which have all been \CDAlert[fuchsia]{intrinsic semiconductors}}\appear{, i.e. undoped semiconductors}  \appear{with a band gap smaller than $2$\;eV} \appear{(the choice of $2$\;eV is somewhat arbitrary)} 
+	
+	\item With such a small gap\appear{, the temperature does not have to be very high to produce significant occupation of the conduction band}
+	
+	\end{itemize}
+% 6.5 cm = midway, 10 cm = 3/4 
+\vspace{2.5mm}
+\begin{minipage}{5.8cm}
+\begin{itemize}[itemsep=1.6mm]
+%\item[] significant occupation of the conduction band
+	\item Two very representative intrinsic semiconductors are \CDAlert[red]{silicon} \appear{and \CDAlert[blue]{germanium},}%with band gaps of $1.14$\;eV and $0.67$\;eV, respectively
+	%\item[] 
+	\appear{ with band gaps of \CDAlert[red]{$1.14$\;eV}} \appear{and \CDAlert[blue]{$0.67$\;eV}, respectively}
+
+\item Both of them are "covalent" solids\appear{, where all the atoms share all the 4 valence electrons}\appear{, for silicon in the $\mathrm{n}=3$ shell}\appear{, for germanium $(Z=32)$} \appear{in the $n=4$ shell}
+\end{itemize}
+\end{minipage}
+\vspace{2.5mm}
+
+
+\xdef\loc{south east}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.25*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,height=5cm]{Figures_booklet/SOM_Tipler_Solid_state_physics_figures/SOM_Tipler_SSP_figure_36_cropped.png}}; %scale=\figscale. % 8cm max height
+\end{tikzpicture}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Intrinsic semiconductors}
+
+\seminormal
+\begin{itemize}[itemsep=2.2mm]
+	\item The covalent bond between two Si atoms with the high electron density near the two neighbouring atoms \appear{is shown by arrow in the X-ray scattering measurements in the previous Figure}
+
+\item Arsenic \appear{$(As, Z=33)$} \appear{in amorphous form also qualified as an elemental semiconductor with a band gap of $1.2-1.4$\,eV.} \appear{However As has \CDAlert[red]{five valence electrons}} \appear{(i.e. is \CDAlert[red]{pentavalent})} \appear{in the $n=4$ shell.} \appear{Four of the five valence electrons take part in the covalent bonds}\appear{, but the \CDAlert[red]{fifth electron} is very \CDAlert[red]{loosely bound} to the atom}
+
+\item As is more often used in making of \CDAlert[blue]{III-V semiconductors} (e.g. GaAs), or as a \CDAlert[red]{dopant element in making of extrinsic semiconductors} 
+
+\item When As is used as a dopant, the fifth electron occupies an energy level that is just slightly below the conduction band\appear{, but it can be easily excited into the conduction band.} \appear{This fifth electron and the As ion core form a \CDAlert[tunired]{hydrogen-like system}}\appear{, with approximate energies close to it}
+
+%\item In pure materials, the number of electrons thermally excited to the conduction band \appear{necessarily equals the number of holes left behind in the valence band}
+\end{itemize}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+
+\framesubtitle{Extrinsic semiconductors}
+%Doping of semiconductors $-$ Extrinsic semiconductors
+
+\begin{itemize}
+	\item By doping\appear{, i.e. adding small amounts of impurity elements}\appear{, we produce \CDAlert[fuchsia]{extrinsic semiconductors}} 
+	
+	\item These have a \Alert[fuchsia]{large majority of either conduction electrons or valence holes} \appear{and, in either case}\appear{, much greater concentration of charge carriers than the pure intrinsic semiconductor}
+
+\item As an example, we present covalent Si \appear{(or Ge lattice)}\appear{, \CDAlert[red]{doped with the pentavalent As}}
+\end{itemize}
+
+\appear{\xdef\loc{south}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.25*\figYshift,xshift=0*\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=2,height=4cm]{Figures_booklet/SOM_10_Bonding_figures/Tikz_SOM_Bonding_figures6_12_fixed}}; %scale=\figscale. % 8cm max height
+\end{tikzpicture}
+}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+
+\begin{itemize}
+	\item Let us continue analyzing the fifth electron of As 
+	
+	\item \CDAlert[tunired]{Bohr theory} \appear{can be used to estimate the energies available to it:}
+	\[
+E_{n}  \equal  \minus \frac{1}{2} \appear{\textrm{((}} \frac{k e^{2}}{\hbar} \appear{\textrm{))}} \frac{m_{e}}{n^{2}} \appear{\times} \frac{m^{*}}{m_{e}}  \frac{1}{\kappa^{2}} \equal  \minus \frac{1}{2} \appear{\textrm{((}} \frac{k e^{2}}{\hbar} \appear{\textrm{))}} \frac{m^{*}}{\kappa^{2}}  \frac{1}{n^{2}}
+\]
+\appear{here $\mathrm{m}^{*}$ is the effective mass}\appear{, $\kappa$ is the dielectric constant}\appear{, and the average radii of the Bohr orbits are obtained from} 
+\[
+ < r_{n}>\,  \equal \appear{a_{0}} \appear{n^{2}}  \frac{m_{e}}{m^{*}}  \appear{\kappa} \appear{\,, \qquad a_{0}} \appear{= Bohr~radius~0.0529~\mathrm{nm} }
+ \] 
+
+\item This energy is relative to the minimum energy of the conduction band $E_C$\appear{, since the As atom is introduced as an impurity to the Si lattice }
+\implies{ one extra electron is free to move and to conduct electricity
+ }
+\item $E_{\infty}=0$ is at the energy $E_C$\appear{, other energies $E_{n}$ lie close below it, inside the band gap}
+
+\end{itemize}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{n-type extrinsic semiconductor}
+
+\seminormal
+\begin{itemize}[itemsep=1.65mm]
+	
+\item If we assume $m^* \approx 0.2 m_{e}$ \appear{(value for $m^{*}$ in silicon)} \appear{then $E_{1}=-0.020$\;eV lies lower relative the bottom of conduction band} \appear{i.e. is 'smaller' than the $-13.6$\;eV (= hydrogen ground state)}
+
+\item Also $\appear{<r_{1}>=3.1 \mathrm{~nm}} \appear{=60 \times}$ \appear{radius of hydrogen ground state}
+
+\item Thus, the extra electrons can be easily excited to the conduction band\appear{, since the \CDAlert[red]{ionization energy is close to $k T$ of room temperature}}
+
+\item The hydrogen-like levels just below the conduction band are called \CDAlert[red]{donor levels}\appear{, since they \Alert[red]{'donate' electrons to the conduction band}} \appear{without leaving holes in the valence band}
+
+\item This type of doped semiconductor is called \CDAlert[red]{n-type semiconductor}
+
+\item The conductivity of the doped material can be controlled by changing the impurity concentration
+\implies{ Already few parts per million \CDAlert[red]{(ppm) of impurity} noticeably change the conductivity }
+\end{itemize}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%
+%\begin{frame}
+%\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+%
+%%n-tyoe extrinsic semiconductor
+%\begin{itemize}
+%	\item Thus, the extra electrons can be easily excited to the conduction band, since the ionization energy is close to $k T$ of room temperature
+%
+%\item The hydrogen-like levels just below the conduction band are called donor levels, since they 'donate' electrons to the conduction band without leaving holes in the valence band.
+%
+%\item This type of impurity semiconductor is called $\underline{n}$-type semiconductor
+%
+%\item The conductivity of the doped material can be controlled by controlling the amount of impurity added
+%
+%\item Even few parts per million (ppm) of impurity
+%\end{itemize}
+%
+%%\xdef\loc{east}
+%%\begin{tikzpicture}[remember picture,overlay] % anchor=south
+%%    \node (A) [yshift=\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,height=7cm]{Figures_booklet/SOM_10_Bonding_figures/SOM_Bonding_Figure_1.png}}; %scale=\figscale. % 8cm max height
+%%\end{tikzpicture}
+%
+%\endofslide 
+%%\endofsection
+%\end{frame}
+%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{n-type extrinsic semiconductor, summary}
+
+\begin{itemize}
+	\item The valence band of the intrinsic semiconductor is completely full \implies{ Each impurity atom add extra electron in the conduction band }
+
+\item Also, each impurity atom has an extra positive charge
+
+\item The net effect is 'donor state'\appear{, and it lies just below the conduction band}\appear{, typically around ${\sim} 0.05$\;eV lower in energy}
+\end{itemize}
+\vspace{2mm}
+\appear{\xdef\loc{south east}%
+\begin{tikzpicture}[remember picture,overlay]% anchor=south
+    \node (A) [yshift=-0.25*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,width=7cm]{Figures_booklet/SOM_10_Bonding_figures/SOM_Bonding_Figure_39.png}};%scale=\figscale. % 8cm max height
+\end{tikzpicture}%
+}
+
+\begin{minipage}{6.5cm}
+\begin{itemize} 
+	\item Therefore, the electrons from donor states \appear{can be excited to the conduction band} \appear{already by fairly low ambient temperatures} 
+\end{itemize}
+
+\end{minipage}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{p-type extrinsic semiconductor}
+
+\seminormal
+%p-type extrinsic semiconductor
+\begin{itemize}[itemsep=1.6mm]
+	\item Another type of an extrinsic semiconductor is a \CDAlert[blue]{$\mathbf{p}$-type semiconductor}
+	
+	\item There, a silicon atom in the lattice can be replaced by a \CDAlert[blue]{trivalent} \Alert[blue]{aluminum \appear{(or gallium)}} \appear{atom}\appear{, which has three valence electrons}
+	
+	\item Aluminum accepts electrons from the valence band of silicon to complete four covalent bonds
+	\implies{  These are '\CDAlert[blue]{acceptor states}' }
+
+	\item Acceptor states are easily filled by electrons from the valence band\appear{, excited already by $k_B T$ of room temperature}
+\end{itemize}
+
+\appear{\xdef\loc{south}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.25*\figYshift,xshift=0*\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=3,height=4cm]{Figures_booklet/SOM_10_Bonding_figures/Tikz_SOM_Bonding_figures6_12_fixed}}; %scale=\figscale. % 8cm max height
+\end{tikzpicture}
+}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{p-type extrinsic semiconductor}
+
+\begin{itemize}
+	\item When an electron is excited to the acceptor states\appear{, a hole is left behind into the valence band}
+	\implies{ Positive charge carriers are created into the semiconductor }
+	
+	\item To summarize, depending on the type of the dopant\appear{, i.e. the added impurities}\appear{, an intrinsic semiconductor \Alert[fuchsia]{can be made either n- or p-type extrinsic semiconductor}}
+\end{itemize}
+
+% 6.5 cm = midway, 10 cm = 3/4 
+\vspace{2.5mm}
+\begin{minipage}{6.5cm}
+	\begin{itemize}	
+	\item The \Alert[red]{conductivities can be greatly increased}! 
+	
+	\item More importantly\appear{, sophisticated combinations of n- and p-type extrinsic semiconductors} \appear{can be used to make marvellous \Alert[fuchsia]{electronic components}! }
+\end{itemize}
+\end{minipage}
+
+\xdef\loc{south east}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.25*\figYshift,xshift=1*\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,width=7cm]{Figures_booklet/SOM_10_Bonding_figures/SOM_Bonding_Figure_40.png}}; %scale=\figscale. % 8cm max height
+\end{tikzpicture}
+
+%\endofslide 
+\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+

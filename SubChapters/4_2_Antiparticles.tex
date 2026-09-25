@@ -1,0 +1,296 @@
+% !TEX root = ../aa_SoM_Chapters.tex
+
+%% HARRIS: Chapter 9
+%\xdef\Isectiontitle{Statistical Mechanics} 
+%%
+%\xdef\IaSubsectiontitle{A Simple Thermodynamic System} 
+%\xdef\IbSubsectiontitle{Entropy and Temperature}
+%\xdef\IcSubsectiontitle{Einstein's solid}
+%\xdef\IdSubsectiontitle{Boltzmann \& Maxwell–Boltzmann distributions}
+%\xdef\IeSubsectiontitle{Classical Averages}
+%
+%\xdef\IfSubsectiontitle{Quantum Distributions} 
+%\xdef\IgSubsectiontitle{The Quantum Gas} 
+%\xdef\IhSubsectiontitle{Photon Gas}
+%\xdef\IiSubsectiontitle{The Laser}
+%\xdef\IjSubsectiontitle{Specific Heats} 
+%\xdef\IkSubsectiontitle{Debye Model} 
+
+% ö = \%c3\%b6
+% ä = \%C3\%A4
+
+\xdef\sectiontitle{\IVsectiontitle} %aiheuttama
+
+%%%%%%%%%%%%%%%
+\begin{frame}[label=4_2_a]%
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+
+%\vspace{\chapterTOCvksip}%
+\begin{itemize}[leftmargin=0.5cm,itemsep=\chapterTOCitemsep]
+    \item[4.1] \hyperlink{4_1_a}{\IVaSubsectiontitle}
+    \item[4.2] \hyperlink{4_2_a}{\CDAlert[red]{\IVbSubsectiontitle}}	
+    \item[4.3] \hyperlink{4_3_a}{\IVcSubsectiontitle}	
+    \item[4.4] \hyperlink{4_4_a}{\IVdSubsectiontitle}
+    \item[4.5] \hyperlink{4_5_a}{\IVeSubsectiontitle}
+    \item[4.6] \hyperlink{4_6_a}{\IVfSubsectiontitle}
+    \item[4.7] \hyperlink{4_7_a}{\IVgSubsectiontitle}
+\end{itemize}
+
+%\endofslide 
+\end{frame}
+%%%%%%%%%%%%%%%
+\xdef\sectiontitle{\IVbSubsectiontitle} 
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{First discovery}
+
+\semismall
+\begin{itemize}[itemsep=1.5mm]
+	\item In 1932, the same year that neutron was discovered\appear{, also \CDAlert[blue]{positron} was discovered }
+	\item The particle has the same mass and intrinsic angular momentum as the electron\appear{, but has positive charge} 
+	\item It is the antiparticle of electron\appear{, represented by symbol $e^{+}$}\appear{, sometimes in connection with radioactive decay also $\beta^{+}$}
+	\item The electron–positron pairs can be seen to be produced from e.g. $300 \mathrm{\;MeV}$ synchrotron $\mathrm{X}$-rays \appear{(see figure)}%
+	\appear{\xdef\loc{south east}%
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.25*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[width=9cm]{Figures_booklet/SOM_11_Fundamental_particles_figures/SOM_Tipler_Fundamental_Figure_1.png}};% 8cm max height
+\end{tikzpicture}} 
+	\item Positron is generated simultaneously with an electron in this kind of \CDAlert[red]{pair} \CDAlert[red]{production process}\appear{, and positrons}% are
+	\end{itemize}
+
+% 6.5 cm = midway, 10 cm = 3/4 
+%\vspace{1.5mm}
+\begin{minipage}{5.0cm}
+\begin{itemize}[itemsep=1.5mm]
+	\item[]  are also seen to annihilate with electrons \appear{in a process resembling recombination of e.g. electrons and holes in the semiconductor}\appear{, producing a photon}
+\end{itemize}
+\end{minipage}
+%\vspace{2.5mm}
+
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+%\framesubtitle{Antiparticles}
+
+\seminormal
+\begin{itemize}
+	\item It turns out that nearly all fundamental particles have their own \CDAlert[red]{antiparticles}:
+\begin{itemize}
+	\item Protons $(p)$ have antiprotons $(\bar{p})$
+\item Neutrons $(n)$ have antineutrons $(\bar{n})$\appear{, in fact it might be very \Alert[blue]{difficult to distinguish a neutron form an antineutron}}\appear{, since they both are electrically neutral.} \appear{But antineutrons annihilate with neutrons}\appear{, while two neutrons do not annihilate}
+
+\item Similar to the most knowns leptons\appear{, electron and positron}\appear{, there are other leptons such as} \appear{\CDAlert[red]{muon} ($\mu^{-}$)} \appear{and \CDAlert[red]{antimuon} ($\mu^{+}$)}
+
+\item Some \CDAlert[blue]{uncharged particles} \appear{(such as $\pi^{o}$)} \appear{are \CDAlert[blue]{their own antiparticles}}
+\end{itemize}
+
+\item While antiparticles can be created\appear{, bulk antimatter has not been found}
+
+\item Neither the \Alert[red]{standard model} \appear{nor the theory of \CDAlert[fuchsia]{general relativity (GR)} provides a known explanation.} \appear{The universe is assumed to be charge neutral}\appear{, and the \CDAlert[fuchsia]{Big Bang} should have produced equal amounts of matter and antimatter}\appear{, but somehow the balance is off}
+
+\end{itemize}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Theoretical explanation for antiparticles}
+
+%
+\begin{itemize}
+	\item \CDAlert[blue]{Dirac formulated a relativistic wave equation} \appear{(\CDAlert[tuniblue]{Dirac equation})}\appear{, which predicted existence of positron as one of its solutions }
+	
+	\item Let us see how we could motivate the search for antiparticles.\appear{ Starting from the Schrödinger equation for a free particle: }
+\[
+-\frac{\hbar^{2}}{2 m} \frac{\partial^{2}}{\partial x^{2}} \appear{\Psi(x, t)}  \equal \appear{i \hbar} \frac{\partial}{\partial t} \appear{\Psi(x, t)}
+\]
+\appear{which, using the operators} \appear{($\hat{p}$ and $\hat{E}$)}\appear{, can be written in the form: }
+\[
+-\frac{1}{2 m} \appear{\hat{p}^{2}} \appear{\Psi(x, t)}  \equal \appear{\hat{E}} \appear{\Psi(x, t)}
+\]
+\appear{where the \CDAlert[blue]{kinetic energy}} \appear{should be in \CDAlert[blue]{relativistic} form} \appear{(not $p^{2} / 2 m$)}: 
+\[
+(p c)^{2}  \plus  \appear{(m c^{2} )^{2}}  \equal \appear{E^{2}}
+\]
+%So, using operators, we obtain: $\quad c^{2} \hat{p}^{2} \Psi(x, t)+m^{2} c^{4} \Psi(x, t)=\hat{E}^{2} \Psi(x, t)$, and the so called Klein-Gordon equation: $-c^{2} \hbar^{2} \frac{\partial^{2}}{\partial x^{2}} \Psi(x, t)+m^{2} c^{4} \Psi(x, t)=-\hbar^{2} \frac{\partial^{2}}{\partial t^{2}} \Psi(x, t)$
+%Finally, Dirac's equation would extend this, but also taking spin into account
+\end{itemize}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Theoretical explanation for antiparticles}
+
+%
+\begin{itemize}
+%	\item \CDAlert[blue]{Dirac formulated the relativistic wave equation}, which more or less predicted positron as one of its solutions 
+%	
+%	\item Let us see how we get to option of having antiparticles.
+%First, the Schrödinger equation for a free particle is given: 
+%\[
+%-\frac{\hbar^{2}}{2 m} \frac{\partial^{2}}{\partial x^{2}} \Psi(x, t)=i \hbar \frac{\partial}{\partial t} \Psi(x, t)
+%\]
+%which, using the operators, can be written in the form: 
+%\[
+%-\frac{1}{2 m} \hat{p}^{2} \Psi(x, t)=\hat{E} \Psi(x, t)
+%\]
+%where the kinetic energy should be in relativistic form (not $p^{2} / 2 m$): 
+%\[
+%(p c)^{2}+ (m c^{2} )^{2}=E^{2}
+%\]
+\item Using operators, we can describe the previous equation in the form: 
+\[
+c^{2} \appear{\hat{p}^{2}} \appear{\Psi(x, t)}  \plus \appear{m^{2} c^{4}} \appear{\Psi(x, t)}  \equal \appear{\hat{E}^{2}} \appear{\Psi(x, t) \,,}
+\]
+\appear{and the so-called \CDAlert[fuchsia]{Klein–Gordon equation}:} 
+\[
+-c^{2} \hbar^{2} \frac{\partial^{2}}{\partial x^{2}} \appear{\Psi(x, t)}  \plus \appear{m^{2} c^{4} \Psi(x, t)}  \equal \appear{-\hbar^{2}} \frac{\partial^{2}}{\partial t^{2}} \appear{\Psi(x, t)}
+\]
+\appear{which is a \CDAlert[red]{relativistic (scalar) wave equation}} \appear{(\Alert[red]{Lorentz-covariant})}\appear{, and its solutions can be used to describe relativistic but \CDAlert[red]{spinless particles/fields}}
+
+\item Finally, \CDAlert[blue]{Dirac's equation} would extend this into relativistic vector waves\appear{, by \CDAlert[blue]{taking spin into account}}
+\implies{ Solutions would describe relativistic massive particles with a spin (e.g. \CDAlert[blue]{electrons})}
+\end{itemize}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Theoretical explanation for antiparticles}
+
+\seminormal
+\begin{itemize}
+	\item Above equations give us insight on how one could have two alternative wave functions\appear{, one for \CDAlert[red]{particles}} \appear{and the other for \CDAlert[blue]{antiparticles}}
+
+\item The energy of a relativistic free particle can be obtained by: 
+\[
+E^{2}  \equal \appear{(p c)^{2}}  \plus \appear{\textrm{((}m c^{2}\textrm{))}^{2}} \qquad \Rightarrow \qquad \appear{E}  \equal \appear{ \pm \textrm{((}(p c)^{2}+(m c^{2})^{2} \textrm{))}^{1/2}}
+\]
+\appear{i.e. two values (\CDAlert[red]{positive}/\CDAlert[blue]{negative}) for energy can be found}
+\appear{\xdef\loc{south east}%
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.25*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[scale=0.67,page=3]{Figures_booklet/SOM_11_Fundamental_particles_figures/Tikz_SOM_Fundamental_figures_combo.pdf}};% 8cm max height
+\end{tikzpicture}}
+
+\end{itemize}
+
+% 6.5 cm = midway, 10 cm = 3/4 
+\vspace{2.5mm}
+\begin{minipage}{9.1cm}
+\begin{itemize}
+	\item Positive-valued $E$ is intuitive\appear{, energies are higher than the rest energy $m c^{2}$} 
+	\item But wave functions associated with negative-energy states could also exist\appear{, having energies less than $-m c^{2}$\;? }
+	
+	\item Although the positive root is usually taken\appear{, there is \CDAlert[blue]{no physical reason to omit the negative root}}
+\end{itemize}
+\end{minipage}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+%\framesubtitle{Antiparticles}
+\framesubtitle{Theoretical explanation for antiparticles}
+
+\semismall
+\begin{itemize}
+	\item If negative energy states going all the way down to $E=-\infty$ are possible\appear{, why electrons in the universe do not fall down to these negative energies?}
+
+\item Dirac suggested to treat positrons analogous to the hole states in semiconductors 
+
+\item There would be an \Alert[blue]{'infinite sea' of negative-energy states filled with electrons}. \appear{So, all the negative states would be normally filled}\appear{, and Pauli exclusion principle would prevent any other electrons from dropping into the negative states}
+
+\item If the electron in the negative sea is given enough energy \appear{(e.g. by absorbing a photon $h f>2 m c^{2}$)}\appear{, then it can jump out of this sea and become an electron with positive energy}
+\appear{\xdef\loc{south east}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.25*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[scale=0.67,page=4]{Figures_booklet/SOM_11_Fundamental_particles_figures/Tikz_SOM_Fundamental_figures_combo.pdf}}; % 8cm max height
+\end{tikzpicture}}
+\end{itemize}
+
+% 6.5 cm = midway, 10 cm = 3/4 
+\vspace{2.5mm}
+\begin{minipage}{8.2cm}
+\begin{itemize}
+	
+\item Process would leave behind a hole in the sea\appear{, which would seemingly act as a particle of positive charge}
+
+\item A particle may also fall in the hole and thus disappear\appear{, but only if a hole already exists}
+\end{itemize}
+\end{minipage}
+%\vspace{2.5mm}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+%\framesubtitle{Antiparticles}
+\framesubtitle{QED and antiparticles}
+
+\begin{itemize}
+	\item The notion, that we are immersed within an infinite sea of negative-energy electrons\appear{, is somewhat unsettling} 
+	
+	\item It was rendered unnecessary with the development of quantum electrodynamics \appear{(\CDAlert[fuchsia]{QED})} \appear{by \CDAlert[fuchsia]{R. Feynman} and others in the late 1940s}
+
+\item QED\appear{, whose predictions have been verified to the highest precision of any physical theory}\appear{, requires that each particle has an antiparticle}\appear{, which has the same mass but an opposite charge} 
+
+\item \CDAlert[blue]{Positron} is the antiparticle of \CDAlert[red]{electron} 
+\item Also other spin $1 / 2$ particles\appear{, e.g. proton and neutron}\appear{, have their antiparticles (found in 1955 and 1957, respectively)}
+
+\item The \CDAlert[fuchsia]{creation of proton–antiproton pair} \appear{requires energy of at least $2 m_{p} c^{2}=$ \CDAlert[fuchsia]{1877 \;MeV}}
+\end{itemize}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+%\framesubtitle{Antiparticles}
+\framesubtitle{QED and antiparticles}
+
+\begin{itemize}
+	\item Dirac's concept of infinite sea of electrons was later discarded \appear{(in late 1940s)} \appear{with further reformulation of Dirac's theory and the QED}
+
+\item As one alternative hypothesis\appear{, \CDAlert[blue]{Ernst Stueckelberg} and \CDAlert[tuniblue]{Feynman} suggested that}\appear{, mathematically, \CDAlert[blue]{positron} can be described \Alert[blue]{as an electron traveling backwards in time}}
+
+\item In any case, the fact remains that electron–positron pairs \appear{can be created and destroyed}\appear{, as well as the feature that all particles have an antiparticle}
+
+\item The \CDAlert[fuchsia]{Dirac theory} is inherently a many-particle theory\appear{, and it provides the beginning of a theoretical framework for creation and destruction of all particles}
+\end{itemize}
+
+%\endofslide 
+\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+

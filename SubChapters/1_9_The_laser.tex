@@ -1,0 +1,323 @@
+% !TEX root = ../aa_SoM_Chapters.tex
+
+% ö = \%c3\%b6
+% ä = \%C3\%A4
+
+\xdef\sectiontitle{\Isectiontitle} %aiheuttama
+
+%%%%%%%%%%%%%%%
+\begin{frame}[label=1_9_a]%[label=1_9_TOC1]
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+
+\vspace{0.5cm}
+
+\begin{itemize}[leftmargin=0.5cm,itemsep=2mm]
+    \item[1.1]<1-> \hyperlink{1_1_a}{\IaSubsectiontitle}
+    \item[1.2]<1-> \hyperlink{1_2_a}{\IbSubsectiontitle}	
+    \item[1.3]<1-> \hyperlink{1_3_a}{\IcSubsectiontitle}	
+    \item[1.4]<1-> \hyperlink{1_4_a}{\IdSubsectiontitle}
+    \item[1.5]<1-> \hyperlink{1_5_a}{\IeSubsectiontitle}
+    \item[1.6]<1-> \hyperlink{1_6_a}{\IfSubsectiontitle}
+    \item[1.7]<1-> \hyperlink{1_7_a}{\IgSubsectiontitle}
+\end{itemize}
+
+\vspace{-1cm}
+\begin{itemize}[leftmargin=9.5cm,itemsep=2mm]
+    \item[1.8]<1-> \hyperlink{1_8_a}{\IhSubsectiontitle}
+	\item[1.9]<1-> \hyperlink{1_9_a}{\CDAlert[blue]{\IiSubsectiontitle}}
+	\item[1.10]<1-> \hyperlink{1_10_a}{\IjSubsectiontitle}
+	\item[1.11]<1-> \hyperlink{1_11_a}{\IkSubsectiontitle}
+\end{itemize}
+
+%\endofslide 
+\end{frame}
+%%%%%%%%%%%%%%%
+
+
+\xdef\sectiontitle{\IiSubsectiontitle}
+
+%%%%%%%%%%%%%%%
+\begin{frame}%[label=1_9_a]
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+
+%\vspace{1.5mm}
+\begin{minipage}{8.1cm}
+\begin{itemize}[itemsep=1.7mm]
+	\item Lasers are a good example of a photon gas system
+	\item They are devices where high energy density of electromagnetic radiation \appear{is introduced within a cavity}\appear{, outputting a \Alert[red]{coherent unidirectional monochromatic beam} of light}
+
+\item The basic components are:
+\begin{itemize}
+\small
+	\item A \CDAlert[fuchsia]{three-level system} \appear{in which atoms in the upper level "2"} \appear{make a transition to the lower level "1"} \appear{that is stimulated by the presence of photons of the right frequency}
+\item An \CDAlert[blue]{optical cavity} \appear{to provide an environment with the right kind of photons}
+\item \CDAlert[red]{Pumping mechanism} to re-populate the upper level "2" \appear{for repeated operation}
+\end{itemize}
+\end{itemize}
+\end{minipage}
+
+\xdef\loc{east}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=0cm,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,height=8cm]{Figures_booklet/SOM_9_Statistical_mechanics_figures/SOM_Figure_21.png}}; %scale=\figscale. % 8cm max hei
+\end{tikzpicture}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+
+\begin{itemize}
+	\item Practical operating principles of laser:
+
+\item[] \begin{itemize}[itemsep=2.3mm] \small
+	\item Parallel mirrors are placed at the medium's two ends
+  \item Photons not parallel the axis \appear{have relatively few opportunities to induce stimulated emission}
+  \item \Alert[blue]{Photons parallel to axis reflect back and forth}\appear{, providing many opportunities}
+  \item The length $L$ \appear{is tuned to standing wave:} \appear{$L=n \lambda / 2$}
+    % 6.5 cm = midway, 10 cm = 3/4 
+%\vspace{2.5mm}
+\end{itemize}
+\end{itemize}
+\begin{minipage}{6.25cm}
+\begin{itemize}
+\item[] \begin{itemize}[itemsep=2.3mm]  \small
+  \item A resonance is formed inside this optical cavity
+  \item \CDAlert[blue]{Parallel radiation gets amplified}
+  \item Off-axis radiation diminishes
+  \item \Alert[red]{Laser wavelength becomes narrower than natural line width}
+  \item More energy can be fed into the laser by an 'optical \Alert[fuchsia]{pumping process}'
+\end{itemize}
+\end{itemize}
+  \end{minipage}
+
+\xdef\loc{south east}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.25*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,width=6.7cm]{Figures_booklet/SOM_9_Statistical_mechanics_figures/SOM_Figure_23.png}}; %scale=\figscale. % 8cm max hei
+\end{tikzpicture}
+
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+
+\begin{minipage}{7cm}
+\begin{itemize}[itemsep=2.7mm]
+	% 6.5 cm = midway, 10 cm = 3/4 
+\vspace{2mm}
+\small
+	\item \CDAlert[red]{Spontaneous emission} \appear{occurs when an electron in a higher atomic energy level} \appear{drops to lower level in a short but unpredictable time}\appear{, emitting a photon}
+
+\item \CDAlert[blue]{Absorption} \appear{occurs when an electron is promoted to higher atomic energy level} \appear{by absorbing a photon}
+
+\item In \CDAlert[fuchsia]{stimulated emission}\appear{, an electron in higher energy level is influenced by a passing photon}\appear{, whose energy is precisely the difference between the upper and lower level} 
+ \item[] \begin{itemize}
+	\item[=>] As a result, another photon with identical energy \appear{and wavelength} \appear{to the first photon is emitted}\appear{, and moreover in the same direction and with a \CDAlert[fuchsia]{correlated phase} with the first one}
+\end{itemize}
+ 
+
+\end{itemize}
+\end{minipage}
+
+\xdef\loc{east}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=0cm,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,height=8cm,trim={0 0 13cm 0},clip]{Figures_booklet/SOM_9_Statistical_mechanics_figures/SOM_Figure_22.png}}; %scale=\figscale. % 8cm max hei
+\end{tikzpicture}
+
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+
+\begin{minipage}{7cm}
+\begin{itemize}\small 
+	% 6.5 cm = midway, 10 cm = 3/4 
+\vspace{2mm}
+	\item How to describe these three processes mathematically?
+For simplicity, gases are studied (simpler energy state treatment than in solids)
+
+\item In spontaneous emission\appear{, the \CDAlert[red]{rate $R_{\text{spon}}$}} \appear{must be proportional to the \Alert[red]{number of atoms in the excited state, $N_{2}$}}\appear{, the proportionality constant being $A_{\text{spon}}$} \appear{(\Alert[red]{$R_{\text{spon}}=A_{\text {spon}} N_2$})}
+
+\item \CDAlert[blue]{Rate of absorption} must be proportional to the number of particles in the lower level, $N_{1}$\appear{, but also proportional to the number of photons of the right energy which are entering the atom $Y(\Delta E)$}\appear{, where $\Delta E=E_{2}-E_{1}$.} \appear{The \Alert[blue]{proportionality constant is $B_{abs}$}} \appear{(\Alert[blue]{$R_{abs}=B_{abs} N_{1} Y(\Delta E)$})}
+
+\item Also for \CDAlert[fuchsia]{stimulated emission}\appear{, we need the number of available atoms in the higher level}\appear{, as well as the number of photons of right energy}\appear{, which can trigger the emission} \appear{(\Alert[fuchsia]{$R_{\text{stim}}=B_{\text{stim}} N_{2} Y(\Delta E)$})}
+\end{itemize}
+\end{minipage}
+
+\xdef\loc{east}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=0cm,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,height=8cm,trim={0 0 13cm 0},clip]{Figures_booklet/SOM_9_Statistical_mechanics_figures/SOM_Figure_22.png}}; %scale=\figscale. % 8cm max hei
+\end{tikzpicture}
+
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+
+\begin{itemize}
+	\item The coefficients $A_{\text {spon}}$\appear{, $B_{abs}$} \appear{and $B_{\text {stim}}$} \appear{are known as the \CDAlert[red]{Einstein's coefficients} }
+	
+	\item In an equilibrium, these processes are in a balance:
+\[
+\begin{aligned}
+& & R_{\text {spon}} \appear{+R_{\text {stim}}}  &\equal \appear{R_{abs}} \\
+ &\appear{\Rightarrow}& \qquad \appear{A_{\text {spon}} N_{2}} \appear{+B_{\text {stim}} N_{2} Y(\Delta E)} & \equal \appear{B_{abs} N_{1} Y(\Delta E)} \qquad \quad 
+\end{aligned}
+\]
+
+\item From where we solve for $Y(\Delta E)$\appear{, and using $\appear{N_{1} / N_{2}}  \equal \appear{e^{-\frac{E_{1}}{k_{B} T}}} \appear{/ e^{-\frac{E_{2}}{k_{B} T}}}$}\appear{, we get:}
+\[
+\begin{aligned}
+&\Rightarrow& 
+\qquad \appear{Y(\Delta E)} & \equal \frac{A_{\text {spon}} \appear{/ B_{abs}}}{\frac{N_{1}}{N_{2}}  \minus \frac{B_{\text {stim}}}{B_{abs}}}
+ \equal 
+ \frac{A_{\text {spon}} / B_{abs}}{\frac{e^{-E_{1} / k_{B} T}}{e^{-E_{2} / k_{B} T}}  \minus \frac{B_{\text{stim}}}{B_{abs}}} \\
+ \vspace{6mm}
+&\Rightarrow&
+ \appear{Y(\Delta E)} & \equal \frac{A_{\text {spon}} / B_{abs}}{\appear{e^{\Delta E / k_{B} T}}  \minus \frac{B_{\text {stim}}}{B_{abs}}}
+  \equal 
+  \frac{A_{\text {spon}} / B_{\text {stim}}}{\Frac{B_{abs}}{B_{\text{stim}}} e^{\Delta E / k_{B} T}-1}  \qquad \quad 
+\end{aligned}
+\]
+\end{itemize}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+
+\begin{itemize}
+	\item The quantity $Y(\Delta E)$ is not strictly speaking a number of photons entering the atom\appear{, but rather a photon gas spectral energy density for the quanta of right energy}\appear{, given by \CDAlert[red]{Planck's law}} 
+	
+	\item So, we can compare:
+\[
+\begin{aligned}
+Y(\Delta E) &\equal \frac{A_{\text {spon}} / B_{abs}}{\frac{N_{1}}{N_{2}} \minus \frac{B_{\text {stim}}}{B_{abs}}}
+ \equal 
+ \frac{A_{\text{spon}} / B_{abs}}{\frac{e^{-E_{1} / k_{B} T}}{e^{-E_{2} / k_{B} T}}-\frac{B_{\text {stim}}}{B_{abs}}}
+  \equal 
+  \frac{A_{\text {spon}} / B_{abs}}{e^{\Delta E / k_{B} T}  \minus \frac{B_{\text {stim}}}{B_{\text {abs }}}}
+   \equal 
+   \frac{A_{\text {spon}} / B_{\text {stim}}}{\Frac{B_{abs}}{B_{\text {stim}}} e^{\Delta E / k_{B} T}-1} \\
+\appear{d U_{photon}(\Delta E)} &\equal 
+ \frac{h f^{3}}{e^{\Frac{\Delta E}{k_{B} T}}-1} \frac{8 \pi V}{c^{3}} \appear{d f} \quad \Rightarrow \quad \frac{1}{V} \frac{d U_{photon}}{d f}
+  \equal \frac{8 \pi}{c^{3}} \frac{h f^{3}}{e^{\Frac{\Delta E}{k_{B} T}}-1}  \equal  \appear{Y(\Delta E)}
+\end{aligned}
+\]
+\item Therefore, \CDAlert[blue]{in equilibrium} the below holds:
+\[
+B_{\text {stim}}=B_{abs} \qquad \appear{\text{resulting~in}} \qquad \appear{\frac{A_{\text {spon}}}{B_{\text {stim}}}  \equal \frac{8 \pi h f^{3}}{c^{3}}}
+\]
+\end{itemize}
+
+%\xdef\loc{east}
+%\begin{tikzpicture}[remember picture,overlay] % anchor=south
+%    \node (A) [yshift=0cm,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,height=7cm]{Figures_booklet/SOM_9_Statistical_mechanics_figures/SOM_Figure_17.png}}; %scale=\figscale. % 8cm max hei
+%\end{tikzpicture}
+
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+
+\begin{itemize}
+	\item Note, that condition \appear{$B_{\text{stim}}=B_{abs}$} \appear{means that an incoming photon is equally probable to trigger an absorption} \appear{as a stimulated emission}
+
+\item Frankly speaking, for lasers we do not favour this\appear{, we wish for the stimulation to dominate}\appear{, since we wish to have a strong coherent beam}\appear{, made by \CDAlert[red]{utilizing stimulated emission}}
+\end{itemize}
+
+\xdef\loc{south}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.25*\figYshift,xshift=0*\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=11,height=5.3cm]{Figures_booklet/SOM_9_Statistical_mechanics_figures/Tikz_SOM_Statistical_figures.pdf}}; %scale=\figscale. % 8cm max height
+\end{tikzpicture}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+
+\begin{itemize}
+	\item At normal temperature\appear{, in equilibrium}\appear{, nearly all of the atoms are in the ground state} 
+	\item Thus $N_{1} \gg N_{2}$\appear{, and for actual rates}\appear{, it follows that in normal temperature $N_{1} B_{abs} \gg N_{2} B_{\text{stim}}$}  
+	\implies{ \Alert[red]{stimulated emission is not actually pronounced} }
+
+\item Using optical pumping\appear{, i.\,e. an additional light source  with right frequency}\appear{, the ground states can be excited into higher states} 
+\implies{ Population of a higher level with energy $E_{3}$ increases }
+
+\item If the medium of the laser \appear{(often a \CDAlert[tuniblue]{transparent solid})} \appear{has a \CDAlert[fuchsia]{metastable state $E_{2}$}}\appear{, then many of the upper level $E_{3}$ states can drop down to this metastable state $E_{2}$} 
+\implies{ Possible to create a situation where $N_{1}<N_{2}$ }
+
+\end{itemize}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+
+\begin{itemize}
+	\item First, one uses optical pumping \appear{so that $N_{1} \approx \appear{N_{2}} \approx \appear{N_{3}}$} 
+	\item When the pumping is stopped\appear{, very soon afterwards}\appear{, the level $E_{3}$ will depopulate}\appear{, and soon there will be a high population of $E_{2}$}\appear{, and also $N_{1}<N_{2}$}
+	
+	\item This phenomenon\appear{/condition} \appear{is called \CDAlert[red]{population inversion}} 
+
+\end{itemize}
+\vspace{2.5mm}
+\begin{minipage}{3.8cm}
+\begin{itemize}
+	 \item As a result, once the photon gas in the laser starts
+	 to trigger more of the $E_{2}$
+	 metastable level atoms,
+	 eventually \Alert[red]{stimulated
+	 emission rate will be
+	 enhanced}
+\end{itemize}
+\end{minipage}
+\vspace{2.5mm}
+
+
+\xdef\loc{south east}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.25*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,width=9.75cm]{Figures_booklet/SOM_9_Statistical_mechanics_figures/SOM_Figure_26.png}}; %scale=\figscale. % 8cm max hei
+\end{tikzpicture}
+
+
+%\endofslide 
+\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%

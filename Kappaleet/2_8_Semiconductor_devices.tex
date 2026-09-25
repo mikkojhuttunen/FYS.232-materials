@@ -1,0 +1,727 @@
+% !TEX root = ../bb_AiRa_Kappaleet.tex
+
+%% HARRIS: Chapter 10
+
+% ö = \%c3\%b6
+% ä = \%C3\%A4
+
+\xdef\sectiontitle{\IIsectiontitle} 
+\TOCrefs
+
+%%%%%%%%%%%%%%%
+\begin{frame}[label=2_8_a]%[label=2_7_TOC1]
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\label{\TOCname}
+
+\vspace{\chapterTOCvksip}
+\begin{itemize}[leftmargin=0.5cm,itemsep=3mm]
+    \item[2.1]<1-> \hyperlink{2_1_a}{\IIaaSubsectiontitle}
+    \item[2.2]<1-> \hyperlink{2_2_a}{\IIaSubsectiontitle}
+    \item[2.3]<1-> \hyperlink{2_3_a}{\IIbSubsectiontitle}	
+    \item[2.4]<1-> \hyperlink{2_4_a}{\IIcSubsectiontitle}	
+    \item[2.5]<1-> \hyperlink{2_5_a}{\IIdSubsectiontitle}
+    \item[2.6]<1-> \hyperlink{2_6_a}{\IIeSubsectiontitle}
+    \item[2.7]<1-> \hyperlink{2_7_a}{\IIfSubsectiontitle}
+    \item[2.8]<1-> \hyperlink{2_8_a}{\CDAlert[blue]{\IIgSubsectiontitle}}
+    \item[2.9]<1-> \hyperlink{2_9_a}{\IIhSubsectiontitle}
+    \item[2.10]<1-> \hyperlink{2_10_a}{\IIiSubsectiontitle}
+\end{itemize}
+
+
+%\endofslide 
+\end{frame}
+%%%%%%%%%%%%%%%
+
+\xdef\sectiontitle{\IIgSubsectiontitle} 
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Binääriset yhdistepuolijohteet}
+\appear{}
+%Compound semiconductors
+\begin{itemize}[itemsep=1.5mm] \seminormal
+	\item Alkuainepuolijohteet kuuluvat suurimmaksi osaksi jaksollisen järjestelmän ryhmään 14 (IV): \appear{Si, Ge}
+	
+\item \CDAlert[fuchsia]{Yhdistepuolijohteet}, joista suurin osa on ryhmien III–V\appear{, II–VI} \appear{tai IV–IV alkuaineiden sekoituksia}\appear{, ovat erittäin yleisiä} \appear{(myös Si$_{1-x}$Ge$_{x}$)}
+\appear{\xdef\loc{south east}%
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.5*\figYshift,xshift=0mm, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,height=5.65cm]{Figures_booklet/SOM_semiconductor_table_figure.png}};%scale=\figscale. % 8cm max height
+\end{tikzpicture}}
+\item Muuttamalla yhdisteiden alkuainepitoisuuksia, puolijohteen ominaisuuksiin voidaan suuresti vaikuttaa \\ 
+\end{itemize}
+% 6.5 cm = midway, 10 cm = 3/4 
+\vspace{1.3mm}
+\begin{minipage}{5.35cm}
+	\begin{itemize}[itemsep=1.5mm]
+	\item[] (erityisesti energiarakoon\appear{, ja vöiden kaareutumisiin)}
+
+\item Kuvassa nähdään \Alert[red]{energiarako \appear{hilavakion funktiona}} \appear{yleisimmille binäärisille yhdistepuolijohteille\footnote{www.tf.uni-kiel.de} }
+
+\item Ominaisuuksien säädettävyys on oleellista puolijohdekomponenttien valmistuksessa!
+\end{itemize}
+
+\end{minipage}
+
+% great WWW: https://www.tf.uni-kiel.de/matwis/amat/semi_en/kap_5/backbone/r5_1_4.html
+%\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Diodi-liitos}
+%The Diode
+ \appear{}
+ \seminormal
+\begin{itemize}
+	\item \CDAlert[fuchsia]{Diodi} \appear{(tai diodi-liitos)} \appear{on ehkäpä yleisin puolijohdekomponentti.} \appear{Sen läpi sähkövirta \Alert[fuchsia]{kulkee vain yhteen suuntaan} }
+	
+	\item Diodi rakentuu p- \appear{ja n-tyypin puolijohdeosioista}\appear{, jotka on liitetty atomien tasolla kiinni toisiinsa.}\appear{ Yhdessä p- ja n-tyypin puolijohteista muodostuu \CDAlert[fuchsia]{pn-liitos}}	
+	
+	\item \CDAlert[red]{Päästösuunnattuun} pn-liitokseen kohdistetaan jännite \appear{niin että p-tyypin osan potentiaali on korkeammalla:}
+\end{itemize}
+	
+% 6.5 cm = midway, 10 cm = 3/4 
+\vspace{2.5mm}
+\begin{minipage}{6.3cm}
+	\begin{itemize}
+	\item[] \begin{itemize}	
+	\item elektronit sekä aukot mo-\\
+		lemmat etenevät kohti liitos-\\
+		kohtaa
+	\item Kohdatessaan ne yhdistyvät 
+	\implies{ \Alert[red]{liitoksen yli muodostuu \\jatkuva virta } } 
+\end{itemize}
+\end{itemize}
+
+\end{minipage}
+
+\xdef\loc{south east}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.25*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,width=8cm]{Figures_booklet/SOM_10_Bonding_figures/SOM_Bonding_Figure_41.png}}; %scale=\figscale. % 8cm max height
+\end{tikzpicture}
+\footnote{\HarrisCR[1-]}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Diodi-liitos}
+%The Diode
+ 
+ \seminormal
+\begin{itemize}
+	\item<1-> \CDAlert[fuchsia]{Diodi} (tai diodi-liitos) on ehkäpä yleisin puolijohdekomponentti. Sen läpi sähkövirta \Alert[fuchsia]{kulkee vain yhteen suuntaan}
+	
+	\item<1-> Diodi rakentuu p-tyypin puolijohdepalasta sekä n-tyypin puolijohteesta, jotka on liitetty atomien tasolla kiinni toisiinsa. Yhdessä p- ja n-tyypin puolijohteista muodostuu \CDAlert[fuchsia]{pn-liitos}	
+		
+	\appear{}
+	\item Pn-liitos voidaan kytkeä \appear{myös niin että $n$-tyypin puoli on korkeammassa potentiaalissa}\appear{, jolloin liitos on \CDAlert[blue]{estosuunnattu} }
+	\implies{ Sekä elektronit että aukot liik- \\
+		      kuvat liitoksesta poispäin, ja \\
+		      \Alert[blue]{virrankulku pysähtyy lähes heti}  }
+		      
+	\item Diodin käytös on todella erilaista \\ 
+		kuin esim. vastuksien\appear{, jotka\\
+		noudattavat Ohmin lakia}
+\end{itemize}
+	
+\xdef\loc{south east}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.25*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,width=8cm]{Figures_booklet/SOM_10_Bonding_figures/SOM_Bonding_Figure_41.png}}; %scale=\figscale. % 8cm max height
+\end{tikzpicture}
+\footnote{\HarrisCR[1-]}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{pn-liitos}
+%p-n junction
+\appear{}
+\seminormal
+\begin{itemize}[itemsep=1.4mm]
+	\item Kaksi seostettua puolijohdetta voidaan liittää toisiinsa \appear{\CDAlert[fuchsia]{synnyttäen} \CDAlert[fuchsia]{pn-liitoksen}} \appear{(esim. p-tyypin Ge ja n-tyypin Ge)}
+	
+	\item Erillään\appear{ kappaleilla on toisistaan poikkeavat fermitasot $E_F$} 
+	\appear{\xdef\loc{south east}%
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.35*\figYshift,xshift=1*\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,height=5.8cm]{Figures_booklet/SOM_10_Bonding_figures/SOM_Bonding_Figure_42.png}}; %scale=\figscale. % 8cm max height
+\end{tikzpicture}\footnote{\HarrisCR}}%
+
+	\item Liitoksen jälkeen, n-tyypissä korkealla olevat elektronit siirtyvät p-tyypin puolelle ja vastaavasti aukot
+\end{itemize}
+
+% 6.5 cm = midway, 10 cm = 3/4 
+%\vspace{2.5mm}
+\begin{minipage}{5.4cm}
+	\begin{itemize}[itemsep=1.4mm]
+	\item[] siirtyvät p-tyypin puolelta \\
+		   n-tyypin puolelle 
+	
+	\item Lyhyen varauksenkuljettajien siir\-ty\-mähetken jälkeen\appear{ systeemi löytää uuden makroskooppisen tasapainotilan}
+	
+	\item Tasapainossa fermitasot ovat molemmilla puolilla liitosta samat \appear{muodostaen kuvan (a) energiatasokaavion}
+	
+%	\item In addition, there will be a small build up of negative and positive charges into either sides of the depletion zone
+\end{itemize}
+\end{minipage}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Estosuuntainen pn-liitos}
+\appear{}
+\begin{itemize}[itemsep=1.5mm]
+	\item Kuvan 42 energiatasokaaviot selventävät diodin toimintaa. 
+	 \appear{Kytketyn nollajännitteen tapauksessa (a)}\appear{ vain muutamien elektronien täytyy siirtyä liitoksen yli, jotta tasapainotila saavutetaan}
+	
+	\item Liitosaluetta kutsutaan \Alert[red]{tyhjennysalueeksi}, jossa ei ole  varauksen-\\
+\end{itemize}
+
+\begin{minipage}{5.3cm}
+	\begin{itemize}[itemsep=1.5mm]
+	\item[] kuljettajia \appear{(leveys estää elektronien tunne\-loi\-tu\-misen)}
+	%, vöiden eroja on kuvassa liioiteltu
+	\item \Alert[blue]{Estosuunnatussa liitok\-ses\-sa} (b) \appear{vähemmistöva\-rauk\-sen\-kuljettajat ovat har\-vi\-naisia}\appear{, joten eivät synnytä virtaa.} \appear{Kasvanut potentiaaliero puolestaan estää enemmistövarauksenkuljettajien liikkeen}
+
+\end{itemize}
+\end{minipage}
+
+\xdef\loc{south east}%
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.35*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,height=5.8cm]{Figures_booklet/SOM_10_Bonding_figures/SOM_Bonding_Figure_42.png}};%scale=\figscale. % 8cm max height
+\end{tikzpicture}
+\footnote{\HarrisCR[1-]}
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Päästösuuntainen pn-liitos}
+%\appear{}
+\begin{itemize}[itemsep=1.5mm]
+	\item<1-> Kuvan 42 energiatasokaaviot selventävät diodin toimintaa. Kytketyn nollajännitteen tapauksessa (a) vain muutamien elektronien täytyy siirtyä liitoksen yli, jotta tasapainotila saavutetaan
+	
+	\item<1-> Liitoksen kutsutaan called \Alert[red]{tyhjennysalueeksi}, jossa ei ole  varauksen-\\
+\end{itemize}
+%\vspace{2.5mm}
+\begin{minipage}{5.3cm}
+	\begin{itemize}[itemsep=1.5mm]
+	\item<1->[] kuljettajia (leveys estää elektronien tunne\-loi\-tu\-misen)
+	
+%	\item \Alert[blue]{Estosuuntaisella liitoksella} (b, vöiden eroja on kuvassa liioiteltu)\appear{ vähemmistövarauksenkuljettajat ovat harvinaisia}
+
+	\appear{}
+	\item \Alert[red]{Päästösuunnatussa liitoksessa} (c) n-tyypin osion johtavuusvyö nousee ylöspäin  %relative to that of the $\mathrm{p}$-type 
+	\implies{ Elektronit ja aukot \CDAlert[red]{tyhjen-}\\ 
+		      \CDAlert[red]{nysalueen lähellä} \\
+		      \appear{diffundoituvat sen yli}\appear{, \\%diffuse cross
+		      yhdistyvät ja synnyttävät \\
+		      \CDAlert[red]{virran} }}
+\end{itemize}
+\end{minipage}
+
+\xdef\loc{south east}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.35*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,height=5.8cm]{Figures_booklet/SOM_10_Bonding_figures/SOM_Bonding_Figure_42.png}}; %scale=\figscale. % 8cm max height
+\end{tikzpicture}
+\footnote{\HarrisCR[1-]}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Sähkövirrat tyhjennysalueella}%of the p-n junction
+\appear{}
+\seminormal%
+\begin{itemize}[itemsep=1.5mm]
+	\item pn-liitoksessa on itseasiassa neljä erilaista sähkövirtaa: \appear{kahdentyyppisiä virtoja} \appear{(ajelehtimisvirtoja ja diffuuseja)} \appear{sekä \CDAlert[red]{enemmistövarauksenkuljettajille}} \appear{että \CDAlert[blue]{vähemmistövarauksenkuljettajille}} 
+	\appear{\xdef\loc{south east}%
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.25*\figYshift,xshift=1*\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=2,width=5cm]{Figures_booklet/Tikz_SOM_Bonding_figures_pn_junction}};%
+\end{tikzpicture}%
+}
+
+	\item Elektronit poikkeavat \appear{ulkoiseen kenttään nähden vastakkaiseen suuntaan} \appear{($F=qE$)} \appear{n-puolella}\appear{, ja aukot poikkeavat samansuuntaisesti kentän kanssa}
+	
+	\item Tilojen energia\appear{/konsentraatioeroista} \appear{johtuva diffuusio} \appear{johtaa \CDAlert[red]{rekombinaatiovirtoihin}} \appear{($e^-$:lle ja $h^+$:lle)}\appear{, joita merkitään termeillä $i_{\text {aukot,rek}} \Equiv i_{p, r}$} \appear{ja $i_{\text {elektronit,rek}} \Equiv i_{n, r}$}
+
+\item Elektroni–aukko-pareja syntyy myös liitoksen \\
+	lähellä termisten virittymisten johdosta%\appear{, and are swept through the junction due to the build-up E-field in the \CDAlert[fuchsia]{depletion region} }
+
+ 
+\end{itemize}
+
+\vspace{1.5mm}
+\begin{minipage}{8.45cm}
+	\begin{itemize}[itemsep=1.5mm]
+\item Näitä virtoja kutsutaan \appear{\Alert[blue]{(termisiksi)} \CDAlert[blue]{ge\-ne\-raa-} \CDAlert[blue]{tiovirroiksi}, $i_{\text {p,gen}} \Equiv i_{p,g} \quad$} \appear{ja $\quad i_{\text {e,gen}} \Equiv i_{n,g}$}
+
+\item Tasapainossa\appear{ generaatio- ja rekombinaatiovirrat ovat yhtäsuuria:} %
+$
+ \appear{| i_{p, g} |}  \equal \appear{| i_{p, r} |} \appear{~ja~} \appear{| i_{n, g} |}  \equal  \appear{| i_{n, r} |}
+$
+\end{itemize}
+\end{minipage}
+
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%% LEAVE DIFFUSION REGIONS AND THE DEPLETION REGION TO FOLLOW-UP COURSES??
+%%%%%%%%%%%%%%%%
+%\begin{frame}
+%\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+%
+%\begin{itemize}
+%	\item Taking a closer look at the junction area, There are actually three zones:
+%
+%\item Depletion region in the middle, across the junction
+%
+%\item Diffusion regions on both sides of the depletion region, from there the electrons and holes diffuse to the junction area
+%
+%\item Homogeneous regions far away from Home the junction, which are actually not much affected by the junction
+%\end{itemize}
+%
+%%\xdef\loc{south east}
+%%\begin{tikzpicture}[remember picture,overlay] % anchor=south
+%%    \node (A) [yshift=-0.25*\figYshift,xshift=1*\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=6,height=4cm]{Figures_booklet/Tikz_SOM_Bonding_figures}}; %scale=\figscale. % 8cm max height
+%%\end{tikzpicture}
+%
+%\endofslide 
+%%\endofsection
+%\end{frame}
+%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Sähkövirrat pn-liitoksessa}
+\appear{}
+\seminormal%
+
+\begin{itemize}[itemsep=1.5mm]
+	\item Kohdistetaan liitokseen \CDAlert[fuchsia]{päästösuuntaus}\appear{, eli liitoksen yli muodostetaan positiivinen (sähkö)potentiaaliero}
+	\appear{\xdef\loc{south east}%
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.25*\figYshift,xshift=1*\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=3,width=5cm]{Figures_booklet/Tikz_SOM_Bonding_figures_pn_junction}};%
+\end{tikzpicture}%
+}
+	\item Päästösuuntaus heikentää tyhjennysalueen sähkökenttää\appear{, eli toisin sanoen p- ja n-puolien energiatasojen energiaeroa:}
+\[
+	\Delta E  \equal \appear{-e \cdot V}
+\]
+\appear{Tällöin elektronien on helpompi diffundoitua $p$-puolelle} \appear{ja aukkojen vastaavasti $n$-puolelle.} \appear{Tämä efekti \Alert[fuchsia]{kasvattaa molempia rekombinaatiovirtoja} Boltzmannin tekijällä:}
+%$$
+%e^{-\Delta E / k_{B} T}=e^{e \cdot V / k_{B} T}
+%$$
+%(We don't need Fermi-Dirac statistics, since most of the available states of diffusing electrons and holes are empty) 
+\end{itemize}
+
+% 6.5 cm = midway, 10 cm = 3/4 
+\vspace{2.5mm}
+\begin{minipage}{8.45cm}
+	\begin{itemize}[itemsep=1.5mm]
+\item[] $$
+e^{-\Delta E / k_{B} T}  \equal \appear{e^{e \cdot V / k_{B} T}} \vspace{3mm}
+$$
+\appear{missä emme ole käyttäneet Fermin–Diracin statistiikkaa}\appear{, koska suurin osa tiloista joihin diffundoituvat tilat ovat siirtymässä ovat tyh\-jiä (ei tarvitse soveltaa kieltosääntöä}
+
+\item Syntyy p-puolelta n-puolelle kulkeva virta 
+\end{itemize}
+\end{minipage}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%
+%\begin{frame}
+%\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+%
+%\begin{itemize}
+%	\item Now we apply forward bias, i.e. positive potential difference across the junction. A forward bias decreases the electric field in the junction region, as well as it decreases the differences between the energy levels on the $p$ - and $n$-sides by an amount of:
+%$$
+%\Delta E=-e \cdot V
+%$$
+%It becomes easier for electrons to diffuse to $p$-region and for the holes to $n$-region. This effect increases both recombination currents by the Boltzmann factor:
+%$$
+%e^{-\Delta E / k_{B} T}=e^{e \cdot V / k_{B} T}
+%$$
+%(We don't need Fermi-Dirac statistics, since most of the available states of diffusing electrons and holes are empty).
+%\end{itemize}
+%
+%%\xdef\loc{south east}
+%%\begin{tikzpicture}[remember picture,overlay] % anchor=south
+%%    \node (A) [yshift=-0.25*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,width=7cm]{Figures_booklet/SOM_10_Bonding_figures/SOM_Bonding_Figure_42.png}}; %scale=\figscale. % 8cm max height
+%%\end{tikzpicture}
+%
+%\endofslide 
+%%\endofsection
+%\end{frame}
+%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Sähkövirrat pn-liitoksessa}
+\appear{}
+\begin{itemize}
+	\item Aukkojen kokonaisvirraksi voidaan nyt muodostaa:
+\[
+i_{p, t o t}   \equal \appear{i_{p, r}}  \minus \appear{| i_{p, g} | }  \equal  \appear{| i_{p, g} | }\appear{e^{e \cdot V / k_{B} T}}  \minus \appear{ | i_{p, g} |}  \equal  \appear{| i_{p, g} | }\appear{(e^{e \cdot V / k_{B} T}-1)}
+\]
+	\item Elektronien tapaus on vastaavanlainen\appear{, jolloin elektronien aiheuttamaksi kokonaisvirraksi saadaan}
+\[
+ I  \equal \appear{i_{p, t o t}}  \plus \appear{i_{n, t o t}} \equal \appear{I_{S}(T) ( e^{e \cdot V / k_{B} T}-1 )}
+ \]
+\appear{missä $I_{S}$ kutsutaan \Alert[red]{(estosuuntauksen)} \CDAlert[red]{saturaatiovirraksi}}\appear{, ja yhtälö tunnetaan nimellä \CDAlert[fuchsia]{Shockleyn diodiyhtälö} }
+
+\item Tarkastelu voidaan toistaa estosuunnatulle liitokselle\appear{, jolloin diodiyhtälön huomataan pätevän molemmille tapauksille (positiivinen/negatiivinen ulkoinen kenttä)}
+
+\item Saatu virta–jännite-ominaiskäyrä (I–V käyrä) esittää tyypillisen \CDAlert[fuchsia]{dioditasasuuntaajan} toiminnan\appear{, ja kuinka $I=I(V)$ käyttäytyy}%\appear{, \Alert[fuchsia]{dramaattisesti eroaa Ohmin laista}}
+\end{itemize}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{pn-liitoksen I–V käyrä}
+\appear{}
+\begin{itemize}
+	\item Hahmottelemalla Shockleyn diodiyhtälön ennustaman virran $I(V)$
+\[
+I(V)  \equal  \appear{I_{S}(T)} \appear{( e^{e \cdot V / k_{B} T}-1 )}
+\]
+\appear{ulkoisen jännitteen $V$ funktiona}\appear{, huomaamme dramaattisen \CDAlert[fuchsia]{eron} \CDAlert[fuchsia]{Ohmin lakiin}}
+\appear{\xdef\loc{south east}%
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.4*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,width=7cm]{Figures_booklet/SOM_Tipler_Solid_state_physics_figures/SOM_Tipler_SSP_figure_46}};%scale=\figscale. % 8cm max height
+\end{tikzpicture}\footnote{\TiplerCR}}
+\end{itemize}
+
+\vspace{2.5mm}
+\begin{minipage}{6.7cm}
+	\begin{itemize}%[itemsep=1.5mm]
+\item Tämä on yksi diodin perusominaisuuksista\appear{, ja sitä on hankala saada aikaiseksi perinteisten komponenttien avulla} \appear{(vastukset}\appear{, kapasitaattorit} \appear{ja käämit)}
+
+\item Todella suurilla estosuuntausjännitteillä \appear{(\CDAlert[blue]{läpilyöntijännite} = raja-arvo)}\appear{, pn-liitos alkaa päästää virtaa läpi myös toiseen suuntaan}
+\end{itemize}
+\end{minipage}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Valodiodi (LED)}
+\appear{}
+\seminormal
+\begin{itemize}[itemsep=1.7mm]
+	\item \CDAlert[red]{Valodiodi eli ledi (LED) on pn-liitos joka emittoi/säteilee valoa}
+	
+	\item Kun liitos on päästösuunnattu\appear{, monet aukot työntyvät niiden $\mathrm{p}$-alueelta liitoskohtaan (tyhjennysalueelle)}\appear{, samoin monet elektronit $n$-alueelta  }
+	\implies{Nämä \Alert[red]{elektronit rekombinoituvat tyhjennysalueella aukkojen} kanssa}
+
+\item Rekombinaation aikana\appear{ elektronit voivat emittoida fotonin}\appear{, jonka energia vastaa suurinpiirtein vyörakenteen energiarakoa} 
+
+\end{itemize}
+
+\vspace{1.7mm}
+\begin{minipage}{8.7cm}
+	\begin{itemize}[itemsep=1.7mm]
+	\item Tätä energiaa \appear{(eli säteilevän valon väriä)} \appear{voidaan vaihdella muuttamalla pn-liitoksen materiaaleja, ja siten energiaraon suuruutta (ks.~edellinen kalvo) }
+
+\item Ledejä käytetään nykyisin paljon valaistuksessa\appear{, digitaalisissa näytöissä,} \appear{jne.}
+
+\item  $1$\;eV:n omaavan energiaraon (valo)diodi tarvitsee $1$\;V päästösuuntauksen syttyäkseen
+\end{itemize}
+\end{minipage}
+
+\xdef\loc{south east}%
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.25*\figYshift,xshift=1*\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=5,width=5cm]{Figures_booklet/Tikz_SOM_Bonding_figures_pn_junction}};%
+\end{tikzpicture}%
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Valoilmaisin (valodiodi)}
+\appear{}
+% photodiode
+\seminormal
+
+%A Photodiode
+\begin{itemize}[itemsep=2.2mm]
+	\item Tarkastellaan suuntaamatonta \appear{(biasoimatonta)} \appear{diodia jonka energiarako on $1$\,eV}\appear{, ja jota valaistaan fotoneilla joiden energia on hieman suurempi kuin $1$\;eV} 
+	\item \Alert[red]{Liitos absorboi fotoneita kaikilla alueilla nostaen elektroneita johtavuusvyölle} (ja aukkoja valenssivyölle) %A conduction electron in the p-side (where it is a minor carrier) is eager to slide down to the lower conduction band in the entype. Similarly holes created in either the depletion zone or $\mathrm{n}$-type valence zone would happily float up to the p-type valence. Thus, as long as the photons arrive from an external source, the component acts like a battery,
+\end{itemize}
+
+\vspace{2.1mm}
+\begin{minipage}{7.8cm}
+	\begin{itemize}[itemsep=2.2mm]
+	%\item[] a hole in the valence band. 
+	
+	\item Johtavuus\CDAlert[red]{elektroni} p-puolella \appear{(missä se on vähemmistövarauksenkuljettaja)} \appear{\CDAlert[red]{laskeutuu} mielellään n-tyypin alemmalle johtavuusvyölle} 
+	
+	\item Vastaavasti \CDAlert[blue]{aukot} joita syntyy joko tyhjennysalueen tai n-puolen valenssivyöllä\appear{, mielellään \CDAlert[blue]{nousisivat} p-puolelle}
+	
+	\item Niin kauan kuin fotoneita saapuu liitokseen\appear{, komponentti toimii patterin tavoin } \appear{(\Alert[fuchsia]{eli synnyttää jännitteen}} \appear{\Alert[fuchsia]{mikä ylläpitää virtaa})}
+	\end{itemize}
+\end{minipage}
+
+\xdef\loc{south east}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.25*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,width=5.7cm]{Figures_booklet/SOM_10_Bonding_figures/SOM_Bonding_Figure_43.png}}; %scale=\figscale. % 8cm max height
+\end{tikzpicture}
+\footnote{\HarrisCR[1-]}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Valosähkökenno}
+\appear{}
+\seminormal
+\begin{itemize}[itemsep=1.8mm]
+	\item Jos energiarako on $1$\;eV\appear{, niin fotonin energian täytyy olla ainakin yhtäsuuri kuin energiaraon:} \vspace{-2mm}
+\[
+\lambda \equal \frac{h c}{E_{rako}}  \equal \frac{1240\;eV \cdot nm}{1\; eV} \equal \appear{1240\;nm} \vspace{2mm}
+\]
+\item Jos tällainen laite kytketään virtapiiriin\appear{, se synnyttää sähkömotorisen voiman (emf) ja toimii virtalähteenä }
+\implies{ Tällaista laitetta kutsutaan usein \CDAlert[fuchsia]{aurinkokennoksi tai valosähkökennoksi} } 
+
+\item Laite ei tarvitse välttämättä auringonvaloa\appear{, koska riittää että fotonien energia ylittää energiaraon}
+
+\item Nyt on tarkasteltu valosähkökennon toimintaperiaatetta\appear{, mikä muuntaa tulevan valon energiaksi}\appear{ mahdollistaen \CDAlert[fuchsia]{aurinkoenergian tuotannon}} %We may also add layers of intrinsic semiconductor between the n-type and $p$-type regions, widening the depletion zone where the electron-hole pairs are sorted quickly and contributing to improved efficiengy in high-frequency applications
+
+\item Sama fysiikka pätee myös muihin valoherkkiin komponentteihin \appear{(eli \Alert[red]{valodiodeihin}):} \appear{varauskytkettyihin piireihin (CCD) perustuviin kamerakennoihin}\appear{, komplementaarisiin metallioksidipuolijohdedetektoreihin (\CDAlert[fuchsia]{CMOS})}\appear{, ja digitaalisiin kameroihin}
+\end{itemize}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Diodilaseri}
+%The Diode Laser
+\appear{}
+\seminormal
+\begin{itemize}[itemsep=1.55mm]
+	\item Kuten ledeissä\appear{, elektroni–aukkoparin rekombinaatiossa vapautuva energia} \appear{toimii \CDAlert[fuchsia]{diodilaserien} valonlähteenä}
+	
+	\item Suuret elektronien ja aukkojen konsentraatiot pn-liitoksessa \appear{mahdollistavat  \CDAlert[fuchsia]{populaatioinversion}}\appear{, mikä tarvitaan aineen laserointiin}
+
+	\item Valon vahvistamiseksi tarvitaan myös optinen \CDAlert[fuchsia]{resonaattori} eli kaviteetti, mutta puolijohteiden suurten taitekertoimien takia  \appear{(esim. piillä $n\,{\sim}\,3,5$),}%due to the high refractive indices of many semiconductors (specifically for Si, $n \sim 3.7$), semiconductor–air interfaces often act as good enough cavity mirrors
+\end{itemize}
+
+%\vspace{1.7mm}
+\begin{minipage}{8.2cm}
+\begin{itemize}[itemsep=1.55mm]
+\item[] puolijohde–ilma rajapinnat toimivat usein jo riittävän hyvinä resonaattorien peileinä
+
+\item \CDAlert[red]{Epäsuoran energiaraon piitä} ei voi hyödyntää diodilaserin valmistukseen\appear{, koska se luovuttaa rekombinaatioenergiansa mieluummin muilla tavoilla kuin emittoimalla fotoneja}
+
+\item \CDAlert[blue]{GaAs} on III–V puolijohde \appear{joka puolestaan on hyvä materiaali laserdiodin valmistukseen koska sillä on \CDAlert[blue]{suora energiarako} }
+
+	\end{itemize}
+\end{minipage}
+
+\xdef\loc{south east}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.4*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,width=5.2cm,trim={0 2cm 0 0},clip]{Figures_booklet/SOM_Tipler_Solid_state_physics_figures/SOM_Tipler_SSP_figure_52.png}}; %scale=\figscale. % 8cm max height
+\end{tikzpicture}
+\footnote{\TiplerCR[1-]}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Transistori}
+% The Transistor
+\appear{}
+\begin{itemize}[itemsep=1.6mm]
+	\item Yksinkertaisimmillaan transistorit koostuvat kolmesta puolijohdealueesta\appear{, muodostaen joko \CDAlert[fuchsia]{npn-}} \appear{tai pnp-liitoksen (kuva)}
+	\appear{\xdef\loc{south east}%
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.3*\figYshift,xshift=1*\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,width=13cm]{Figures_booklet/SOM_Tipler_Solid_state_physics_figures/SOM_Tipler_SSP_figure_53.png}};%scale=\figscale. % 8cm max height
+\end{tikzpicture}\footnote{\TiplerCRshort}}
+%\item Here npn is discussed
+
+\item \Alert[red]{p-tyypin alue keskellä on  \CDAlert[red]{kanta}}\appear{, ja \Alert[blue]{n-tyypin alueet tunnetaan nimillä \CDAlert[blue]{emitteri}} \appear{ja \CDAlert[blue]{kollektori}}}
+
+\item Emitteri and kollektori ovat erikokoisia ja niiden seostusasteet ovat erilaiset\appear{, koska niillä on erilaiset funktiot}
+\end{itemize}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{npn-liitoksinen transistori}
+\appear{}
+\begin{itemize}[itemsep=1.7mm]
+	\item \CDAlert[blue]{Päästösuunnattu emitteri} diodi \appear{mahdollistaa johtavuuselektronien virtaamisen emitteristä} \appear{kantaan} 
+
+\item Ohut ja  \CDAlert[red]{kevyesti seostettu kanta} on p-tyyppinen 
+ \implies{e$^-$:t vähemmistövarauksenkuljettajina \appear{rekombinoituvat aukkojen kanssa harvoin}}
+\end{itemize}
+\vspace{3mm}
+\begin{minipage}{5cm}
+\begin{itemize}[itemsep=1.7mm]
+\item Kollektori on n-tyypin puolijohde\appear{, ja \Alert[blue]{kollektori–kanta diodi on estosuunnattu} }
+
+\item Pieni osa elektroneista rekombinoituu aukkojen kanssa kol\-lek\-to\-rissa\appear{, kun suurin osa laskeutuu kollektorin johta\-vuus\-vyölle}\appear{, synnyttäen \Alert[fuchsia]{virran jonka suuruutta voidaan} \CDAlert[fuchsia]{säätää kannalla}}
+	\end{itemize}
+\end{minipage}
+
+\xdef\loc{south east}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.25*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,width=8.5cm]{Figures_booklet/SOM_10_Bonding_figures/SOM_Bonding_Figure_44.png}}; %scale=\figscale. % 8cm max height
+\end{tikzpicture}
+\footnote{\HarrisCR[1-]}
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Transistorivahvistin}
+\appear{}
+\begin{itemize}
+	\item Kollektorista ulos virtaavien elektronien osuus \appear{(palaavat toki suljetussa piirissä lopulta takaisin emitteriin)} \appear{on \CDAlert[red]{verrannollinen}} %and typically 100 times greater than that which flows out the base (returning through the input circuit).
+\end{itemize}
+
+\begin{minipage}{6.75cm}
+\begin{itemize}%[itemsep=1.7mm]
+\item[]  \Alert[red]{signaaliin} \appear{\Alert[red]{ja tyypillisesti 100-kertainen kantaan tulevaan signaaliin nähden}}% 
+\appear{\xdef\loc{south east}%
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.35*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,width=6.8cm]{Figures_booklet/SOM_10_Bonding_figures/SOM_Bonding_Figure_45.png}}; %scale=\figscale. % 8cm max height
+\end{tikzpicture}\footnote{\HarrisCR}%
+}%
+\item Kuvassa~45 \appear{sisääntulo(signaali) aiheuttaa pieniä jännitevaihteluita} \appear{emitteri–kannan potentiaali-eroon}\appear{, mikä johtaa vastaavaan vaihteluun} \appear{kannan ja emitterin läpimenovirrassa} \appear{(virtaavien elektronien nopeus vaihtelee).} \appear{Pieni osa tästä virrasta poistuu kannasta} \appear{ja kiertää moduloituna signaalina (emitteri–kanta) virtapiirissä}
+	\end{itemize}
+\end{minipage}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Kanavatransistori (FET)}
+\appear{}
+\semismall
+\begin{itemize}[itemsep=1.4mm]
+	\item \Alert[red]{Kanavatransistori (FET)} on yleinen kytkintyyppi \CDAlert[fuchsia]{integroiduissa piireissä}
+	
+	\item Kanavatransistori voidaan muodostaa p-tyypin piilevylle \appear{seostamalla levyn pinnalle kaksi n-tyypin aluetta}\appear{, joita kutsutaan '\CDAlert[blue]{lähteeksi}' ja '\CDAlert[tuniblue]{nieluksi}'}
+	
+	\item  Keskelle jääneen p-tyypin päälle laitetaan elektrodi \appear{jota kutsutaan '\CDAlert[red]{portiksi}'} \appear{ja joka on erotettu levystä}\appear{ eristeenä toimivalla piidioksidikerroksella ($\mathrm{SiO}_{2}$)} 	
+		
+\end{itemize}
+
+\vspace{1.4mm}
+\begin{minipage}{7.3cm}
+\begin{itemize}[itemsep=1.4mm]
+	\item Kun portti on sähköisesti neutraali\appear{ vain pieni virta menee lähteen ja nielun läpi}\appear{, koska toinen näistä pn-liitoksista on estosuunnattu } 
+	
+	\item Positiivisesti varautuneessa \Alert[red]{pienessä} portissa\appear{ jo pieni varaus }\appear{synnyttää suu\-ren kentän p-alueelle}\appear{, mahdollistaen  \CDAlert[red]{virran liikkumisen koko npn-liitoksen läpi}  }
+	
+	\item Kanavatransistorit ovat pieniä \appear{(${\sim}\,1\;\mu m$)} \appear{integ\-roituja transistoreita}
+	
+	\item Metallioksidipuolijohdetransistori \\ 
+	         (\Alert[red]{MOS-transistori}) %\Alert[red]{MOSFET}{https://en.wikipedia.org/wiki/MOSFET\#Importance} = Metal–oxide–semiconductor FET
+	\end{itemize}
+\end{minipage}
+
+\xdef\loc{south east}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.25*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,width=6.5cm]{Figures_booklet/SOM_10_Bonding_figures/SOM_Bonding_Figure_46.png}}; %scale=\figscale. % 8cm max height
+\end{tikzpicture}
+\footnote{\HarrisCR}
+
+%\endofslide 
+\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%
+%\begin{frame}
+%\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+%
+%\begin{itemize}
+%	\item A single-electron transistor (SET) is a sensitive electronic device based on the Coulomb blockade effect
+%
+%\item In this device the electrons flow through a tunnel junction between source/drain to a quantum dot (conductive island)
+%\end{itemize}
+%
+%%\xdef\loc{south east}
+%%\begin{tikzpicture}[remember picture,overlay] % anchor=south
+%%    \node (A) [yshift=-0.25*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[page=1,width=7cm]{Figures_booklet/SOM_10_Bonding_figures/SOM_Bonding_Figure_42.png}}; %scale=\figscale. % 8cm max height
+%%\end{tikzpicture}
+%
+%\endofslide 
+%%\endofsection
+%\end{frame}
+%%%%%%%%%%%%%%%%

@@ -1,0 +1,507 @@
+% !TEX root = ../bb_AiRa_Kappaleet.tex
+
+% ö = \%c3\%b6
+% ä = \%C3\%A4
+
+\xdef\sectiontitle{\IIIsectiontitle} %aiheuttama
+\TOCrefs
+
+%%%%%%%%%%%%%%%
+\begin{frame}[label=3_5_a]%[label=3_5_TOC1]
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\label{\TOCname}
+
+\vspace{-0.5cm}\label{\TOCname} % vertical spacing is off, 0.7cm doesn't work
+
+\begin{itemize}[leftmargin=0.5cm,itemsep=\chapterTOCitemsep]
+    \item[3.1]<1-> \hyperlink{3_1_a}{\IIIaSubsectiontitle}
+    \item[3.2]<1-> \hyperlink{3_2_a}{\IIIbSubsectiontitle}	
+    \item[3.3]<1-> \hyperlink{3_3_a}{\IIIcSubsectiontitle}	
+    \item[3.4]<1-> \hyperlink{3_4_a}{\IIIdSubsectiontitle}
+    \item[3.5]<1-> \hyperlink{3_5_a}{\CDAlert[blue]{\IIIeSubsectiontitle}}
+    \item[3.6]<1-> \hyperlink{3_6_a}{\IIIfSubsectiontitle}
+    \item[3.7]<1-> \hyperlink{3_7_a}{\IIIgSubsectiontitle}
+\end{itemize}
+
+%\endofslide 
+\end{frame}
+%%%%%%%%%%%%%%%
+
+\xdef\sectiontitle{\IIIeSubsectiontitle} 
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+%\framesubtitle{Radioaktiivinen hajoamislaki}%Radioactive Decay Law
+\appear{}
+
+%
+\begin{itemize}
+	\item Yksittäinen radioaktiivinen ydin hajoaa vain kerran. \appear{Prosessi on \CDAlert[fuchsia]{luonteeltaan tilastollinen}}\appear{, jolloin tiedetään}\appear{ vain keskimääräinen aika jonka kuluessa hajoaminen tapahtuu}
+
+\item Jos ytimien lukumäärä $N$ on tarpeeksi suuri\appear{, hajoamisprosessin tilastollisen luonteen takia ytimien hajoamista voidaan tarkastikin kuvata \CDAlert[fuchsia]{hajoamislailla}} 
+
+\item Hajonneiden ytimien lukumäärä\appear{, eli muutos alkuperäisten ytimien lukumäärässä}\appear{, $d N$}\appear{, on \CDAlert[blue]{verrannollinen sekä aikaan}} \appear{\CDAlert[blue]{että} radioaktiivisten \CDAlert[blue]{ytimien lukumäärään}:}
+\[
+\bg[2.5]{\text{\bigsymbolsfont\{}\!} \begin{array}{l}
+\appear{d N} \propto \appear{d t} \\
+\appear{d N} \propto \appear{N}
+\end{array} \qquad \Rightarrow \qquad \appear{d N} \propto \appear{N d t}
+\]
+\appear{ja} 
+\[
+\Rightarrow \qquad \frac{d N}{d t} \propto \appear{N} \quad \appear{\text { eli }} \quad \frac{d N}{d t} \equal  \minus \appear{\lambda N} \quad \text { \appear{tai} } \quad \frac{d N}{N}  \equal  \minus \appear{\lambda d t}
+\]
+\end{itemize}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Vaimenemisnopeus}%Radioactive Decay Law
+\appear{}
+
+\begin{itemize}[itemsep=1.6mm]
+	\item Muodostettu differentiaaliyhtälö voidaan ratkaista \appear{jolloin saadaan \Alert[red]{ajasta riippuva} jäljellä olevien ydinten lukumäärä:}
+\[
+\Frac{d N}{N}  \equal  \minus \appear{\lambda d t} \quad \Rightarrow \quad \appear{\nint_{N_{0}}^{N}} \frac{d N^{\prime}}{N^{\prime}}  \equal  \minus \appear{\lambda} \appear{\nint_{0}^{t} d t} \quad \Rightarrow \quad \appear{\ln} \frac{N}{N_{0}} \equal  \minus \appear{\lambda t} \quad \Rightarrow \quad \appear{N(t)=} \appear{N_{0}} \appear{e^{-\lambda t}}
+\]
+\item[] \Alert[blue]{hajoamisvakio $\lambda$} \appear{($[\lambda]=\Frac{1}{s}$)} \appear{on jokaiselle ytimelle tyypillinen vakio}%,  decay constant $[\lambda]=\frac{1}{s}$
+
+
+\item Voidaan määrittää positiivinen suure $R\appear{=\lambda N(t)}  \equal  \bg[1.9]{\text{\bigsymbolsfont|}\!} \frac{d N}{dt} \!\bg[1.9]{\text{\bigsymbolsfont|}} $\appear{, joka} \appear{tunnetaan} \appear{\CDAlert[fuchsia]{vaimenemisnopeutena}}
+
+\item Vaimenemisnopeus voidaan kirjoittaa myös muodossa 
+\[
+ R(t)= \bg[2.5]{\text{\bigsymbolsfont|}} \frac{d N}{d t} \bg[2.5]{\text{\bigsymbolsfont|}}  \equal \appear{\lambda N(t)} \equal \appear{\lambda N_{0} e^{-\lambda t}} \equal \appear{R_{0} e^{-\lambda t}}
+\]
+
+\item Huomaa että ydinten lukumäärä $N$ \appear{ja hajoamisvakio $R$} \appear{pienenevät eksponentiaalisesti ajan suhteen}
+
+\end{itemize}
+ 
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Puoliintumisnopeus}%Radioactive Decay Law
+\appear{}
+
+\seminormal
+\begin{itemize}[itemsep=1.7mm]
+	\item Aika jonka jälkeen ytimistä on puolet jäljellä \appear{on \CDAlert[red]{puoliintumisaika $T_{1 / 2}$}:}%\vspace{-3mm}
+\appear{\xdef\loc{south east}%
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=-0.1*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[width=6.9cm]{Figures_booklet/SOM_12_Nuclear_physics_figures/SOM_Nuclear_physics_Figure_26.png}}; % 8cm max height
+\end{tikzpicture}\footnoteleft{\HarrisCR}}%
+\[
+ N ( T_{1 / 2} )   \equal  \appear{N_0 e^{-\lambda T_{1 / 2}}}  \equal \frac{1}{2} \appear{N_{0}} \qquad
+\Rightarrow \qquad  \minus \appear{\lambda T_{1 / 2}} \equal \appear{\ln} \frac{1}{2} \qquad \Rightarrow \qquad \appear{\lambda} \equal \frac{\ln 2}{T_{1 / 2}}
+\]
+\item Ytimiä sitovat prosessit ovat monimutkaisia\appear{, ja usein ytimillä on monia hajoamistapoja.} \appear{On siis hankalaa ennustaa ytimen puoliintumisaikaa $T_{1 / 2}$.} \appear{Taulukkoarvoja löytyy suurimmalle osalle isotoopeista}\appear{, ja \Alert[red]{$T_{1 / 2}$ vaihtelee $10^{-22}\;s$ ja $10^{17}$ vuoden välillä}}
+\end{itemize}
+
+% 6.5 cm = midway, 10 cm = 3/4 
+\vspace{1.7mm}
+\begin{minipage}{6.5cm}
+\begin{itemize}[itemsep=1.7mm]
+
+\item Esimerkiksi \Alert[blue]{hiili-14} puoliintumisaika\appear{ (\CDAlert[blue]{radiohiiliajoitus})}\appear{ on 5730 vuotta.} \appear{amerikium-241:n}\appear{ (palohälyttimet)}\appear{ puo\-liin\-tu\-misaika $T_{1 / 2}$ on 432,2 vuotta.}
+
+\item Esimerkki lyhytikäisestä isotoopista on \Alert[fuchsia]{fluori-18}\appear{ (\CDAlert[fuchsia]{isotooppilääketiede}).}\appear{ Sen puoliintumisaika on 109 min.}  
+\end{itemize}
+\end{minipage}
+%\vspace{2.5mm}
+
+%% table 3
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Aineen (radio)aktiivisuus}%Radioactive Decay Law
+\appear{}
+
+\begin{itemize}
+	\item Hajoamisnopeus \appear{$R(t)=\lambda N$}\appear{ kertoo myös $N$:stä \CDAlert[fuchsia]{radioaktiivisesta ytimestä}} \appear{koostuvan kappaleen aktiivisuuden}  \appear{(tai \CDAlert[fuchsia]{'radioaktiivisuuden'})} 
+\[
+[ R ]  \equal  \appear{\text{yksikköajassa hajoavien aktiivisten ydinten lukumäärä}}
+\]
+\vspace{-3mm}
+\item Radioaktiivisuuden SI-yksikkö on becquerel (Bq)\appear{, kun taas vanha yksikkö (yhä käytössä) on curie (Ci)}
+\[
+1 \mathrm{\;Bq}  \equal \appear{1 \text {\;hajoamista} / \mathrm{s}} \quad \appear{,} \quad 
+\appear{1 \mathrm{\;Ci}}  \equal  \appear{3,7 \times 10^{10} \text {\;hajoamista} / \mathrm{s}}\appear{=3,7 \times 10^{10} \mathrm{\;Bq}}
+\]
+\item $1 \mathrm{\;Ci}$ vastaa $1 \mathrm{\;g}$ radiumin aktiivisuutta \appear{$({ }_{~88}^{226}Ra$,  $T_{1/2}=1600$ a)}
+
+\item Aktiivisuuden $1 \mathrm{\;mCi}=37 \mathrm{\;MBq}$ omaava lähde \appear{on todella voimakas lähde} \appear{(riippuen tosin vähän säteilyn tyypistä)}
+
+\item ${ }^{241} \mathrm{Am}$:n aktiivisuus palohälyttimissä \appear{on tyypillisesti $1 \;\mu \mathrm{Ci}=37 \mathrm{\;kBq}$}
+% mean radioactivity of air in finnish households is 94 Bq/m³
+\end{itemize}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Esimerkkilasku}
+\appear{}
+
+\begin{itemize}
+	\item \textbf{K}: Säiliössä on $2 \;\mu$g tritiumia jonka puoliintumisaika on 12,3 vuotta ja atomimassa 3,02u.
+\appear{(a) Mikä on sen alkuhajoamisnopeus ja aktiivisuus?}
+\appear{(b) Milloin lähteen hajoamisnopeus on pienentynyt $1 \%$:in lähtöarvostaan?}
+
+\item \textbf{A}: (a) Hajoamisvakio on $R(t)=\lambda N$\appear{, jolloin alkuhajoamisnopeus on:}
+\[
+R_{0} \equal \appear{R(t=0)} \equal \appear{\lambda N_{0}} \equal \frac{\ln 2}{T_{1 / 2}} \frac{m_{tot}}{m_{1}}  \equal \frac{\ln 2}{12,3 \;y} \frac{2 \times 10^{-9} \;kg}{3,02 \;u \cdot 1,66 \times 10^{-27} \;kg / u}  \equal \appear{7,1 \times 10^{8} \;s^{-1}}
+\]
+\appear{ja vastaava aktiivisuus } \appear{on $7,1 \times 10^{8} \mathrm{\;Bq}=710 \mathrm{\;MBq}$}
+
+\item (b) Kysyttiin milloin $\lambda N(t)=\Frac{1}{100} \lambda N_{0}$? 
+$$
+\begin{aligned}
+ &\Rightarrow \qquad& \appear{\lambda N_{0} e^{-\lambda t}} & \equal \frac{1}{100} \appear{\lambda N_{0}} 
+\qquad \Rightarrow \qquad  \minus \appear{\lambda t} \equal \appear{\ln} \frac{1}{100} \\
+ &\Rightarrow \qquad&  \appear{t}& \equal  \minus \appear{\ln} \frac{1}{100} \appear{/} \LP \frac{\ln 2}{12,3 \;a} \,\RP \equal \appear{2,6 \times 10^{9} \;s}\appear{=82 \;a}
+\end{aligned}
+$$
+
+\end{itemize}
+
+% table 3
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Hajoamissarjat}%Chain of radioactive decays
+\appear{}
+
+%
+\begin{itemize}[itemsep=2.0mm] % stackrel breaks lecturing mode?!
+	\item Tarkastellaan \CDAlert[fuchsia]{radioaktiivisia hajoamissarjoja}: $\appear{A} \appear{\stackrel{\lambda_{A}}{\oldrightarrow}} \appear{B} \appear{\stackrel{\lambda_{B}}{\oldrightarrow}} \appear{C}$\appear{, missä hajoamisvakiot $A$:lle ja $B$:lle ovat $\lambda_{A}$ ja $\lambda_{B}$} 
+	\item Tavoitteena on löytää nuklidin $B$ ajastariippuva lukumäärä\appear{, $N_{B}=N_{B}(t)$}\appear{, olettamalla että alun lukumäärät ($t=0)$} \appear{nuklideille $A$ ja $B$ ovat $N_{A0}$ ja $N_{B0}$, vastaavasti}
+
+\item Aine A hajoaa nopeudella $\frac{d N_{A}}{d t} \appear{=}\appear{-\lambda_{A} N_{A}}$\appear{, johtaen ehtoon $N_{A}(t)=N_{A 0} e^{-\lambda_{A} t}$}
+
+\item Ainetta $B$ muodostuu A:n hajotessa\appear{, mikä myös itsessään hajoaa:}
+\[
+\Frac{d N_{B}}{d t}  \equal  \plus \appear{\lambda_{A} N_{A}} \minus \appear{\lambda_{B} N_{B}} \equal  \plus \appear{\lambda_{A} N_{A 0}} \appear{e^{-\lambda_{A} t}} \minus \appear{\lambda_{B} N_{B}}
+\]
+
+\item[] Tämä on \CDAlert[red]{differentiaaliyhtälö} $N_{B}$:lle. \appear{Ratkaistaksemme $N_{B}=N_{B}(t)$}\appear{, 'arvataan' \Alert[red]{yritefunktioksi} yhtälö:} 
+\[
+N_{B}(t)  \equal \appear{N_{A 0}} \appear{(c_{A} e^{-\lambda_{A} t}} \plus \appear{c_{B} e^{-\lambda_{B} t} )}
+\]
+\end{itemize}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Hajoamissarjat}%Chain of radioactive decays
+\appear{}
+
+\begin{itemize}
+	\item Sijoitetaan yrite saatuun differentiaaliyhtälöön ja derivoidaan:
+$$
+\begin{aligned}
+& & \frac{d N_{B}}{d t} \equal \appear{N_{A 0}} \appear{(-\lambda_{A} c_{A} e^{-\lambda_{A} t}}  \minus \appear{\lambda_{B} c_{B} e^{-\lambda_{B} t} )} & \equal  \plus \appear{\lambda_{A} N_{A 0} e^{-\lambda_{A} t}} \minus \appear{\lambda_{B} N_{A 0}} \appear{(c_{A} e^{-\lambda_{A} t}} \plus \appear{c_{B} e^{-\lambda_{B} t} )} \qquad \quad \\
+&\Rightarrow&  \minus \appear{\lambda_{A} c_{A} e^{-\lambda_{A} t}-\lambda_{B} c_{B} e^{-\lambda_{B} t}}& \equal  \plus \appear{\lambda_{A} e^{-\lambda_{A} t}} \minus \appear{\lambda_{B}} \appear{(c_{A} e^{-\lambda_{A} t}+c_{B} e^{-\lambda_{B} t} )} \\
+&\Rightarrow& \appear{(\lambda_{A}-\lambda_{B} c_{A}+\lambda_{A} c_{A} )} \appear{e^{-\lambda_{A} t}}& \equal \appear{0} \\
+&\Rightarrow& \appear{\lambda_{A}-\lambda_{B} c_{A}+\lambda_{A} c_{A}}&\appear{=0} \\
+&\Rightarrow& \appear{c_{A}}& \equal \fraca{\lambda_{A}}{\lambda_{B}-\lambda_{A}}
+\end{aligned}
+$$
+\appear{Eli saadaan yhtälö} 
+\[
+N_{B}(t)  \equal \appear{N_{A 0}} \LP \frac{\lambda_{A}}{\lambda_{B}-\lambda_{A}} \appear{e^{-\lambda_{A} t}} \plus \appear{c_{B} e^{-\lambda_{B} t}} \RP
+\]
+\item[] missä tekijä $c_{B}$ on vielä tuntematon
+\end{itemize}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Hajoamissarjat}%Chain of radioactive decays
+\appear{}
+
+\begin{itemize}
+	\item Jos alkuarvo $N_{B}$:lle olisi 0 ajanhetkellä $t=0$, ts.
+\[
+N_{B}(t=0)  \equal \appear{N_{A 0}} \LP \frac{\lambda_{A}}{\lambda_{B}-\lambda_{A}} \appear{e^{-\lambda_{A} \cdot 0}}  \plus \appear{c_{B} e^{-\lambda_{B} \cdot 0}} \RP \appear{=0} \quad \Rightarrow \quad \appear{c_{B}=}\frac{-\lambda_{A}}{\lambda_{B}-\lambda_{A}}
+\]
+
+\item Joten ytimen B lukumääräksi $N_{B}(t)$ saadaan
+\[
+N_{B}(t)  \equal \appear{N_{A 0}} \frac{\lambda_{A}}{\lambda_{B}-\lambda_{A}}
+\LP \appear{e^{-\lambda_{A} t}-e^{-\lambda_{B} t}} \,\RP
+\]
+
+\item Käytännössä aktiivisuus on usein käytetty suure
+
+\item Ytimien $A$ ja $B$ aktiivisuudet ovat
+$$
+\begin{aligned}
+\appear{R_A = \lambda_{A} N_{A}} & \equal \appear{\lambda_{A} N_{A 0} e^{-\lambda_{A} t}} \\
+\appear{R_B = \lambda_{B} N_{B}} & \equal \appear{N_{A 0}} \frac{\lambda_{A} \lambda_{B}}{\lambda_{B}-\lambda_{A}} \LP \appear{e^{-\lambda_{A} t}}\appear{-e^{-\lambda_{B} t}} \,\RP 
+\end{aligned}
+$$
+\end{itemize}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Ydinten synnyttäminen}%Generation of radioactive nuclides by nuclear bombardment
+\appear{}
+
+%
+\begin{itemize}
+	\item Radioaktiivisia ytimiä syntyy \CDAlert[blue]{neutronikaappauksen} seurauksena \appear{(joskus myös \Alert[red]{elektroni- ja protoni}säteitä käytetään)} 
+	
+	\item Esimerkiksi \Alert[blue]{${ }^{59}$Co:a pommitetaan neutroneilla} \appear{\Alert[blue]{\CDAlert[blue]{synnytettäessä} ${ }^{60}$Co:a}} \appear{mikä on radioaktiivinen ydin jonka puoliintumisaika on $5,27$ vuotta}
+
+\item Oletetaan että radioaktiivisia ytimiä synnytetään vakionopeudella $g$ ydintä/s\appear{, ja että hajoamisvakio on $\lambda$}\appear{, ja lasketaan synnytettyjen radioaktiivisten ydinten lukumäärä yksikköajassa:}
+$$
+\begin{aligned}
+\frac{d N}{d t} & \equal \appear{g-\lambda N} \\
+\appear{\nint_{N_{0}}^{N} } \frac{d N}{N-g / \lambda} & \equal  \minus \appear{\lambda} \appear{\nint_{0}^{t} d t} \quad \Rightarrow  \quad \appear{\ln} \fraca{N-g / \lambda}{N_{0}-g / \lambda}  \equal  \minus \appear{\lambda t}
+\end{aligned}
+$$
+\end{itemize}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Ydinten synnyttäminen}%Generation of radioactive nuclides by nuclear bombardment
+\appear{}
+
+\begin{itemize}
+	\item[] $$
+\begin{aligned}
+& & \appear{\ln} \frac{N-g / \lambda}{N_{0}-g / \lambda} & \equal  \minus \appear{\lambda t} \qquad \Rightarrow \qquad \appear{N-g} \appear{/ \lambda}& \equal  \LP \appear{N_{0}-g} \appear{/ \lambda} \RP  \appear{e^{-\lambda t}} \\
+&\Rightarrow \quad& \appear{N(t)}& \equal \frac{g}{\lambda} \LP \appear{1-e^{-\lambda t}} \RP \appear{+N_{0} e^{-\lambda t}}
+\end{aligned}
+$$
+
+\item Jos aluksi ei ole aktiivisia ytimiä\appear{, eli $N_{0}=0$}\appear{, niin aktiivisten ydinten lukumääräksi saadaan}
+\[
+N(t)  \equal \frac{g}{\lambda} \LP \appear{1-e^{-\lambda t}} \RP 
+\]
+
+\item Huomaa että suurin tuotettu ydinten lukumäärä \appear{on $N_{\max }=\frac{g}{\lambda}$}
+
+\item Lisäksi näytteen aktiivisuus on $\appear{\lambda N(t)=}\appear{g} \LP \appear{1-e^{-\lambda t}} \RP $\appear{, jonka maksimi on $g$.} \appear{Huomaa, että esimerkki pätee suoraan \CDAlert[blue]{neutroniaktivaatioanalyysiin}} \appear{(käsitellään myöhemmin)}
+\end{itemize}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Vuorovaikutusala ja peittoaste}%Cross section and exponential attenuation
+\appear{}
+
+%
+\begin{itemize}
+	\item Tarkastellaan pienten hiukkasten jatkuvatoimista sädettä \appear{joka osuu kohdepinnan hiukkasiin.} \appear{Yksinkertaistetaan tilannetta oletuksilla:}
+\begin{itemize}
+	\item Pommittavat hiukkaset ovat \CDAlert[red]{pieniä}\appear{, pistemäisiä}
+\item Kohdehiukkasten vuorovaikutusala on $\sigma\appear{,~[\sigma]=m^{2}}$
+\item Kohdehiukkasilla on  \CDAlert[blue]{pieni lukumäärätiheys $n$} \appear{jolloin ne eivät mene toistensa päälle}
+\end{itemize}
+
+\item Yhteenlaskettu (projisoitu) kohdehiukkasten ala kohdepinnassa on:
+\[
+A^{\prime}  \equal \appear{\Underlinecomment{red}{n \cdot(A d x)}{\qquad Tilavuudessa Adx olevien kohdehiukkasten lukumäärä}} \appear{\cdot \sigma}
+\]
+%\Underlinecomment{red}{\textrm{((} \Frac{\sin \,N \beta}{\sin \,\beta} \textrm{))} ^{2}}{}}
+
+\item \appear{(kohdepinnan projisoidun alan)} \appear{\CDAlert[fuchsia]{peittoaste} on} 
+\[
+\fraca{A^{\prime}}{A}  \equal \frac{n A d x \sigma}{A} \equal \appear{n \sigma d x}
+\]
+\end{itemize}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Eksponentiaalinen vaimeneminen}%Exponential attenuation and 
+\appear{}
+
+\seminormal
+\begin{itemize}
+	\item Jos jokainen osuva hiukkanen \CDAlert[blue]{vuorovaikuttaa kerran}\appear{, osuvien hiukkasten osuus} \appear{(tulevista $N$:stä hiukkasesta)} \appear{joka osuu paksuudeltaan $d x$ olevaan pintaan}\appear{ on}
+\[
+\Frac{d N}{N}  \equal \appear{n \sigma d x}
+\]
+\item[] mutta on käytännöllisempää tarkastella osuutta joka häviää tulevasta hiukkassäteestä:
+\[
+\Frac{d N}{N}  \equal  \minus \appear{n \sigma d x}
+\]
+
+\item Nyt tarkastellaan hiukkaslukumäärää $N$ \appear{jotka osuvat $x$:n paksuiseen pintaan.} \appear{Nyt saadaan tulevien hiukkasten lukumääräksi}\appear{, jotka jäävät säteeseen}\appear{ etäisyyden $x$ funktiona:}
+\[
+\nint_{N_{0}}^{N} \fraca{d N}{N} \equal \appear{\nint_{0}^{x}} \minus \appear{n \sigma d x} \qquad \Rightarrow \qquad \appear{N(x)} \equal \appear{N_{0}} \appear{e^{-n \sigma x}}
+\]
+\appear{Eli olemme johtaneet \CDAlert[red]{eksponentiaalisen vaimenemisen lain}}
+\end{itemize}
+
+%\xdef\loc{south east}
+%\begin{tikzpicture}[remember picture,overlay] % anchor=south
+%    \node (A) [yshift=-0.25*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[width=7cm]{Figures_booklet/SOM_12_Nuclear_physics_figures/SOM_Nuclear_physics_Figure_1.png}}; % 8cm max height
+%\end{tikzpicture}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Vuorovaikutusala}%and exponential attenuation
+\appear{}
+
+\begin{itemize}
+	\item Aiemmin tarkastellut tulevat hiukkaset  \appear{(projektiilit)} \appear{oletettiin pistemäisiksi:}
+\[
+\sigma  \equal \appear{\pi r^{2}}
+\]
+
+\item Jos sekä tulevilla hiukkasilla  \appear{että kohdehiukkasilla on nollasta poikkeava säde}\appear{, niin}
+\[
+\sigma  \equal \appear{\pi} \appear{( r_{1}}  \plus \appear{r_{2} )^{2}}
+\]
+
+\item Usein efektiivinen vuorovaikutusala riippuu \Alert[blue]{törmäyksien energiasta}
+
+\item Tällöin vuorovaikutusala voi huomattavastikin erota \appear{kohde-}\appear{/saapuvien hiukkasten} \appear{\CDAlert[red]{geometrisestä poikkipinta-alasta}} %(see the conceptual Fig 12.12)
+\end{itemize}
+
+%\xdef\loc{south east}
+%\begin{tikzpicture}[remember picture,overlay] % anchor=south
+%    \node (A) [yshift=-0.25*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[width=7cm]{Figures_booklet/SOM_12_Nuclear_physics_figures/SOM_Nuclear_physics_Figure_1.png}}; % 8cm max height
+%\end{tikzpicture}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Vuorovaikutusala}%and exponential attenuation
+\appear{}
+
+\seminormal
+\begin{itemize}[itemsep=1.7mm]
+	\item Perinteinen yksikkö ydinten vuorovaikutusaloille on barni missä:
+\[
+1 \text { barni}  \equal \appear{1 \mathrm{~b}}  \equal \appear{10^{-28} \mathrm{~m}^{2}} \equal \appear{100 \mathrm{\;fm}^{2}}
+\]
+\item Barni ei ole SI-yksikkö\appear{, mutta se on käytännöllinen koska sen suuruusluokka on sama kuin ytimen geometrinen poikkipinta-ala} \appear{(nimihän tulee yleisestä maalitaulusta)} 
+
+\item Vuorovaikutusalat useimmille ydinreaktioille riippuvat tulevan hiukkasen energiasta 
+
+\item Esim.\ ${ }_{48}^{113} Cd$:n \CDAlert[red]{neutronikaappaus}  \appear{riippuu neutronin energiasta} %as shown in Figure $12.14 .$
+
+\item Tämä ydinreaktio lähettää myös gammasäteen:
+\[
+{ }_{48}^{113} Cd(n, \gamma) \appear{{}_{48}^{114} Cd} \qquad \appear{\text{eli}} \qquad  \appear{{ }_{48}^{113} Cd}~\plus~\appear{n}  \quad \rightarrow \quad \appear{{}_{48}^{114} Cd}  ~\plus~  \appear{\gamma}
+\]
+\appear{Vaikka ${ }_{\;48}^{113} C d$ isotooppi muodostaa vain $12 \%$ luonnollisesta kadmiumista}\appear{, sen neutronikaappauksen vuorovaikutusala on niin suuri}\appear{, että \Alert[red]{kadmiumia käytetään paljon ydinreaktoreiden \CDAlert[red]{säätösauvoissa} }}
+\end{itemize}
+
+\endofslide 
+%\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{\texorpdfstring{\culine[\sectiontitleulinecolor]{\sectiontitle}}{\sectiontitle} }
+\framesubtitle{Vuorovaikutusala}%and exponential attenuation
+\appear{}
+
+% 6.5 cm = midway, 10 cm = 3/4 
+%\vspace{2.5mm}
+\begin{minipage}{7.0cm}
+\begin{itemize}
+	\item Hiukkasen $a$ törmäys\appear{ voi johtaa usean loppu-/reaktiotuotteen syntymiseen}\appear{, mikä vastaa \Alert[blue]{useaa}} \appear{(vaihtoehtoista)} \appear{\CDAlert[blue]{'reaktiokanavaa'}}
+	\appear{\xdef\loc{north east}
+\begin{tikzpicture}[remember picture,overlay] % anchor=south
+    \node (A) [yshift=0.75*\figYshift,xshift=\figXshift, anchor=\loc] at (current page.\loc) {\includegraphics[]{Figures_booklet/SOM_12_Nuclear_physics_figures/SOM_Nuclear_cross_section_a}}; % 8cm max height
+\end{tikzpicture}}
+	
+\end{itemize}
+\end{minipage}
+\vspace{2.5mm}
+
+\begin{itemize}
+\item Jokaisella reaktiokanavalla voi olla oma vuorovaikutusalansa\appear{, kuten $\sigma(a, b)$}\appear{, $\sigma ( a, b^{\prime} )$}\appear{, $\sigma (a, b^{\prime \prime} )$ ja niin edelleen }
+
+\item Tällöin kokonaisreaktion vuorovaikutusala tulevalle hiukkaselle $a$ tulee olemaan:
+\[
+\sigma_{t o t}(a)  \equal \appear{\sigma(a, b)} \appear{+\sigma (a, b^{\prime})}  \plus \appear{\sigma (a, b^{\prime \prime} )} \appear{+\ldots}
+\]
+
+\item Ja taas jokainen \Alert[red]{vuorovaikutusala voi \CDAlert[red]{riippua} tulevan hiukkasen \CDAlert[red]{energiasta} omalla tavallaan }
+\end{itemize}
+
+%\endofslide 
+\endofsection
+\end{frame}
+%%%%%%%%%%%%%%%
+
+
+

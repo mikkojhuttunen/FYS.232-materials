@@ -1,0 +1,2645 @@
+# FYS.232 Structure of Matter -- Chapter 4: Fundamental Particles
+(Clean text corpus, extracted and cleaned from LaTeX/Beamer slide source.
+ TikZ figure blocks are replaced with [FIGURE: filename] markers.
+ Section/slide titles are the REAL titles from the course's own a_SoM_TOC.tex
+ (English) and b_AiRa_TOC.tex (Finnish) files.
+ Custom notation macros (big brackets, equal signs, integral/sum symbols,
+ arrows, sqrt, citation stamps, etc.) normalized to plain characters / standard LaTeX.
+ NOTE: not cross-checked against an actual compiled PDF (only Chapter 1 was
+ rendered end-to-end) -- flag anything that looks garbled.)
+
+======================================================================
+ENGLISH (source: SubChapters/)
+======================================================================
+
+## 4.1 How Forces Act
+
+--- slide: 4. Fundamental particles ---
+
+    - 4_1_a{How Forces Act}
+    - 4_2_a{Antiparticles}	
+    - 4_3_a{Forces and Particles}	
+    - 4_4_a{Particle Production and Detection}
+    - 4_5_a{Decay Modes and Conservation Rules}
+    - 4_6_a{Parity, Charge Conjugation and Time Reversal}
+    - 4_7_a{Unification Theories, GUT and Cosmology}
+
+--- slide: Prelude to fundamental particles ---
+
+\semismall
+
+	- Democritus: Smallest indestructible constituent of matter $\Rightarrow$ atom 
+	
+	- Dalton: Atoms as fundamental building blocks of matter 
+	
+	- Thomson: also electrons were found to exist, atoms contain electrons 
+	
+	- Rutherford: protons were found in hydrogen atom 
+	
+	- Compton: photons also scatter as they were particles 
+	
+	- Chadwick: neutrons were found to e.g. explain mass of nuclei
+	
+	- Positron, muon, pion, sigma, rho, etc. ...
+
+- Gell-Mann \& Zweig: Prediction of quarks as the constituents of the protons, neutrons etc. (nucleons have internal structure) 
+
+\implies{ As a result, we presently have the so-called Standard Model }
+
+--- slide: Prelude to fundamental particles ---
+
+{7.5cm}
+
+	- Ordinary matter is composed of protons, neutrons and electrons
+
+- During the last 60 years, experiments with particle accelerators using ever increasing energies have revealed hundreds of other 'fundamental particles'
+\implies{ e.g. discovery of quarks }
+
+- Understanding of the fundamental particles and their structure have changed during the years
+
+[FIGURE: Tikz_SOM_Fundamental_figures.pdf]
+
+--- slide: Prelude to fundamental particles ---
+
+ (Range of a force?)
+
+	- Elementary particles interact only in a few distinct ways
+
+- In mechanics, a force requires physical contact (tension, normal forces, friction, ...), but gravity acts through a vacuum, so do electromagnetic forces!
+
+- Contact-free forces turn out to be more of a rule than an exception. Such forces can be called as field forces
+
+- In addition, contact forces (tension etc.) turn out to arise from microscopic electromagnetic forces
+
+{8.0cm}
+
+	- Strong force was also seen to act 'remotely'
+
+[FIGURE: SOM_Nuclear_Table_2]
+
+, although the range was very short
+
+--- slide: How Forces Act ---
+
+	- Modern view:
+- 
+	 - Forces act via exchange of mediating particles
+- Each force (of the 4 fundamental) has its own mediating particle
+- The mediating particle is also known as field quantum
+
+\implies{  Quantum field theory }
+
+- How do we explain the interaction?
+
+- There are obviously two kinds of particles:
+- 
+	- Those particles that experience the force
+- Those particles which are exchanged to
+convey the force, i.e. to mediate the interaction
+
+- Note, in some cases the particles convey the force they experience themselves!
+
+--- slide: How Forces Act ---
+
+{7.5cm}
+
+	- Two physics students, Anna and Bob, sliding on frictionless ice
+
+[FIGURE: SOM_Fundamental_particles_Figure_1.png]
+
+, interact by Anna throwing a snowball to Bob, who catches it
+
+- Momentum of each person changes: Anna's momentum changes $-\vec{p}_{\text {snowball}}$, and Bob's momentum changes $+\vec{p}_{\text {snowball}}$
+
+- This would represent "a snowball-mediated repulsive force", where the snowball transfers momentum from Anna to Bob
+
+- A Feynman diagram represents this interaction schematically
+
+--- slide: How Forces Act ---
+
+\seminormal
+
+	- The above example successfully mimics a repulsive force between Anna and Bob, but the analogy fails to explain an attractive force
+
+[FIGURE: Tikz_SOM_Fundamental_figures_combo.pdf]
+
+	- To convey an attractive force, when throwing the snowball, Anna would have to move towards Bob, and when catching the snowball, Bob would have to move towards Anna 
+	\implies{ Conservation of momentum would be violated!}
+
+- In the example, Anna had the snowball already before throwing it, and when catching the snowball, Bob would have kept it
+
+{9.0cm}
+
+	- In reality, the snowball (mediating particle) would be created only for the time of flight and be annihilated immediately after its capture
+	\implies{Energy doesn't seem conserved\\ in this macroscopic example!}
+
+--- slide: How Forces Act ---
+
+ (Virtual particles)
+
+\semismall
+
+	- The mediating particles are virtual particles, they are there only for the interaction, they do not need to obey the usual conservation rules of momentum and energy, like 'real' particles do
+	
+	- Phenomenon resembles tunnelling, 
+	as the probability for the occurence of the virtual particle decreases with the increase in the real particle separation
+
+{8.3cm}
+
+- This exchange of virtual particles was suggested as the mechanism for the strong nuclear force acting between two nucleons, by H. Yukawa (1935) 
+
+[FIGURE: Tikz_SOM_Fundamental_figures_combo.pdf]
+
+- Range of strong force is short because the mediating virtual particle has a mass. The idea can be applied also to electromagnetic interaction. Electrical charges continuously send out virtual particles
+ 
+- Range is infinite because the virtual particles are photons, which have a zero rest mass
+
+--- slide: How Forces Act ---
+
+ (Virtual particles)
+
+	- The mechanism and existence of virtual mediating particles can be understood based on Heisenberg's uncertainty principle between time and energy
+
+- Assuming the virtual particle has a time interval $\Delta t$ to act (i.e. uncertainty of time), then the uncertainty of its energy $\Delta E$ would need to obey the equation $\Delta t \Delta E \approx \hbar$
+
+- Energy of the particle could vary within $\Delta E$ without violating the conservation laws. In other words, even an energy of $\Delta E=m c^{2}$ would be allowed for the virtual particle, if we demand that it has non-zero mass
+
+- This means $\Delta t \approx \hbar / m c^{2}$, and for a possible range $\Delta x \approx c \Delta t \approx \hbar / m c$ 
+
+- To conclude, range of virtual particle $\approx \frac{\hbar}{c} \frac{1}{m}$
+
+--- slide: How Forces Act ---
+
+ (Virtual mediating particles, mass vs. range)
+\seminormal
+
+	- Larger the mass for the mediating particle, the shorter the range of the interaction, and vice versa 
+	
+	- The range of nuclear force is ${\sim\;}1 \mathrm{\;fm}$ 
+	\implies{ We obtain an estimate for the mass of the meson:
+\[
+m  = 3.5 \times 10^{-28} \mathrm{\;kg} \approx 300 \mathrm{m}_{\mathrm{e}} \approx 200 \mathrm{\;MeV} / \mathrm{c}^{2}
+\] }
+- Assuming the mediating particles to be photons, such as in the case electromagnetic interaction, we have the range:
+\[
+\text {range} \approx c \Delta t \approx \frac{c \hbar}{\Delta E}  = c \hbar \frac{\lambda}{h c} = \frac{\lambda}{2 \pi}
+\]
+
+- Since the photons have no (rest) mass, there is no lower limit for the energy
+($\Rightarrow$ the range could be very large, approaching infinity)
+
+- In fact, when two electrons interact electromagnetically, both electrons continuously emit virtual photons that are absorbed by the other electron
+
+## 4.2 Antiparticles
+
+--- slide: 4. Fundamental particles ---
+
+    - 4_1_a{How Forces Act}
+    - 4_2_a{Antiparticles}	
+    - 4_3_a{Forces and Particles}	
+    - 4_4_a{Particle Production and Detection}
+    - 4_5_a{Decay Modes and Conservation Rules}
+    - 4_6_a{Parity, Charge Conjugation and Time Reversal}
+    - 4_7_a{Unification Theories, GUT and Cosmology}
+
+--- slide: Antiparticles ---
+
+ (First discovery)
+
+\semismall
+
+	- In 1932, the same year that neutron was discovered, also positron was discovered 
+	- The particle has the same mass and intrinsic angular momentum as the electron, but has positive charge 
+	- It is the antiparticle of electron, represented by symbol $e^{+}$, sometimes in connection with radioactive decay also $\beta^{+}$
+	- The electron–positron pairs can be seen to be produced from e.g. $300 \mathrm{\;MeV}$ synchrotron $\mathrm{X}$-rays (see figure)
+
+[FIGURE: SOM_Tipler_Fundamental_Figure_1.png]
+ 
+	- Positron is generated simultaneously with an electron in this kind of pair production process, and positrons
+
+{5.0cm}
+
+	-  are also seen to annihilate with electrons in a process resembling recombination of e.g. electrons and holes in the semiconductor, producing a photon
+
+--- slide: Antiparticles ---
+
+\seminormal
+
+	- It turns out that nearly all fundamental particles have their own antiparticles:
+
+	- Protons $(p)$ have antiprotons $(\bar{p})$
+- Neutrons $(n)$ have antineutrons $(\bar{n})$, in fact it might be very difficult to distinguish a neutron form an antineutron, since they both are electrically neutral. But antineutrons annihilate with neutrons, while two neutrons do not annihilate
+
+- Similar to the most knowns leptons, electron and positron, there are other leptons such as muon ($\mu^{-}$) and antimuon ($\mu^{+}$)
+
+- Some uncharged particles (such as $\pi^{o}$) are their own antiparticles
+
+- While antiparticles can be created, bulk antimatter has not been found
+
+- Neither the standard model nor the theory of general relativity (GR) provides a known explanation. The universe is assumed to be charge neutral, and the Big Bang should have produced equal amounts of matter and antimatter, but somehow the balance is off
+
+--- slide: Antiparticles ---
+
+ (Theoretical explanation for antiparticles)
+
+	- Dirac formulated a relativistic wave equation (Dirac equation), which predicted existence of positron as one of its solutions 
+	
+	- Let us see how we could motivate the search for antiparticles. Starting from the Schrödinger equation for a free particle: 
+\[
+-\frac{\hbar^{2}}{2 m} \frac{\partial^{2}}{\partial x^{2}} \Psi(x, t)  = i \hbar \frac{\partial}{\partial t} \Psi(x, t)
+\]
+which, using the operators ($\hat{p}$ and $\hat{E}$), can be written in the form: 
+\[
+-\frac{1}{2 m} \hat{p}^{2} \Psi(x, t)  = \hat{E} \Psi(x, t)
+\]
+where the kinetic energy should be in relativistic form (not $p^{2} / 2 m$): 
+\[
+(p c)^{2}  +  (m c^{2} )^{2}  = E^{2}
+\]
+
+--- slide: Antiparticles ---
+
+ (Theoretical explanation for antiparticles)
+
+- Using operators, we can describe the previous equation in the form: 
+\[
+c^{2} \hat{p}^{2} \Psi(x, t)  + m^{2} c^{4} \Psi(x, t)  = \hat{E}^{2} \Psi(x, t) \,,
+\]
+and the so-called Klein–Gordon equation: 
+\[
+-c^{2} \hbar^{2} \frac{\partial^{2}}{\partial x^{2}} \Psi(x, t)  + m^{2} c^{4} \Psi(x, t)  = -\hbar^{2} \frac{\partial^{2}}{\partial t^{2}} \Psi(x, t)
+\]
+which is a relativistic (scalar) wave equation (Lorentz-covariant), and its solutions can be used to describe relativistic but spinless particles/fields
+
+- Finally, Dirac's equation would extend this into relativistic vector waves, by taking spin into account
+\implies{ Solutions would describe relativistic massive particles with a spin (e.g. electrons)}
+
+--- slide: Antiparticles ---
+
+ (Theoretical explanation for antiparticles)
+
+\seminormal
+
+	- Above equations give us insight on how one could have two alternative wave functions, one for particles and the other for antiparticles
+
+- The energy of a relativistic free particle can be obtained by: 
+\[
+E^{2}  = (p c)^{2}  + (m c^{2})^{2} \qquad \Rightarrow \qquad E  =  \pm ((p c)^{2}+(m c^{2})^{2} )^{1/2}
+\]
+i.e. two values (positive/negative) for energy can be found
+
+[FIGURE: Tikz_SOM_Fundamental_figures_combo.pdf]
+
+{9.1cm}
+
+	- Positive-valued $E$ is intuitive, energies are higher than the rest energy $m c^{2}$ 
+	- But wave functions associated with negative-energy states could also exist, having energies less than $-m c^{2}$\;? 
+	
+	- Although the positive root is usually taken, there is no physical reason to omit the negative root
+
+--- slide: Antiparticles ---
+
+ (Theoretical explanation for antiparticles)
+
+\semismall
+
+	- If negative energy states going all the way down to $E=-\infty$ are possible, why electrons in the universe do not fall down to these negative energies?
+
+- Dirac suggested to treat positrons analogous to the hole states in semiconductors 
+
+- There would be an 'infinite sea' of negative-energy states filled with electrons. So, all the negative states would be normally filled, and Pauli exclusion principle would prevent any other electrons from dropping into the negative states
+
+- If the electron in the negative sea is given enough energy (e.g. by absorbing a photon $h f>2 m c^{2}$), then it can jump out of this sea and become an electron with positive energy
+
+[FIGURE: Tikz_SOM_Fundamental_figures_combo.pdf]
+
+{8.2cm}
+
+- Process would leave behind a hole in the sea, which would seemingly act as a particle of positive charge
+
+- A particle may also fall in the hole and thus disappear, but only if a hole already exists
+
+--- slide: Antiparticles ---
+
+ (QED and antiparticles)
+
+	- The notion, that we are immersed within an infinite sea of negative-energy electrons, is somewhat unsettling 
+	
+	- It was rendered unnecessary with the development of quantum electrodynamics (QED) by R. Feynman and others in the late 1940s
+
+- QED, whose predictions have been verified to the highest precision of any physical theory, requires that each particle has an antiparticle, which has the same mass but an opposite charge 
+
+- Positron is the antiparticle of electron 
+- Also other spin $1 / 2$ particles, e.g. proton and neutron, have their antiparticles (found in 1955 and 1957, respectively)
+
+- The creation of proton–antiproton pair requires energy of at least $2 m_{p} c^{2}=$ 1877 \;MeV
+
+--- slide: Antiparticles ---
+
+ (QED and antiparticles)
+
+	- Dirac's concept of infinite sea of electrons was later discarded (in late 1940s) with further reformulation of Dirac's theory and the QED
+
+- As one alternative hypothesis, Ernst Stueckelberg and Feynman suggested that, mathematically, positron can be described as an electron traveling backwards in time
+
+- In any case, the fact remains that electron–positron pairs can be created and destroyed, as well as the feature that all particles have an antiparticle
+
+- The Dirac theory is inherently a many-particle theory, and it provides the beginning of a theoretical framework for creation and destruction of all particles
+
+## 4.3 Forces and Particles
+
+--- slide: 4. Fundamental particles ---
+
+    - 4_1_a{How Forces Act}
+    - 4_2_a{Antiparticles}	
+    - 4_3_a{Forces and Particles}	
+    - 4_4_a{Particle Production and Detection}
+    - 4_5_a{Decay Modes and Conservation Rules}
+    - 4_6_a{Parity, Charge Conjugation and Time Reversal}
+    - 4_7_a{Unification Theories, GUT and Cosmology}
+
+--- slide: Forces and Particles ---
+
+ (On fundamental forces)
+
+\semismall
+
+	- Our picture of fundamental forces has been well shaped during last 100 years:
+- 
+	- Electricity and magnetism were combined into electromagnetism by Maxwell 1873
+	- Electromagnetism was combined with quantum mechanics and relativity (quantum electrodynamics (QED)) in 1950s
+- Electromagnetism and weak force were combined into electroweak force in 1960s. Despite this, electromagnetism and weak forces are sill often referred separately, since "weak force" is manifest only in certain subatomic particle reactions
+- Strong nuclear force is covered by quantum chromodynamics (QCD)
+- Gravitational force has remained as a separate force/interaction
+
+[FIGURE: SOM_Fundamental_Table_1_cropped.png]
+
+--- slide: Forces and Particles ---
+
+ (On fundamental particles)
+
+\semismall
+
+	- Fermions experience forces: quarks and leptons
+	- Bosons mediate forces: gluons, W- and Z-bosons, photons, gravitons?
+	
+	- Each fermions affected by a force, has a property associated with that force:
+
+	- Mass/energy for gravitation
+	- Charge, or weak charge, for electroweak interaction
+	- Color charge for strong interaction
+
+[FIGURE: Elementary_particles]
+
+--- slide: Forces and Particles ---
+
+ (On fundamental particles)
+
+	- Observation of elementary particles usually takes place indirectly based on conservation laws and known processes 
+	- Some particles can only be assumed to exist based on the standard model 
+	- For example, of quarks, and of their interactions via gluons which bind them together, we do not have very strong experimental evidence
+	
+	- Also, the search for Higgs boson $\mathrm{H}^{0}$, predicted by the standard model, and the event in 4.7.2012 of finding it with mass $125 \mathrm{\;GeV} / \mathrm{c}^{2}$, has been one of the recent topics in verifying our present image of structure of matter
+\implies{ A promise of a grand unified theory }
+
+--- slide: Forces and Particles ---
+
+ (The strong force)
+
+\semismall
+
+{8.5cm}
+
+	- Quarks inside nucleons (protons and neutrons) are bound together via attraction due to the strong force
+
+[FIGURE: SOM_Fundamental_particles_Figure_3.png]
+
+	- The quarks are considered to be the fundamental fermions interacting with the strong force, via exchange of gluons
+	
+	- There are six types of quarks, listed in the Table
+
+[FIGURE: SOM_Fundamental_Table_1_cropped2.png]
+
+- Each have spin $=\frac{1}{2}$, and charge either $-\frac{1}{3} e$ or $+\frac{2}{3} e$
+
+{5.8cm}
+
+	- Proton consists of uud, with 
+	\[
+	charge  =  + \frac{2}{3} + \frac{2}{3} + ( - \frac{1}{3})=1
+	\]
+
+- Neutron consists of udd, with
+\[
+charge  =  + \frac{2}{3} + ( - \frac{1}{3}) + ( - \frac{1}{3}) = 0
+\]
+- Particles composed of quarks are called hadrons
+
+--- slide: Forces and Particles ---
+
+ (Quark/Color confinement)
+
+\semismall
+
+	- Quarks have not been observed isolated. It is understood that strong force gets stronger with separation (unlike electrical force). It is almost impossible to separate quarks, they 'refuse' to be separated $\Leftrightarrow$ quark/color confinement 
+	
+	- Attempting to separate quarks with high energy bombardment, what happens is that the energy consumed will just produce additional quark-antiquark pairs
+
+[FIGURE: SOM_Fundamental_quark_confinement.pdf]
+
+{8.2cm}
+
+	- Information of quarks have been obtained by deep inelastic scattering experiments using $E=20 \mathrm{\;GeV}$ \& $p=20 \mathrm{\;GeV} / \mathrm{c}$ electrons (with $\lambda \sim{10^{-16}} \mathrm{\;m}$) (e.g. SLAC, 1973)
+	- Based on the experiments, quarks move relatively freely inside the nucleon
+	- Summed mass of three quarks in a nucleon is significantly less than the mass of the nucleon, the missing energy/mass is assumed to be stored in a cloud of energetic gluons in the nucleon
+
+--- slide: Forces and Particles ---
+
+ (Gluons)
+
+\seminormal
+
+	- The mediating particle of strong force is gluon
+	- Quarks exchange gluons continuously
+
+{9.6cm}
+
+	- Gluons have spin 1 and zero mass 
+
+- With zero mass, the range is infinite ((range $\approx \frac{\hbar}{c} \frac{1}{m}$)) 
+
+- Gluons carry the property specific to force, i.e. color charge
+(unlike photons which are electrically neutral)
+\implies{ Because gluon has color, effective range is very short }
+
+- Approximation for the potential of strong force has been suggested, and experimentally verified for short distances:
+\[
+\qquad V_{QCD}(r)  =  - \frac{4 \alpha_{s}}{3 r}  + k r
+\]
+- where $\alpha_{S} =coupling constant for strong force \approx0.3$ and $k=1 \mathrm{\;GeV} / \mathrm{fm}$
+
+[FIGURE: Quark_potential.pdf]
+
+--- slide: Forces and Particles ---
+
+ (Color charge)
+
+\seminormal
+
+	- The property specific for strong interaction is color charge, or simply color
+
+[FIGURE: Color_charges.pdf]
+
+		- Each quark has a color charge: \textcolor{red}{red (r)}, \textcolor{green}{green $(g)$}, and \textcolor{blue}{blue $(b)$}
+	- Antiquarks have anticolors: \textcolor{antired}{antired $(\bar{r})$}, \textcolor{antigreen}{antigreen $(\bar{g})$}, and \textcolor{antiblue}{antiblue $(\bar{b})$}
+	
+	- These colors are mainly labels to describe a quantum mechanical property of the particles (no connection to colours of visible light\,!!)
+
+{5.1cm}
+	
+- 
+	- Like the electric charge, also color is conserved
+- Gluons themselves carry color and anticolor ((there are 8 different gluons, SU(3)\,))
+- Gluons interact also with other gluons!
+
+--- slide: Forces and Particles ---
+
+ (Why color was needed/introduced?)
+
+\seminormal
+
+	- Hadrons consist of fermionic quarks and are color-neutral
+	
+	- Exclusion principle forbids two fermions to be in a same state (with exactly the same quantum numbers) 
+	\implies{ Quarks within the hadron must not be in exactly same quantum state} 
+	\implies{ Property of color (3 different values) was introduced in 1964 by O.W. Greenberg} 
+	- Without color, e.g. hadrons $\Delta^{++}=uuu ~\&~ \Delta^{-}=d d d$ would have same quantum number
+
+- E.g. the three quarks in a nucleon each have a different color 
+
+- Mesons consist of a quark and antiquark pairs 
+\implies{Color neutrality requires color and anticolor pairing}
+
+- Experimental evidence from jets emerging from high energy particle collisions implies that gluons and colors exist 
+
+--- slide: Forces and Particles ---
+
+ (Color charge and color confinement)
+
+\semismall
+
+	- The electric and color charges behave quite differently: 
+
+	 - Electrically charged particles are abundantly found in free from (e.g. free electron)
+	 - Hadrons are color-neutral, no experiment has yet succeeded in producing a colored particle!
+	 - Why is there no free color around?
+
+	- The simplified explanation is that the strengths of forces are so vastly different: strongly interacting particles attract each other very strongly
+
+{8.2cm}
+
+	- But the strength of the force doesn't explain why experiments have failed to find a single quark!
+	
+	- Answer is that the gluons interact also with other gluons, which gives rise to a force that increases in strength when the distances between two colored particles is increased
+
+[FIGURE: SOM_Fundamental_quark_confinement.pdf]
+
+--- slide: Forces and Particles ---
+
+ (Categories of hadrons)
+
+\seminormal
+
+	- Because there are six quarks and antiquarks
+
+[FIGURE: SOM_Fundamental_Table_1_cropped2.png]
+
+, many hadrons can be created
+
+	- Table 12.2. (next slide) lists the most common hadrons 
+	
+	- Proton is the only stable hadron (lifetime of a free neutron is $889 \mathrm{\;s}$)
+	
+	- Baryons are combinations of three quarks: Proton (uud)  and neutron (udd)
+	
+	- Mesons are combinations of a quark and an antiquark: $\pi^{+}$-meson ($u\bar{d}$), and $\pi^{-}$-meson ($\bar{u}d$)
+
+{5.5cm}
+
+	- Instead of lifetime, an energy range is often given assuming $\Delta E \approx \hbar / \tau$, where $\tau$ is the time interval when the particle has been assumed to exist
+
+--- slide: Forces and Particles ---
+
+ (Most common hadrons)
+
+[FIGURE: SOM_Fundamental_Table_2.png]
+
+--- slide: Forces and Particles ---
+
+ (Intrinsic properties)
+
+\seminormal
+
+	- All quarks are spin-$\frac{1}{2}$ fermions, thus, according to addition of angular momentums, all baryons (three quarks) will have spin either $\frac{1}{2}$ or $\frac{3}{2}$
+
+- Isospin 
+
+	- As Table 12.2 shows, some hadrons seem to have the same quark content and same spin 
+	- To obey exclusion principle, another quantum number needs to exist
+	- This quantum number is called isospin $I$, and is more abstract than the ordinary spin, but its third component $I_{3}$ follows similar quantization as with normal spin 
+	
+	- The up and down quark both have isospin $I=\frac{1}{2}$, for strange quark $I=0$
+
+- Strangeness 
+	 
+	- Strange quark has a strangeness of $s=-1$. Therefore, e.g. for $\Omega^{-}(sss): \quad s=-3$
+
+--- slide: Forces and Particles ---
+
+ (The residual strong force)
+
+	- Neutral molecules may become electrically polarized, and thereby  interact electrostatically with each other 
+	- A good example are water molecules forming crystalline structure of ice 
+	- Similarly, color-neutral particles may attract each other via strong force \implies{ This attraction binds the nucleons together in atomic nuclei! }
+	
+- This so-called residual strong force is not really as a distinct force, but a manifestation of the true strong interaction
+
+- Proton and neutron (color-neutral) exchange pions (two-quark mesons) 
+- Mass of mesons explain the short range of the residual strong force
+- A range of $1 \mathrm{\;fm}$ gives a mass $197 \mathrm{\;Mev} / \mathrm{c}^{2}$ for the mediating particle, measured value being $140 \mathrm{\;Mev} / \mathrm{c}^{2}$
+
+--- slide: Forces and Particles ---
+
+ (Electroweak force)
+
+\seminormal
+
+	- Particles that are associated with charge/weak charge (sometimes called 'flavor charge') as a specific property of the electroweak interaction, can engage in electroweak force 
+	\implies{ Both quarks and leptons feel electroweak forces}
+	
+	 - Fermionic leptons are fundamental particles lacking the color charge, and do not therefore interact via the strong force
+
+- Leptons come in three generations: electrons, muons and tauons 
+- Each generation has its own lepton, antilepton, neutrino and antineutrino
+
+- Electron, muon and tauon are quite much alike in their behaviour, only having different masses
+
+- Electroweak interaction is the dominant interaction at scales larger than subatomic and smaller than astronomical 
+- It holds together different phases of matter, both physical and chemical
+
+--- slide: Forces and Particles ---
+
+ (Mediating particles of electroweak force)
+
+	- The mediating particles for electroweak force are the massless photon and three bosons with masses, namely $\mathrm{W}^{+}$, $\mathrm{W}^{-}$ and $\mathrm{Z}^{0}$ 
+	
+	- Electromagnetic and weak parts of the electroweak force are still often treated separately, but the theory formed around 1970, combined them together within QED
+
+- The asymmetry in the mediating particle masses is explained, again, by an analogy 
+- A toy top may be spinning properly and be oriented vertically with high rotational energy, but it may spontaneously drop and fall, and exhibit a large asymmetry 
+- The true symmetry would be visible only at high energies such as $1 \mathrm{\;TeV}$, which have not yet been observed
+
+--- slide: Forces and Particles ---
+
+ (Gravitational force)
+
+\seminormal
+
+	- All particles experience gravitational interaction, because its source as a "gravitational charge" is mass ((...in GR also the stress–energy tensor...))
+	
+	- Compared with strong force, gravity is very weak (${\sim}10^{-38}$ times weaker) 
+	\implies{ Gravity has no role in formation of elementary particles, atoms, molecules... }
+
+- Mediating particle would be the still unfound graviton
+
+- It is assumed to be electrically neutral, massless and having spin 2
+
+- A development for methods and apparatus to observe the graviton is ongoing
+
+- Gravitational waves are disturbances in the fabric ("curvature") of spacetime generated by accelerated masses, which propagate as waves outward from their source at the speed of light 
+
+- In 2017, Weiss, Thorne \& Barich received the Nobel Prize in Physics for their role in the detection of gravitational waves
+
+--- slide: Forces and Particles ---
+
+ (On the standard model)
+
+\seminormal 
+
+	- Standard Model is the current accepted theory of fundamental particles:
+
+{8.6cm}
+
+- 
+		- Quark model of particle structure
+		- Unification of electromagnetic and weak interactions $\rightarrow$ electroweak theory
+		- Unification of electroweak and strong interactions (quantum chromodynamics (QCD)) $\rightarrow$ Grand Unified Theory (GUT)
+		- Explains properties of fundamental particles
+		- Explains the character of interactions
+
+	- Some current open issues: 
+
+	- Rest mass of neutrino?
+- Properties of Higgs boson (found in 2012)?
+- Graviton to be found
+- Galaxy rotation curves, dark matter/energy?
+
+[FIGURE: Separation_of_forces_schematic.pdf]
+
+## 4.4 Particle Production and Detection
+
+--- slide: 4. Fundamental particles ---
+
+    - 4_1_a{How Forces Act}
+    - 4_2_a{Antiparticles}	
+    - 4_3_a{Forces and Particles}	
+    - 4_4_a{Particle Production and Detection}
+    - 4_5_a{Decay Modes and Conservation Rules}
+    - 4_6_a{Parity, Charge Conjugation and Time Reversal}
+    - 4_7_a{Unification Theories, GUT and Cosmology}
+
+--- slide: Particle Production and Detection ---
+
+ (A Short history)
+
+\semismall
+
+- Early experiments with $\alpha$ sources e.g. Pb-210, with 5.3\;MeV of kinetic energy were used: 
+
+- 
+	 - Electron, found in 1897 ((J.J. Thomson, cathode ray, e/m)), its charge was measured in 1909 (by Millikan)
+	- Proton, found in 1919 ((E. Rutherford, $\alpha$ particles on gold foil))
+	- Neutron, found in 1932 ((J. Chadwick, electrically neutral heavy radiation emitted from a bombardment experiment, with mass close to proton)) $\tau \sim 882 \mathrm{\;s}$
+
+- Later, $\gamma$ rays and cosmic rays were used $\rightarrow$ energies of $\sim 1 \mathrm{\;GeV}$ and higher:
+- 
+- Positron, found in 1932 ((Anderson, using Wilson's cloud chamber \& $\gamma$ rays))
+- Muon, found in 1936 (cosmic rays) $m_{\mu}=0.106 \mathrm{\;GeV}, ~\tau \sim 2.2 \;\mu\mathrm{s}$
+- Pion, found in 1947, (cosmic rays) $m_{\pi}=0.140 \mathrm{\;GeV}, ~\tau \sim 26 \mathrm{\;ns}$
+- Kaon, found in 1947, (cosmic rays) $m_{K}=0.490 \mathrm{\;GeV}, ~\tau \sim 5 \mathrm{\;ns}$
+
+- Kaons $\rightarrow$ containing quarks: up, down \& strange in 1967
+
+--- slide: Particle Production and Detection ---
+
+ (Modern accelerators)
+
+\semismall
+
+	- And still later on, more and heavier particles were found:
+ \small
+	 - in 1974: $3.1 \mathrm{\;GeV} ~J/\psi$-meson, consisting of the charm quark and antiquark
+	- in 1975: $1.8 \mathrm{\;GeV}$ tauon
+	- in 1977: $9.5 \mathrm{\;GeV}$ Upsilon meson, consisting of bottom quark and its antiquark
+	- in 1983: $80 \mathrm{\;GeV} ~\&~ 91 \mathrm{\;GeV}$ $W$- and $Z$-bosons
+	- In 1994: $180 \mathrm{\;GeV}$ top quark, the most massive quark that doesn't 'hadronize'
+
+- Modern accelerators reach 6.8\;TeV, colliding 2 particle beams together
+\implies{ collision energy reaches 13.6 TeV values}
+
+[FIGURE: SOM_Fundamental_particles_Figure_4.png]
+
+--- slide: Particle Production and Detection ---
+
+ (Particle detectors)
+
+\seminormal
+
+	 - Having left cloud chambers in the past, there are several fundamental techniques on how to identify and characterize particles which burst out from a collision, determination of charge, momentum, mass etc.
+
+- Scintillator counter: light-flashing material due to particle (e.g. Th doped NaI crystal)
+- Multiwire proportional counter: mesh of conductive wires to determine particle trajectory by observing the ions left on the track
+- Cerenkov detector: particle speed can be determined from the radiation
+- Silicon detector: semiconductors with electron–hole pairs excited by the particle $\rightarrow$ particle trajectory
+- Calorimeter: energy determined from the particle showers induced by the incoming particle
+
+## 4.5 Decay Modes and Conservation Rules
+
+--- slide: 4. Fundamental particles ---
+
+    - 4_1_a{How Forces Act}
+    - 4_2_a{Antiparticles}	
+    - 4_3_a{Forces and Particles}	
+    - 4_4_a{Particle Production and Detection}
+    - 4_5_a{Decay Modes and Conservation Rules}
+    - 4_6_a{Parity, Charge Conjugation and Time Reversal}
+    - 4_7_a{Unification Theories, GUT and Cosmology}
+
+--- slide: Decay Modes and Conservation Rules ---
+
+ (Studying decay processes)
+
+	- Nearly all the particles observed are unstable (excluding proton, electron \& neutrino)
+	- They tend to decay and we can learn from their decay modes:
+	e.g.~energies, masses, quantum numbers
+	- Many of the particles are so unstable and short-lived, that they can be studied only indirectly
+	- Momentum and relativistic total energy are always conserved:
+	if apparent energy is not conserved, then mass will be changed
+	- Charge is always conserved
+	- Are there some fundamental level laws behind this?
+
+--- slide: Decay Modes and Conservation Rules ---
+
+ (Studying decay processes)
+
+	- The totalitarian principle $\rightarrow$ the essence of conservation law:
+	- "Everything not forbidden is compulsory" –Gell-Mann (\& R. Heinlein)
+	- If a decay or a reaction does not occur, then there must be a reason for that $~\Rightarrow~$ Conservation law
+
+	- Conservation laws in nature are fundamentally linked to symmetries
+	
+	- If e.g. the potential function of a particle is constant in the direction of motion, i.e. in the direction of a spatial coordinate, then the potential does not cause forces upon the particle in that direction and thus, the linear momentum of the particle will be conserved
+	\implies{ constant potential has translational symmetry (translational invariance) }
+	
+	- If no angular torques affect on a body, then its potential will have spherical symmetry etc.
+
+--- slide: Decay Modes and Conservation Rules ---
+
+ (Emmy Noether)
+
+	- Similarly, the conservation of energy rules out any decay of a particle so that the total mass of the decay products would be greater than the initial mass 
+	
+	- If kinetic energy increases, then there needs to be a decrease of mass
+ \implies{ there is a symmetry linking time and energy with each other}
+
+- Emmy Noether presented in 1918 a statement on the conjugate variables in physics. Each physical symmetry leads to a conservation law
+
+- The most common conserving quantities (in classical physics) and the corresponding symmetries are: 
+$$ \small
+{rcl}
+ Energy (mass) & \qquad \leftrightarrow & \qquadtime reversal symmetry  \\
+ Linear momentum & \qquad \leftrightarrow &\qquad translational symmetry \\
+ Angular momentum & \qquad \leftrightarrow  & \qquadrotational symmetry \\
+ Electrical charge &\qquad \leftrightarrow &  \qquad gauge invariance of electrodynamics \\
+Minkowski metric &\qquad \leftrightarrow &  \qquad special theory of relativity 
+ 
+$$
+
+--- slide: Decay Modes and Conservation Rules ---
+
+ (Emmy Noether)
+
+	 - Noether also connected conjugate variables to conservation laws:
+	
+		 - Energy–time (($\exp (\rmi E t)$\,))
+		- Momentum–displacement (($\exp (\rmi \vec{k} \cdot \vec{r})$\,))
+		- etc.
+
+	- However, already before Noether's theorem, these conservation laws were more or less known, in the scope of classical physics, based mostly on empirical discoveries 
+	
+	- In terms of particle physics, most of the conservation laws are formed on empirical basis
+	
+	- In many cases, the conservation rule has been found to be obeyed only for a particular type of decay 
+	
+	- For instance strangeness is conserved only in strong and electromagnetic interactions, but not in weak interaction, etc.
+
+--- slide: Decay Modes and Conservation Rules ---
+
+ (Emmy Noether)
+
+	- The conservation laws in quantum mechanics are connected with certain quantum numbers
+
+[FIGURE: SOM_Fundamental_Table_4.png]
+
+	- Thus, we will present new quantum numbers, which will be conserved, but only in certain selected reactions, processes or interactions: 
+	 \small
+	 - Baryon number (B): +1 for a baryon, $-1$ for antibaryon, 0 otherwise
+	- Lepton number(s) (L): one for each lepton generation $L_{e}$, $L_{\mu}$, $L_{\tau}$ (new data in 1998)
+	- Strangeness (S): $-1$ for a strange quark, $+1$ for antistrange, 0 otherwise
+	- Isospin
+	- Hypercharge
+
+--- slide: Decay Modes and Conservation Rules ---
+
+ (On the lepton number)
+
+\seminormal
+
+	- According to original Standard Model, neutrinos are assumed to have no mass, but they are polarized 
+	- Experiments have show neutrinos to be left-handed, i.e. their spin is antiparallel with their momentum 
+	- Antineutrinos are right handed, spin parallel to momentum
+
+- In the Standard Model, mass arises from Higgs boson. The same interaction also is assumed to change the handedness from right to left, and vice versa
+
+- Thus, since neutrinos have always been found to be left-handed, this indicates they should have no mass. This implies that lepton number is conserved in the weak interaction, and, more exactly, each of their flavours will be conserved
+
+- Except that experiments made in 1998 showed that neutrinos can change into other neutrinos, due to a phenomenon called neutrino oscillation
+
+--- slide: Decay Modes and Conservation Rules ---
+
+ (Feynman diagrams)
+
+	 - Collisions/reactions of fundamental particles are described by illustrative Feynman diagrams
+
+	- Here we take the convention from our textbook by Harris:
+	
+		 - Horizontal axis is time
+		- Vertical axis is location
+
+	- Absolute spatial/temporal positions do not matter in the diagrams, rather they help in bookkeeping of possible particle interactions 
+
+{9cm}
+
+	- Fermions, (leptons, hadrons, quarks) are described by a straight solid line, bosons (mediating particles) by a wavy line. A joint in the graph means a reaction
+
+[FIGURE: SOM_Fundamental_particles_Figure_10.png]
+
+--- slide: Decay Modes and Conservation Rules ---
+
+ (Feynman diagrams)
+
+\semismall
+
+	- Basic rules of the interactions: 
+	
+	 - Only particle possessing color can engage in the strong force
+	$\rightarrow$ Only fermions involved in the strong vertex are quarks
+	- To conserve color the gluon carries anticolor. Note, the quark changes color
+	- All particles can interact electromagnetically, except neutrinos
+	- Weak vertices show that all fundamental fermions may interact via W and Z 
+	- In the W case, charge of quark changes and quarks transmutate
+
+[FIGURE: SOM_Fundamental_particles_Figure_8.png]
+
+--- slide: Decay Modes and Conservation Rules ---
+
+ (Feynman diagrams)
+
+	- Fermions (quarks or leptons) can e.g. be destructed into a boson or be created from a boson, this is described by destruction/creation vertices (connecting points)
+
+[FIGURE: SOM_Fundamental_particles_Figure_9.png]
+
+	- Note the time reversal symmetries in the two graphs (Figure 9) on quarks and leptons, respectively
+
+- A whole interaction can be illustrated by combining vertices into a more complex diagram, as done in Figure 10
+
+[FIGURE: SOM_Fundamental_particles_Figure_10.png]
+
+--- slide: Decay Modes and Conservation Rules ---
+
+ (Feynman diagrams, Fig. 11)
+
+	 - a) Neutron ($n$) converts into a proton ($p$) and an electron ($e^-$)
+
+[FIGURE: SOM_Fundamental_particles_Figure_11t.png]
+
+[FIGURE: SOM_Fundamental_particles_Figure_11a.png]
+
+--- slide: Decay Modes and Conservation Rules ---
+
+ (Feynman diagrams)
+
+	 - b) Pion ($\pi^-$) decays to a muon ($\mu^-$). This is a well-known decay, in the outer regions of Earths atmosphere the cosmic pions are converted into muons, which then arrive Earth within a short time of $2.2 \;\mu$s due to Lorentz contraction of the distance
+
+[FIGURE: SOM_Fundamental_particles_Figure_11tt.png]
+
+[FIGURE: SOM_Fundamental_particles_Figure_11b.png]
+
+--- slide: Decay Modes and Conservation Rules ---
+
+ (Feynman diagrams)
+
+	 - c) Sigma-baryon ($\sum^+$) decays to a neutron ($n$). Strangeness is not conserved!
+
+[FIGURE: SOM_Fundamental_particles_Figure_11t.png]
+
+[FIGURE: SOM_Fundamental_particles_Figure_11c.png]
+
+--- slide: Decay Modes and Conservation Rules ---
+
+ (Feynman diagrams)
+
+	 - d) Muon ($\mu^+$) decays into a positron ($e^+$)
+
+[FIGURE: SOM_Fundamental_particles_Figure_11t.png]
+
+[FIGURE: SOM_Fundamental_particles_Figure_11d.png]
+
+--- slide: Decay Modes and Conservation Rules ---
+
+ (Feynman diagrams)
+
+	 - e) Sigma-baryon ($\sum^0$) decays to a lambda-baryon ($\Lambda^0$)
+
+[FIGURE: SOM_Fundamental_particles_Figure_11t.png]
+
+[FIGURE: SOM_Fundamental_particles_Figure_11e.png]
+
+--- slide: Decay Modes and Conservation Rules ---
+
+ (Feynman diagrams)
+
+	 - f) Kaon decays into another kaon and a pion
+
+[FIGURE: SOM_Fundamental_particles_Figure_11t.png]
+
+[FIGURE: SOM_Fundamental_particles_Figure_11f.png]
+
+--- slide: Decay Modes and Conservation Rules ---
+
+ (Example 1)
+
+Consider conservation of charge, energy/mass, angular momentum/spin, strangeness and baryon and lepton numbers, in the following three decays. Indicate whether the suggested decays are possible.
+
+$$
+
+I: \quad && \tau^{-} \quad &\rightarrow \quad \mu^{-} ~+~\nu_{\tau} ~+~\overline{\nu_{\mu}}  &&\\
+&&  &  &&\\
+II:\quad && \Delta^{+} \quad &\rightarrow \quad n~+~K^{+}  &&\\
+&&  &  &&\\
+III:\quad && \overline{\Lambda^{o}} \quad &\rightarrow \quad \bar{p}~+~\pi^{+}  &&
+
+$$
+
+--- slide: Decay Modes and Conservation Rules ---
+
+ (Example 1a ) 
+
+$$
+
+I: \quad && \tau^{-} \quad &\rightarrow \quad \mu^{-} ~+~\nu_{\tau} ~+~\overline{\nu_{\mu}}  &&\\
+&&  &  &&\\
+\text {Energy:} \quad && 1780 \mathrm{\;MeV} \quad&\rightarrow \quad 106 \mathrm{\;MeV}  &&\quad\text {OK} \\
+\text {Spin:} \quad&& 1 / 2  \quad&\rightarrow \quad  1 / 2 ~ + ~ 1 / 2 ~ + ~ 1 / 2 &&\quad\text {{\sim}OK}
+
+$$
+\implies{Since lepton number is also conserved, the decay is allowed }
+
+[FIGURE: SOM_Fundamental_particles_Figure_12a.png]
+
+--- slide: Decay Modes and Conservation Rules ---
+
+ (Example 1c)
+
+$$
+
+II: \quad && \Delta^{+} \quad &\rightarrow \quad n~+~K^{+}  &&\\
+&&  &  &&\\
+\text {Energy:} \quad && 1232 \mathrm{\;MeV} \quad&\rightarrow \quad 940 ~+~494 \mathrm{\;MeV}  &&\quad \text {not OK} \\
+\text {Baryon number:} \quad&& +1  \quad&\rightarrow\quad +1  ~+~ 0 &&\quad\text {OK} \\
+\text {Spin:} \quad&& 3 / 2  \quad&\rightarrow \quad  1 / 2 ~+~ 0 &&\quad {\sim}OK
+
+$$
+\implies{Final mass is greater than initial mass, the decay is NOT allowed }
+
+--- slide: Decay Modes and Conservation Rules ---
+
+ (Example 1d)
+
+$$
+
+III: \quad && \overline{\Lambda^{o}} \quad &\rightarrow \quad \bar{p}~+~\pi^{+}  &&\\
+&&  &  &&\\
+\text {Energy:} \quad && 1116 \mathrm{\;MeV} \quad&\rightarrow \quad 938 ~+~140 \mathrm{\;MeV}  &&\quad\text {OK } \\
+\text {Baryon number:} \quad&& -1  \quad&\rightarrow\quad -1  ~+~ 0 &&\quad\text {OK } \\
+\text {Spin:} \quad&& 1 / 2  \quad&\rightarrow \quad  1 / 2 ~+~ 0 &&\quad\text {OK }
+
+$$
+\implies{ All properties are conserved, the decay is allowed }
+
+[FIGURE: SOM_Fundamental_particles_Figure_12b.png]
+
+## 4.6 Parity, Charge Conjugation and Time Reversal
+
+--- slide: 4. Fundamental particles ---
+
+    - 4_1_a{How Forces Act}
+    - 4_2_a{Antiparticles}	
+    - 4_3_a{Forces and Particles}	
+    - 4_4_a{Particle Production and Detection}
+    - 4_5_a{Decay Modes and Conservation Rules}
+    - 4_6_a{Parity, Charge Conjugation and Time Reversal}
+    - 4_7_a{Unification Theories, GUT and Cosmology}
+
+--- slide: Parity, Charge Conjugation and Time Reversal ---
+
+	- Previously we already discussed some apparent conservation laws in particle reactions, such as conservation of baryon number, lepton number and strangeness
+
+[FIGURE: SOM_Fundamental_Table_4.png]
+ 
+	- Next we study laws that are more closely linked with symmetries in the universe and the fundamental ideas of space and time (space–time)
+
+--- slide: Parity, Charge Conjugation and Time Reversal ---
+
+ (Parity)
+
+\semismall
+
+	- Parity inversion changes the sign of all the spatial coordinates: 
+	\[
+	 \vec{r} =  (x, y, z) \quad \rightarrow \quad (-x,-y,-z)  =  -\vec{r} \,, \qquad e.g. \qquad P:~ \psi(\vec{r}) \rightarrow \psi'(-\vec{r})
+	 \]
+
+- Strong and electromagnetic interaction conserve parity, weak interaction does not
+
+{8.3cm}
+
+	- Let's consider a case where a particle circles clockwise around $z$-axis (gray arrow). 
+
+[FIGURE: SOM_Fundamental_particles_Figure_13.png]
+
+ Performing the parity inversion, we make a mirror image of the particle's trajectory with respect to origin (pink arrow). In both cases, the particle rotates identically clockwise rotation with respect to $z$-axis
+	
+	- Rotational motion is symmetric with respect to parity inversion 
+	- Similarly, angular momentum and spin will also be unchanged in parity inversion (Interested reader is recommended to look into vectors and pseudovectors)
+
+--- slide: Parity, Charge Conjugation and Time Reversal ---
+
+\seminormal
+
+	- Now, examine a $\beta^{+}$-decay: $\qquad p^{+} \quad \rightarrow \quad n ~ +~ e^{+}  ~+~ \nu_{e}$
+
+[FIGURE: SOM_Fundamental_particles_Figure_14.png]
+
+- Proton converts into a neutron, a positron and a neutrino. The neutron stays in the nucleus but the positron and neutrino will be emitted, both having spin $1/2$ 
+
+{8.5cm}
+
+	- Their spins are aligned. The spin of the positron is parallel with the momentum of the positron, neutrino's spin is antiparallel with its momentum
+
+	- Now we change parity. Momenta of $e^{+}$ and $\nu_{e}$ will change, but spins do not as shown in Fig.~14b. This reaction should in principle happen with equal probability as the one in Fig.~14a, but it does not. The reaction shown in Fig.~14b does not happen. Thus, weak interaction is not invariant with parity inversion! (Parity violation)
+
+--- slide: Parity, Charge Conjugation and Time Reversal ---
+
+ (Charge)
+
+\seminormal
+
+	- Charge conjugation changes all the particles to their antiparticles. Take the previous $\beta^{+}$-decay reaction, and make a charge conjugation.
+
+[FIGURE: SOM_Fundamental_particles_Figure_15.png]
+
+ Now an antiproton converts to an antineutron, electron and an antineutrino. The process described in Fig.~15a is not observed
+
+{8.4cm}
+
+	- The reason being that an antineutrino does not have its spin antiparallel with its momentum but parallel (recall our earlier lectures). So, weak interaction is not invariant under charge conjugation
+
+	- But, if make both parity inversion and charge conjugation, combined, then we get reaction shown in Fig.~15b. This reaction is observed
+
+--- slide: Parity, Charge Conjugation and Time Reversal ---
+
+ (CP)
+
+\semismall
+
+	- So, if we perform both parity inversion and charge conjugation, we obtain a reaction that will happen 
+	
+	- Weak interaction is obviously invariant under the product of these two transformations $ \quad \Rightarrow \quad $This is called CP invariance 
+
+- The property, that a neutrino has its spin antiparallel (and not parallel)
+and an antineutrino has its spin parallel (and not antiparallel) with
+the momentum, is called helicity of the neutrino ('handedness')
+
+- Electrons do not have a definite helicity. Take an electron moving at $500 \mathrm{\;m}/\mathrm{s}$
+
+- In a frame moving with speed 1000 m/s the same electron would move backwards,
+to the negative direction, thus whether its spin is parallel or antiparallel to the
+momentum, will depend on the coordinate frame
+
+- Massless particles propagate at speed $c$ in any frame, thus the relation with spin and momentum must be same in any coordinates. According to the Standard Model, this is connected to assumption that neutrinos are massless
+
+--- slide: Parity, Charge Conjugation and Time Reversal ---
+
+ (CP)
+
+	- Experiments on the cosmic neutrino fluxes demonstrate that  neutrinos can change their lepton family (lepton flavour). This process is called neutrino oscillation
+
+[FIGURE: SOM_Fundamental_particles_Figure_16.png]
+
+{5.5cm}
+
+	- Furthermore, the neutrino's parity violation has also led to speculation that the neutrino and antineutrino might not be different particles, after all
+
+	- There is also data on CP-violation in weak interactions, i.e. a small fraction of the decays of a $K_{L}^{0}$ are not $\mathrm{CP}$ invariant
+
+--- slide: Parity, Charge Conjugation and Time Reversal ---
+
+ (Time reversal)
+
+	- Time reversal replaces time coordinate $t$ with $-t$, $\qquad T: ~~ t \rightarrow -t $
+
+- Almost all microscopic physical processes are symmetric to time reversal, i.e.~exactly same physical laws apply independent of whether time runs forward or backwards
+
+- Note that symmetry with respect to time reversal is different from time invariance
+- Quantum field theory states that under a combined operation of charge conjugation (C), parity (P), and time reversal (T), all interactions are invariant $\Leftrightarrow$ CPT invariance
+
+- If there is CP invariance, this requires also time (T) invariance 
+
+- If there is a CP violation, also time reversal must be violated ((in order to ensure CPT invariance\,))
+
+## 4.7 Unification Theories, GUT and Cosmology
+
+--- slide: 4. Fundamental particles ---
+
+    - 4_1_a{How Forces Act}
+    - 4_2_a{Antiparticles}	
+    - 4_3_a{Forces and Particles}	
+    - 4_4_a{Particle Production and Detection}
+    - 4_5_a{Decay Modes and Conservation Rules}
+    - 4_6_a{Parity, Charge Conjugation and Time Reversal}
+    - 4_7_a{Unification Theories, GUT and Cosmology}
+
+--- slide: GUT and Cosmology ---
+
+ (Fundamental Particles \& background radiation)
+
+\seminormal
+
+	- Recently, high-energy physics and cosmology have approached each other
+	
+	- This is because the theories describing fundamental interactions are linked to the early history of the universe, right after the Big Bang, and to the origin of the fundamental particles and matter in the universe
+
+	- For some time after the Big Bang the energies were quite high, exceeding the atomic bonding energies, matter consisted of electron and positive ion plasma (opaque to radiation)
+	
+	- Gradually the temperature dropped, matter turned transparent, enabling propagation of cosmic background radiation 
+	- Presently the cosmic background radiation is of the order of $2.7 \mathrm{\;K}$, which value is in agreement with the present theories on the universe expanding after Big Bang
+	\implies{ How radiation from an originally hot object has cooled down to ${\approx}\;2.7$\;K?  }
+
+--- slide: GUT and Cosmology ---
+
+ (Expanding universe)
+
+	- Expanding universe can be qualitatively described by a simple model. Let's consider a projectile, or a satellite $(m)$ launched directly upwards from a planet ($M$). Assuming that $r$ is the distance of the satellite from the planet's center, and $\rho$ is the density of the planet, the energy is given by:
+\[
+E  = \frac{1}{2} m v^2   +  E_{pot}  = \frac{m}{2}  ( \frac{d r}{d t} )^2   - \fraca{G m M}{r}  = \frac{m}{2}  ( \frac{d r}{d t} )^2   - \frac{G m}{r} \rho \frac{4}{3} \pi r^{3}
+\]
+- If $E<0$, then the projectile will return back to the planet 
+- If $E>0$, then the projectile can escape
+
+- Rearranging, we get the equation:
+\[
+ ( \frac{d r / d t}{r} )^2   = \frac{8 \pi G \rho}{3}  + \frac{2 E / m}{r^{2}}
+\]
+
+--- slide: GUT and Cosmology ---
+
+ (Friedmann equation)
+
+	- Quite analogous to the escaping projectile, we can assume that universe is an expanding sphere, with size $R=R(t)$, actually called a scale factor 
+	
+	- Expansion is described by Friedmann equation:
+\[
+ ( \frac{d R / d t}{R} )^2  = \frac{8 \pi G \rho}{3}  - \frac{K}{R^{2}}
+\]
+The constant $K$ is analogous to the energy of the projectile
+
+- If $K>0$: positively curved universe, expansion stops, and universe will crunch back to $R=0$
+
+- If $K=0$: a flat universe, expansion constant to infinite time $t \rightarrow \infty$ 
+- If $K<0$: negatively curved universe, expansion will accelerate indefinitely
+
+--- slide: GUT and Cosmology ---
+
+ (Friedmann equation)
+
+	- Next, we modify the density in the equation: $\rho \rightarrow \rho_{M} /{R^{3}}  + \rho_{\Lambda}$ where $\rho_{M} /R^{3}$ is the present density of the universe and $\rho_{\Lambda}$ is a factor connected to the cosmological constant (introduced later):
+\[
+ ( \frac{d R / d t}{R} )^2   = \frac{8 \pi G \rho_{M}}{3 R^{3}}  + \frac{8 \pi G \rho_{\Lambda}}{3}  - \frac{K}{R^{2}}
+\]
+Finally, we rearrange the Friedmann equation to its final form:
+\[
+ ( \frac{d R / d t}{R} )^2   = \frac{\Omega_{M}}{R^{3}}  + \Omega_{\Lambda}  - \frac{K^{\prime}}{R^{2}} \quad \text { with: } R_{\text {present}}=1 \text { ~and~ }(d R / d t)_{\text {present}}=1
+\]
+- We have in essence three tuning parameters $\Omega_{M}$, $\Omega_{\Lambda}$ and $K^{\prime}$
+
+--- slide: GUT and Cosmology ---
+
+ (Einstein's cosmological constant)
+
+	- On the tuning parameters: 
+	
+	- $K^{\prime}=0$, assuming a flat universe,
+having nearly constant expansion
+- $\Omega_{M}=1$ presently $\Leftrightarrow$ critical density
+- $\Omega_{\Lambda} \approx 0$
+
+- Using above assumptions we get
+
+{7.5cm}
+
+	- $$
+	
+	( \frac{d R / d t}{R} )^2 & =  \frac{1}{R^{3}} \quad \Rightarrow \quad \int_{1}^{R} R^{1 / 2} \rmd R  = \int_{1}^{t} d t \\
+\Rightarrow \quad R(t) & =  [ \frac{3}{2} ( t-\frac{1}{3} ) ]^{2 / 3}
+	
+$$
+- $\Omega_{\Lambda}=$ cosmological constant, potentially determining whether the expansion of the universe will be constant or not (see Fig.~17)
+
+[FIGURE: SOM_Fundamental_particles_Figure_17.png]
+
+--- slide: GUT and Cosmology ---
+
+ (Chronology of the Universe)
+
+	- Earlier, we looked into proton–proton cycle occurring within stars
+
+- In fact, history of the whole universe has some similarities
+
+- At the present knowledge ((called the standard model of the history of the universe)), the temperature of the universe at a time  $t\approx10^{-46} \mathrm{\;s}$ was about $10^{32} \mathrm{\;K}$, and the average energy per particle was: 
+\[
+E \approx ( 10^{-13} \frac{\mathrm{\;GeV}}{\mathrm{K}} \,)  10^{32} \mathrm{\;K}  = 10^{19} \mathrm{\;GeV}
+\]
+
+- This time has been suggested to be the time for the transition from the Theory of Everything (TOE) to Grand Unified Theory (GUT)
+
+- At $t=10^{-36} \mathrm{\;s}$ the temperature had decreased to  ${\sim}10^{27} \mathrm{\;K}$, the energy being ${\sim}10^{14} \mathrm{\;GeV}$. At this energy the strong force separated from electroweak force (end of grand unification)
+
+--- slide: GUT and Cosmology ---
+
+ (Chronology of the Universe)
+
+\semismall
+
+	- At $\mathrm{t}=10^{-32} \mathrm{\;s}$ the temperature had decreased to ${\sim}10^{25} \mathrm{\;K}$ and the universe was a mixture of quarks, leptons and the mediating bosons
+	
+	- At $\mathrm{t}=10^{-6} \mathrm{\;s}$ the temperature had decreased to about $10^{13} \mathrm{\;K}$ and the typical energy was about $1 \mathrm{\;GeV}$ (comparable to rest mass of a nucleon). Quarks began binding together to from nucleons
+	
+	- At about $\mathrm{t}=1 \mathrm{\;s}$, the ratio of protons to neutrons was determined by the Boltzmann distribution factor $e^{-\Delta E / k_{B} T}$ where $\Delta E$ is the difference between the neutron and proton rest energies $\Delta E  = 1.29 \mathrm{\;MeV}$
+	
+	- At $T \approx10^{10} \mathrm{\;K}$ the distribution gives about $4.5$ times as many protons as neutrons
+	
+	- The formation of deuterons started at $\mathrm{t}\approx225 \mathrm{\;s}$, marking the beginning of the period of nuclei formation, i.e. Big Bang nucleosynthesis (BBN) or primordial nucleosynthesis
+	
+	- Further nucleosynthesis (stellar nucleosynthesis) occurred much later at $t=10^{13} \mathrm{\;s}$ when $T \sim 3000 \mathrm{\;K}$, and average energy was few tenths of an electron volt
+
+--- slide: GUT and Cosmology ---
+
+ (History/evolution of the universe (a la Harris))
+
+[FIGURE: SOM_Fundamental_particles_Figure_18.png]
+
+--- slide: GUT and Cosmology ---
+
+ (History/evolution of the universe (a la Tipler))
+
+[FIGURE: SOM_tipler_Cosmology_1.png]
+
+--- slide: GUT and Cosmology ---
+
+ (But BIG open questions remain..)
+
+{5.0cm}
+
+	- Only 4 % of mass is baryonic? (non-baryonic: neutrinos, free electrons, black holes, dark matter, supersymmetric particles,\,...)
+	
+	- Galaxy rotation curves imply existence of dark matter?
+	- Expansion of universe is accelerating because of dark energy? 
+	- Quantum field theory for gravity\,...
+
+[FIGURE: SOM_tipler_Cosmology_2.png]
+
+
+======================================================================
+SUOMI / FINNISH (source: Kappaleet/)
+======================================================================
+
+## 4.1 Kuinka Voimat Toimivat
+
+--- slide: 4. Hiukkasfysiikka ja Alkeishiukkaset ---
+
+    -<1-> 4_1_a{Kuinka Voimat Toimivat}
+    -<1-> 4_2_a{Antihiukkaset}	
+    -<1-> 4_3_a{Voimat ja Hiukkaset}	
+    -<1-> 4_4_a{Hiukkasten Synnyttäminen ja Havainnointi}
+    -<1-> 4_5_a{Hajoamistavat, -ketjut ja Säilymislait}
+    -<1-> 4_6_a{Pariteetti, Varauksen konjugointi ja Ajan Kääntö}
+    -<1-> 4_7_a{Yhtenäisteoriat, Suuri Yhtenäisteoria ja Kosmologia}
+
+--- slide: Kuinka Voimat Toimivat ---
+
+\semismall
+
+	- Demokritos: Pienin särkymätön aineen osanen $\Rightarrow$ atomi 
+	
+	- Dalton: Atomit aineiden perustavanlaatuisina rakennuspalikoina
+	
+	- Thomson: myös elektronit löydettiin, atomeissa on elektroneita 
+	
+	- Rutherford: protonit löydettiin vetyatomista
+	
+	- Compton: Myös fotonit  siroavat kuin ne olisivat hiukkasia 
+	
+	- Chadwick: neutronit löydettiin selittämään esim.\ ytimien mitatut massat 
+	
+	- Positroni, muoni, pioni, sigma, rho, jne. ...
+
+- Gell-Mann \& Zweig:  Kvarkkien olemassaolon ennustaminen.  Protonien, neutronien jne.\ koostuminen kvarkeista (nukleoneilla on sisäinen rakenne) 
+
+\implies{ Lopputuloksena meillä on nykyään niin sanottu hiukkasfysiikan standardimalli }
+
+--- slide: Kuinka Voimat Toimivat ---
+
+{7.5cm}
+
+	- Tavallinen aine koostuu protoneista, neutroneista ja elektroneista
+
+- Viimeisten 70 vuoden aikana, kokeita on tehty hiukkaskiihdyttimillä alati kasvavilla energioilla, paljastaen satoja muitakin 'alkeishiukkasia'
+\implies{ esim. kvarkkien löytyminen }
+
+- Alkeishiukkasten ja niiden rakenteen ymmärtäminen on muuttunut huomattavasti vuosien kuluessa 
+
+[FIGURE: Tikz_SOM_Fundamental_figures.pdf]
+
+--- slide: Kuinka Voimat Toimivat ---
+
+ (Voiman kantama?)
+
+	- Alkeishiukkaset vuorovaikuttavat vain muutamalla tyypillisellä tavalla
+
+- Mekaniikassa voima tarvitsee usein fyysisen kontaktin välittyäkseen (jännitys, kitka, ...), mutta gravitaatio vaikuttaa tyhjiön läpi, kuten myös sähkömagneettiset voimat!
+
+- Nämä kenttävoimat ovat pikemminkin sääntö kuin poikkeus 
+
+- Lisäksi kontaktia vaativat voimat (jännitys, kitka, jne.) paljastuvat mikroskooppisessa tarkastelussa sähkömag-\\
+neettisiksi voimiksi
+
+{8.0cm}
+
+	- Vahva voima vaikutti myös 'etäisyyksien päähän'
+
+[FIGURE: SOM_Nuclear_Table_2]
+
+, vaikkakin sen kantama oli erittäin lyhyt
+
+--- slide: Kuinka Voimat Toimivat ---
+
+ (Moderni tarkastelutapa)
+
+	 - Voimat vaikuttavat vaihtamalla välittäjähiukkasia
+- Jokaisella voimalla (4:stä perusvoimasta) on oma välittäjähiukkanen
+- Välittäjähiukkanen tunnetaan myös kyseisen kvanttikentän kvanttina
+
+\implies{  Kvanttikenttäteoria (QFT) }
+
+- Kuinka vuorovaikutus selitetään?
+
+- On olemassa kahdenlaisia hiukkasia:
+- 
+	- Hiukkaset jotka kokevat voiman
+- Hiukkaset joiden vaihtaminen ilmentää voimaa, eli vuorovaikutuksen välittäjähiukkaset 
+
+- Huomaa että joissain tilanteissa välittäjähiukkaset kokevat itsekin välittämänsä voiman!
+
+--- slide: Kuinka Voimat Toimivat ---
+
+{7.5cm}
+
+	- Kaksi fysiikanopiskelijaa, Anna ja Bob, jotka liukuvat kitkattomalla jäällä
+
+[FIGURE: SOM_Fundamental_particles_Figure_1.png]
+
+, vuorovaikuttavat niin että Anna heittää lumipallon Bobille, joka ottaa sen kiinni
+
+- Molempien henkilöiden liikemäärä muuttuu: Annan liikemäärä muuttuu $-\vec{p}_{\text {pallo}}$, ja Bobin liikemäärä muuttuu  $+\vec{p}_{\text {pallo}}$
+
+- Tämä näyttää "lumipallon välittämältä hylkivältä voimalta", missä pallo siirtää Annan liikemäärää Bobille
+
+- Feynmanin kaavio/diagrammi kuvastaa tätä vuorovaikutusta
+
+--- slide: Kuinka Voimat Toimivat ---
+
+	- Esimerkki matkii onnistuneesti Annan ja Bobin välistä hylkivää voimaa, mutta analogia ei selitä puoleensavetäviä voimia
+
+[FIGURE: Tikz_SOM_Fundamental_figures_combo.pdf]
+
+	- Kuvatakseen puoleensavetävää voimaa, lumipallon heiton jälkeen, Annan pitäisi liikkua Bobia kohti, ja Bobin ottaessa pallon kiinni, hänen täytyisi liikkua Annaa kohti 
+	\implies{ Liikemäärä ei säilyisi!}
+
+- Esimerkissä Annalla oli lumipallo jo ennen heittoa, ja kun Bob otti pallon kiinni, hän säilytti sen
+
+{9.0cm}
+
+	- Todellisuudessa lumipallo (välittäjähiukkasena) syntyisi vain lennon ajaksi ja se annihiloituisi välittömästi kiinnioton jälkeen
+	\implies{Energia ei näytä säilyvän tällaisessa\\ makroskooppisessa esimerkissä!}
+
+--- slide: Kuinka Voimat Toimivat ---
+
+ (Virtuaalihiukkaset)
+
+\semismall
+
+	- Välittäjähiukkaset ovat virtuaalihiukkasia, ne ovat olemassa vain vuorovaikutuksen ajan, eikä niiden tarvitse toteuttaa tavallisia energian ja liikemäärän säilymislakeja, kuten 'oikeiden' hiukkasten tarvitsee
+	
+	- Ilmiö muistuttaa tunneloitumista, 
+	missä virtuaalihiukkasten esiintymistodennäköisyys pienenee kun oikeiden hiukkasten välinen etäisyys kasvaa
+
+{8.3cm}
+
+- Tätä virtuaalihiukkasten vaihtoa ehdotettiin kahden nukleonin välisen ydinvoiman mekanismiksi vuonna 1935 (H. Yukawa) 
+
+[FIGURE: Tikz_SOM_Fundamental_figures_combo.pdf]
+
+- Vahvan voiman kantama on lyhyt koska  välittäjähiukkasella on massa. Ajatusta voidaan soveltaa myös sähkömagneettiseen vuorovaikutukseen. Sähköiset varaukset lähettävät jatkuvasti ympärilleen virtuaalihiukkasia
+ 
+- Kantama on äärettömän pitkä koska virtuaalihiukkaset ovat fotoneita, joilla ei ole lepomassaa
+
+--- slide: Kuinka Voimat Toimivat ---
+
+ (Virtuaaliset välittäjähiukkaset)
+
+	- Mekanismin ja virtuaaalisten välittäjähiukksten olemassaolo voidaan ymmärtää soveltamalla Heisenbergin epätarkkuusperiaatetta aika–energia (konjugaatti)muuttujapariin
+
+- Oletetaan että virtuaalihiukkasilla on tietty aikaväli $\Delta t$ vuorovaikuttaa (eli ajan epätarkkuus), silloin hiukkasen energiaan $\Delta E$ liittyvän epätarkkuuden täytyy toteuttaa yhtälö  $\Delta t \Delta E \approx \hbar$
+
+- Hiukkasen energia voi vaihdella välillä $\Delta E$ säilymislakien rikkoontumatta. Toisin sanoen jopa energia $\Delta E=m c^{2}$ on sallittu virtuaalihiukkasille, jos sillä on lepomassa
+
+- Tällöin $\Delta t \approx \hbar / m c^{2}$, ja mahdolliseksi kantamaksi saadaan $\Delta x \approx c \Delta t \approx \hbar / m c$ 
+
+- Yhteenvetona virtuaalihiukkasten kantama $\approx \frac{\hbar}{c} \frac{1}{m}$
+
+--- slide: Kuinka Voimat Toimivat ---
+
+ (Välittäjähiukkanen, massa vs. kantama)
+
+\seminormal
+
+	- Mitä suurempi massa välittäjähiukkasella on, sitä lyhyempi kantama on vuorovaikutuksella, ja päinvastoin 
+	
+	- Vahvan vuorovaikutuksen kantama on ${\sim\;}1 \mathrm{\;fm}$ 
+	\implies{ Tästä saadaan arvio mesonin massalle:
+\[
+m  = 3,5 \times 10^{-28} \mathrm{\;kg} \approx 300 \mathrm{m}_{\mathrm{e}} \approx 200 \mathrm{\;MeV} / \mathrm{c}^{2}
+\] }
+- Olettamalla välittäjähiukkanen fotoniksi, kuten sähkömagneettisissa vuorovaikutuksissa, kantamaksi saadaan:
+\[
+\text {kantama} \approx c \Delta t \approx \frac{c \hbar}{\Delta E}  = c \hbar \frac{\lambda}{h c} = \frac{\lambda}{2 \pi}
+\]
+
+- Koska fotoneilla ei ole (lepo)massaa, niiden energioille ei ole alarajaa\\
+($\Rightarrow$ kantama voi olla erittäin pitkä, lähestyen äärettömyyttä)
+
+- Itse asiassa kahden elektronin vuorovaikuttaessa sähköisesti, molemmat elektronit lähettävät jatkuvasti virtuaalisia fotoneita joita toiset elektronit absorboivat
+
+## 4.2 Antihiukkaset
+
+--- slide: 4. Hiukkasfysiikka ja Alkeishiukkaset ---
+
+    -<1-> 4_1_a{Kuinka Voimat Toimivat}
+    -<1-> 4_2_a{Antihiukkaset}	
+    -<1-> 4_3_a{Voimat ja Hiukkaset}	
+    -<1-> 4_4_a{Hiukkasten Synnyttäminen ja Havainnointi}
+    -<1-> 4_5_a{Hajoamistavat, -ketjut ja Säilymislait}
+    -<1-> 4_6_a{Pariteetti, Varauksen konjugointi ja Ajan Kääntö}
+    -<1-> 4_7_a{Yhtenäisteoriat, Suuri Yhtenäisteoria ja Kosmologia}
+
+--- slide: Antihiukkaset ---
+
+ (Ensilöytö)
+
+\semismall
+
+	- Vuonna 1932, jolloin neutroni löydettiin, löydettiin myös  positroni 
+	- Hiukkasella oli sama massa ja luontainen kulmaliikemäärä kuin elektronilla, mutta se oli positiivisesti varautunut 
+	- Positroni on elektronin antihiukkanen, jota kuvataan symbolilla $e^{+}$, joskus radioaktiivisten hajoamisten tapauksissa myös symbolilla $\beta^{+}$
+	- Elektroni–positroni-pareja syntyy esim.\ $300 \mathrm{\;MeV}$ synkrotronisäteilyssä (röntgensäteitä) (kuva)
+
+[FIGURE: SOM_Tipler_Fundamental_Figure_1.png]
+ 
+	- Positroni syntyy samalla elektronin kanssa parinmuodostusprosessissa, ja positronit
+
+{5.0cm}
+
+	-  myös annihiloituvat elektronien kanssa prosessissa joka muistuttaa elektronin ja aukon rekombinaatiota (puolijohteissa), synnyttäen fotonin
+
+--- slide: Antihiukkaset ---
+
+\seminormal
+
+	- Lähes kaikilla alkeishiukkasilla on niiden oma  antihiukkasensa:
+
+	- Protoneilla $(p)$ on antiprotonit $(\bar{p})$
+- Neutroneilla $(n)$ on antineutronit $(\bar{n})$, joita on hankalaa erottaa toisistaan, koska ne ovat sähköisesti neutraaleita. Mutta antineutronit annihiloituvat neutronien kanssa, kaksi neutronia ei annihiloidu
+
+- Tunnetuimpien leptonien (elektroni ja positroni) lisäksi on myös muita leptoneita kuten myoni ($\mu^{-}$) ja antimyoni ($\mu^{+}$)
+
+- Jotkin varautumattomat hiukkaset (kuten $\pi^{o}$) ovat itsensä antihiukkasia
+
+- Vaikka antihiukkasia voidaan muodostaa, antimateriaa ei ole löydetty makroskooppisessa mittakaavassa
+
+- Standardimalli tai yleinen suhteellisuusteoria ei selitä tätä. Maailmankaikkeuden oletetaan olevan sähköisesti neutraali, ja alkuräjähdyksen pitäisi tuottaa sama määrä materiaa ja antimateriaa, mutta jostain syystä tasapaino on järkkynyt
+
+--- slide: Antihiukkaset ---
+
+ (Teoreettinen selitys(yritys))
+
+	- Dirac muodosti relativistisen aaltoyhtälön (Diracin yhtälö), mikä ennustaa positronin olemassaolon yhtenä ratkaisuna
+	
+	- Tarkastellaan seuraavaksi kuinka antihiukkasten etsimistä voisi motivoida.  Aloitetaan vapaan hiukkasen Schrödingerin yhtälöllä: 
+\[
+-\frac{\hbar^{2}}{2 m} \frac{\partial^{2}}{\partial x^{2}} \Psi(x, t)  = i \hbar \frac{\partial}{\partial t} \Psi(x, t)
+\]
+mikä operaattorien ($\hat{p}$ ja $\hat{E}$) avulla voidaan kirjoittaa muotoon 
+\[
+-\frac{1}{2 m} \hat{p}^{2} \Psi(x, t)  = \hat{E} \Psi(x, t)
+\]
+missä  kineettisen energian pitäisi olla relativistista muotoa (ei $p^{2} / 2 m$): 
+\[
+(p c)^{2}  +  (m c^{2} )^{2}  = E^{2}
+\]
+
+--- slide: Antihiukkaset ---
+
+ (Teoreettinen selitys(yritys))
+
+- Käyttämällä operaattoreita, saamme esitettyä edellisen yhtälön muodossa: 
+\[
+c^{2} \hat{p}^{2} \Psi(x, t)  + m^{2} c^{4} \Psi(x, t)  = \hat{E}^{2} \Psi(x, t) \,,
+\]
+ja niin sanotun  Kleinin–Gordonin yhtälön: 
+\[
+-c^{2} \hbar^{2} \frac{\partial^{2}}{\partial x^{2}} \Psi(x, t)  + m^{2} c^{4} \Psi(x, t)  = -\hbar^{2} \frac{\partial^{2}}{\partial t^{2}} \Psi(x, t)
+\]
+mikä on relativistinen (skalaarinen) aaltoyhtälö (Lorentz-kovariantti). Yhtälön ratkaisut kuvastavat relativistisia mutta spinittömiä hiukkasia/kenttiä
+
+- Lopuksi Diracin yhtälö yleistäisi tarkastelun relativistisiin vektorikenttiin, ottamalla spinit huomioon
+\implies{ Ratkaisut esittäisivät relativistisia ja massallisia hiukkasia \\
+		joilla on spin (esim.\ elektronit)}
+
+--- slide: Antihiukkaset ---
+
+ (Teoreettinen selitys(yritys))
+
+\seminormal
+
+	- Ylläolevat yhtälöt vihjaavat meille kuinka voitaisiin muodostaa kaksi aaltofunktiota, toinen hiukkasille ja toinen antihiukkasille
+
+- Relativistisen hiukkasen energia saadaan yhtälöstä 
+\[
+E^{2}  = (p c)^{2}  + (m c^{2})^{2} \qquad \Rightarrow \qquad E  =  \pm ((p c)^{2}+(m c^{2})^{2} )^{1/2}
+\]
+eli löydetään kaksi arvoa (positiivinen/negatiivinen)
+
+[FIGURE: Tikz_SOM_Fundamental_figures_combo.pdf]
+
+{9.1cm}
+
+	- Positiivinen $E$ on intuitiivinen, energiat ovat korkeammalla kuin lepomassaa vastaava energia $m c^{2}$ 
+	- Mutta negatiivisen energian aaltofunktiot voisivat myös olla olemassa, joiden energia on alle $-m c^{2}$\;? 
+	
+	- Vaikka positiivinen juuri yleensä valitaan, ei ole mitään  fysikaalista syytä unohtaa  negatiivista juurta
+
+--- slide: Antihiukkaset ---
+
+ (QED ja antihiukkaset)
+
+- Ratkaisu negatiivisen juuren ja energian ongelmaan kuitenkin löydettiin ymmärryksen kypsyessä, eli kun kvanttielektrodynamiikka (QED) kehitettiin R. Feynmanin ja muiden toimesta 1940-luvulla 
+
+- QED:n ennustukset on varmistettu tarkimmilla mittauksilla millä fysikaalista teoriaa on testattu. QED:n mukaan jokaisella hiukkasella on antihiukkanen, jolla on sama massa mutta vastakkainen varaus 
+
+- Positroni on elektronin antihiukkanen 
+- Myös muilla $1 / 2$-spinin hiukkasilla, kuten protonilla ja neutronilla on antihiukkasensa (löydettiin vastaavasti 1955 ja 1957)
+
+- protoni–antiprotoni-parin muodostuminen vaatii ainakin $2 m_{p} c^{2}=$ 1877 \;MeV verran energiaa
+
+--- slide: Antihiukkaset ---
+
+ (QED ja antihiukkaset)
+
+	- Diracin konsepti äärettömästä elektronimerestä voitiin siis hylätä (myöhään 1940-luvulla) kun Diracin teoriaa ja QED:tä paranneltiin
+
+- Yhtenä vaihtoehtoisena hypoteesinä, Ernst Stueckelberg ja Feynman ehdottivat että, matemaattisesti positronia voidaan kuvata elektronina joka kulkee ajassa taaksepäin
+
+- Joka tapauksessa on tosiasia että elektroni–positroni-pareja voi syntyä ja annihiloitua, kuten se että jokaisella hiukkasella on antihiukkasensa
+
+- Diracin teoria on luontaisesti usean kappaleen teoria, ja se antaa teoreettiset raamit operaattoreille jotka synnyttävät ja/tai tuhoavat hiukkasen. Perinteisessä kvanttimekaniikassa hiukkasia ei synny/tuhoudu.
+
+## 4.3 Voimat ja Hiukkaset
+
+--- slide: 4. Hiukkasfysiikka ja Alkeishiukkaset ---
+
+    -<1-> 4_1_a{Kuinka Voimat Toimivat}
+    -<1-> 4_2_a{Antihiukkaset}	
+    -<1-> 4_3_a{Voimat ja Hiukkaset}	
+    -<1-> 4_4_a{Hiukkasten Synnyttäminen ja Havainnointi}
+    -<1-> 4_5_a{Hajoamistavat, -ketjut ja Säilymislait}
+    -<1-> 4_6_a{Pariteetti, Varauksen konjugointi ja Ajan Kääntö}
+    -<1-> 4_7_a{Yhtenäisteoriat, Suuri Yhtenäisteoria ja Kosmologia}
+
+--- slide: Voimat ja Hiukkaset ---
+
+ (Perusvuorovaikutukset)
+
+\semismall
+
+	- Ymmärryksemme perusvuorovaikutuksista on muuttunut paljon 1900-luvulta:
+
+[FIGURE: SOM_Fundamental_Table_1_cropped.png]
+
+-<.->[] 
+	- Sähköoppi ja magnetismi yhdistettiin sähkömagnetismiksi (Maxwell, 1873)
+	- Sähkömagnetismi yhdistettiin kvanttimekaniikkaan ja suhteellisuusteoriaan (kvanttielektrodynamiikka (QED)) 1940–1950-luvuilla 
+- Sähkömagnetismi ja heikko vuorovaikutus yhdistettiin sähköheikoksi voimaksi 1960-luvulla. Näitä vuorovaikutuksia tarkastellaan usein erillisinä voimina, koska "heikko voima" ~näyttäytyy vain tietyissä ytimien sisäisissä prosesseissa
+- Vahvalle vuorovaikutukselle muodostettiin kvanttikenttäteoria  kvanttikromodynamiikka (QCD)
+- Gravitaatio on säilynyt erillisenä voimanaan/vuorovaikutuksena
+
+--- slide: Voimat ja Hiukkaset ---
+
+ (Alkeishiukkaset)
+
+\semismall
+
+	- 
+
+[FIGURE: Elementary_particles]
+
+Fermionit kokevat voimia: kvarkit ja leptonit
+	- Bosonit välittävät voimia: gluonit, W- ja Z-bosonit, fotonit, gravitonit?
+	
+	- Jokaisella voiman kokevalla fermionilla, on voimaan liittyvä luontainen ominaisuus:
+
+	- Massa/energia  <=> painovoima
+	- Varaus, tai heikko varaus <=> sähköheikko vuorovaikutus
+	- Värivaraus <=>  vahva vuorovaikutus 
+
+--- slide: Voimat ja Hiukkaset ---
+
+ (Alkeishiukkaset)
+
+	- Alkeishiukkasten havainnointi tapahtuu yleensä epäsuorasti hyödyntämällä säilymislakeja ja tunnettuja prosesseja 
+	- Oletus joidenkin hiukkasten olemassaolosta perustuu standardimalliin 
+	- Esimerkiksi kvarkkien ja niitä sitovien gluonien välisistä vuorovaikutuksista ei ole vahvoja kokeellisia todisteita
+	
+	- Standardimallin ennustaman Higgsin bosonin $\mathrm{H}^{0}$ löytyminen, ja sen massan määrittäminen 4.7.2012 ($125 \mathrm{\;GeV} / \mathrm{c}^{2}$), on ollut yksi viimeaikaisista suurista löydöistä jotka ovat tarkentaneet kuvaamme aineen rakenteesta
+\implies{ Lupaus suuresta yhtenäisteoriasta }
+
+--- slide: Voimat ja Hiukkaset ---
+
+ (Vahva vuorovaikutus)
+
+\semismall
+
+{8.5cm}
+
+- Nukleonien sisällä olevat kvarkit sitoutuvat toisiinsa vahvan vuorovaikutuksen kautta protoneiksi ja neutroneiksi
+
+[FIGURE: SOM_Fundamental_particles_Figure_3.png]
+
+	- Kvarkkien ajatellaan olevan fermionisia alkeishiuk- kasia jotka vuorovaikuttavat vahvan voiman kautta, vaihtamalla gluoneita keskenään
+	
+	- Kuudenlaisia kvarkkeja on olemassa (taulukko)
+
+[FIGURE: SOM_Fundamental_Table_1_cropped2.png]
+
+- Jokaisen spin on $\frac{1}{2}$, ja varaus joko $-\frac{1}{3} e$ tai $+\frac{2}{3} e$
+
+{5.8cm}
+
+	- Protoni koostuu uud-kvarkeista: 
+	\[
+	varaus  =  + \frac{2}{3} + \frac{2}{3} + ( - \frac{1}{3})=1
+	\]
+
+- Neutroni koostuu udd-kvarkeista:
+\[
+varaus  =  + \frac{2}{3} + ( - \frac{1}{3}) + ( - \frac{1}{3}) = 0
+\]
+- Hiukkasia, jotka koostuvat kvarkeista kutsutaan hadroneiksi
+
+--- slide: Voimat ja Hiukkaset ---
+
+ (Kvarkit/kvarkkien vankeus)
+
+\semismall
+
+	- Yksittäisiä kvarkkeja ei ole havaittu. Ajatellaan että vahva voima voimistuu etäisyyden kasvaessa (toisin kuin sähköinen voima). On lähestulkoon mahdotonta erottaa kvarkkeja toisistaan, mitä ilmiötä kutsutaan $\Leftrightarrow$ kvarkkien vankeudeksi 
+	
+	- Kun kvarkkeja yritetään erottaa niitä pommittamalla, systeemiin tuotu energia vain synnyttää uusia kvarkki–antikvarkki-pareja
+
+[FIGURE: SOM_Fundamental_quark_confinement.pdf]
+
+{8.2cm}
+
+	- Kvarkeista on saatu tietoa epäelastisen sironnan avulla käyttäen suurenergisia elektroneita $E=20 \mathrm{\;GeV}$ \& $p=20 \mathrm{\;GeV} / \mathrm{c}$ (eli $\lambda \sim{10^{-16}} \mathrm{\;m}$) (esim.\ SLAC, 1973)
+	- Kokeiden perusteella kvarkit liikkuvat nukleonin sisällä suhteellisen vapaasti
+	- Nukleonin muodostavan kolmen kvarkin yhteenlaskettu massa on huomattavasti alhaisempi kuin nukleonin massa. Puuttuvan energian/massan ajatellaan olevan varastoitunut nukleonin sisällä olevaan energeettiseen gluonipilveen
+
+--- slide: Voimat ja Hiukkaset ---
+
+ (Gluonit)
+
+\seminormal
+
+	- Gluoni on vahvan voiman välittäjähiukkanen
+	- Kvarkit vaihtavat gluoneita jatkuvasti
+
+{9.6cm}
+
+	- Gluonien spin on 1, eikä niillä ole lepomassaa
+
+- Massattomalla välittäjähiukkasella on ääretön kantama ((kantama $\approx \frac{\hbar}{c} \frac{1}{m}$)) 
+
+- Gluonit siirtävät voimalle ominaista ominaisuutta, eli värivarausta
+(Toisin kuin fotonit jotka ovat sähköisesti neutraaleita)
+\implies{ Koska gluoneilla on väri, niiden efektiivinen kantama \\
+ 		on erittäin lyhyt}
+
+- Vahvan voiman aiheuttamaa potentiaalia\\ on approksimoitu, ja kokeellisesti mitattu lyhyillä etäisyyksillä:
+\[
+\qquad V_{QCD}(r)  =  - \frac{4 \alpha_{s}}{3 r}  + k r
+\]
+- missä $\alpha_{S} =vahvan voiman kytkentävakioa \approx0,3$ and $k=1 \mathrm{\;GeV} / \mathrm{fm}$
+
+[FIGURE: Quark_potential.pdf]
+
+--- slide: Voimat ja Hiukkaset ---
+
+ (Värivaraus)
+
+\seminormal
+
+	- Värivaraus (tai lyhyesti väri) on vahvaan voimaan liittyvä ominaisuus 
+
+[FIGURE: Color_charges.pdf]
+
+		- Kvarkilla on värivaraus: \textcolor{red}{punainen (r)}, \textcolor{green}{vihreä $(g)$}, ja \textcolor{blue}{sininen $(b)$}
+	- Antikvarkeilla on antiväri: \textcolor{antired}{antipunainen $(\bar{r})$}, \textcolor{antigreen}{antivihreä $(\bar{g})$}, ja \textcolor{antiblue}{antisininen $(\bar{b})$}
+	
+	- Värit siis kuvaavat vain hiukkasten kvanttimekaanista ominaisuutta (eivät ole näkyviä värejä\,!!)
+
+{5.1cm}
+	
+- 
+	- Kuten sähköinen varaus, myös väri säilyy
+- Gluonit itsessään kuljettavat väriä ja antiväriä ((on 8 erilaista gluonia, SU(3)\,))
+- Gluonit vuorovaikuttavat myös toisten gluonien kanssa!
+
+--- slide: Voimat ja Hiukkaset ---
+
+ (Miksi väri tarvittiin/otettiin käyttöön?)
+
+\seminormal
+
+	- Hadronit koostuvat fermionista kvarkeista ja ovat värineutraaleita
+	
+	- Kieltosääntö estää kahta fermionia olemasta samassa tilassa (joilla olisi täysin saman kvanttiluvut) 
+	\implies{ Hadronien sisällä olevat kvarkit eivät voi olla samassa tilassa } 
+	\implies{ Värin ominaisuus (3 erilaista arvoa) esiteltiin vuonna 1964 O. W. Greenbergin toimesta} 
+	- Ilman väriä, esim.\ hadronit $\Delta^{++}=uuu ~\&~ \Delta^{-}=d d d$ olisivat samassa kvanttitilassa
+
+- Esim.\ nukleonin sisäisten kolmen kvarkin värit poikkeavat toisistaan
+
+- Mesonit koostuvat kvarkki–antikvarkki-parista 
+\implies{Värineutraalisuus vaatii että väri ja antiväri muodostavat parin}
+
+- Kokeellisesti havaitut energeettisten hiukkasten törmäyksistä sinkoutuvat suihkut implikoivat gluonien ja värin olevan olemassa 
+
+--- slide: Voimat ja Hiukkaset ---
+
+ (Värivaraus ja kvarkkien vankeus)
+
+\semismall
+
+	- Sähköinen varaus ja värivaraus käyttäytyvät eri tavalla: 
+
+	 - Sähköisesti varautuneita hiukkasia löytyy paljonkin yksittäisinä hiukkasina (esim.\ elektroni)
+	 - Hadronit ovat värineutraaleita, värillistä hiukkasta ei ole onnistuttu synnyttämään!
+	 - Miksei vapaita värivarauksia löydy?
+
+	- Yksinkertaistettu selitys on että voimien suuruusluokat eroavat toisistaan huomattavasti: Vahvasti vuorovaikuttavat hiukkaset vetävät toisiaan voimakkaasti puoleensa
+
+{8.2cm}
+
+	- Mutta vuorovaikutusten voimakkuudet eivät selitä miksi yksittäistä kvarkkia ei ole kokeellisesti havaittu!
+	
+	- Vastaus piilee gluonien vuorovaikutuksissa \\toisten gluonien kanssa, mikä synnyttää voiman mikä kasvaa värillisten hiukkasten etäisyyden kasvaessa
+
+[FIGURE: SOM_Fundamental_quark_confinement.pdf]
+
+--- slide: Voimat ja Hiukkaset ---
+
+ (Hadronien luokittelu)
+
+\seminormal
+
+	- Koska on olemassa kuusi kvarkkia/antikvarkkia
+
+[FIGURE: SOM_Fundamental_Table_1_cropped2.png]
+
+, monia hadroneita voidaan muodostaa
+
+	- Taulukko 12.2. (seuraava kalvo) listaa yleisimmät hadronit
+	
+	- Protoni on ainoa vakaa hadroni vapaan neutronin elinaika on $889 \mathrm{\;s}$)
+	
+	- Baryonit koostuvat  kolmesta kvarkista: esim.\ Protoni (uud) ja neutroni (udd)
+	
+	- Mesonit koostuvat kvarkista ja antikvarkista: $\pi^{+}$-mesoni ($u\bar{d}$), ja $\pi^{-}$-mesoni ($\bar{u}d$)
+
+{5.5cm}
+
+	- Elinajan sijasta usein annetaan energiaväli olettaen $\Delta E \approx \hbar / \tau$, missä $\tau$ on aikaväli jona hiukkasen oletetaan olleen olemassa
+
+--- slide: Voimat ja Hiukkaset ---
+
+ (Yleisimmät hadronit)
+
+[FIGURE: SOM_Fundamental_Table_2.png]
+
+--- slide: Voimat ja Hiukkaset ---
+
+ (Luontaiset ominaisuudet)
+
+\seminormal
+
+	- Kaikki kvarkit ovat spinin $\frac{1}{2}$ fermioneita, tällöin kulmaliikemäärän yhteenlaskusääntöjen nojalla, kaikki baryonit (kolme kvarkkia) ovat joko spinin $\frac{1}{2}$ tai $\frac{3}{2}$ hiukkasia
+
+- Isospin 
+
+	- Taulukko 12.2 näyttää että joillakin hadroneilla näyttää olevat samanlainen kvarkkikoostumus ja sama spin 
+	- Toteuttaakseen kieltosäännön, uusi kvanttiluku täytyy ottaa käyttöön
+	- Tätä kvanttilukua kutsutaan isospiniksi $I$, ja se on vielä abstraktimpi kuin tavallinen spin, mutta sen kolmas komponentti $I_{3}$ kvantisoituu samalla tavalla kuin spin  
+	
+	- Ylös- ja alas-kvarkin isospinit ovat $I=\frac{1}{2}$, oudon kvarkin $I=0$
+
+- Outous 
+	 
+	- Oudon kvarkin outous on $s=-1$. Eli esim.\  hadroni $\Omega^{-}(sss): \quad s=-3$
+
+--- slide: Voimat ja Hiukkaset ---
+
+ (Vahvan voiman jäännösvoima (ydinvoima))
+
+	- Sähköisesti neutraalit molekyylit voivat polarisoitua sähköisesti, ja alkaa vuorovaikuttamaan sähköisesti keskenään 
+	- Vesimolekyylit ovat hyvä esimerkki muodostaessaan jäätä 
+	- Vastaavasti värineutraalit hiukkaset voivat vuorovaikuttaa keskenään vahvan voiman kautta \implies{ Tämä vuorovaikutus/vetovoima sitoo nukleonit toisiinsa atomien ytimissä! }
+	
+- Tämä niin sanottu vahva jäännösvoima ei oikeasti ole oma voimansa, vaan oikean vahvan vuovovaikutuksen ilmentymä 
+
+- Protoni ja neutroni (värineutraaleja) vaihtavat pioneja (kahden kvarkin mesoneita) 
+- Mesonin massa selittää jäännösvoiman lyhyen kantaman 
+- $1 \mathrm{\;fm}$ kantama antaa välittäjähiukkasen massaksi $197 \mathrm{\;Mev} / \mathrm{c}^{2}$, mitattu arvo on $140 \mathrm{\;Mev} / \mathrm{c}^{2}$
+
+--- slide: Voimat ja Hiukkaset ---
+
+ (Sähköheikko vuorovaikutus)
+
+\seminormal
+
+	- Hiukkaset joilla on varaus/heikko varaus (joskus kutsutaan myös 'makuvaraukseksi'), voivat vuorovaikuttaa sähköheikon voiman kautta 
+	\implies{ Sekä kvarkit että leptonit kokevat sähköheikkoja voimia}
+	
+	 - Fermioniset leptonit ovat alkeishiukkasia joilla ei ole värivarausta, eivätkä ne siis vuorovaikuta vahvan voiman kautta
+
+- Leptoneita on olemassa kolme sukupolvea: elektronit, myonit ja tauonit 
+- Jokaisella sukupolvella on oma leptoninsa, antileptoni, neutriino ja antineutriino
+
+- Elektroni, myoni ja tauoni käyttäytyvät hyvinkin samanlaisesti, niillä on vain erisuuret massat
+
+- Sähköheikko vuorovaikutus hallitsee etäisyyksillä jotka ovat ydintä suurempia mutta kosmologisia etäisyyksiä pienempiä 
+- Sen ansiosta aineen eri faasit muodostuvat, sekä fyysiset ja kemialliset
+
+--- slide: Voimat ja Hiukkaset ---
+
+ (Sähköheikon voiman välittäjähiukkaset)
+
+	- Sähköheikon voiman välittäjähiukkanen on massaton fotoni ja kolme massallista bosonia, $\mathrm{W}^{+}$, $\mathrm{W}^{-}$ ja $\mathrm{Z}^{0}$ 
+	
+	- Sähkömagneettista ja heikkoa vuorovaikutusta pidetään siltikin erillisinä voimina, joskin 1970-luvulla molemmat yhdistettiin kvanttielektrodynamiikan (QED) alle
+
+- Välittäjähiukkasten massoissa oleva epäsymmetria selitettiin, taas, analogian avulla 
+- Hyrrä voi pyöriä symmetrisesti (ei prekessoi) suurilla energioilla, mutta kaatua spotaanisti matalammilla energioilla synnyttäen epäsymmetrisen tilanteen 
+- Symmetria olisi näkyvissä vain erittäin suurilla energioilla $1 \mathrm{\;TeV}$, jota ei ole vielä havaittu
+
+--- slide: Voimat ja Hiukkaset ---
+
+ (Gravitaatiovoima)
+
+\seminormal
+
+	- Kaikki hiukkaset kokevat gravitaatiovoiman, koska sen lähde on "gravitaatiovaraus" ~eli massa ((... yleisessä suhteellisuusteoriassa stressi–energia-tensori...))
+	
+	- Painovoima on ${\sim}10^{-38}$ kertaa heikompi kuin vahva voima 
+	\implies{Painovoima ei vaikuta alkeishiukkasten, atomien/molekyylien muodostumiseen}
+
+- Vuorovaikuttajahiukkanen olisi vielä löytymätön gravitoni
+
+- Sen oletetaan olevan sähköisesti neutraali, massaton ja omaavan spinin 2
+
+- Menetelmiä ja laitteita on kehitteillä gravitonin löytämiseksi
+
+- Gravitaatioaallot ovat puolestaan häiriöitä aika-avaruuden rakenteessa ("kaarevuudessa") joita kiihtyvät massat aiheuttavat, jotka etenevät valonnopeudella aaltoina lähteestä poispäin 
+
+- 2017, Weiss, Thorne \& Barich saivat Nobelin fysiikanpalkinnon rooleistaan gravitaatioaaltojen havainnoinnissa
+
+--- slide: Voimat ja Hiukkaset ---
+
+ (Standardimalli)
+
+\seminormal 
+
+	- Standardimalli on tämänhetkinen hyväksytty teoria kuvaamaan alkeishiukkasia:
+
+{8.6cm}
+
+-<.->[] 
+		- Hiukkasten rakenteen kvarkkimalli
+		- Sähkömagneettisen ja heikon voiman yhdistäminen $\rightarrow$ sähköheikko teoria
+		- sähköheikon ja vahvan voiman yhdistäminen (kvanttikromodynamiikka (QCD)) $\rightarrow$ suuri yhtenäisteoria (GUT)
+		- Selittää alkeishiukkasten ominaisuudet
+		- Selittää vuorovaikutusten luonteen
+
+	- Joitain avoimia kysymyksiä: 
+\semismall
+	- Neutriinon lepomassa?
+- Higgsin bosonin ominaisuudet?
+- Gravitonia ei ole havaittu
+- Galaksien pyörimiskäyrät, pimeä aine/energia?
+
+[FIGURE: Separation_of_forces_schematic.pdf]
+
+## 4.4 Hiukkasten Synnyttäminen ja Havainnointi
+
+--- slide: 4. Hiukkasfysiikka ja Alkeishiukkaset ---
+
+    -<1-> 4_1_a{Kuinka Voimat Toimivat}
+    -<1-> 4_2_a{Antihiukkaset}	
+    -<1-> 4_3_a{Voimat ja Hiukkaset}	
+    -<1-> 4_4_a{Hiukkasten Synnyttäminen ja Havainnointi}
+    -<1-> 4_5_a{Hajoamistavat, -ketjut ja Säilymislait}
+    -<1-> 4_6_a{Pariteetti, Varauksen konjugointi ja Ajan Kääntö}
+    -<1-> 4_7_a{Yhtenäisteoriat, Suuri Yhtenäisteoria ja Kosmologia}
+
+--- slide: Hiukkasten Synnyttäminen ja Havainnointi ---
+
+ (Lyhyt historia)
+
+\semismall
+
+- Varhaiset kokeet tehtiin alfalähteillä esim.\ Pb-210, 5,3\;MeV:n kineettisillä energioilla: 
+
+-<.->[] 
+	 - Elektroni, löydettiin 1897 ((J. J. Thomson, katodisäteellä, e/m)), sen varaus mitattiin 1909 (Millikan)
+	- Protoni, löydettiin 1919 ((E. Rutherford, alfahiukkaspommituksella kultakalvoon))
+	- Neutroni, löydettiin 1932 ((J. Chadwick, sähköisesti neutraalien painavien hiukkasten säteily löydettiin pommituskokeissa, massa oli lähellä protonia)) $\tau \sim 882 \mathrm{\;s}$
+
+- Myöhemmin gammasäteitä ja kosmisia säteitä käytettiin $\rightarrow$  $\gtrsim 1 \mathrm{\;GeV}$:
+-<.->[] 
+- Positroni, löydettiin 1932 ((Anderson, Wilsonin sumukammiota \& gammasäteitä))
+- Myoni, löydettiin 1936 (kosmisilla säteillä) $m_{\mu}=0,106 \mathrm{\;GeV}, ~\tau \sim 2,2 \;\mu\mathrm{s}$
+- Pioni, löydettiin 1947, (kosmisilla säteillä) $m_{\pi}=0,140 \mathrm{\;GeV}, ~\tau \sim 26 \mathrm{\;ns}$
+- Kaoni, löydettiin 1947, (kosmisilla säteillä) $m_{K}=0,490 \mathrm{\;GeV}, ~\tau \sim 5 \mathrm{\;ns}$
+
+- Kaonit $\rightarrow$ koostuvat kvarkeista: ylös, alas, \& outo vuonna 1967
+
+--- slide: Hiukkasten Synnyttäminen ja Havainnointi ---
+
+ (Modernit kiihdyttimet)
+
+\semismall
+
+	- Vielä myöhemmin, uusia ja painavampia hiukkasia löydettiin:
+ \small
+	 - 1974: $3,1 \mathrm{\;GeV} ~J/\psi$-mesoni, koostuu lumo-kvarkista ja sen antikvarkista
+	- 1975: $1,8 \mathrm{\;GeV}$ tauoni
+	- 1977: $9,5 \mathrm{\;GeV}$ Upsilon-mesoni, koostuu alas-kvarkista ja sen antikvarkista
+	- 1983: $80 \mathrm{\;GeV} ~\&~ 91 \mathrm{\;GeV}$ $W$- ja $Z$-bosonit
+	- 1994: $180 \mathrm{\;GeV}$ huippu-kvarkki, massiivisin kvarkki mikä ei 'hadronisoidu'
+
+- Modernit kiihdyttimet yltävät jopa 6,8 TeV:iin ja törmäyttävät kaksi korkeaenergistä hiukkassuihkua toisiinsa ($\Rightarrow$ törmäysenergia jopa 13,6 TeV) 
+
+[FIGURE: SOM_Fundamental_particles_Figure_4.png]
+
+--- slide: Hiukkasten Synnyttäminen ja Havainnointi ---
+
+ (Hiukkaskiihdyttimet)
+
+\seminormal
+
+	 - Sumukammioiden jäädessä historiaan, on useita tekniikoita tunnistaa ja karakterisoida törmäyksissä syntyviä/vapautuvia hiukkasia, varauksen määrittäminen, liikemäärä, massa jne.
+
+- Tuikeilmaisin: materiaali emittoi valoa hiukkasen osuessa (esim.\  Th:NaI kide)
+- Monijohdin verrannollisuuslaskuri: saapuvat hiukkaset ionisoivat ainetta, ja johdinlankaristikoista mitattujen sähkövirtojen avulla hiukkasen liikerata voidaan selvittää, fysiikan Nobelin palkinto 1992
+- Cerenkov-ilmaisin: hiukkasen nopeus voidaan määrittää syntyneen säteilyn ominaisuuksista
+- Pii-ilmaisin: Säteily synnyttää puolijohteeseen elektroni–aukkopareja $\rightarrow$ hiukkasen liikerata
+- Kalorimetri: Tulevan hiukkasen synnyttämien hiukkassuihkujen avulla selvitetään energia
+
+## 4.5 Hajoamistavat, -ketjut ja Säilymislait
+
+--- slide: 4. Hiukkasfysiikka ja Alkeishiukkaset ---
+
+    -<1-> 4_1_a{Kuinka Voimat Toimivat}
+    -<1-> 4_2_a{Antihiukkaset}	
+    -<1-> 4_3_a{Voimat ja Hiukkaset}	
+    -<1-> 4_4_a{Hiukkasten Synnyttäminen ja Havainnointi}
+    -<1-> 4_5_a{Hajoamistavat, -ketjut ja Säilymislait}
+    -<1-> 4_6_a{Pariteetti, Varauksen konjugointi ja Ajan Kääntö}
+    -<1-> 4_7_a{Yhtenäisteoriat, Suuri Yhtenäisteoria ja Kosmologia}
+
+--- slide: Hajoamistavat, -ketjut ja Säilymislait ---
+
+ (Tutkiminen)
+
+	- Lähes kaikki löydetyt hiukkaset ovat epävakaita (paitsi protoni, elektroni \& neutriino)
+	- Ne hajoavat ja niiden hajoamisesta opitaan:
+	esim.~energiat, massat, kvanttiluvut
+	- Useat hiukkaset ovat niin epävakaita ja lyhytikäisiä, että niitä voidaan tutkia vain epäsuorasti
+	- Liikemäärä ja relativistinen kokonaisenergia säilyvät aina:
+	jos energia ei näytä säilyvän, niin massa muuttuu
+	- Varaus säilyy aina
+	- Onko taustalla olemassa jotain perustavanlaatuisia lakeja?
+
+--- slide: Hajoamistavat, -ketjut ja Säilymislait ---
+
+ (Tutkiminen)
+
+	- totalitarismin periaate $\rightarrow$ säilymislain perusolemus:
+	- "Kaikki mikä ei ole kiellettyä, on pakollista" ~–Gell-Mann (\& R. Heinlein)
+	- Mikäli hajoamisprosessia ei tapahdu, tälle täytyy olla syy \implies{ On olemassa joku säilymislaki, mikä estää prosessin }
+
+	- Luonnossa säilymislait liittyvät symmetrioihin
+	
+	- Esim.\ jos hiukkasen potentiaalifunktio on vakio etenemissuunnan suhteen, potentiaali ei kohdista hiukkaseen voimaa tähän suuntaan, jolloin hiukkasen liikemäärä säilyy
+	\implies{ vakioarvoisella potentiaalilla on translaatiosymmetriaa (translaatioinvariantti) }
+	
+	- Mikäli mikään vääntömomentti ei vaikuta kappaleeseen, sen potentiaali on keskeissymmetrinen, jne.
+
+--- slide: Hajoamistavat, -ketjut ja Säilymislait ---
+
+ (Emmy Noether)
+
+	- Vastaavasti energian säilyminen sulkee pois mahdollisuuden hiukkasen hajoamiselle niin että hajoamistuotteiden kokonaismassa olisi suurempi kuin alkuperäinen massa 
+	
+	- Jos kineettinen energia kasvaa, niin massan täytyy pienentyä
+ \implies{ On olemassa symmetria joka liittää yhteen ajan ja energian}
+
+- Emmy Noether muodosti 1918 lausekkeen fysiikassa ilmenevien konjugaattimuuttujien suhteen. Jokainen fysikaalinen symmetria johtaa säilymislakiin
+
+- Yleisimmät (klassiset) säilyvät suureet vastaavine symmetrioineen ovat: 
+$$ \small
+{rcl}
+ Energia (massa) & \qquad \leftrightarrow & \qquadajan käännön symmetria  \\
+ Liikemäärä & \qquad \leftrightarrow &\qquad translaatiosymmetria \\
+ Kulmaliikemäärä & \qquad \leftrightarrow  & \qquadpyörähdyssymmetria \\
+ Sähkövaraus &\qquad \leftrightarrow &  \qquad sähkömagnetismin mittainvarianssi \\
+Minkowskin metriikka &\qquad \leftrightarrow &  \qquad erityinen suhteellisuusteoria 
+ 
+$$
+
+--- slide: Hajoamistavat, -ketjut ja Säilymislait ---
+
+ (Emmy Noether)
+
+	 - Noether yhdisti myös konjugaattimuuttujat säilymislakeihin:
+	
+		 - Energia–aika (($\exp (\rmi E t)$\,))
+		- Liikemäärä–siirtymä (($\exp (\rmi \vec{k} \cdot \vec{r})$\,))
+		- jne.
+
+	- Kuitenkin jo ennen  Noetherin teoreemaa, nämä säilymislait olivat enemmän tai vähemmän tunnettuja, klassisessa fysiikassa enimmäkseen kokeellisten havaintojen pohjalta muodostettuina
+	
+	- Hiukkasfysiikassa 
+	suurin osa säilymislaista on muodostettu empiirisesti
+	
+	- Usein säilymislain on havaittu olevan voimassa vain tietyn tyyppisessä hajoamisessa 
+	
+	- Esimerkiksi outous säilyy vain vahvoissa ja sähkömagneettisissa vuorovaikutuksissa, muttei heikoissa vuorovaikutuksissa, jne.
+
+--- slide: Hajoamistavat, -ketjut ja Säilymislait ---
+
+ (Emmy Noether)
+
+	- Kvanttimekaniikan säilymislait liittyvät tiettyihin kvanttilukuihin
+
+[FIGURE: SOM_Fundamental_Table_4.png]
+
+	- Eli uusia kvanttilukuja tarvitaan, jotka säilyvät tietyissä reaktioissa, prosesseissa tai vuorovaikutuksissa: 
+	 \small
+	 - Baryoniluku (B): +1 baryonille, $-1$ antibaryonille, 0 muulloin
+	- Leptoniluvut (L): yksi jokaiselle leptonisukupolvelle $L_{e}$, $L_{\mu}$, $L_{\tau}$ (uutta dataa 1998)
+	- Outous (S): $-1$ oudolle kvarkille, $+1$ antioudolle, 0 muulloin
+	- Isospin
+	- Hypervaraus
+
+--- slide: Hajoamistavat, -ketjut ja Säilymislait ---
+
+ (Leptoniluku)
+
+\seminormal
+
+	- Alkuperäisen standarimallin mukaan, neutriinoilla ei pitäisi olla massaa, mutta niillä on polarisaatio 
+	- Kokeiden perusteella neutriinot ovat vasenkätisiä, eli niiden spin on vastakkaissuuntainen niiden liikemäärän kanssa
+	- Antineutriinot ovat oikeakätisiä, jolloin spin ja liikemäärä ovat samansuuntaiset
+
+- Standardimallissa, massa on seurausta  Higgsin  bosonista. Saman vuorovaikutuksen oletetaan myös muuttavan kätisyyden oikeasta vasemmaksi, ja päinvastoin
+
+- Koska on havaittu vain vasenkätisiä neutriinoita, niiden pitäisi olla massattomia. Tästä syystä leptoniluku näyttäisi säilyvän heikossa vuorovaikutuksessa, ja tarkemmin ottaen jokainen niiden mauista säilyy
+
+- Mutta kokeet 1998  osoittivat että neutriinot voivat muuttua toisiksi neutriinoiksi, ilmiössä jota kutsutaan neutriino-oskillaatioksi
+
+--- slide: Hajoamistavat, -ketjut ja Säilymislait ---
+
+ (Feynmanin kaaviot)
+
+	 - Alkeishiukkasten törmäyksiä/reaktioita kuvataan havainnollistavilla Feynmanin kaavioilla
+
+	- Omaksumme alla Harrisin kirjan notaation:
+	
+		 - Horisontaalinen akseli kuvaa aikaa 
+		- Vertikaalinen akseli paikkaa 
+
+	- Absoluuttiset paikat/ajat eivät merkitse kaavioissa, ne vain helpottavat mahdollisten vuorovaikutusten kirjanpitoa 
+
+{9cm}
+
+	- Fermionit, (leptonit, hadronit, kvarkit) kuvataan  kiinteällä suoralla viivalla, bosonit (välittäjähiukkaset) aaltomaisella viivalla. Viivojen risteyskohta tarkoittaa reaktiota
+
+[FIGURE: SOM_Fundamental_particles_Figure_10.png]
+
+--- slide: Hajoamistavat, -ketjut ja Säilymislait ---
+
+ (Feynmanin kaaviot)
+
+\seminormal
+
+	- Vuorovaikutusten perussäännöt: 
+	 \small
+	 - Vain hiukkaset joilla on väri voivat osallistua vahvaan voimaan
+	$\rightarrow$ Vahvan voiman solmukohtiin liittyvät fermionit ovat kvarkkeja
+	- Värin säilymisen takia gluonit ovat jossain 8:sta väri–antiväri väritilasta. Kvarkit vaihtavat väriä! (tilojen määrä 8 on seurausta SU(3) symmetriaryhmästä$^*$...)\footnoteleft{\tiny{$^*$Jos kiinnostaa, tutustu David Hestenesiin ja geometriseen algebraan.}}
+	- Kaikki hiukkaset paitsi neutriinot vuorovaikuttavat sähkömagneettisesti
+	- Heikon voiman solmukohdat näyttävät että kaikki alkeisfermionit voivat vuorovaikuttaa W ja Z bosonien avulla
+	- W tapauksessa, kvarkin varaus muuttuu ja kvarkki transmutatoituu
+
+[FIGURE: SOM_Fundamental_particles_Figure_8.png]
+
+--- slide: Hajoamistavat, -ketjut ja Säilymislait ---
+
+ (Feynmanin kaaviot)
+
+	- Fermionit (kvarkit tai leptonit) voivat esim.\ hajota bosoniksi tai syntyä bosonista, tätä kuvaa hajoamis/syntymisvuorovaikutuspisteet (solmut)
+
+[FIGURE: SOM_Fundamental_particles_Figure_9.png]
+
+	- Huomaa ajankäännön symmetria kahdessa kuvaajassa kvarkeilla ja leptoneilla (kuva 9) 
+
+- Koko vuorovaikutus voidaan kuvata  yhdistämällä solmukohdat monimutkaisemmaksi kaavioksi (kuva 10)
+
+[FIGURE: SOM_Fundamental_particles_Figure_10.png]
+
+--- slide: Hajoamistavat, -ketjut ja Säilymislait ---
+
+ (Feynmanin kaaviot)
+
+	 -<.->[] 
+
+[FIGURE: SOM_Fundamental_particles_Figure_11a.png]
+
+a) Neutroni ($n$) muuntuu protoniksi ($p$) ja elektroniksi ($e^-$)
+
+[FIGURE: SOM_Fundamental_particles_Figure_11t.png]
+
+--- slide: Hajoamistavat, -ketjut ja Säilymislait ---
+
+ (Feynmanin kaaviot)
+
+	 -<1->[]
+
+[FIGURE: SOM_Fundamental_particles_Figure_11tt.png]
+
+[FIGURE: SOM_Fundamental_particles_Figure_11b.png]
+
+b) Pioni ($\pi^-$) hajoaa myoniksi ($\mu^-$). Tämä tunnettu hajoaminen tapahtuu maan ilmakehän ulommissa kerroksissa, missä kosmiset pionit muuntuvat myoneiksi, jotka saapuvat Maahan lyhyen ajan $2,2 \;\mu$s kuluttua (Lorentzin kontraktio)
+
+\xdef\yshiftaus{4mm}
+
+--- slide: Hajoamistavat, -ketjut ja Säilymislait ---
+
+ (Feynmanin kaaviot)
+
+	 -<1->[]
+
+[FIGURE: SOM_Fundamental_particles_Figure_11t.png]
+
+[FIGURE: SOM_Fundamental_particles_Figure_11c.png]
+
+c) Sigma-baryoni ($\sum^+$) hajoaa neutroniksi ($n$). Outous ei säily!
+
+--- slide: Hajoamistavat, -ketjut ja Säilymislait ---
+
+ (Feynmanin kaaviot)
+
+	 -<1->[] 
+
+[FIGURE: SOM_Fundamental_particles_Figure_11t.png]
+
+[FIGURE: SOM_Fundamental_particles_Figure_11d.png]
+
+d) Myoni ($\mu^+$) hajoaa positroniksi ($e^+$)
+
+--- slide: Hajoamistavat, -ketjut ja Säilymislait ---
+
+ (Feynmanin kaaviot)
+
+	 -<1->[] 
+
+[FIGURE: SOM_Fundamental_particles_Figure_11t.png]
+
+[FIGURE: SOM_Fundamental_particles_Figure_11e.png]
+
+e) Sigma-baryoni ($\sum^0$) hajoaa lambda-baryoniksi ($\Lambda^0$)
+
+--- slide: Hajoamistavat, -ketjut ja Säilymislait ---
+
+ (Feynmanin kaaviot)
+
+	 -<1->[] 
+
+[FIGURE: SOM_Fundamental_particles_Figure_11t.png]
+
+[FIGURE: SOM_Fundamental_particles_Figure_11f.png]
+
+f) Kaoni hajoaa toiseksi kaoniksi ja pioniksi
+
+--- slide: Hajoamistavat, -ketjut ja Säilymislait ---
+
+ (Esimerkki I)
+
+	 - Tarkastellaan varauksen säilymistä, energia/massan, kulmaliikemäärää/spiniä, outoutta ja baryoni- ja leptonilukuja, seuraavissa kolmessa hajoamisessa. Selvitetään mitkä ehdotetuista hajoamisista voivat tapahtua.
+
+$$
+
+I: \quad && \tau^{-} \quad &\rightarrow \quad \mu^{-} ~+~\nu_{\tau} ~+~\overline{\nu_{\mu}}  &&\\
+&&  &  &&\\
+II:\quad && \Delta^{+} \quad &\rightarrow \quad n~+~K^{+}  &&\\
+&&  &  &&\\
+III:\quad && \overline{\Lambda^{o}} \quad &\rightarrow \quad \bar{p}~+~\pi^{+}  &&
+
+$$
+
+--- slide: Hajoamistavat, -ketjut ja Säilymislait ---
+
+ (Esimerkki II) 
+
+[FIGURE: SOM_Fundamental_particles_Figure_12a.png]
+
+$$
+
+I: \quad && \tau^{-} \quad &\rightarrow \quad \mu^{-} ~ +~\nu_{\tau} ~ + ~\overline{\nu_{\mu}}  &&\\
+&&  &  &&\\
+\text {Energia:} \quad && 1780 \mathrm{\;MeV} \quad&\rightarrow \quad 106 \mathrm{\;MeV}  &&\quad\text {~OK} \\
+\text {Spin:} \quad&& 1 / 2  \quad&\rightarrow \quad  1 / 2 ~ + ~ 1 / 2 ~ + ~ 1 / 2 &&\quad\text {{\sim}OK}
+
+$$
+\implies{Koska myös leptoniluku säilyy,  hajoaminen on sallittu }
+
+--- slide: Hajoamistavat, -ketjut ja Säilymislait ---
+
+ (Esimerkki III)
+
+$$
+
+II: \quad && \Delta^{+} \quad &\rightarrow \quad n~+~K^{+}  &&\\
+&&  &  &&\\
+\text {Energia:} \quad && 1232 \mathrm{\;MeV} \quad&\rightarrow \quad 940 ~+~494 \mathrm{\;MeV}  &&\quad \text {EI OK} \\
+\text {Baryoniluku:} \quad&& +1  \quad&\rightarrow\quad +1  ~+~ 0 &&\quad\text {OK} \\
+\text {Spin:} \quad&& 3 / 2  \quad&\rightarrow \quad  1 / 2 ~+~ 0 &&\quad {\sim}OK
+
+$$
+\implies{Lopputuotteiden massa on suurempi kuin alkutuotteiden,  hajoaminen EI OLE sallittu }
+
+--- slide: Hajoamistavat, -ketjut ja Säilymislait ---
+
+ (Esimerkki III)
+
+[FIGURE: SOM_Fundamental_particles_Figure_12b.png]
+
+$$
+
+III: \quad && \overline{\Lambda^{o}} \quad &\rightarrow \quad \bar{p}~+~\pi^{+}  &&\\
+&&  &  &&\\
+\text {Energia:} \quad && 1116 \mathrm{\;MeV} \quad&\rightarrow \quad 938 ~+~140 \mathrm{\;MeV}  &&\quad\text {OK } \\
+\text {Baryoniluku:} \quad&& -1  \quad&\rightarrow\quad -1  ~+~ 0 &&\quad\text {OK } \\
+\text {Spin:} \quad&& 1 / 2  \quad&\rightarrow \quad  1 / 2 ~+~ 0 &&\quad\text {OK }
+
+$$
+\implies{ Kaikki ominaisuudet säilyvät, hajoaminen on sallittu }
+
+## 4.6 Pariteetti, Varauksen konjugointi ja Ajan Kääntö
+
+--- slide: 4. Hiukkasfysiikka ja Alkeishiukkaset ---
+
+    -<1-> 4_1_a{Kuinka Voimat Toimivat}
+    -<1-> 4_2_a{Antihiukkaset}	
+    -<1-> 4_3_a{Voimat ja Hiukkaset}	
+    -<1-> 4_4_a{Hiukkasten Synnyttäminen ja Havainnointi}
+    -<1-> 4_5_a{Hajoamistavat, -ketjut ja Säilymislait}
+    -<1-> 4_6_a{Pariteetti, Varauksen konjugointi ja Ajan Kääntö}
+    -<1-> 4_7_a{Yhtenäisteoriat, Suuri Yhtenäisteoria ja Kosmologia}
+
+--- slide: Pariteetti (P), Varauksen konjugointi (C) ja Ajan Kääntö (T) ---
+
+	- Aiemmin keskusteltiin joistakin ilmeisistä säilymislaista hiukkasten reaktioissa, kuten baryoniluvun, leptoniluvun ja outouden säilymisestä
+
+[FIGURE: SOM_Fundamental_Table_4.png]
+ 
+	- Tarkastellaan seuraavaksi lakeja jotka liittyvät perustavanlaatuisemmin maailmankaikkeuden symmetrioihin, sekä ajan että avaruuden luonteisiin (aika-avaruuteen)
+
+--- slide: P, C ja T ---
+
+ (Pariteetti-inversio (P))
+
+\semismall
+
+	- Pariteetti-inversio muuttaa kaikkien koordinaattien merkin: 
+	\[
+	 \vec{r} =  (x, y, z) \quad \rightarrow \quad (-x,-y,-z)  =  -\vec{r} \,, \qquad esim. \qquad P:~ \psi(\vec{r}) \rightarrow \psi'(-\vec{r})
+	 \]
+
+- Vahva ja sähkömagneettinen vuorovaikutus säilyttävät pariteetin, heikko vuorovaikutus ei
+
+{8.3cm}
+
+	- Tarkastellaan tapausta missä hiukkanen kiertää $z$-akselia myötäpäivään (harmaa nuoli). 
+
+[FIGURE: SOM_Fundamental_particles_Figure_13.png]
+
+ Pariteettimuunnoksessa otamme hiukkasen radasta peilikuvan origon suhteen (pinkki nuoli). Molemmissa tapauksissa, hiukkanen pyörii identtisesti myötäpäivään $z$-akselin suhteen
+	
+	- Pyörimisliike on symmetrinen pariteettimuunnoksen suhteen 
+	- Vastaavasti kulmaliikemäärä ja spin säilyvät muuttumattomina pariteettimuunnoksessa (kiinnostuneen lukijan kannattaa tutustua vektoreihin, pseudovektoreihin ja ristituloon)
+
+--- slide: P, C ja T ---
+
+ (Pariteetti-inversio (P))
+
+\seminormal
+
+	- Tarkastellaan nyt $\beta^{+}$-hajoamista: $\qquad p^{+} \quad \rightarrow \quad n ~ +~ e^{+}  ~+~ \nu_{e}$
+
+[FIGURE: SOM_Fundamental_particles_Figure_14.png]
+
+- Protoni muuttuu neutroniksi, positroniksi ja neutriinoksi. Neutroni säilyy ytimessä mutta positroni ja neutriino emittoituvat, molempien spin on $1/2$ 
+
+{8.5cm}
+
+	- Niiden spinit ovat samansuuntaiset. Positronin spin on samansuuntainen sen liikemäärävektorin kanssa, neutriinon spin puolestaan vastakkaissuuntainen liikemäärän kanssa
+
+	- Tehdään nyt pariteettimuunnos. $e^{+}$:n ja $\nu_{e}$:n liikemäärät muuttuvat, mutta spinit eivät kuten nähdään kuvassa~14\,b. Tämän reaktion pitäisi tapahtua samalla todennäköisyydellä kuin kuvassa 14\,a hahmotellun reaktion, mutta se ei tapahdu. Kuvan~14\,b reaktiota ei tapahdu. Eli heikko vuorovaikutus ei ole pariteettimuunnoksen suhteen invariantti! (Pariteetin rikkoutuminen)
+
+--- slide: P, C ja T ---
+
+ (Varauksen konjugointi (C))
+
+\seminormal
+
+	- Varauksen konjugointi muuttaa kaikki hiukkaset antihiukkasikseen. Tarkastellaan aiempaa $\beta^{+}$-hajoamista, ja tehdään varauksen konjugointi.
+
+[FIGURE: SOM_Fundamental_particles_Figure_15.png]
+
+ Antiprotoni muuttuu nyt antineutroniksi, elektroniksi ja antineutriinoksi. Kuvan~15a hahmottelemaa prosessia ei tapahdu
+
+{8.4cm}
+
+	- Syy tähän on että antineutriinon spin ei ole vastakkaissuuntainen liikemäärän kanssa, vaan samansuuntainen (ks.\ aiempi luento). Joten heikko vuorovaikutus ei ole invariantti varauksen konjugoinnin suhteen
+
+	- Mutta jos tehdään sekä pariteettimuunnos ja varauksen konjugointi, niin saadaan kuvan~15b reaktio. Tämä reaktio tapahtuu.
+
+--- slide: P, C ja T ---
+
+ (Yhdistetty pariteettimuunnos ja varauksen konjugointi (CP))
+
+\semismall
+
+	- Eli jos tehdään sekä pariteetti-inversio ja varauksen konjugointi, saadaan reaktio joka  tapahtuu/on sallittu 
+	
+	- Heikko vuorovaikutus on selvästikin invariantti (muuttumaton) näiden kahden muunnoksen tulolle $ \quad \Rightarrow \quad $ Tätä symmetriaa sanotaan CP-invarianssiksi 
+
+- Neutriinon spin on vastakkaissuuntainen (ei samansuuntainen)
+ja antineutriinon samansuuntainen liikemäärän kanssa. Tätä ominaisuutta sanotaan neutriinon helisiteetiksi ('kätisyydeksi')
+
+- Elektroneilla ei ole tiettyä kätisyyttä. Otetaan nopeudella $500 \mathrm{\;m}/\mathrm{s}$ liikkuva elektroni
+
+- Nopeudella 1000 m/s liikkuvassa koordinaatistossa sama elektroni näyttäisi liikkuvan taaksepäin,
+negatiiviseen suuntaan, jolloin sen spinin ja liikemäärän keskinäiset suunnat riippuvat valitusta koordinaatistosta
+
+- Massattomat hiukkaset etenevät nopeudella $c$ joka koordinaatistossa, jolloin spinin ja liikemäärän täytyy osoittaa aina samaan suuntaan. Standardimallin mukaan tämä liittyy oletukseen neutriinoiden massattomuudesta
+
+--- slide: P, C ja T ---
+
+ (Yhdistetty pariteettimuunnos ja varauksen konjugointi (CP))
+
+	- Kokeet osoittavat, että neutriinot voivat muuttaa leptoniperheensä (leptonin maun), prosessissa jota kutsutaan neutriino-oskillaatioksi
+
+[FIGURE: SOM_Fundamental_particles_Figure_16.png]
+
+{5.5cm}
+
+	- Lisäksi neutriinon pariteetin rikkoutuminen on johtanut spekulaatioihin että neutriinot ja antineutriinot voisivat olla yksi ja sama hiukkanen
+
+	- On myös koetuloksia (vuodelta 1964?) CP-rikkomuksesta heikossa vuorovaikutuksessa. Pieni osa $K_{L}^{0}$:n hajoamisista ei ole CP-invariantteja
+
+--- slide: P, C ja T ---
+
+ (Ajan kääntö (T) ja CPT-invarianssi)
+
+	- Ajan käännössä aikakoordinaatti $t$ korvataan $-t$, $\qquad T: ~~ t \rightarrow -t $
+
+- Lähes kaikki mikroskooppiset fysikaaliset prosessit ovat symmetrisiä ajan käännön suhteen, eli täysin samat fysiikan lait pätevät eteni aika sitten eteen- vai taaksepäin
+
+- Huomaa että symmetria ajan käännön suhteen on erilainen kuin ajastariippumattomuus
+- Kvanttikenttäteorioiden mukaan kaikki vuorovaikutukset ovat invariantteja yhdistetyn varauksen konjugoinnin (C), pariteettimuunnoksen (P), ja ajan käännön (T) suhteen $\Leftrightarrow$ CPT-invarianssi
+
+- Jos prosessi on CP-invariantti, sen täytyy olla myös T-invariantti 
+
+- Jos tapahtuu CP-rikkomus, myös ajan käännön täytyy rikkoutua ((jotta CPT-invarianssi\, säilyy))
+
+## 4.7 Yhtenäisteoriat, Suuri Yhtenäisteoria ja Kosmologia
+
+--- slide: 4. Hiukkasfysiikka ja Alkeishiukkaset ---
+
+    -<1-> 4_1_a{Kuinka Voimat Toimivat}
+    -<1-> 4_2_a{Antihiukkaset}	
+    -<1-> 4_3_a{Voimat ja Hiukkaset}	
+    -<1-> 4_4_a{Hiukkasten Synnyttäminen ja Havainnointi}
+    -<1-> 4_5_a{Hajoamistavat, -ketjut ja Säilymislait}
+    -<1-> 4_6_a{Pariteetti, Varauksen konjugointi ja Ajan Kääntö}
+    -<1-> 4_7_a{Yhtenäisteoriat, Suuri Yhtenäisteoria ja Kosmologia}
+
+--- slide: GUT ja Kosmologia ---
+
+ (Alkeishiukkaset \& taustasäteily)
+
+\seminormal
+
+	- Viime aikoina hiukkasfysiikka/suurenergiafysiikka ja kosmologia  ovat lähestyneet toisiaan
+	
+	- Tämä johtuu siitä että perusvuorovaikutuksia kuvaavat teoriat liittyvät maailmankaikkeuden alkuhetkiin, alkuräjähdyksen jälkeisiin hetkiin, ja maailmankaikkeudesta löytyvien alkeishiukkasten ja aineen alkuperään
+
+	- Alkuräjähdyksen jälkeiset energiat olivat aika suuria, ja ylittivät atomien sidosenergiat. Aine koostui tällöin elektronien ja positiivisesti varautuneiden ionien plasmasta (säteilylle läpinäkymätöntä)
+	
+	- Lämpötilat laskivat hitaasti, aine muuttui läpinäkyväksi ja mahdollisti kosmisen taustasäteilyn etenemisen avaruudessa 
+	- Kosminen taustasäteily on nykyisin $\approx 2,7 \mathrm{\;K}$, mikä sopii yhteen nykyisten laajenevaa maailmankaikkeutta kuvaavien teorioiden kanssa 
+	\implies{ Kuinka alkuperäinen kuumista kappaleista emittoitunut säteily on jäähtynyt nykyarvoonsa ${\approx}\;2,7$\;K?}
+
+--- slide: GUT ja Kosmologia ---
+
+ (Laajeneva maailmankaikkeus)
+
+	- Laajenevaa maailmankaikkeutta voidaan kvalitatiivisesti kuvata yksinkertaisella mallilla. Tarkastellaan kappaletta, tai satelliittia $(m)$ joka laukaistaan suoraan ylöspäin planeetalta ($M$). Olettaen satelliitin ja planeetan massakeskipisteen etäisyydeksi $r$, ja että planeetan tiheys on $\rho$. Satelliitin energiaksi saadaan tällöin:
+\[
+E  = \frac{1}{2} m v^2   +  E_{pot}  = \frac{m}{2}  ( \frac{d r}{d t} \,)\raisebox{8pt}{$^{2}$}  - \fraca{G m M}{r}  = \frac{m}{2}  ( \frac{d r}{d t} \,)\raisebox{8pt}{$^{2}$}   - \frac{G m}{r} \rho \frac{4}{3} \pi r^{3}
+\]
+- Jos $E<0$, niin kappale palaa takaisin planeetalle 
+- Jos $E>0$, niin kappale voi paeta
+
+- Järjestelemällä termejä saamme yhtälön
+\[
+ ( \frac{d r / d t}{r} \,)\raisebox{8pt}{$^{2}$}   = \frac{8 \pi G \rho}{3}  + \frac{2 E / m}{r^{2}}
+\]
+
+--- slide: GUT ja Kosmologia ---
+
+ (Friedmannin yhtälö)
+
+	- Kuten pakenevan kappaleen esimerkissä, voimme olettaa että maailmankaikkeus on laajeneva pallo, jonka säde on $R=R(t)$, kutsutaan kokotekijäksi 
+	
+	- Laajenemista kuvataan Friedmannin yhtälöllä:
+\[
+ ( \frac{d R / d t}{R} \,)\raisebox{8pt}{$^{2}$}  = \frac{8 \pi G \rho}{3}  - \frac{K}{R^{2}}
+\]
+missä vakio $K$ vastaa pakenevan kappaleen energiaa
+
+- Jos $K>0$: positiivisesti kaareutunut maailmankaikkeus, laajeneminen pysähtyy, ja maailmankaikkeus rutistuu takaisin kasaan $R=0$
+
+- Jos $K=0$: universumi on tasainen, laajeneminen vakioarvoistuu universumin vanhetessa $t \rightarrow \infty$ 
+- Jos $K<0$: negatiivisesti kaareutunut universumi, laajeneminen kiihtyy loputtomiin
+
+--- slide: GUT ja Kosmologia ---
+
+ (Friedmannin yhtälö)
+
+	- Muokataan seuraavaksi yhtälön tiheystermiä: $\rho \rightarrow \rho_{M} /{R^{3}}  + \rho_{\Lambda}$ missä $\rho_{M} /R^{3}$ on maailmankaikkeuden nykyinen tiheys ja $\rho_{\Lambda}$ on kosmologiseen vakioon liittyvä termi (käydään läpi myöhemmin):
+\[
+ ( \frac{d R / d t}{R} \,)\raisebox{8pt}{$^{2}$}   = \frac{8 \pi G \rho_{M}}{3 R^{3}}  + \frac{8 \pi G \rho_{\Lambda}}{3}  - \frac{K}{R^{2}}
+\]
+Järjestellään sitten Friedmannin yhtälö lopulliseen muotoonsa:
+\[
+ ( \frac{d R / d t}{R} \,)\raisebox{8pt}{$^{2}$}   = \frac{\Omega_{M}}{R^{3}}  + \Omega_{\Lambda}  - \frac{K^{\prime}}{R^{2}} \quad \text { jossa } R_{\text {nykyinen}}=1 \text { ~ja~ }(d R / d t)_{\text {nykyinen}}=1
+\]
+- Meillä on käytännössä kolme vapaata parametriä $\Omega_{M}$, $\Omega_{\Lambda}$ ja $K^{\prime}$
+
+--- slide: GUT ja Kosmologia ---
+
+ (Einsteinin kosmologinen vakio)
+
+	- Vapaat paremetrit ovat: 
+	
+	- $K^{\prime}=0$, oletetaan tasainen maailmankaikkeus,
+jonka laajeneminen on lähestulkoon vakioarvoista
+- $\Omega_{M}=1$ nykyisin $\Leftrightarrow$ kriittinen tiheys
+- $\Omega_{\Lambda} \approx 0$
+
+- Ylläolevin oletuksin saamme
+
+{7.5cm}
+
+	- $$
+	
+	( \frac{d R / d t}{R} \,)\raisebox{8pt}{$^{2}$} & =  \frac{1}{R^{3}} \quad \Rightarrow \quad \int_{1}^{R} R^{1 / 2} \rmd R  = \int_{1}^{t} d t \\
+\Rightarrow \quad R(t) & =  [ \frac{3}{2} ( t-\frac{1}{3} ) \,]\raisebox{8pt}{$^{2/3}$}
+	
+$$
+- $\Omega_{\Lambda}=$ kosmologinen vakio, määrittelee potentiaalisesti onko maailmankaikkeuden laajeneminen  vakioarvoista vai ei (Kuva~17)
+
+[FIGURE: SOM_Fundamental_particles_Figure_17.png]
+
+--- slide: GUT ja Kosmologia ---
+
+ (Maailmankaikkeuden aikajärjestys)
+
+	- Aiemmin perehdyttiin tähdissä tapahtuvaan protoni–protoni-sykliin
+
+- Itse asiassa sykli oli tärkeä myös maailmankaikkeuden alkuhetkillä
+
+- Nykytiedon valossa ((maailmankaikkeuden historian standardimallin mukaan)), universumin lämpötila ajan hetkellä $t\approx10^{-46} \mathrm{\;s}$ oli noin $10^{32} \mathrm{\;K}$, ja kappaleen keskimääräinen energia oli: 
+\[
+E \approx ( 10^{-13} \frac{\mathrm{\;GeV}}{\mathrm{K}} \,)  10^{32} \mathrm{\;K}  = 10^{19} \mathrm{\;GeV}
+\]
+
+- Tätä hetkeä on ehdotettu hetkeksi jolloin tapahtui siirtymä kaiken teoriasta (Theory of Everything, TOE) suureen yhtenäisteoriaan (grand unified theory, GUT)
+
+- Hetkellä $t=10^{-36} \mathrm{\;s}$ lämpötila oli laskenut arvoon ${\sim}10^{27} \mathrm{\;K}$, ja energiat arvoon ${\sim}10^{14} \mathrm{\;GeV}$. Näillä energiatasoilla vahva voima erottui sähköheikosta voimasta (suuren yhtenäisyyden loppu)
+
+--- slide: GUT ja Kosmologia ---
+
+ (Maailmankaikkeuden aikajärjestys)
+
+\semismall
+
+	- Hetkellä $\mathrm{t}=10^{-32} \mathrm{\;s}$ lämpötila oli laskenut arvoon ${\sim}10^{25} \mathrm{\;K}$ ja universumista oli tullut sekoitus kvarkkeja, leptoneita ja vuorovaikutuksien välittäjäbosoneita
+	
+	- Kun $\mathrm{t}=10^{-6} \mathrm{\;s}$ lämpötila oli laskenut arvoon $10^{13} \mathrm{\;K}$ ja hiukkasten tyypilliset energiat olivat $1 \mathrm{\;GeV}$ ($\approx$ nukleonin lepomassa). Kvarkit alkoivat sitoutua muodostaen nukleoneita
+	
+	- Kun $\mathrm{t}=1 \mathrm{\;s}$, protonien ja neutronien suhdeluvun määritteli Boltzmannin tekijä $e^{-\Delta E / k_{B} T}$, jossa $\Delta E$ on neutronin ja protonin lepo-energioiden erotus $\Delta E  = 1,29 \mathrm{\;MeV}$
+	
+	- Kun $T \approx10^{10} \mathrm{\;K}$ jakauma antaa suhteeksi noin $4,5$ (kertaa enemmän protoneita kuin neutroneita)
+
+- Deuteronien muodostuminen alkoi kun $\mathrm{t}\approx225 \mathrm{\;s}$, ytimien muodostuminen alkoi alkuräjähdyksen aikaisessa, tai pian sen jälkeen tapahtuneessa ("primordiaalinen aika") nukleosynteesissä 
+	- Tähdissä tapahtuva nukleosynteesi käynnistyi paljon myöhemmin $t=10^{13} \mathrm{\;s}$ kun $T \sim 3000 \mathrm{\;K}$, ja keskimääräinen energia oli $\sim 0,1$ eV
+
+--- slide: GUT ja Kosmologia ---
+
+ (Maailmankaikkeuden historia (a la Harris))
+
+[FIGURE: SOM_Fundamental_particles_Figure_18.png]
+
+--- slide: GUT ja Kosmologia ---
+
+ (Maailmankaikkeuden historia (a la Tipler))
+
+[FIGURE: SOM_tipler_Cosmology_1.png]
+
+--- slide: GUT ja Kosmologia ---
+
+ (Mutta ISOJA kysymyksiä on vastaamatta..)
+
+{5.0cm}
+
+	- Vain 4\,% massasta on baryonista? (Ei-baryonista: neutriinot, vapaat elektronit, mustat aukot, pimeä aine, supersymmetriset hiukkaset,\,...)
+	
+	- Galaksien rotaatiokäyrät implikoivat pimeän aineen olemassaolosta?
+	- Maailmankaikkeuden laajeneminen kiihtyy pimeän energian takia? 
+	- Painovoiman kvanttikenttäteoria\,...
+
+[FIGURE: SOM_tipler_Cosmology_2.png]

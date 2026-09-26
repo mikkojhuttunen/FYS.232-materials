@@ -1,0 +1,3576 @@
+# FYS.232 Structure of Matter -- Chapter 1: Statistical Mechanics
+(Clean text corpus, extracted and cleaned from LaTeX/Beamer slide source.
+ TikZ figure blocks are replaced with [FIGURE: filename] markers.
+ Section/slide titles are the REAL titles from the course's own a_SoM_TOC.tex
+ (English) and b_AiRa_TOC.tex (Finnish) files.
+ Custom notation macros (big brackets, equal signs, integral/sum symbols,
+ arrows, sqrt, citation stamps, etc.) normalized to plain characters / standard LaTeX.
+ This chapter was also verified by actually compiling it into rendered slides.)
+
+======================================================================
+ENGLISH (source: SubChapters/)
+======================================================================
+
+## 1. Statistical Mechanics (Chapter overview)
+
+--- slide: 1. Statistical Mechanics ---
+
+    -<1-> 1_1_a{A Simple Thermodynamic System}
+    -<1-> 1_2_a{Entropy and Temperature}	
+    -<1-> 1_3_a{Einstein's solid}	
+    -<1-> 1_4_a{Boltzmann & Maxwell-Boltzmann distributions}
+    -<1-> 1_5_a{Classical Averages}
+    -<1-> 1_6_a{Quantum Distributions}
+    -<1-> 1_7_a{The Quantum Gas}
+
+    -<1-> 1_8_a{Photon Gas}
+	-<1-> 1_9_a{The Laser}
+	-<1-> 1_10_a{Specific Heats}
+	-<1-> 1_11_a{Debye Model}
+
+--- slide: A Simple Thermodynamic System ---
+
+	- Statistical mechanics makes predictions about properties and behaviour of systems whose number of particles is enormous
+	
+- The more particles, the more details are unknown
+- For precise predictions, large number of particles improves the representativeness of averages, and their evolution
+
+- Thermodynamic system is a system, whose number of particles is large enough for the predictions to become very precise
+
+- Statistical mechanics:
+	- 
+		- classical
+		- not 'modern' physics (i.\,e. not based on quantum mechanics)
+		- BUT supports many areas of physics!
+
+--- slide: A Simple Thermodynamic System ---
+
+	- The ways how four (distinguishable) particles can be arranged into a two-sided room:
+
+[FIGURE: SOM_Figure_2_a.png]
+
+[FIGURE: SOM_Figure_2_b.png]
+
+--- slide: A Simple Thermodynamic System ---
+
+{6.5cm}
+
+	- In the case $N = 4$, there are altogether 5 alternative values for $N_{R}\;(\,= 0,1,2,3,4)$
+	- Distribution $\Omega = \Omega ( N_{R} )$ shows a slight maximum at $N_{R} = 2 = 1 / 2 N$ (Fig.~3)
+	
+	- The distribution in the case $N = 4$ is broad, but if we increase value of $N$, the distribution becomes narrower
+
+	- In all the cases, the maximum lies at $N_{R} = \frac{1}{2} N$
+	
+	- Note that for large equally-sized rooms and value of $N$, probably both rooms have almost exactly equal amount of particles, although it would be impossible to know anything of a single molecule
+
+[FIGURE: SOM_Figure_3.png]
+
+--- slide: A Simple Thermodynamic System ---
+
+	- If we assume that the particles are air molecules in a room, and the two sides of the room are of equal size,  then at highest probability both sides have almost exactly equal numbers of particles 
+	- This can be said with high relative accuracy/confidence...
+	
+	- ...although it would be impossible to know anything about the position of a single molecule
+
+[FIGURE: FYS_1627_SSP-4.pdf]
+
+--- slide: A Simple Thermodynamic System ---
+
+{8.5cm}
+	
+	- The example above can be used to clarify
+		 the terms microstate and macrostate
+
+- In Fig. 3d the highest peak of the distribution rises to value of $10^{3 \times 10^{22}}$ so, there are $10^{3 \times 10^{22}}$ different 'ways' of how
+	 to arrange molecules in the room if they are split into two equal\\
+
+	-  fractions between left and right (specified by $ N_{\mathrm{R}} )$ 
+
+- Each 'way' is a different microstate.
+If we would know the states of all individual particles, we could define each (micro)state
+
+- All those $10^{3 \times 10^{22}}$ states belong into group where all the molecules are split into to equal halves. Thus, all those $10^{3 \times 10^{22}}$ states are microstates, associated with $N_{R} = \frac{1}{2} N$
+
+- This is one macrostate. Others are those with different values of $N_{R}$
+
+[FIGURE: SOM_Figure_3_d.png]
+
+--- slide: A Simple Thermodynamic System ---
+
+\seminormal
+
+	- Starting with the two-sided room and significantly different amounts of molecules on each side, the system evolves towards the case of highest probability, i.\,e. towards the macrostate with highest number of 'ways', i.e. the one with molecules equally on both sides
+
+- The most probable macrostate is known as the equilibrium state
+
+- If left alone, a thermodynamic system will evolve towards equilibrium and eventually reach an equilibrium
+
+{8.5cm}
+
+	- Starting with non-equilibrium, both macrostate and microstate of the system will change
+
+- At equilibrium, the system still continues changing microstates, but they all correspond to the same macrostate (or the ones close to it...), macrostate specified by $ N_{\mathrm{R}}$
+
+[FIGURE: SOM_Figure_3_d.png]
+
+## 1.2 Entropy and Temperature
+
+--- slide: 1. Statistical Mechanics ---
+
+    -<1-> 1_1_a{A Simple Thermodynamic System}
+    -<1-> 1_2_a{Entropy and Temperature}	
+    -<1-> 1_3_a{Einstein's solid}	
+    -<1-> 1_4_a{Boltzmann & Maxwell-Boltzmann distributions}
+    -<1-> 1_5_a{Classical Averages}
+    -<1-> 1_6_a{Quantum Distributions}
+    -<1-> 1_7_a{The Quantum Gas}
+
+    -<1-> 1_8_a{Photon Gas}
+	-<1-> 1_9_a{The Laser}
+	-<1-> 1_10_a{Specific Heats}
+	-<1-> 1_11_a{Debye Model}
+
+--- slide: Entropy and Temperature ---
+
+	- Entropy $S$ is a quantity proportional to the logarithm of the 'number of ways' $W$ (i.\,e. to the log of multiplicity $\Omega$). Boltzmann constant $k_B$ sets the dimensions for the entropy $S$
+	\[
+S  = k_{B} \ln W \qquad \& \qquad S  =  k_{B} \ln \Omega \qquad \& \qquad [S]=\frac{J}{K}
+\]
+
+- We saw that the system has a tendency to evolve towards equilibrium, i.\,e. towards highest $W$
+
+- According to the second law of thermodynamics,  entropy tends to increase (in a closed system): 
+\[
+\Delta S \geq 0
+\]
+Considering the number of ways $W$: 
+\[
+\Delta S  = S_{f}  - S_{i}  = k_{B} [  \ln W_{f} -\ln W_{i} ]  = k_{B} \ln \frac{W_{f}}{W_{i}} 
+\]
+
+--- slide: Entropy and Temperature ---
+
+\footnote{{Recap the definitions for isolated, closed, and open systems.}} 
+{8.5cm}
+
+	- Consider two bodies, 1 and 2, in thermal contact. Heat will flow, and entropy will change:
+\[ 
+ d S_{t o t} = d S_{1}  + d S_{2} 
+ \]
+Assume that entropy changes due to changes in the energy (ok, since here, only heat
+
+- flows), so $S=S(E)$, and therefore
+\[ 
+ d S =  \bigg( \frac{\partial S}{\partial E} \bigg) \,d E 
+ \]
+- Thus $d S_{t o t} = ( \frac{\partial S}{\partial E} )_{2} d E_{2}  +  (  \frac{\partial S}{\partial E} )_{1} d E_{1}$,
+and since energy is transferred only between 1 and 2, condition $d E_{1}=-d E_{2}$ applies leading to
+\[ 
+d S_{tot} =   [   \bigg( \frac{\partial S}{\partial E}  \bigg)_{2} -  \bigg( \frac{\partial S}{\partial E}  \bigg)_{1}  \;] d E_{2}
+ \]
+
+[FIGURE: SOM_Figure_4.png]
+
+--- slide: Entropy and Temperature ---
+
+	- At equilibrium the two bodies will have the same temperature
+
+- We also know that when equilibrium is reached,  the entropy $S$ does not increase anymore, so $d S_{t o t}=0$ resulting in 
+\[ 
+  \bigg(  \frac{\partial S}{\partial E}  \bigg)_{2} =   \bigg( \frac{\partial S}{\partial E}  \bigg)_{1} 
+ \]
+- The above condition leads to a convenient definition for the temperature: 
+
+- 
+	- At equilibrium the temperatures are equal $T_1  =   T_2 \equiv T$
+	- We can define temperature $T$ via equation 
+	 \[
+	 \frac{1}{T} \equiv \bigg( \frac{\partial S}{\partial E} \bigg)\,, \qquad \,~where \qquad S  = k_{B} \ln W
+	 \]
+
+--- slide: Entropy and Temperature ---
+
+- How can we take a derivative of $S$ with respect to $E$? 
+
+	- In a physical system usually also the number of possibilities (number of 'ways' $W$) is a function of energy (more energy, higher multiplicity) so there is no contradiction
+
+- In many cases $W=W(E)$ and thus also the entropy $S=S(E)$
+- Recalling that the change in energy $dE$ is equal to the heat transferred between objects ($dE=dQ$),  we get 
+\[
+	 \frac{1}{T}  =   \frac{\partial S}{\partial E}  \qquad \Rightarrow \qquad dS  =  \frac{dQ}{T}  
+	 \]
+allowing us to calculate the change of entropy $\Delta S$ of the system:
+\[ 
+ \Delta S  = S_{2}  -  S_{1} = \int_{i}^{f} \frac{d Q}{T} 
+ \]
+
+## 1.3 Einstein's solid
+
+--- slide: 1. Statistical Mechanics ---
+
+    -<1-> 1_1_a{A Simple Thermodynamic System}
+    -<1-> 1_2_a{Entropy and Temperature}	
+    -<1-> 1_3_a{Einstein's solid}	
+    -<1-> 1_4_a{Boltzmann & Maxwell-Boltzmann distributions}
+    -<1-> 1_5_a{Classical Averages}
+    -<1-> 1_6_a{Quantum Distributions}
+    -<1-> 1_7_a{The Quantum Gas}
+
+    -<1-> 1_8_a{Photon Gas}
+	-<1-> 1_9_a{The Laser}
+	-<1-> 1_10_a{Specific Heats}
+	-<1-> 1_11_a{Debye Model}
+
+--- slide: Einstein's solid ---
+
+	- Einstein proposed a simple model for solids: 
+	- 
+	- Atoms in a crystal can oscillate along three directions
+	- Atoms oscillate independently of nearby atoms (assumption/approximation) 
+	- Equilibrium state is determined by the crystalline structure 
+	- Oscillators are harmonic (assumption/approximation), i.\,e. comply with Hooke's law:  $F=-kx$
+
+[FIGURE: Tikz_SOM_Statistical_figures.pdf]
+
+[FIGURE: Tikz_SOM_Statistical_figures.pdf]
+
+[FIGURE: Tikz_SOM_Statistical_figures.pdf]
+
+--- slide: Einstein's solid ---
+
+	- A solid body where $N$ atoms form a set of $3N$ oscillators
+- All have the same ground state frequency which depends on the crystal structure
+- Treating oscillators quantum mechanically, the allowed energy states for harmonic oscillators occur with spacing of $h f_{0}$, starting from $1 / 2 h f_{0}$ 
+
+{7.5cm}
+
+	- Energies of a single oscillator are
+\[ 
+ \varepsilon_{j} = ( j  +\frac{1}{2} )\,  h f_{0} 
+ \]
+- $j=0 \Leftrightarrow$ ground state
+\[ 
+ \varepsilon_{j=0} = \frac{1}{2} h f_{0} 
+ \]
+i.\,e. $j=$~Energy state index
+
+[FIGURE: Tikz_SOM_Statistical_figures.pdf]
+
+[FIGURE: Tikz_SOM_Statistical_figures.pdf]
+
+--- slide: Einstein's solid ---
+
+	- Number of allowed states have in principle no upper limit
+
+[FIGURE: Tikz_SOM_Statistical_figures.pdf]
+ 
+	- Two or more oscillators can be in the same state
+	- The harmonic oscillators in the solid body continuously exchange quanta of $h f_{0}$ with each other (e.\,g. via thermal excitations)
+
+[FIGURE: SOM_Figure_5.png]
+
+--- slide: Einstein's solid ---
+
+	- Return to the system of harmonic \\
+		oscillators exchanging energy\\
+		quanta $\Leftrightarrow$ Einstein's solid
+
+	- Assume the system contains $N$\\
+	 identical but separately identifiable\\ 
+	 (=\,distinguishable) harmonic oscillators
+
+- Energy of $i$:th oscillator (for simplicity,\\
+	counted from ground level...) is given by
+\[ 
+ E_{n_{i}}  =  n_{i} \hbar \omega_{0} \quad ( n_{i} = 0,1,2, \ldots )  
+\]
+And hereby, total energy of the system ($N$ oscillators):
+\[
+ E  = \sum_{i=1}^{N}  E_{n_{i}}  = \sum_{i=1}^{N} n_{i} \hbar \omega_{0}  = M \hbar \omega_{0} \quad \text { (here: } M=\sum_{i=1}^{N} n_{i} ) 
+\]
+
+[FIGURE: SOM_Figure_5.png]
+
+--- slide: Einstein's solid ---
+
+	- At thermal equilibrium, the oscillators in the system have different energies, in fact, form an energy distribution
+
+- The probability for a single oscillator to be in a given energy state $i$ is obtained from statistical analysis 
+
+- The probability to obtain subset $a$:
+\[ 
+ P_{a} = \frac{\text { number of ways to obtaining subset a }}{\text { total number of ways of obtaining all possibilities }} 
+ \]
+- Here we assume that the probability for a certain subset of the system follows the number of ways $W$ to have arrangements within that subset 
+
+- We also assume that each 'way', i.\,e. each microstate, is equally probable
+
+--- slide: Einstein's solid ---
+
+- So for the oscillators, which in our example form an Einstein's solid, the probability that an oscillator $i$ contains energy $E_{n_{i}}$ $(=n_{i} $ quanta) will be
+\[ 
+ P_{n_{i}} = \frac{\text { number of ways energy can be distributed with fixed } n_{i}}{\text { total number of ways energy can be distributed }} 
+ \]
+
+- The above equation gives us conceptual understanding of the situation, but not yet simple tools to calculate things
+\implies{ more detailed statistical analysis is necessary }
+
+- The total number of ways how $N$ quantum numbers can form the integer $M = \sum_{i=1}^N n_i$ is given by binomial coefficient
+\[
+\Omega(N, M)  = \frac{(M+N-1) !}{M !(N-1) !} \equiv (\!\! {c}
+M+N-1 \\
+M
+  \!\! ) 
+\]
+
+--- slide: Einstein's solid ---
+
+- The number of ways the energy can be distributed for a fixed $n_i$ is given by 
+\[
+ (\!\! {c}
+ ( M-n_{i} ) +(N-1)-1 \\
+ ( M-n_{i} ) 
+ \!\!) 
+\]
+
+{6cm}
+
+-  in total resulting in
+	\[
+P_{n_{i}}  =  \frac{ (\!\! {c}
+ ( M-n_{i} ) +(N-1)-1 \\
+ ( M-n_{i} ) 
+  \!\!)  }{
+ (\!\! {c}
+M+N-1 \\
+M
+ \!\!) }
+\]
+
+[FIGURE: SOM_Figure_6.png]
+
+\\[-2\baselineskip]
+- Problem of above equation is that it is cumbersome to use
+\implies{ motivates the development of\\ Boltzmann distribution }
+
+## 1.4 Boltzmann & Maxwell-Boltzmann distributions
+
+--- slide: 1. Statistical Mechanics ---
+
+    -<1-> 1_1_a{A Simple Thermodynamic System}
+    -<1-> 1_2_a{Entropy and Temperature}	
+    -<1-> 1_3_a{Einstein's solid}	
+    -<1-> 1_4_a{Boltzmann & Maxwell-Boltzmann distributions}
+    -<1-> 1_5_a{Classical Averages}
+    -<1-> 1_6_a{Quantum Distributions}
+    -<1-> 1_7_a{The Quantum Gas}
+
+    -<1-> 1_8_a{Photon Gas}
+	-<1-> 1_9_a{The Laser}
+	-<1-> 1_10_a{Specific Heats}
+	-<1-> 1_11_a{Debye Model}
+
+--- slide: Boltzmann & Maxwell-Boltzmann distributions ---
+
+	- Applying equation for $P_{n_{i}}$, shown 1_3_Pn{on earlier slide}, is tedious. For large systems, it is feasible to use Boltzmann probability:
+\[ 
+ P ( E_{n} )  = A e^{-E_{n} / k_{B} T} 
+ \]
+It is seen in Figure 6 that Boltzmann works fairly well even for smaller systems like the one given
+
+{5.5cm}
+
+	- For $P ( E_{n} ) $ to be a qualified probability function, it needs to be normalized, i.\,e. we need to choose constant $A$ properly
+
+[FIGURE: SOM_Figure_6.png]
+
+--- slide: Boltzmann & Maxwell-Boltzmann distributions ---
+
+- \[
+
+\sum P ( E_{n} ) &  =  \sum_{n} A e^{-E_{n} / k_{B} T}  =  1 \qquad \Rightarrow \qquad A  = \frac{1}{\sum_{n} e^{-E_{n} / k_{B} T}} \\
+ \Rightarrow \qquad \quad P ( E_{n} ) & = \frac{e^{-E_{n} / k_{B} T}}{\sum_{n} e^{-E_{n} / k_{B} T}}
+
+\]
+- And thus, e.g. average energy $< E >\,$$^*$ can be obtained by\footnote{{$^*$\;$< E >\,$ is the  expected value{https://en.wikipedia.org/wiki/Expected_value}, defined as $\mathrm{E}(X) \equiv \sum_{i=1}^n x_i p_i \,$. Memorize~this.}}
+\[
+
+ < E >\, &  = \sum_{n} E_{n} P ( E_{n} ) \\
+ & = \sum_{n} E_{n} \frac{e^{-E_{n} / k_{B} T}}{\sum_{n} e^{-E_{n} / k_{B} T}} \\
+ & = \frac{\sum_{n} E_{n} e^{-E_{n} / k_{B} T}}{\sum_{n} e^{-E_{n} / k_{B} T}}
+
+\]
+
+--- slide: Boltzmann & Maxwell-Boltzmann distributions ---
+
+	- For the Einstein's solid we had $E_{n}=n \hbar \omega_{0}$, now let's plug this into above equation, and plot the Boltzmann distribution (Fig.~7)
+
+[FIGURE: SOM_Figure_7.png]
+
+- Variation of Boltzmann probability distribution $P ( E_{n} )$ for 3 different temperature ranges (from $k_{\mathrm{B}} T\!<\!\hbar \omega_{0}$ to $k_{\mathrm{B}} T\!>\!\hbar \omega_{0}$):
+
+{6cm}
+
+	- 
+	- $T=\frac{1}{5} \hbar \omega_{0} / k_{B}$
+- $T=\hbar \omega_{0} / k_{B}$
+- $T=5 \hbar \omega_{0} / k_{B}$
+
+- Obviously at lower temperatures it is very
+	unlikely for the oscillators to possess
+	several quanta (of $\hbar \omega_{0}$), i.\,e. to get
+	to higher energy states
+
+--- slide: Boltzmann & Maxwell-Boltzmann distributions ---
+
+{7cm}
+
+	- We want to often know how
+		many particles (oscillators) are at
+		certain state
+		(possess a certain number of quanta)
+
+- Total number of particles is still $N$
+
+- We define occupation number $\mathbb{N}$: 
+\[ 
+ \mathbb{N} ( E_{n} ) _{B o l t z m a n n}  =  N P ( E_{n} )  =  N\, A e^{-E_{n} / k_{B} T} \,, \qquad  < E >\,  = \frac{\sum_{n} E_{n} \mathbb{N} ( E_{n} ) }{\sum_{n} \mathbb{N} ( E_{n} ) } 
+ \]
+
+- Using occupation number $\mathbb{N}$, we get:
+\[ (\!\! 
+{\footnotesize
+{c}
+\text {number of} \\ \text {particles of} \\ \text {energy E}
+  }
+ \!\!)   =  (\! 
+{\footnotesize
+{c}
+\mathbb{N} \text {, number of} \\ particles in a given \\ 
+\text {state of energy E}
+}
+\!\!)   \times  (\!\!  
+{\footnotesize 
+{c}
+\text {number of} \\ states of \\ \text {energy E}
+}
+\!\!) 
+\]
+
+[FIGURE: SOM_Figure_7.png]
+
+--- slide: Boltzmann & Maxwell-Boltzmann distributions ---
+
+	- Now we can write: 
+	\[
+	< E >\,  = \frac{\sum_{n} E_{n} \mathbb{N} ( E_{n} ) }{\sum_{n} \mathbb{N} ( E_{n} ) }
+	\]
+- Often the quantum energy levels are so close to each other that the sums can be replaced by integrals
+
+- Generally, the ratio between probabilities of two neighbouring energy levels is
+\[ 
+ \frac{P ( E_{n} ) }{P ( E_{n+1} ) }  = \frac{e^{-E_{n} / k_{B} T}}{e^{-E_{n+1} / k_{B} T}} = e^{ ( E_{n+1}-E_{n} )  / k_{B} T} 
+ \]
+- So if $E_{n+1}-E_{n}$ is much smaller than $k_{B} T$, then the ratio really is close to 1, and the sum can be transformed into an integral
+
+--- slide: Boltzmann & Maxwell-Boltzmann distributions ---
+
+	- This could be seemingly performed by taking the limit
+\[ 
+  < E >\,  = \frac{\sum_{n} E_{n} \mathbb{N} ( E_{n} ) }{\sum_{n} \mathbb{N} ( E_{n} ) } \qquad \Rightarrow \qquad \frac{\int_{n} E \mathbb{N}(E) d n}{\int_{n} \mathbb{N}(E) d n} 
+ \]
+	- However, we need to be careful when transforming sums into continuous integrals
+	
+- First of all, the quantum number $n$ is not necessarily the most convenient integration variable here, energy is a better quantity
+
+- Therefore we should have:
+\[ 
+  < E >\,  = \frac{\int E \mathbb{N}(E) d n}{\int \mathbb{N}(E) d n} = \frac{\int E \mathbb{N}(E) \frac{d n}{d E} d E}{\int \mathbb{N}(E) \frac{d n}{d E} d E} = \frac{\int E \mathbb{N}(E) D(E) d E}{\int \mathbb{N}(E) D(E) d E} 
+ \]
+
+--- slide: Boltzmann & Maxwell-Boltzmann distributions ---
+
+- 
+\[ 
+  < E >\,  = \frac{\int E \mathbb{N}(E) d n}{\int \mathbb{N}(E) d n}  = \frac{\int E \mathbb{N}(E) \frac{d n}{d E} d E}{\int \mathbb{N}(E) \frac{d n}{d E} d E} = \frac{\int E \mathbb{N}(E) D(E) d E}{\int \mathbb{N}(E) D(E) d E} 
+ \]
+- Here we have introduced a quantity known as the density of states $D(E)$, indicating how closely the energy levels are packed:
+\[ 
+ D(E) \equiv \frac{\small differential number of states within range dE close to E}{d E} = \frac{d n}{d E} 
+ \]
+
+- In practise, most (if not all) calculations of mean values are calculated as integrals
+\implies[\normal]{ Density of states $D$ (or DOS) is a central and omnipresent \\ concept in solid-state physics! }
+\implies[\normal]{ Re-introduced in our course on solid-state physics.. }
+
+--- slide: Boltzmann & Maxwell-Boltzmann distributions ---
+
+- Harmonic oscillator provides an easy example to demonstrate how the density of states $D(E)$ can be calculated: 
+\[
+
+E_{n}  = n \hbar \omega_{0} \qquad &\Rightarrow& \qquad
+\frac{d n}{d E} &= \frac{differential number of states}{d E} \\
+&\Rightarrow& \qquad d n &  = \frac{1}{\hbar \omega_{0}} d E \\
+&\Rightarrow &    \frac{d n}{d E} & = \frac{1}{\hbar \omega_{0}}  = D(E)
+ 
+\]
+
+- Admittedly, this example is somewhat boring/trivial, as it gives a constant density of states, but at least we can verify that the result makes sense (energy states of harmonic oscillator are equispaced)
+
+--- slide: Boltzmann & Maxwell-Boltzmann distributions ---
+
+	- For a set of identical (but distinguishable) harmonic oscillators, we obtain the average energy:
+\[ 
+  < E >\,  = \frac{\int E \mathbb{N}(E) D(E) d E}{\int \mathbb{N}(E) D(E) d E}  = \frac{\int E N A e^{-E_{n} / k_{B} T} \frac{1}{\hbar \omega_{0}} d E}{\int N A e^{-E_{n} / k_{B} T} \frac{1}{\hbar \omega_{0}} d E}  = \ldots = k_{B} T 
+ \]
+- Previously we obtained a result:
+\[ 
+  < E >\,  = \frac{\hbar \omega_{0}}{e^{\hbar \omega_{0} / k_{B} T}-1} 
+ \]
+- If we have $\hbar \omega_{0} \ll k_{B} T$, then $x=\frac{\hbar \omega_{0}}{k_{B} T} \ll 1$, and using $e^{x} \approx 1+x$, we obtain $ < E > \approx k_{B} T$
+
+## 1.5 Classical Averages
+
+--- slide: 1. Statistical Mechanics ---
+
+    -<1-> 1_1_a{A Simple Thermodynamic System}
+    -<1-> 1_2_a{Entropy and Temperature}	
+    -<1-> 1_3_a{Einstein's solid}	
+    -<1-> 1_4_a{Boltzmann & Maxwell-Boltzmann distributions}
+    -<1-> 1_5_a{Classical Averages}
+    -<1-> 1_6_a{Quantum Distributions}
+    -<1-> 1_7_a{The Quantum Gas}
+
+    -<1-> 1_8_a{Photon Gas}
+	-<1-> 1_9_a{The Laser}
+	-<1-> 1_10_a{Specific Heats}
+	-<1-> 1_11_a{Debye Model}
+
+--- slide: Classical Averages ---
+
+	- Let's examine the system of an ideal gas, where the energy of a single gas molecule is
+\[
+E  = \frac{1}{2} m ( v_{x}^{2}+v_{y}^{2}+v_{z}^{2} )  = \frac{1}{2} m v^{2}
+\]
+
+- We assume that there is a probability distribution of speeds of the gas molecules, but at this point we do not yet know the form of this distribution
+
+- To get an average of an arbitrary (yet unspecified) function of speed $f=f(v)$, we need to take integrals over space and velocity, i.\,e. 3 components of the velocity vector
+
+--- slide: Classical Averages ---
+
+- The spatial integrations over volume $V'$ cancel out, so we obtain:
+\[
+\overline{f(v)}  = \frac{ \int f(v) e^{-\frac{1}{2} m v^{2} / k_{B} T} d V' d v_{x} d v_{y} d v_{z}}{ \int e^{-\frac{1}{2} m v^{2} / k_{B} T} d V' d v_{x} d v_{y} d v_{z} }  = \frac{ \int f(v) e^{-\frac{1}{2} m v^{2} / k_{B} T} d v_{x} d v_{y} d v_{z}}{ \int e^{-\frac{1}{2} m v^{2} / k_{B} T} d v_{x} d v_{y} d v_{z}}
+\]
+Because we are searching for the speed distribution (not velocity), it is convenient to transfer from cartesian to spherical coordinates using: 
+\[
+d v_{x} d v_{y} d v_{z}  = v^{2} d v \sin \theta \,d \theta \,d \phi
+\]
+
+--- slide: Classical Averages ---
+
+	- Therefore, the integral turns into:
+	\[
+	\overline{f(v)}  =  \frac{ \int f(v) e^{-\frac{1}{2} m v^{2} / k_{B} T} v^{2} d v \sin \theta d \theta d  \phi }{ \int e^{-\frac{1}{2} m v^{2} / k_{B} T} v^{2} d v \sin \theta d \theta d  \phi }
+	 =  \frac{ \int_{0}^{\infty} f(v) e^{-\frac{1}{2} m v^{2} / k_{B} T} v^{2} d v}{ \int_{0}^{\infty} e^{-\frac{1}{2} m v^{2} / k_{B} T} v^{2} d v}
+	\]
+	
+ where the integrals of the denominator, and over variables $\theta$ and $\phi$ can be solved to obtain
+\[
+\overline{f(v)}  =  \int_{0}^{\infty}  f(v) [ \sqrt{2/\pi} \bigg( \frac{m}{k_{B} T}  \bigg)^{3 / 2} v^{2} e^{-\frac{1}{2} m v^{2} / k_{B} T}] d v
+\]
+
+- The integrand in the formula can be seen as something resembling a probability distribution $P=P(v)$:
+\[
+\overline{f(v)}  =  \int f(v) d P =  \int f(v) \frac{d P}{d v} d v
+\]
+
+--- slide: Classical Averages ---
+
+- Thus the quantity inside brackets may be interpreted as the probability distribution for the speed of gas molecules
+\[
+P(v)_{\text {Maxwell}}  =  \frac{d P}{d v}  =  \sqrt{\frac{2}{\pi}}   \bigg( \frac{m}{k_{B} T} \bigg)^{3 / 2} v^{2} e^{-\frac{1}{2} m v^{2} / k_{B} T}
+\]
+- If we add the number density of the gas molecules $n=N / V$ into this formula, we obtain a distribution which has units of particles per unit volume, but which contains information of the probability distribution of the speeds for gas molecules
+\[
+n(v)_{\text {Maxwell }}  = \frac{N}{V} \sqrt{\frac{2}{\pi}}   \bigg( \frac{m}{k_{B} T} \bigg)^{3 / 2} v^{2} e^{-\frac{1}{2} m v^{2} / k_{B} T}
+\]
+This distribution is called Maxwell speed distribution, or\\
+Maxwell–Boltzmann speed distribution
+
+--- slide: Classical Averages ---
+
+{7.5cm}
+	
+- Note, that the speed distribution increases starting from zero speed (Fig.~8)
+	
+	- At low velocities the probability increases  with energy, because the quadratic dependence on velocity dominates
+
+- At higher occupations/velocities, the probability decreases exponentially with increasing energy
+
+-<1->
+$$
+n(v)_{\text {Maxwell }}  = \frac{N}{V} \sqrt{\frac{2}{\pi}}  \bigg( \frac{m}{k_{B} T} \bigg)^{3 / 2} v^{2} e^{-\frac{1}{2} m v^{2} / k_{B} T}
+$$
+
+[FIGURE: SOM_Figure_8.png]
+
+## 1.6 Quantum Distributions
+
+--- slide: 1. Statistical Mechanics ---
+
+    -<1-> 1_1_a{A Simple Thermodynamic System}
+    -<1-> 1_2_a{Entropy and Temperature}	
+    -<1-> 1_3_a{Einstein's solid}	
+    -<1-> 1_4_a{Boltzmann & Maxwell-Boltzmann distributions}
+    -<1-> 1_5_a{Classical Averages}
+    -<1-> 1_6_a{Quantum Distributions}
+    -<1-> 1_7_a{The Quantum Gas}
+
+    -<1-> 1_8_a{Photon Gas}
+	-<1-> 1_9_a{The Laser}
+	-<1-> 1_10_a{Specific Heats}
+	-<1-> 1_11_a{Debye Model}
+
+--- slide: Quantum Distributions ---
+
+test
+
+	- In the above we discussed classical particles, which were identical but distinguishable 
+	- A probability distribution (for a certain energy at a given temperature) was derived for the particles:
+\[
+P ( E_{n} )  =  A e^{-E_{n} / k_{B} T}  = \frac{e^{-E_{n} / k_{B} T}}{\sum_{n} e^{-E_{n} / k_{B} T}}  = \frac{1}{\sum_{n} e^{-E_{n} / k_{B} T}} \frac{1}{e^{E_{n} / k_{B} T}}  = \frac{1}{B e^{E_{n} / k_{B} T}}  = \frac{1}{e^{\alpha} e^{E_{n} / k_{B} T}}
+\]
+
+- When deriving this, we fixed one particle with energy $E_{n}$ and then calculated the number of ways of distributing the rest of the energy among the other particles
+
+--- slide: Quantum Distributions ---
+
+	- We implicitly assumed that e.g. the case $n_{j}=5$ and $n_{k}=2$ for particles $j$ and $k$ was one way, and the case $n_{j}=2$ and $n_{k}=5$ for particles $j$ and $k$ was another way, a different way 
+
+- So we assumed that switching the labels of any two particles yielded a different way
+\implies{ We assumed that the particles were distinguishable }
+
+- If particles are indistinguishable, those two ways mentioned above are not different ways!
+
+--- slide: Quantum Distributions ---
+
+	- Consider a simple case of four particles $a$, $b$, $c$ and $d$, bound by harmonic oscillator potential energy. For conveniency, we set the ground state energy level to 0, resulting in the particles to have energy levels: 
+	\[ 
+	E_{i}  =  n_{i} \hbar \omega_{0}  = n_{i} \delta E \,\qquad (n_{i}=0,1,2, \ldots )
+	\]
+
+- Let's examine a case where the system has an energy of $2 \delta E$, i.\,e. $n_{a} +n_{b} +n_{c}+n_{d}   = 2$
+
+{3.0cm}
+
+	- How the energy can be distributed among the particles?
+
+[FIGURE: SOM_Statistical_Table_1.png]
+
+--- slide: Quantum Distributions ---
+
+	- Here we accounted for the number of how many times quantum number appeared, the total being 40. Therefore the numbers were then normalized to obtain the probability distribution, i.\,e. to fulfill
+\[
+\sum P_{i}  = 1
+\]
+- Finally, the probabilities were multiplied by 4 to obtain a probable\\
+
+{7.05cm}
+
+- number of particles (which each had a quantum number), the total now
+giving a sum of 4, i.\,e. 4 particles in total
+
+	- Note: The probable number of particles in a given state decreases with increasing energy 
+
+[FIGURE: Tikz_SOM_Statistical_figures.pdf]
+
+--- slide: Quantum Distributions ---
+
+	- Due to the wave nature of quantum-mechanical particles, and Heisenberg uncertainty principle, we lose the ability to distinguish the individual particles
+
+- For instance in the figure
+
+[FIGURE: Tikz_SOM_Statistical_figures.pdf]
+
+, we are unable to determine which of the four possibilities shown actually occurred when the two identical indistinguishable particles passed within a de Broglie wavelength of each other
+
+{6.5cm}
+
+	- Therefore, we cannot put the labels onto particles, and truly different states are distinguished only by having different numbers of particles at different levels
+
+--- slide: Quantum Distributions ---
+
+	- From quantum mechanics we recall that wave functions must obey the below rules:
+
+- Bosons: {\small The wave functions of identical bosons must be symmetric if two bosons are interchanged. Assume we have two identical bosons in the single particle states $n$ and $n'$ and let the $\psi_{n}$ and $\psi_{n'}$ be the wave functions of the two states. If we label two bosons 1 and 2, then the state of the combined two-particle system is described by a wave function of form $\psi_{n}(1) \psi_{n'}(2)$.
+ But, since the particles are indistinguishable, we could equally write the wave function of this state as $\psi_{n}(2) \psi_{n'}(1)$. We cannot insist on calling the bosons in state $n$ and state $n'$ by the labels 1 and 2, respectively. The total wave function of this state must be symmetric:}
+\[
+\psi_{B E}(1,2)  = \psi_{S}  = \psi_{n}(1) \psi_{n'}(2)  + \psi_{n'}(1) \psi_{n}(2) \, \qquad (symmetric)
+\]
+
+- Fermions: {\small For identical fermions, on the other hand, the wave function must be antisymmetric:} 
+\[
+\quad \psi_{F D}(1,2)  = \psi_{A}  = \psi_{n}(1) \psi_{n^{\prime}}(2)  - \psi_{n'}(1) \psi_{n}(2) \, \qquad (antisymmetric)
+\]
+
+--- slide: Quantum Distributions ---
+
+	- So, we have two kinds of indistinguishable particles: bosons (with integer spin) and fermions (with half integer spin). Next, we turn our attention back to the example of 4 particles with energy of $2 \delta E$
+	- Looking at Table 2
+
+[FIGURE: SOM_Statistical_Table_2.png]
+
+, the ways of distributing the energy clearly depend on the type of the particles!
+
+--- slide: Quantum Distributions ---
+
+	- We see that the probable number of particles again decreases with increasing energy
+
+{7.5cm}
+
+	- Bosons clearly 'like' being together. In fact it becomes apparent that generally, when a boson occupies a quantum state, it also increases the probability of another identical boson to occupy the same quantum state
+
+- For indistinguishable fermions ($s=1/2$), on the other hand, it is forbidden to have two particles with same quantum number. Thus, when a fermion occupies a quantum state, it forbids other fermions to occupy the same quantum state
+
+[FIGURE: SOM_Figure_9.png]
+
+--- slide: Quantum Distributions ---
+
+	- For distinguishable particles, detailed, case-specific probabilities converge to Boltzmann distribution
+
+- For quantum-mechanically indistinguishable particles, they converge to two different distributions:
+- 
+	- Bosons $\rightarrow$ Bose–Einstein distribution 
+	- Fermions $\rightarrow$ Fermi–Dirac distribution
+
+\[
+
+\mathbb{N}(E) & =  \frac{1}{B e^{E / k_{\mathrm{B}} T}} \,, \qquad Boltzmann~(distinguishable) \\
+\mathbb{N}(E) & =  \frac{1}{B e^{E / k_{\mathrm{B}} T}-1} \,, \qquad Bose–Einstein~(bosons) \\
+\mathbb{N}(E) & =  \frac{1}{B e^{E / k_{\mathrm{B}} T}+1} \,, \qquad Fermi–Dirac~(fermions)
+
+\]
+
+--- slide: Quantum Distributions ---
+
+	- We perform an example calculation for these three distributions using simple one-dimensional oscillators as a model system (furthermore, see course examples)
+		
+	- We vary the temperature and set the reference temperature so that $k_{B} T$ is comparable to a fixed energy value $\mathcal{E}$. On the background, we assume here that $\mathcal{E}$ is highest energy value that would be occupied if particles would fill all individual-particle states (i.\,e. $\mathcal{E}=$~Fermi energy)
+	
+	- Then we can perform the calculation for three different temperatures:
+	- 
+		- $k_{B} T=\frac{1}{5} \mathcal{E}$ \qquad low temperature
+		- $k_{B} T=\mathcal{E}$ \qquad  intermediate temperature
+		- $k_{B} T=5 \varepsilon$ \qquad  high temperature
+
+--- slide: Quantum Distributions ---
+
+{9.5cm}
+
+	- The resulting graph shows occupation number $\mathbb{N}$ with the same trend as the previous graph for 4 particles:
+	- {\normalsize $k_{B} T=5 \varepsilon \quad$ (high temp) }
+	
+		\scriptsize
+		- At high $T$, clearly all the three distributions spread out to higher energies in a similar way. It really does not matter whether they are bosons, fermions or classically distinguishable 
+
+- {\normalsize $k_{B} T=\mathcal{E} \quad$ (intermediate) }
+
+\scriptsize
+- At intermediate $T$, we still have fairly similar graphs, Bose-Einstein lies below the classical curve at intermediate energy levels
+
+- {\normalsize $ k_{B} T=\frac{1}{5} \mathcal{E} \quad \text { (low temp) }$ }
+	
+	\scriptsize
+	- At low $T$, Bose–Einstein is significantly higher than Boltzmann at low energies, thus bosons tend to congregate in the lowest energy levels
+	- Fermi–Dirac forms a 'hump' at around $\mathcal{E}$ (the Fermi energy) 
+
+[FIGURE: SOM_Figure_10.png]
+
+--- slide: Quantum Distributions ---
+
+	- At high temperatures $k_{B} T \gg \mathcal{E}$ both bosons and fermions show a linear relationship $<E>\,=k_{B} T$ following the classical result (indistinguishability is not important)
+
+[FIGURE: SOM_Figure_11.png]
+
+{8cm}
+
+	- Energy is lower for bosons (tending to congregate at lower levels)
+- Energy is higher for fermions (avoiding already occupied lower levels)
+- At low $T$, energy of bosons approach zero, while that for fermions approach $\frac{1}{2} \mathcal{E}$
+- At low $T$, bosons are dropping into the ground state $\Rightarrow$ superfluid
+
+--- slide: Quantum Distributions ---
+
+	- Figure 10 showed that at low temperatures, Fermi–Dirac occupation\\ 
+
+{7.75cm}
+
+	- number approaches 1 at $E<\mathcal{E}$ and drops to zero at $E>\mathcal{E}$ 
+	- This energy value $\mathcal{E}$ is known as Fermi energy $E_{F}$ 
+	
+	- It arises from the fact that for fermionic system, all the states will be eventually fully occupied
+
+[FIGURE: SOM_Figure_12.png]
+
+- Officially, $E_{F}$ is defined at $T=0\;K$ via
+\[
+\mathbb{N} ( E_{F} )_{F D}  = \frac{1}{B e^{E_{F} / k_{B} T}+1}  \equiv \frac{1}{2} \quad \Rightarrow \quad B=e^{-E_{F} / k_{B} T}
+\]
+- Thus
+\[
+\mathbb{N}(E)_{F D}  =  \frac{1}{e^{ ( E-E_{F} )  / k_{B} T}+1}
+\]
+
+--- slide: Quantum Distributions ---
+
+	- It is seen that as $T \rightarrow 0$, we will get a step function for Fermi–Dirac (DR) particles
+
+[FIGURE: Tikz_SOM_Statistical_figures.pdf]
+
+	- The terminology gets confusing/ambiguous, some use Fermi energy to strictly mean the level of occupation $\mathbb{N}(E)_{F D}=1/2$ at zero temperature ($T=0$)
+	- Term Fermi level is used to describe the occupation level $\mathbb{N}(E)_{F D}=1/2$ at finite temperatures
+
+--- slide: Quantum Distributions ---
+
+	- Introduction of $E_{F}$ is practically just another way to express the normalization factor $B$, which in reality is temperature dependent
+	
+- Thus, in practice the value of $E_{F}$ slightly moves with temperature away from $E_{F0}$. Still, when Fermi level is discussed, we usually refer to $T \approx 0$, and so Fermi level can be considered a constant (i.\,e. equal to the fermi energy, $E_{F} \approx E_{F0}$)
+
+{6.5cm}
+
+	- Many important fermion systems in physics (conduction electron gas etc.) are far from MB-limit $T \rightarrow \infty$ (they are dense and strongly degenerate)
+	- 
+	 - Need to treat systems quantum mechanically
+
+[FIGURE: SOM_Figure_13.png]
+
+## 1.7 The Quantum Gas
+
+--- slide: 1. Statistical Mechanics ---
+
+    -<1-> 1_1_a{A Simple Thermodynamic System}
+    -<1-> 1_2_a{Entropy and Temperature}	
+    -<1-> 1_3_a{Einstein's solid}	
+    -<1-> 1_4_a{Boltzmann & Maxwell-Boltzmann distributions}
+    -<1-> 1_5_a{Classical Averages}
+    -<1-> 1_6_a{Quantum Distributions}
+    -<1-> 1_7_a{The Quantum Gas}
+
+    -<1-> 1_8_a{Photon Gas}
+	-<1-> 1_9_a{The Laser}
+	-<1-> 1_10_a{Specific Heats}
+	-<1-> 1_11_a{Debye Model}
+
+--- slide: The Quantum Gas ---
+
+	- We have studied distributions for particles which obey quantum statistics 
+	
+	- In the following, we will form a 3-dimensional system of these particles, bound to some region, a more or less confined volume, where they can move freely
+
+- Because the volume is confined, the particles will occupy discrete quantum states
+
+- In these systems the particle concentration $(N / V)$ is high enough that the quantum indistinguishability needs to be taken into account
+
+--- slide: The Quantum Gas ---
+
+ (Particle in an infinite quantum well)
+
+	- Depending on the dimensionality of the problem, the confined volume can either be 
+	- 
+	 - one-dimensional
+
+[FIGURE: Tikz_SOM_Statistical_figures.pdf]
+
+{\small  (quantum wells, nanowires, carbon nanotubes) }
+	 - two-dimensional {\small(graphene, and other 2D-materials, e.\,g. MoS$_2$, hBN, ...) }
+	 - three-dimensional  {\small (conduction electrons in metals) }
+
+--- slide: The Quantum Gas ---
+
+	- Qualitative description of the three different types of particles (Classical/distinguishable, fermions and bosons) in the well
+
+[FIGURE: SOM_Figure_14.png]
+
+--- slide: The Quantum Gas ---
+
+	- Let us compute the density of states $D(E)$ for the 3D oscillator 
+	
+	- The energy levels are known to be:
+\[
+E_{n_{x}, n_{y}, n_{z}}  =  (n_{x}^{2} +n_{y}^{2} +n_{z}^{2} ) \frac{\pi^{2} \hbar^{2}}{2 m L^{2}}
+\]
+and using:
+\[
+ n  \equiv \sqrt{n_{x}^{2}+n_{y}^{2}+n_{z}^{2}}
+\]
+- we get the energy of the oscillator as a function of quantum number $n$ [[$E(n)$]], and vice versa the quantum number as a function of energy $n=n(E)$:
+\[
+E  = \frac{\pi^{2} \hbar^{2}}{2 m L^{2}} n^{2} \qquad \Rightarrow \qquad n  = \sqrt{\frac{2 m L^{2} E}{\pi^{2} \hbar^{2}}}  =  n(E)
+\]
+
+--- slide: The Quantum Gas ---
+
+{8cm}
+	 \small
+	- The illustrated (eighth of a sphere) is in $ (n_{x}, n_{y}, n_{z} )$ space, and the quantum numbers $n_{x}, n_{y}$ and $n_{z}$ can only have integer values 
+	- If energy increases by $d E$ then the radius of the sphere will increase by $d n$, but the number of states will increase proportional to the volume of the added shell (=\;area of the shell $\times$ thickness $=4 \pi r^{2} d n$)
+
+- We are dealing with only positive numbers, and due to symmetry of the problem we need to consider only $1 / 8$ of the spherical shell, which turn the differential number of states in range $d E$ to be equal to $\frac{1}{8} 4 \pi n^{2} d n$
+
+- Thus, the density of states will be:
+\[
+ 
+D(E)  &=  \frac{\text { differential number of states in range } d E}{d E}  \\
+	&= \frac{1}{8} 4 \pi n^{2} \frac{d n}{d E}
+
+\]
+
+[FIGURE: SOM_Figure_15.png]
+
+--- slide: The Quantum Gas ---
+
+	-  
+	\[
+\Rightarrow \qquad \qquad D(E)= \frac{1}{8} 4 \pi n^{2} \frac{d n}{d E} =\ldots= \frac{m^{3 / 2} L^{3}}{\pi^{2} \hbar^{3} \sqrt{2}} \sqrt{E} \qquad \qquad
+\]
+- Often it is more practical to deal with the volume of the well $(L^{3}=V )$ 
+
+- Recall that two spin-1/2 particles can have the same energy. $D(E)$ should thus be multiplied with $(2 s+1)$:\\[-6mm]
+\[
+ \hspace{8cm} D(E) = \frac{(2 s+1) m^{3 / 2} V}{\pi^{2} \hbar^{3} \sqrt{2}} \sqrt{E}
+\]
+
+[FIGURE: Tikz_SOM_Statistical_figures.pdf]
+
+--- slide: The Quantum Gas ---
+
+	- We are interested of the average particle energy:\\
+-  \small
+	 - One could try to calculate the exact average particle energy 
+	 - In general case, it proves to be tedious, since e.g. the parameters $B$ and $T$ depend on the system, systems are often complex and $D(E)$ prevents a closed form calculation of $B$ and $<E(T)>\,$ for a quantum gas
+
+- But, we can at least derive an approximate solution for the average energy as a function of particle number density $N / V$ (Exercise):
+\[
+\overline{E}  = \frac{3}{2} k_{B} T [\! 1 \mp \frac{\pi^{3} \hbar^{3} \sqrt{2}}{ (2 s+1) (2 \pi m k_{B} T )^{3/2}  } ( \frac{N}{V} ) +\ldots ]\!\!
+\]
+
+- Thus, average energy depends both on temperature and particle number density
+- With higher density $N/V$, energy increases for fermions $(+)$, decreases for bosons $(-)$
+
+--- slide: The Quantum Gas ---
+
+	- Classical particle behaviour $\leftrightarrow$ the 1st term dominates
+$\leftrightarrow$ when particles have short (de Broglie) wavelength and large separation ($N/V$ is small)
+
+- In terms of wavelength: 
+\[
+\lambda  = \frac{h}{p}  = \frac{h}{m v}  = \frac{h}{m \sqrt{3 k_{B} T / m}} \propto \frac{h}{\sqrt{m k_{B} T}} \qquad \Rightarrow \qquad \frac{1}{T^{3 / 2}} \propto \lambda^{3}
+\]
+- In terms of particle separation:
+\[
+\frac{d^{3}}{1} \propto \frac{V}{N} \qquad \Rightarrow \qquad d \propto (\frac{V}{N} )^{1 / 3}
+\]
+
+- We have a quantum term of form 
+\[
+\text {Quantum term}  \equiv \frac{\pi^{3} \hbar^{3} \sqrt{2}}{(2 s+1) (2 \pi m k_{B} T )^{\frac{3}{2}}} ( \frac{N}{V} )  \,\propto (\frac{\lambda}{d} )^{3}
+\]
+
+--- slide: The Quantum Gas ---
+
+- We have a quantum term of form 
+\[
+\text {Quantum term}  \equiv \frac{\pi^{3} \hbar^{3} \sqrt{2}}{(2 s+1) (2 \pi m k_{B} T )^{\frac{3}{2}}}  ( \frac{N}{V} )  \propto (\frac{\lambda}{d} )^{3}
+\]
+
+- The 2nd term (the quantum term) in the approximate solution for the mean energy $\overline{E}$, is clearly:
+- 
+	 - small when $\lambda$ is small
+- small when $\lambda<d$
+- large when $\lambda$ is large
+- large when $d$ is small
+
+--- slide: The Quantum Gas ---
+
+	- Another angle of approach discusses how the particles are spread to different energy levels 
+	- We discuss fermions as an example, and calculate the Fermi energy $E_F$ at $T=0$
+
+- Total number of particles: $\qquad N=\int_{0}^{\infty}  \mathbb{N} (E)_{F D} D(E) d E$
+
+- At $T=0$ the occupation number $ \mathbb{N} $ is a step function for fermions ($ \mathbb{N} =1$ for $\mathrm{E}<E_{F}$,  $\mathbb{N} =0$ for $\mathrm{E}>E_{F}$) 
+\[ 
+ 
+&\Rightarrow& \qquad N  &=  \int_{0}^{E_{F}} \frac{1\cdot (2 s+1) m^{3 / 2} V}{\pi^{2} \hbar^{3} \sqrt{2}} \sqrt{E} d E  =  \frac{(2 s+1) m^{3 / 2} V}{\pi^{2} \hbar^{3} \sqrt{2}} ( \frac{2}{3} E_{F}^{3 / 2} ) \\ 
+&\Rightarrow& \qquad E_{F}  &= \frac{\pi^{2} \hbar^{2}}{m} \Bigg[\frac{3}{(2 s+1) \pi 2^{1/2}} \frac{N}{V} \Bigg]^{2 / 3}
+ 
+\]
+
+--- slide: The Quantum Gas ---
+
+	- The result indicates that even at zero temperature, energy increases with increasing fermion concentration: $\qquad E_{F} \propto (\frac{N}{V} )^{2 / 3}$
+
+- Re-arrangement of terms results in
+\[
+
+& & E_{F}  &= \frac{\pi^{2} \hbar^{2}}{m} \Bigg[\frac{3}{(2 s+1) \pi 2^{1/2}} \frac{N}{V} \Bigg]^{2 / 3} \\
+&\Rightarrow& \qquad E_{F}^{3 / 2}  &=   \bigg( \frac{\pi^{2} \hbar^{2}}{m}  \bigg)^{3 / 2} \frac{3}{(2 s+1) \pi 2^{1/2}} \frac{N}{V}  =  \frac{3 \pi^{2}}{2^{1/2}} \frac{\hbar^{3}}{(2 s+1) m^{3 / 2}} \frac{N}{V}
+
+\]
+- Thus, we see a proportionality $\frac{\hbar^{3}}{(2 s+1) m^{3 / 2}} \frac{N}{V} \propto E_{F}^{3 / 2}$ which can be used to analyze the quantum term in the equation for mean energy:
+\[
+\overline{E}  = \frac{3}{2} k_{B} T [\! 1 \mp \frac{\pi^{3} \hbar^{3} \sqrt{2}}{(2 s+1) (2 \pi m k_{B} T )^{\frac{3}{2}} (\frac{N}{V} ) }  +\ldots ]
+\]
+
+--- slide: The Quantum Gas ---
+
+	- So, the quantum term is proportional to $\big( \frac{E_{F}}{k_{B} T}  \big)^{3 / 2}$
+- In the case $k_{B} T \gg E_{F}$ the classical first term survives, and the second term, i.e the quantum term, is small 
+
+- The particles are spread diffusely among different states, so quantum indistinguishability can be ignored
+- Summarum: A gas will behave classically
+If 
+\[
+
+& & \qquad \bigg( \frac{\lambda}{d}  \bigg)^{3} &\ll 1  \\
+&or if\quad& & \\
+& & \qquad \frac{N}{V} \frac{\hbar^{3}}{ (m k_{B} T )^{3 / 2}} &\ll 1 \qquad \Rightarrow \qquad \text {Classical limit} \\
+
+\]
+
+--- slide: The Quantum Gas ---
+
+{10.5cm}
+	
+	- In metals, some of the valence electrons are shared among all atoms
+	\implies{ They move freely through the solid material in a quantum \\
+		well formed by the positive ions of the metal }
+
+- Free electrons in metals are a good example of a fermion gas. They are known as conduction electrons
+
+- Figure 16 a shows Coulombic potential for one electron around one metal ion
+
+[FIGURE: SOM_Figure_16.png]
+
+- Once the ions become sufficiently many and sufficiently concentrated (Fig 16b–d), they form a finite well for the quantum gas of the valence electrons
+
+- The situation can be modelled using an infinite well
+
+--- slide: The Quantum Gas ---
+
+	- Due to the exclusion principle for fermions, the conduction electrons fill up states that are very high from classical point of view
+
+- Historically, it wasn't first understood how many of the electrons in the material actually contributed to the electron gas and, furthermore, to specific heat capacity 
+
+- If every conduction electron would contribute and would move freely within the material, then this would cause a high value of heat capacity, which would have shown up in experiments/real life
+
+- Later, it became apparent that only the electrons near the Fermi energy are the ones to move around freely, and gain energy, and most of the electrons did not actually contribute to storing the energy within the material (specific heat capacity) 
+
+ \seminormal
+- (see Chapter 9 from Harris, and our Lecture regarding specific heats)
+
+--- slide: The Quantum Gas ---
+
+{8.5cm}
+	
+	- There is a minimum energy $\phi$ that is required to remove an electron from a metal, the difference between top of the finite well and Fermi energy:
+\[
+\phi  = U_{0}  -  E_{F}
+\]
+
+- This energy $\phi$ is known as the work function, and is clearly material specific, depending on both:
+- 
+	- $U_{0}$ the depth of the finite well 
+	- $E_{F}$ Fermi energy of the material
+
+[FIGURE: SOM_Figure_17.png]
+
+--- slide: The Quantum Gas ---
+
+	- When two metals are put into contact
+
+[FIGURE: SOM_Figure_18.png]
+
+, the most energetic electrons from metal 2 move to metal 1, shifting the energy levels of metal 1 upwards (due to electrostatic repulsion), and the energy levels in metal 2 downwards 
+	
+	- As a result, a potential difference $\Delta U$ will develop between the materials
+	
+	- Electrons move, until the Fermi energies $E_F$ are at the same level
+	
+	- {\small 
+	
+	- Seebeck effect,\\ 
+		application as\\
+		a thermocouple to\\
+		measure temperature
+		- A related Peltier\\ 
+		effect,
+		giving \\
+		us thermoelectric \\
+		coolers
+
+		- e.g. accelerated corrosion
+
+}
+
+--- slide: The Quantum Gas ---
+
+	- Occupation number for bosons was found to be: $ \mathbb{N} (E)_{B E} = \frac{1}{B e^{E / k_{B} T}-1}$
+
+- When $E \rightarrow 0$, for bosons the occupation number goes high up, thus particles drop down into the lowest energy quantum state 
+
+- Helium-4 atom has two protons and two neutrons, it is thus a boson with spin $=0$ (total spin of nucleus $=0$, two 1s electrons with total spin $=0$)
+
+- Helium-4 does not solidify easily, it remains gaseous down to very low temperatures (>4.15~K)
+
+- At low enough temperatures, the inter-particle forces become significant, and the gaseous He-4 becomes a liquid
+
+- At very low temperatures a fraction of its atoms condense into lowest energy
+
+--- slide: The Quantum Gas ---
+
+{9cm}
+	
+	- At low temperature of $2.17$ K Helium-4 becomes a superfluid
+
+	- Negligible viscosity
+- High thermal conductivity
+
+(One could use the classical limit criteria to have a rough estimate when this would be expected to happen)
+
+- Alfred Leitner has prepared famous videos{https://www.youtube.com/watch?v=2Z6UJbwxBZI} about the behaviour of He-4 scooped from a cold pool by a bowl
+
+- Helium adheres into the inner surface of the bowl and eventually creeps away from the bowl via its surfaces
+
+[FIGURE: SOM_Figure_19.png]
+
+--- slide: The Quantum Gas ---
+
+{8.5cm}
+	
+	- Hot atoms in a sample of dilute gas in any macroscopic container are distributed over a very large number of levels, making the probability of any level being occupied quite small
+
+- Cooled to the point where de Broglie wavelength becomes larger than the interatomic spacing, atoms fall into the ground state, all occupying the same quantum mechanical state
+\implies{formation of a new material phase, \\ Bose–Einstein Condensate (BEC)}
+
+[FIGURE: SOM_Tipler_figure_3.png]
+
+## 1.8 Photon Gas
+
+--- slide: 1. Statistical Mechanics ---
+
+    -<1-> 1_1_a{A Simple Thermodynamic System}
+    -<1-> 1_2_a{Entropy and Temperature}	
+    -<1-> 1_3_a{Einstein's solid}	
+    -<1-> 1_4_a{Boltzmann & Maxwell-Boltzmann distributions}
+    -<1-> 1_5_a{Classical Averages}
+    -<1-> 1_6_a{Quantum Distributions}
+    -<1-> 1_7_a{The Quantum Gas}
+
+    -<1-> 1_8_a{Photon Gas}
+	-<1-> 1_9_a{The Laser}
+	-<1-> 1_10_a{Specific Heats}
+	-<1-> 1_11_a{Debye Model}
+
+--- slide: Photon Gas ---
+
+	- Unlike electrons (and He-4 atoms), photons are bosons with spin $=1$ 
+	
+	- To describe photon gas, we need to know their density of states
+
+- The energy of photons is linked to frequency $f$ (instead of a quantum number $n$ of energy level): $ \qquad E =h f  = h \frac{c}{\lambda} $
+
+{8cm}
+
+	- First, consider 3D-quantum well of width $L$, where quanta with $\lambda=2 L$ (at minimum) can fit
+	\[
+
+n_{x}^{2} + n_{y}^{2} + n_{z}^{2}  =  n^{2}  \qquad \myeq \qquad  R^{2}  =   \bigg( \frac{L}{\lambda / 2}  \bigg)^{2}
+
+\]
+- allowing us to calculate the radius in phase space:
+\[
+R  =  \frac{L}{\lambda / 2}  =  \frac{2 L}{\lambda}  =  \frac{2 L E}{h c}
+\]
+
+[FIGURE: SOM_Tipler_figure.png]
+
+--- slide: Photon Gas ---
+
+	- How many 'lattice points' can we have in a $n$-space volume with radius $R$?
+\[
+
+& & R& = \frac{2 L E}{h c} \\ 
+&\Rightarrow \qquad& N &= 2 \cdot \frac{1}{8} \cdot \frac{4}{3} \pi R^{3}  =  \frac{\pi}{3} ( \frac{2 L E}{h c} ) ^{3}  
+=  \frac{8 \pi}{3} \frac{E^{3}}{h^{3} c^{3}} L^{3}  
+= \frac{8 \pi}{3} \frac{E^{3}}{h^{3} c^{3}} V
+
+\]
+
+- where $N$ is the number of states within a sphere of radius $R=2 L E /(h c)$ 
+
+- Now we can calculate the number of points within an infinitesimal energy range $d E$:
+
+\[
+\frac{d N}{d E}  = \frac{8 \pi}{3} \frac{3 E^{2}}{h^{3} c^{3}} V
+ = \frac{8 \pi E^{2}}{h^{3} c^{3}} V 
+ \qquad \Rightarrow \qquad 
+ \frac{d N}{d f}  = \frac{8 \pi f^{2}}{c^{3}} V \qquad (E=h f \quad \Rightarrow \quad d E=h d f)
+\]
+
+--- slide: Photon Gas ---
+
+	- So, to interpret the result, we have obtained the number of states within a certain frequency range:
+\[
+\frac{\text { different number of states in range df }}{d f}  = \frac{8 \pi V}{c^{3}} f^{2}
+\]
+- Or, if energy is considered:
+\[
+\frac{\text { different number of states in range dE }}{d E / h}  = \frac{8 \pi V}{c^{3}} (E / h)^{2}
+\]
+
+- Thus, for the density of states $D=D(E)$ in a system of photons (in a volume $V$), we obtain:
+\[
+D(E)  = \frac{8 \pi V}{h^{3} c^{3}} E^{2}
+\]
+
+--- slide: Photon Gas ---
+
+	- Note, that the photon gas differs from the harmonic oscillator, or e.\,g. liquid helium case
+
+- In the photon gas, we do not actually fix the number of photons beforehand, since all systems absorb and emit photons continuously, and therefore the temporary number of photons is rather dictated by the physics of the system and its conditions
+
+- The Bose–Einstein statistics for bosons were given by: 
+\[ \mathbb{N} (E)_{B E}  =  \frac{1}{B e^{E / k_{B} T}-1}
+\] 
+- where the parameter $B$ should be linked to number of particles $N$ 
+
+- Since $N$ is not fixed, a solution is to set $B\equiv1$ (for photon gas)
+\[
+ \mathbb{N} (E)_{B E, \text { photon } g a s}=\frac{1}{e^{E / k_{B} T}-1}
+\]
+
+--- slide: Photon Gas ---
+
+	- Q: Compare quantitatively the internal energies in electromagnetic radiation and matter
+- A: We could calculate the average energy as given before: 
+\[
+<E>\,  =  \frac{\int E  \mathbb{N} (E) D(E) d E}{\int  \mathbb{N} (E) D(E) d E}
+\]
+- where the nominator stands for the energy of the system (and denumerator stands for total number of particles) 
+
+- But, we could as well use only the nominator to obtain the internal energy of EM-radiation, or 'photon gas' 
+
+--- slide: Photon Gas ---
+
+- Using the change of variables, $E  = k_{B} T x \quad \Rightarrow \quad x  = E/(k_{B} T)$, the nominator turns into:
+\[
+
+U_{photon}  &=  \int_{0}^{\infty} E  \mathbb{N} (E) D(E) d E
+ =  
+ \int_{0}^{\infty} E \frac{1}{e^{E / k_{B} T}-1} \frac{8 \pi V}{h^{3} c^{3}} E^{2} d E \\
+& = 
+\frac{8 \pi V}{h^{3} c^{3}} \int_{0}^{\infty} k_{B} T x \frac{1}{e^{x}-1} ( k_{B} T x ) ^{2} k_{B} T d x
+ = 
+ \frac{8 \pi V k_{B}^{4} T^{4}}{h^{3} c^{3}} \int_{0}^{\infty} \frac{x^{3} d x}{e^{x}-1}  \\
+ &= 
+ \frac{8 \pi V k_{B}^{4} T^{4}}{h^{3} c^{3}} \cdot \frac{\pi^{4}}{15}
+
+\]
+
+--- slide: Photon Gas ---
+
+	- So, for photon gas we obtain 
+	\[
+	U_{p h o t o n}=\frac{8 \pi V k_{B}^{4} T^{4}}{h^{3} c^{3}} \cdot \frac{\pi^{4}}{15}  = \frac{8 \pi^{5} V k_{B}^{4} T^{4}}{15 h^{3} c^{3}}
+	\]
+- At temperature of $300 \mathrm{~K}$ we obtain a value of: $\quad \frac{U_{p h o t o n}}{V} =6.1 \times 10^{-6} \mathrm{~J} / \mathrm{m}^{3}$
+
+- For ordinary (monatomic ideal) gas the internal energy at NTP is given by
+\[
+\frac{U_{\text {material }}}{V}
+ = 
+ \frac{N \times \frac{3}{2} k_{B} T}{V}
+  = 
+  \frac{\frac{3}{2} p V}{V} = \frac{3}{2} p = 1.5 \times 10^{5} \mathrm{~J} / \mathrm{m}^{3}
+\]
+- So, the ratio is small: $\frac{U_{\text {photon }}}{U_{\text {matter }}}=4 \times 10^{-11}$
+
+ \implies{ Thus, we conclude that under NTP conditions the fraction of \\
+ 		thermodynamic system's total energy in the form of \\
+		electromagnetic radiation is very small }
+
+--- slide: Photon Gas ---
+
+	- We may interpret the integrand in the previous example for internal energy as the (total) energy of the system within a certain photon energy range [[$E , E+d E$]]:
+\[
+d U_{photon}(E, E+d E)
+ = 
+ E \frac{1}{e^{E / k_{B} T}-1} \frac{8 \pi V}{h^{3} c^{3}} E^{2} d E
+  = \frac{h f^{3}}{e^{h f / k_{B} T}-1} \frac{8 \pi V}{c^{3}} d f
+\]
+- this is the Planck's law, giving us the
+
+{6.5cm}
+
+	- spectral energy density for electromagnetic radiation or so called blackbody radiation
+
+- The maximum peak of the curve moves linearly with temperature, following the Wien's law 
+
+[FIGURE: SOM_Figure_20.png]
+
+--- slide: Photon Gas ---
+
+	- Integration of the area under the curve gives the Stefan–Boltzmann's law:
+\[
+U \propto T^{4}
+\]
+- To summarize, the bosonic photon gas model allows to derive many of the foundational equations/laws connecting thermodynamics with electrodynamics
+- 
+	 - Planck's law
+	 - Blackbody radiation
+	 - Wien's law
+	 - Stefan–Boltzmann's law
+
+[FIGURE: SOM_Figure_20.png]
+
+## 1.9 The Laser
+
+--- slide: 1. Statistical Mechanics ---
+
+    -<1-> 1_1_a{A Simple Thermodynamic System}
+    -<1-> 1_2_a{Entropy and Temperature}	
+    -<1-> 1_3_a{Einstein's solid}	
+    -<1-> 1_4_a{Boltzmann & Maxwell-Boltzmann distributions}
+    -<1-> 1_5_a{Classical Averages}
+    -<1-> 1_6_a{Quantum Distributions}
+    -<1-> 1_7_a{The Quantum Gas}
+
+    -<1-> 1_8_a{Photon Gas}
+	-<1-> 1_9_a{The Laser}
+	-<1-> 1_10_a{Specific Heats}
+	-<1-> 1_11_a{Debye Model}
+
+--- slide: The Laser ---
+
+{8.1cm}
+
+	- Lasers are a good example of a photon gas system
+	- They are devices where high energy density of electromagnetic radiation is introduced within a cavity, outputting a coherent unidirectional monochromatic beam of light
+
+- The basic components are:
+
+\small
+	- A three-level system in which atoms in the upper level "2" make a transition to the lower level "1" that is stimulated by the presence of photons of the right frequency
+- An optical cavity to provide an environment with the right kind of photons
+- Pumping mechanism to re-populate the upper level "2" for repeated operation
+
+[FIGURE: SOM_Figure_21.png]
+
+--- slide: The Laser ---
+
+	- Practical operating principles of laser:
+
+-  \small
+	- Parallel mirrors are placed at the medium's two ends
+  - Photons not parallel the axis have relatively few opportunities to induce stimulated emission
+  - Photons parallel to axis reflect back and forth, providing many opportunities
+  - The length $L$ is tuned to standing wave: $L=n \lambda / 2$
+
+{6.25cm}
+
+-   \small
+  - A resonance is formed inside this optical cavity
+  - Parallel radiation gets amplified
+  - Off-axis radiation diminishes
+  - Laser wavelength becomes narrower than natural line width
+  - More energy can be fed into the laser by an 'optical pumping process'
+
+[FIGURE: SOM_Figure_23.png]
+
+--- slide: The Laser ---
+
+{7cm}
+
+\small
+	- Spontaneous emission occurs when an electron in a higher atomic energy level drops to lower level in a short but unpredictable time, emitting a photon
+
+- Absorption occurs when an electron is promoted to higher atomic energy level by absorbing a photon
+
+- In stimulated emission, an electron in higher energy level is influenced by a passing photon, whose energy is precisely the difference between the upper and lower level 
+ - 
+	- As a result, another photon with identical energy and wavelength to the first photon is emitted, and moreover in the same direction and with a correlated phase with the first one
+
+[FIGURE: SOM_Figure_22.png]
+
+--- slide: The Laser ---
+
+{7cm}
+\small 
+
+	- How to describe these three processes mathematically?
+For simplicity, gases are studied (simpler energy state treatment than in solids)
+
+- In spontaneous emission, the rate $R_{spon}$ must be proportional to the number of atoms in the excited state, $N_{2}$, the proportionality constant being $A_{spon}$ ($R_{spon}=A_{\text {spon}} N_2$)
+
+- Rate of absorption must be proportional to the number of particles in the lower level, $N_{1}$, but also proportional to the number of photons of the right energy which are entering the atom $Y(\Delta E)$, where $\Delta E=E_{2}-E_{1}$. The proportionality constant is $B_{abs}$ ($R_{abs}=B_{abs} N_{1} Y(\Delta E)$)
+
+- Also for stimulated emission, we need the number of available atoms in the higher level, as well as the number of photons of right energy, which can trigger the emission ($R_{stim}=B_{stim} N_{2} Y(\Delta E)$)
+
+[FIGURE: SOM_Figure_22.png]
+
+--- slide: The Laser ---
+
+	- The coefficients $A_{\text {spon}}$, $B_{abs}$ and $B_{\text {stim}}$ are known as the Einstein's coefficients 
+	
+	- In an equilibrium, these processes are in a balance:
+\[
+
+& & R_{\text {spon}} +R_{\text {stim}}  &= R_{abs} \\
+ &\Rightarrow& \qquad A_{\text {spon}} N_{2} +B_{\text {stim}} N_{2} Y(\Delta E) & = B_{abs} N_{1} Y(\Delta E) \qquad \quad 
+
+\]
+
+- From where we solve for $Y(\Delta E)$, and using $N_{1} / N_{2}  = e^{-\frac{E_{1}}{k_{B} T}} / e^{-\frac{E_{2}}{k_{B} T}}$, we get:
+\[
+
+&\Rightarrow& 
+\qquad Y(\Delta E) & = \frac{A_{\text {spon}} / B_{abs}}{\frac{N_{1}}{N_{2}}  - \frac{B_{\text {stim}}}{B_{abs}}}
+ = 
+ \frac{A_{\text {spon}} / B_{abs}}{\frac{e^{-E_{1} / k_{B} T}}{e^{-E_{2} / k_{B} T}}  - \frac{B_{stim}}{B_{abs}}} \\
+ 
+&\Rightarrow&
+ Y(\Delta E) & = \frac{A_{\text {spon}} / B_{abs}}{e^{\Delta E / k_{B} T}  - \frac{B_{\text {stim}}}{B_{abs}}}
+  = 
+  \frac{A_{\text {spon}} / B_{\text {stim}}}{\frac{B_{abs}}{B_{stim}} e^{\Delta E / k_{B} T}-1}  \qquad \quad 
+
+\]
+
+--- slide: The Laser ---
+
+	- The quantity $Y(\Delta E)$ is not strictly speaking a number of photons entering the atom, but rather a photon gas spectral energy density for the quanta of right energy, given by Planck's law 
+	
+	- So, we can compare:
+\[
+
+Y(\Delta E) &= \frac{A_{\text {spon}} / B_{abs}}{\frac{N_{1}}{N_{2}} - \frac{B_{\text {stim}}}{B_{abs}}}
+ = 
+ \frac{A_{spon} / B_{abs}}{\frac{e^{-E_{1} / k_{B} T}}{e^{-E_{2} / k_{B} T}}-\frac{B_{\text {stim}}}{B_{abs}}}
+  = 
+  \frac{A_{\text {spon}} / B_{abs}}{e^{\Delta E / k_{B} T}  - \frac{B_{\text {stim}}}{B_{\text {abs }}}}
+   = 
+   \frac{A_{\text {spon}} / B_{\text {stim}}}{\frac{B_{abs}}{B_{\text {stim}}} e^{\Delta E / k_{B} T}-1} \\
+d U_{photon}(\Delta E) &= 
+ \frac{h f^{3}}{e^{\frac{\Delta E}{k_{B} T}}-1} \frac{8 \pi V}{c^{3}} d f \quad \Rightarrow \quad \frac{1}{V} \frac{d U_{photon}}{d f}
+  = \frac{8 \pi}{c^{3}} \frac{h f^{3}}{e^{\frac{\Delta E}{k_{B} T}}-1}  =  Y(\Delta E)
+
+\]
+- Therefore, in equilibrium the below holds:
+\[
+B_{\text {stim}}=B_{abs} \qquad resulting~in \qquad \frac{A_{\text {spon}}}{B_{\text {stim}}}  = \frac{8 \pi h f^{3}}{c^{3}}
+\]
+
+--- slide: The Laser ---
+
+	- Note, that condition $B_{stim}=B_{abs}$ means that an incoming photon is equally probable to trigger an absorption as a stimulated emission
+
+- Frankly speaking, for lasers we do not favour this, we wish for the stimulation to dominate, since we wish to have a strong coherent beam, made by utilizing stimulated emission
+
+[FIGURE: Tikz_SOM_Statistical_figures.pdf]
+
+--- slide: The Laser ---
+
+	- At normal temperature, in equilibrium, nearly all of the atoms are in the ground state 
+	- Thus $N_{1} \gg N_{2}$, and for actual rates, it follows that in normal temperature $N_{1} B_{abs} \gg N_{2} B_{stim}$  
+	\implies{ stimulated emission is not actually pronounced }
+
+- Using optical pumping, i.\,e. an additional light source  with right frequency, the ground states can be excited into higher states 
+\implies{ Population of a higher level with energy $E_{3}$ increases }
+
+- If the medium of the laser (often a transparent solid) has a metastable state $E_{2}$, then many of the upper level $E_{3}$ states can drop down to this metastable state $E_{2}$ 
+\implies{ Possible to create a situation where $N_{1}<N_{2}$ }
+
+--- slide: The Laser ---
+
+	- First, one uses optical pumping so that $N_{1} \approx N_{2} \approx N_{3}$ 
+	- When the pumping is stopped, very soon afterwards, the level $E_{3}$ will depopulate, and soon there will be a high population of $E_{2}$, and also $N_{1}<N_{2}$
+	
+	- This phenomenon/condition is called population inversion 
+
+{3.8cm}
+
+	 - As a result, once the photon gas in the laser starts
+	 to trigger more of the $E_{2}$
+	 metastable level atoms,
+	 eventually stimulated
+	 emission rate will be
+	 enhanced
+
+[FIGURE: SOM_Figure_26.png]
+
+## 1.10 Specific Heats
+
+--- slide: 1. Statistical Mechanics ---
+
+    -<1-> 1_1_a{A Simple Thermodynamic System}
+    -<1-> 1_2_a{Entropy and Temperature}	
+    -<1-> 1_3_a{Einstein's solid}	
+    -<1-> 1_4_a{Boltzmann & Maxwell-Boltzmann distributions}
+    -<1-> 1_5_a{Classical Averages}
+    -<1-> 1_6_a{Quantum Distributions}
+    -<1-> 1_7_a{The Quantum Gas}
+
+    -<1-> 1_8_a{Photon Gas}
+	-<1-> 1_9_a{The Laser}
+	-<1-> 1_10_a{Specific Heats}
+	-<1-> 1_11_a{Debye Model}
+
+--- slide: Specific Heats ---
+
+	- We want to understand how a microscopic object stores energy 
+	- Equipartition theorem states that for each degree of freedom for quadratic variables$ ( E \propto x^{2} ) $, the object will have an energy $1 / 2 k_{B} T$:
+\[
+<E>_{one particle}  = \frac{1}{2} k_{B} T \,, \qquad per~degree~of~freedom
+\] 
+
+- The total internal energy $U$ of a piece of material is then
+\[
+U_{per mole}  = N_{A} \frac{1}{2} k_{B} T = \frac{1}{2} R T \,, \qquad per~degree~of~freedom
+\]
+
+- Specific heat may be defined either per mass or per mole
+
+- Molar specific heat capacity would be:
+\[
+\hspace{8.5cm} C_{V}  = \frac{\partial U_{\text {per mole}}}{\partial T}
+\]
+- Thus, equipartition theorem links $U$ and $T$ and a provides route to calculate the heat capacity $C_{V}$
+
+--- slide: Specific Heats ---
+
+ (Gases)
+
+{6.5cm}
+\small
+
+	- For monoatomic gas molecules, the number of degrees of freedom comes only from translation in 3 directions $(x, y, z)$ resulting in a number of 3 \implies[\small]{ Translational $C_V$: $\quad C_{V}  = 3 \cdot \frac{1}{2} R  = \frac{3}{2} R$ }
+
+- For diatomic gas molecules, rotation becomes significant at certain temperatures (room temperature) contributing two more degrees of freedom 
+
+- At even higher temperature (the shift starts at around $1000 \mathrm{~K}$) also molecular vibrations become relevant, contributing two more degrees of freedom
+
+- In overall, the heat capacity can exhibit values
+\[
+C_{V}  = \frac{3}{2} R\,, \qquad \frac{5}{2}  R\,, \qquad or \qquad \frac{7}{2} R
+\]
+
+[FIGURE: SOM_Figure_28.png]
+
+[FIGURE: Tikz_SOM_Statistical_figures.pdf]
+
+--- slide: Specific Heats ---
+
+ (Set of harmonic oscillators)
+
+	- When determining vibrational specific heat contribution for gas molecules, integration of the Boltzmann distribution does not give a correct answer (condition $E_{n+1} - E_n \ll k_B T$ no longer holds)  
+	
+	- We need to sum up the states: 
+\[
+<E>\,  =  \frac{\sum_{n=0}^{\infty} n \hbar \omega_{0} e^{-n \hbar \omega_{0} / k_{B} T}}{\sum_{n=0}^{\infty} e^{-n \hbar \omega_{0} / k_{B} T}} =\ldots= \frac{\hbar \omega_{0}}{e^{\hbar \omega_{0} / k_{B} T}-1}
+\]
+
+- For a mole of harmonic oscillators 
+\[
+U_{\text {per mole}}^{(vib)}  = N_{A} \frac{\hbar \omega_{0}}{e^{\hbar \omega_{0} / k_{B} T}-1}
+\]
+
+- And differentiating:
+\[
+C_{V}^{(vib)}  = \frac{\partial U_per mole^{(vib)}}{\partial T}
+ = N_{A} k_{B} \frac{ ( \hbar \omega_{0} )^{2} e^{\hbar \omega_{0} / k_{B} T} }{ ( k_{B} T ) ^{2} ( e^{\hbar \omega_{0} / k_{B} T}-1 ) ^{2} }
+\]
+
+--- slide: Specific Heats ---
+
+	- At high T $ ( k_{B} T \gg \hbar \omega_{0} ) $, the proportionality $<E> \propto k_{B} T$ seems to be valid (degrees of freedom = 2 for vibrations)
+
+[FIGURE: SOM_Figure_29.png]
+
+- At low temperatures $ ( k_{B} T \ll \hbar \omega_{0} )$, mean energy $<E>\,$ rises from zero very slowly. Reason is that few of the molecules would be energetic enough to occupy any state other than the ground state
+
+- The $C_{V}$ shown in Fig.~(b) is practically the slope of $<E>\,$ shown in  Fig.~(a) 
+
+{5cm} \small
+
+- The shift from $C_{V}=0$ to $C_{V}=R$ resembles the shift in Fig.~28, where increased  temperature enables the population of vibrational states 
+
+- This takes place apparently already at around: 
+\[
+k_{B} T  = 0.3 \;...\; 0.5 \hbar \omega_{0}
+\]
+
+--- slide: Specific Heats ---
+
+- For hydrogen molecule, the resonance frequency is $\omega_{0}=8.28 \times 10^{14}~\mathrm{rad} / \mathrm{s}$, giving significant rise at temperature $T=0.3 \frac{\hbar \omega_{0}}{k_{B}} \approx 1900 \mathrm{~K}$ 
+- This agrees remarkably well with Fig.~28
+
+[FIGURE: SOM_Figure_28.png]
+
+--- slide: Specific Heats ---
+
+ (Solid state)
+
+	- In solids, atoms/electrons cannot move freely or rotate 
+	- They can only oscillate/vibrate in three directions 
+	- Since one-dimensional oscillator has 2 degrees of freedom, three-dimensional solid exhibits 6 degrees of freedom resulting in 
+\[
+C_{V}  =  6 \cdot \frac{1}{2} R  = 3 R \,, \qquad (dielectrics)
+\]
+
+- In conducting materials (e.\,g. metals), conduction electrons are not bound to individual atoms, but move around acting like a gas
+
+- Classically thinking, conduction electrons have 3 translational degrees of freedom, contributing by an additional factor of $3 \times \frac{1}{2}=1.5$ to the heat capacity $C_V$
+\implies{ classically one expects conductors to have $C_{V}  =  4.5 R$ }
+
+--- slide: Specific Heats ---
+
+ (Solid state)
+
+	- It turns out that the classical expectations given above are not fulfilled 
+	
+	- For many solids, the value of heat capacity is still close to $3R$ ($C_V \approx 3R$), both for insulators and for conductors
+
+- The electrons in conductors are packed to lowest states, and since at
+
+{6.4cm}
+
+- room temperature, the value of $k_{B} T$ is much less than $E_{F}$, practically, the situation is quite the same as $T=0$ would be
+
+- In conductors only a small fraction of electrons move, causing a negligible contribution to the heat capacity $C_V$
+
+[FIGURE: SOM_Statistical_Table_3.png]
+
+--- slide: Specific Heats ---
+
+ (Solid state)
+
+- The atoms in a solid are strongly coupled (see Figure)
+
+- One cannot displace a single atom without disturbing nearby atoms (and the whole solid)
+
+{7.8cm}
+
+	-  \small
+	- Must consider collective vibrational excitations 
+	- Resulting acoustic waves behave like a boson gas
+	- These waves are called phonons and act as bosonic quanta of atomic vibrations
+	- A phonon has a zero spin, it may travel inside the solid carrying an energy of $h f$ ($\sim$10 meV)
+	- A phonon is not a 'real particle' in the same sense as a photon is, but it is a 'quasiparticle' or a 'collective excitation' 
+	\implies[\small]{ Phonons only exist inside the solid }
+
+[FIGURE: Tikz_SOM_Statistical_figures.pdf]
+
+## 1.11 Debye Model
+
+--- slide: 1. Statistical Mechanics ---
+
+    -<1-> 1_1_a{A Simple Thermodynamic System}
+    -<1-> 1_2_a{Entropy and Temperature}	
+    -<1-> 1_3_a{Einstein's solid}	
+    -<1-> 1_4_a{Boltzmann & Maxwell-Boltzmann distributions}
+    -<1-> 1_5_a{Classical Averages}
+    -<1-> 1_6_a{Quantum Distributions}
+    -<1-> 1_7_a{The Quantum Gas}
+
+    -<1-> 1_8_a{Photon Gas}
+	-<1-> 1_9_a{The Laser}
+	-<1-> 1_10_a{Specific Heats}
+	-<1-> 1_11_a{Debye Model}
+
+--- slide: Debye Model ---
+
+	- There is a lower limit to phonon wavelengths 
+	\implies{In practice: \qquad $\frac{1}{2} \lambda_{\min}  = a=$ the lattice constant } 
+	
+	- A minimum wavelength indicates maximum frequency and maximum energy $E_{\max }$ for the phonons
+
+{8.5cm}
+
+	- The speed of phonons is not the speed of light, but rather the speed of sound $v_{s}$ in the material
+
+- Phonons can oscillate along two transverse directions, but also longitudinal vibrations are allowed
+
+- With equal speeds for both transverse and longitudinal oscillations, the phononic density of states must be multiplied by $3 / 2$
+
+[FIGURE: SOM_Figure_30_cropped.png]
+
+--- slide: Debye Model ---
+
+	- Now we can write the formula for the energy of a phonon system:
+\[
+U_{\text {phonon }}  = \int_{0}^{E_{\max}} E \mathbb{N}(E) D(E) d E
+ = 
+ \int_{0}^{E_{\max }} E \frac{1}{e^{E / k_{B} T}-1} \frac{12 \pi V}{h^{3} v_{S}{ }^{3}} E^{2} d E
+\]
+
+- To perform the integral, we need an estimate for the maximum
+
+{7.3cm}
+
+	 - energy $E_{\max }$, and link it to the smallest wavelength $2 a$
+
+- Consider the atoms in a cubic volume of a crystalline solid 
+
+- Number of atoms on one edge is $N^{1 / 3}$, and spacing between atoms is $L / N^{1 / 3}$ 
+- \implies{ Solid supports phonons, with the smallest phonon wavelength being $2 L / N^{1 / 3}$}
+
+[FIGURE: SOM_Figure_31.png]
+
+--- slide: Debye Model ---
+
+ \fontsize{11.5}{13}\selectfont 
+
+	- Due to the periodicity of the solid, the allowed wave vector $\mathbf{k}$ values are discretized: a single phononic state occupies a volume of  $( 2 \pi /L )^{3}$ (in the so-called $\mathbf{k}$-space/state space)
+
+{8cm} 
+ \fontsize{11.5}{13}\selectfont 
+
+- Note, $\mathbf{k}$ is basically a vector (k=$|\mathbf{k}|$), it may point at any direction, allowed phononic states form a sphere!
+
+- The system has in total $N$ states, which must be equal to the product of the density and the volume of states (in $\mathbf{k}$-space):
+\[
+
+N & =  \bigg( \frac{L}{2\pi} \bigg)^{3} \bigg( \frac{4 \pi}{3} k_{\max }^{3} \bigg)  \\
+\Rightarrow \qquad k_{\max } & =  \bigg( \frac{8\pi^3}{L^3} \frac{3N}{4\pi} \bigg) ^{1 / 3} \\
+& =  \bigg( \frac{6 \pi^{2} N}{L^{3}} \bigg) ^{1 / 3}  =  \bigg( \frac{6 \pi^{2} N}{V} \bigg) ^{1 / 3}
+
+\]
+
+[FIGURE: SOM_Figure_32.png]
+
+--- slide: Debye Model ---
+
+	- Having derived the maximum wave number, we can now estimate maximum energy of the phonons:
+\[
+E_{\max }  =  \frac{h v_{s} k_{\max }}{2 \pi}  =  \frac{h v_{s}}{2 \pi} ( \frac{6 \pi^{2} N}{V} ) ^{1 / 3}  =  h v_{s} ( \frac{3 N}{4 \pi V} ) ^{1 / 3} \,, \qquad E=\hbar \omega ~and~\omega = v_s k
+\]
+
+- Here, we have assumed that the speed of the propagating waves in the solid is the same as the speed of sound, verified experimentally, and that all phonons move with same speed 
+
+- Setting $E_{\max }=k_{B} T_{D}$ we get the maximum energy expressed in units of temperature, with so-called Debye temperature , which obviously depends on properties of the given material, such as $N / V$ and $v_{s}$:
+\[
+T_{D}  = \frac{E_{\max }}{k_{B}}  = \frac{h v_{S}}{k_{B}} \bigg( \frac{3 N}{4 \pi V} \bigg) ^{1 / 3}
+\]
+
+--- slide: Debye Model ---
+
+	- With the maximum energy derived, we can return to the original integral for the total energy of the system:
+	$$
+	U_{\text {phonon}}  =   \int_{0}^{k_{B} T_{D}} E \frac{1}{e^{E / k_{B} T}-1} \frac{9 N}{ ( k_{B} T_{D} ) ^{3}} E^{2} d E  = 9 k_{B} N \frac{T^{4}}{T_{D}^{3}} \int_{0}^{T_{D} / T} \frac{x^{3}}{e^{x}-1} d x
+	$$
+	where we have changed the variable $E$ into $x$ $(x \equiv E/k_{B} T)$
+- For a mole of material $N=N_{A}$, and since $k_{B} N_{A}=R$, we obtain finally:
+\[
+U_{phonon,\,per mole}  = 9 R \frac{T^{4}}{T_{D}^{3}} \int_{0}^{T_{D} / T} \frac{x^{3}}{e^{x}-1} d x \qquad
+\]
+
+- Unfortunately, the integral cannot be calculated analytically, we need to rely on numerical integration, and compare with experimental data
+
+--- slide: Debye Model ---
+
+	- The Debye model described above, fits well with experimental data on heat capacities, as is seen in the below Figure
+	
+	- The derivation was quick\;\&\;dirty, rigorous one will be given in our introductory course on solid-state physics!
+
+[FIGURE: SOM_Figure_33.png]
+
+
+======================================================================
+SUOMI / FINNISH (source: Kappaleet/)
+======================================================================
+
+## 1. Statistinen Mekaniikka (luvun yleiskatsaus)
+
+--- slide: 1. Statistinen Mekaniikka ---
+
+    -<1-> 1_1_a{Yksinkertainen Termodynaaminen Systeemi}
+    -<1-> 1_2_a{Entropia ja Lämpötila}	
+    -<1-> 1_3_a{Einsteinin Kiinteä Aine}	
+    -<1-> 1_4_a{Boltzmannin Jakauma}
+    -<1-> 1_5_a{Klassiset keskiarvot}
+    -<1-> 1_6_a{Kvanttijakaumat}
+    -<1-> 1_7_a{Kvanttikaasu}
+
+    -<1-> 1_8_a{Fotonikaasu}
+	-<1-> 1_9_a{Laseri}
+	-<1-> 1_10_a{Ominaislämpökapasiteetti}
+	-<1-> 1_11_a{Debyen Malli}
+
+--- slide: Yksinkertainen Termodynaaminen Systeemi ---
+
+	- Statistisen mekaniikan työkalujen avulla voidaan ymmärtää ja ennustaa systeemeitä, joiden hiukkaslukumäärä on valtava
+
+- Mitä enemmän on hiukkasia/kappaleita, sitä enemmän on tuntemattomia suureita
+- Suuri hiukkaslukumäärä parantaa systeemin käyttäytymisen ennustettavuutta: keskiarvojen ja niiden kehityksen edustavuus paranee 
+
+- Termodynaaminen systeemi on systeemi, jonka hiukkaslukumäärä on tarpeeksi suuri, jotta ennusteista alkaa tulemaan tarkkoja
+
+- Statistinen mekaniikka:
+	- 
+		- klassinen
+		- ei ole 'modernia' fysiikkaa (ts. ei pohjaudu kvanttimekaniikkaan)
+		- MUTTA sovelletaan monilla fysiikan osa-alueilla!
+
+--- slide: Yksinkertainen Termodynaaminen Systeemi ---
+
+ ($N = 4$)
+
+	- Kuinka neljä (erotettavissa olevaa) hiukkasta voidaan järjestää kaksiosaiseen huoneeseen:
+
+[FIGURE: SOM_Figure_2_a.png]
+
+[FIGURE: SOM_Figure_2_b.png]
+
+--- slide: Yksinkertainen Termodynaaminen Systeemi ---
+
+ ($N$ kasvaa)
+
+{6.5cm}
+
+	- Kun $N = 4$, on yhteensä 5 vaihto\-eh\-toista arvoa $N_{R}\;(\,= 0,1,2,3,4)$
+	- Kuvan~3a jakaumassa $\Omega = \Omega ( N_{R} )$ näkyy heikohko maksimi $N_{R} = 2 = 1 / 2 N$ 
+	
+	- Kun $N = 4$, jakauma on leveä, mutta jos $N$:ää kasvatetaan, jakauma kaventuu
+	
+	- Kaikissa tapauksissa maksimi saavutetaan kun $N_{R}  =  \frac{1}{2} N$
+
+	- Huomaa että suurilla ja samankokoisilla huoneilla ja $N$:n arvoilla, molemmissa huoneissa on todennäköisesti lähes sama määrä hiukkasia, vaikka yksittäisen hiukkasen paikasta ei tiedetä mitään
+
+[FIGURE: SOM_Figure_3.png]
+
+--- slide: Yksinkertainen Termodynaaminen Systeemi ---
+
+	- Oletetaan hiukkaset 'ilma-molekyyleiksi' ja huoneet samankokoisiksi,  todennäköisintä on molemmissa huoneissa on lähes sama määrä molekyylejä 
+	- Tämä voidaan sanoa suurella suhteellisella tarkkuudella/luotettavuudella...
+	
+	- ...vaikkei yksittäisten molekyylien sijainteja tiedetäkään
+
+[FIGURE: FYS_1627_SSP-4.pdf]
+
+--- slide: Yksinkertainen Termodynaaminen Systeemi ---
+
+ (Mikro- ja makrotilat)
+
+{8.5cm}
+	
+	- Esimerkki selventää mikrotilan ja makrotilan käsitteitä 
+
+- Kuvassa 3d 
+
+[FIGURE: SOM_Figure_3_d.png]
+
+ jakauman piikki nousee arvoon $10^{3 \cdot 10^{22}}$ , eli on olemassa $10^{3 \cdot 10^{22}}$ erilaista tapaa järjestää molekyylit huoneeseen, jos molekyylit on jaettu kahteen yhtäsuureen osaan\\
+
+	-  (vasempaan ja oikeaan) (joiden hiukkaslukumääriä kuvaa $ N_{\mathrm{R}} )$ 
+
+- Jokainen 'tapa' vastaa yhtä mikrotilaa.
+Jos tietäisimme jokaisen molekyylin tilan (sijainnin), voisimme määritellä jokaisen (mikro)tilan
+
+- Kaikki $10^{3 \times 10^{22}}$ mikrotilaa kuuluvat ryhmään jossa molekyylit ovat jakautuneet tasaisesti kahteen yhtäsuureen puoliskoon. Kaikilla $10^{3 \times 10^{22}}$ mikrotilalla $N_{R} = \frac{1}{2} N$
+
+- Tämä on yksi makrotila. Muilla makrotiloilla $N_{R}$:n arvo poikkeaa arvosta $N_{R} = \frac{1}{2} N$
+
+--- slide: Yksinkertainen Termodynaaminen Systeemi ---
+
+ (Tasapainotila)
+
+\seminormal
+
+	- Lähtemällä liikkeelle tilanteesta, jossa kaksiosaisessa huoneessa on huomattavan erisuuret määrät hiukkasia eri osissa, systeemi kehittyy kohti tilaa jonka todennäköisyys on suurin, ts. kohti makrotilaa jonka mikrotilojen lukumäärä on suurin, eli kohti tilannetta jossa molekyylejä on sama määrä molemmissa osissa huonetta
+
+- Todennäköisintä makrotilaa kutsutaan tasapainotilaksi
+
+- Termodynaaminen systeemi kehittyy spontaanisti kohti tasapainotilaa ja saavuttaa lopulta tasapainotilan
+
+{8.5cm}
+
+	- Lähtiessä liikkeellä epätasapainotilasta, systeemin makro- ja mikrotilat muuttuvat
+
+- Tasapainossa systeemin mikrotilat muuttuvat, mutta ne kaikki kuuluvat yhteen ja samaan makrotilaan (tai ovat sitä lähellä...), makrotilaa jolla on tietty  $ N_{\mathrm{R}}$
+
+[FIGURE: SOM_Figure_3_d.png]
+
+## 1.2 Entropia ja Lämpötila
+
+--- slide: 1. Statistinen Mekaniikka ---
+
+    -<1-> 1_1_a{Yksinkertainen Termodynaaminen Systeemi}
+    -<1-> 1_2_a{Entropia ja Lämpötila}	
+    -<1-> 1_3_a{Einsteinin Kiinteä Aine}	
+    -<1-> 1_4_a{Boltzmannin Jakauma}
+    -<1-> 1_5_a{Klassiset keskiarvot}
+    -<1-> 1_6_a{Kvanttijakaumat}
+    -<1-> 1_7_a{Kvanttikaasu}
+
+    -<1-> 1_8_a{Fotonikaasu}
+	-<1-> 1_9_a{Laseri}
+	-<1-> 1_10_a{Ominaislämpökapasiteetti}
+	-<1-> 1_11_a{Debyen Malli}
+
+--- slide: Entropia ja Lämpötila ---
+
+ (Entropia)
+
+	- Entropia $S$ on suure joka on verrannollinen  'eri tapojen' $W$ logaritmiin (ts. multiplisiteetin $\Omega$ logaritmiin). Boltzmannin vakio $k_B$ määrittelee entropian $S$ yksiköt
+	\[
+S  = k_{B} \ln W \qquad \& \qquad S  =  k_{B} \ln \Omega \qquad \& \qquad [S]=\frac{J}{K}
+\]
+
+- Aiemmin näimme että systeemi pyrkii kehittymään kohti tasapainotilaa, ts. kohti suurinta $W$:n arvoa
+
+- Termodynamiikan toisen pääsäännön mukaan, (suljetun systeemin) entropia kasvaa: 
+\[
+\Delta S \geq 0
+\]
+Tarkastellaan tilojen lukumäärää $W$: 
+\[
+\Delta S  = S_{f}  - S_{i}  = k_{B} [  \ln W_{f} -\ln W_{i} ]  = k_{B} \ln \frac{W_{f}}{W_{i}} 
+\]
+
+--- slide: Entropia ja Lämpötila ---
+
+ (Entropia suljetussa systeemissä)
+
+\footnote{{Kertaa eristetyn, suljetun, ja avoimen systeemin määritelmät.}}
+	
+{8.5cm}
+
+	- Tarkastellaan kahta kappaletta, 1 ja 2, termisessä kontaktissa. Lämpöä siirtyy ja entropia muuttuu:
+\[ 
+ d S_{t o t} = d S_{1}  + d S_{2} 
+ \] 
+- Oletetaan että entropia muuttuu vain energianmuutoksen takia (ok, jos vain lämpö 
+
+- siirtyy, ei esim. hiukkaset), joten $S=S(E)$,~jolloin
+\[ 
+ d S =  \bigg( \frac{\partial S}{\partial E} \bigg) \,d E 
+ \] 
+- Eli $d S_{t o t} = ( \frac{\partial S}{\partial E} )_{2} d E_{2}  +  (  \frac{\partial S}{\partial E} )_{1} d E_{1}$,
+ja koska energiaa siirtyy vain kappaleiden 1 ja 2 välillä, ehto $d E_{1}=-d E_{2}$ johtaa yhtälöön
+\[ 
+ d S_{tot} =   [   \bigg( \frac{\partial S}{\partial E}  \bigg)_{2} -  \bigg( \frac{\partial S}{\partial E}  \bigg)_{1}  \;] d E_{2}
+ \]
+
+[FIGURE: SOM_Figure_4.png]
+
+--- slide: Entropia ja Lämpötila ---
+
+ (Lämpötilan ja entropian yhteys)
+
+	- Tasapainossa kappaleilla on sama lämpötila
+
+- Tiedämme myös että tasapainotilassa entropia $S$ ei enää kasva, eli $d S_{t o t}=0$ mistä seuraa 
+\[ 
+  \bigg(  \frac{\partial S}{\partial E}  \bigg)_{2} =   \bigg( \frac{\partial S}{\partial E}  \bigg)_{1} 
+ \]
+- Tämä ehto johtaa näppärään lämpötilan määritelmään: 
+
+- 
+	- Tasapainossa lämpötilat $T_1  =   T_2 \equiv T$ 
+	-  Lämpötila $T$ voidaan siis määritellä yhtälöllä 
+	 \[
+	 \frac{1}{T} \equiv \bigg( \frac{\partial S}{\partial E} \bigg)\,, \qquad \,~missä \qquad S  = k_{B} \ln W
+	 \]
+
+--- slide: Entropia ja Lämpötila ---
+
+- Mitä tarkoittaa entropian $S$ derivaatta energian $E$ suhteen? 
+
+	- Fysikaalisessa systeemissä tilojen lukumäärä ($W$) riippuu energiasta (suurempi energia, suurempi multiplisiteetti). Fysikaalisesti järkevää derivoida
+
+- Usein $W=W(E)$ eli myös entropia $S=S(E)$
+- Koska energian muutos $dE$ on kappaleiden välillä siirtyneen lämmön määrä ($dE=dQ$),  saadaan
+\[
+	 \frac{1}{T}  =   \frac{\partial S}{\partial E}  \qquad \Rightarrow \qquad dS  =  \frac{dQ}{T} 
+	 \]
+minkä avulla entropian muutokselle $\Delta S$ saadaan relaatio
+\[ 
+ \Delta S  = S_{2}  -  S_{1} = \int_{i}^{f} \frac{d Q}{T} 
+ \]
+
+## 1.3 Einsteinin Kiinteä Aine
+
+--- slide: 1. Statistinen Mekaniikka ---
+
+    -<1-> 1_1_a{Yksinkertainen Termodynaaminen Systeemi}
+    -<1-> 1_2_a{Entropia ja Lämpötila}	
+    -<1-> 1_3_a{Einsteinin Kiinteä Aine}	
+    -<1-> 1_4_a{Boltzmannin Jakauma}
+    -<1-> 1_5_a{Klassiset keskiarvot}
+    -<1-> 1_6_a{Kvanttijakaumat}
+    -<1-> 1_7_a{Kvanttikaasu}
+
+    -<1-> 1_8_a{Fotonikaasu}
+	-<1-> 1_9_a{Laseri}
+	-<1-> 1_10_a{Ominaislämpökapasiteetti}
+	-<1-> 1_11_a{Debyen Malli}
+
+--- slide: Einsteinin Kiinteä Aine ---
+
+ (Mallin alkuoletukset)
+
+	- Einstein kehitti yksinkertaisen mallin kiinteille aineille: 
+	- 
+	- Kiteen atomit voivat värähdellä kolmessa suunnassa ($x$, $y$, $z$)
+
+[FIGURE: Tikz_SOM_Statistical_figures.pdf]
+
+	- Atomit värähtelevät muista atomeista riippumatta (oletus/approksimaatio)
+	- Kiteen rakenne määrittelee tasapainotilan
+
+[FIGURE: Tikz_SOM_Statistical_figures.pdf]
+
+	- Värähtely on harmonista (oletus/approksimaatio), ts. Hooken laki pätee:  $F=-kx$
+
+[FIGURE: Tikz_SOM_Statistical_figures.pdf]
+
+--- slide: Einsteinin Kiinteä Aine ---
+
+ (Mallin alkuoletukset)
+
+	- Oletetaan kiinteän kappaleen koostuvan $N$:stä atomista, jotka muodostavat siis $3N$ värähtelijää
+- Kaikilla on mikroskooppisen rakenteen määrittelemä sama perustila 
+- Ratkaisemalla kvanttimekaanisen harmonisen värähtelijän ongelma, systeemin sallituiksi energiatiloiksi saadaan $h f_{0}$:n välein esiintyvät energiatilat, alkavat arvosta $1 / 2 h f_{0}$ 
+
+{7.5cm}
+
+	- Yhden värähtelijän energia on
+\[ 
+ \varepsilon_{j} = \bigg( j  +\frac{1}{2} \bigg)\,  h f_{0}  \hspace{1.9cm}
+ \]
+- $j=0 \Leftrightarrow$ perustila
+\[ 
+ \varepsilon_{j=0} = \frac{1}{2} h f_{0}  \hspace{1.9cm}
+ \]
+i.\,e. $j=$~energiatilan indeksi
+
+[FIGURE: Tikz_SOM_Statistical_figures.pdf]
+
+[FIGURE: Tikz_SOM_Statistical_figures.pdf]
+
+--- slide: Einsteinin Kiinteä Aine ---
+
+	- Sallittujen tilojen lukumäärä on periaatteessa rajoittamaton
+
+[FIGURE: Tikz_SOM_Statistical_figures.pdf]
+ 
+	- Kaksi tai useampi värähtelijää voi olla samassa tilassa
+	- Kappaleen harmoniset värähtelijät vaihtavat keskenään jatkuvasti energiakvantteja $h f_{0}$ (esim. termisiä viritystiloja)
+
+[FIGURE: SOM_Figure_5.png]
+
+--- slide: Einsteinin Kiinteä Aine ---
+
+ (Kokonaisenergia)
+
+	- Tarkastellaan vielä harmonisten \\
+		värähtelijöiden energiatiloja \\
+
+	- Aiemmin oletimme $N$\\
+	 identtistä mutta toisistaan erotet-\\
+	 tavissa olevaa 
+	 harmonista värähtelijää/oskillaattoria
+
+- $i$:nen värähtelijän energia (riittää \\
+	laskea perustilasta ylöspäin...) \\
+	on muotoa
+\[ 
+ E_{n_{i}}  =  n_{i} \hbar \omega_{0} \quad \big( n_{i} = 0,1,2, \ldots \big)  \qquad \qquad
+\]
+jolloin systeemin kokonaisenergiaksi saadaan:
+\[
+ E  = \sum_{i=1}^{N}  E_{n_{i}}  = \sum_{i=1}^{N} n_{i} \hbar \omega_{0}  = M \hbar \omega_{0} \quad \text { \bigg(nyt: } M=\sum_{i=1}^{N} n_{i} \bigg) 
+\]
+
+[FIGURE: SOM_Figure_5.png]
+
+--- slide: Einsteinin Kiinteä Aine ---
+
+ (Makroskooppiset ominaisuudet)
+
+	- Termisessä tasapainotilassa, systeemin värähtelijöillä on erisuuret energiat, energiat muodostavat jakauman
+
+-  Tilastollisen analyysin avulla yksittäisen värähtelijän $i$ todennäköisyys  olla energiatilalla $n_i$ voidaan laskea 
+
+- Todennäköisyys saada otos $n_i$ on
+\[ 
+ P_{n_i} = \frac{\text { tilojen lukumäärä joilla voi saavuttaa otoksen $n_i$ }}{\text { kaikkien mahdollisten tilojen lukumäärä }} 
+ \]
+- Oletamme siis että todennäköisyys seuraa tilojen lukumäärää $W$, joilla voi saavuttaa otoksen 
+
+- Oletamme myös että jokainen (mikro)tila on yhtä todennäköinen
+
+--- slide: Einsteinin Kiinteä Aine ---
+
+ (Tilan todennäköisyys, binomikerroin)
+
+- Todennäköisyys että värähtelijä $i$ on energiatilassa $E_{n_{i}}$~$(=n_{i} $ energian kvanttiluku) on
+\[ 
+ P_{n_{i}} = \frac{\text { energiatilojen lukumäärä, joilla on sama } n_{i}}{\text { tilojen lukumäärä joihin energia voidaan jakaa}} 
+ \]
+
+- Yhtälö on konseptuaalisesti intuitiivinen, mutta ei helpota käytännön laskemista
+\implies{ tarvitaan lisää tilastollista analyysiä (tai todennäköisyyslaskennan perusteita)}
+
+- Tilojen kokonaislukumäärä, eli kuinka $N$ värähtelijää ($i$:s värähtelijä tilalla $n_i$) voivat muodostaa kokonaisluvun $M = \sum_{i=1}^N n_i$ vastaa binomikerrointa
+\[
+\Omega(N, M)  = \frac{(M+N-1) !}{M !(N-1) !} \equiv (\!\! {c}
+M+N-1 \\
+M
+  \!\! ) 
+\]
+
+--- slide: Einsteinin Kiinteä Aine ---
+
+ (Tilan todennäköisyys)
+
+- Mahdollisuuksien/tilojen lukumäärä, joiden kokonaisenergia vastaa kvanttilukua $n_i$ saadaan binomikertoimella
+\[
+ (\!\! {c}
+ \big( M-n_{i} \big) +(N-1)-1 \\
+ \big( M-n_{i} \big) 
+ \!\!) 
+\]
+- jolloin tämän makrotilan todennäköisyydeksi saadaan
+
+{6cm}
+
+-  
+	\[
+P_{n_{i}}  =  \frac{ (\!\! {c}
+ \big( M-n_{i} \big) +(N-1)-1 \\
+ \big( M-n_{i} \big) 
+  \!\!)  }{
+ (\!\! {c}
+M+N-1 \\
+M
+ \!\!) }
+\]
+
+[FIGURE: SOM_Figure_6.png]
+
+\\[-2\baselineskip]
+- Binomikertoimien ongelma on että niitä on vaivalloista käyttää
+\implies{ motivoi Boltzmannin jakauman \\ kehittämisen }
+
+## 1.4 Boltzmannin Jakauma
+
+--- slide: 1. Statistinen Mekaniikka ---
+
+    - 1_1_a{Yksinkertainen Termodynaaminen Systeemi}
+    - 1_2_a{Entropia ja Lämpötila}	
+    - 1_3_a{Einsteinin Kiinteä Aine}	
+    - 1_4_a{Boltzmannin Jakauma}
+    - 1_5_a{Klassiset keskiarvot}
+    - 1_6_a{Kvanttijakaumat}
+    - 1_7_a{Kvanttikaasu}
+
+    - 1_8_a{Fotonikaasu}
+	- 1_9_a{Laseri}
+	- 1_10_a{Ominaislämpökapasiteetti}
+	- 1_11_a{Debyen Malli}
+
+--- slide: Boltzmannin Jakauma ---
+
+	- 
+
+--- slide: Boltzmannin Jakauma ---
+
+	-
+
+## 1.5 Klassiset keskiarvot
+
+--- slide: 1. Statistinen Mekaniikka ---
+
+    -<1-> 1_1_a{Yksinkertainen Termodynaaminen Systeemi}
+    -<1-> 1_2_a{Entropia ja Lämpötila}	
+    -<1-> 1_3_a{Einsteinin Kiinteä Aine}	
+    -<1-> 1_4_a{Boltzmannin Jakauma}
+    -<1-> 1_5_a{Klassiset keskiarvot}
+    -<1-> 1_6_a{Kvanttijakaumat}
+    -<1-> 1_7_a{Kvanttikaasu}
+
+    -<1-> 1_8_a{Fotonikaasu}
+	-<1-> 1_9_a{Laseri}
+	-<1-> 1_10_a{Ominaislämpökapasiteetti}
+	-<1-> 1_11_a{Debyen Malli}
+
+--- slide: Klassiset keskiarvot ---
+
+ (Molekyylien vauhtijakauma)
+
+	- Tarkastellaan seuraavaksi ideaalikaasusta koostuvaa systeemiä, jossa yksittäisen molekyylin energia on
+\[
+E  = \frac{1}{2} m ( v_{x}^{2}+v_{y}^{2}+v_{z}^{2} )  = \frac{1}{2} m v^{2}
+\]
+
+- Oletetaan että molekyylien nopeuksille on olemassa jakauma, mutta emme vielä tiedä jakauman tarkkaa muotoa
+
+- Löytääksemme mielivaltaisen keskinopeutta kuvaavan funktion $f=f(v)$, meidän täytyy integroida 3D-tilavuudessa olevien molekyylien nopeuksien yli, eli nopeusvektorilla on 3 komponenttia
+
+--- slide: Klassiset keskiarvot ---
+
+ (Molekyylien vauhtijakauma)
+
+- Integrointi tilavuuden $V$ yli sieventyy pois, jolloin saadaan:
+\[
+\overline{f(v)}  = \frac{ \int f(v) e^{-\frac{1}{2} m v^{2} / k_{B} T} d V' d v_{x} d v_{y} d v_{z}}{ \int e^{-\frac{1}{2} m v^{2} / k_{B} T} d V' d v_{x} d v_{y} d v_{z} }  = \frac{ \int f(v) e^{-\frac{1}{2} m v^{2} / k_{B} T} d v_{x} d v_{y} d v_{z}}{ \int e^{-\frac{1}{2} m v^{2} / k_{B} T} d v_{x} d v_{y} d v_{z}}
+\]
+- Koska haemme siis vauhtijakaumaa (ei nopeus), on hyödyllistä siirtyä karteesisesta kordinaatistosta pallo koordinaatistoon käyttäen muunnosta: 
+\[
+d v_{x} d v_{y} d v_{z}  = v^{2} d v \sin \theta \,d \theta \,d \phi
+\]
+
+--- slide: Klassiset keskiarvot ---
+
+ (Todennäköisyysjakauma)
+
+	- Näin integraali muuttuu muotoon
+	\[
+	\overline{f(v)}  =  \frac{ \int f(v) e^{-\frac{1}{2} m v^{2} / k_{B} T} v^{2} d v \sin \theta d \theta d  \phi }{ \int e^{-\frac{1}{2} m v^{2} / k_{B} T} v^{2} d v \sin \theta d \theta d  \phi }
+	 =  \frac{ \int_{0}^{\infty} f(v) e^{-\frac{1}{2} m v^{2} / k_{B} T} v^{2} d v}{ \int_{0}^{\infty} e^{-\frac{1}{2} m v^{2} / k_{B} T} v^{2} d v}
+	\]
+	
+ missä nimittäjän integraalit, ja muuttujien $\theta$ ja $\phi$  yli tapahtuvat integraalit voidaan ratkaista johtaen relaatioon
+\[
+\overline{f(v)}  =  \int_{0}^{\infty}  f(v) [ \sqrt{2/\pi} \bigg( \frac{m}{k_{B} T}  \bigg)^{3 / 2} v^{2} e^{-\frac{1}{2} m v^{2} / k_{B} T}] d v
+\]
+
+- Kaavan integrandin nähdään nyt muistuttavan todennäköisyysjakaumaa $P=P(v)$:
+\[
+\overline{f(v)}  =  \int f(v) d P =  \int f(v) \frac{d P}{d v} d v
+\]
+
+--- slide: Klassiset keskiarvot ---
+
+ (Maxwellin–Boltzmannin vauhtijakauma)
+
+- Näin sulkujen sisällä oleva termi voidaan tulkita kaasumolekyylien vauhtien todennäköisyysjakaumaksi
+\[
+P(v)_{\text {Maxwell}}  =  \frac{d P}{d v}  =  \sqrt{\frac{2}{\pi}}   \bigg( \frac{m}{k_{B} T} \bigg)^{3 / 2} v^{2} e^{-\frac{1}{2} m v^{2} / k_{B} T}
+\]
+
+- Jos me lisäämme molekyylien tilatiheyden $n=N / V$ kaavaan, jakauman yksiköksi saadaan hiukkasta/yksikkötilavuus, mutta jakauma sisältää informaatiota molekyylien vauhtien todennäköisyysjakaumasta
+\[
+n(v)_{\text {Maxwell }}  = \frac{N}{V} \sqrt{\frac{2}{\pi}}   \bigg( \frac{m}{k_{B} T} \bigg)^{3 / 2} v^{2} e^{-\frac{1}{2} m v^{2} / k_{B} T}
+\]
+Tätä jakaumaa kutsutaan Maxwellin vauhtijakaumaksi, tai\\
+Maxwellin–Boltzmannin vauhtijakaumaksi
+
+--- slide: Klassiset keskiarvot ---
+
+ (Maxwellin–Boltzmannin vauhtijakauma)
+
+[FIGURE: SOM_Figure_8.png]
+
+{7.5cm}
+	
+- Huomaa että vauhtijakauma kasvaa ylöspäin nollavauhdista (kuva~8)
+
+- Alkuun todennäköisyys kasvaa tilan energian kasvaessa, koska jakauman neliöllinen nopeusriippuvuus hallitsee käytöstä
+
+- Korkeammilla tiloilla/nopeuksilla mie\-hi\-tyksen toden\-näköi\-syys alkaa selkeästi vaimenemaan eksponentiaalisesti energian funktiona
+
+-<1->
+$$
+n(v)_{\text {Maxwell }}  = \frac{N}{V} \sqrt{\frac{2}{\pi}}  \bigg( \frac{m}{k_{B} T} \bigg)^{3 / 2} v^{2} e^{-\frac{1}{2} m v^{2} / k_{B} T}
+$$
+
+## 1.6 Kvanttijakaumat
+
+--- slide: 1. Statistinen Mekaniikka ---
+
+    -<1-> 1_1_a{Yksinkertainen Termodynaaminen Systeemi}
+    -<1-> 1_2_a{Entropia ja Lämpötila}	
+    -<1-> 1_3_a{Einsteinin Kiinteä Aine}	
+    -<1-> 1_4_a{Boltzmannin Jakauma}
+    -<1-> 1_5_a{Klassiset keskiarvot}
+    -<1-> 1_6_a{Kvanttijakaumat}
+    -<1-> 1_7_a{Kvanttikaasu}
+
+    -<1-> 1_8_a{Fotonikaasu}
+	-<1-> 1_9_a{Laseri}
+	-<1-> 1_10_a{Ominaislämpökapasiteetti}
+	-<1-> 1_11_a{Debyen Malli}
+
+--- slide: Kvanttijakaumat ---
+
+ (Hiukkasten erotettavuus)
+
+	- Tähän asti on tarkasteltu klassisesti käyttäytyviä hiukkasia, jotka ovat identtisiä mutta erotettavissa toisistaan 
+	- Todennäköisyysjakauma (tietylle energialle ja lämpötilalle) johdettiin muotoon:
+\[
+P ( E_{n} )  =  A e^{-E_{n} / k_{B} T}  = \frac{e^{-E_{n} / k_{B} T}}{\sum_{n} e^{-E_{n} / k_{B} T}}  = \frac{1}{\sum_{n} e^{-E_{n} / k_{B} T}} \frac{1}{e^{E_{n} / k_{B} T}}  = \frac{1}{B e^{E_{n} / k_{B} T}}  = \frac{1}{e^{\alpha} e^{E_{n} / k_{B} T}}
+\]
+
+- Kun jakauma johdettiin, tarkastelimme yksittäistä energian $E_{n}$ omaavaa hiukkasta ja laskimme monellako tapaa jäljelle jäävä energia voidaan jakaa muiden hiukkasten kesken
+
+--- slide: Kvanttijakaumat ---
+
+ (Hiukkasten erotettavuus)
+
+	- Oletimme implisiittisesti että esim. vaihtoehto $n_{j}=5$ ja $n_{k}=2$ hiukkasille $j$ ja $k$ oli yksi tapa, ja vaihtoehto $n_{j}=2$ ja $n_{k}=5$ hiukkasille $j$ ja $k$ oli toinen tapa, erilainen tapa jakaa systeemin energia 
+
+- Eli oletimme että hiukkasten indeksien muuttaminen vastaa erilaista tapaa jakaa energia (on fysikaalisesti järkevää)
+\implies{ Hiukkasten oletettiin olevan erotettavissa toisistaan }
+
+- Jos hiukkasia ei voida erottaa toisistaan, yllä olevat kaksi tapaa eivät ole eri tapoja!
+
+--- slide: Kvanttijakaumat ---
+
+ (4:n hiukkasen tapaus)
+
+	- Tarkastellaan yksinkertaista neljän hiukkasen tapausta $a$, $b$, $c$ ja $d$, joita sitoo harmonisen värähtelijän potentiaalienergia. Oletamme energian perustilan olevan 0, jolloin hiukkasten energiatiloiksi saadaan 
+	\[ 
+	E_{i}  =  n_{i} \hbar \omega_{0}  = n_{i} \delta E \,\qquad (n_{i}=0,1,2, \ldots )
+	\]
+
+- Tarkastellaan tilannetta jossa systeemin kokonaisenergia on $2 \delta E$, eli $n_{a} +n_{b} +n_{c}+n_{d}   = 2$
+
+{3.0cm}
+
+	- Kuinka systeemin\\
+		energia voidaan \\
+		ja\-kaa hiuk\-kasten kesken?
+
+[FIGURE: SOM_Statistical_Table_1.png]
+
+--- slide: Kvanttijakaumat ---
+
+ (4:n hiukkasen tapaus)
+
+	- Olemme nyt ottaneet huomioon kuinka monta kertaa kvanttiluvut ovat ilmaantuneet, yhteensä 40. Luvut siis normeerataan jotta saisimme todennäköisyysjakauman, eli vaadimme että on voimassa
+\[
+\sum P_{i}  = 1
+\]
+- Todennäköisyydet on lopuksi kerrottu 4:llä että saamme todennäköisen\\
+
+{7.05cm}
+
+- hiukkaslukumäärän (joista jokaisella on omat kvanttilukunsa), summaksi tulee nyt 4, ts. yhteensä 4 hiukkasta
+
+	- Huomio: Todennäköinen hiukkas\-luku\-määrä tietyllä tilalla pienenee energian kasvaessa 
+
+[FIGURE: Tikz_SOM_Statistical_figures.pdf]
+
+--- slide: Kvanttijakaumat ---
+
+ (Ei-erotettavat hiukkaset)
+
+	- Kvanttimekaanisten hiukkasten aaltoluonteen takia, ja Heisenbergin epätarkkuusperiaatteen takia, menetämme mahdollisuuden erottaa yksittäisiä hiukkasia
+
+- Esimerkiksi kuvassa
+
+[FIGURE: Tikz_SOM_Statistical_figures.pdf]
+
+, emme pysty määrittämään mikä neljästä vaihtoehdosta tapahtui kun kaksi identtistä ei-erotettavaa hiukkasta käyvät de Broglien aallonpituuden etäisyydellä toisistaan
+
+{6.5cm}
+
+	- Hiukkasia ei voida indeksöidä, ja toisistaan oikeasti eroavat tilat eroavat toisistaan vain kun erisuuri määrä hiukkasia on toisistaan poikkeavilla energiatiloilla
+
+--- slide: Kvanttijakaumat ---
+
+ (Bosonit vs. fermionit)
+
+	- Kvanttimekaniikasta muistamme että aaltofunktioiden täytyy toteuttaa seuraavat ehdot:
+
+- Bosonit: {\small Identtisten bosonien aaltofunktioiden täytyy olla symmetrisiä kahden bosonin vaihdon suhteen. Oletetaan kaksi identtistä bosonia yksihiukkastiloissa $n$ ja $n'$ ja kuvataan näitä tiloja aaltofunktioilla $\psi_{n}$ ja $\psi_{n'}$. Jos merkitsemme bosonit 1 ja 2, yhdistetyn kahden hiukkasen systeemin tilaa kuvataan aaltofunktiolla joka on muotoa $\psi_{n}(1) \psi_{n'}(2)$.
+ Mutta koska hiukkaset ovat erottamattomia, voisimme kirjoittaa systeemin aaltofunktion muotoon $\psi_{n}(2) \psi_{n'}(1)$. Emme voi tietää onko bosoni 1 (vai 2) tilalla $n$ vai $n'$. Koko systeemin aaltofunktion täytyy olla symmetrinen:}
+\[
+\psi_{B E}(1,2)  = \psi_{S}  = \psi_{n}(1) \psi_{n'}(2)  + \psi_{n'}(1) \psi_{n}(2) \, \qquad (symmetrinen)
+\]
+
+- Fermionit: {\small Identtisten fermionien aaltofunktion pitää olla antisymmetrinen:} 
+\[
+\quad \psi_{F D}(1,2)  = \psi_{A}  = \psi_{n}(1) \psi_{n^{\prime}}(2)  - \psi_{n'}(1) \psi_{n}(2) \, \qquad (antisymmetrinen)
+\]
+
+--- slide: Kvanttijakaumat ---
+
+ (Bosonit vs. fermionit)
+
+	- On siis olemassa kahdenlaisia erottamattomia hiukkasia: bosonit (joiden spin on kokonaisluku) ja fermionit (joiden spin on kokonaisluvun puolikas). Tarkastellaan vielä neljän hiukkasen tilaa, jonka kokonaisenergia on $2 \delta E$
+	- Katsomalla taulukkoa 2
+
+[FIGURE: SOM_Statistical_Table_2.png]
+
+, nähdään että tavat jakaa energia selkeästi riippuvat hiukkasten tyypistä!
+
+--- slide: Kvanttijakaumat ---
+
+ (Todennäköisyysjakaumat)
+
+	- Todennäköinen hiukkaslukumäärä edelleen pienenee energian funktiona 
+
+{7.5cm}
+
+	- Bosonit selkeästi tykkäävät toisistaan. Yleisestikin ottaen käy niin että kun bosoni on jollain kvanttitilalla, tämä kasvattaa todennäköisyyttä että toinen identtinen bosoni on samalla kvantti\-tilalla
+
+- Erottamattomat fermionit ($s=1/2$), eivät puolestaan voi olla samalla kvanttitilalla. Eli fermionin miehittäessä tietyn kvanttitilan, toiset fermionit eivät voi olla tällä samalla kvanttitilalla
+
+[FIGURE: SOM_Figure_9.png]
+
+--- slide: Kvanttijakaumat ---
+
+ (Todennäköisyysjakaumat)
+
+	- Toisistaan erotettavissa olevilla hiukkasilla, tilanteista riippuvat todennäköisyysjakaumat konvergoituvat Boltzmannin jakaumaa kohti
+
+- Kvanttimekaanisilla hiukkasilla (toisistaan erottamattomia), jakaumat konvergoivat kohti erilaisia jakaumia:
+- 
+	- Bosonit $\rightarrow$ Bosen–Einsteinin jakauma 
+	- Fermionit $\rightarrow$ Fermin–Diracin jakauma
+
+\[
+
+\mathbb{N}(E) & =  \frac{1}{B e^{E / k_{\mathrm{B}} T}} \,, \qquad Boltzmann~(erotettavat) \\
+\mathbb{N}(E) & =  \frac{1}{B e^{E / k_{\mathrm{B}} T}-1} \,, \qquad Bose–Einstein~(bosonit) \\
+\mathbb{N}(E) & =  \frac{1}{B e^{E / k_{\mathrm{B}} T}+1} \,, \qquad Fermi–Dirac~(fermionit)
+
+\]
+
+--- slide: Kvanttijakaumat ---
+
+ (Jakaumien lämpötilariippuvuus)
+
+	- Suoritetaan esimerkkilaskuja näillä kolmelle jakaumalle käyttäen yksinkertaista yksiulotteista värähtelijää mallisysteeminä (lisää kurssin esimerkeissä)
+		
+	- Muutetaan lämpötilaa ja määritellään referenssilämpötila sellaiseksi että $k_{B} T$ on lähellä erästä energian arvoa $\mathcal{E}$. Implisiittisesti oletetaan että $\mathcal{E}$ on korkein energia jolla hiukkaset voivat olla, jos hiukkaset täyttäisivät kaikki yksihiukkastilat (eli $\mathcal{E}=$~fermienergia)
+	
+	- Suoritetaan lasku kolmelle eri lämpötilalle:
+	- 
+		- $k_{B} T=\frac{1}{5} \mathcal{E}$ \qquad matala lämpötila
+		- $k_{B} T=\mathcal{E}$ \qquad  keskisuuri lämpötila
+		- $k_{B} T=5 \varepsilon$ \qquad  suuri lämpötila
+
+--- slide: Kvanttijakaumat ---
+
+ (Jakaumien lämpötilariippuvuus)
+
+{9.5cm}
+
+	- Saadut kuvaajat kertovat miehitysluvut $\mathbb{N}$ jotka käyttäytyvät kuten aiemmassa 4:n hiukkasen tapauksessa:
+	- {\normalsize $k_{B} T=5 \mathcal{E} \quad$ (korkea lämpötila) }
+	
+		\scriptsize
+		- Korkealla $T$:llä, kaikki kolme jakaumaa selvästikin levenevät samalla tapaa. Sillä ei ole merkitystä ovatko hiukkaset bosoneita, fermioneita vai klassisesti erotettavissa olevia hiukkasia 
+
+- {\normalsize $k_{B} T=\mathcal{E} \quad$ (keskisuuri T) }
+
+\scriptsize
+- Keskisuurella $T$:llä, meillä on aika samanlaiset jakaumat, Bose–Einstein on klassisen jakauman alapuolella keskisuurilla energiatasoilla
+
+- {\normalsize $ k_{B} T=\frac{1}{5} \mathcal{E} \quad \text { (matala lämpötila) }$ }
+	
+	\scriptsize
+	- Matalissa $T$:ssa, Bose–Einstein on selkeästi korkeammalla kuin Boltzmann matalilla energian arvoilla, eli bosonit pakkautuvat matalimmille energiatiloille
+	- Fermi–Dirac muodostaa kummun noin $\mathcal{E}$ arvoon asti (fermienergia) 
+
+[FIGURE: SOM_Figure_10.png]
+
+--- slide: Kvanttijakaumat ---
+
+ (Jakaumien lämpötilariippuvuus)
+
+	- Korkeilla lämpötiloilla $k_{B} T \gg \mathcal{E}$ sekä bosonit että fermionit käyttäytyvät lineaarisesti $<E>\,=k_{B} T$ seuraavat klassista tulosta (erotettavuus ei ole tärkeää näillä lämpötiloilla)
+
+[FIGURE: SOM_Figure_11.png]
+
+{8cm}
+
+	- Energia on matalampi bosoneilla (jotka pakkautuvat pienemmille energiatiloille)
+- Energia on korkeampi fermioneilla (jotka välttelevät jo täytettyjä matalamman ener\-gian tiloja)
+- Matalilla $T$:lla, bosonien keskimääräinen energia lähestyy nollaa, kun taas fermionien energia lähestyy $\frac{1}{2} \mathcal{E}$
+- Matalassa $T$:ssä, bosonit alkavat relaksoitua perustilalleen $\Rightarrow$ supraneste
+
+--- slide: Kvanttijakaumat ---
+
+ (Matalat lämpötilat)
+
+	- Kuva 10 näytti Fermin–Diracin jakauman miehitysluvun $\mathbb{N}$, matalassa\\ 
+
+{7.85cm}
+
+	- lämpötilassa luku lähestyy 1:tä kun $E<\mathcal{E}$ ja putoaa nollaan kun $E>\mathcal{E}$ 
+	- Energia $\mathcal{E}$ tunnetaan fermienergiana $E_{F}$ 
+	
+	- Fermienergia on seurausta siitä että fermionisen systeemin kaikki tilat ovat täysin miehitettyjä tähän energian arvoon asti T = 0 K lämpötilassa (kuva 12)
+
+[FIGURE: SOM_Figure_12.png]
+
+- $E_{F}$ määritellään 
+$T=0\;K$:ssa relaatiolla
+\[
+\mathbb{N} ( E_{F} )_{F D}  = \frac{1}{B e^{E_{F} / k_{B} T}+1}  \equiv \frac{1}{2} \quad \Rightarrow \quad B=e^{-E_{F} / k_{B} T}
+\]
+- Eli 
+
+\[
+\mathbb{N}(E)_{F D}  =  \frac{1}{e^{ ( E-E_{F} )  / k_{B} T}+1}
+\]
+
+--- slide: Kvanttijakaumat ---
+
+ (Fermitaso)
+
+	- On nähty että kun $T \rightarrow 0$, Fermin–Diracin (FD) jakauma alkaa näyttämään askelfunktiolta
+
+[FIGURE: Tikz_SOM_Statistical_figures.pdf]
+
+	- Terminologia on epäselvähkö/monikäsitteinen, joissakin lähteissä fermienergia vastaa miehitystasoa $\mathbb{N}(E)_{F D}=1/2$ nollan kelvinin lämpötilassa ($T=0$\;K)
+	- Termillä fermitaso puolestaan vastaa  miehityslukua $\mathbb{N}(E)_{F D}=1/2$ äärellisessä lämpötilassa
+
+--- slide: Kvanttijakaumat ---
+
+ (Fermitaso vs. fermienergia, fermikaasu)
+
+	- Fermitaso/energia $E_{F}$  on käytännössä vain tapa kuvata normeerausvakiota $B$, mikä on oikeasti lämpötilariippuvainen
+	
+- Eli käytännössä fermitaso $E_{F}$ nousee hieman lämpötilan funktiona fermienergian arvosta $E_{F0}$. Kun fermitasosta puhutaan, yleensä tarkoitetaan lämpötilaa $T \approx 0$, ja fermitason voidaan ajatella olevan vakioarvoinen (eli $E_{F} \approx E_{F0}$)
+
+{6.5cm}
+
+	- Monet fysiikassa tärkeät fermioniset systeemit (johtavuuselektronien kaasu jne.) ovat kaukana MB-raja-arvoa $T \rightarrow 0$ (ne ovat usein tiheitä ja voimakkaasti dege\-ne\-roituneita)
+	-  \normalsize
+	 - Systeemejä täytyy tarkastella kvanttimekaanisesti
+
+[FIGURE: SOM_Figure_13.png]
+
+## 1.7 Kvanttikaasu
+
+--- slide: 1. Statistinen Mekaniikka ---
+
+    -<1-> 1_1_a{Yksinkertainen Termodynaaminen Systeemi}
+    -<1-> 1_2_a{Entropia ja Lämpötila}	
+    -<1-> 1_3_a{Einsteinin Kiinteä Aine}	
+    -<1-> 1_4_a{Boltzmannin Jakauma}
+    -<1-> 1_5_a{Klassiset keskiarvot}
+    -<1-> 1_6_a{Kvanttijakaumat}
+    -<1-> 1_7_a{Kvanttikaasu}
+
+    -<1-> 1_8_a{Fotonikaasu}
+	-<1-> 1_9_a{Laseri}
+	-<1-> 1_10_a{Ominaislämpökapasiteetti}
+	-<1-> 1_11_a{Debyen Malli}
+
+--- slide: Kvanttikaasu ---
+
+	- Tähän asti on paneuduttu hiukkasjakaumiin jotka noudattavat kvanttistatistiikkaa 
+	
+	- Seuraavaksi muodostetaan näistä hiukkasista 3-ulotteinen systeemi, joka on johonkin alueeseen/tilavuuteen rajoitettu, ja missä hiukkaset voivat liikkua vapaasti
+
+- Koska tilavuus on rajoitettu, hiukkasten kvanttijakaumat ovat diskreettejä
+
+- Näissä systeemeissä hiukkaskonsentraatio $(N / V)$ on tarpeeksi korkea että kvanttimekaaninen erottamattomuus täytyy ottaa huomioon
+
+--- slide: Kvanttikaasu ---
+
+ (Hiukkaset äärettömän syvässä kvanttikaivossa)
+
+	- Ongelman dimensionaalisuudesta riippuen, rajoitettu tilavuus voi olla joko 
+	- 
+	 - Yksiulotteinen
+
+[FIGURE: Tikz_SOM_Statistical_figures.pdf]
+
+{\small  (kvanttikaivot, nanolangat, hiilinanoputket) }
+	 - Kaksiulotteinen {\small(grafeeni, ja muut 2D-materiaalit, esim.~ MoS$_2$, hBN, ...) }
+	 - Kolmiulotteinen  {\small (metallien johtavuuselektronit) }
+
+--- slide: Kvanttikaasu ---
+
+	- Kolmenlaisten hiukkasten ((klassisten/erotettavien, fermionien ja bosonien)) kvalitatiivinen kuvaus kvanttikaivossa
+
+[FIGURE: SOM_Figure_14.png]
+
+--- slide: Kvanttikaasu ---
+
+ (Tilatiheys)
+
+	- Lasketaan  tilatiheus $D(E)$ kolmiulotteiselle värähtelijälle
+	
+	- Energiatasot ovat muotoa
+\[
+E_{n_{x}, n_{y}, n_{z}}  =  (n_{x}^{2} +n_{y}^{2} +n_{z}^{2} ) \frac{\pi^{2} \hbar^{2}}{2 m L^{2}}
+\]
+ja käyttämällä
+\[
+ n  \equiv \sqrt{n_{x}^{2}+n_{y}^{2}+n_{z}^{2}}
+\]
+- saamme kuvattua värähtelijän energian kvanttiluvun $n$ funktiona [[$E(n)$]], ja päinvastoin  kvanttiluvun energian funktiona $n=n(E)$:
+\[
+E  = \frac{\pi^{2} \hbar^{2}}{2 m L^{2}} n^{2} \qquad \Rightarrow \qquad n  = \bigg( \frac{2 m L^{2} E}{\pi^{2} \hbar^{2}}  \bigg)^2  =  n(E)
+\]
+
+--- slide: Kvanttikaasu ---
+
+ (Tilatiheys)
+
+{8cm}
+	 \small
+	- Kuvan pallon 1/8-osa on $ (n_{x}, n_{y}, n_{z} )$-avaruudessa, ja kvanttiluvut $n_{x}, n_{y}$ ja $n_{z}$ voivat olla vain kokonaislukuja 
+	- Jos energia kasvaa määrällä $d E$ niin pallon säde kasvaa määrällä $d n$, mutta tilojen lukumäärä kasvaa verrannollisesti kerroksen kasvaneeseen tilavuuteen (=\; kerroksen pinta-ala $\times$ paksuus $=4 \pi r^{2} d n$)
+
+- Kvanttiluvut ovat positiivisia, joten ongelman symmetrian takia meidän tarvitsee tarkastella vain 1/8 osaa pallon kerroksesta, jolloin differentiaalinen tilojen lukumäärä energiavälillä $d E$ on yhtäsuuri kuin $\frac{1}{8} 4 \pi n^{2} d n$
+
+- Eli tilatiheys on
+\[
+ 
+D(E)  &=  \frac{\text { differentiaalinen tilojen lukumäärä energiavälillä } d E}{d E}  \\
+	&= \frac{1}{8} 4 \pi n^{2} \frac{d n}{d E}
+
+\]
+
+[FIGURE: SOM_Figure_15.png]
+
+--- slide: Kvanttikaasu ---
+
+ (Tilatiheys)
+
+	-  
+	\[
+\Rightarrow \qquad \qquad D(E)= \frac{1}{8} 4 \pi n^{2} \frac{d n}{d E} =\ldots= \frac{m^{3 / 2} L^{3}}{\pi^{2} \hbar^{3} \sqrt{2}} \sqrt{E} \qquad \qquad
+\]
+- Usein on käytännöllisempää käyttää kaivon tilavuutta $(L^{3}=V )$ 
+
+- Täytyy myös muistaa että kaksi spin-1/2 hiukkasta voi olla samalla tilalla. Tällöin lukumäärä tulee kertoa vielä $(2 s+1)$:llä, jolloin saadaan:\\[-2mm]
+\[
+D(E) = \frac{(2 s+1) m^{3 / 2} V}{\pi^{2} \hbar^{3} \sqrt{2}} \sqrt{E}
+\]
+
+[FIGURE: Tikz_SOM_Statistical_figures.pdf]
+
+--- slide: Kvanttikaasu ---
+
+ (Keskimääräinen energia)
+
+	- Olemme kiinnostuneita hiukkasten keskimääräisestä energiasta:\\
+-  \small
+	 - Voisimme yrittää laskea tarkasti keskimääräisen energian 
+	 - Yleisesti ottaen tämä on hankala lasku, koska esim.~parametrit $B$ ja $T$ riippuvat systeemistä, systeemit ovat usein monimutkaisia ja $D(E)$ estää $B$:n ja $<E(T)>\,$ laskemisen suljetussa muodossa kvanttikaasun tapauksessa
+
+- Mutta ainakin keskimääräiselle energialla voidaan laskea likiarvo hiukkaslukumäärätiheyden $N / V$ funktiona (Harjoituksena):
+\[
+\overline{E}  = \frac{3}{2} k_{B} T [\! 1 \mp \frac{\pi^{3} \hbar^{3} \sqrt{2}}{ (2 s+1) (2 \pi m k_{B} T )^{3/2}  } ( \frac{N}{V} ) +\ldots ]\!\!
+\]
+
+- Eli keskimääräinen energia riippuu sekä lämpötilasta  että hiukkaslukumäärätiheydestä
+- Suuremmalla tiheydellä $N/V$, energia kasvaa fermioneilla $(+)$, ja pienenee bosoneilla $(-)$
+
+--- slide: Kvanttikaasu ---
+
+ (Keskimääräinen energia ja kvanttitermi)
+
+ \seminormal
+	- Klassisten hiukkasten käyttäytyminen $\leftrightarrow$ I termi hallitsee
+$\leftrightarrow$ kun hiukkasten de Broglie-aallonpituus on pieni ja hiukkasten välinen etäisyys on suuri, ts.~N/V on pieni!
+
+- Aallonpituuden suhteen 
+\[
+\lambda  = \frac{h}{p}  = \frac{h}{m v}  = \frac{h}{m \sqrt{3 k_{B} T / m}} \propto \frac{h}{\sqrt{m k_{B} T}} \qquad \Rightarrow \qquad \frac{1}{T^{3 / 2}} \propto \lambda^{3}
+\]
+- Hiukkasten välisen etäisyyden suhteen:
+\[
+\frac{d^{3}}{1} \propto \frac{V}{N} \qquad \Rightarrow \qquad d \propto \bigg( \frac{V}{N} \bigg)^{1 / 3}
+\]
+
+- Meillä on kvanttitermi joka on muotoa
+\[
+\text {Kvanttitermi}  \equiv \frac{\pi^{3} \hbar^{3} \sqrt{2}}{(2 s+1) (2 \pi m k_{B} T )^{\frac{3}{2}}} ( \frac{N}{V} )  \,\propto  \bigg( \frac{\lambda}{d} \bigg)^{3}
+\]
+
+--- slide: Kvanttikaasu ---
+
+ (Keskimääräisen energian kvanttitermi)
+
+- Meillä on kvanttitermi joka on muotoa 
+\[
+\text {Kvanttitermi}  \equiv \frac{\pi^{3} \hbar^{3} \sqrt{2}}{(2 s+1) (2 \pi m k_{B} T )^{\frac{3}{2}}}  ( \frac{N}{V} )  \propto  \bigg( \frac{\lambda}{d}  \bigg)^{3}
+\]
+
+- Toinen termi (kvanttitermi) on likimääräisessä ratkaisussa keskimääräiselle energialle $\overline{E}$ muotoa:
+- 
+	 - pieni kun $\lambda$ on pieni
+- pieni kun $\lambda<d$
+- suuri kun  $\lambda$ on suuri
+- suuri kun $d$ on pieni
+
+--- slide: Kvanttikaasu ---
+
+ (Hiukkasten jakautuminen tiloille)
+
+	- Toinen tapa ajatella asiaa on miettiä kuinka hiukkaset ovat jakaantuneita eri energiatasoille 
+	- Käsitellään fermioneita esimerkkitapauksena, ja lasketaan fermitaso $E_F$ 0\;K:ssä (eli fermienergia)
+
+- Hiukkasten kokonaislukumäärä: $\qquad N = \int_{0}^{\infty}  \mathbb{N} (E)_{F D} D(E) d E$
+
+- $T=0:$ miehitysluku $ \mathbb{N} $ on askelfunktio ($ \mathbb{N} =1$ kun $\mathrm{E}<E_{F}$,  $\mathbb{N} =0$ kun $\mathrm{E}>E_{F}$) 
+\[ 
+ 
+&\Rightarrow& \qquad N  &=  \int_{0}^{E_{F}} \frac{1\cdot (2 s+1) m^{3 / 2} V}{\pi^{2} \hbar^{3} \sqrt{2}} \sqrt{E} d E  =  \frac{(2 s+1) m^{3 / 2} V}{\pi^{2} \hbar^{3} 2^{1/2}}  \bigg( \frac{2}{3} E_{F}^{3 / 2} \bigg)  \\ 
+&\Rightarrow& \qquad E_{F}  &= \frac{\pi^{2} \hbar^{2}}{m} \Bigg[\frac{3}{(2 s+1) \pi 2^{1/2}} \frac{N}{V} \Bigg]^{2 / 3}
+ 
+\]
+
+--- slide: Kvanttikaasu ---
+
+ (Kvanttitermi ja fermitaso)
+
+	- Tulos näyttää että jo nollassa kelvinissä, energia kasvaa fermionien konsentraation kasvaessa: $\qquad E_{F} \propto (\frac{N}{V} )^{2 / 3}$
+
+- Termien uudelleen järjestäminen johtaa yhtälöön 
+\[
+
+& & E_{F}  &= \frac{\pi^{2} \hbar^{2}}{m} \Bigg[\frac{3}{(2 s+1) \pi 2^{1/2}} \frac{N}{V} \Bigg]^{2 / 3} \\
+&\Rightarrow& \qquad E_{F}^{3 / 2}  &=   \bigg( \frac{\pi^{2} \hbar^{2}}{m}  \bigg)^{3 / 2} \frac{3}{(2 s+1) \pi 2^{1/2}} \frac{N}{V}  =  \frac{3 \pi^{2}}{2^{1/2}} \frac{\hbar^{3}}{(2 s+1) m^{3 / 2}} \frac{N}{V}
+
+\]
+- Eli on olemassa verrannollisuus $\frac{\hbar^{3}}{(2 s+1) m^{3 / 2}} \frac{N}{V} \propto E_{F}^{3 / 2}$ mitä voidaan hyödyntää analysoimaan kvanttitermin merkitystä keskimääräisessä energiassa:
+\[
+\overline{E}  = \frac{3}{2} k_{B} T [\! 1 \mp \frac{\pi^{3} \hbar^{3} \sqrt{2}}{(2 s+1) (2 \pi m k_{B} T )^{\frac{3}{2}} (\frac{N}{V} ) }  +\ldots ]
+\]
+
+--- slide: Kvanttikaasu ---
+
+ (Kvanttitermi ja fermitaso)
+
+	- Eli kvanttitermi riippuu termistä $\big( \frac{E_{F}}{k_{B} T}  \big)^{3 / 2}$
+
+- Tapauksesa $k_{B} T \gg E_{F}$ ensimmäinen klassinen termi säilyy, ja toinen termi (kvanttitermi) on pieni 
+
+- Hiukkaset ovat diffuusisti jakaantuneet eri tiloille, joten kvanttimekaaninen erottamattomuus voidaan unohtaa
+- Yhteenveto: kaasu käyttäytyy klassisesti jos
+\[
+
+& & \qquad \bigg( \frac{\lambda}{d}  \bigg)^{3} &\ll 1  \\
+&tai kun\quad& & \\
+& & \qquad \frac{N}{V} \frac{\hbar^{3}}{ (m k_{B} T )^{3 / 2}} &\ll 1 \qquad \Rightarrow \qquad \text {Klassinen raja} \\
+
+\]
+
+--- slide: Kvanttikaasu ---
+
+ (Metallit ja niiden johtavuuselektronit)
+
+{10.5cm}
+	
+	- Metalleissa jotkut valenssielektroneista on jaettu kaikkien atomien kesken
+	\implies{ Nämä elektronit liikkuvat vapaasti, positiivisesti varautu-\\
+	neiden ytimien muodostamassa kvanttikaivossa  }
+
+- Vapaat elektronit/johtavuuselektronit metalleissa ovat hyvä esimerkki fermionikaasusta. 
+
+- Kuva 16 näyttää Koulombisen potentiaalin yhdelle elektronille yhden/usean metalli-ionin lähellä 
+
+[FIGURE: SOM_Figure_16.png]
+
+- Kun ioneita on tarpeeksi monta ja niillä on riittävä konsentraatio (kuvat 16b–d), ne muodostavat  äärellisen kaivon valenssielektronien kvanttikaasulle
+
+- Tilanne voidaan ymmärtää äärettömän syvän \\ kaivon avulla
+
+--- slide: Kvanttikaasu ---
+
+ (Johtavuuselektronit muodostavat fermionikaasun)
+
+	- Fermionien kieltosäännön takia, johtavuuselektronit täyttävät energiatiloja jotka olisivat erittäin korkeita klassisessa tarkastelussa
+
+- Historiallisesti, alkuun ei ymmärretty kuinka monta aineen elektronia osallistuu elektronikaasun muodostumiseen ja siten vaikuttavat ominaislämpökapasiteetin muodostumiseen 
+
+- Jos jokainen johtavuuselektroni vaikuttaa ja liikkuisi aineessa vapaasti, niin lämpökapasiteetista tulisi todella suuri, mikä näkyisi oikeille aineille tehtävissä kokeissa/arkielämässä
+
+- Myöhemmin, kävi selväksi että vain fermienergiaa lähellä olevat elektronit voivat liikkua vapaasti, saada lisäenergiaa, eli suurin osa aineen elektroneista ei siis osallistunut energian varastoitumiseen aineessa (ominaislämpökapasiteetti)
+
+ \seminormal
+- (Ks. Harrisin luku 9, ja luentomme ominaislämpökapasiteetista)
+
+--- slide: Kvanttikaasu ---
+
+ (Työfunktio/irrotustyö)
+
+{8.5cm}
+	
+	- On olemassa minimienergia $\phi$ joka vaaditaan elektronien irrottamiseen metallista. Tämä on kaivon yläreunan ja fermitason välinen erotus:
+\[
+\phi  = U_{0}  -  E_{F}
+\]
+
+- Tämä energia $\phi$ tunnetaan\\ työfunktiona/irrotustyönä, ja riippuu \\
+tietystikin aineesta, riippuen sekä:
+- 
+	- $U_{0}$ kaivon syvyydestä
+	- $E_{F}$ aineen fermitasosta
+
+[FIGURE: SOM_Figure_17.png]
+
+--- slide: Kvanttikaasu ---
+
+ (Kahden fermionikaasusysteemin yhdistäminen)
+
+	- Kun kaksi metallia laitetaan kiinni toisiinsa
+
+[FIGURE: SOM_Figure_18.png]
+
+, energeettisimmät elektronit metallista 2 siirtyvät metalliin 1, siirtäen metallin 1 energiatasoja ylöspäin (sähköstaattisen hylkimisen takia), ja metallin 2 energiatasot laskevat 
+	
+	- Tämän seurauksena metallien välille muodostuu potentiaaliero $\Delta U$ 
+	
+	- Elektronit liikkuvat, kunnes fermienergiat $E_F$ ovat samalla tasolla
+	
+	- {\small 
+	
+	- Seebeckin efektiä,\\ 
+		hyödynnetään \\
+		lämpöpareissa \\
+		mittaamaan lämpötilaa
+		- Peltierin efektiä\\ 
+		käytetään jäähdyttimissä\\
+		 (Peltier-elementit) \\
+		
+		- esim. kiihtynyt korroosio
+
+}
+
+--- slide: Kvanttikaasu ---
+
+ (Bosonikaasu)
+
+	- Miehitysluvun löydettiin olevan bosoneille $ \mathbb{N} (E)_{B E} = \frac{1}{B e^{E / k_{B} T}-1}$
+
+- Kun $E \rightarrow 0$, bosonien miehitysluku kasvaa, eli hiukkaset alkavat relaksoitumaan alimmalle kvanttitilalleen 
+
+- Helium-4 atomi koostuu kahdesta protonista ja kahdesta neutronista, se on siis bosoni jonka spin $=0$ (ytimen kokonaisspin $=0$, kaksi 1s elektronia joiden kokonaisspin $=0$)
+
+- Helium-4 ei muutu kiinteäksi helposti, se säilyy kaasumaisena erittäin mataliin lämpötiloihin asti (>4,15~K)
+
+- Tarpeeksi matalissa lämpötiloissa, hiukkasten väliset voimat muodostuvat merkittäviksi, ja kaasumainen He-4 muuttuu nesteeksi
+
+- Todella matalissa lämpötiloissa osa aineen atomeista tiivistyy alimmalle energiatilalleen
+
+--- slide: Kvanttikaasu ---
+
+ (Supranesteet)
+
+{9cm}
+	
+	- Matalassa $2,17$ K lämpötilassa Helium-4:stä tulee supraneste
+
+	- Häviävän pieni viskositeetti
+- Suuri lämmönjohtavuus
+
+(Voisi käyttää klassista kriteeriä arvioimaan karkeasti milloin tämä olotilanmuutos/faasimuutos voisi tapahtua)
+
+- Alfred Leitner on tehnyt kuuluisan videon kuuluisa video{https://www.youtube.com/watch?v=2Z6UJbwxBZI} He-4:n käyttäytymisestä kun sitä nostetaan kauhalla astiasta
+
+- Heliumi kiinnittyy kulhon sisäpintaan ja lopulta 'ryömii' kulhosta pois sen pintojen kautta
+
+[FIGURE: SOM_Figure_19.png]
+
+--- slide: Kvanttikaasu ---
+
+ (Bosen–Einsteinin kondensaatti (BEC))
+
+{8.5cm}
+	
+	- Kuumat hiukkaset harvassa kaasussa  ovat makroskooppisessa astiassa jakaantuneet erittäin suureen lukumäärään tiloja, jolloin todennäköisyys sille että joku yksittäinen tila on viritetty/käytössä on pieni
+
+- Kun aine jäähdytetään lämpötilaan jossa hiukkasen de Broglie-aallonpituudesta tulee suurempi kuin atomien välinen etäisyys, atomit tiivistyvät perustilalleen, kaikki hiukkaset päätyvät samaan kvanttimekaaniseen tilaan
+\implies{aineeseen muodostuu uusi faasi/olomuoto, \\ Bosen–Einsteinin kondensaatti (BEC)}
+
+[FIGURE: SOM_Tipler_figure_3.png]
+
+## 1.8 Fotonikaasu
+
+--- slide: 1. Statistinen Mekaniikka ---
+
+    -<1-> 1_1_a{Yksinkertainen Termodynaaminen Systeemi}
+    -<1-> 1_2_a{Entropia ja Lämpötila}	
+    -<1-> 1_3_a{Einsteinin Kiinteä Aine}	
+    -<1-> 1_4_a{Boltzmannin Jakauma}
+    -<1-> 1_5_a{Klassiset keskiarvot}
+    -<1-> 1_6_a{Kvanttijakaumat}
+    -<1-> 1_7_a{Kvanttikaasu}
+
+    -<1-> 1_8_a{Fotonikaasu}
+	-<1-> 1_9_a{Laseri}
+	-<1-> 1_10_a{Ominaislämpökapasiteetti}
+	-<1-> 1_11_a{Debyen Malli}
+
+--- slide: Fotonikaasu ---
+
+ (Tilatiheys)
+
+	- Toisin kuin elektronit (ja He-4 atomit), fotonit ovat bosoneita (spin $=1$) 
+	
+	- Fotonikaasun kuvaamiseksi meidän täytyy laskea fotonien tilatiheys
+
+- Fotonien energia liittyy suoraan niiden taajuuteen $f$ (eikä niinkään energiatason kvanttilukuun $n$): $ \qquad E =h f  = h \frac{c}{\lambda} $
+
+{8cm}
+
+	- Tarkastellaan aluksi 3D-kvanttikaivoa jonka leveys on  $L$, mihin mahtuu pie\-nim\-millään $\lambda=2 L$ kokoinen kvantti/fotoni
+
+[FIGURE: SOM_Tipler_figure.png]
+
+	\[
+
+n_{x}^{2} + n_{y}^{2} + n_{z}^{2}  =  n^{2}  \qquad \myeq \qquad  R^{2}  =   \bigg( \frac{L}{\lambda / 2}  \bigg)^{2}
+
+\]
+- jonka avulla tilojen $n$ täyttämän pallon säde tila-avaruudessa  voidaan laskea:
+\[
+R  =  \frac{L}{\lambda / 2}  =  \frac{2 L}{\lambda}  =  \frac{2 L E}{h c}
+\]
+
+--- slide: Fotonikaasu ---
+
+ (Tilatiheys)
+
+	- Montako 'hilapistettä' mahtuu $n$-avaruuden palloon jonka säde on  $R$?
+\[
+
+& & R& = \frac{2 L E}{h c} \\ 
+&\Rightarrow \qquad& N &= 2 \cdot \frac{1}{8} \cdot \frac{4}{3} \pi R^{3}  =  \frac{\pi}{3}  \bigg( \frac{2 L E}{h c}  \bigg)^{3}  
+=  \frac{8 \pi}{3} \frac{E^{3}}{h^{3} c^{3}} L^{3}  
+= \frac{8 \pi}{3} \frac{E^{3}}{h^{3} c^{3}} V
+
+\]
+
+- missä $N$ on tilojen lukumäärä säteeltään $R=2 L E /(h c)$ olevan pallon sisällä
+- Nyt energiavälillä $d E$ olevien pisteiden lukumäärä voidaan laskea:
+\[
+\frac{d N}{d E}  = \frac{8 \pi}{3} \frac{3 E^{2}}{h^{3} c^{3}} V
+ = \frac{8 \pi E^{2}}{h^{3} c^{3}} V 
+ \qquad \Rightarrow \qquad 
+ \frac{d N}{d f}  = \frac{8 \pi f^{2}}{c^{3}} V \qquad (E=h f \quad \Rightarrow \quad d E=h d f)
+\]
+
+--- slide: Fotonikaasu ---
+
+ (Tilatiheys)
+
+	- Eli olemme laskeneet tilojen lukumäärän jotka ovat tietyllä taajuusvälillä:
+\[
+\frac{\text { differentiaalinen tilojen lukumäärä taajuusvälillä }}{d f}  = \frac{8 \pi V}{c^{3}} f^{2}
+\]
+- Tai vastaava energian avulla ilmaistuna:
+\[
+\frac{\text { differentiaalinen tilojen lukumäärä energiavälillä dE }}{d E / h}  = \frac{8 \pi V}{c^{3}} (E / h)^{2}
+\]
+
+- Eli fotonikaasun tilatiheydeksi $D=D(E)$ (tilavuudessa $V$) saadaan:
+\[
+D(E)  = \frac{8 \pi V}{h^{3} c^{3}} E^{2}
+\]
+
+--- slide: Fotonikaasu ---
+
+ (Miehitysluvun normeeraus)
+
+	- Fotonikaasu eroaa harmonisen värähtelijän tapauksesta, tai esim. nestemäisen heliumin tapauksesta
+
+- Fotonikaasussa fotonien lukumäärää ei ole etukäteen rajoitettu, systeemi absoboi ja emittoi fotoneita koko ajan, fotonien hetkellinen lukumäärä määräytyy systeemin tilan ja sen ominaisuuksien mukaan
+
+- Bosen–Einsteinin statistiikka bosoneille oli muotoa: 
+\[ \mathbb{N} (E)_{B E}  =  \frac{1}{B e^{E / k_{B} T}-1}
+\] 
+- missä parametri $B$ täytyisi liittää hiukkasten lukumäärään $N$ 
+
+- Koska fotonikaasussa $N$ on vapaa muuttuja, ratkaisu on määritellä $B\equiv1$ (fotonikaasulle)
+\[
+ \mathbb{N} (E)_{B E, \text {fotonikaasu}}=\frac{1}{e^{E / k_{B} T}-1}
+\]
+
+--- slide: Fotonikaasu ---
+
+ (Esimerkki)
+
+	- K: Vertaa kvantitatiivisesti sähkömagneettisen säteilyn ja aineen sisäisiä energiatiloja
+- A: Voisimme laskea keskimääräiset energiat: 
+\[
+<E>\,  =  \frac{\int E  \mathbb{N} (E) D(E) d E}{\int  \mathbb{N} (E) D(E) d E}
+\]
+- missä osoittaja vastaa systeemin energiaa (ja nimittäjä vastaa hiukkasten lukumäärää) 
+
+- Voisimme myös vain käyttää osoittajaa SMG-säteilyn (eli fotonikaasun) sisäisen energian laskemiseksi 
+
+--- slide: Fotonikaasu ---
+
+ (Esimerkki)
+
+- Käyttämällä muuttujanvaihdosta $E  = k_{B} T x \quad \Rightarrow \quad x  = E/(k_{B} T)$, osoittajaksi saadaan
+\[
+
+U_{fotoni}  &=  \int_{0}^{\infty} E  \mathbb{N} (E) D(E) d E
+ =  
+ \int_{0}^{\infty} E \frac{1}{e^{E / k_{B} T}-1} \frac{8 \pi V}{h^{3} c^{3}} E^{2} d E \\
+& = 
+\frac{8 \pi V}{h^{3} c^{3}} \int_{0}^{\infty} k_{B} T x \frac{1}{e^{x}-1} ( k_{B} T x ) ^{2} k_{B} T d x
+ = 
+ \frac{8 \pi V k_{B}^{4} T^{4}}{h^{3} c^{3}} \int_{0}^{\infty} \frac{x^{3} d x}{e^{x}-1}  \\
+ &= 
+ \frac{8 \pi V k_{B}^{4} T^{4}}{h^{3} c^{3}} \cdot \frac{\pi^{4}}{15}
+
+\]
+
+--- slide: Fotonikaasu ---
+
+ (Esimerkki)
+
+	- Fotonikaasulle saadaan siis
+	\[
+	U_{fotoni}=\frac{8 \pi V k_{B}^{4} T^{4}}{h^{3} c^{3}} \cdot \frac{\pi^{4}}{15}  = \frac{8 \pi^{5} V k_{B}^{4} T^{4}}{15 h^{3} c^{3}}
+	\]
+- $300 \mathrm{~K}$ lämpötilassa arvoksi saadaan: $\quad \frac{U_{fotoni}}{V} =6,1 \times 10^{-6} \mathrm{~J} / \mathrm{m}^{3}$
+
+- Tavallisille kaasuille (yksiatominen ideaalikaasu) sisäenergiaksi NTP:ssä saadaan
+\[
+\frac{U_{\text {aine}}}{V}
+ = 
+ \frac{N \times \frac{3}{2} k_{B} T}{V}
+  = 
+  \frac{\frac{3}{2} p V}{V} = \frac{3}{2} p = 1,5 \times 10^{5} \mathrm{~J} / \mathrm{m}^{3}
+\]
+- Eli suhde on pieni: $\frac{U_{\text {fotoni}}}{U_{\text {aine}}}=4 \times 10^{-11}$
+
+ \implies{ Eli NTP-olosuhteissa suhde on sellainen että
+ 		systeemin termo-\\
+		dynaamisesta kokonaisenergiasta erittäin pieni osa on \\
+		 SMG-säteilyä }
+
+--- slide: Fotonikaasu ---
+
+ (Planckin laki, musta kappale ja Wienin siirtymälaki)
+
+	- Edellisen esimerkin sisäenergiaa kuvaavan integraalin integrandi voidaan ajatella systeemin kokonaisenergiana tietyllä fotonienergian välillä [[$E , E+d E$]]:
+\[
+d U_{fotoni}(E, E+d E)
+ = 
+ E \frac{1}{e^{E / k_{B} T}-1} \frac{8 \pi V}{h^{3} c^{3}} E^{2} d E
+  = \frac{h f^{3}}{e^{h f / k_{B} T}-1} \frac{8 \pi V}{c^{3}} d f
+\]
+- tämä on Planckin laki,  joka antaa meille
+
+{6.5cm}
+
+	- spektrisen energiatiheyden sähkömagneettiselle säteilylle, tai niinsanotun mustan kappaleen säteilyn
+
+[FIGURE: SOM_Figure_20.png]
+
+- Käyrän maksimikohta riippuu lineaarisesti lämpötilasta, eli toteuttaa Wienin siirtymälain 
+
+--- slide: Fotonikaasu ---
+
+ (Stefanin–Boltzmannin laki)
+
+	- Käyrän alle jäävän pinta-alan integrointi antaa meille Stefanin–Boltzmannin lain:
+\[
+U \propto T^{4}
+\]
+- Yhteenvetona, bosoninen fotonikaasun malli mahdollistaa usean erittäin perustavanlaatuisen yhtälön/lain johtamisen yhdistäen termodynamiikan sähködynamiikkaan
+- 
+	 - Planckin laki
+	 - Mustan kappaleen säteily
+	 - Wienin laki
+	 - Stefanin–Boltzmannin laki
+
+[FIGURE: SOM_Figure_20.png]
+
+## 1.9 Laseri
+
+--- slide: 1. Statistinen Mekaniikka ---
+
+    -<1-> 1_1_a{Yksinkertainen Termodynaaminen Systeemi}
+    -<1-> 1_2_a{Entropia ja Lämpötila}	
+    -<1-> 1_3_a{Einsteinin Kiinteä Aine}	
+    -<1-> 1_4_a{Boltzmannin Jakauma}
+    -<1-> 1_5_a{Klassiset keskiarvot}
+    -<1-> 1_6_a{Kvanttijakaumat}
+    -<1-> 1_7_a{Kvanttikaasu}
+
+    -<1-> 1_8_a{Fotonikaasu}
+	-<1-> 1_9_a{Laseri}
+	-<1-> 1_10_a{Ominaislämpökapasiteetti}
+	-<1-> 1_11_a{Debyen Malli}
+
+--- slide: Laseri ---
+
+ (Ominaisuudet ja peruskomponentit)
+
+{8.1cm}
+
+	- Laserit ovat loistava esimerkki fotonikaasusysteemistä
+	- Ne ovat laitteita joissa suuren energiatiheyden omaavaa SMG-säteilyä on laserin kaviteetin sisällä, josta tulee ulos on koherenttia ja yksisuuntaista monokromaattista valoa 
+
+[FIGURE: SOM_Figure_21.png]
+
+- Laserin peruskomponentit ovat:
+
+\small
+	- kolmitasosysteemi: jossa ylemmällä "2"~tasolla olevat atomit  siirtyvät alemmalle tilalle  "1"~prosessissa jonka stimuloi energiaeroa vastaavalla taajuudella värähtelevä fotoni
+- Optinen kaviteetti: joka vahvistaa 'oikeanlaisia' fotoneita
+- Pumppausmekanismi: joka nostaa atomeita tilalle  "2"~jatkuvatoimisuuden aikaansaamiseksi
+
+--- slide: Laseri ---
+
+ (Toimintaperiaatteet)
+
+	- Laserin toimintaperiaatteet ovat käytännössä:
+
+-  \small
+	- Väliaineen reunoilla on samansuuntaiset peilit
+  - Optisen akselin suhteen eri suuntaan etenevät fotonit eivät juurikaan stimuloi emissiota
+  - Akselin suuntaiset fotonit heijastelevat peilien välissä, mikä mahdollistaa stimuloidun emission
+  - Pituus $L$ määrittää seisovan aallon: $L=n \lambda / 2$
+
+{6.25cm}
+
+-   \small
+  - Kaviteettiin muodostuu resonanssi
+  - Akselin suuntainen valo vahvistuu
+  - Erisuuntainen valo ei vahvistu
+  - Laserin aallonpituus kapenee suhteessa atomien spontaanin transition viivanleveyteen
+  - Energiaa tuodaan kaviteettiin esim. 'optisella pumppauksella'
+
+[FIGURE: SOM_Figure_23.png]
+
+--- slide: Laseri ---
+
+ (Sironta- ja absorptioprosessit)
+
+{7cm}
+
+\small
+	- Spontaania emissiota tapahtuu kun korkeammalla tilalla oleva elektroni tipahtaa alemmalle tilalle lyhyen ajan jälkeen (tilastollinen prosessi), emittoiden fotonin
+
+- Absorptiota tapahtuu kun elektroni viritetään kor\-keammalle energiatilalle  (systeemi absorboi fotonin)
+
+- Stimuloidussa emissiossa, korkeammalla tilalla oleva elektroni siirtyy läsnäolevan fotonin vaikutuksesta alemmalle tilalle. Fotonin energia vastaa täsmälleen elektronitilojen energiaeroa 
+ - 
+	- Syntyy toinen fotoni, jonka energia (eli aallonpituus) on identtinen läsnäolevan fotonin energian kanssa, fotonien muutkin ominaisuudet ovat identtisiä/korreloivat keskenään, kuten suunta, vaihe ja polarisaatio 
+
+[FIGURE: SOM_Figure_22.png]
+
+--- slide: Laseri ---
+
+ (Sironta- ja absorptioprosessit)
+
+{7.2cm}
+\small 
+
+	- Kuinka kuvata prosesseja matemaattisesti?
+Yksinkertaisuuden vuoksi tarkastellaan kaasumaista vahvistinainetta (energiatilatarkastelu yksinkertaisempaa kuin kiinteässä aineessa) 
+
+- Spontaanissa emissiossa transitionopeuden $R_{spon}$  täytyy olla verrannollinen virittyneiden ato\-mi\-en lukumäärään, $N_{2}$, jolloin verrannollisuuskertoi\-meksi saadaan $A_{spon}$ ($R_{spon} = A_{\text {spon}} N_2$)
+
+- Absorptionopeus on verrannollinen alemmalla tasolla olevien hiukkasten lukumäärään $N_{1}$, sekä oikean energian omaavien fotonien lukumäärään $Y(\Delta E)$, missä $\Delta E=E_{2}-E_{1}$. Verrannollisuusvakio on $B_{abs}$ ($R_{abs} = B_{abs} N_{1} Y(\Delta E)$)
+
+- Stimuloitu emissio on verrannollinen ylemmän tilan omaavien vapaiden atomien lukumäärään, sekä oikean energian omaavien fotonien lukumäärään, jotka voivat ajaa emissioprossia ($R_{stim}=B_{stim} N_{2} Y(\Delta E)$)
+
+[FIGURE: SOM_Figure_22.png]
+
+--- slide: Laseri ---
+
+ (Einsteinin kertoimet)
+
+	- Kertoimet $A_{\text {spon}}$, $B_{abs}$ ja $B_{\text {stim}}$ tunnetaan nimellä Einsteinin kertoimet 
+	
+	- Tasapainossa näillä prosesseille pätee:
+\[
+
+& & R_{\text {spon}} +R_{\text {stim}}  &= R_{abs} \\
+ &\Rightarrow& \qquad A_{\text {spon}} N_{2} +B_{\text {stim}} N_{2} Y(\Delta E) & = B_{abs} N_{1} Y(\Delta E) \qquad \quad 
+
+\]
+
+- Mikä voidaan ratkaista $Y(\Delta E)$ suhteen, ja käyttämällä $\frac{N_{1}}{N_{2}}  = \frac{e^{-\frac{E_{1}}{k_{B} T}}}{e^{-\frac{E_{2}}{k_{B} T}}}$, saadaan:
+\[
+
+&\Rightarrow& 
+\qquad Y(\Delta E) & = \frac{A_{\text {spon}} / B_{abs}}{\frac{N_{1}}{N_{2}}  - \frac{B_{\text {stim}}}{B_{abs}}}
+ = 
+ \frac{A_{\text {spon}} / B_{abs}}{\frac{e^{-E_{1} / k_{B} T}}{e^{-E_{2} / k_{B} T}}  - \frac{B_{stim}}{B_{abs}}} \\
+ 
+&\Rightarrow&
+ Y(\Delta E) & = \frac{A_{\text {spon}} / B_{abs}}{e^{\Delta E / k_{B} T}  - \frac{B_{\text {stim}}}{B_{abs}}}
+  = 
+  \frac{A_{\text {spon}} / B_{\text {stim}}}{\frac{B_{abs}}{B_{stim}} e^{\Delta E / k_{B} T}-1}  \qquad \quad 
+
+\]
+
+--- slide: Laseri ---
+
+ (Einsteinin kertoimet)
+
+	- Parametri $Y(\Delta E)$ ei tarkalleen ottaen ole atomeiden kanssa vuorovaikuttavien fotonien lukumäärä, vaan fotonikaasun spektrinen energiatiheys (oikealla energiavälillä), joka noudattaa Planckin lakia 
+	
+	- Eli voidaan muodostaa kaksi yhtälöä:
+\[
+
+Y(\Delta E) &= \frac{A_{\text {spon}} / B_{abs}}{\frac{N_{1}}{N_{2}} - \frac{B_{\text {stim}}}{B_{abs}}}
+ = 
+ \frac{A_{spon} / B_{abs}}{\frac{e^{-E_{1} / k_{B} T}}{e^{-E_{2} / k_{B} T}}  - \frac{B_{\text {stim}}}{B_{abs}}}
+  = 
+  \frac{A_{\text {spon}} / B_{abs}}{e^{\Delta E / k_{B} T} - \frac{B_{\text {stim}}}{B_{\text {abs }}}}
+   = 
+   \frac{A_{\text {spon}} / B_{\text {stim}}}{\frac{B_{abs}}{B_{\text {stim}}} e^{\Delta E / k_{B} T}-1} \\
+d U_{fotoni}(\Delta E) &= 
+ \frac{h f^{3}}{e^{\frac{\Delta E}{k_{B} T}}-1} \frac{8 \pi V}{c^{3}} d f \quad \Rightarrow \quad \frac{1}{V} \frac{d U_{fotoni}}{d f}
+  = \frac{8 \pi}{c^{3}} \frac{h f^{3}}{e^{\frac{\Delta E}{k_{B} T}}-1}  =  Y(\Delta E)
+
+\]
+- Jolloin tasapainossa saadaan muodostettua ehto:
+\[
+B_{\text {stim}} = B_{abs} \qquad jolloin \qquad \frac{A_{\text {spon}}}{B_{\text {stim}}}  = \frac{8 \pi h f^{3}}{c^{3}}
+\]
+
+--- slide: Laseri ---
+
+ (Populaatioinversio)
+
+	- Ehto $B_{stim}=B_{abs}$ tarkoittaa että on yhtä todennäköistä että tuleva fotoni absorboituu tai stimuloi emission
+
+- Tämä ehto ei ole laseroinnin kannalta hyödyllinen, stimuloidun emission pitäisi dominoida, koska haluamme valon vahvistumista, jonka stimuloitu emissio mahdollistaa
+
+[FIGURE: Tikz_SOM_Statistical_figures.pdf]
+
+--- slide: Laseri ---
+
+ (Populaatioinversio)
+
+	- Normaalissa lämpötilassa, tasapainossa, lähes kaikki atomit ovat perustilassa 
+	- Eli $N_{1} \gg N_{2}$, jolloin prosessien nopeuksille pätee $N_{1} B_{abs} \gg N_{2} B_{stim}$  
+	\implies{ Stimuloitu emissio ei dominoi }
+
+- Pumppaamalla (optisesti) perustilassa olevia atomeita voidaan virittää korkeammille energiatiloille 
+\implies{ Korkeamman energiatason $E_{3}$ populaatio kasvaa }
+
+- Jos vahvistinaineessa (usein kiinteä, läpinäkyvä kide) on metastabiili tila  $E_{2}$, niin useat tilalla $E_{3}$ olevat atomit relaksoituvat tälle metastabiilille tilalle $E_{2}$ 
+\implies{ On mahdollista saavuttaa tilanne $N_{1}<N_{2}$ }
+
+--- slide: Laseri ---
+
+ (Populaatioinversio)
+
+	- Ensin saavutetaan pumppaamalla tilanne jossa $N_{1} \approx N_{2} \approx N_{3}$ (keskimmäinen kuva)
+	- Kun pumppaus lopetetaan, tilan $E_{3}$ atomit alkavat relaksoitumaan kasvattaen tilan $E_{2}$ populaatiota, johtaen tilanteeseen $N_{1}<N_{2}$ (kuva oikealla)
+	
+	- Tätä ilmiötä/ehtoa kutsutaan populaatioinversioksi 
+
+{3.8cm}
+
+	 - Kun fotonikaasu alkaa stimuloimaan metastabiilin tilan $E_{2}$ atomeita, sti\-mu\-loidun emission nopeus alkaa kasvamaan
+
+[FIGURE: SOM_Figure_26.png]
+
+## 1.10 Ominaislämpökapasiteetti
+
+--- slide: 1. Statistinen Mekaniikka ---
+
+    -<1-> 1_1_a{Yksinkertainen Termodynaaminen Systeemi}
+    -<1-> 1_2_a{Entropia ja Lämpötila}	
+    -<1-> 1_3_a{Einsteinin Kiinteä Aine}	
+    -<1-> 1_4_a{Boltzmannin Jakauma}
+    -<1-> 1_5_a{Klassiset keskiarvot}
+    -<1-> 1_6_a{Kvanttijakaumat}
+    -<1-> 1_7_a{Kvanttikaasu}
+
+    -<1-> 1_8_a{Fotonikaasu}
+	-<1-> 1_9_a{Laseri}
+	-<1-> 1_10_a{Ominaislämpökapasiteetti}
+	-<1-> 1_11_a{Debyen Malli}
+
+--- slide: Ominaislämpökapasiteetti ---
+
+ (Energian tasanjakautumisen periaate)
+
+	- Selvitetään kuinka systeemit varastoivat energiaa mikrotasolla 
+	- Energian tasanjakautumisen periaate kertoo että jokaisen neliöllisesti E:sta riippuvan muuttujan jokainen vapausaste $( E \propto x^{2} ) $, varastoi $\frac{1}{2} k_{B} T$ verran energiaa:
+\[
+<E>_{yksi hiukkanen}  = \frac{1}{2} k_{B} T \,, \qquad per~vapausaste
+\] 
+
+- Koko materiaalin sisäinen energia $U$ on tällöin
+
+\[
+U_{per mooli}  = N_{A} \frac{1}{2} k_{B} T = \frac{1}{2} R T \,, \qquad per~vapausaste
+\]
+
+- Lämpökapasiteetti määritellään joko massan tai moolin suhteen
+
+- Moolinen ominaislämpökapasiteetti on muotoa 
+\[
+\hspace{10.0cm} C_{V}  = \frac{\partial U_{\text {per mooli}}}{\partial T}
+\]
+
+- Tasanjakautumisen periaate siis liittää $U$:n ja $T$:n ja mahdollistaa ominaislämpökapasiteetin $C_{V}$ laskemisen
+
+--- slide: Ominaislämpökapasiteetti ---
+
+ (Kaasut)
+
+{6.5cm}
+\small
+
+	- Yksiatomisen kaasun molekyyleillä,  on vain kolme translaatiosta johtuvaa vapausastetta $(x, y, z)$ jolloin ominaislämpökapasiteetiksi saadaan \implies[\small]{ Kineettinen $C_V$: $\quad C_{V}  = 3 \cdot \frac{1}{2} R  = \frac{3}{2} R$ }
+
+-  Kaksiatomisen kaasun molekyyleillä, rotaatiotilat alkavat vaikuttamaan kor\-keammissa lämpötiloissa (huoneenlämmössä) kasvattaen systeemin vapausasteita kahdella 
+
+- Vielä korkeammissa lämpötiloissa (noin yli $1000 \mathrm{~K}$) myös molekyylien vibraatiot muodostuvat tärkeiksi, kasvattaen vapausasteiden lukumäärää edelleen kahdella
+
+- Ominaislämpökapasiteetti voi siis saada arvoja 
+\[
+C_{V}  = \frac{3}{2} R\,, \qquad \frac{5}{2}  R\,, \qquad tai \qquad \frac{7}{2} R
+\]
+
+[FIGURE: SOM_Figure_28.png]
+
+[FIGURE: Tikz_SOM_Statistical_figures.pdf]
+
+--- slide: Ominaislämpökapasiteetti ---
+
+ (Harmonisten värähtelijöiden joukko)
+
+	- Kun vibraatiotilojen vaikutusta kaasun ominaislämpökapasiteet-\\ tiin lasketaan, Boltzmannin jakauman integrointi antaa väärän vastauksen (ehto $E_{n+1} - E_n \ll k_B T$ ei päde) 
+	
+	- Meidän pitää summata tilojen yli: 
+\[
+<E>\,  =  \frac{\sum_{n=0}^{\infty} n \hbar \omega_{0} e^{-n \hbar \omega_{0} / k_{B} T}}{\sum_{n=0}^{\infty} e^{-n \hbar \omega_{0} / k_{B} T}} =\ldots= \frac{\hbar \omega_{0}}{e^{\hbar \omega_{0} / k_{B} T}-1}
+\]
+
+- Yhdelle moolille harmonisia värähtelijöitä
+\[
+U_{\text {per mooli}}^{(vib)}  = N_{A} \frac{\hbar \omega_{0}}{e^{\hbar \omega_{0} / k_{B} T}-1}
+\]
+
+- joka derivoimalla saadaan (ominais)lämpökapasiteetti
+\[
+C_{V}^{(vib)}  \equiv \frac{\partial U_per mooli^{(vib)}}{\partial T}
+ = N_{A} k_{B} \frac{ ( \hbar \omega_{0} )^{2} e^{\hbar \omega_{0} / k_{B} T} }{ ( k_{B} T ) ^{2} ( e^{\hbar \omega_{0} / k_{B} T}-1 ) ^{2} }
+\]
+
+--- slide: Ominaislämpökapasiteetti ---
+
+ (Vibraatiotilojen vaikutus)
+
+	- Korkeissa T:ssa $( k_{B} T \gg \hbar \omega_{0} ) $, verrannollisuus  $<E> \propto k_{B} T$ tuntuu pätevän  (2 vibraatiovapausastetta)
+
+[FIGURE: SOM_Figure_29.png]
+
+- Matalissa lämpötiloissa $ ( k_{B} T \ll \hbar \omega_{0} )$, keskimääräinen energia $<E>\,$ nousee nollasta hitaasti, koska vain muutamilla molekyyleillä on tarpeeksi energiaa virittyä muulle kuin perustilalle
+
+- Kuvassa b hahmoteltu $C_{V}$ vastaa käytännössä $<E>\,$:n derivaattaa (kuva~a) 
+
+{5cm} \small
+
+- Muutos $C_{V}=0 \quad \Rightarrow \quad C_{V}=R$ muistuttaa kuvaa~28, missä kasvanut lämpötila mahdollistaa vibraatio\-ti\-lojen virittymisen 
+
+- Tämä tapahtuu kun: 
+\[
+k_{B} T  = 0.3 \;...\; 0.5 \hbar \omega_{0}
+\]
+
+--- slide: Ominaislämpökapasiteetti ---
+
+ (Vibraatiotilojen vaikutus)
+
+- Vetymolekyylille resonanssienergia on $\omega_{0}=8,28 \cdot 10^{14}~\mathrm{rad} / \mathrm{s}$, joka nostaa tarvittavan lämpötilan huomattavan korkealle $T = 0,3 \frac{\hbar \omega_{0}}{k_{B}} \approx 1900 \mathrm{~K}$ 
+- Tämä täsmää todella hyvin kuvan 28 kanssa
+
+[FIGURE: SOM_Figure_28.png]
+
+--- slide: Ominaislämpökapasiteetti ---
+
+ (Kiinteä olomuoto)
+
+	- Kiinteissä aineissa atomit/elektronit eivät voi liikkua vapaasti/pyöriä 
+	- Ne voivat  vain oskilloida/värähdellä kolmessa suunnassa 
+	- Koska yksiulotteisella värähtelijällä on kaksi vapausastetta, kolmiulotteisella kiinteällä aineella on jo kuusi vapausastetta, johtaen 
+\[
+C_{V}  =  6 \cdot \frac{1}{2} R  = 3 R \,, \qquad (dielektriset aineet)
+\]
+
+- Sähköä johtavilla aineilla (esim.~metallit), johtavuuselektronit eivät ole sidoksissa atomien ytimiin, vaan liikkuvat vapaasti kuten kaasussa
+
+- Klassisesti ajatellen, johtavuuselektroneilla on 3 vapausastetta, joiden kuuluisi nostaa lämpökapasiteettia $C_V$ tekijällä $3 \times \frac{1}{2}=1,5$
+\implies{ johteiden lämpökapasiteetin pitäisi siis olla $C_{V}  =  4,5 R$ }
+
+--- slide: Ominaislämpökapasiteetti ---
+
+ (Johtavuuselektronien vaikutus)
+
+	- Klassiset odotusarvot eivät vastaa mitattua todellisuutta  
+	
+	- Monille kiinteille aineille, lämpökapasiteetin arvo on lähellä $3R$ ($C_V \approx 3R$), sekä eristeillä että johteilla
+
+- Elektronit ovat pakkautuneet alimmille energiatiloilleen, ja koska 
+
+{6.4cm}
+
+- huoneenlämmössä, arvo $k_{B} T$ on paljon pienempi kuin $E_{F}$, käytännössä vastaa lähes tilannetta $T=0$
+
+- Johteissa vain pieni osuus elektroneista liikkuu, aiheuttaen merkityksettömän pienen vaikutuksen lämpökapasiteettiin $C_V$
+
+[FIGURE: SOM_Statistical_Table_3.png]
+
+--- slide: Ominaislämpökapasiteetti ---
+
+ (Akustiset hilavärähtelyt eli fononit)
+
+- Kiinteän aineen atomit ovat vahvasti kytkeytyneet toisiinsa (ks.~kuva)
+
+- Yhden atomin poikkeuttaminen poikkeuttaa myös naapuriatomeita (jolloin koko kappale värähtelee)
+
+	-  \small
+	- Täytyy tarkastella kollektiivisia vibrationaalisia virityksiä, ts.~aineessa eteneviä ääniaaltoja eli fononeita
+	- Fononit käyttäytyvät bosonikaasun tavoin 
+
+{7.8cm}
+
+	-  \small
+
+	- Fononit toimivat atomivärähtelyjen bosonisina kvantteina
+	- Fononin spin on nolla, ja se kuljettaa aineessa pienen määrän/kvantin energiaa ($\,h f \sim$10 meV) 
+	- Fononi ei ole oikea hiukkanen, samassa mielessä kuin fotoni on, vaan sitä kutsutaan 'kollektiiviseksi viritykseksi' tai\\ 'kvasihiukkaseksi'   
+	\implies[\small]{ Fononeita on vain aineen sisällä }
+
+[FIGURE: Tikz_SOM_Statistical_figures.pdf]
+
+## 1.11 Debyen Malli
+
+--- slide: 1. Statistinen Mekaniikka ---
+
+    -<1-> 1_1_a{Yksinkertainen Termodynaaminen Systeemi}
+    -<1-> 1_2_a{Entropia ja Lämpötila}	
+    -<1-> 1_3_a{Einsteinin Kiinteä Aine}	
+    -<1-> 1_4_a{Boltzmannin Jakauma}
+    -<1-> 1_5_a{Klassiset keskiarvot}
+    -<1-> 1_6_a{Kvanttijakaumat}
+    -<1-> 1_7_a{Kvanttikaasu}
+
+    -<1-> 1_8_a{Fotonikaasu}
+	-<1-> 1_9_a{Laseri}
+	-<1-> 1_10_a{Ominaislämpökapasiteetti}
+	-<1-> 1_11_a{Debyen Malli}
+
+--- slide: Debyen Malli ---
+
+ (Fononit)
+
+	- Fononien aallonpituuksille on olemassa alaraja
+	\implies{Käytännössä: \qquad $\frac{1}{2} \lambda_{\min}  = a=$ hilavakio } 
+
+[FIGURE: SOM_Figure_30_cropped.png]
+
+	- Pienin aallonpituus vastaa suurinta taajuutta
+	         eli suurinta energiaa $E_{\max}$
+
+{8.5cm}
+
+	- Fononien nopeus ei ole valon nopeus, vaan äänen nopeus $v_{s}$ aineessa
+
+- Fononit voivat värähdellä kahdessa poikittaisessa suunnassa, sekä pitkittäis-\\ suunnassa
+
+- Olettamalla sekä poikittais- että pitkit\-täis\-fononien nopeudet samoiksi, fononinen tilatiheys täytyy kertoa tekijällä $3 / 2$
+
+--- slide: Debyen Malli ---
+
+ (Fononeihin varastoitunut energia)
+
+	- Fononien varastoimalle kokonaisenergialle voidaan muodostaa yhtälö:
+\[
+U_{\text {fononi}}  = \int_{0}^{E_{\max}} E \mathbb{N}(E) D(E) d E
+ = 
+ \int_{0}^{E_{\max }} E \frac{1}{e^{E / k_{B} T}-1} \frac{12 \pi V}{h^{3} v_{S}{ }^{3}} E^{2} d E
+\]
+
+- Integraalin laskemiseksi meidän täytyy
+
+{7.3cm}
+
+	 - arvioida suurin energia $E_{max}$ ja yhdistää se pienimpään aallonpituuteen $2 a$
+
+- Tarkastellaan atomeita kuutio\-maisessa kiinteässä kappaleessa 
+
+- Atomeita on yhdellä särmällä $N^{1 / 3}$, ja atomien välinen etäisyys on $L / N^{1 / 3}$ 
+- \implies{ Aineessa on fononeita, joiden pienin aallonpituus on $2 L / N^{1 / 3}$}
+
+[FIGURE: SOM_Figure_31.png]
+
+--- slide: Debyen Malli ---
+
+ (Fononien tilatiheys ja energia)
+
+ \fontsize{11.5}{13}\selectfont 
+
+	- Jaksollisuuden takia kiinteässä aineessa sallitut aaltovektorit $\mathbf{k}$ ovat diskreettejä: yksittäinen fononitila vie (ns.~$\mathbf{k}$-avaruudessa/tila-avaruudessa) tilavuuden  $( 2 \pi /L )^{3}$ 
+
+{8cm} 
+ \fontsize{11.5}{13}\selectfont 
+
+- Huomaa että $\mathbf{k}$ on vektori (k=$|\mathbf{k}|$), ja voi\\ o\-soit\-taa mielivaltaiseen suuntaan, jolloin sallitut fononitilat muodostavat pallon!
+
+- Systeemissä on yhteensä $N$ tilaa, jonka täytyy vastata tiheyden ja tilavuuden tuloa ($\mathbf{k}$-avaruudessa):
+\[
+
+N & =  \bigg( \frac{L}{2\pi} \bigg)^{3} \bigg( \frac{4 \pi}{3} k_{\max }^{3} \bigg)  \\
+\Rightarrow \qquad k_{\max } & =  \bigg( \frac{8\pi^3}{L^3} \frac{3N}{4\pi} \bigg) ^{1 / 3} \\
+& =  \bigg( \frac{6 \pi^{2} N}{L^{3}} \bigg) ^{1 / 3}  =  \bigg( \frac{6 \pi^{2} N}{V} \bigg) ^{1 / 3}
+
+\]
+
+[FIGURE: SOM_Figure_32.png]
+
+--- slide: Debyen Malli ---
+
+ (Fononien energia ja Debyen lämpötila)
+
+	- Nyt kun suurin aaltoluku on johdettu, voidaan suurin fononin energia arvioida:
+\[
+E_{\max}  =  \frac{h v_{s} k_{\max }}{2 \pi}  =  \frac{h v_{s}}{2 \pi} \bigg( \frac{6 \pi^{2} N}{V} \bigg) ^{1 / 3}  =  h v_{s} \bigg( \frac{3 N}{4 \pi V} \bigg) ^{1 / 3} \,, \qquad E=\hbar \omega ~ja~\omega = v_s k
+\]
+
+- Oletimme että etenevien aaltojen nopeus on sama kuin äänen nopeus aineessa, mikä on kokeellisesti vahvistettu tosiasia. Lisäksi oletimme että kaikki fononit liikkuvat samalla nopeudella 
+
+- Asettamalla $E_{\max }=k_{B} T_{D}$ saamme ilmaistua suurimman energian lämpötilana, niin sanottuna  Debyen lämpötilana, mikä selvästikin riippuu aineen ominaisuuksista, kuten $N / V$ ja $v_{s}$:
+\[
+T_{D}  = \frac{E_{\max }}{k_{B}}  = \frac{h v_{S}}{k_{B}} \bigg( \frac{3 N}{4 \pi V} \bigg) ^{1 / 3}
+\]
+
+--- slide: Debyen Malli ---
+
+ (Fononeihin varastoitunut energia ja Debyen funktio)
+
+	- Nyt kun maksimienergia on laskettu, voimme palata alkuperäiseen kokonaisenergian integraaliin:
+	$$
+	U_{\text {fononi}}  =   \int_{0}^{k_{B} T_{D}} E \frac{1}{e^{E / k_{B} T}-1} \frac{9 N}{ \big( k_{B} T_{D} \big) ^{3}} E^{2} d E  = 9 k_{B} N \frac{T^{4}}{T_{D}^{3}} \int_{0}^{T_{D} / T} \frac{x^{3}}{e^{x}-1} d x
+	$$
+	missä muuttuja $E$ on vaihdettu $x$:ksi $(x \equiv E/k_{B} T)$
+- Moolille ainetta $N=N_{A}$, ja koska $k_{B} N_{A}=R$, saamme lopuksi:
+\[
+U_{fononi,\,per mooli}  = 9 R \frac{T^{4}}{T_{D}^{3}} \int_{0}^{T_{D} / T} \frac{x^{3}}{e^{x}-1} d x \qquad
+\]
+
+- Valitettavasti Debyen funktion integraalia ei voida analyyttisesti laskea, vaan se täytyy arvioida numeerisesti, ja verrata kokeellisiin tuloksiin
+
+--- slide: Debyen Malli ---
+
+ (Fononien vaikutus ominaislämpökapasiteetteihin)
+
+	- Ylläkuvattu Debyen malli täsmää hyvin kokeellisten lämpökapasiteettien kanssa, kuten kuvasta nähdään
+	
+	- Johtaminen oli nopea ja yksinkertaistettu, parempi johtaminen suoritetaan johdantokurssilla kiinteän olomuodon fysiikkaan!
+
+[FIGURE: SOM_Figure_33.png]

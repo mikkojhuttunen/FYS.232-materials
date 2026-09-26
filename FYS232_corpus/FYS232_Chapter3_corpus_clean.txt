@@ -1,0 +1,4873 @@
+# FYS.232 Structure of Matter -- Chapter 3: Nuclear Physics
+(Clean text corpus, extracted and cleaned from LaTeX/Beamer slide source.
+ TikZ figure blocks are replaced with [FIGURE: filename] markers.
+ Section/slide titles are the REAL titles from the course's own a_SoM_TOC.tex
+ (English) and b_AiRa_TOC.tex (Finnish) files.
+ Custom notation macros (big brackets, equal signs, integral/sum symbols,
+ arrows, sqrt, citation stamps, etc.) normalized to plain characters / standard LaTeX.
+ NOTE: not cross-checked against an actual compiled PDF (only Chapter 1 was
+ rendered end-to-end) -- flag anything that looks garbled.)
+
+======================================================================
+ENGLISH (source: SubChapters/)
+======================================================================
+
+## 3.1 Basic Structure
+
+--- slide: 3. Nuclear physics ---
+
+    - 3_1_a{Basic Structure}
+    - 3_2_a{Binding}	
+    - 3_3_a{Nuclear Models}	
+    - 3_4_a{Radioactivity}
+    - 3_5_a{The Radioactive Decay Law}
+    - 3_6_a{Nuclear Reactions}
+    - 3_7_a{Applications of Nuclear Physics and Radioactivity}
+
+--- slide: Basic Structure ---
+
+ (General aspects of nuclear physics)
+ 
+ \seminormal
+
+	- Before neutrons were found, it was thought that the atom consists only of protons and electrons, although the principles of holding the atom together couldn't be explained 
+	
+	- Finding neutron (theoretical prediction by Rutherford 1920, experimental discovery by Chadwick 1932) rapidly helped to build models for the overall composition of the atomic nucleus 
+	
+	- But even today the models describing the nucleus are not fully satisfactory
+
+- Some nuclei are inert and stable, some are not, releasing enormous amounts of energy
+
+- Nuclear physics has resulted in several applications:
+-  \semismall
+	-  Energy applications of nuclear reactions
+- Radioactivity \& radioactive isotopes (radioactive dating, tracers, ...)
+- Nuclear magnetic resonance (NMR) imaging (medical imaging)
+- Neutron activation analysis (NAA) (concentrations of elements)
+
+--- slide: Basic Structure ---
+
+ (General aspects of atomic nucleus)
+
+	- Size of atom is $0.1–1 \mathrm{\;nm}$, while the size of nucleus is 1–10\;fm ($10^{-5}$ of the whole atom)
+
+- Although electrons are bound to nuclei, their binding energies are negligible compared with the energies within the nucleus
+
+- On the other hand, magnetic moment of nucleus $ (  \frac{e \hbar}{2 m_{p}} ) $ is small $\sim 1/2000$ compared with the magnetic moment of electrons (Bohr magneton $\frac{e \hbar}{2 m_{e}}$)
+
+[FIGURE: SOM_Nuclear_Table_1.png]
+
+[FIGURE: Tikz_SOM_Nuclear_atom_vs_nucleus.pdf]
+
+--- slide: Basic Structure ---
+
+ (Basic structure of atomic nucleus)
+
+	- Notation for the isotope of an element, i.e. a nuclide, ${}_{Z}^{A}X$:
+$$\small
+{rl} 
+  A&=  ~Atomic mass number$^*$ = integer) \approx \text {Atomic weight in amu} \\ 
+A=Z+N \,,~where \quad  Z&=\text {~Atomic number (number of protons)}^\dagger \rightarrow \text {charge for the nucleus} \\ 
+N&=\text {~Neutron number}
+
+$$
+- Mass of nucleus $\approx A \cdot m$, where $m \approx m_{p} \approx m_{n}$
+
+{6.5cm}
+
+- One atomic mass unit equals
+\[
+ 1 \;u \equiv \frac{m_{C-12}}{12} = 1.660540 \times 10^{-27} \mathrm{\;kg}
+\]
+
+- Stable nuclei typically have about the same number of protons and neutrons: 
+\[
+ Z \approx N
+ \]
+
+[FIGURE: SOM_Nuclear_physics_Figure_1.png]
+
+\footnoteleft{{$^*$Also known as mass number or nucleon number, i.e. A = 'All'},{$^\dagger$Or proton number }}
+
+--- slide: Basic Structure ---
+
+ (Basic structure of atomic nucleus)
+
+{6.5cm}
+ \seminormal
+- Basic terminology:
+	
+	 - ${ }^{12} \mathrm{C}$ and ${ }^{13} \mathrm{C}$ are called 'isotopes' 
+	- ${ }^{13} \mathrm{C}$ and ${ }^{14} \mathrm{N}$ are called 'isotones' 
+	- ${ }^{14} \mathrm{C}$ and ${ }^{14} \mathrm{N}$ are called 'isobars'
+
+	- Hydrogen has three isotopes:
+	
+		- Hydrogen (Hydrogen-1) Stable
+		- Deuterium (Hydrogen-2) Stable
+		- Tritium (Hydrogen-3) Unstable	
+
+- Of these, hydrogen-1 is most abundant in nature, $99.985 %$. Hydrogen-2 exist in small fraction in nature, $0.015 %$. Hydrogen-3 is practically absent from nature, since it is unstable
+
+\footnoteleft{{A. H. Wapstra and G. Audi, Nuclear Physics A595, 4 (1995).}}
+
+[FIGURE: SOM_Nuclear_physics_Figure_2.png]
+
+--- slide: Basic Structure ---
+
+ (Basic structure of atomic nucleus)
+
+\semismall
+
+	- There are more than 3000 known nuclides, of which 266 are known to be stable
+- 
+	 - The stable nuclei are naturally abundant
+	- No isotopes absent from nature are stable
+
+- The number of stable isotopes for each $Z$ vary, e.g.:
+- 
+	 - Helium has two naturally occurring isotopes: He-3 (99.99986%) and He-4 $(0.00014 %)$
+- Carbon has two naturally occurring isotopes: C-12 (98.90%) and C-13 (1.10%)
+- Aluminum has only one naturally abundant isotope Al-27
+- Tin has 10: $\mathrm{Sn}-112 \rightarrow$ Sn-124 (except Sn-121, having half-life of 55 years)
+
+- Unstable isotopes can be made artificially, but they vanish via radioactive decay
+
+- Unstable isotopes can also be abundant in nature, if they are generated by a radioactive decay from another nuclei
+
+- For example, uranium-238 and thorium-232 are not stable, but still they are more abundant in nature than silver
+
+--- slide: Basic Structure ---
+
+ (Size of the nucleus)
+
+	- Three experimental methods exist to determine the sizes of nuclei	
+	- Each one gives slightly different results, but they all are within the same order of magnitude 
+ \seminormal
+	- Scattering of $\alpha$-particles
+	 \small
+		- Rutherford bombarded thin foil of gold with $\alpha$ particles $ (={ }^{4} \mathrm{He}$ nuclei)
+
+- Scattering of electrons
+	 \small
+		- Hofstadter bombarded nuclei with electrons of $200-500 \mathrm{\;MeV}$
+
+- Attenuation of a beam of fast neutrons
+	 \small
+		- Cross section of attenuation is obtained
+
+{8.5cm}
+
+	- All of these give the same type of result for the radius of roughly spherical nucleus:
+\[
+r  =  R_{0} A^{1 / 3}
+\]
+where $R_{0} \approx 1.2 \mathrm{\;fm}$ (1.1--1.4 fm is measured) 
+
+[FIGURE: SOM_Nuclear_physics_Figure_3.png]
+
+--- slide: Basic Structure ---
+
+ (Size of the nucleus)
+
+- The above proportionality ($r \propto A^{1/3}$) implies the nuclear volume to be
+\[
+V_{t o t}  = \frac{4}{3} \pi r^{3}  = \frac{4}{3} \pi (  R_{0} A^{1 / 3} )  ^{3}  = \frac{4}{3} \pi R_{0}^{3} \times A
+\]
+- The neutrons and protons have nearly equal mass ($m_{p} \approx m_{n} \approx m_{nucleon}$), in which case the total mass of the nucleus is proportional to  $A$, implying that all nuclei have roughly the same density:
+\[
+\rho  = \fraca{\text {mass}}{\text {volume}}  = \fraca{A \times m_{\text {nucleon}}}{A \times \frac{4}{3} \pi R_{0}^{3}} \approx 2.3 \times 10^{17} \mathrm{\;kg} / \mathrm{m}^{3}
+\]
+
+- Constant density suggests that nucleons behave as incompressible objects packed as close together as possible, i.e. nucleons have a strongly repulsive hard core
+
+- Effective radius of an individual nucleon is approximately $ R_{0} \sim 1 \mathrm{\;fm}$
+
+--- slide: Basic Structure ---
+
+ (Rutherford's model)
+
+\semismall  
+
+{8.5cm}
+
+	- Rutherford bombarded $\mathrm{Pb}$ with $\alpha$ particles with increasing energy. At energies greater than $\approx 27 \mathrm{\;MeV}$, the incoming $\alpha$ particles started to interact with Pb-nucleus via attractive nuclear force
+
+- Also, experiments on beta decay from mirror nuclides (isobars) $ (  A_{1}=A_{2} )$, but $Z_{1}=N_{2}$ and $( N_{1}=Z_{2} ) $, gave indication on the size of nucleus 
+\implies{ Differences in the two nuclei, e.g. ${ }^{15} \mathrm{O}$ and ${ }^{15} \mathrm{N}$, are only of electrostatic origin }
+
+- By integration of the Coulombic energy it is straightforward to show that the electrostatic energy of a sphere of charge $Q=Z e$ with radius $R$ is:
+
+\[
+U  = \frac{3}{5} \frac{1}{4 \pi \varepsilon_{0}} \frac{Q^{2}}{R}  = \frac{3}{5} \frac{k Q^{2}}{R} = \frac{3}{5} \frac{k Z^{2} e^{2}}{R}
+\]
+
+[FIGURE: SOM_Tipler_Nuclear_physics_figure_3.png]
+
+--- slide: Basic Structure ---
+
+ (Rutherford's model)
+
+	- Therefore, if radioactive ${ }^{15} \mathrm{O}$ decays into ${ }^{15} \mathrm{N}$ by emitting a $\beta$-particle (an electron), then the energy difference between ${ }^{15} \mathrm{O}$ and ${ }^{15} \mathrm{N}$ would be
+\[
+\Delta U  = \frac{3}{5} \frac{k e^{2}}{R} [Z^{2}-(Z-1)^{2} ]
+\]
+- with $Z=8$, from where the radius of nucleus $R$ can be estimated
+
+- Example: Calculate the radius for the lightest and heaviest nuclei, i.e. for ${ }_{2}^{4} \mathrm{He}$ and ${ }^{238}_{92}U$. The radius is given by $r_{0}=1.2 \times A^{1/3} \mathrm{fm}$ so:
+$$
+
+ r_{He} & = 1.2 \times (4)^{1/3} \mathrm{\;fm}=1.90 \mathrm{\;fm} \\
+r_{U} & = 1.2 \times (238)^{1/3} \mathrm{\;fm}=7.42 \mathrm{\;fm}
+
+$$
+ \implies{ The lightest and heaviest nuclei are only a factor 4 different \\
+ 		in physical size }
+
+--- slide: Basic Structure ---
+
+ (Hofstadter's model)
+
+\semismall
+
+{7.5cm}
+
+	- The scattering of high-energy electrons from nuclei show consistent dependency on the atomic number $Z$
+
+- It is assumed that a 'skin' exists on the surface, defined to lie between $10 %$ and $90 %$ of the central core density of the nucleus, and $r_{0}$ being at the $50 %$ value of the charge density
+
+- A good approximation for radial profile of nucleon density is: 
+
+\[
+\hspace{3cm} \rho(r)=\fraca{\rho_{n}}{1+e^{ (  r-r_{0} )   / a}}
+\]
+where:
+$$
+
+&\rho_{n}=0.17 \;\frac{\text {nucleon}}{\;fm^{3}} \\
+&r_{0}= (  1.18 A^{1/3}-0.48 )   \;fm \\
+&a=0.55 \mathrm{\;fm} 
+
+$$
+
+[FIGURE: SOM_Tipler_Nuclear_physics_figure_7.png]
+
+[FIGURE: SOM_Tipler_Nuclear_physics_figure_8.png]
+
+--- slide: Basic Structure ---
+
+ (Short summary)
+
+\seminormal
+
+	- Facts:
+- 
+	 - Nucleon density of the nucleus is ${\sim}$constant, independent of element - Charge density in the nucleus is ${\sim}$constant, independent of element
+
+- Conclusions:
+If density is constant, adding a nucleon $(A \rightarrow A+1)$ does not increase density. So, if there is an attractive force it is definitely not like electrical force, which would be increasing by a factor of $A$ if one charge is added. So, the nuclear forces need to have a short range, ca. size of one nucleon
+
+- The nuclear forces are very strong, compared to electrical forces (it takes $13.6 \mathrm{\;eV}$ to remove the electron from hydrogen, but $8 \mathrm{\;MeV}$ to remove a nucleon from the nucleus)
+
+- The attractive interaction energy is approximately the same for protons and neutrons. Thus, nuclear forces are independent of electrical charge
+
+## 3.2 Binding
+
+--- slide: 3. Nuclear physics ---
+
+    - 3_1_a{Basic Structure}
+    - 3_2_a{Binding}	
+    - 3_3_a{Nuclear Models}	
+    - 3_4_a{Radioactivity}
+    - 3_5_a{The Radioactive Decay Law}
+    - 3_6_a{Nuclear Reactions}
+    - 3_7_a{Applications of Nuclear Physics and Radioactivity}
+
+--- slide: Binding ---
+
+ (Binding forces)
+
+	- We call the force between the nucleons the strong force. It is one of the four fundamental forces:
+
+	- Strong $(\leftrightarrow$ internucleon attraction)
+- Electromagnetic
+- Weak
+- Gravitational
+
+- Strong force reaches only to roughly 1-2 fm, then, for larger distances it is practically zero. This fact leads to stability of the nucleus
+
+{8.25cm}
+
+	- For larger distances, electromagnetic forces are significant
+	\implies{ Heavier elements, that are larger in size than ${\sim}$2~fm, are affected by the electrostatic forces (repulsion between protons) }
+
+[FIGURE: SOM_Nuclear_Table_2.png]
+
+--- slide: Binding ---
+
+ (Binding forces)
+
+\seminormal
+
+	- Figure 4 gives an outline of the strong force:
+ \small
+	- Short range attraction
+- Strong repulsion for hard core
+- Independent on whether we deal with proton or neutron
+- Depends on the orientation of nuclear spins
+- No formula yet exists for the strong force
+
+{8.7cm}
+
+	- Combined with a Coulombic repulsive force between protons, the strong force potential well of Figure 4 is modified to have a repulsive barrier for the larger radii
+
+[FIGURE: SOM_Tipler_Nuclear_physics_figure_1_cropped.png]
+
+- From the model presented, one might expect that we could combine any number of protons and neutrons together and form stable nuclei. However only some combinations form a stable nucleus while others are unstable
+
+[FIGURE: SOM_Nuclear_physics_Figure_4.png]
+
+--- slide: Binding ---
+
+ (Theoretical model for the stability)
+
+	- Two-Nucleon Nuclei\\
+	Consider two nucleons bound together by strong force, in a narrow deep potential well shown previously
+
+- 
+	 - Two protons (p-p): Internucleon attraction plus Coulombic repulsion, probably the most unstable of these three
+
+- Two neutrons $(\mathrm{n}-\mathrm{n})$: Only internucleon attraction 
+- Proton-neutron pair (p-n): Only internucleon attraction $\rightarrow$ deuteron
+
+- It turns out, that only p-n combination of these three forms a bound nucleus. Why? The internucleon attraction is spin-dependent, being stronger if the spins are aligned. Secondly, exclusion principle kicks in, which is crucial for all nuclei. Protons and neutrons are spin-1/2 fermions, which cannot occupy the same state in a same system
+
+--- slide: Binding ---
+
+	- The lowest energy possible for two nucleons is a ground state with spins aligned (orientation of stronger attraction). Such a state is forbidden for $\mathrm{n}-\mathrm{n}$ and $\mathrm{p}-\mathrm{p}$ systems due to the exclusion principle
+	
+	- It turns out that deuteron is only barely bound and does not have any excited bound states
+
+{8cm}
+
+	- And if deuteron cannot find any other way to bind, then the other two pairs should not bind at all
+
+- In Figure 5 the energy in a deuteron is depicted.
+
+[FIGURE: SOM_Nuclear_physics_Figure_5.png]
+
+ Two nucleons occupy the lone bound state in a potential well arising from their mutual attraction
+
+--- slide: Binding ---
+
+ (Strong internucleon attraction)
+
+\semismall
+
+	-  \semismall
+	 - A two-nucleon has one bond, i.e, half a bond per nucleon 
+	 - A three nucleon has three, i.e. one bond per nucleon 
+	 - A four-nucleon has six, i.e. $1.5$ bonds per nucleon 
+	 \implies{number of bonds increases}
+
+{7.4cm}
+
+	- This increasing trend continues only until the nucleons are packed tightly together and the nearest neighbours surround each other. Then each surrounded nucleon will have the same maximum number of bonds
+
+- This ratio is essentially area over volume $=\frac{4 \pi r^{2}}{4 / 3 \pi r^{3}} \propto \frac{1}{r}$ 
+- The average number of bonds per nucleon approach a constant-valued  binding energy per nucleon (not bonds per nucleon), i.e, the energy required to pull all nucleons apart
+
+[FIGURE: SOM_Nuclear_physics_Figure_6.png]
+
+--- slide: Binding ---
+
+ (Coulomb repulsion)
+
+{9.0cm}
+
+	- All pairs of protons repel each other, which shifts the proton energies slightly up, closer to the top of the finite well
+	
+- In small nuclei, all nucleons touch, and there is a net attraction between them. But there are only few bonds per nucleon
+
+- In larger nuclei, pairs of protons shift apart so that the strong force cannot affect anymore \implies{ These pairs add a net repulsion }
+
+- Combining these two effects, we expect a maximum in the binding energy per nucleon
+
+[FIGURE: SOM_Nuclear_physics_Figure_8.png]
+
+[FIGURE: SOM_Nuclear_physics_Figure_7.png]
+
+--- slide: Binding ---
+
+ (The exclusion principle)
+
+	- According to exclusion principle the lowest energy would correspond to a case with equal number of protons and neutrons
+	
+	- In Figure 9, we have initially equal number of protons and neutrons. Keeping $A$ fixed, we change one proton to neutron. Because lower energy levels are filled, we need to place the neutron at higher state,
+
+{6.5cm}
+
+- i.e. total energy will increase 
+
+- The same argument applies, if we change a neutron to a proton
+	- Thus the state $Z=N$ is of the lowest energy
+
+[FIGURE: SOM_Nuclear_physics_Figure_9.png]
+
+--- slide: Binding ---
+
+\seminormal
+
+{8.75cm}
+
+	- Now we take into account the Coulomb repulsion between the protons. Consider a small nuclei where all nucleons touch, all proton repulsions are overwhelmed by the strong attraction, so $Z \cong N$ should be more stable
+
+- In a large nuclei, uncompensated Coulomb repulsions shift the proton states upwards. Thus is could be expected that at lowest energy state, the tops of neutron and proton levels should be equal, thus this case should have $N>Z$
+
+- This reasoning predicts that the nucleons should be most tightly bound in a nuclei with intermediate mass number. The binding energy per nucleon should have a relative maximum at $Z \cong N$ for small nuclei and at $N>Z$ for larger nuclei
+
+[FIGURE: SOM_Nuclear_physics_Figure_10.png]
+
+--- slide: Binding ---
+
+ (Experimental facts regarding stability)
+
+	- The validity for our model on the nuclear forces comes from the sums of the experimentally extracted nuclear masses
+
+- If we need to use energy to pull separate nucleons out of the nuclei, it must be that the mass of the nuclei is less than the sum of the masses of the parts
+
+- Clearly, e.g. deuteron weighs less than the sum of its parts:
+
+{8cm}
+
+- 
+	 - Deuteron mass $m_D = 2.013553 \mathrm{\;u}$ 
+	- ~
+	$$
+	m_p  +  m_n &= 1.007276 \mathrm{\;u}+1.008665 \mathrm{\;u} \\&=2.015941 \mathrm{\;u}
+	$$
+	 
+- Mass of parts $-$ mass of whole 
+$$
+=2.015941 \;u   - 2.013553 \;u  =  + 0.002388 \;u
+$$
+
+- \implies{ We need to do work to pull the deuteron apart }
+
+[FIGURE: SOM_Nuclear_physics_Figure_11.png]
+
+--- slide: Binding ---
+
+ (Binding energy of the nucleus)
+
+	- We define binding energy $B E$ for an arbitrary nucleus, as the energy to pull all of the nucleons apart:
+\[
+BE  = m_{f} c^{2}  - m_{i} c^{2}  =   ( mass of parts  - \text {mass of whole} )\, c^{2}
+\]
+
+- For deuteron:
+$$
+
+B E &  =  (  0.002388 \;u \times 1.661 \times 10^{-27} \mathrm{\;kg} )   (  3 \times 10^{8} \frac{\mathrm{m}}{s} )^{2} \\
+&  = 3.57 \times 10^{-13} \mathrm{\;J}  = 2.22 \mathrm{\;MeV}
+
+$$
+Also e.g. for hydrogen atom, one needs $13.6 \mathrm{\;eV}$ to pull the electron apart. The atom weighs $2.4 \times 10^{-35} \mathrm{\;kg}$ less than its parts separately
+
+- Note that the fractional mass change $\Delta m$ of hydrogen atom is $2.4 \times 10^{-35} \mathrm{\;kg} / 1.67 \times 10^{-27} \mathrm{\;kg} \cong 10^{-8}$ 
+- But $\Delta m$ for deuteron is $0.002388 \mathrm{\;u} / 2.013553 \mathrm{\;u} \cong 10^{-3}$, a large value!
+
+--- slide: Binding ---
+
+ (Binding energy of the nucleus)
+
+	- The theoretical model gives us the binding energy per nucleon, for e.g. deuteron this would be: $2.22 \mathrm{\;MeV} / 2=1.11 \mathrm{\;MeV}$ per nucleon. In general:
+\[
+BE  =  ( Z m_{H}  + N m_{n}  - M_{{}^{A}_{Z}X} ) c^{2} \,, \qquad M_{{}^{A}_{Z}X} \equiv m_a
+\]
+
+- The formula contains the mass of hydrogen atom $m_H$ ($m_p+m_e$), 
+
+{6.5cm}
+
+	- which cancels the electrons' masses in the atomic mass term $M_{{}^{A}_{Z}X}$, that also contains the electron masses
+	
+	- Still, this is an approximation, since e.g.~electron binding energies are not taken into account (being rather small)
+
+[FIGURE: SOM_Nuclear_physics_Figure_12.png]
+
+--- slide: Binding ---
+
+ (Binding energy of the nucleus)
+
+\seminormal
+
+{7.4cm}
+
+	- It is very informative to plot the neutron number vs. proton number for the known nuclides
+
+- The 266 stable nuclides are indicated as black dots, and a line of stability has been fitted into that data 
+
+- It is worth to note that for small nuclei, the line of stability follows the line $N=Z$, but for larger nuclei, as $A$ increases, it tends toward $N>Z$, agreeing with our previously discussed simple model
+
+- The shaded area represents the known unstable (radioactive), nuclides whose lifetimes are longer than about a millisecond
+
+[FIGURE: SOM_Tipler_Nuclear_physics_figure_13.png]
+
+--- slide: Binding ---
+
+ (Binding energy per nucleon)
+
+\seminormal
+
+{9cm}
+
+	- Figure 14 is a cross section of Figure 12 showing
+		 the BE/nucleon, taken roughly at the line of stability
+
+- Because $BE/$nucleon varies with both $N$ and $Z$, 
+	the plot cannot show all the isotopes, but the trend is clear
+
+- For small nuclei, $BE/$nucleon increases with $A$, but for larger nuclei, it decreases with $A$
+
+{6.5cm}
+
+	- For deuteron we have $1.1 \mathrm{\;MeV}$, and for large $A$ the curve approaches $7.57 \mathrm{\;MeV}$ 
+	
+	- The maximum for BE/nucleon ($8.79 \mathrm{\;MeV}$) is obtained at about $A=60$ (for iron-56, iron-58 and nickel-62). From all of the elements, these have the most stable, tightly bound nuclei
+
+[FIGURE: SOM_Nuclear_physics_Figure_8.png]
+
+[FIGURE: SOM_Nuclear_physics_Figure_14.png]
+
+## 3.3 Nuclear Models
+
+--- slide: 3. Nuclear physics ---
+
+    - 3_1_a{Basic Structure}
+    - 3_2_a{Binding}	
+    - 3_3_a{Nuclear Models}	
+    - 3_4_a{Radioactivity}
+    - 3_5_a{The Radioactive Decay Law}
+    - 3_6_a{Nuclear Reactions}
+    - 3_7_a{Applications of Nuclear Physics and Radioactivity}
+
+--- slide: Nuclear Models ---
+
+ (Shape of the nucleus)
+
+	- Most of the atomic nuclei are nearly spherical
+	- Mostly only rare earth elements $(Z=57-71)$ are ellipsoidal, with the major axis differing from the minor axis about 20 percent
+
+- In those heavy nuclei, their inner atomic electron wave functions even slightly penetrate the nucleus. Deviations from the spherical shape, which correspond to deviations in the nuclear charge distributions, show up as small changes in the atomic energy levels
+
+- The shape of the nucleus is shown in the average value of the electric quadrupole moment:
+\[
+< Q >  = Z \int \psi^{*} [ 3 (z_{a v}^{2} )_{a v}  -  (x^{2}+y^{2}+z^{2} )_{a v}] \psi  \, d V
+\]
+
+--- slide: Nuclear Models ---
+
+ (Shape of the nucleus)
+
+{10.0cm}
+
+	- So, if the quadrupole moment is positive, the shape is prolate ellipsoid, i.e. like a 'vertical watermelon' 
+	- If the moment is zero, the shape is a sphere 
+
+{6.5cm}
+
+	- If the quadrupole moment is negative, then the shape is an oblate ellipsoid, i.e. more like a 'flattened pumpkin'
+
+[FIGURE: SOM_Tipler_Nuclear_physics_figure_10.png]
+
+[FIGURE: SOM_Tipler_Nuclear_physics_figure_11_cropped.png]
+
+--- slide: Nuclear Models ---
+
+ (Nuclear models)
+
+	- There are several theoretical models to describe the atomic nucleus. Two most useful ones are:
+- 
+	- Liquid drop model
+
+	- Assumes nucleus as a round droplet of incompressible liquid
+- Allows to predict the binding energy of the nucleus
+
+- Shell model
+- 
+	- Adapts the models for electrons as oscillators in a deep quantum well
+- Predicts e.g. the most stable nuclei, based on so-called magic numbers
+
+- Each model has its emphasis. Although they agree in some ways, they are still only approximate, relying on unique assumptions and simplifications. To understand the atomic nucleus, there is still room for complementary models
+
+--- slide: Nuclear Models ---
+
+ (The liquid drop model)
+
+	- Since the density of the nucleus was seen to be radial rather homogeneous, and also since all nuclei seem to have nearly the same density, one natural way to describe the nucleus is the liquid drop model
+
+- Analogy with a droplet of liquid works fairly well on the atomic nuclei: 
+- 
+	- Liquid consists of relatively closely packed, disorganised molecules, which attract each other for larger separations 
+	- At small separations become strongly repulsive, leading to incompressibility, such as in the case of water
+
+- To move a water molecule to the surface of a droplet, we need to pull it away from those molecules, that would otherwise attract it from the sides. This requires energy, and the lowest energy state, to minimize the surface, will then be a sphere
+
+--- slide: Nuclear Models ---
+
+ (The liquid drop model)
+
+\semismall
+
+	- In liquid the interior particles are attracted to all particles in the immediate vicinity
+
+- If all the particles would be inside the droplet, then the binding energy would be directly proportional to the number of particles.
+
+[FIGURE: Tikz_SOM_Nuclear_liquid_drop.pdf]
+
+ However, the particles on the surface have fewer neighbours, i.e. fewer contacts, or bonds, with others \implies{ Reduction of the binding energy }
+
+{8.5cm}
+
+	- Idea is to build a general formula for the binding energy for a droplet of nucleons
+
+- Altogether five contributions (i.e. five terms) affect the total binding energy of the nucleus
+
+- We will define $c_{1}, c_{2}, c_{3}, c_{4}$, and $c_{5}$ by fitting experimental data to the formed model [which must be $f(A,N,Z)$]
+
+- Our aim is to build a semi-empirical formula for the binding energy of known nuclei
+
+--- slide: Nuclear Models ---
+
+ (Volume term)
+
+	- Particles totally inside the droplet, are fully surrounded by neighbouring particles. If all the particles in the droplet would be in the interior, then the binding energy would be directly proportional to the number of particles in the droplet, i.e. nucleons in the nucleus.
+\[
+BE \propto c_{1} A
+\]
+
+{8.5cm}
+
+- The proportionality constant $c_{1}$ can be theoretically estimated, but here it is more convenient to first build the whole formula and then fit the constants to empirical data
+
+	- So, volume term is given by  \[
+c_{1} A
+\]
+
+[FIGURE: Tikz_SOM_Nuclear_liquid_drop_interior.pdf]
+
+--- slide: Nuclear Models ---
+
+ (Volume term)
+
+\semismall
+
+	- Q: Is fitting constants $c_{i}$ to empirical data really a theory/useful theory?
+- A: It is a model of a very complex system, guided by experimental information
+
+- The known binding energies per nucleon describe a certain shape of a function of $\mathrm{N}$ and $\mathrm{Z}$, for which the mathematical form cannot be explicitly seen
+
+	- With a simple polynomial fit on $Z$ and $N$, such as e.g.:
+\[
+c_{1} Z^{2}  + c_{2} N  + c_{3}
+\]
+
+{6.5cm}
+
+- it would be impossible fo fulfil the task, and also, not much of physical insight would be obtained 
+
+- The fact that the liquid drop model fits so well to the data, gives strong evidence that the made assumptions are valid 
+
+- It can also be used for further predictions of yet unknown nuclides
+
+[FIGURE: SOM_Nuclear_physics_Figure_14.png]
+
+--- slide: Nuclear Models ---
+
+ (Surface term)
+
+	- For surface nucleons, there are fewer neighbours attracting them than in the interior. So, they should be easier to extract \implies{ Binding energy of surface nucleons is lower than for the interior nucleons }
+
+- Recalling
+$ \quad 
+\text {Volume}  = \frac{4}{3} \pi r^{3} \quad \Rightarrow \quad r = ( \frac{3}{4 \pi} \text {Volume} )^{1 / 3}
+$
+- The surface area becomes $=4 \pi r^{2} =4 \pi ( \frac{3}{4 \pi} Volume)^{2 / 3} \propto$ Volume$^{2 / 3}$
+
+{8.5cm}
+
+- The total binding energy should be reduced by a factor proportional to the surface area, which is proportional to Volume$^{2 / 3}$
+
+	- And, we know that volume is proportional to the number of nucleons, resulting in:
+\[
+BE \propto  - c_{2} A^{2 / 3}
+\]
+
+[FIGURE: Tikz_SOM_Nuclear_liquid_drop_surface.pdf]
+
+--- slide: Nuclear Models ---
+
+ (Coulomb term)
+
+	- Coulomb interaction between the protons raises the overall potential energy $\Rightarrow$ Coulomb interaction reduces the binding energy 
+
+- There are $Z$ protons in the nucleus, which each interact (repel) with the $Z-1$ other protons
+
+- Therefore, the Coulombic energy term, proportional to $\frac{e^{2}}{r}$, will contribute a term proportional to:
+
+{8.5cm}
+
+	- 
+	$$
+	
+\frac{Z(Z-1)}{\text {average proton separation}} &\propto \frac{Z(Z-1)}{droplet radius}\\ 
+&\propto \frac{Z(Z-1)}{A^{1 / 3}}
+
+$$
+-  $$ \Rightarrow \qquad 
+B E \propto -c_{3} \frac{Z(Z-1)}{A^{1 / 3}} \hspace{4cm}
+$$
+
+[FIGURE: Tikz_SOM_Nuclear_liquid_drop_coulomb.pdf]
+
+--- slide: Nuclear Models ---
+
+ (Asymmetry term)
+
+{8cm}
+
+	- For smaller nuclei $N \cong Z$ but for larger nuclei $N>Z$. This has an effect on the energy level occupation balance between neutrons and protons. The effect is quantum mechanical, and occurs due to the exclusion principle
+
+- If there is an excess of neutrons, for example, then a larger number of energy levels gets filled up (two neutrons per level) and the energy of the system increases
+
+- And, because we have a process that increases the energy, then it will decrease the binding energy
+
+[FIGURE: SOM_Nuclear_physics_Figure_13.png]
+
+--- slide: Nuclear Models ---
+
+ (Asymmetry term)
+
+\small
+
+	- Examine now a situation where the neutrons and protons have filled the energy levels at equal heights, $E_{F}$, and assume also that the energy levels are equally spaced, $\delta E$ apart
+
+[FIGURE: SOM_Nuclear_physics_Figure_15.png]
+
+{8.75cm}
+
+	- If $j$ neutrons are now changed to protons (or vice versa), the top neutrons must go from neutron level $E_{F}$ to proton level $E_{F}+(j / 2) \delta E$. The others must make an equal jump. If the energy of each particle increases by $(j / 2) \delta E$ the total energy increases by $(j^{2} / 2) \delta E$
+
+- Now, let's express $j$ in terms of $N$ and $Z$. First $N=Z$, and gain $j$ protons and lose $j$ neutrons. $Z-N$ must now be $2 j$, giving $j=\frac{1}{2}(Z-N)$. Thus, an asymmetry between $Z$ and $N$ should decrease the binding energy (increase the total energy), by a factor of
+\[
+(N-Z)^{2} \delta E  = (A-2 Z)^{2} \delta E \quad \Rightarrow \quad BE \propto -c_{4} \frac{(A-2 Z)^{2}}{A}
+\]
+where division by $A$ normalizes the term
+
+--- slide: Nuclear Models ---
+
+ (Pairing term)
+
+	- As known from the data, nuclear force favours pairing of protons and of neutrons. This last term$^{*}$ gives a better fit to the data
+
+- The term takes into account the fact that the nucleon–nucleon interaction does not merely give rise to an overall average potential for the nucleons, but has also some special characteristics similar to the pairing interaction between two electrons in the superconductor forming a Cooper pair
+
+- This energy term is:
+- 
+	- positive (more binding) if both $Z$ and $N$ are even,
+- negative (less binding) if both $Z$ and $N$ are odd, zero otherwise
+
+\footnoteleft{{$^*$Note, this  5$^{\text {th}}$ term (pairing term) is not included by the textbook by Harris}}
+
+--- slide: Nuclear Models ---
+
+ (Semi-empirical binding energy formula)
+
+	- Summing up the results, we have a semi-empirical formula for the binding energy of the atomic nucleus, sometimes also called Weizsäcker's formula:
+	\[
+B E = c_{1} A  - c_{2} A^{2 / 3}  - c_{3} \frac{Z(Z-1)}{A^{1 / 3}}  - c_{4} \frac{(A-2 Z)^{2}}{A} \pm c_{5} A^{-4 / 3}
+\]
+- where 
+$$
+
+&c_{1}=15.8 \mathrm{\;MeV} \\
+&c_{2}=17.8 \mathrm{\;MeV} \\
+&c_{3}=0.71 \mathrm{\;MeV} \\
+&c_{4}=23.7 \mathrm{\;MeV} \\
+&c_{5}=15.8 \mathrm{\;MeV}
+
+$$
+
+--- slide: Nuclear Models ---
+
+ (Semiempirical binding energy formula)
+
+	- Figure 16 shows how well the semi-empirical formula (pink line) predicts the binding energy per nucleon (experimental: black line)
+
+- Note again, that the forms of the terms in the semi-empirical formula have a physical basis, they are based on justified theoretical arguments, but the numerical values of the coefficients (in this formula) are chosen to fit the experimental data on the binding energies of \\
+different nuclides
+
+[FIGURE: SOM_Nuclear_physics_Figure_16.png]
+
+--- slide: Nuclear Models ---
+
+ (Shell model)
+
+\seminormal
+
+	- In addition to the liquid drop model, another successful model to explain the structure of atomic nucleus is the shell model
+	
+	- Note, that these two models differ from each other to a great extent, which in general indicates the complexity of the strong force
+
+{8.5cm}
+
+	- Whereas liquid drop model is mostly classical (except the asymmetry and pairing terms), shell model has a quantum mechanical basis 
+
+- In the shell model, particles are treated as occupying quantum states in an average potential well that largely ignores the inter-particle forces
+
+- The shell model's success is in predicting the nuclear angular momenta, and the tendencies for both $N$ and $Z$ to be magic numbers, or at least even numbers
+
+[FIGURE: Tikz_SOM_Nuclear_liquid_drop_just_interior.pdf]
+
+--- slide: Nuclear Models ---
+
+ (Magic numbers)
+
+{8.5cm}
+
+	- The shell model was proposed when it was found that nuclear stability exhibited some periodicity, see e.g.~the figures where $N$ or $Z$ equals 2, 8, 20, 28, 50, 82, 126 
+	
+	- Apparently great stability accompanies these values, fairly similar to atomic numbers 2, 10, 18, 36, 54, $\ldots$
+
+[FIGURE: SOM_Nuclear_physics_Figure_13.png]
+
+--- slide: Nuclear Models ---
+
+ (Example 3)
+
+	- Nuclei in excited states can lower their energy by emitting gamma-rays (i.e. photons). Assume (as a rough approximation) that a nucleon of $A=100$ is trapped in an infinite 1D quantum well. What is the order of magnitude of the energy of the emitted photon?
+
+- Energy levels in a 1D quantum well: $E=\frac{\hbar^{2} \pi^{2}}{2 m_{p} L^{2}} n^{2}$
+
+- Assume $A=100 \quad \Rightarrow \quad L=2 r=2 \times R_{0} A^{1 / 3}=2 \times 1.2 \;fm \times 100^{1 / 3}=1.11 \times 10^{-14} \mathrm{\;m}$ \\
+\phantom{Assume $A=100 \quad$} $\Rightarrow \quad r \approx 5.5 \mathrm{\;fm}$
+
+- Mass of a nucleon: $m_{p}=1.67 \times 10^{-27} \mathrm{\;kg} $
+
+- $\Rightarrow$ The energy: $\quad E=\frac{\hbar^{2} \pi^{2}}{2 m_{p} L^{2}} n^{2}=3.3 \times 10^{-13} \;J \cdot n^{2} \cong(2 \mathrm{\;MeV}) \cdot n^{2}$
+
+- Note, that the energies of $\gamma$ quanta are usually in the order of $1 \mathrm{\;MeV}$, so the result obtained is fairly OK
+
+## 3.4 Radioactivity
+
+--- slide: 3. Nuclear physics ---
+
+    - 3_1_a{Basic Structure}
+    - 3_2_a{Binding}	
+    - 3_3_a{Nuclear Models}	
+    - 3_4_a{Radioactivity}
+    - 3_5_a{The Radioactive Decay Law}
+    - 3_6_a{Nuclear Reactions}
+    - 3_7_a{Applications of Nuclear Physics and Radioactivity}
+
+--- slide: Radioactivity ---
+
+ (Radioactive Decay processes)
+
+\semismall
+
+	- Roughly 3000 nuclide isotopes are known, most of them are radioactive 
+	
+	- An unstable radioactive nuclide has a tendency to spontaneously emit a small energetic particle 
+	- According to estimates, in addition to the known ones, 2000 more are to be found, all metastable or radioactive in some ways
+	
+	- There are several kinds of 'decay processes', e.g.
+
+	- $\alpha$ emission ($\mathrm{He}^{2+}$-ion)
+	- $\beta^{-}$ emission (electron)
+	- $\gamma$ emission (energetic $1 \mathrm{\;keV}–10 \mathrm{\;MeV}$ electromagnetic radiation)
+
+- And some less common processes:
+
+- Proton emission
+- Neutron emission
+- Positron emission
+- Double-beta emission (two electrons)
+- Some combinations of these
+
+--- slide: Radioactivity ---
+
+ (Radioactive Decay processes)
+
+{8.5cm}
+
+	- The semi-empirical binding energy formula can be used to study the stability of each isotope 
+	
+	- Verified by experiments, we can plot the binding energies, schematically shown in the figure (z-axis scaled by $100 \mathrm{\;MeV}$) 
+	
+	- One can also derive theoretical limits of how many protons or neutrons one can have in the nucleus 
+	\implies{ These estimates for $N-Z$ boundaries \\
+		generate the 'driplines' shown in lower figure }
+
+[FIGURE: SOM_Tipler_Nuclear_physics_figure_20.png]
+
+--- slide: Radioactivity ---
+
+ (Radioactive Decay processes)
+
+\seminormal
+
+{8.5cm}
+
+	- Radioactive processes follow physical conservation laws, conserved quantities being:
+
+	- Relativistic mass–energy
+	- Electric charge
+	- Linear momentum
+	- Angular momentum
+
+- And also:
+
+	- Nucleon number
+	- Lepton number
+
+- For a radioactive isotope, to be found in the nature (on Earth), the half-life of the isotope must be shorter than the age of Earth ($4.5\times 10^{9}$ years), or the nuclide must be continuously generated by another radioactive substance
+
+[FIGURE: SOM_Tipler_Nuclear_physics_figure_20.png]
+
+--- slide: Radioactivity ---
+
+ (Alpha decay)
+
+\semismall
+
+{9.0cm}
+	
+	- Alpha decay is a spontaneous emission of an energetic alpha particle, i.e. He-4 nuclei.
+
+[FIGURE: SOM_Nuclear_physics_Figure_18.png]
+
+ During the decay, an alpha particle is released out of the large nucleus by tunneling through the potential energy barrier
+
+[FIGURE: SOM_Tipler_Nuclear_physics_figure_1_cropped.png]
+
+- There is always reason for radioactive decay.
+First of all, for the nucleus to be radioactive at all, its mass must be greater than the sum of the masses of the decay products. The energy released is given by
+\[
+Q  = ( m_{i}  - m_{f}-m_{\alpha} )  c^{2}
+\]
+
+- The $\alpha$-active parent nucleus is large (usually $A>200)$, thus also the daughter nucleus is rather heavy, whereas the $\alpha$-particle is light: \quad (conservation of momentum)
+
+\[
+m \vec{v_d}  +  M \vec{V_p} = 0 \quad \Rightarrow \quad v_d=\frac{M}{m} V_p \quad  \Rightarrow \quad  \frac{1}{2} m v_d^{2}  = \frac{M}{m} \frac{1}{2} M V_p^{2}
+\]
+
+--- slide: Radioactivity ---
+
+ (Alpha decay)
+
+{8.5cm}
+
+	- Nucleons are bound by a strong nuclear force. However, sufficiently far from nucleus, we are out of the range of the strong nuclear forces. At that distance from core, there is a positive Coulombic barrier
+	
+	- Assumptions for explaining the $\alpha$ decay:
+
+- 
+		- An $\alpha$-particle may exist as an entity within a heavy nucleus
+	- Such a particle is in constant motion and is held in the nucleus by a potential barrier
+	- There is a small probability that the particle may tunnel through the barrier with each collision with barrier
+
+- Actually, it has also been suggested that, at least in the case of light nuclides, the nucleons would be clustered into $\alpha$ particles...
+
+[FIGURE: SOM_Tipler_Nuclear_physics_figure_25.png]
+
+--- slide: Radioactivity ---
+
+ (Alpha decay)
+
+	- All heavy nuclei $(A > 210)$ are unstable because the mass of the parent radioactive nucleus is greater than the sum of the masses of decay products: the daughter nucleus and an $\alpha$ particle
+
+- In $\alpha$ emission for the nucleus $\Delta Z=\Delta N=-2$ thus $\Delta A=-4$, and therefore there are four possible $\alpha$ decay chains 
+\[ 
+\footnotesize
+{r | c | c | c | c}
+& \text {A} & \text {Longest lived isotope} & t_{1/2} & \text {Stable daughter} \\
+\hline Thorium~series & 4 n  	   & n=58  & 1.4 \times 10^{10} \;a & Pb-208 \\
+ Neptunium~series & 4 n+1 & n=58 & 2.1 \times 10^{6} \;a & Tl-205\\
+ Uranium~series & 4 n+2 & n=59 & 4.5 \times 10^{9} \;a & Pb-206\\
+ Actinium~series & 4 n+3 & n=58 & 7.0 \times 10^{8} \;a & Pb-207
+
+\]
+
+- In each chain, the process proceeds via subsequent $\alpha$ decays towards lighter daughters. For the chain to follow the stability line, also $\beta$ emissions must happen every once in a while (to get rid of extra neutrons)
+
+--- slide: Radioactivity ---
+
+ (Line of stability and decay chains)
+
+{9.0cm}
+
+	- All series but one exist in nature, except Neptunium-series (Np-237), because all the neptunium atoms have already decayed
+
+- In the Figure we see the decay graph of Thorium series 
+
+- The dashed line is the line of stability. The daughter nuclides of $\alpha$ decay are on the left side , i.e. neutron rich side of the line, from where the process returns via sufficient numbers of $\beta$ decays
+
+- The radon gas existing in room air (typical in Finland) is Rn-222 which belongs to the Radium-series (U-238). Its half-life is 4 days, but more of it is continuously formed in the chain
+
+[FIGURE: SOM_Tipler_Nuclear_physics_figure_26.png]
+
+--- slide: Radioactivity ---
+
+ (Decay chains)
+
+\seminormal
+
+{9.0cm}
+
+	- Actinium-series: The energy levels of Radium-223 after the $\alpha$ decay from Thorium-227
+
+[FIGURE: SOM_Tipler_Nuclear_physics_figure_29.png]
+
+- Also the corresponding energy spectrum of $\alpha$ radiation from Th-227 is shown (with the $\gamma$ energy given as a subscript)
+
+[FIGURE: SOM_Tipler_Nuclear_physics_figure_27.png]
+
+- Note. Also here, as it very often happens, there will be a $\gamma$ quantum emitted in connection with the $\alpha$ emission
+
+--- slide: Radioactivity ---
+
+ (Beta decay)
+
+	- Electrostatic attraction cannot trap an electron into the nucleus, yet electrons are emitted by the nucleus, being apparently spontaneously created in the decay process
+
+- Note, in $\beta$ emission, a neutron is converted into a proton, and thus the daughter nuclide will be a different element than the parent nuclide. With a proton and an electron 
+
+{8.2cm}
+
+	- emitted, charge is conserved. Energywise:
+$$
+
+Q & =  ( m_{n}-m_{p}-m_{e} )  c^{2} \\
+& = (939.57-938.28-0.511) \mathrm{\;MeV}  = 0.78 \mathrm{\;MeV}
+
+$$
+We assume this to be the kinetic energy of the product particles, mostly of the electron, since $m_{p} / m_{e}=1840$. Empirically, the energy of the electron varies from nearly zero to $Q$
+
+[FIGURE: SOM_Nuclear_physics_Figure_19.png]
+
+--- slide: Radioactivity ---
+
+ (Beta decay)
+
+	- Historically, still three puzzles existed:
+
+	- The fact that some of electrons have nearly zero energy (and not always $0.78 \mathrm{\;MeV}$), was impossible to explain by having only two product particles
+
+{8.5cm}
+
+- 
+	- Neutron, proton and electron, are all spin 1/2-fermions, so final total spin of $p^{+}$ and $e^{-}$ is an integer. Spin is not conserved?
+	
+- Also, occasionally, the electron energy is nearly $Q$, so if there is a third product particle, it needs to have a very small mass
+
+[FIGURE: SOM_Nuclear_physics_Figure_20.png]
+
+--- slide: Radioactivity ---
+
+ (Beta decay and neutrino)
+
+	- Wolfgang Pauli suggested that there would, indeed, be a third product particle, a neutrino, for which:
+
+	- spin would be $1 / 2$
+
+- mass would be nearly zero (maybe $(\sim 2.2 \mathrm{\;eV} / \mathrm{c}^{2} ) $
+
+- interaction with practically anything would be very weak  \implies{ so-called weak interaction }
+
+- In fact, the third particle $\bar{\nu}_{e}$ is referred \\
+	to as an antineutrino
+
+[FIGURE: SOM_Nuclear_physics_Figure_20.png]
+
+--- slide: Radioactivity ---
+
+\framesubtitle{Example of a $\beta^{-}$decay}
+
+	- Let us consider the beta decay of boron-12:
+\[
+{ }_{5}^{12} B \quad \rightarrow \quad { }_{6}^{12} C  ~+~ { }_{-1}^{~0} \beta^{-}  ~+~ \bar{\nu}_{e}
+\]
+
+- Neutron is converted into proton, the new lighter nucleus is more tightly bound when $Z=N$ (and both are being even numbers). Thus when boron decays, it will find lower energy
+
+- Calculate the energies (we omit the mass of $\beta^{-}$, since the atomic mass of ${ }_{6}^{12} C$ already contains one extra electron):
+$$
+
+Q & =  ( m_{\text {parent}} - m_{\text {daughter }}  - m_{\beta} )  c^{2}  =  ( m_{B}-m_{C} )  c^{2} \\
+&  =  ( 12.014352 \;u-12 \;u ) \times 931.5 \;MeV / u = 13.4 \mathrm{\;MeV}
+
+$$
+
+--- slide: Radioactivity ---
+
+ (Beta decay of nitrogen-12)
+
+\seminormal
+
+	- Consider now $\beta^{+}$ decay of nitrogen-12 (${ }_{\,7}^{12} N$), during which a proton is converted into a neutron:
+\[
+{ }_{7}^{12} N \quad \rightarrow \quad { }_{6}^{12} C  ~+~ { }_{+1}^{\,0} \beta^{+} ~+~ \nu
+\]
+where $\beta^{+}$ is a positive electron, a positron, taking care of the conservation of both charge and angular momentum
+
+{8.5cm}
+
+	- \[ 
+p^{+} \quad \rightarrow \quad n  ~+~  e^{+} ~+~e
+\]
+- Calculate again $Q$ for the reaction:
+$$
+
+Q = ( m_{\text {parent}}-m_{\text {daughter}}-m_{\beta} )  c^{2}= ( m_{N}-m_{C}-2 m_{e} )  c^{2} \\
+= ( 12.018613 \;u-12 \;u-2 \cdot 5.486 \times 10^{-5} \;u )  c^{2} =16.3 \mathrm{\;MeV}
+
+$$
+
+- Note: A free proton cannot decay into a neutron and a positron, but a proton bound into a nucleus is able to do it
+
+[FIGURE: SOM_Nuclear_physics_Figure_21.png]
+
+--- slide: Radioactivity ---
+
+ (Electron capture)
+
+	- In the electron capture reaction, proton in the nucleus captures an electron from the atomic electron shells and changes into a neutron 
+	
+	- $Z$ decreases by one and $N$ increases by one, just like in $\beta^{+}$ decay. In fact, many $\beta^{+}$-active nuclei can also capture electrons
+
+- Always, when the mass of a nucleus with a given atomic number $Z$ is larger than the mass of a nucleus with atomic number $Z-1$, the electron capture will be possible
+
+{8.5cm}
+
+	- If the mass difference is at least $2 m_{e} c^{2}$, then also a $\beta^{+}$ decay is possible. In this case these two decay processes compete
+
+- The probability of electron capture is usually negligible unless the atomic electron is in immediate vicinity of the nucleus
+
+[FIGURE: SOM_Nuclear_physics_Figure_22.png]
+
+--- slide: Radioactivity ---
+
+ (Example of an electron capture)
+
+	- Consider now electron capture reaction of carbon-11, ${ }_{6}^{11} C$
+\[
+{ }_{6}^{11} C ~+~  _{-1}^{\;0} \beta^{-} \quad \rightarrow \quad { }_{5}^{11} B  ~+~ \nu \qquad ( p^{+}  ~+~ e^{-} \quad \rightarrow \quad  n~+~\nu )
+\]
+The energy released will depend on the difference of the masses of parent and daughter: 
+\[
+Q  =  ( m_{\text {parent}}  - m_{\text {daughter}} )  c^{2}
+\]
+
+- Another typical example of electron capture is 
+\[
+ { }_{24}^{51} C r  ~+~ { }_{23}^{51} V  ~+~ \nu_{e} \,,~ with \qquad  Q=0.751 \mathrm{\;MeV}
+ \]
+
+--- slide: Radioactivity ---
+
+ (Decay chains)
+
+\semismall
+
+{9.0cm}
+
+	- Revisit the presentation of the thorium and uranium series of alpha decay as a $N Z$-graph
+
+- Note that to keep the isotopes in the vicinity of the line of stability, there needs to be corrective beta decays, especially if there's an abundance of neutrons
+
+- Eventually, the decay pathways end at around isotopes of lead: Pb-208, Pb-206 and Pb-207 for the thorium, uranium and actininium series, respectively. It is not that those isotopes of lead would be universally very stable, it is just that they are the stable isotopes 'first in line', and there are no further decay pathways form those isotopes. (unlike certain distinct smaller isotopes e.g. K-40, C-14 etc.)
+
+- Note also:
+
+	- $\beta^{-}$ decay is directed diagonally down \& right 
+	- $\beta^{+}$ decay is directed diagonally up \& left
+
+[FIGURE: SOM_Nuclear_physics_Figure_23.png]
+
+--- slide: Radioactivity ---
+
+ (Valley of stability)
+
+\semismall
+
+	- One can also investigate the stability valley of nuclei, using $\beta$ decay processes
+
+- With the $\beta$ decays we move in perpendicular direction to the energy valley
+
+- The energy profiles of constant atomic mass show a parabolic type of energy valley
+
+[FIGURE: SOM_Tipler_Nuclear_physics_figure_33.png]
+
+- The energy values here were computed by the semi-empirical binding energy formula
+
+- For the odd $A$ series, the pairing term is zero ($C_{5}=0$), for the even $A$, the $\beta$ decay
+
+{2.8cm}
+
+	- series jumps between two parabola, with $\pm C_{5}$. (either $Z$-even/$N$-even or $Z$-odd/$N$-odd)
+
+--- slide: Radioactivity ---
+
+ (Gamma decay)
+
+	- In $\gamma$ decay, a nucleus of an excited state decays to lower energy level and emits a photon, maintaining the original isotope. The process is analogous to emitting a photon from atomic energy states
+
+- ATOMIC: For atomic processes the energies are in the range $\mathrm{\;eV}-\mathrm{\;MeV}$ and emitted wavelengths are $\mu \mathrm{m}-\mathrm{\;nm}$
+
+- NUCLEAR: For nuclear processes the energies exceed MeV, and wavelengths are $\lambda = \frac{h c}{E} \approx 10^{-3} \mathrm{\;nm}$
+
+- Note, that for a given quantum of electromagnetic radiation in the keV–MeV energy range, there is fundamentally really no way to distinguish, whether it is an X-ray or a $\gamma$-ray, if\\ no further information of the system is given!
+
+[FIGURE: SOM_Nuclear_physics_Figure_24.png]
+
+--- slide: Radioactivity ---
+
+ (Combined Alpha/beta and gamma decay)
+
+	- After $\alpha$-, and $\beta$-decay, the nucleus is usually left into an excited state, and a $\gamma$ emission will follow 
+	
+	- The lifetimes of those excitation states are usually very short, unless selection rules restrict de-excitation of the excited states 
+	
+	- In practice, different $\gamma$ energies are often connected with specific decay processes/shift in the nuclear energy levels
+
+- In general, $\gamma$ energies are characteristic for given isotopes, and they can be used as a fingerprint, i.e. to give information to identify the isotopes, and also give further information e.g. of the energies at the shell structure of the atomic nucleus (recall earlier discussion of Th-227 emission spectra)
+
+--- slide: Radioactivity ---
+
+ (Internal conversion)
+
+	- An alternative to $\gamma$-ray emission due to de-excitation of the excited nuclear state is internal conversion
+
+- During this conversion, the energy from the excited nucleus is transferred into an orbital electron, which will be emitted from the atom at high velocities
+ 
+ - This concerns mostly $s$-electrons of $K$- and $L$-shells, which have a significant probability to reside close to the atomic core 
+ 
+ - The energy will be given by:
+\[
+hf  =  ( E_{\text {high}}-E_{\text {low}} ) -B_{\text {electron}}
+\]
+
+- This kind of internal conversion is a one-step many-particle process, although in principle it can be considered to consist of two stages, emission and absorption of $\gamma$
+
+--- slide: Radioactivity ---
+
+ (Spontaneous fission)
+\seminormal
+
+{8.6cm}
+
+	- Some heavy radioactive nuclei have a tendency to decay differently, i.e. to split into two larger fragments by spontaneous fission
+
+- Driving force is minimization of total energy
+
+- Two separate nuclei will have larger surface area than the initial nucleus (and thus a higher energy) 
+
+- But the two separate nuclei can also arrange the protons of the nuclei further away from each other
+\implies{ Coulombic repulsion decreases, increasing binding forces\\ and compensating the increased surface energy }
+
+- Another important detail in the spontaneous fission is, that the fragmentation will generate also free neutrons, which can induce further reactions in the system by colliding into the abundant parent nuclei
+
+[FIGURE: SOM_Nuclear_physics_Figure_25.png]
+
+## 3.5 The Radioactive Decay Law
+
+--- slide: 3. Nuclear physics ---
+
+    - 3_1_a{Basic Structure}
+    - 3_2_a{Binding}	
+    - 3_3_a{Nuclear Models}	
+    - 3_4_a{Radioactivity}
+    - 3_5_a{The Radioactive Decay Law}
+    - 3_6_a{Nuclear Reactions}
+    - 3_7_a{Applications of Nuclear Physics and Radioactivity}
+
+--- slide: The Radioactive Decay Law ---
+
+ (Radioactive Decay Law)
+
+	- A radioactive decay for each nucleus can happen only once. The process is of statistical nature, and for an individual nucleus, only an estimated average time can be given for the decay
+
+- If the amount of nuclei $N$ is large enough, the statistical nature of the decay process will result in a distinct law of decay 
+
+- The number of decayed nuclei, i.e. change in the number of nuclei, $d N$, will be proportional to both time and number of radioactive nuclei:
+\[
+\{}\! {l}
+d N \propto d t \\
+d N \propto N
+ \qquad \Rightarrow \qquad d N \propto N d t
+\]
+and 
+\[
+\Rightarrow \qquad \frac{d N}{d t} \propto N \quad \text { i.e. } \quad \frac{d N}{d t} =  - \lambda N \quad \text { or } \quad \frac{d N}{N}  =  - \lambda d t
+\]
+
+--- slide: The Radioactive Decay Law ---
+
+ (Radioactive Decay Law)
+
+	- We can solve the differential equation and thereby obtain time dependence of the number of remaining radioactive nuclei:
+\[
+\frac{d N}{N}  =  - \lambda d t \quad \Rightarrow \quad \int_{N_{0}}^{N} \frac{d N^{\prime}}{N^{\prime}}  =  - \lambda \int_{0}^{t} d t \quad \Rightarrow \quad \ln \frac{N}{N_{0}} =  - \lambda t \quad \Rightarrow \quad N(t)= N_{0} e^{-\lambda t}
+\]
+- where decay constant $\lambda$ ($[\lambda]=\frac{1}{s}$) is characteristic to each radioactive nuclei
+
+- Define a positive quantity $R=\lambda N(t)  =  |\! \frac{d N}{dt} \!| $,  known as the decay rate
+
+- We can also write the decay rate as: 
+\[
+ R(t)= | \frac{d N}{d t} |  = \lambda N(t) = \lambda N_{0} e^{-\lambda t} = R_{0} e^{-\lambda t}
+\]
+
+- Note, that both the number of nuclei $N$ and the decay rate $R$ decrease exponentially with time
+
+--- slide: The Radioactive Decay Law ---
+
+ (Radioactive Decay Law)
+
+\seminormal
+
+	- The time when half of the original nuclei are left is called half-life $T_{1 / 2}$:
+
+[FIGURE: SOM_Nuclear_physics_Figure_26.png]
+
+\[
+ N ( T_{1 / 2} )   =  N_0 e^{-\lambda T_{1 / 2}}  = \frac{1}{2} N_{0} \qquad
+\Rightarrow \qquad  - \lambda T_{1 / 2} = \ln \frac{1}{2} \qquad \Rightarrow \qquad \lambda = \frac{\ln 2}{T_{1 / 2}}
+\]
+- Nuclear binding processes are complex, and often several alternative decay channels exist. Therefore it is difficult to predict $T_{1 / 2}$ of a nuclide. Data for most of the isotopes exists, and $T_{1 / 2}$ varies from $10^{-22} s$ to $10^{17}$ years
+
+{6.5cm}
+
+- For example the half-life of carbon-14, an isotope used in carbon dating, is 5730 years. For americium-241, used in ordinary household smoke alarms, $T_{1 / 2}=432.2$ years
+
+- An example of a somewhat short-lived isotope is fluorine-18, an isotope commonly used in nuclear medicine, has a half-life of 109 min  
+
+--- slide: The Radioactive Decay Law ---
+
+ (Radioactive Decay Law)
+
+	- The decay rate, $R(t)=\lambda N$, is also used to indicate the activity (or 'radioactivity') of the given amount of radioactive nuclei 
+\[
+[ R ]  =  number of radioactive nuclei decaying per unit time
+\]
+
+- The SI-unit of radioactivity is becquerel (Bq), while the old unit (still widely used) is curie (Ci)
+\[
+1 \mathrm{\;Bq}  = 1 \text {\;decay} / \mathrm{s} \quad , \quad 
+1 \mathrm{\;Ci}  =  3.7 \times 10^{10} \text {\;decay} / \mathrm{s}=3.7 \times 10^{10} \mathrm{\;Bq}
+\]
+- $1 \mathrm{\;Ci}$ equals activity of a $1 \mathrm{\;g}$ of radium $({ }_{~88}^{226}Ra$,  $T_{1/2}=1600$ years)
+
+- A radiation source with activity of $1 \mathrm{\;mCi}=37 \mathrm{\;MBq}$ may be considered a significantly strong source (slightly depending on the kind of radiation emitted)
+
+- The activity of ${ }^{241} \mathrm{Am}$ in a household smoke alarm is typically $1 \;\mu \mathrm{Ci}=37 \mathrm{\;kBq}$
+
+--- slide: The Radioactive Decay Law ---
+
+ (Example calculation)
+
+	- Q: A vessel holds $2 \;\mu$g of tritium (half-life $T_{1/2}=12.3\;a$, atomic mass 3.02\;u).
+(a) What are its initial decay rate and activity?
+(b) How much time will elapse before the decay rate falls to $1 %$ of its initital value?
+
+- A: (a) Decay rate is $R(t)=\lambda N$, so the initial decay rate will be:
+\[
+R_{0} = R(t=0) = \lambda N_{0} = \frac{\ln 2}{T_{1 / 2}} \frac{m_{tot}}{m_{1}}  = \frac{\ln 2}{12.3 \;y} \frac{2 \times 10^{-9} \;kg}{3.02 \;u \cdot 1.66 \times 10^{-27} \;kg / u}  = 7.1 \times 10^{8} \;s^{-1}
+\]
+And, the corresponding activity will be $7.1 \times 10^{8} \mathrm{\;Bq}=710 \mathrm{\;MBq}$
+
+- (b) We ask, at which time $\lambda N(t)=\frac{1}{100} \lambda N_{0}$? 
+$$
+
+ &\Rightarrow \qquad& \lambda N_{0} e^{-\lambda t} & = \frac{1}{100} \lambda N_{0} 
+\qquad \Rightarrow \qquad  - \lambda t = \ln \frac{1}{100} \\
+ &\Rightarrow \qquad&  t& =  - \ln \frac{1}{100} / ( \frac{\ln 2}{12,3 \;a} \,) = 2,6 \times 10^{9} \;s=82 \;a
+
+$$
+
+--- slide: The Radioactive Decay Law ---
+
+ (Chain of radioactive decays)
+
+	- Consider a chain of radioactive decays: $A \stackrel{\lambda_{A}}{\rightarrow} B \stackrel{\lambda_{B}}{\rightarrow} C$, decay constants for $A$ and $B$ being $\lambda_{A}$ and $\lambda_{B}$, respectively 
+	- Our goal is to find the variation of nuclide $B$ as a function of time, $N_{B}=N_{B}(t)$, assuming that the initial numbers (at $t=0)$ of the radioactive nuclides $A$ and $B$ would be $N_{A0}$ and $N_{B0}$, respectively
+
+- Substance A decays at rate $\frac{d N_{A}}{d t} =-\lambda_{A} N_{A}$, resulting in $N_{A}(t)=N_{A 0} e^{-\lambda_{A} t}$
+
+- Substance $B$ is formed by decay of A, and also decays itself:
+\[
+\frac{d N_{B}}{d t}  =  + \lambda_{A} N_{A} - \lambda_{B} N_{B} =  + \lambda_{A} N_{A 0} e^{-\lambda_{A} t} - \lambda_{B} N_{B}
+\]
+
+- This is a differential equation for $N_{B}$. To solve $N_{B}=N_{B}(t)$, first we make an educated guess with a trial function of the form: 
+\[
+N_{B}(t)  = N_{A 0} (c_{A} e^{-\lambda_{A} t} + c_{B} e^{-\lambda_{B} t} )
+\]
+
+--- slide: The Radioactive Decay Law ---
+
+ (Chain of radioactive decays)
+
+	- Plug in the trial form for $N_B$ and differentiate:
+$$
+
+& & \frac{d N_{B}}{d t} = N_{A 0} (-\lambda_{A} c_{A} e^{-\lambda_{A} t}  - \lambda_{B} c_{B} e^{-\lambda_{B} t} ) & =  + \lambda_{A} N_{A 0} e^{-\lambda_{A} t} - \lambda_{B} N_{A 0} (c_{A} e^{-\lambda_{A} t} + c_{B} e^{-\lambda_{B} t} ) \qquad \\
+&\Rightarrow &  - \lambda_{A} c_{A} e^{-\lambda_{A} t}-\lambda_{B} c_{B} e^{-\lambda_{B} t}& =  + \lambda_{A} e^{-\lambda_{A} t} - \lambda_{B} (c_{A} e^{-\lambda_{A} t}+c_{B} e^{-\lambda_{B} t} ) \\
+&\Rightarrow& (\lambda_{A}-\lambda_{B} c_{A}+\lambda_{A} c_{A} ) e^{-\lambda_{A} t}& = 0 \\
+&\Rightarrow& \lambda_{A}-\lambda_{B} c_{A}+\lambda_{A} c_{A}&=0 \\
+&\Rightarrow& c_{A}& = \fraca{\lambda_{A}}{\lambda_{B}-\lambda_{A}}
+
+$$
+Therefore, we obtain: 
+\[
+N_{B}(t)  = N_{A 0} ( \frac{\lambda_{A}}{\lambda_{B}-\lambda_{A}} e^{-\lambda_{A} t} + c_{B} e^{-\lambda_{B} t} )
+\]
+- where the factor $c_{B}$ is still unknown
+
+--- slide: The Radioactive Decay Law ---
+
+ (Chain of radioactive decays)
+
+	- If the initial value for $N_{B}$ would be 0 at $t=0$, i.e.
+\[
+N_{B}(t=0)  = N_{A 0} ( \frac{\lambda_{A}}{\lambda_{B}-\lambda_{A}} e^{-\lambda_{A} \cdot 0}  + c_{B} e^{-\lambda_{B} \cdot 0} ) =0 \quad \Rightarrow \quad c_{B}=\frac{-\lambda_{A}}{\lambda_{B}-\lambda_{A}}
+\]
+
+- Thus, we get the number of B nuclei $N_{B}(t)$:
+\[
+N_{B}(t)  = N_{A 0} \frac{\lambda_{A}}{\lambda_{B}-\lambda_{A}}
+( e^{-\lambda_{A} t}-e^{-\lambda_{B} t} \,)
+\]
+
+- In practice, activity is an often-used quantity
+
+- In this case, the activities for nuclei $A$ and $B$ are:
+$$
+
+R_A = \lambda_{A} N_{A} & = \lambda_{A} N_{A 0} e^{-\lambda_{A} t} \\
+R_B = \lambda_{B} N_{B} & = N_{A 0} \frac{\lambda_{A} \lambda_{B}}{\lambda_{B}-\lambda_{A}} ( e^{-\lambda_{A} t}-e^{-\lambda_{B} t} \,) 
+
+$$
+
+--- slide: The Radioactive Decay Law ---
+
+ (Generation of radioactive nuclides)
+
+	- Radioactive nuclei are produced as a result of neutron capture by the nuclei (occasionally also electron and proton beams are used) 
+	
+	- For instance ${ }^{59} \mathrm{Co}$ is bombarded with neutrons to generate ${ }^{60} \mathrm{Co}$ which is radioactive with a half-life of $5.27$ years
+
+- We assume that the radioactive nuclei is generated at constant rate $g$ nuclei per second, and a decay constant of $\lambda$, and calculate the number of radioactive nuclei produced per unit time:
+$$
+
+\frac{d N}{d t} & = g-\lambda N \\
+\int_{N_{0}}^{N}  \frac{d N}{N-g / \lambda} & =  - \lambda \int_{0}^{t} d t \quad \Rightarrow  \quad \ln \fraca{N-g / \lambda}{N_{0}-g / \lambda}  =  - \lambda t
+
+$$
+
+--- slide: The Radioactive Decay Law ---
+
+ (Generation of radioactive nuclides)
+
+	- $$
+
+& & \ln \frac{N-g / \lambda}{N_{0}-g / \lambda} & =  - \lambda t \qquad \Rightarrow \qquad N-g / \lambda& =  ( N_{0}-g / \lambda )  e^{-\lambda t} \\
+&\Rightarrow \quad& N(t)& = \frac{g}{\lambda} ( 1-e^{-\lambda N} ) +N_{0} e^{-\lambda t}
+
+$$
+
+- If we start with zero nuclides, i.e. $N_{0}=0$, then the number of radioactive nuclei will be:
+\[
+N(t)  = \frac{g}{\lambda} ( 1-e^{-\lambda t} ) 
+\]
+
+- Note, that the maximum number of produced nuclei is $N_{\max }=\frac{g}{\lambda}$
+
+- Furthermore, the activity of the sample is $\lambda N(t)=g ( 1-e^{-\lambda t} ) $, and its maximum value is $g$. Note, this example applies directly to neutron activation analysis (see later)
+
+--- slide: The Radioactive Decay Law ---
+
+ (Cross section)
+
+	- Consider a constant flux of small projectile particles towards a slab of target particles. Let's make some simplifying assumptions:
+
+	- Projectile particles are small, point-like
+- Target particles have a cross sectional area of $\sigma,~[\sigma]=m^{2}$
+- Target particles have a low number density so that they do not cover or shadow each other
+
+- Total (projected) area of target particles in the slab is:
+\[
+A^{\prime}  = \Underlinecomment{red}{n \cdot(A d x)}{\qquad Number of target particles within volume Adx} \cdot \sigma
+\]
+
+- Fractional coverage (projected area) of target particles
+\[
+\fraca{A^{\prime}}{A}  = \frac{n A d x \sigma}{A} = n \sigma d x
+\]
+
+--- slide: The Radioactive Decay Law ---
+
+ (Exponential attenuation)
+
+\seminormal
+
+	- If each projectile interacts only once, the fraction of the projectile particles (of the incoming $N$ particles) which will be colliding within the slab thickness $d x$, will be:
+\[
+\frac{d N}{N}  = n \sigma d x
+\]
+- but it's more practical to consider the collided particles as being removed from the beam:
+\[
+\frac{d N}{N}  =  - n \sigma d x
+\]
+
+- Now, consider number of particles $N$ incoming into a slab of thickness $x$. Thus, we obtain the number of projectile particles which will remain in the beam, as a function of distance:
+\[
+\int_{N_{0}}^{N} \fraca{d N}{N} = \int_{0}^{x} - n \sigma d x \qquad \Rightarrow \qquad N(x) = N_{0} e^{-n \sigma x}
+\]
+Thus, we have obtained the law of exponential attenuation
+
+--- slide: The Radioactive Decay Law ---
+
+ (Cross section)
+
+	- In the above, the projectile particles were for simplicity assumed to be point-like:
+\[
+\sigma  = \pi r^{2}
+\]
+
+- If both the projectile and the target have non-zero radii, then:
+\[
+\sigma  = \pi ( r_{1}  + r_{2} )^{2}
+\]
+
+- Quite often the actual effective cross sectional area is a function of collision energy
+
+- In this case, the cross section of the interaction may differ markedly from the geometrical cross section of the target particle, and/or of the projectile 
+
+--- slide: The Radioactive Decay Law ---
+
+ (Cross section)
+
+\seminormal
+
+	- The customary unit for nuclear cross section is barn, where:
+\[
+1 \text { barn}  = 1 \mathrm{~b}  = 10^{-28} \mathrm{~m}^{2} = 100 \mathrm{\;fm}^{2}
+\]
+- Barn is not an SI unit, but it is convenient because its order of magnitude is the same as the geometrical cross section of atomic nucleus (the name barn comes from a common target) 
+
+- Cross sections of most nuclear reactions depend on energy of the incident particle 
+
+- E.g. the neutron capture reaction of ${ }_{48}^{113} Cd$ varies with neutron energy 
+
+- This nuclear reaction includes also emission of a gamma ray:
+\[
+{ }_{48}^{113} Cd(n, \gamma)  +  n  \quad \rightarrow \quad {}_{48}^{114} Cd  +  \gamma
+\]
+Although ${ }_{\;48}^{113} C d$ isotopes constitute only $12 %$ of natural cadmium, this neutron capture cross section is so large, that cadmium is widely used in control rods for nuclear reactors
+
+--- slide: The Radioactive Decay Law ---
+
+ (Cross section)
+
+{7.0cm}
+
+	- For a given incoming particle $a$, many different outgoing particles may result as reaction products, corresponding to several (alternative) 'reaction channels'
+
+[FIGURE: SOM_Nuclear_cross_section_a]
+
+- And, each of these reaction channels may have its own cross section, such as $\sigma(a, b)$, $\sigma ( a, b^{\prime} )$, $\sigma (a, b^{\prime \prime} )$ and so on 
+
+- Then, the total reaction cross section for the particle $a$ will be:
+\[
+\sigma_{t o t}(a)  = \sigma(a, b) +\sigma (a, b^{\prime})  + \sigma (a, b^{\prime \prime} ) +\ldots
+\]
+
+- And again, each of the cross sections may have different dependency on the energy of the incoming particle
+
+## 3.6 Nuclear Reactions
+
+--- slide: 3. Nuclear physics ---
+
+    - 3_1_a{Basic Structure}
+    - 3_2_a{Binding}	
+    - 3_3_a{Nuclear Models}	
+    - 3_4_a{Radioactivity}
+    - 3_5_a{The Radioactive Decay Law}
+    - 3_6_a{Nuclear Reactions}
+    - 3_7_a{Applications of Nuclear Physics and Radioactivity}
+
+--- slide: Nuclear Reactions ---
+
+ (Spontaneous and induced nuclear reactions)
+
+	- Nuclear reactions can be:
+
+	- Spontaneous: such as in the case of radioactivity, as described above. Then the $Q$-value of the reaction needs to be positive for the reaction to happen
+- Induced: where we have an incoming (high-energy) particle to collide on the target nucleus and to enable the reaction
+
+- When the target nucleus is bombarded with a projectile particle, the collision may be:
+
+	- Elastic: Elastic scattering is reflection from the edge of the potential well of target nucleus $\rightarrow$ the incoming particle practically changes momentum and direction
+- Inelastic: where a direct interaction occurs, and as a result, usually an intermediate 'compound nucleus' is formed first, before finally decaying into reaction products
+
+--- slide: Nuclear Reactions ---
+
+ (Inelastic scattering \& Induced nuclear reaction)
+
+	- Inelastic scattering often occurs at intermediate energy levels, still less than ${\sim}140 \mathrm{\;MeV}$ 
+	\implies{ no extra particles will yet form (such as mesons)}
+	
+	 - The collision of the target nucleus ($X$) with a projectile ($x$) creates a compound nucleus
+	 
+	 -  The compound nucleus decays into product nucleus ($Y$), often accompanied with an ejected particle ($y$) or particles
+	 
+	 - The general reaction scheme is either written as
+\[
+ x ~+~ X \quad \rightarrow \quad Y ~+~ y ~+~ Q  
+\]
+or slightly more concisely using parentheses convention:
+\[
+ target nucleus \;(\;  projectile \;,\; ejected particle \;)\; product nucleus
+\]
+i.e. as 
+\[
+ X(x, y) Y
+ \]
+
+--- slide: Nuclear Reactions ---
+
+ (Collisions and Q-value of the reaction)
+
+	- Whatever the nuclear reaction will be, it needs to conserve energy. For the nuclear reaction $X(x, y) Y$, the energy released in the reaction is called the $Q$-value:
+\[
+x ~+~ X \quad \rightarrow \quad Y ~+~ y ~+~ Q  \;,  where  \qquad Q=(m_{x}+m_{X}-m_{y}-m_{Y}) c^{2}
+\]
+- $Q>0$: exothermic reaction (initial particles are heavier than products) 
+- $Q<0$: endothermic reaction (initial particles are lighter)
+
+- Examples: 
+$$
+
+ \mathrm{n} ~+~ { }^{1} \mathrm{H} \quad &\rightarrow \quad { }^{2} \mathrm{H} ~+~ \gamma ~+~ 2.22 \mathrm{\;MeV} \quad  (Exothermic) \\
+\gamma ~+~ { }^{2} \mathrm{H} \quad &\rightarrow \quad { }^{1} \mathrm{H} ~+~ \mathrm{n} ~-~ 2.22 \mathrm{\;MeV} \quad (Endothermic)
+
+$$
+
+- Endothermic reaction requires a threshold energy to be supplied 
+
+- According to the above, the threshold energy is $|Q|$. But this is valid only for the center-of-mass (CM) coordinate frame
+
+--- slide: Nuclear Reactions ---
+
+ (Kinetics)
+
+\seminormal
+
+{9.2cm}
+
+	- We examine first the reaction in the CM frame with non-relativistic case of $x$ of mass $m$ (velocity $v_p$) incident on $X$ of mass $M$ (velocity $v_c$):
+
+[FIGURE: SOM_Tipler_Nuclear_physics_figure_50_cropped_a]
+
+$$
+
+\vec{p}_{m}+\vec{p}_{M}=0 \qquad &\Rightarrow \qquad |\vec{p}_{m} |= |\vec{p}_{M} | \equiv p \\
+  \qquad &\Rightarrow \qquad m v_p=M V_c \qquad \Rightarrow \qquad \frac{m}{M}=\frac{V_c}{v_p}  \\
+  E_{CM}  = \frac{p^{2}}{2 m}&  + \frac{p^{2}}{2 M} = \frac{p^{2}}{2}  ( \frac{m+M}{m M} \,)  \,, \qquad CM frame
+
+$$
+
+- While on the laboratory frame,
+
+[FIGURE: SOM_Tipler_Nuclear_physics_figure_50_cropped_b]
+
+ where the velocity of the incident particle $\mathrm{x}$ is $v_p+V_c$, towards the target $M$, which is at rest, we obtain the momentum:
+\[
+p_{lab}  = m(v_p+V_c)  = m v_p ( 1+\frac{V_c}{v_p} \,)  = m v_p ( 1+\frac{m}{M} \,)  =  p ( 1+\frac{m}{M} \,) \hspace{3.5cm}
+\] 
+and for energy
+\[
+E_{lab}  = \frac{p_{lab}^{2}}{2 m}  = \frac{p^{2}}{2 m} ( \frac{m+M}{M} \,)^{2}  = \frac{m+M}{M} E_{C M} \hspace{3.5cm}
+\]
+
+--- slide: Nuclear Reactions ---
+
+ (Threshold energy and Example)
+
+\seminormal
+
+	- Thus, we get the threshold energy for the endothermic reaction in lab frame:
+\[
+E_{threshold}  =  \frac{m+M}{M} |Q|
+\]
+
+	- As an example, let us calculate the minimum kinetic energy of protons incident on ${ }^{13} C$ nuclei at rest in the laboratory, that will produce the endothermic reaction: 
+	\[
+	\quad { }_{\;6}^{13} C  ~+~  p \quad \rightarrow \quad { }_{\;7}^{13}N  ~+~ n  \qquad \quad i.e. \qquad \quad { }_{\;6}^{13} C(p , n) { }_{\;7}^{13}N
+	\]
+
+- The $Q$ value for the reaction is:
+$$
+
+Q&= ( m_{\text {initial }}-m_{final} \,)  c^{2} \\
+&=(13.003355 \;u+1.007825 \;u-13.005738 \;u-1.008665 \;u) \times 931.5 \mathrm{\;MeV} / u \\
+&=-3.00 \mathrm{\;MeV} \\
+E_{threshold}&=\frac{m+M}{M} |Q|  =  \frac{1.007825 \;u+13.003355 \;u}{13.003355 \;u} \times 3.00 \mathrm{\;MeV}  = 3.23 \mathrm{\;MeV}
+
+$$
+
+--- slide: Nuclear Reactions ---
+
+ (Reaction cross section)
+
+	- Consider e.g. beam of protons incident on ${ }^{13} \mathrm{C}$ atoms:
+	- 
+	 - Elastic scattering is written as: $\hspace{3.5cm} { }^{13} \mathrm{C}(\mathrm{p}, \mathrm{p}){ }^{13} \mathrm{C}$ 
+
+- If the scattering is inelastic, we may write:
+$
+\hspace{1cm} { }^{13} \mathrm{C} ( \mathrm{p}, \mathrm{p}^{\prime} ) {}^{13} \mathrm{C}^{*}
+$\\
+since now the outgoing proton is $p^{\prime}$, and the \\
+target atom is excited
+
+- Other possible reactions are: 
+$$
+ {ccc}
+ (p, n) &: \qquad \qquad& { }^{13} \mathrm{C}(p, n) {}^{13} \mathrm{N} \\ 
+ \text {capture} &  : \qquad\qquad & { }^{13} \mathrm{C}(p, \gamma) {}^{14} \mathrm{N} \\ 
+ (p, \alpha) & : \qquad \qquad& { }^{13} \mathrm{C}(p, \alpha) { }^{10} \mathrm{B}
+$$
+Each reaction has its own partial cross section. Then the total sum of the partial cross section will be
+\[
+\sigma  = \sigma_{p, p} ~+~ \sigma_{p, p^{\prime}} ~+~ \sigma_{p, n}  ~+~ \sigma_{p, \gamma} ~+~ \sigma_{p, \alpha} ~+~ \cdots
+\]
+
+--- slide: Nuclear Reactions ---
+
+ (Intermediate Nucleus ('Compound Nucleus'))
+
+\semismall
+
+{10.5cm}
+
+	- Many of the low-energy nuclear reactions proceed as two-stage processes 
+	- The projectile and target nuclide first form a temporary 'compound nucleus' which will be de-excited via an emission of one or more particles
+	- The de-excitation of the compound nucleus is a statistical process, which does not depend on how it was originally formed
+
+- For instance, an incident $1 \mathrm{\;MeV}$ proton has a speed about $10^{7} \mathrm{\;m} / \mathrm{s}$, so for the proton to cross the nucleus it takes a time of:
+\[
+\Delta t  = \fraca{\Delta x}{V} = \fraca{R}{V}  = \fraca{10^{-14} \mathrm{\;m}}{10^{7} \mathrm{\;m} / \mathrm{s}} = 10^{-21} \mathrm{\;s}
+\]
+
+- A lifetime of a compound nucleus can be in the order of $10^{-16} \mathrm{~s}$, too short to be directly measured, but long enough ($ 1000\;000 \times 10^{-21} \mathrm{\;s} $), to approximate that the decay is independent of how the compound nucleus was originally formed
+
+[FIGURE: SOM_Tipler_Nuclear_physics_figure_52]
+
+--- slide: Nuclear Reactions ---
+
+ (Example on nuclear reactions)
+
+\seminormal
+
+	- Calculate the $Q$-values for two example reactions, and determine whether they are exothermic or endothermic.
+-
+	
+- Reaction 1: 
+$$
+
+ { }_{\;5}^{10} \mathrm{B}  ~+~ { }_{0}^{1} \mathrm{n} \quad &\rightarrow \quad { }_{3}^{7} \mathrm{Li}  ~+~ { }_{2}^{4} \mathrm{He} \\ 
+ \\
+Q  = (10.012937 \;u + 1.008665 \;u -7.016003& \;u - 4.0026033 \;u) \times 931.5 \mathrm{MeV} / \mathrm{u} = 2.79 \mathrm{\;MeV} 
+
+$$
+Thus, the reaction is exothermic, energy is produced in the reaction
+
+-
+- Reaction 2: 
+$$
+
+ { }_{3}^{7} \mathrm{Li}  ~+~ { }_{1}^{1} \mathrm{H} \quad &\rightarrow \quad { }_{4}^{7} \mathrm{Be}  ~+~ { }_{0}^{1} \mathrm{n} \\
+ \\
+  Q  = (7.016003 \;u+1.007825 \;u  - 7.0166928& \;u -1.008665 \;u) \times 931.5 \mathrm{\;MeV} / \mathrm{u}  = -1.64 \mathrm{\;MeV} 
+ 
+$$
+Thus, the reaction is endothermic, energy is consumed in the reaction
+
+--- slide: Nuclear Reactions ---
+
+ (Fission)
+
+{8.5cm}
+	
+	- The heavy nuclei have less binding energy per nucleon than the ones with intermediate mass number 
+
+- Being deeper in the potential well, means smaller mass and release of kinetic energy
+
+- Quite similarly to spontaneous fission described earlier, also here the driving force is the reduction of Coulombic repulsion (the protons are, on the average, further away from each other)
+
+- Particle-induced fission is of practical use.
+
+[FIGURE: SOM_Nuclear_physics_Figure_28.png]
+
+  During our course, especially the fission reaction launched by colliding neutrons is discussed
+
+[FIGURE: SOM_Nuclear_physics_Figure_27.png]
+
+--- slide: Nuclear Reactions ---
+
+ (Fission)
+
+	- As an example, when ${ }^{235} \mathrm{U}$ nucleus is excited by the capture of a neutron, it splits into two nuclei, each having roughly one half of the initial mass
+	
+- Fission of ${ }^{235} \mathrm{U}$: $\quad { }^{235} \mathrm{U}  ~+~  \mathrm{n} \quad \rightarrow \quad { }^{92} \mathrm{Kr}  ~+~ { }^{142} \mathrm{Ba}  ~+~ 2 \mathrm{n}  ~+~ 179.4 \mathrm{\;MeV}$
+
+- Coulombic repulsive force drives the fragments apart, they will gain kinetic energy. Due to collision, this energy is converted into thermal energy
+
+- From the plot showing the binding energy (per nucleon), it is clear, that fusion works best for $A \leq 20$ and fission works best for $A \geq 200$
+
+-  If in fission, e.g. $A=240$ splits into two $A=120$ nuclei, then the released energy will be ${\approx}1 \mathrm{\;MeV} / \mathrm{nucleon}$, i.e. around $200 \mathrm{\;MeV} /atom$
+
+--- slide: Nuclear Reactions ---
+
+ (Fission)
+
+\seminormal
+
+	- In practise, again a compound nucleus will be first formed, which will eventually decay into two fragments
+
+- An important example is neutron bombardment of uranium-235, giving rise to a nucleus of an (excited) uranium-236
+
+-  uranium-236 will then decay into two fragments for which we have several different 'reaction channels' 
+
+- As the end products we may have e.g.: barium and krypton, xenon and strontium, tin and molybdenum
+
+- And, as shown by the reaction schemes, along with each reaction there are some extra neutrons emerging, plus $\gamma$ quanta (not written in equations)
+$$
+
+{ }_{\;92}^{235} \mathrm{U} ~ + ~ { }_{0}^{1} \mathrm{n}  \quad &\rightarrow \quad { }_{56}^{141} \mathrm{Ba} ~ + ~ { }_{36}^{92} \mathrm{Kr} ~ + ~ 3\cdot{ }_{0}^{1} \mathrm{n} \\
+{ }_{\;92}^{235} \mathrm{U} ~ + ~ { }_{0}^{1} \mathrm{n} \quad &\rightarrow \quad { }_{\,54}^{140} \mathrm{Xe} ~ + ~ { }_{38}^{94} \mathrm{Sr} ~ + ~ 2\cdot{ }_{0}^{1} \mathrm{n} \\
+{ }^{235}_{\;92} \mathrm{U} ~ + ~ { }_{0}^{1} \mathrm{n} \quad &\rightarrow \quad { }_{\;50}^{132} \mathrm{Sn} ~ + ~ { }_{42}^{101} \mathrm{Mo} ~ + ~ 3\cdot{ }_{0}^{1} \mathrm{n}
+
+$$
+
+--- slide: Nuclear Reactions ---
+
+ (Fission)
+
+- \[
+{ }_{\;92}^{235} U ~ + ~ { }_{0}^{1} n \quad \rightarrow \quad{ }_{\;92}^{236} U^{*} \quad \rightarrow \quad \ldots
+\]
+	- Three example outcomes of the dissociation of uranium-236, given above, are only some examples of the dominating channels 
+	
+	- 
+	In practise, there are many alternative outcomes! 
+	
+	- In general, uranium-236 fragments into two nuclei, plus some neutrons, plus some energy
+	
+	-  The details of the process depend on neutron energy, which is different for thermal (slow) neutrons ($E_{kin} \approx 1.5 k_B T \ll 0.1 \,MeV$) and faster neutrons ($E_{kin} \approx 1 \mathrm{\;MeV}$)
+	
+	- Note also, that only rarely a nucleus fissions into two exactly equally sized nuclei
+
+--- slide: Nuclear Reactions ---
+
+ (Chain reaction)
+
+\seminormal
+
+	- Assume that each reaction requires a neutron to initiate the reaction, and that each reaction liberates $n$ product neutrons  
+	\implies{ Each reaction will/can initiate $n$ other reactions } 
+	
+	- If one reaction produces an amount of energy $E_{0}$, then the $j$:th generation of fission could produce an energy of 
+$ \qquad
+E_{j}  = E_{0} n^{j}
+$
+
+- In 1942, a group led by Fermi created the first chain reaction 
+
+- It is possible to show that this kind of chain reaction requires the fissioning material to have a mass larger than so-called  critical mass
+
+- Many neutrons can emerge from each reaction $(n>1)$
+
+- But not all neutrons initiate further reactions (losses etc.), in practice it is better to replace the equation above by
+\[
+E_{j}  = E_{0} k^{j} \,, 
+\]
+if $k>1$ we will have a chain reaction, if $k<1$, the reaction will die out
+
+--- slide: Nuclear Reactions ---
+
+ (Nuclear reactions)
+
+	- In a nuclear reactor, based on fission reaction, a fuel assembly to provide $k>1$ is used 
+	
+	- Control rods are used to keep $k$ at $\approx 1$, by slowing down or capturing the neutrons and thereby decreasing $k$
+	
+	- boron and cadmium are commonly used materials (recall earlier lecture)
+
+	- A fraction of neutrons $(\sim 1 %)$ from the decay have a significant time
+
+{5.15cm}
+
+	- lag (${\approx}1\,s$ delay), which slows down the overall chain reaction 
+\implies{ Enables to control of the \\
+	      process and avoiding $k$\\
+	      to increase above unity }
+
+[FIGURE: SOM_Nuclear_physics_Figure_29.png]
+
+--- slide: Nuclear Reactions ---
+
+ (Fusion)
+
+	- Light nuclei are less tightly bound than the intermediate ones. When light nuclei are merged into heavier ones, total mass will decrease and kinetic energy will increase 
+	
+	- This process is called  fusion, and a typical reaction is of form
+\[
+{ }_{1}^{2} \mathrm{H}  ~+~ { }_{1}^{1} \mathrm{H} \quad \rightarrow \quad { }_{2}^{3} \mathrm{He} ~+~ \gamma \,, \qquad Q=5.48 \mathrm{\;MeV}
+\]
+
+{7.5cm}
+
+	- Protons, having Coulombic repulsion, are packed into same nucleus (requires an energy in the order of $1 \mathrm{\;MeV}$) 
+	
+	- But in the same time more nucleons get close to each other within the range of strong force, ${\sim}2 \times 10^{-15} \mathrm{\;m}$ 
+	\implies{ Number of bonds between nucleons \\
+			increases}
+
+[FIGURE: SOM_Nuclear_physics_Figure_30.png]
+
+--- slide: Nuclear Reactions ---
+
+ (Fusion)
+
+\seminormal
+
+	- Fusion reactions can take place via thermal activation at very high temperatures
+
+- A sufficient fraction of nuclei have this energy when $k_{B} T \approx 10 \mathrm{\;keV}$, thus $T \approx 10^{8} \mathrm{\;K}$
+
+- These high temperatures can be found only within the stars, where matter is in ionized plasma phase and gravitational forces hold the material together
+
+- For the fusion to happen, the hydrogen-plasma will need to be held together in a particle number density of matter $n$ for a residence time of $\tau$, and together they need to obey the condition:
+\[
+n \tau > 10^{20} \; \frac{\text {particles} \cdot s}{m^{3}} \qquad (Lawson~criterion)
+\]
+
+- Here a certain residence time $\tau$ is needed because reaction takes some time
+
+--- slide: Nuclear Reactions ---
+
+ (Proton–proton cycle)
+
+\seminormal
+
+	- Hydrogen is by far the most abundant element in the stars, and a series of fusion reactions known as the proton–proton cycle "burns" hydrogen towards helium-4
+$$
+
+& Step 1:\quad & { }_{1}^{1} H  ~+~ { }_{1}^{1} H \quad &\rightarrow \quad { }_{1}^{2} H  ~+~ { }_{+1}^{\,0} \beta ~+~ \nu &Q&=0.42 \mathrm{\;MeV} \\
+& Step 2:\quad & { }_{1}^{2} \mathrm{H} ~+~ { }_{1}^{1} \mathrm{H} \quad &\rightarrow \quad { }_{2}^{3} \mathrm{He}  &Q&=5.48 \mathrm{\;MeV} \\
+& Step 3: \qquad & { }_{2}^{3} \mathrm{He}  ~+~ { }_{2}^{3} \mathrm{He} \quad &\rightarrow \quad { }_{2}^{4} \mathrm{He}  ~+~ { }_{1}^{1} \mathrm{H} ~+~ { }_{1}^{1} \mathrm{H} &\quad Q&=12.9 \mathrm{\;MeV}
+
+$$
+
+- The cycle begins with two protons forming a deuteron (Step 1). For this fusion, a proton needs to become a neutron, therefore the positron and the neutrino will be formed 
+
+- Because this reaction is mediated by the weak force, it takes some time 
+
+- The formed deuteron combines with another proton (Step 2), and forms helium-3, which, with another helium-3 reacts to form helium-4 (Step 3)
+
+- Note, two of the steps $1 \;\&\; 2$ are needed for one step $3$ to take place
+
+--- slide: Nuclear Reactions ---
+
+ (Proton–proton cycle)
+
+\seminormal
+
+{7.5cm}
+	
+	- In total four protons turn into one He-4 (plus some extra positrons and neutrinos)
+
+- Also $24.7 \mathrm{\;MeV}$ of energy is released:
+$$\def\arraystretch{1.15}
+{crr} 
+2 \times \text { step } 1 & \qquad & 2 \times 0.42 \mathrm{\;MeV} \\ 
++2 \times \text { step } 2 & \qquad & +2 \times 5.48 \mathrm{\;MeV} \\ 
++1 \times \text { step } 3  & \qquad & +1 \times 12.9 \mathrm{\;MeV} \\ 
+\hline
+&  & =\phantom{+2\;} 24.7 \mathrm{\;MeV}
+
+$$
+
+- In total:
+\[
+4 \cdot { }_{1}^{1} H \quad \rightarrow \quad { }_{2}^{4} \mathrm{He}  ~+~ 2 \beta^{+} ~+~ 2 \mathrm{\nu} ~+~ 24.7 \mathrm{\;MeV}
+\]
+
+- This proton–proton cycle is the primary energy source in our Sun. It is estimated that the reaction is occurring at the rate of $5.64 \times 10^{11} \mathrm{\;kg}$ of hydrogen per second fusing into helium producing $3.7 \times 10^{25} \;W$
+
+[FIGURE: SOM_Nuclear_physics_Figure_31.png]
+
+--- slide: Nuclear Reactions ---
+
+ (Carbon cycle)
+
+\semismall
+
+	- Proton–proton cycle is assumed to be the dominating reaction occurring in our Sun, but in other stars of higher temperature and higher helium concentration, two helium-4 nuclei can form beryllium-8 
+	\[
+	 { }_{2}^{4} \mathrm{He} ~+~ { }_{2}^{4} \mathrm{He} \quad \rightarrow \quad { }_{4}^{8} \mathrm{Be} 
+	 \]
+
+- ${ }_{4}^{8} Be$ is unstable and decays back to two heliums (in ${\sim} 10^{-16} \mathrm{\;s} $), but if another ${ }_{2}^{4} \mathrm{He}$ fusions with Be before its decay, a tightly bound ${ }_{\;6}^{12} C$ can be formed:
+
+{7.7cm}
+
+	- \[
+{ }_{4}^{8} \mathrm{Be}  ~+~ { }_{2}^{4}\mathrm{He} \quad \rightarrow \quad { }_{\;6}^{12} C
+\]
+
+- This C nucleus can begin the carbon cycle, which is a rapid way to "burn" hydrogen
+
+- Note, that the carbon nucleus merely acts as a catalyst in this reaction scheme. Note also that there are heavier nuclei such as ${ }_{\;8}^{15} \mathrm{O}$ and ${ }^{15} N$ in the cycle, but they decay normally
+
+--- slide: Nuclear Reactions ---
+
+ (Carbon cycle)
+
+	- Note, that as the outcome of the cycle, four protons produce one helium-4 and two positrons and two neutrinos 
+	
+	- But this reaction is much faster than the proton–proton cycle, because at no point does it require a proton to be converted into a neutron before the fusion reaction can happen
+
+- The energy produced by one cycle is $26.7 \mathrm{\;MeV}$ i.e. almost equal to the energy released in the proton–proton cycle:
+\[
+4 \cdot { }_{1}^{1} \mathrm{H} \quad \rightarrow \quad { }_{2}^{4} \mathrm{He}  ~+~ 2 \mathrm{e}^{+} ~+~ 2 \nu
+\]
+
+- In our Sun, proton–proton cycle dominates 
+
+- In older and hotter stars, carbon cycle as well as also other types of fusion reactions are known to occur
+
+--- slide: Nuclear Reactions ---
+
+ (Nucleosynthesis: Origin of elements)
+
+	- In the universe, hydrogen is most abundant element, then helium 
+	
+	- After the sudden drop, corresponding to lithium, beryllium and boron, the abundance follows a regularly decreasing trend 
+	
+	- The same pattern covers not only samples taken from various depths from Earth's crust, but also from the meteorites
+	
+- The abundance more or less level off at around $Z=35$ (or $A=80)$, but still it does have some pronounced maxima
+
+- As for isotopic composition, lighter elements are richer with the stable isotopes with lower neutron content, while the heavier nuclei are richer in isotopes with higher neutron content 
+
+- Interestingly, (stable) isotopes with $A=5$ and $A=8$ are missing from nature
+
+--- slide: Nuclear Reactions ---
+
+ (Nucleosynthesis: Origin of elements)
+
+\semismall
+
+	- It seems that, at least in our galaxy, the elements were all formed by approximately the same process
+	
+	- At an early time in the universe, there was a very large mass of gaseous hydrogen. Due to statistical fluctuations and gravitational interaction, some hydrogen condensed into clusters, and stars with high density $10^{5} \mathrm{\;kg} / \mathrm{m}^{3}$
+	
+	- Temperatures in stars/clusters increased and enabled proton–proton cycle, After that the helium-4 lead the reactions to larger nuclei 
+	
+	- Note, ${ }_{4}^{8} \mathrm{Be}$ is not stable, but fusion with ${ }_{1}^{2} \mathrm{H}$ or ${ }_{2}^{3} \mathrm{He}$ may lead to ${ }_{\;5}^{10} B$, ${ }_{\;6}^{11} C$ etc.
+	
+	- The schematic presentation of a reaction where the beryllium captures a helium-4 and leads to so called 'helium burning' process:
+	$$
+
+&{ }_{2}^{4} \mathrm{He}  ~+~ { }_{2}^{4} \mathrm{He} \quad &\rightarrow& \qquad { }_{4}^{8}\mathrm{Be} \qquad &(-0.0918 \mathrm{\;MeV}) \\
+&{ }_{4}^{8} \mathrm{Be} ~+~ { }_{2}^{4} \mathrm{He} \quad &\rightarrow& \quad { }_{\;6}^{12} \mathrm{C} ~+~ 2 \gamma \qquad &(+7.367 \mathrm{\;MeV})
+
+$$
+
+- Ordinary fusion reactions reach to $A \approx 60$. Beyond that, neutron capture followed by $\beta^{-}$ decay leads to higher $Z$ (supernovas, merging neutron stars, etc.)
+
+--- slide: Nuclear Reactions ---
+
+ (Inducing the fusion reaction)
+
+	- Fusion cannot occur spontaneously. In order to surpass the Coulombic repulsion (nuclei are positively charged), nuclei need to have large kinetic energies (= high temperature) 
+
+[FIGURE: SOM_Nuclear_physics_Figure_32.png]
+
+{7.5cm}
+
+	- Once the nuclei are close to each other, within the range of the strong force, the nuclei can then "fall into the potential pit" (see Fig.)
+
+- It is obvious that fusion requires high density and high temperatures 
+
+- Once reactions start happening, large amount of energy will be released, as can be deduced form the steep left edge of the binding energy curve
+
+--- slide: Nuclear Reactions ---
+
+ (Fusion reactors)
+
+	- A fusion reaction, which has a large cross section and which liberates a great amount of energy, is the reaction $D+T$, i.e. between deuterium $(D)$ and tritium $(T)$ 
+	
+	- However, since tritium is not readily available, the fusion of two deuterium nuclei $(D+D)$ is of more practical importance 
+	
+	- Also, it has the advantage that only one class of nuclei ($D$) is used 
+	
+	- Furthermore, $D+D$ fusion produces also tritium needed for the second reaction:
+	$$
+{ }_{\,1}^{2} \mathrm{D}  ~+~ { }_{\,1}^{2} \mathrm{D} \quad \rightarrow \quad 
+{ {ll} { }^{3} \mathrm{T} ~+~ { }_{1}^{1} \mathrm{H} & \qquad Q=4.0 \mathrm{\;MeV} \\ { }_{2}^{3} \mathrm{He}  ~+~ { }_{0}^{1} \mathrm{n} & \qquad Q=3.3 \mathrm{\;MeV} 
+
+$$
+and 
+\[
+{ }_{\,1}^{2} D  ~+~ { }_{\,1}^{3} \mathrm{T} \quad \rightarrow \quad { }_{2}^{4} \mathrm{He}  ~+~ { }_{0}^{1} \mathrm{n} \qquad Q=17.6 \mathrm{\;MeV}
+\]
+
+--- slide: Nuclear Reactions ---
+
+ (Fusion reactors)
+
+\semismall
+
+{8.5cm}
+
+	- One needs high energy for fusion. 
+	
+	The calculated temperature required to bring two deuterons within a distance of ${\sim} 2 \mathrm{\;fm}$ from each other is $T \sim 6 \times 10{ }^{9} \mathrm{\;K}$ 
+	
+	- There is, naturally, a velocity distribution, so some nuclei have a higher velocity than the average. Also tunneling helps. All in all,  temperatures of $10^{7}–10^{8} \;K$ may be sufficient to have the reaction occurring (as is the case in the Sun)
+
+- In the real fusion reactors, the challenge is to confine the plasma exhibiting a sufficient temperature for the reactions to happen
+
+- Two promising techniques are available:\\
+Magnetic confinement $\rightarrow$ toroidal magnetic field\\
+Inertial confinement $\rightarrow$ synchronized blows of the sample pellet from all sides, via laser beams illuminating the pellet
+
+[FIGURE: SOM_Nuclear_physics_Figure_33.png]
+
+--- slide: Nuclear Reactions ---
+
+ (Comparison between fission and fusion)
+
+	- 
+	- Both techniques, fission and fusion, are based on strong force
+- Only a small amount of fuel is needed (compared to fossil fuels)
+- No waste $\mathrm{CO}_{2}$ emitted $\rightarrow$ atmospheric sustainability
+- Reaction products are radioactive $\rightarrow$ other environmental disadvantages
+($\rightarrow$ final disposal??)
+
+- Fission:
+
+	- Fuels: uranium and thorium, need for expensive mining processes
+- Process products: radioactive waste with long half-life (e.g. $T_{1/2}(\mathrm{Pu-239}) =24\;100$ years)
+
+- Fusion:
+
+	- Fuel: deuterium can be distilled from water, is abundant
+- Process products: tritium and isotopes of helium, tritium is radioactive, but its half-life is short (12.3 years)
+
+--- slide: Nuclear Reactions ---
+
+ (On the energy yields)
+
+\seminormal
+
+	- Energy released in a single fusion reaction is much less than that released in fission. But normalized against the mass, for the deuteron–deuteron fusion reaction the energy is about $2 \times 10^{14} \;J$ per kg of fuel
+	\implies{ Over double the value for uranium fission }
+
+- Because deuterium is abundant (about 1 D per 7000 hydrogen atoms), and the cost of extracting D from water is low (a fraction of €/gram), fusion is considered to be the 'promising power source of the future'
+
+- However, as has been empirically seen (e.g. ITER-reactors), it is still technically very challenging 
+
+- Note also the timeline and what has been stated about fusion power:
+
+	- "A promising power source to be available within 20 years..."\\
+	 – statement from year $1985 !$
+- "Still a promising power source to be available within 20 years..."\\
+	  – statement in year $2020 !$
+
+## 3.7 Applications of Nuclear Physics and Radioactivity
+
+--- slide: 3. Nuclear physics ---
+
+    - 3_1_a{Basic Structure}
+    - 3_2_a{Binding}	
+    - 3_3_a{Nuclear Models}	
+    - 3_4_a{Radioactivity}
+    - 3_5_a{The Radioactive Decay Law}
+    - 3_6_a{Nuclear Reactions}
+    - 3_7_a{Applications of Nuclear Physics and Radioactivity}
+
+--- slide: Applications of Nuclear Physics and Radioactivity ---
+
+ (NMR)
+
+	- Nuclear Magnetic Resonance (NMR):
+	
+	- Just as for Zeeman effect for electrons in atoms, the energy levels for nuclei also split in external magnetic field
+
+- The magnetic moment for a nucleus is 
+\[
+\vec{\mu}  = \gamma \vec{I} \,, \qquad \mu_{N}  = \frac{e \hbar}{2 m_{p}} \,, \qquad where \qquad |\, \vec{I} \,|  =  I(I+1)^{1 / 2} \hbar
+\]
+
+- The potential energy for the magnetic moment in an external magnetic field is 
+\[
+U  = -\vec{\mu} \cdot \vec{B}
+\]
+
+- The energy difference between up and down states then becomes
+\[
+\Delta E  = 2 ( \mu_{z} )_{\text {proton}} B
+\]
+
+--- slide: Applications of Nuclear Physics and Radioactivity ---
+
+ (NMR)
+
+\seminormal 
+
+	- When hydrogen atoms (e.g. protons in water) are irradiated with electromagnetic radiation, i.e. photons of $h f=\Delta E$, then we will have a resonance absorption, and subsequent emission
+
+- In a magnetic field of $1 \mathrm{\;T}$, the energy difference $\Delta E=1.76 \times 10^{-7} \mathrm{\;eV}$ corresponds to resonance frequency $f=42.5$ $\mathrm{\;MHz}$  (a radio frequency)
+
+{7.5cm}
+
+	- NMR is applied to probe internal magnetic structure of materials, and especially in magnetic resonance imaging (MRI) of living tissue, with negligible heating effect
+
+[FIGURE: SOM_Nuclear_physics_Figure_17.png]
+
+- NMR is best known due to MRI, but it is widely applied also in other scientific areas, such as observing the structures of complex molecules in chemistry
+
+--- slide: Applications of Nuclear Physics and Radioactivity ---
+
+ (NAA)
+
+	- Neutron Activation Analysis (NAA):
+	- A sample containing ${ }_{Z}^{A} M$ is exposed to a beam of slow neutrons
+
+- Nuclide ${ }^{A+1}_{~\;Z}M$ can be generated via reaction ${ }_{Z}^{A} M (n, \gamma)^{A+1} M$, but it is radioactive, thus it will emit $\beta$ particles or $\gamma$ rays
+
+- Monitoring the emitted radiation, ${ }^{A+1}_{~\;Z} M$ can be identified, and furthermore concentration of ${ }_{Z}^{A} M $ in the sample can be determined
+
+- This neatly enables chemical analysis, even different isotopes are distinguished from each other, without breaking the sample
+
+- The neutron activation analysis (NAA) is suitable for analysing very small amounts of material, and often it is used 'when other physicochemical methods are not sensitive enough'
+
+- Drawback is the difficult disposal of radioactive samples
+
+--- slide: Applications of Nuclear Physics and Radioactivity ---
+
+ (NAA)
+
+\seminormal
+
+	- After exposure to thermal neutrons the activity of a nuclide follows:
+\[
+R(t)  = \lambda N(t)  = R_{0} (1-\rme^{-\lambda t} )
+\]
+where $\lambda=$ decay constant characteristic for ${ }^{A+1}_{~\;Z}M$, and $R_{0}$ is the constant production rate of that isotope ($g$ in earlier Lecture)
+
+- In the equation above, $R(t)$ is measured and $R_{0}$ is in principle computed from known values of intensity $I$ (specific for the set-up) and cross section (specific for the reaction leading to nuclei $ { }^{A+1}_{~\;Z}M$). $I$ is the neutron flux (given e.g. in neutrons/s$\mathrm{m}^{2}$)
+
+- In general the rate for collisions/production of is ${ }^{A+1}_{~\;Z}M$:
+\[
+R_{0}  = N_{0} \sigma I \qquad , \qquad [\sigma I]  = m^{2} \frac{\text {neutrons}}{s \cdot m^{2}}  = \frac{\text {neutrons}}{s}
+\]
+where $N_{0}$ is the number of ${ }_{Z}^{A} M$ nuclei in the sample
+
+--- slide: Applications of Nuclear Physics and Radioactivity ---
+
+ (NAA)
+
+	- Thereby, we obtain $R(t)  = \lambda N(t)  = N_{0} \sigma I (1-\rme^{-\lambda t} )$ and if the half-life of the nuclide is short, we obtain a saturation $R(t)=R(t=\infty)=N_{0} \sigma I$
+
+- Table shows saturation activities $R(\infty)$ (per mg of sample) for a few isotopes
+
+- Number of ${ }_{Z}^{A} M$ atoms in the sample is
+\[
+N_{0}  = \fraca{R(t=\infty)}{\sigma I} \,,
+\]
+and mass of ${ }_{Z}^{A} M$ in sample is
+
+{7.8cm}
+
+	- 
+	\[
+ m ({ }_{Z}^{A} M)  = \frac{N_{0}}{N_{A}} M({ }_{Z}^{A} M)  = \frac{R(t=\infty)}{N_{A} \sigma I} M({ }_{Z}^{A} M) \,,
+\]
+- where $M({ }_{Z}^{A} M)$ is the atomic weight of the element and $N_{A}$ is Avogadro's number	
+
+--- slide: Applications of Nuclear Physics and Radioactivity ---
+
+ (Dating)
+
+	- Radioactive Dating:
+
+\semismall
+
+	- Nature contains radioactive isotopes:
+
+	- Three heavy element $\alpha$-emitter chains (thorium, uranium, actinium)
+- Isolated long-lived isotopes, such as ${ }^{40} \mathrm{K}$ with $T_{1 / 2}=1.25 \times 10^{9} \mathrm{\;y}$
+- Isolated radioactive isotopes are activated by cosmic rays
+
+- For geological aging ${ }^{40} \mathrm{K}$ and ${ }^{232} \mathrm{Th} ~(T_{1 / 2}=1.24 \times 10^{10} \mathrm{\;y})$ are used (for "old" rocks, or "younger" rocks)
+
+- Present abundance ratio of two isotopes is measured, one of them being radioactive or a stable product of a radioactive decay, (so that its abundance is
+
+{5.7cm}
+
+	- time dependent), and compared against a previous abundance ratio, that is known to have existed when the material was formed
+
+--- slide: Applications of Nuclear Physics and Radioactivity ---
+
+ (Dating)
+
+\seminormal
+
+	- In archeology, ${ }^{14} \mathrm{C}$-dating is an important tool 
+	- ${ }^{14} \mathrm{C}$ is a $\beta^{-}$ emitter with half-life $T_{1 / 2}=5730$ years
+
+- Due to the carbon cycle in nature, ratio of ${ }^{14} \mathrm{C} /{ }^{12} \mathrm{C}$ in living organisms equals the value in atmosphere (presently the ratio ${ }^{14} \mathrm{C} /{ }^{12} \mathrm{C}=1.35 \times 10^{-12})$ 
+- When organism dies, compounds such as atmospheric $\mathrm{CO}_{2}$ or hydrocarbons stop circulating through the organism 
+\implies{ Carbon stops being renewed, and the radioactive ${ }^{14} \mathrm{C}$ starts to decay}
+
+- Activity (decay rate) of one gram of carbon in the material allows to calculate the time of death of the organism. In reality ${ }^{14} \mathrm{C} /{ }^{12} \mathrm{C}$ fraction has been varying through years, which weakens the accuracy of dating process 
+
+ \small
+	- ${\sim}$9000 years ago the ratio was $1.5$ times the ratio of the present time
+	- Nuclear experiments have increased the ratio
+	- Use of fossil fuel has decreased the ratio (signs of the Anthropocene?)
+
+--- slide: Applications of Nuclear Physics and Radioactivity ---
+
+ (Dating)
+
+	- Let's find out how the age of the Earth can be estimated!
+
+- In radioactive decay, where a parent $(P)$ nuclide decays into daughter $(D)$, the numbers of parent and daughter nuclei are respectively given by: 
+\[
+N_{P}(t)  = N_{0} \rme^{-\lambda t} \qquad , \qquad N_{D}(t)  = N_{0}-N_{P}
+\]
+
+- Then, at each given moment of time $t$, we have 
+\[
+t = \frac{1}{\lambda} \ln ( \frac{N_{0}}{N_{P}} \;)  = \frac{T_{1 / 2}}{\ln 2} \ln ( \frac{N_{0}}{N_{P}} \,)  = \frac{T_{1 / 2}}{\ln 2} \ln ( 1 + \frac{N_{D}}{N_{P}} \,)
+\]
+
+- Some isotope ratios (${ }^{238} \mathrm{U} /{ }^{206} \mathrm{Pb},~{ }^{87} \mathrm{Rb} /{ }^{87} \mathrm{Sr},~{ }^{40} \mathrm{K} /{ }^{40} \mathrm{Ar}$) are used as 'rock-clocks', e.g. indicating that the age of Earth's surface rock is around $4.5 \times 10^{9}$ years
+
+--- slide: Applications of Nuclear Physics and Radioactivity ---
+
+ (Alarms)
+
+	- Am-241 is an isotope belonging to Neptunium series 
+	
+	- Am-241 is used in conventional household fire alarms to ionize the air
+
+- In clean air, the ions in air move easily to electrodes and create a small trickle current 
+\implies{ this trickle current is continuously measured }
+
+- If smoke particles enter the channel, they remove the ions (of the ionized gas molecules) from the air, electrical conductivity of the air decreases 
+\implies{ the trickle current stops }
+
+--- slide: Applications of Nuclear Physics and Radioactivity ---
+
+	- Particle-Induced X-ray and Gamma-ray Emission (PIXE and PIGE)
+- PIXE: 
+- 
+	 - An elemental analysis of trace element concentrations of samples (for elements $Z>20$) 
+	 - Sample is bombarded with low energy ions (few MeV), X-rays will be emitted from K- and L-shell electrons of the atoms
+	 
+	 - This offers a method to identify elements in the sample 
+	 
+	 - Depending on the ions used, the method can be very surface-sensitive 
+	 
+	 - PIXE can be used e.g. to detect elemental composition in trees (which have the annual growth rings) or e.g. verify genuinity of old paintings (with distinct elemental composition)
+
+--- slide: Applications of Nuclear Physics and Radioactivity ---
+
+	- Particle-Induced X-ray and Gamma-ray Emission (PIXE and PIGE)
+
+	- PIGE: 
+	- 
+	 - Bombarded with higher ion energies, nuclei start emitting $\gamma$ rays from the nucleus in a similar way to PIXE
+	 - Then also lighter elements can be detected 
+	  
+	 - For example, the ${ }^{23} \mathrm{Na}( \mathrm{p}, \mathrm{p}^{\prime} + \gamma ) {}^{23} \mathrm{Na}$ reaction is frequently used for determining bulk sodium content of glasses 
+
+-
+- PIXE and PIGE are both used widely in elemental analysis in material and environmental sciences
+
+
+======================================================================
+SUOMI / FINNISH (source: Kappaleet/)
+======================================================================
+
+## 3.1 Ytimen Rakenne
+
+--- slide: 3. Ydinfysiikka ---
+
+    -<1-> 3_1_a{Ytimen Rakenne}
+    -<1-> 3_2_a{Ytimen Koossapysyminen}	
+    -<1-> 3_3_a{Ydinmallit}	
+    -<1-> 3_4_a{Radioaktiivisuus}
+    -<1-> 3_5_a{Radioaktiivinen Hajoamislaki}
+    -<1-> 3_6_a{Ydinreaktiot}
+    -<1-> 3_7_a{Ydinfysiikan ja Radioaktiivisuuden Sovelluskohteet}
+
+--- slide: Ytimen Rakenne ---
+
+ (Yleisiä asioita ydinfysiikasta)
+
+ \seminormal
+
+	- Ennen neutronien löytymistä ajateltiin että atomit koostuvat vain protoneista ja elektroneista, vaikkei atomin koossapitäviä periaatteita täysin ymmärrettykään 
+	
+	- Neutronin löytyminen (Rutherfordin teoreettinen ennustus 1920, Chadwickin kokeellinen havainto 1932) auttoi nopeasti atomiydinten mallien muodostamisessa 
+	
+	- Tosin vieläkään atomiydinmallit eivät ole täysin tyydyttäviä 
+	
+- Jotkut ytimistä ovat inerttejä ja vakaita. Toiset taas ovat epävakaita, ja vapauttavat hajotessaan valtavia määriä energiaa
+
+- Ydinfysiikalle on löydetty useita sovelluskohteita:
+-  \semismall
+	-  Ydinreaktioiden hyödyntäminen energiantuotannossa 
+- Radioaktiivisuus\;\&\;radioaktiiviset isotoopit (radiohiiliajoitus, merkkiaineet,...)
+- magneettiresonanssikuvaus (NMR) (lääketieteessä)
+- Neutroniaktivaatioanalyysi (NAA) (alkuaineiden pitoisuudet)
+
+--- slide: Ytimen Rakenne ---
+
+ (Yleisiä asioita ydinfysiikasta)
+
+	- Atomin koko on $0,1–1 \mathrm{\;nm}$, mistä ydin vie vain 1–10\;fm ($10^{-5}$ koko atomin koosta)
+
+- Vaikka elektronit ovatkin sidoksissa ytimeen, niiden sidosenergiat ovat mitättömiä ytimen sidosenergioihin verrattuna
+
+- Toisaalta ytimen magneettinen momentti $ (  \frac{e \hbar}{2 m_{p}} ) $ on pieni $\sim 1/2000$ verrattuna elektronien magneettiseen momenttiin (Bohrin magnetoni $\frac{e \hbar}{2 m_{e}}$)
+
+[FIGURE: SOM_Nuclear_Table_1.png]
+
+[footnote: Figure from R. Harris, Modern Physics (2nd edition).]
+
+[FIGURE: Tikz_SOM_Nuclear_atom_vs_nucleus.pdf]
+
+--- slide: Ytimen Rakenne ---
+
+ (Atomiytimen perusrakenne)
+
+	- Alkuaineen isotoopille, eli nuklidille käytetään merkintää ${}_{Z}^{A}X$:
+$$\small
+{rl} 
+  {A}&{\!=}  ~Atomimassa$^*$ = kokonaisluku \approx \text {atomin paino atomimassayksiköissä} \\ 
+A=Z+N \,,~missä \quad {Z}&{\!=}\text {~Järjestysluku = Atomiluku (protonien lkm)}^\dagger \rightarrow \text {ytimen varaus}\\ 
+{N}&{\!=}\text {~Neutroniluku}
+
+$$
+\footnoteleft{$^*$Tunnetaan myös massalukuna tai nukleonilukuna, eli A = 'All'}
+\footnoteleft{,$^\dagger$tai protoniluku }
+- Ytimen massa $\approx A \cdot m$, missä $m \approx m_{p} \approx m_{n}$
+
+{6.5cm}
+
+-<+-> Yksi atomimassayksikkö vastaa
+\[
+ 1 \;u \equiv \frac{m_{C-12}}{12} = 1,660540 \times 10^{-27} \mathrm{\;kg}
+\]
+
+- Vakaalla ytimellä on tyypillisesti noin saman verran protoneita ja neutroneita: 
+\[
+ Z \approx N
+ \]
+
+[FIGURE: SOM_Nuclear_physics_Figure_1.png]
+
+[footnote: Figure from R. Harris, Modern Physics (2nd edition).]
+
+--- slide: Ytimen Rakenne ---
+
+ (Atomiytimen perusrakenne)
+
+{6.5cm}
+ \seminormal
+- Perusterminologiaa:
+	
+	 - ${ }^{12} \mathrm{C}$ ja ${ }^{13} \mathrm{C}$ ovat 'isotooppeja' 
+	- ${ }^{13} \mathrm{C}$ ja ${ }^{14} \mathrm{N}$ ovat 'isotooneja' 
+	- ${ }^{14} \mathrm{C}$ ja ${ }^{14} \mathrm{N}$ ovat 'isobaareja'
+
+	- Vedyllä on kolme isotooppia:
+	
+		- Vakaa vety (vety-1)
+		- Vakaa deuterium (vety-2)
+		- Epävakaa tritium (vety-3)
+
+- Näistä vety-1 on luonnossa yleisimmin löytyvä isotooppi, $99,985 %$. Vety-2 on pieni määrä luonnossa ($0,015 %$), ja vety-3:sta ei sen epävakauden takia käytännössä löydy.
+
+\footnoteleft{{A. H. Wapstra ja G. Audi, Nuclear Physics A595, 4 (1995).}}
+
+[FIGURE: SOM_Nuclear_physics_Figure_2.png]
+
+[footnote: Figure from R. Harris, Modern Physics (2nd edition).]
+
+--- slide: Ytimen Rakenne ---
+
+ (Atomiytimen perusrakenne)
+
+\semismall
+
+	- Yli 3000 nuklidia on löydetty, joista 266 on vakaita/stabiileja
+-<.->[] 
+	 - Stabiileita ytimiä löytyy runsaasti luonnosta
+	- Kaikki luonnosta löytymättömät isotoopit ovat epästabiileja 
+
+- Kutakin järjestyslukua $Z$ vastaavien stabiilien isotooppien lukumäärä vaihtelee:
+-<.->[] 
+	 - Luonnosta löytyy kahta He-isotooppia: He-3 (99,99986%) ja He-4 $(0,00014 %)$
+- Hiilellä on myös kaksi luonnollista isotooppia: C-12 (98,90%) ja C-13 (1,10%)
+- Alumiinilla on vain yksi luonnosta runsaasti löytyvä isotooppi Al-27 (Al-26 on radioaktiivinen)
+- Tinalla on 10: Sn-112 $\rightarrow$ Sn-124 (Sn-121 on radioaktiivinen, $T_{1/2} = 55 \;a$))
+
+- Epävakaita isotooppeja voidaan keinotekoisesti valmistaa, mutta ne häviävät radioaktiivisen hajoamisen kautta
+
+- Epästabiileja isotooppeja löytyy kuitenkin runsaasti luonnosta, jos niitä syntyy toisista nuklideista radioaktiivisen hajoamisen seurauksena
+
+- Esimerkiksi uraani-238 ja torium-232 ovat epävakaita, mutta niitä löytyy luonnosta enemmän kuin hopeaa
+
+--- slide: Ytimen Rakenne ---
+
+ (Ytimen koko)
+
+	- On olemassa kolme kokeellista menetelmää ytimen koon määrittämiseksi 
+	- Jokainen niistä antaa hieman poikkeavan arvion, mutta kaikki antavat samaa suuruusluokkaa olevia tuloksia 
+ \seminormal
+	- Alfahiukkassironta
+	 \small
+		- Rutherford pommitti ohutta kultakalvoa $\alpha$-hiukkasilla $ (\!={ }^{4} \mathrm{He}$-ydin)
+
+[FIGURE: SOM_Nuclear_physics_Figure_3.png]
+[footnote: Figure from R. Harris, Modern Physics (2nd edition).]
+	
+- Elektronisironta
+	 \small
+		- Hofstadter pommitti ytimiä 200–500 MeV elektroneilla
+
+- Nopeiden neutronien vaimeneminen
+	 \small
+		- Neutronisäteen vaimenemisvuorovaikutusala antaa informaatiota ytimen koosta
+
+{8.5cm}
+
+	- Kaikki menetelmät antavat samansuuruisen säteen pyöreähkölle ytimelle:
+\[
+r  =  R_{0} A^{1 / 3}
+\]
+missä $R_{0} \approx 1,2 \mathrm{\;fm}$ (mitattu arvo on 1,1--1,4 fm) 
+
+--- slide: Ytimen Rakenne ---
+
+ (Ytimen koko)
+
+- Verrannollisuukerroin ($r \propto A^{1/3}$) implikoi että  ytimen tilavuus on
+\[
+V_{t o t}  = \frac{4}{3} \pi r^{3}  = \frac{4}{3} \pi (  R_{0} A^{1 / 3} )  ^{3}  = \frac{4}{3} \pi R_{0}^{3} \times A
+\]
+- Neutroneilla ja protoneilla on lähestulkoon samat massat ($m_{p} \approx m_{n} \approx m_{nukleoni}$), jolloin ytimen kokonaismassa on verrannollinen $A$\,:\,han, implikoiden että kaikki ytimet ovat lähes yhtä tiheitä:
+\[
+\rho  = \fraca{\text {massa}}{\text {tilavuus}}  = \fraca{A \times m_{\text {nukleoni}}}{A \times \frac{4}{3} \pi R_{0}^{3}} \approx 2,3 \times 10^{17} \mathrm{\;kg} / \mathrm{m}^{3}
+\]
+
+- Vakioarvoinen tiheys implikoi että nukleonit ovat kokoonpuristumattomia ja tiiviisti pakkautuneita, eli että nukleoneilla on voimakkaasti hylkivät kovat ytimet
+
+- Yksittäisen nukleonin efektiivinen säde  on noin $ R_{0} \sim 1 \mathrm{\;fm}$
+
+--- slide: Ytimen Rakenne ---
+
+ (Rutherfordin atomimalli)
+
+\semismall  
+
+{8.5cm}
+
+	- Rutherford pommitti $\mathrm{Pb}$:ä eri energian omaa\-vil\-la alfahiukkasilla. Kun energiat ylittivät arvon $\approx 27 \mathrm{\;MeV}$, tulevat alfahiukkaset alkoivat vuorovaikuttaa lyijy-ytimen kanssa attraktiivisen vahvan voiman välityksellä
+
+- Myös peilinuklidien (isobaarien) $ (  A_{1}=A_{2} )$, mutta $Z_{1}=N_{2}$ ja $( N_{1}=Z_{2} )$ beetahajoaminen  antoi informaatiota ytimien koosta 
+\implies{ Kahden ytimen väliset erot, esim. ${ }^{15} \mathrm{O}$ ja ${ }^{15} \mathrm{N}$, johtuvat vain sähköstaattisesta voimasta }
+
+- On helppoa osoittaa laskemalla että $R$-säteisen pallon, jonka varaus on $Q=Z e$,  sähköstaattinen energia on:
+\[
+U  = \frac{3}{5} \frac{1}{4 \pi \varepsilon_{0}} \frac{Q^2}{R}  = \frac{3}{5} \frac{k Q^{2}}{R} = \frac{3}{5} \frac{k Z^{2} e^{2}}{R}
+\]
+
+[FIGURE: SOM_Tipler_Nuclear_physics_figure_3.png]
+
+[footnote: \TiplerCRshort]
+
+--- slide: Ytimen Rakenne ---
+
+ (Rutherfordin atomimalli)
+
+	- Eli jos radioaktiivinen ${ }^{15} \mathrm{O}$ hajoaa ${ }^{15} \mathrm{N}$:ksi emittoimalla beetahiukkasen (elektronin), niin energiaero ${ }^{15} \mathrm{O}$:n ja ${ }^{15} \mathrm{N}$:n välillä olisi
+\[
+\Delta U  = \frac{3}{5} \frac{k e^{2}}{R} [Z^{2}-(Z-1)^{2} ]
+\]
+- kun $Z=8$, jonka avulla voidaan laskea ytimen säde $R$
+
+- Esimerkki: Laske kevyimmän ja painavimman ytimen, eli ${ }_{2}^{4} \mathrm{He}$:n ja ${ }^{238}_{\,92}U$:n säteet. Säde saadaan yhtälöllä $r_{0}=1,2 \times A^{1/3} \mathrm{fm}$ jolloin:
+$$
+
+ r_{He} & = 1,2 \times (4)^{1/3} \mathrm{\;fm}=1,90 \mathrm{\;fm} \\
+r_{U} & = 1,2 \times (238)^{1/3} \mathrm{\;fm}=7,42 \mathrm{\;fm}
+
+$$
+ \implies{ Kevyimmän ja painavimman ytimen välinen kokoero on\\ vain noin nelinkertainen }
+
+--- slide: Ytimen Rakenne ---
+
+ (Hofstadterin malli)
+
+\semismall
+
+{7.5cm}
+
+	- Suurenergisten elektronien sironta ytimistä riippuu johdonmukaisesti järjestysluvusta $Z$
+
+- Oletetaan että ytimillä on 'pintakerros', jonka tiheys on $10-90 %$ ytimen tiheydestä, ja että $r_{0}$ vastaa sädettä jolla varaustiheys on puolittunut (ks. kuva)
+
+[FIGURE: SOM_Tipler_Nuclear_physics_figure_7.png]
+
+[FIGURE: SOM_Tipler_Nuclear_physics_figure_8.png]
+
+[footnote: \TiplerCRshort]
+- Tällöin nukleonitiheyttä voidaan approksimoida yhtälöllä: 
+
+\[
+\hspace{2cm} \rho(r)=\fraca{\rho_{n}}{1+e^{ (  r-r_{0} )   / a}}
+\]
+missä
+$$
+
+&\rho_{n}=0,17 \;\frac{\text {nukleoni}}{\;fm^{3}} \\
+&r_{0}= (  1,18 A^{1/3}-0,48 )   \;fm \\
+&a=0,55 \mathrm{\;fm} 
+
+$$
+
+--- slide: Ytimen Rakenne ---
+
+ (Lyhyt yhteenveto)
+
+\seminormal
+
+	- Faktat:
+-<.->[] 
+	 - Ytimen nukleonitiheys on ${\sim}$vakioarvoinen, eikä riipu alkuaineesta 
+	 - Ytimen varaustiheys on ${\sim}$vakio, eikä riipu alkuaineesta
+
+- Yhteenveto:
+Jos tiheys on vakioarvoinen, nukleonin lisääminen $(A \rightarrow A+1)$ ei kasvata tiheyttä. Eli jos on olemassa attraktiivinen voima, sen luonne poikkeaa sähköisestä vuorovaikutuksesta, mikä kasvaisi tekijällä $A$ mikäli yksi sähkövaraus lisättäisiin ytimeen. Vahvan vuorovaikutuksen täytyy siis olla lyhyen kantaman voima (noin nukleonin etäisyyden luokkaa)
+
+- Ytimissä vaikuttavat voimat ovat erittäin vahvoja verrattuna sähköisiin voimiin (vedyn ionisaatioenergia on $13,6 \mathrm{\;eV}$, mutta tarvitaan ${\sim}8 \mathrm{\;MeV}$ irrottamaan nukleoni ytimestä)
+
+- Attraktiivinen vuorovaikutusenergia on lähestulkoon yhtäsuuri protoneille ja neutroneille. Vahva vuorovaikutus ei siis riipu sähköisestä varauksesta
+
+## 3.2 Ytimen Koossapysyminen
+
+--- slide: 3. Ydinfysiikka ---
+
+    -<1-> 3_1_a{Ytimen Rakenne}
+    -<1-> 3_2_a{Ytimen Koossapysyminen}	
+    -<1-> 3_3_a{Ydinmallit}	
+    -<1-> 3_4_a{Radioaktiivisuus}
+    -<1-> 3_5_a{Radioaktiivinen Hajoamislaki}
+    -<1-> 3_6_a{Ydinreaktiot}
+    -<1-> 3_7_a{Ydinfysiikan ja Radioaktiivisuuden Sovelluskohteet}
+
+--- slide: Ytimen Koossapysyminen ---
+
+ (Sitovat voimat)
+
+	- Nukleoneja toisiinsa sitovaa voimaa kutsutaan vahvaksi vuorovaikutukseksi. Se on yksi neljästä perusvuorovaikutuksesta:
+
+	- Vahva $(\leftrightarrow$ nukleonien välinen vetovoima)
+- Sähkömagneettinen
+- Heikko
+- Painovoima
+
+[FIGURE: SOM_Nuclear_Table_2.png]
+
+[footnote: Figure from R. Harris, Modern Physics (2nd edition).]
+- Vahva voima vaikuttaa vain ${\sim}$1–2 fm päähän. Pidemmillä etäisyyksillä sen vaikutus on olematon, mikä vaikuttaa ytimien vakauteen
+
+{8.25cm}
+
+	- Suuremmilla etäisyyksillä sähkömagneettiset voimat ovat huomattavia
+	\implies{ Painavammat alkuaineet, joiden koko on \\
+	suu\-rempi kuin ${\sim}$2~fm, alkavat kokea \\
+	sähköstaattisia voimia  \\ (protonit hylkivät toisiaan) }
+
+--- slide: Ytimen Koossapysyminen ---
+
+ (Sitovat voimat)
+
+\seminormal
+
+	- Kuva 4 havainnollistaa vahvaa voimaa:
+
+[FIGURE: SOM_Nuclear_physics_Figure_4.png]
+
+ \small
+	- Lyhyen kantaman vetovoima
+- Kovat ytimet hylkivät voimakkaasti
+- Samanlainen protonille ja neutronille 
+- Riippuu ytimen spinien suunnista 
+- Kaavaa ei olla vielä löydetty vahvalle voimalle
+
+{8.7cm}
+
+	- Yhdistettynä sähköstaattisen (protoneita hylkivän) voiman kanssa, kuvan 4 vahvaa voimaa kuvaava potentiaalikaivo sisältää myös hylkivän seinämän suurilla säteen arvoilla
+
+[FIGURE: SOM_Tipler_Nuclear_physics_figure_1_cropped.png]
+
+- Mallin perusteella vakaita ytimiä voitaisiin muodostaa millä tahansa protonien ja neutronien kombinaatioilla. Kuitenkin vain tietyt nukleonien kombinaatiot muodostavat vakaita ytimiä kun taas muut kombinaatiot ovat epävakaita
+
+--- slide: Ytimen Koossapysyminen ---
+
+ (Malli vakaudelle/stabiilisuudelle)
+
+	- Kaksinukleoninen ydin:\\
+	Tarkastellaan kahta vahvan voiman toisiinsa sitomaa nukleonia kapeassa mutta syvässä potentiaalikaivossa (ks.\ kuva 4)
+
+- 
+	 - Kaksi protonia (p-p): Nukleonienvälinen vetovoima + sähköstaattinen repulsio $\rightarrow$ luultavasti epävakain vaihtoehto
+
+- Kaksi neutronia (n-n): Vain nukleonienvälinen vahva vuorovaikutus
+- Protoni–neutroni-pari (p-n): Vain nukleonienvälinen vahva vuorovaikutus $\rightarrow$ deuteroni
+
+- Lopulta vain p-n (deuteroni) kombinaatio muodostaa vakaan ytimen. Miksi? Vahva vuorovaikutus riippuu spinistä, ja on vahvempi kun spinit ovat samansuuntaiset. Lisäksi kieltosääntö vaikuttaa kaikkien ytimien muodostumiseen. Protonit ja  neutronit ovat 1/2-spinin fermioneita, eivätkä voi olla samassa kvanttitilassa
+
+--- slide: Ytimen Koossapysyminen ---
+
+	- Kahden nukleonin tapauksessa matalimman energian tila on perustila jossa spinit ovat samansuuntaiset (suurempi vahva vuorovaikutus). Paulin kieltosääntö kieltää tällaiset tilat kombinaatioille n-n ja p-p
+	
+	- Itse asiassa deuteronikin pysyy kasassa vain heikosti eikä sillä ole virittyneitä tiloja
+
+{8cm}
+
+	- Kun kerta jo deuteroni on heikosti sitoutunut, ei ole yllättävää että toiset kombinaatiot muodostavat epävakaita ytimiä
+
+[FIGURE: SOM_Nuclear_physics_Figure_5.png]
+[footnote: Figure from R. Harris, Modern Physics (2nd edition).]
+- Deuteronin energiakaavio näkyy kuvassa 5. Kaksi nukleonia on vahvan vuorovai\-ku\-tuksen synnyttämässä potentiaalikaivossa, ja niillä on vain perustilansa
+
+--- slide: Ytimen Koossapysyminen ---
+
+ (Nukleonien välinen vahva vetovoima)
+
+\semismall
+
+	-  \semismall
+	 - Kaksinukleonisessa ytimessä on vain yksi sidos, eli 1/2 sidosta per nukleoni
+	 - Kolminukleonisessa ytimessä on kolme, eli 1 sidos per nukleoni  
+	 - Nelinukleonisessa ytimessä on jo kuusi, eli 1,5 sidosta per nukleoni 
+	 \implies{sidosten lukumäärä kasvaa}
+
+{7.4cm}
+
+	- Tämä kasvava trendi jatkuu vain siihen asti että nukleonit ovat pakkautuneet tii\-viis\-ti vierekkäin ja lähimmät naapurit ympäröivät täysin toisensa. Tällöin nukleonien väliset sidokset maksimoituvat
+
+[FIGURE: SOM_Nuclear_physics_Figure_6.png]
+
+[footnote: Figure from R. Harris, Modern Physics (2nd edition).]
+- Sidoslukumäärä/nukleoni on verrannollinen pallon alaan/tilavuus $=\frac{4 \pi r^{2}}{4 / 3 \pi r^{3}} \propto \frac{1}{r}$ 
+- Keskimääräinen sidoslukumäärä per nukleoni joh\-taa vakioarvoiseen sidosenergiaan per nukleoni, mikä energia vaaditaan irrottamaan nukleonit toisistaan (sidososuus $\approx$ irrotustyö)
+
+--- slide: Ytimen Koossapysyminen ---
+
+ (Sähköstaattinen hylkivä voima)
+
+{9.0cm}
+
+	- Kaikki protoniparit hylkivät toisiaan, mikä nostaa niiden energioita hiukan ylöspäin, kohti potentiaalikaivon pintaa
+
+[FIGURE: SOM_Nuclear_physics_Figure_7.png]
+[footnote: Figure from R. Harris, Modern Physics (2nd edition).]	
+- Pienissä ytimissä kaikki nukleonit ovat vierekkäin, jolloin kaikkien välillä on att\-rak\-tiivinen vuorovaikutus. Mutta sidoslukumäärä/nukleoni on pienehkö
+
+- Suuremmissa ytimissä, protoniparit ovat niin kaukana toisistaan etteivät ne enää koe vahvaa vuorovaikutusta \implies{ Näiden parien välillä on on sähköinen hylkivä voima}
+
+- Molempien kontribuutioiden huomioon ottaminen johtaa maksimiin sidosenergiassa/nukleoni eli sidososuudessa (BE/A) (kuva 8)
+
+[FIGURE: SOM_Nuclear_physics_Figure_8.png]
+
+--- slide: Ytimen Koossapysyminen ---
+
+ (Kieltosääntö)
+
+	- Kieltosäännön mukaan  matalimman energian tila vastaa tapausta jossa on sama määrä protoneita ja neutroneita
+
+[FIGURE: SOM_Nuclear_physics_Figure_9.png]
+
+[footnote: Figure from R. Harris, Modern Physics (2nd edition).]
+	- Kuvassa 9 on vasemmalla sama määrä protoneita ja neutroneita. Kun protoni muutetaan neutroniksi, ytimen massaluku $A$ ei muutu. Koska matalimman energiatason tilat on nyt täytetty, meidän täytyy nostaa neutroni korkeammalle energiatilalle,
+
+{6.5cm}
+
+- jolloin kokonaisenergia kasvaa 
+
+- Sama argumentti pätee jos muuttaisimme neutronin protoniksi
+	- Eli tapaus $Z=N$ minimoi (koko\-nais)energian
+
+--- slide: Ytimen Koossapysyminen ---
+
+\seminormal
+
+{8.75cm}
+
+	- Otetaan seuraavaksi huomioon protonien välinen sähköinen repulsiovoima. Tarkastellaan pientä ydintä jonka kaikki nukleonit koskevat toi\-siin\-sa. Kaikkien protonien välisen sähköisen repulsiovoiman peittoaa vahva vuorovaikutus, jolloin $Z \cong N$ kuuluisi olla vakaampi konfiguraatio
+
+[FIGURE: SOM_Nuclear_physics_Figure_10.png]
+
+[footnote: Figure from R. Harris, Modern Physics (2nd edition).]
+- Suuressa ytimessä sähköinen repulsiovoima nostaa näkyvästi protonien energiatiloja ylöspäin. Voisi siis olettaa että matalimman kokonaisenergian tilassa, korkeimmat neutroni- ja protonitilat ovat yhtä energeettiset, johtaen tilanteeseen $N>Z$
+
+- Tällöin nukleonien pitäisi olla tiukimmin sidottuja ytimissä joissa on keskisuuri massaluku. Sidososuuden olettaisi maksimoituvan pienillä ytimillä kun $Z \cong N$ ja isojen ytimien tapauksessa kun $N>Z$
+
+--- slide: Ytimen Koossapysyminen ---
+
+ (Vakauteen liittyvät kokeelliset faktat)
+
+	- Mallin paikkansapitävyys kuvata ytimissä vaikuttavia voimia voidaan varmistaa tarkastelemalla kokeellisten mitattujen ytimien massojen summia 
+
+[FIGURE: SOM_Nuclear_physics_Figure_11.png]
+
+[footnote: Figure from R. Harris, Modern Physics (2nd edition).]
+- Mikäli energiaa tarvitaan vetämään nukleonit erilleen ytimestä, ytimen massan täytyy olla pienempi kuin sen osasten massojen summan
+
+- Selvästikin esim. deuteroni painaa vähemmän kuin osiensa summa:
+
+{8cm}
+
+-  \semismall
+	 - Deuteronin massa $m_D = 2,013553 \mathrm{\;u}$ 
+	- ~
+	$$
+	m_p  +  m_n &= 1,007276 \mathrm{\;u}+1,008665 \mathrm{\;u} \\&=2,015941 \mathrm{\;u}
+	$$
+	 
+- Osien massa $-$ kokonaisuuden massa 
+$$
+=2,015941 \;u   - 2,013553 \;u  =  + 0,002388 \;u
+$$
+
+- \implies{ Deuteronin hajottamiseksi täytyy tehdä työtä }
+
+--- slide: Ytimen Koossapysyminen ---
+
+ (Ytimen sidosenergia)
+
+	- Määritellään mielivaltaisen ytimen sidosenergia $B E$ energiaksi mikä tarvitaan hajottamaan ydin osiinsa:
+\[
+BE  = m_{f} c^{2}  - m_{i} c^{2}  =   ( osien massa  - \text {ytimen massa} )\, c^{2}
+\]
+
+- Deuteronille:
+$$
+
+\hspace{2cm} B E &  =  (  0,002388 \;u \cdot 1,661 \cdot 10^{-27} \mathrm{\;kg} )   (  3 \cdot 10^{8} \frac{\mathrm{m}}{s} )^{2} \\
+&  = 3,57 \cdot 10^{-13} \mathrm{\;J}  = 2,22 \mathrm{\;MeV}
+
+$$
+Myös esim.\ elektronin irrottaminen vetyatomista vaatii energiaa  ($13,6 \mathrm{\;eV}$). Atomi painaa $2,4 \times 10^{-35} \mathrm{\;kg}$ vähemmän kuin sen osaset erillään (protoni + elektroni)
+
+- Huomaa että vetyatomin massan suhteellinen muutos $\Delta m$ on $2,4 \cdot 10^{-35} \mathrm{\;kg} / 1,67 \cdot 10^{-27} \mathrm{\;kg} \cong 10^{-8}$ 
+- Mutta deuteronin $\Delta m$ on $0,002388 \mathrm{\;u} / 2,013553 \mathrm{\;u} \cong 10^{-3}$, huomattavan suuri arvo!
+
+--- slide: Ytimen Koossapysyminen ---
+
+ (Ytimen sidosenergia)
+
+	- Teoreettinen malli antaa meille sidososuuden, joka esim.\ deuteronille olisi: $2,22 \mathrm{\;MeV} / 2=1,11 \mathrm{\;MeV}$ per nukleoni. Yleisesti:
+\[
+BE  =  ( Z m_{H}  + N m_{n}  - M_{{}^{A}_{Z}X} ) c^{2} \,, \qquad M_{{}^{A}_{Z}X} \equiv m_a
+\]
+
+[FIGURE: SOM_Nuclear_physics_Figure_12.png]
+
+[footnote: Figure from R. Harris, Modern Physics (2nd edition).]
+- Kaava sisältää vetyatomin massan $m_H$ ($m_p+m_e$), 
+
+{6.5cm}
+
+	- mikä vähentää elektronien massat atomimassatermistä $M_{{}^{A}_{Z}X}$, mikä sisältää myös elektronien massat
+	
+	- Tämä on vain approksimaatio, koska esim.\ elektronien sidosenergioita ei ole otettu huomioon (koska ovat pieniä suhteessa ytimen sidosenergiaan)
+
+--- slide: Ytimen Koossapysyminen ---
+
+ (Ytimen sidosenergia)
+
+\seminormal
+
+{7.4cm}
+
+	- Hahmotellaan tunnettuja nuklideja ((Z,N))-kuvaajaan  (eli ns.\ nuklidikarttaan) 
+
+[FIGURE: SOM_Tipler_Nuclear_physics_figure_13.png]
+
+[footnote: \TiplerCR]
+- 266 tunnettua vakaata nuklidia on esitetty mustilla pisteillä, ja dataan on sovitettu  stabiilisuuden viiva 
+
+- On merkillepantavaa että kevyillä nuklideilla viiva noudattaa trendiä $N=Z$, mutta painavammilla ytimillä (kun massaluku $A$ kasvaa) stabiilisuusviiva jyrkkenee ($N>Z$). Tämä käy yksiin aiemmin läpikäydyn yksinkertaisen mallin kanssa
+
+- Sinisillä ääriviivoilla on hahmoteltu epä\-sta\-biilien (radioaktiivisten) nuklidien alue, joiden elinajat ovat yli millisekunnin kestoisia
+
+--- slide: Ytimen Koossapysyminen ---
+
+ (Ytimen sidosenergia)
+
+\seminormal
+
+{9cm}
+
+	- Kuvassa 14
+
+[FIGURE: SOM_Nuclear_physics_Figure_8.png]
+
+[FIGURE: SOM_Nuclear_physics_Figure_14.png]
+
+näkyy poikkileikkaus kuvasta 12 (stabiilisuusviivaa pitkin), y-akselina sidososuus
+
+- Koska sidososuus riippuu sekä $N$:stä että $Z$:sta, 
+	kuvaajaa ei voida hahmotella kaikille isotoopeille, mutta trendi on selkeä 
+
+- Kevyillä ytimillä BE/nukleoni kasvaa $A$:n funktiona, mutta isommilla ytimillä se pienenee
+
+{6.5cm}
+
+	- Deuteronilla sidosenergia on $1,1 \mathrm{\;MeV}$, ja painavilla ytimillä ($A$ suuri) käyrä lähestyy arvoa $7,57 \mathrm{\;MeV}$ 
+	
+	- Sidososuus maksimoituu ($8,79 \mathrm{\;MeV}$) kun $A=60$ (rauta-56, Fe-58 ja Ni-62). Nämä ytimet ovat kaikkein vakaimpia ja voimakkaimmin toi\-siin\-sa sidottuja
+
+## 3.3 Ydinmallit
+
+--- slide: 3. Ydinfysiikka ---
+
+    -<1-> 3_1_a{Ytimen Rakenne}
+    -<1-> 3_2_a{Ytimen Koossapysyminen}	
+    -<1-> 3_3_a{Ydinmallit}	
+    -<1-> 3_4_a{Radioaktiivisuus}
+    -<1-> 3_5_a{Radioaktiivinen Hajoamislaki}
+    -<1-> 3_6_a{Ydinreaktiot}
+    -<1-> 3_7_a{Ydinfysiikan ja Radioaktiivisuuden Sovelluskohteet}
+
+--- slide: Ydinmallit ---
+
+ (Ytimen muoto)
+
+	- Valtaosa ytimistä on lähes pallomaisia
+	- Lähinnä vain harvinaisten maametallien ytimet $(Z=57-71)$ ovat ellipsoideja, joiden pääakselin pituus voi vaihdella n.\ 20% verran sivuakselin pituudesta
+
+- Näiden painavien ytimien  sisäelektronien aaltofunktiot jopa vähän ulottuvat ytimen sisään. Poikkeamat pallomaisesta muodosta vastaavat  poikkeamia ydinvarausten tiheysjakaumissa, ja näkyvät pieninä eroina ydinten energiatasoissa
+
+- Ytimen muoto näkyy myös nollasta poikkeavana keskimääräisenä   sähköisenä kvadrupolimomenttina:
+\[
+< Q >  = Z \int \psi^{*} [ 3 (z_{a v}^{2} )_{a v}  -  (x^{2}+y^{2}+z^{2} )_{a v}] \psi  \, d V
+\]
+
+--- slide: Ydinmallit ---
+
+ (Ytimen muoto)
+
+{10.0cm}
+
+	- Jos kvadrupolimomentin arvo on positiivinen, ytimen muoto on  pitkänomainen ellipsoidi, kuin pystyssä oleva vesimeloni
+
+[FIGURE: SOM_Tipler_Nuclear_physics_figure_10.png]
+
+[FIGURE: SOM_Tipler_Nuclear_physics_figure_11_cropped.png]
+ 
+	- Jos momentti on  nolla ydin on pallomainen 
+
+{6.5cm}
+
+	- Jos momentti on negatiivinen, niin ytimen muoto on (navoiltaan)\\ litistynyt ellipsoidi
+
+--- slide: Ydinmallit ---
+
+ (Ydinmallit)
+
+	- Atomin ydintä voidaan kuvata usealla teoreettisella mallilla. Kaksi eniten käytettyä ovat:
+- 
+	- Nestepisaramalli
+
+	- Olettaa ytimen olevan (kokoonpuristumaton) pyöreä nestepisara
+- Mahdollistaa ydinten sidosenergioiden laskemisen
+
+- Kuorimalli
+-<.->[] 
+	- Soveltaa 'elektroni kvanttikaivossa'-mallia ytimen tapaukseen
+- Ennustaa esim.\ vakaimman nuklidin $A$-arvon, ja pohjautuu ns.\ taikalukuihin
+
+- Molemmilla malleilla on vahvuutensa. Vaikka ne ovat osittain keskenään yhteensopivia, ne ovat vain approksimaatioita, ja perustuvat tiettyjen oletusten ja yksinkertaistuksien varaan.  Vaihtoehtoisille malleille on vielä tilaa/kysyntää atomin ytimen ymmärtämiseksi
+
+--- slide: Ydinmallit ---
+
+ (Nestepisaramalli)
+
+	- Koska ytimen tiheys oli pikemminkin radiaalinen kuin täysin homogeeninen, ja koska kaikkien ytimien tiheys on likimain vakio, on luonnollista kuvata ydintä nestepisaramallin avulla
+
+- Analogia nestepisaraan toimii suhteellisen hyvin: 
+- 
+	- Neste koostuu tiiviisti pakkautuneista, järjestäytymättömistä molekyyleistä, jotka vetävät toisiaan puoleensa suuremmilla etäisyyksillä 
+	- Pienemmillä etäisyyksillä ne hylkivät toisiaan, johtaen puristumattomuuteen, kuten esim.\ veden tapauksessa
+
+- Jotta nestemolekyyli voidaan siirtää pisaran pinnalle, molekyyli täytyy vetää erilleen muista sitä puoleensavetävistä molekyyleistä. Tämä vaatii energiaa, jolloin pallomainen muoto johtaa matalimman energian tilaan, ts.\ minimoi pinta-alan
+
+--- slide: Ydinmallit ---
+
+ (Nestepisaramalli)
+
+\semismall
+
+	- Pisaran sisällä olevia hiukkaset vetävät puoleensa kaikkia läheisyydessä olevia hiukkasia
+
+- Jos kaikki hiukkaset olisivat pisaran sisällä, niin sidosenergia olisi suoraan verrannollinen hiukkasten lukumäärään.
+
+[FIGURE: Tikz_SOM_Nuclear_liquid_drop.pdf]
+
+ Pinnalla olevilla hiukkasilla on kuitenkin vähemmän naapureita, eli vähemmän sidoksia toisten hiukkasten kanssa \implies{ Sidosenergia pienenee }
+
+{8.5cm}
+
+	- Muodostetaan seuraavaksi yleinen kaava nestepisaran tavoin käyttäytyvän ytimen sidosenergialle 
+
+- Yhteensä löytyy viisi vaikuttavaa tekijää (eli viisi termiä) jotka vaikuttavat sidosenergian suuruuteen
+
+- Määritellään vakiot $c_{1}, c_{2}, c_{3}, c_{4}$, ja $c_{5}$ sovittamalla kokeellinen data muodostettuun malliin [jonka on oltava $f(A,N,Z)$]
+
+- Tavoitteena on rakentaa semi-empiirinen kaava tunnettujen ytimien sidosenergioille
+
+--- slide: Ydinmallit ---
+
+ (Tilavuustermi)
+
+	- Kokonaan pisaran sisällä olevat hiukkaset ovat täysin naapureidensa ympäröimiä.  Jos kaikki hiukkaset olisivat pisaran sisällä, niin sidosenergia olisi suoraan verrannollinen hiukkasten (eli ytimen nukleonien) lukumäärään jotka muodostavat pisaran.
+\[
+BE \propto c_{1} A
+\]
+
+{8.5cm}
+
+- Verrannollisuuskerroin $c_{1}$ voitaisiin teoreet\-ti\-sesti laskea, mutta on helpompaa vain muodostaa malli ja lopuksi sovittaa  vakiot kokeelliseen dataa
+
+	- Eli tilavuustermi on muotoa  \[
+c_{1} A
+\]
+
+[FIGURE: Tikz_SOM_Nuclear_liquid_drop_interior.pdf]
+
+--- slide: Ydinmallit ---
+
+ (Tilavuustermi)
+
+\semismall
+
+	- K: Onko sovitus/verrannollisuukertoimiin $c_{i}$ pohjautuva empiirinen malli hyödyllinen?
+- V: Malli kuvaa monimutkaista systeemiä, ja se perustuu mittaustuloksiin
+
+[FIGURE: SOM_Nuclear_physics_Figure_14.png]
+
+- Sidososuudet muodostavat monimutkaisen funktion $\mathrm{N}$:n ja $\mathrm{Z}$:n suhteen, sen matemaattista muotoa ei voida eksplisiittisesti nähdä
+
+	- Yksinkertaisen $Z$:sta ja $N$:sta riippuvan polynomisovitteen
+\[
+c_{1} Z^{2}  + c_{2} N  + c_{3} 
+\]
+
+{6.5cm}
+
+- avulla ei saavuteta hyvää ennus\-tet\-ta\-vuutta, tai saada hyvää fysikaalista in\-tui\-tio\-ta ytimen käyttäytymiseen
+
+- Koska nestepisaramalli sopii niin hyvin kokeellisiin tuloksiin, on järkevää olettaa että malli ja sen alkuoletukset ovat toimivia
+
+- Mallin avulla voidaan myös ennustaa tuntemattomien nuklidien sidosenergioita (ennustettavuus)
+
+--- slide: Ydinmallit ---
+
+ (Pintatermi)
+
+	- Pinnan nukleoneilla on vähemmän puoleensavetäviä naapureita kuin sisäosan nukleoneilla. Joten pinnalta pitäisi olla helpompaa irrottaa nukleoni \implies{ Pinnan nukleonien sidosenergia on alhaisempi kuin sisänukleonien }
+
+- Muistellaan yhtälöä
+$ \quad 
+V  = \frac{4}{3} \pi r^{3} \quad \Rightarrow \quad r = ( \frac{3}{4 \pi} V )^{1 / 3}
+$
+- Pinta-alaksi saadaan $=4 \pi r^{2} =4 \pi ( \frac{3}{4 \pi} V)^{2 / 3} \propto$\;V$^{2 / 3}$
+
+{8.5cm}
+
+- Sidosenergian pitäisi siis pienentyä pinta-alaan verrannollisella tekijällä, mikä on verrannollinen tilavuuteen$^{2 / 3}$
+
+	- Koska tilavuus on verrannollinen nukleonien lukumäärään, saadaan verrannollisuus:
+\[
+BE \propto  - c_{2} A^{2 / 3}
+\]
+
+[FIGURE: Tikz_SOM_Nuclear_liquid_drop_surface.pdf]
+
+--- slide: Ydinmallit ---
+
+ (Coulombinen termi)
+
+	- Coulombinen (sähköinen) vuorovaikutus protonien välillä nostaa potentiaalienergiaa  $\Rightarrow$ Coulombinen vuorovaikutus pienentää sidosenergiaa 
+
+- Ytimessä on $Z$ protonia, jotka hylkivät toisia $Z-1$ protonia
+
+- Coulombinen energiatermi, joka on verrannollinen termiin $\frac{e^{2}}{r}$, vaikuttaa siis kuten alla:
+
+{8.5cm}
+
+	- 
+	$$
+	
+\frac{Z(Z-1)}{<protonien etäisyys>} &\propto \frac{Z(Z-1)}{pisaran säde}\\ 
+&\propto \frac{Z(Z-1)}{A^{1 / 3}} \\
+\Rightarrow \qquad  \qquad 
+B E &\propto -c_{3} \frac{Z(Z-1)}{A^{1 / 3}} 
+
+$$
+
+[FIGURE: Tikz_SOM_Nuclear_liquid_drop_coulomb.pdf]
+
+--- slide: Ydinmallit ---
+
+ (Epäsymmetriatermi (Paulin termi))
+
+{8cm}
+
+	- Pienemmillä ytimillä $N \cong Z$ mutta isommilla $N>Z$.
+
+[FIGURE: SOM_Nuclear_physics_Figure_13.png]
+
+ Tämä vaikuttaa energiatasojen protonien ja neutronien väliseen miehitystasapainoon. Ilmiö on kvanttimekaaninen ja on seurausta kieltosäännöstä
+
+- Jos neutroneita on enemmän, niin suurempi määrä energiatiloja tulee miehitetyksi (kaksi neutronia per taso) ja systeemien ko\-ko\-nais\-e\-nergia kasvaa
+
+- Ja koska meillä on prosessi joka kasvattaa energiaa, nukleonien välinen sidosenergia pienentyy
+
+--- slide: Ydinmallit ---
+
+ (Epäsymmetriatermi (Paulin termi))
+
+\small
+
+	- Tarkastellaan tilannetta missä neutronit ja protonit ovat miehittäneet energiatilat yhtä korkealle, $E_{F}$, ja oletetaan energiatilat tasavälisiksi ($\delta E$)
+
+[FIGURE: SOM_Nuclear_physics_Figure_15.png]
+
+{8.75cm}
+
+	- Jos $j$ neutronia muuttuu protoneiksi (tai päinvastoin), ylimpien neutroneiden täytyy siirtyä $E_{F}$:llä olevalta tilalta ylemmälle protonitilalle $E_{F}+(j / 2) \delta E$. Muiden täytyy tehdä vastaava hyppäys. Jos jokaisen hiukkasen energia kasvaa termillä $(j / 2) \delta E$, kokonaisenergia kasvaa määrällä $(j^{2} / 2) \delta E$
+
+- Ilmaistaan nyt $j$ neutroni- ja protonilukujen avulla ($N$ ja $Z$). Ensin $N=Z$, sitten tapahtuu $j$:n protonin lisäys ja $j$:n neutronin vähennys. $Z-N$ täytyy nyt olla $2 j$, jolloin $j=\frac{1}{2}(Z-N)$. Eli epäsymmetrian $Z$:n ja $N$:n välillä pitäisi pienentää sidosenergiaa (kasvattaa kokonaisenergiaa) tekijällä
+\[
+(N-Z)^{2} \delta E  = (A-2 Z)^{2} \delta E \quad \Rightarrow \quad BE \propto -c_{4} \frac{(A-2 Z)^{2}}{A}
+\]
+missä $A$:lla jakaminen normalisoi termin
+
+--- slide: Ydinmallit ---
+
+ (Kytkeytymistermi (paritermi))
+
+	- Mittausten perusteella on selvää että vahva voima suosii protonien ja neutronien kytkeytymistä. Tämä viimeinen termi$^{*}$ mahdollistaa paremman sovitteen tekemisen\footnoteleft{{$^*$Huomaa että tämä 5:s (kytkeytymis)termi puuttuu Harrisin kirjasta}}
+
+- Termi ottaa huomioon sen tosiasian että nukleoni–nukleoni vuorovaikutus ei pelkästään nosta keskimääräistä nukleonien kokemaa potentiaalia, vaan että sillä on samanlaisia ominaisuuksia kuin suprajohteissa tapahtuvissa elektroniparien välisissä vuorovaikutuksissa (Cooperin parien vuorovaikutus)
+
+- Tämä energiatermi on:
+- 
+	- Positiivinen (sitova) jos sekä $Z$ että $N$ ovat parillisia,
+- negatiivinen (hajottava) jos sekä $Z$ että $N$ ovat parittomia, nolla muuten
+
+--- slide: Ydinmallit ---
+
+ (Semi-empiirinen sidosenergian kaava)
+
+	- Termit voidaan nyt laskea yhteen, jolloin voidaan muodostaa semi-empiirinen kaava ytimien sidosenergioille. Tätä kaavaa kutsutaan joskus myös  Weizsäckerin kaavaksi:
+	\[
+B E = c_{1} A  - c_{2} A^{2 / 3}  - c_{3} \frac{Z(Z-1)}{A^{1 / 3}}  - c_{4} \frac{(A-2 Z)^{2}}{A} \pm c_{5} A^{-4 / 3}
+\]
+- missä 
+$$
+
+&c_{1}=15,8 \mathrm{\;MeV} \\
+&c_{2}=17,8 \mathrm{\;MeV} \\
+&c_{3}=0,71 \mathrm{\;MeV} \\
+&c_{4}=23,7 \mathrm{\;MeV} \\
+&c_{5}=15,8 \mathrm{\;MeV}
+
+$$
+
+--- slide: Ydinmallit ---
+
+ (Semi-empiirinen sidosenergian kaava)
+
+	- Kuva 16 osoittaa kuinka hyvin kaava (pinkki viiva) ennustaa nukleonikohtaisen sidosenergian eli sidososuuden (kokeelliset arvot: musta viiva)
+
+- Huomaa että termeillä on fysikaalinen alkuperä ja ne  perustuvat järkeviin oletuksiin. Mutta numeeriset arvot kaavan kertoimille on löydetty sovittamalla yhtälö mittaustuloksiin eri nuklidien  \\sidosenergioista
+
+[FIGURE: SOM_Nuclear_physics_Figure_16.png]
+
+[footnote: Figure from R. Harris, Modern Physics (2nd edition).]
+
+--- slide: Ydinmallit ---
+
+ (Kuorimalli)
+\seminormal
+
+	- 
+
+[FIGURE: Tikz_SOM_Nuclear_liquid_drop_just_interior.pdf]
+
+Nestepisaramallin lisäksi, toinen menestyksekäs malli kuvaamaan atomin ytimen rakennetta on nimeltään kuorimalli
+	
+	- Huomaa että nämä mallit poikkeavat toisistaan huomattavasti, mikä ilmentää vahvan voiman monimutkaisuutta
+
+{8.5cm}
+
+	- Missä nestepisaramalli on enimmäkseen klassinen (paitsi epäsymmetria- ja kytkeytymistermit), kuorimalli pohjautuu kvanttimekaniikkaan 
+
+- Kuorimallissa hiukkasia käsitellään kvanttimekaanisina tiloina keskimääräisessä potentiaalikaivossa ja suurimmaksi osaksi unohdetaan hiukkasten väliset vuorovaikutukset
+
+- Kuorimallin vahvuutena on ollut ennustaa ydinten kulmaliikemäärämomentit, ja $N$:n ja $Z$:n taipumukset koostua taikaluvuista, tai olla ainakin parillisia
+
+--- slide: Ydinmallit ---
+
+ (Taikaluvut)
+
+{8.5cm}
+
+	- Kuorimallia ehdotettiin ratkaisuksi kun huomattiin että ydinten stabiilisuuksissa on säännönmukaisuuksia, ks.\ esim.\ kuvat joissa $N$ tai $Z$ ovat 2, 8, 20, 28, 50, 82, 126
+
+[FIGURE: SOM_Nuclear_physics_Figure_13.png]
+
+	- Nämä luvut selvästikin johtavat kasvaneeseen vakauteen, kuten atomien elektronikuorten tapauksessa 2, 10, 18, 36, 54, $\ldots$
+
+--- slide: Ydinmallit ---
+
+ (Esimerkki 3)
+
+	- Virittyneessä tilassa oleva ydin voi relaksoitua emittoimalla gammasäteen (eli fotonin). Oleta (karkeana approksimaationa) että nukleonin massaluku $A=100$, ja se on vangittuna äärettömän syvään 1D-potentiaalikaivoon. Kuinka suuri on emittoituneen fotonin energia (suuruusluokka-arvio riittää)?
+
+- Potentiaalikaivon energiatasot ovat: $E=\fraca{\hbar^{2} \pi^{2}}{2 m_{p} L^{2}} n^{2}$
+
+- Oletetaan $A=100 \quad \Rightarrow \quad L=2 r=2 \times R_{0} A^{1 / 3}=2 \times 1,2 \;fm \times 100^{1 / 3}=1,11 \times 10^{-14} \mathrm{\;m}$ \\
+\phantom{Oletetaan $A=100 \quad$}$\Rightarrow \quad r \approx 5,5 \mathrm{\;fm}$
+
+- Nukleonin massa on $m_{p}=1,67 \times 10^{-27} \mathrm{\;kg} $
+
+- $\Rightarrow$ Energia: $\quad E=\frac{\hbar^{2} \pi^{2}}{2 m_{p} L^{2}} n^{2}=3,3 \times 10^{-13} \;J \cdot n^{2} \cong(2 \mathrm{\;MeV}) \cdot n^{2}$
+
+- Huomaa että $\gamma$-fotonin energia on yleensä suuruusluokkaa $1 \mathrm{\;MeV}$, joten tulos on oikeanlainen
+
+## 3.4 Radioaktiivisuus
+
+--- slide: 3. Ydinfysiikka ---
+
+    -<1-> 3_1_a{Ytimen Rakenne}
+    -<1-> 3_2_a{Ytimen Koossapysyminen}	
+    -<1-> 3_3_a{Ydinmallit}	
+    -<1-> 3_4_a{Radioaktiivisuus}
+    -<1-> 3_5_a{Radioaktiivinen Hajoamislaki}
+    -<1-> 3_6_a{Ydinreaktiot}
+    -<1-> 3_7_a{Ydinfysiikan ja Radioaktiivisuuden Sovelluskohteet}
+
+--- slide: Radioaktiivisuus ---
+
+ (Radioaktiiviset hajoamisprosessit)
+
+\semismall
+
+	- Noin 3000 nuklidia on löydetty, suurin osa niistä on radioaktiivisia 
+	
+	- Epästabiileilla radioaktiivisilla nuklideilla on taipumus spontaanisti emittoida pieniä energeettisiä hiukkasia 
+	- Arvioiden mukaan, jo tunnettujen lisäksi noin 2000 on vielä löytämättä, jotka kaikki ovat epävakaita ja radioaktiivisia
+	
+	-  On olemassa useita 'hajoamisprosesseja', esim.\
+
+	- $\alpha$-hajoaminen ($\mathrm{He}^{2+}$-ioni)
+	- $\beta^{-}$-emissio (elektroni), ja  $\beta^{+}$-emissio (positroni)
+	- $\gamma$-säteily (energeettistä $1 \mathrm{\;keV}–10 \mathrm{\;MeV}$ sähkömagneettista säteilyä)
+
+- Ja  vähemmän tunnettuja prosesseja:
+
+- Protoniemissio
+- Neutroniemissio
+- Positroniemissio
+- Kaksoisbeeta-emissio (kaksi elektronia)
+- Näiden kombinaatioita 
+
+--- slide: Radioaktiivisuus ---
+
+ (Radioaktiiviset hajoamisprosessit)
+
+{8.5cm}
+
+	- Semi-empiiristä sidosenergian kaavaa voidaan käyttää arvioimaan isotooppien stabiilisuutta
+
+[FIGURE: SOM_Tipler_Nuclear_physics_figure_20.png]
+
+	- Kokeiden varmistamana, me voimme hahmotella sidosenergioita (ks. kuva missä z-akselia on skaalattu tekijällä  $100 \mathrm{\;MeV}$) 
+	
+	- Kaavan avulla voidaan myös arvioida raja-arvoja sille kuinka monta protonia/neutronia ytimessä voi olla 
+	\implies{ Nämä arviot $N-Z$ rajoille \\
+		muodostavat  alemman kuvan siniset ääriviivat}
+
+--- slide: Radioaktiivisuus ---
+
+ (Radioaktiiviset hajoamisprosessit)
+
+\seminormal
+
+{8.5cm}
+
+	- 
+	
+[FIGURE: SOM_Tipler_Nuclear_physics_figure_20.png]
+
+Radioaktiiviset prosessit noudattavat fysikaalisia säilymislakeja, joissa säilyvät suureet ovat:
+
+	- Relativistinen massa–energia
+	- Sähköinen varaus 
+	- Liikemäärä
+	- Kulmaliikemäärä
+
+- Ja myös:
+
+	- Nukleoniluku
+	- Leptoniluku
+
+- Jotta radioaktiivista isotooppia löytyisi luonnosta (Maasta), sen puoliintumisajan täytyy olla pitempi kuin Maan iän ($4,5\times 10^{9}$ vuotta), tai nuklidia täytyy jatkuvasti syntyä radioaktiivisen nuklidin hajoamisen seurauksena
+
+--- slide: Radioaktiivisuus ---
+
+ (Alfahajoaminen)
+
+\semismall
+
+{9.0cm}
+	
+	- Alfahajoaminen on energeettisen alfa-hiukkasen (eli He-4 ytimen) spontaania emissiota
+
+[FIGURE: SOM_Nuclear_physics_Figure_18.png]
+
+Hajoamisen aikana alfahiukkanen emittoituu ytimestä tunneloitumalla potentiaalivallin läpi
+
+[FIGURE: SOM_Tipler_Nuclear_physics_figure_1_cropped.png]
+
+- Radioaktiiviselle hajoamiselle on aina syy.
+Että ydin voisi ylipäätänsä olla radioaktiivinen, sen massan täytyy olla suurempi kuin sen hajoamistuotteiden massojen. Vapautunut energia on tällöin
+\[
+Q  = ( m_{i}  - m_{f}-m_{\alpha} )  c^{2}
+\]
+
+- $\alpha$-aktiivinen emonuklidi on painava (yleensä $A>200)$, jolloin myös tytärnuklidi on painava, kun taas alfahiukkanen on kevyt: \quad (liikemäärän säilyminen)
+\[
+m \vec{v_t}  +  M \vec{V_e} = 0 \quad \Rightarrow \quad v_t=\frac{M}{m} V_e \quad  \Rightarrow \quad  \frac{1}{2} m v_t^{2}  = \frac{M}{m} \frac{1}{2} M V_e^{2}
+\]
+
+--- slide: Radioaktiivisuus ---
+
+ (Alfahajoaminen)
+
+[FIGURE: SOM_Tipler_Nuclear_physics_figure_25.png]
+
+{8.8cm}
+
+	- Nuklideja sitoo toisiinsa vahva voima. Kaukana ytimestä voima kuitenkin heikkenee, koska vahvan vuorovaikutuksen kantama on lyhyt ($\sim$fm). Suurilla etäisyyksillä potentiaalivalli muodostuu siis positiivisesta Coulombisesta potentiaalista
+	
+	- Oletuksia alfahajoamisen ymmärtämiseksi:
+
+-<.->[]  \small
+		- Alfahiukkanen voi ennestään olla olemassa painavassa ytimessä 
+	- Ytimen potentiaalikaivossa poukkoileva alfahiukkanen on jatkuvassa liikkeessä 
+	- On olemassa pieni todennäköisyys sille  että hiukkanen tunneloituu vallin läpi sen törmätessä valliin
+
+- Itse asiassa on myös ehdotettu (ainakin kevyiden ydinten tapauksissa), että nuklidit koostuisivat alfahiukkasista...
+
+--- slide: Radioaktiivisuus ---
+
+ (Alfahajoaminen ja hajoamisketjut)
+
+	- Kaikki painavat ytimet $(A > 210)$ ovat epävakaita koska emoytimen massa on suurempi kuin sen hajoamistuotteiden (tytärnuklidin ja alfahiukkasen) yhteenlaskettu massa 
+
+- $\alpha$-emissiossa ydin muuttuu: $\Delta Z=\Delta N=-2$ eli $\Delta A=-4$ 
+- Prosessit voivat myös ketjuuntua muodostaen hajoamissarjoja 
+\[ 
+\footnotesize
+{r | c | c | c | c}
+& \text {A} & \text {Pitkäikäisin isotooppi} & t_{1/2} & \text {Vakaa tytär} \\
+\hline Toriumsarja & 4 n  	   & n=58  & 1,4 \times 10^{10} \;a & Pb-208 \\
+ Neptuniumsarja & 4 n+1 & n=58 & 2,1 \times 10^{6} \;a & Tl-205\\
+ Uraani- eli Radiumsarja & 4 n+2 & n=59 & 4,5 \times 10^{9} \;a & Pb-206\\
+ Aktiniumsarja & 4 n+3 & n=58 & 7,0 \times 10^{8} \;a & Pb-207
+
+\]
+
+- Hajoamissarjoissa tapahtuu peräkkäisiä radioaktiivisia hajoamisia. Jotta hajoamissarjat voisivat seurailla stabiilisuusviivaa, myös beetahajoamista täytyy tapahtua (kasvattamaan järjestyslukua $Z$ tai parantamaan $N/Z$-suhdelukua)
+
+--- slide: Radioaktiivisuus ---
+
+ (Stabiilisuusviiva ja hajoamisketjut)
+
+{9.0cm}
+
+	- Yhtä lukuunottamatta sarjat löytyvät myös luonnosta. Luonnossa neptunium\-sar\-jan (Np-237) neptunium-atomit ovat jo ehtineet hajota muiksi nuklideiksi
+
+[FIGURE: SOM_Tipler_Nuclear_physics_figure_26.png]
+
+- Kuvassa on toriumsarjan hajoamisketju 
+
+- Stabiilisuusviiva on merkitty katkoviivalla. Tytärnuklidien päätyessä kauas viivan vasemmalle puolelle , eli neutronirikkaalle puolelle, prosessi etenee beetahajoamisten kautta tasapainottaen $N/Z$-suhdelukua
+
+- Huoneilmassa esiintyvä radonkaasu (tyypillistä Suomessa) on Rn-222, mikä kuuluu radium/uraanisarjaan (U-238). Sen puoliintumisaika on neljä päivää,  mutta sitä muodostuu hajoamissarjan seurauksena jatkuvasti
+
+--- slide: Radioaktiivisuus ---
+
+ (Hajoamisketjut)
+
+\seminormal
+
+{9.0cm}
+
+	- Toriumsarja: Kuvassa näkyy lukuisia Radium-223:n energiatasoja joihin Th-227 voi alfahajoamisen seurauksena muuntua
+
+[FIGURE: SOM_Tipler_Nuclear_physics_figure_29.png]
+[footnote: \TiplerCRshort]
+- Th-227:sta emittoituneen $\alpha$-säteilyn spektri on alla olevassa kuvassa (Ra-223:n energia (keV) alaindeksinä)
+
+[FIGURE: SOM_Tipler_Nuclear_physics_figure_27.png]
+
+- Huom! Usein tytärnuklidi Radium-223 päätyy virittyneeseen tilaan. Toisinaan ylimääräinen energia emittoituu lisäksi $\gamma$-säteilynä
+
+--- slide: Radioaktiivisuus ---
+
+ (Beetahajoaminen)
+
+	- Sähköstaattinen vetovoima ei voi vangita elektronia ytimeen, mutta tästä huolimatta elektroneitakin emittoituu välillä ytimistä. Nähtävästi hajoamisprosesseissa syntyy elektroneita
+
+- Huom! $\beta$-säteilyssä neutroni muuttuu protoniksi, jolloin tytärnuklidi on eri alkuaine kuin emonuklidi. Protonin ja elektronin 
+
+{8.2cm}
+
+	- emittoituessa, varaus säilyy. Energioille:
+$$
+
+Q & =  ( m_{n}-m_{p}-m_{e} )  c^{2} \\
+& = (939,57-938,28-0,511) \mathrm{\;MeV}  = 0,78 \mathrm{\;MeV}
+
+$$
+Oletetaan tämän olevan syntyneiden hiukkasten kineettistä energiaa, enimmäkseen elektronin, koska $m_{p} / m_{e}=1840$. Kokeellisesti on elektronien energioiden on havaittu vaihtelevan välillä $0-Q$
+
+[FIGURE: SOM_Nuclear_physics_Figure_19.png]
+
+[footnote: Figure from R. Harris, Modern Physics (2nd edition).]
+
+--- slide: Radioaktiivisuus ---
+
+ (Beetahajoaminen)
+
+	- Historiallisesti oli olemassa kolme ongelmaa:
+
+	- Havainto elektronien kineettisen energian vaihtelusta välillä 0  (ja lähes $0,78 \mathrm{\;MeV}$), oli mahdotonta selittää vain kahden lopputuotteen avulla (tytär ja elektroni)
+
+[FIGURE: SOM_Nuclear_physics_Figure_20.png]
+
+[footnote: Figure from R. Harris, Modern Physics (2nd edition).]
+
+{8.5cm}
+
+-<.->[] 
+	- n, p ja e$^-$, ovat 1/2-spinin fermioneita:
+	$$ 
+	{cccccc}
+	 & n & \rightarrow & p 	   &  +  & e^- \\
+	 \text {\small spin } & \text {\small 1/2} & & \text {\small 1/2} &  &  \text {\small 1/2}
+	 \qquad \quad
+	$$
+	eli lopputuotteiden kokonaisspinin täytyy olla kokonaisluku. Eikö spin säily prosessissa?
+	
+- e$^-$:n energia on myös toisinaan lähes $Q$, joten kolmannen lopputuotteen massan täytyisi olla erittäin pieni
+
+--- slide: Radioaktiivisuus ---
+
+ (Beetahajoaminen ja neutriino)
+
+	- Wolfgang Pauli ja Enrico Fermi ehdottivat että olisi olemassa kolmas lopputuote, neutriino, jonka:
+
+[FIGURE: SOM_Nuclear_physics_Figure_20.png]
+[footnote: Figure from R. Harris, Modern Physics (2nd edition).]
+
+	- spin olisi $1 / 2$
+
+- massa olisi lähes nolla (ehkä n.\ $\sim 2,2 \mathrm{\;eV} / \mathrm{c}^{2} ) $
+
+- vuorovaikutus muun aineen kanssa olisi \\
+	erittäin heikkoa  \implies{ niinsanottu heikko vuorovaikutus }
+
+- Itse asiassa muodostunutta hiukkasta $\bar{\nu}_{e}$ \\ kutsutaan  nykyään antineutriinoksi
+
+--- slide: Radioaktiivisuus ---
+
+\framesubtitle{$\beta^{-}$-hajoamisen esimerkki (boori-12)}
+
+	- Tarkastellaan boori-12:ta beetahajoamista:
+\[
+{ }_{\;5}^{12} B \quad \rightarrow \quad { }_{\;6}^{12} C  ~+~ { }_{\,-1}^{~0} \beta^{-}  ~+~ \bar{\nu}_{e}
+\]
+
+- Neutroni muuttuu protoniksi, syntynyt kevyempi ydin (tytärnuklidi) on tiukemmin sidottu kun $Z=N$ (ja molemmat ovat kokonaislukuja). Eli kun boori hajoaa, se madaltaa energiaansa
+
+- Lasketaan energiat (unohdetaan $\beta^{-}$:n massa, koska hiilen ${ }_{\;6}^{12} C$ atomimassa sisältää jo yhden ylimääräisen elektronin):
+$$
+
+Q & =  ( m_{\text {emo}} - m_{\text {tytär}}  - m_{\beta} )  c^{2}  =  ( m_{B}-m_{C} )  c^{2} \\
+&  =  ( 12,014352 \;u-12 \;u ) \times 931,5 \;MeV / u = 13,4 \mathrm{\;MeV}
+
+$$
+
+--- slide: Radioaktiivisuus ---
+
+ (Typpi-12 beetahajoaminen)
+
+\seminormal
+
+	- Tarkastellaan nyt typpi-12:ta (${ }_{\,7}^{12} N$) $\beta^{+}$-hajoamista, jolloin protoni muuttuu neutroniksi:
+
+[FIGURE: SOM_Nuclear_physics_Figure_21.png]
+
+\[
+{ }_{\,7}^{12} N \quad \rightarrow \quad { }_{\;6}^{12} C  ~+~ { }_{+1}^{\,0} \beta^{+} ~+~ \nu
+\]
+-<.->[] \[ 
+p^{+} \quad \rightarrow \quad n  ~+~  e^{+} ~+~\nu
+\]
+missä $\beta^{+}$ on positiivinen elektroni, positroni, mikä varmistaa sekä varauksen että kulmaliikemäärän (spinin) säilymisen 
+
+{8.5cm}
+
+- Lasketaan taas reaktion $Q$:
+$$
+
+Q = ( m_{\text {emo}}-m_{\text {tytär}}-m_{\beta} )  c^{2}= ( m_{N}-m_{C}-2 m_{e} )  c^{2} \\
+= ( 12,018613 \;u-12 \;u-2 \cdot 5,486 \times 10^{-5} \;u )  c^{2} =16,3 \mathrm{\;MeV}
+
+$$
+
+- Huom: vapaa protoni ei voi muuttua neut\-roniksi ja positroniksi, mutta ytimeen sidottu protoni voi
+
+--- slide: Radioaktiivisuus ---
+
+ (Elektronikaappaus)
+
+	-
+
+[FIGURE: SOM_Nuclear_physics_Figure_21.png]
+
+Elektronikaappausreaktiossa ytimen protoni kaappaa elektronin joltain atomin elektronikuorelta ja muuttuu neutroniksi 
+	
+	- Järjestysluku $Z$ pienenee yhdellä ja $N$ kasvaa, kuten $\beta^{+}$-hajoamisessa. Monet $\beta^{+}$-aktiiviset ytimet voivat kaapata elektroneita
+
+- Aina kun järjestysluvulla $Z$ olevan ytimen massa on pienempi luvulla $Z-1$ olevan, voi tapahtua elektronikaappaus
+
+{8.5cm}
+
+	- Jos massa-ero on vähintään $2 m_{e} c^{2}$, niin ydin voi olla myös $\beta^{+}$-aktiivinen. Tällöin nämä kaksi hajoamisprosessia kilpailevat
+
+- Elektronikaappauksen todennäköisyys on\\ 
+	usein erittäin pieni. Paitsi jos atomin elektroni on ytimen välittömässä läheisyydessä
+
+--- slide: Radioaktiivisuus ---
+
+ (Esimerkki elektronikaappauksesta)
+
+	- Tarkastellaan nyt hiili-11:sta (${ }_{\,6}^{11} C$) tapahtuvaa elektronikaappausta 
+\[
+{ }_{\,6}^{11} C ~+~  _{-1}^{\;0} \beta^{-} \quad \rightarrow \quad { }_{\,5}^{11} B  ~+~ \nu \qquad ( p^{+}  ~+~ e^{-} \quad \rightarrow \quad  n~+~\nu )
+\]
+Vapautunut energia riippuu ytimen ja tyttären massaerosta (eli massavajeesta): 
+\[
+Q  =  ( m_{\text {emo}}  - m_{\text {tytär}} )  c^{2}
+\]
+
+- Toinen tyypillinen esimerkki elektronikaappauksesta on 
+\[
+ { }_{24}^{51} C r  ~+~  _{-1}^{\;0} \beta^{-} \quad \rightarrow \quad { }_{23}^{51} V  ~+~ \nu_{e} \,,~ missä \qquad  Q=0,751 \mathrm{\;MeV}
+ \]
+
+--- slide: Radioaktiivisuus ---
+
+ (Hajoamisketjut)
+
+\semismall
+
+{9.0cm}
+
+	- Tarkastellaan vielä lisää torium- ja uraanisarjoissa tapahtuvia alfahajoamisia $(Z,N)$-kuvaajan avulla
+
+[FIGURE: SOM_Nuclear_physics_Figure_23.png]
+
+[footnote: Figure from R. Harris, Modern Physics (2nd edition).]
+- Jotta isotoopit pysyisivät stabiilisuusviivan lähellä, täytyy tapahtua myös beetahajoamisia (kun $N \gtrsim Z$).
+
+- Lopulta sarjat päättyvät lähelle lyijyn isotooppeja: Pb-208 (torium), Pb-206 (uraani) ja Pb-207 (aktinium). Nämä isotoopit eivät ole erityisen vakaita, vaan sattuvat olemaan  'ensimmäiset' vakaat isotoopit, päättäen hajoamissarjat. (toisin kuin eräät kevyet isotoopit kuten K-40, C-14 jne.)
+
+- Huomaa myös:
+
+	- $\beta^{-}$-hajoaminen tapahtuu diagonaalisesti \\alas \& oikealle 
+	- $\beta^{+}$-hajoaminen tapahtuu diagonaalisesti \\ylös \& vasemmalle
+
+--- slide: Radioaktiivisuus ---
+
+ (Stabiilisuuden laakso)
+
+\semismall
+
+	- Beetahajoamisten avulla tutkitaan myös ydinten stabiilisuuden laaksoa
+
+- Beetahajoamisten avulla voidaan liikkua kohtisuorasti energialaakson pitkään akseliin nähden
+
+- Samanpainoisten ydinten energiaprofiilit näyttävät hahmottelevan parabolisen energialaakson (kuva a)
+
+[FIGURE: SOM_Tipler_Nuclear_physics_figure_33.png]
+[footnote: \TiplerCRshort]
+- Kuvan energiat laskettiin semiempiirisen massakaavan avulla
+
+- Kun $A$ on pariton, paritermi on nolla ($C_{5}=0$), kun $A$ on parillinen, beetahajoamiset
+
+{2.8cm}
+
+	- hyppelevät kah-\\
+		den paraabelin\\ välillä, missä $\pm C_{5}$. (joko $Z$ = parillinen\\ ja $N$ = parillinen\\ tai $Z$ = pariton ja $N$ = pariton)
+
+--- slide: Radioaktiivisuus ---
+
+ (Gammahajoaminen)
+
+	- Gammahajoamisessa
+
+[FIGURE: SOM_Nuclear_physics_Figure_24.png]
+
+ virittynyt ydin hajoaa alemmalle tilalle emittoiden fotonin, jolloin isotooppi ei muutu. Prosessi on analoginen virittyneen atomitilan relaksaatioprosessin kanssa, jossa myös emittoituu fotoni
+
+- ATOMI: Atomin prosesseissa energiat ovat suuruusluokkaa $\mathrm{\;eV}-\mathrm{\;MeV}$ ja emittoituneet aallonpituudet ovat $\mu \mathrm{m}-\mathrm{\;nm}$
+
+- YDIN: Ytimen prosesseissa energiat ylittävät MeV, ja aallonpituudet ovat $\lambda = \frac{h c}{E} \approx 10^{-3} \mathrm{\;nm}$
+
+- Huomaa että emittoituneen fotonin energian ollessa välillä keV–MeV, ei voida erottaa, onko se peräisin atomin relaksoitumisesta (röntgensäteilyä) vai ytimen (gammasäteilyä), jos\\ lisäinformaatiota ei ole saatavilla!
+
+--- slide: Radioaktiivisuus ---
+
+ (Yhdistetty alfa/beeta- ja gammahajoaminen)
+
+	- Kun ydin on emittoinut $\alpha$-, tai $\beta$-hiukkasia,  ydin jää yleensä virittyneeseen tilaan, ja emittoi myös $\gamma$-säteilyä 
+	
+	- Näiden virittyneiden tilojen elinajat ovat usein erittäin lyhyitä, paitsi silloin kun valintasäännöt kieltävät virittyneen tilan purkautumisen (vrt.\ fosforenssi) 
+	
+	- Käytännössä erisuuret $\gamma$-energiat usein liittyvät tiettyihin hajoamisprosesseihin/siirtymiin ytimen energiatasoilla
+
+- Yleisesti ottaen isotooppien $\gamma$-säteilyn energiatasot ovat aika karakteristisia, ja niitä voidaan käyttää sormenjälkinä, eli tunnistamaan tiettyjä isotooppeja, ja myös antamaan lisäinformaatiota esim. ydinten kuorien energiatasoista (ks.\ aiempi kuva torium-227:n emissiospektristä)
+
+--- slide: Radioaktiivisuus ---
+
+ (Sisäinen konversio)
+
+	- Virittynyt ydin voi relaksoitua gammasäteilyn emittoinnin lisäksi myös sisäisen konversion kautta
+
+- Konversiossa virittyneen ytimen energia siirtyy atomin elektronille, joka emittoituu atomista suurella nopeudella
+ 
+ - Tällaista tapahtuu lähinnä $s$-elektroneille $K$- ja $L$-kuorilla, joilla on suurehko todennäköisyys sijaita lähellä atomin ydintä 
+ 
+ - Energia on tällöin muotoa:
+\[
+hf  =  ( E_{\text {korkea}}-E_{\text {matala}} ) -E_{\text {elektroni}}
+\]
+
+- Sisäinen konversio on yhden vaiheen mutta usean hiukkasen prosessi, vaikka periaatteessa sen voidaan ajatella tapahtuvan kahdessa vaiheessa, emittoiden ja absorboiden $\gamma$-fotonin
+
+--- slide: Radioaktiivisuus ---
+
+ (Spontaani fissio)
+\seminormal
+
+{8.6cm}
+
+	- Jotkut painavat radioaktiiviset ytimet hajoavat vielä erilaisemmalla tavalla, eli hajoamalla kahteen suurempaan fragmenttiin spontaanin fission kautta
+
+[FIGURE: SOM_Nuclear_physics_Figure_25.png]
+
+[footnote: Figure from R. Harris, Modern Physics (2nd edition).]
+- Ajava voima on minimienergiaperiaate
+
+- Kahdella ytimellä on  suurempi pinta-ala kuin alkuperäisellä ytimellä (eli suurempi energia) 
+
+- Mutta erilliset ytimet voivat myös järjestää protoninsa kauemmas toisistaan (verrattuna yksittäisen ytimen tilanteeseen)
+\implies{ Coulombinen repulsiovoima heikkenee, mikä kasvattaa sidosvoimia\\ ja kompensoi kasvaneen pintaenergian }
+
+- Spontaanissa fissiossa on myös tärkeää muistaa, että  fragmentoituminen synnyttää myös vapaita neutroneita, mitkä voivat käynnistää uusia radioaktiivisia reaktioita törmäilemällä lähistön ytimiin
+
+## 3.5 Radioaktiivinen Hajoamislaki
+
+--- slide: 3. Ydinfysiikka ---
+
+    -<1-> 3_1_a{Ytimen Rakenne}
+    -<1-> 3_2_a{Ytimen Koossapysyminen}	
+    -<1-> 3_3_a{Ydinmallit}	
+    -<1-> 3_4_a{Radioaktiivisuus}
+    -<1-> 3_5_a{Radioaktiivinen Hajoamislaki}
+    -<1-> 3_6_a{Ydinreaktiot}
+    -<1-> 3_7_a{Ydinfysiikan ja Radioaktiivisuuden Sovelluskohteet}
+
+--- slide: Radioaktiivinen Hajoamislaki ---
+
+	- Yksittäinen radioaktiivinen ydin hajoaa vain kerran. Prosessi on luonteeltaan tilastollinen, jolloin tiedetään vain keskimääräinen aika jonka kuluessa hajoaminen tapahtuu
+
+- Jos ytimien lukumäärä $N$ on tarpeeksi suuri, hajoamisprosessin tilastollisen luonteen takia ytimien hajoamista voidaan tarkastikin kuvata hajoamislailla 
+
+- Hajonneiden ytimien lukumäärä, eli muutos alkuperäisten ytimien lukumäärässä, $d N$, on verrannollinen sekä aikaan että radioaktiivisten ytimien lukumäärään:
+\[
+\{}\! {l}
+d N \propto d t \\
+d N \propto N
+ \qquad \Rightarrow \qquad d N \propto N d t
+\]
+ja 
+\[
+\Rightarrow \qquad \frac{d N}{d t} \propto N \quad \text { eli } \quad \frac{d N}{d t} =  - \lambda N \quad \text { tai } \quad \frac{d N}{N}  =  - \lambda d t
+\]
+
+--- slide: Radioaktiivinen Hajoamislaki ---
+
+ (Vaimenemisnopeus)
+
+	- Muodostettu differentiaaliyhtälö voidaan ratkaista jolloin saadaan ajasta riippuva jäljellä olevien ydinten lukumäärä:
+\[
+\frac{d N}{N}  =  - \lambda d t \quad \Rightarrow \quad \int_{N_{0}}^{N} \frac{d N^{\prime}}{N^{\prime}}  =  - \lambda \int_{0}^{t} d t \quad \Rightarrow \quad \ln \frac{N}{N_{0}} =  - \lambda t \quad \Rightarrow \quad N(t)= N_{0} e^{-\lambda t}
+\]
+- hajoamisvakio $\lambda$ ($[\lambda]=\frac{1}{s}$) on jokaiselle ytimelle tyypillinen vakio
+
+- Voidaan määrittää positiivinen suure $R=\lambda N(t)  =  |\! \frac{d N}{dt} \!| $, joka tunnetaan vaimenemisnopeutena
+
+- Vaimenemisnopeus voidaan kirjoittaa myös muodossa 
+\[
+ R(t)= | \frac{d N}{d t} |  = \lambda N(t) = \lambda N_{0} e^{-\lambda t} = R_{0} e^{-\lambda t}
+\]
+
+- Huomaa että ydinten lukumäärä $N$ ja hajoamisvakio $R$ pienenevät eksponentiaalisesti ajan suhteen
+
+--- slide: Radioaktiivinen Hajoamislaki ---
+
+ (Puoliintumisnopeus)
+
+\seminormal
+
+	- Aika jonka jälkeen ytimistä on puolet jäljellä on puoliintumisaika $T_{1 / 2}$:
+
+[FIGURE: SOM_Nuclear_physics_Figure_26.png]
+[footnote: Figure from R. Harris, Modern Physics (2nd edition).]
+\[
+ N ( T_{1 / 2} )   =  N_0 e^{-\lambda T_{1 / 2}}  = \frac{1}{2} N_{0} \qquad
+\Rightarrow \qquad  - \lambda T_{1 / 2} = \ln \frac{1}{2} \qquad \Rightarrow \qquad \lambda = \frac{\ln 2}{T_{1 / 2}}
+\]
+- Ytimiä sitovat prosessit ovat monimutkaisia, ja usein ytimillä on monia hajoamistapoja. On siis hankalaa ennustaa ytimen puoliintumisaikaa $T_{1 / 2}$. Taulukkoarvoja löytyy suurimmalle osalle isotoopeista, ja $T_{1 / 2}$ vaihtelee $10^{-22}\;s$ ja $10^{17}$ vuoden välillä
+
+{6.5cm}
+
+- Esimerkiksi hiili-14 puoliintumisaika (radiohiiliajoitus) on 5730 vuotta. amerikium-241:n (palohälyttimet) puo\-liin\-tu\-misaika $T_{1 / 2}$ on 432,2 vuotta.
+
+- Esimerkki lyhytikäisestä isotoopista on fluori-18 (isotooppilääketiede). Sen puoliintumisaika on 109 min.  
+
+--- slide: Radioaktiivinen Hajoamislaki ---
+
+ (Aineen (radio)aktiivisuus)
+
+	- Hajoamisnopeus $R(t)=\lambda N$ kertoo myös $N$:stä radioaktiivisesta ytimestä koostuvan kappaleen aktiivisuuden  (tai 'radioaktiivisuuden') 
+\[
+[ R ]  =  yksikköajassa hajoavien aktiivisten ydinten lukumäärä
+\]
+
+- Radioaktiivisuuden SI-yksikkö on becquerel (Bq), kun taas vanha yksikkö (yhä käytössä) on curie (Ci)
+\[
+1 \mathrm{\;Bq}  = 1 \text {\;hajoamista} / \mathrm{s} \quad , \quad 
+1 \mathrm{\;Ci}  =  3,7 \times 10^{10} \text {\;hajoamista} / \mathrm{s}=3,7 \times 10^{10} \mathrm{\;Bq}
+\]
+- $1 \mathrm{\;Ci}$ vastaa $1 \mathrm{\;g}$ radiumin aktiivisuutta $({ }_{~88}^{226}Ra$,  $T_{1/2}=1600$ a)
+
+- Aktiivisuuden $1 \mathrm{\;mCi}=37 \mathrm{\;MBq}$ omaava lähde on todella voimakas lähde (riippuen tosin vähän säteilyn tyypistä)
+
+- ${ }^{241} \mathrm{Am}$:n aktiivisuus palohälyttimissä on tyypillisesti $1 \;\mu \mathrm{Ci}=37 \mathrm{\;kBq}$
+
+--- slide: Radioaktiivinen Hajoamislaki ---
+
+ (Esimerkkilasku)
+
+	- K: Säiliössä on $2 \;\mu$g tritiumia jonka puoliintumisaika on 12,3 vuotta ja atomimassa 3,02u.
+(a) Mikä on sen alkuhajoamisnopeus ja aktiivisuus?
+(b) Milloin lähteen hajoamisnopeus on pienentynyt $1 %$:in lähtöarvostaan?
+
+- A: (a) Hajoamisvakio on $R(t)=\lambda N$, jolloin alkuhajoamisnopeus on:
+\[
+R_{0} = R(t=0) = \lambda N_{0} = \frac{\ln 2}{T_{1 / 2}} \frac{m_{tot}}{m_{1}}  = \frac{\ln 2}{12,3 \;y} \frac{2 \times 10^{-9} \;kg}{3,02 \;u \cdot 1,66 \times 10^{-27} \;kg / u}  = 7,1 \times 10^{8} \;s^{-1}
+\]
+ja vastaava aktiivisuus  on $7,1 \times 10^{8} \mathrm{\;Bq}=710 \mathrm{\;MBq}$
+
+- (b) Kysyttiin milloin $\lambda N(t)=\frac{1}{100} \lambda N_{0}$? 
+$$
+
+ &\Rightarrow \qquad& \lambda N_{0} e^{-\lambda t} & = \frac{1}{100} \lambda N_{0} 
+\qquad \Rightarrow \qquad  - \lambda t = \ln \frac{1}{100} \\
+ &\Rightarrow \qquad&  t& =  - \ln \frac{1}{100} / ( \frac{\ln 2}{12,3 \;a} \,) = 2,6 \times 10^{9} \;s=82 \;a
+
+$$
+
+--- slide: Radioaktiivinen Hajoamislaki ---
+
+ (Hajoamissarjat)
+
+	- Tarkastellaan radioaktiivisia hajoamissarjoja: $A \stackrel{\lambda_{A}}{\rightarrow} B \stackrel{\lambda_{B}}{\rightarrow} C$, missä hajoamisvakiot $A$:lle ja $B$:lle ovat $\lambda_{A}$ ja $\lambda_{B}$ 
+	- Tavoitteena on löytää nuklidin $B$ ajastariippuva lukumäärä, $N_{B}=N_{B}(t)$, olettamalla että alun lukumäärät ($t=0)$ nuklideille $A$ ja $B$ ovat $N_{A0}$ ja $N_{B0}$, vastaavasti
+
+- Aine A hajoaa nopeudella $\frac{d N_{A}}{d t} =-\lambda_{A} N_{A}$, johtaen ehtoon $N_{A}(t)=N_{A 0} e^{-\lambda_{A} t}$
+
+- Ainetta $B$ muodostuu A:n hajotessa, mikä myös itsessään hajoaa:
+\[
+\frac{d N_{B}}{d t}  =  + \lambda_{A} N_{A} - \lambda_{B} N_{B} =  + \lambda_{A} N_{A 0} e^{-\lambda_{A} t} - \lambda_{B} N_{B}
+\]
+
+- Tämä on differentiaaliyhtälö $N_{B}$:lle. Ratkaistaksemme $N_{B}=N_{B}(t)$, 'arvataan' yritefunktioksi yhtälö: 
+\[
+N_{B}(t)  = N_{A 0} (c_{A} e^{-\lambda_{A} t} + c_{B} e^{-\lambda_{B} t} )
+\]
+
+--- slide: Radioaktiivinen Hajoamislaki ---
+
+ (Hajoamissarjat)
+
+	- Sijoitetaan yrite saatuun differentiaaliyhtälöön ja derivoidaan:
+$$
+
+& & \frac{d N_{B}}{d t} = N_{A 0} (-\lambda_{A} c_{A} e^{-\lambda_{A} t}  - \lambda_{B} c_{B} e^{-\lambda_{B} t} ) & =  + \lambda_{A} N_{A 0} e^{-\lambda_{A} t} - \lambda_{B} N_{A 0} (c_{A} e^{-\lambda_{A} t} + c_{B} e^{-\lambda_{B} t} ) \qquad \quad \\
+&\Rightarrow&  - \lambda_{A} c_{A} e^{-\lambda_{A} t}-\lambda_{B} c_{B} e^{-\lambda_{B} t}& =  + \lambda_{A} e^{-\lambda_{A} t} - \lambda_{B} (c_{A} e^{-\lambda_{A} t}+c_{B} e^{-\lambda_{B} t} ) \\
+&\Rightarrow& (\lambda_{A}-\lambda_{B} c_{A}+\lambda_{A} c_{A} ) e^{-\lambda_{A} t}& = 0 \\
+&\Rightarrow& \lambda_{A}-\lambda_{B} c_{A}+\lambda_{A} c_{A}&=0 \\
+&\Rightarrow& c_{A}& = \fraca{\lambda_{A}}{\lambda_{B}-\lambda_{A}}
+
+$$
+Eli saadaan yhtälö 
+\[
+N_{B}(t)  = N_{A 0} ( \frac{\lambda_{A}}{\lambda_{B}-\lambda_{A}} e^{-\lambda_{A} t} + c_{B} e^{-\lambda_{B} t} )
+\]
+- missä tekijä $c_{B}$ on vielä tuntematon
+
+--- slide: Radioaktiivinen Hajoamislaki ---
+
+ (Hajoamissarjat)
+
+	- Jos alkuarvo $N_{B}$:lle olisi 0 ajanhetkellä $t=0$, ts.
+\[
+N_{B}(t=0)  = N_{A 0} ( \frac{\lambda_{A}}{\lambda_{B}-\lambda_{A}} e^{-\lambda_{A} \cdot 0}  + c_{B} e^{-\lambda_{B} \cdot 0} ) =0 \quad \Rightarrow \quad c_{B}=\frac{-\lambda_{A}}{\lambda_{B}-\lambda_{A}}
+\]
+
+- Joten ytimen B lukumääräksi $N_{B}(t)$ saadaan
+\[
+N_{B}(t)  = N_{A 0} \frac{\lambda_{A}}{\lambda_{B}-\lambda_{A}}
+( e^{-\lambda_{A} t}-e^{-\lambda_{B} t} \,)
+\]
+
+- Käytännössä aktiivisuus on usein käytetty suure
+
+- Ytimien $A$ ja $B$ aktiivisuudet ovat
+$$
+
+R_A = \lambda_{A} N_{A} & = \lambda_{A} N_{A 0} e^{-\lambda_{A} t} \\
+R_B = \lambda_{B} N_{B} & = N_{A 0} \frac{\lambda_{A} \lambda_{B}}{\lambda_{B}-\lambda_{A}} ( e^{-\lambda_{A} t}-e^{-\lambda_{B} t} \,) 
+
+$$
+
+--- slide: Radioaktiivinen Hajoamislaki ---
+
+ (Ydinten synnyttäminen)
+
+	- Radioaktiivisia ytimiä syntyy neutronikaappauksen seurauksena (joskus myös elektroni- ja protonisäteitä käytetään) 
+	
+	- Esimerkiksi ${ }^{59}$Co:a pommitetaan neutroneilla synnytettäessä ${ }^{60}$Co:a mikä on radioaktiivinen ydin jonka puoliintumisaika on $5,27$ vuotta
+
+- Oletetaan että radioaktiivisia ytimiä synnytetään vakionopeudella $g$ ydintä/s, ja että hajoamisvakio on $\lambda$, ja lasketaan synnytettyjen radioaktiivisten ydinten lukumäärä yksikköajassa:
+$$
+
+\frac{d N}{d t} & = g-\lambda N \\
+\int_{N_{0}}^{N}  \frac{d N}{N-g / \lambda} & =  - \lambda \int_{0}^{t} d t \quad \Rightarrow  \quad \ln \fraca{N-g / \lambda}{N_{0}-g / \lambda}  =  - \lambda t
+
+$$
+
+--- slide: Radioaktiivinen Hajoamislaki ---
+
+ (Ydinten synnyttäminen)
+
+	- $$
+
+& & \ln \frac{N-g / \lambda}{N_{0}-g / \lambda} & =  - \lambda t \qquad \Rightarrow \qquad N-g / \lambda& =  ( N_{0}-g / \lambda )  e^{-\lambda t} \\
+&\Rightarrow \quad& N(t)& = \frac{g}{\lambda} ( 1-e^{-\lambda t} ) +N_{0} e^{-\lambda t}
+
+$$
+
+- Jos aluksi ei ole aktiivisia ytimiä, eli $N_{0}=0$, niin aktiivisten ydinten lukumääräksi saadaan
+\[
+N(t)  = \frac{g}{\lambda} ( 1-e^{-\lambda t} ) 
+\]
+
+- Huomaa että suurin tuotettu ydinten lukumäärä on $N_{\max }=\frac{g}{\lambda}$
+
+- Lisäksi näytteen aktiivisuus on $\lambda N(t)=g ( 1-e^{-\lambda t} ) $, jonka maksimi on $g$. Huomaa, että esimerkki pätee suoraan neutroniaktivaatioanalyysiin (käsitellään myöhemmin)
+
+--- slide: Radioaktiivinen Hajoamislaki ---
+
+ (Vuorovaikutusala ja peittoaste)
+
+	- Tarkastellaan pienten hiukkasten jatkuvatoimista sädettä joka osuu kohdepinnan hiukkasiin. Yksinkertaistetaan tilannetta oletuksilla:
+
+	- Pommittavat hiukkaset ovat pieniä, pistemäisiä
+- Kohdehiukkasten vuorovaikutusala on $\sigma,~[\sigma]=m^{2}$
+- Kohdehiukkasilla on  pieni lukumäärätiheys $n$ jolloin ne eivät mene toistensa päälle
+
+- Yhteenlaskettu (projisoitu) kohdehiukkasten ala kohdepinnassa on:
+\[
+A^{\prime}  = \Underlinecomment{red}{n \cdot(A d x)}{\qquad Tilavuudessa Adx olevien kohdehiukkasten lukumäärä} \cdot \sigma
+\]
+
+- (kohdepinnan projisoidun alan) peittoaste on 
+\[
+\fraca{A^{\prime}}{A}  = \frac{n A d x \sigma}{A} = n \sigma d x
+\]
+
+--- slide: Radioaktiivinen Hajoamislaki ---
+
+ (Eksponentiaalinen vaimeneminen)
+
+\seminormal
+
+	- Jos jokainen osuva hiukkanen vuorovaikuttaa kerran, osuvien hiukkasten osuus (tulevista $N$:stä hiukkasesta) joka osuu paksuudeltaan $d x$ olevaan pintaan on
+\[
+\frac{d N}{N}  = n \sigma d x
+\]
+- mutta on käytännöllisempää tarkastella osuutta joka häviää tulevasta hiukkassäteestä:
+\[
+\frac{d N}{N}  =  - n \sigma d x
+\]
+
+- Nyt tarkastellaan hiukkaslukumäärää $N$ jotka osuvat $x$:n paksuiseen pintaan. Nyt saadaan tulevien hiukkasten lukumääräksi, jotka jäävät säteeseen etäisyyden $x$ funktiona:
+\[
+\int_{N_{0}}^{N} \fraca{d N}{N} = \int_{0}^{x} - n \sigma d x \qquad \Rightarrow \qquad N(x) = N_{0} e^{-n \sigma x}
+\]
+Eli olemme johtaneet eksponentiaalisen vaimenemisen lain
+
+--- slide: Radioaktiivinen Hajoamislaki ---
+
+ (Vuorovaikutusala)
+
+	- Aiemmin tarkastellut tulevat hiukkaset  (projektiilit) oletettiin pistemäisiksi:
+\[
+\sigma  = \pi r^{2}
+\]
+
+- Jos sekä tulevilla hiukkasilla  että kohdehiukkasilla on nollasta poikkeava säde, niin
+\[
+\sigma  = \pi ( r_{1}  + r_{2} )^{2}
+\]
+
+- Usein efektiivinen vuorovaikutusala riippuu törmäyksien energiasta
+
+- Tällöin vuorovaikutusala voi huomattavastikin erota kohde-/saapuvien hiukkasten geometrisestä poikkipinta-alasta 
+
+--- slide: Radioaktiivinen Hajoamislaki ---
+
+ (Vuorovaikutusala)
+
+\seminormal
+
+	- Perinteinen yksikkö ydinten vuorovaikutusaloille on barni missä:
+\[
+1 \text { barni}  = 1 \mathrm{~b}  = 10^{-28} \mathrm{~m}^{2} = 100 \mathrm{\;fm}^{2}
+\]
+- Barni ei ole SI-yksikkö, mutta se on käytännöllinen koska sen suuruusluokka on sama kuin ytimen geometrinen poikkipinta-ala (nimihän tulee yleisestä maalitaulusta) 
+
+- Vuorovaikutusalat useimmille ydinreaktioille riippuvat tulevan hiukkasen energiasta 
+
+- Esim.\ ${ }_{48}^{113} Cd$:n neutronikaappaus  riippuu neutronin energiasta 
+
+- Tämä ydinreaktio lähettää myös gammasäteen:
+\[
+{ }_{48}^{113} Cd(n, \gamma) {}_{48}^{114} Cd \qquad eli \qquad  { }_{48}^{113} Cd~+~n  \quad \rightarrow \quad {}_{48}^{114} Cd  ~+~  \gamma
+\]
+Vaikka ${ }_{\;48}^{113} C d$ isotooppi muodostaa vain $12 %$ luonnollisesta kadmiumista, sen neutronikaappauksen vuorovaikutusala on niin suuri, että kadmiumia käytetään paljon ydinreaktoreiden säätösauvoissa 
+
+--- slide: Radioaktiivinen Hajoamislaki ---
+
+ (Vuorovaikutusala)
+
+{7.0cm}
+
+	- Hiukkasen $a$ törmäys voi johtaa usean loppu-/reaktiotuotteen syntymiseen, mikä vastaa useaa (vaihtoehtoista) 'reaktiokanavaa'
+
+[FIGURE: SOM_Nuclear_cross_section_a]
+
+- Jokaisella reaktiokanavalla voi olla oma vuorovaikutusalansa, kuten $\sigma(a, b)$, $\sigma ( a, b^{\prime} )$, $\sigma (a, b^{\prime \prime} )$ ja niin edelleen 
+
+- Tällöin kokonaisreaktion vuorovaikutusala tulevalle hiukkaselle $a$ tulee olemaan:
+\[
+\sigma_{t o t}(a)  = \sigma(a, b) +\sigma (a, b^{\prime})  + \sigma (a, b^{\prime \prime} ) +\ldots
+\]
+
+- Ja taas jokainen vuorovaikutusala voi riippua tulevan hiukkasen energiasta omalla tavallaan
+
+## 3.6 Ydinreaktiot
+
+--- slide: 3. Ydinfysiikka ---
+
+    -<1-> 3_1_a{Ytimen Rakenne}
+    -<1-> 3_2_a{Ytimen Koossapysyminen}	
+    -<1-> 3_3_a{Ydinmallit}	
+    -<1-> 3_4_a{Radioaktiivisuus}
+    -<1-> 3_5_a{Radioaktiivinen Hajoamislaki}
+    -<1-> 3_6_a{Ydinreaktiot}
+    -<1-> 3_7_a{Ydinfysiikan ja Radioaktiivisuuden Sovelluskohteet}
+
+--- slide: Ydinreaktiot ---
+
+ (Luonnolliset ja keinotekoiset ydinreaktiot)
+
+	- Ydinreaktiot voivat olla:
+
+	- Luonnollisia: kuten aiemmin kuvatut radioaktiiviset reaktiot. Tällöin reaktion $Q$-arvon täytyy olla positiivinen
+- Keinotekoinen: tuleva (energeettinen) hiukkanen törmää kohdeytimeen ja käynnistää reaktion
+
+- Kun kohdeydintä pommitetaan (projektiili)hiukkasilla, törmäys voi olla:
+
+	- Elastinen: Tulevat hiukkaset siroavat (elastisesti) kohdeytimen potentiaalikaivon reunasta $\rightarrow$ saapuvan hiukkasen liikemäärä ja sen suunta muuttuu
+- Epäelastinen: suoran vuorovaikutuksen  seurauksena (yleensä ensiksi muodostuu väliaikainen 'väliydin') ydin hajoaa reaktiotuotteiksi
+
+--- slide: Ydinreaktiot ---
+
+ (Epäelastinen sironta \& Keinotekoinen ydinreaktio)
+
+	- Epäelastista sirontaa tapahtuu usein keskitason energioilla, alle ${\sim}140 \mathrm{\;MeV}$ 
+	\implies{ Ylimääräisiä hiukkasia ei vielä muodostu (kuten mesoneita)}
+	
+	 - Kohdeytimen ($X$) törmäys  projektiilin ($x$) kanssa synnyttää väliytimen
+	 
+	 -  Väliydin hajoaa lopputuoteytimeksi ($Y$), usein reaktiotuotteina on lisäksi muita hiukkasia ($y$)
+	 
+	 - Reaktioyhtälö voidaan tällöin kirjoittaa muodossa 
+\[
+ x ~ + ~ X \quad \rightarrow \quad Y ~ + ~ y ~ + ~ Q  
+\]
+tai vähän ytimekkäämmin hyödyntäen sulkunotaatiolla:
+\[
+ kohdeydin \;(\;  projektiili \;,\; lopputuotehiukkanen \;)\; lopputuoteydin
+\]
+eli muodossa 
+\[
+ X(x, y) Y
+ \]
+
+--- slide: Ydinreaktiot ---
+
+ (Törmäykset ja reaktion Q-arvo)
+
+	- Millainen reaktio onkaan kyseessä, energian täytyy säilyä. Reaktiossa $X(x, y) Y$ vapautuvan energian määrää kutsutaan $Q$-arvoksi:
+\[
+x ~+~ X \quad \rightarrow \quad Y ~+~ y ~+~ Q  \;,  missä  \qquad Q=(m_{x}+m_{X}-m_{y}-m_{Y}) c^{2}
+\]
+- $Q>0$: eksoterminen reaktio (alkutuotteet ovat painavampia kuin lopputuotteet) 
+- $Q<0$: endoterminen reaktio (alkutuotteet ovat kevyempiä)
+
+- Esimerkkejä: 
+$$ \hspace{2cm}
+
+ \mathrm{n} ~ + ~ { }^{1} \mathrm{H} \quad &\rightarrow \quad { }^{2} \mathrm{H} ~ + ~ \gamma ~+~ 2,22 \mathrm{\;MeV} \quad  (Eksoterminen) \\
+\gamma ~+~ { }^{2} \mathrm{H} \quad &\rightarrow \quad { }^{1} \mathrm{H} ~+~ \mathrm{n} ~-~ 2,22 \mathrm{\;MeV} \quad (Endoterminen)
+
+$$
+
+- Endotermisessä reaktiossa kynnysenergian täytyy ylittyä 
+
+- Kynnysenergian arvo on $|Q|$. Mutta tämä pätee vain  massakeskipisteen (center-of-mass, CM) koordinaatistossa
+
+--- slide: Ydinreaktiot ---
+
+ (Kinetiikka)
+
+\seminormal
+
+{9.2cm}
+
+	- Tutkitaan reaktiota aluksi epärelativistisesti CM-koordinaatistossa, kun projektiili $x$ (massa $m$, nopeus $v_p$) osuu ytimeen $X$ (massa $M$, nopeus $V_y$):
+
+[FIGURE: SOM_Tipler_Nuclear_physics_figure_50_cropped_a]
+[footnote: \TiplerCRshort]
+
+$$
+
+\vec{p}_{m}+\vec{p}_{M}=0 \qquad &\Rightarrow \qquad |\vec{p}_{m} |= |\vec{p}_{M} | \equiv p \\
+  \qquad &\Rightarrow \qquad m v_p=M V_y \qquad \Rightarrow \qquad \frac{m}{M}=\frac{V_y}{v_p}  \\
+  E_{CM}  = \frac{p^{2}}{2 m}&  + \frac{p^{2}}{2 M} = \frac{p^{2}}{2}  ( \frac{m+M}{m M} \,)  \,, \qquad CM-koordinaatisto
+
+$$
+
+- Kun taas laboratoriokoordinaatistossa, 
+
+[FIGURE: SOM_Tipler_Nuclear_physics_figure_50_cropped_b]
+
+ projektiilin $\mathrm{x}$ nopeus on $v_p+V_y$, kohti levossa olevaa kohdetta $M$, jolloin liikemääräksi saadaan:
+\[
+p_{lab}  = m(v_p+V_y)  = m v_p ( 1+\frac{V_y}{v_p} \,)  = m v_p ( 1+\frac{m}{M} \,)  =  p ( 1+\frac{m}{M} \,) \hspace{3.5cm}
+\] 
+Ja energiaksi
+\[
+E_{lab}  = \frac{p_{lab}^{2}}{2 m}  = \frac{p^{2}}{2 m} ( \frac{m+M}{M} \,)^{2}  = \frac{m+M}{M} E_{C M} \hspace{3.5cm}
+\]
+
+--- slide: Ydinreaktiot ---
+
+ (Raja-arvoenergia ja esimerkki)
+
+\seminormal
+
+	- Endotermisen reaktion raja-arvoenergia on labo\-ra\-torio\-koor\-di\-naatistossa
+\[
+E_{raja-arvo}  =  \frac{m+M}{M} |Q|
+\]
+
+	- Lasketaan esimerkiksi pienin saapuvien protonien kineettinen energia osuessaan laboratoriokoordinaatistossa levossa oleviin ${ }^{13} C$-ytimiin, joka käynnistää endotermisen reaktion: 
+	\[
+	\quad { }_{\;6}^{13} C  ~+~  p \quad \rightarrow \quad { }_{\;7}^{13}N  ~+~ n  \qquad \quad eli \qquad \quad { }_{\;6}^{13} C(p , n) { }_{\;7}^{13}N
+	\]
+
+- Reaktion $Q$-arvo on:
+$$
+
+Q&= ( m_{\text {alku}}-m_{loppu} \,)  c^{2} \\
+&=(13,003355 \;u+1,007825 \;u-13,005738 \;u-1,008665 \;u) \times 931,5 \mathrm{\;MeV} / u \\
+&=-3,00 \mathrm{\;MeV} \\
+E_{raja-arvo}&=\frac{m+M}{M} |Q|  =  \frac{1,007825 \;u+13,003355 \;u}{13,003355 \;u} \times 3,00 \mathrm{\;MeV}  = 3,23 \mathrm{\;MeV}
+
+$$
+
+--- slide: Ydinreaktiot ---
+
+ (Reaktion vuorovaikutusala)
+
+	- Tarkastellaan protonisädettä jolla pommitetaan ${ }^{13} \mathrm{C}$ atomeita:
+	- 
+	 - Elastinen sirontaprosessi on muotoa: $\hspace{1.5cm} { }^{13} \mathrm{C}(\mathrm{p}, \mathrm{p}){ }^{13} \mathrm{C}$ 
+
+- Jos sironta on epäelastista, me kirjoitamme:
+$
+\hspace{1cm} { }^{13} \mathrm{C} ( \mathrm{p}, \mathrm{p}^{\prime} ) {}^{13} \mathrm{C}^{*}
+$\\
+jossa $p^{\prime}$ ovat lopputuotteina olevia protoneita, ja kohdeydin\\
+on virittynyt
+
+- Muita mahdollisia reaktioita ovat: 
+$$
+ {ccc}
+ (p, n) &: \qquad \qquad& { }^{13} \mathrm{C}(p, n) {}^{13} \mathrm{N} \\ 
+ \text {kaappaus} &  : \qquad\qquad & { }^{13} \mathrm{C}(p, \gamma) {}^{14} \mathrm{N} \\ 
+ (p, \alpha) & : \qquad \qquad& { }^{13} \mathrm{C}(p, \alpha) { }^{10} \mathrm{B}
+$$
+Jokaisella reaktiolla on oma vuorovaikutusalansa. Kokonaisvaikutusala on tällöin
+\[
+\sigma  = \sigma_{p, p} ~+~ \sigma_{p, p^{\prime}} ~+~ \sigma_{p, n}  ~+~ \sigma_{p, \gamma} ~+~ \sigma_{p, \alpha} ~+~ \cdots
+\]
+
+--- slide: Ydinreaktiot ---
+
+ (Välituote ('Väliydin'))
+
+[FIGURE: SOM_Tipler_Nuclear_physics_figure_52]
+
+\semismall
+
+{10.5cm}
+
+	- Useat matalaenergiset ydinreaktiot koostuvat kahdesta vaiheesta
+	- Projektiili ja kohdeydin muodostavat ensiksi lyhytaikaisen 'väliytimen' joka purkautuu emittoimalla yhden tai useamman hiukkasen
+	- Väliytimen purkautuminen on tilastollinen prosessi, eikä riipu syntymekanismista
+
+- Esimerkiksi saapuvan $1 \mathrm{\;MeV}$ protonin nopeus on noin $10^{7} \mathrm{\;m} / \mathrm{s}$, jolloin protoni liikkuu ytimen läpi ajassa:
+\[
+\Delta t  = \fraca{\Delta x}{V} = \fraca{R}{V}  = \fraca{10^{-14} \mathrm{\;m}}{10^{7} \mathrm{\;m} / \mathrm{s}} = 10^{-21} \mathrm{\;s}
+\]
+
+- Väliytimen elinaika voi olla suuruusluokkaa $10^{-16} \mathrm{~s}$, mikä on liian lyhyt aika mitattavaksi, mutta tarpeeksi pitkä ($ 100\,000 \times 10^{-21} \mathrm{\;s} $), ollakseen lähestulkoon riippumaton väliytimen syntymekanismista
+
+--- slide: Ydinreaktiot ---
+
+ (Esimerkki ydinreaktiosta)
+
+\seminormal
+
+	- Lasketaan kahden esimerkkireaktion $Q$-arvot, ja määritellään niiden endo/eksotermisyys.
+-
+	
+- Reaktio 1: 
+$$
+
+ { }_{\;5}^{10} \mathrm{B}  ~+~ { }_{0}^{1} \mathrm{n} \quad &\rightarrow \quad { }_{3}^{7} \mathrm{Li}  ~+~ { }_{2}^{4} \mathrm{He} \\ 
+ \\
+Q  = (10,012937 \;u + 1,008665 \;u -7,016003& \;u - 4,0026033 \;u) \times 931,5 \mathrm{MeV} / \mathrm{u} = 2,79 \mathrm{\;MeV} 
+
+$$
+Eli reaktio on eksoterminen, energiaa vapautuu reaktiossa
+
+-
+- Reaktio 2: 
+$$
+
+ { }_{3}^{7} \mathrm{Li}  ~+~ { }_{1}^{1} \mathrm{H} \quad &\rightarrow \quad { }_{4}^{7} \mathrm{Be}  ~+~ { }_{0}^{1} \mathrm{n} \\
+ \\
+  Q  = (7,016003 \;u+1,007825 \;u  - 7,0166928& \;u -1,008665 \;u) \times 931,5 \frac{\mathrm{\;MeV}}{u}  = -1,64 \mathrm{\;MeV} 
+ 
+$$
+Eli reaktio on endoterminen, lopputuotteisiin on sitoutunut energiaa
+
+--- slide: Ydinreaktiot ---
+
+ (Fissio)
+
+[FIGURE: SOM_Nuclear_physics_Figure_27.png]
+
+{8.5cm}
+	
+	- Painavilla ytimillä on pienempi sidososuus kuin massaluvultaan kevyemmillä ytimillä
+
+- Kun potentiaalikaivossa ollaan syvemmällä, on massa pienempi ja kineettistä energiaa vapautuu
+
+- Kuin aiemmin kuvatussa spontaanissa fissiossa, nytkin ajavana voimana on Coulombisen hylkivän voiman heikkeneminen (protonit ovat keskimäärin kauempana toisistaan)
+
+- Hiukkasen indusoimalla fissiolla on käytännön sovelluksia.
+
+[FIGURE: SOM_Nuclear_physics_Figure_28.png]
+
+  Kurssilla tarkastellaan erityisesti neutronien törmäyksien käynnistämää fissiota
+
+--- slide: Ydinreaktiot ---
+
+ (Fissio)
+
+	- Esimerkiksi kun ${ }^{235} \mathrm{U}$ ydin virittyy neutronikaappauksessa, se hajoaa hetken päästä kahdeksi ytimeksi, joilla on noin puolet alkuperäisen ytimen massasta
+	
+- ${ }^{235} \mathrm{U}$:n fissio: $\quad { }^{235} \mathrm{U}  ~+~  \mathrm{n} \quad \rightarrow \quad { }^{92} \mathrm{Kr}  ~+~ { }^{142} \mathrm{Ba}  ~+~ 2 \mathrm{n}  ~+~ 179,4 \mathrm{\;MeV}$
+
+- Coulombinen hylkivä voima työntää fragmentit/sirpaleet kauemmas, jolloin niiden kineettinen energia kasvaa. Jatkotörmäyksien takia tämä energia muuntuu ympäristön termiseksi energiaksi
+
+- Sidososuuden kuvaaja (sidosenergia per nukleoni) näyttää että fuusio on todennäköisempää kun $A \leq 20$ ja fissio dominoi kun $A \geq 200$
+
+- Jos esim. ydin ($A=240$) fissioituu kahdeksi ytimeksi ($A=120$), energiaa vapautuu noin ${\approx}1 \mathrm{\;MeV} / \mathrm{nukleoni}$, elin noin $200 \mathrm{\;MeV} /atomi$
+
+--- slide: Ydinreaktiot ---
+
+ (Fissio)
+
+\seminormal
+
+	- Käytännössä ensiksi muodostuu väliydin, mikä hajoaa kahdeksi lopputuotefragmentiksi
+
+- Tärkeä esimerkki on uraani-235:n neutronipommitus, mikä synnyttää (virittyneen) uraani-236 ytimen
+
+-  Uraani-236 fissioituu kahdeksi sirpaleeksi usean vaihtoehtoisen 'reaktiokanavan' kautta 
+
+-  Lopputuotteina meillä voi olla esim.: barium ja krypton, ksenon ja strontium, tina ja molybdeeni
+
+- Kuten reaktioyhtälöt näyttävät, reaktiotuotteina syntyy myös ylimääräisiä neutroneita, ja $\gamma$-kvantteja (ei näy yhtälöissä)
+$$
+
+{ }_{\;92}^{235} \mathrm{U} ~  +  ~ { }_{0}^{1} \mathrm{n}  \quad &\rightarrow \quad { }_{56}^{141} \mathrm{Ba} ~  +  ~ { }_{36}^{92} \mathrm{Kr} ~  +  ~ 3\cdot{ }_{0}^{1} \mathrm{n}\\
+{ }_{\;92}^{235} \mathrm{U} ~ + ~ { }_{0}^{1} \mathrm{n} \quad &\rightarrow \quad { }_{\,54}^{140} \mathrm{Xe} ~ + ~ { }_{38}^{94} \mathrm{Sr} ~ + ~ 2\cdot{ }_{0}^{1} \mathrm{n} \\
+{ }^{235}_{\;92} \mathrm{U} ~ + ~ { }_{0}^{1} \mathrm{n} \quad &\rightarrow \quad { }_{\;50}^{132} \mathrm{Sn} ~ + ~ { }_{42}^{101} \mathrm{Mo} ~ + ~ 3\cdot{ }_{0}^{1} \mathrm{n}
+
+$$
+
+--- slide: Ydinreaktiot ---
+
+ (Fissio)
+
+- \[
+{ }_{\;92}^{235} U ~ + ~ { }_{0}^{1} n \quad \rightarrow \quad{ }_{\;92}^{236} U^{*} \quad \rightarrow \quad \ldots
+\]
+	- Kolme aiempaa esimerkkireaktiota uraani-236:n hajoamiselle ovat vain yleisimmät esimerkit reaktiokanavista 
+	
+	- 
+	Käytännössä on muitakin reaktioita! 
+	
+	- Yleisesti uraani-236 fissioituu kahdeksi ytimeksi, ylimääräisiksi neutroneiksi, ja vapauttaen samalla energiaa
+	
+	-  Prosessin yksityiskohdat riippuvat pommittavan neutronin energiasta, vaihdellen termisten (hitaitten) neutronien ($E_{kin} \approx 1,5 k_B T \ll 0,1 \,MeV$) ja nopeiden neutronien ($E_{kin} \approx 1 \mathrm{\;MeV}$) välillä 
+	
+	- Huomaa että ydin fissioituu vain harvoin kahdeksi saman massan omaavaksi ytimeksi 
+
+--- slide: Ydinreaktiot ---
+
+ (Ketjureaktio ja kriittinen massa)
+
+\seminormal
+
+	- Oletetaan että jokainen reaktio vaatii käynnistyäkseen neutronin törmäyksen, ja että jokaisen reaktion lopputuotteina on  $n$ neutronia  
+	\implies{ Jokainen reaktio voi käynnistää $n$ jatkoreaktiota } 
+	
+	- Jos yhdessä reaktiossa vapautuu energiaa $E_{0}$, niin  $j$:ssä fissiosukupolvessa voisi vapautua energiaa
+$ \qquad
+E_{j}  = E_{0} n^{j}
+$
+
+- Vuonna 1942 Fermin johtama ryhmä toteutti ensimmäisen ketjureaktion
+
+- On mahdollista osoittaa että ketjureaktio vaatii fissiilin aineen (U-233, U-235, Pu-239, Pu-241) massan ylittävän niin sanotun  kriittisen massan
+
+- Useita neutroneita vapautuu jokaisessa reaktiossa $(n>1)$
+
+- Mutta kaikki neutronit eivät käynnistä jatkoreaktioita (häviöitä jne.), käytännössä on parempi käyttää yhtälöä
+\[
+E_{j}  = E_{0} k^{j} \,, 
+\]
+jos $k>1$ ketjureaktio tapahtuu, jos $k<1$, ketjureaktio vaimenee
+
+--- slide: Ydinreaktiot ---
+
+ (Ydinreaktiot)
+
+	- Fissioreaktorissa
+
+[FIGURE: SOM_Nuclear_physics_Figure_29.png]
+
+ käytetään polttoainesauvoja, joiden $k>1$
+	
+	- Säätösauvoja käytetään pitämään $k$ $\approx 1$, hidastamalla tai kaappaamalla neutroneita ($k$ pienenee)
+	
+	- Boori ja kadmium ovat usein käytettyjä säätösauvojen materiaaleja (ks.\ aiempi luento)
+
+	- Osa neutroneista $(\sim 1 %)$ vapautuu huomattavan pitkän ajan
+
+{5.15cm}
+
+	- kuluttua (${\approx}1\,s$ viive), mikä hidastaa ketjureaktiota 
+\implies{ Mahdollistaa reaktion \\
+	      säätämisen ja estää $k$:n\\
+	      kasvamisen yli yhden }
+
+--- slide: Ydinreaktiot ---
+
+ (Fuusio)
+
+	- Kevyet ytimet ovat heikommin sidoksissa kuin keskipainavat. Kun kevyt ydin yhdistyy painavamman ytimen kanssa, kokonaismassa pienenee ja kineettinen energia kasvaa
+
+[FIGURE: SOM_Nuclear_physics_Figure_30.png]
+
+	- Prosessia kutsutaan fuusioksi. Tyypillinen fuusioreaktio on
+\[
+{ }_{1}^{2} \mathrm{H}  ~ + ~  { }_{1}^{1} \mathrm{H} \quad \rightarrow \quad { }_{2}^{3} \mathrm{He} ~ + ~ \gamma \,, \qquad Q=5,48 \mathrm{\;MeV}
+\]
+
+{7.5cm}
+
+	- Coulombisen repulsion hylkimät protonit pakkautuvat samaan ytimeen (prosessin käynnistymiseen tarvitaan noin $1 \mathrm{\;MeV}$ energiaa) 
+	
+	- Samalla suurempi määrä nukleoneita pääsee lähemmäs toisiaan, vahvan vuorovaikutuksen piiriin, ${\sim}2 \times 10^{-15} \mathrm{\;m}$ 
+	\implies{ Nukleonien välisten sidosten  \\
+			lukumäärä kasvaa}
+
+--- slide: Ydinreaktiot ---
+
+ (Fuusio)
+
+\seminormal
+
+	- Fuusioreaktio voi tapahtua termisen aktivaation kautta todella korkeissa lämpötiloissa
+
+- Tarvittava osuus ytimiä on tällä energialla kun $k_{B} T \approx 10 \mathrm{\;keV}$, eli kun $T \approx 10^{8} \mathrm{\;K}$
+
+- Näin korkeita lämpötiloja saavutetaan vain tähdissä, missä aine on ionisoitunut plasmaksi ja gravitaatiovoimat pitävät ainetta kasassa
+
+- Että fuusiota tapahtuisi tiheydeltä $n$ olevan vetyplasman täytyisi pysyä kasassa viipymäajan $\tau$ verran, joiden täytyy toteuttaa ehto:
+\[
+n \tau > 10^{20} \; \frac{\text {hiukkasta} \cdot s}{m^{3}} \qquad (Lawsonin~kriteeri)
+\]
+
+- Viipymäaika $\tau$ tarvitaan koska fuusioreaktio ei ole välitön prosessi
+
+--- slide: Ydinreaktiot ---
+
+ (Protoni–protoni-ketju (pp-ketju))
+
+\seminormal
+
+	- Tähdet koostuvat pääosin vedystä. On olemassa  fuusioreaktioketju jota kutsutaan protoni–protoni-ketjuksi (pp-ketjuksi), mikä "polttaa"  ~vetyä he-4:ksi
+$$
+
+& Reaktio 1:\quad & { }_{1}^{1} H  ~+~ { }_{1}^{1} H \quad &\rightarrow \quad { }_{1}^{2} H  ~+~ { }_{+1}^{\,0} \beta ~ + ~ \nu &Q&=0,42 \mathrm{\;MeV} \\
+& Reaktio 2:\quad & { }_{1}^{2} \mathrm{H} ~+~ { }_{1}^{1} \mathrm{H} \quad &\rightarrow \quad { }_{2}^{3} \mathrm{He}  &Q&=5,48 \mathrm{\;MeV} \\
+& Reaktio 3: \qquad & { }_{2}^{3} \mathrm{He}  ~+~ { }_{2}^{3} \mathrm{He} \quad &\rightarrow \quad { }_{2}^{4} \mathrm{He}  ~+~ { }_{1}^{1} \mathrm{H} ~+~ { }_{1}^{1} \mathrm{H} &\quad Q&=12,9 \mathrm{\;MeV}
+
+$$
+
+- pp-ketju käynnistyy kahden protonin muodostaessa deuteriumin (Reaktio 1). Reaktiossa protoni muuttuu neutroniksi, synnyttäen myös positronin ja neutriinon 
+
+- Tämän reaktion käynnistyminen edellyttää heikkoa vuorovaikutusta, jolloin prosessi vaatii aikaa 
+
+- Muodostunut deuteriumi yhdistyy protonin kanssa (Reaktio 2) muodostaen helium-3:n, mikä fuusioituu toisen helium-3:n kanssa muodostaen helium-4:n (Reaktio 3)
+
+- Huomaa että kaksi reaktiota $1 \;\&\; 2$ tarvitaan yhteen reaktio $3$:en
+
+--- slide: Ydinreaktiot ---
+
+ (Protoni–protoni-ketju (pp-ketju))
+
+[FIGURE: SOM_Nuclear_physics_Figure_31.png]
+
+\seminormal
+
+{7.5cm}
+	
+	- Yhteensä 4 protonia muuntuu He-4:ksi (syntyy myös positroneja ja neutrii\-noita)
+
+- Myös $24,7 \mathrm{\;MeV}$ energiaa vapautuu:
+$$\def\arraystretch{1.15}
+{rrr} 
+~2 \times \text { vaihe } 1 & \qquad & 2 \times 0,42 \mathrm{\;MeV} \\ 
++~2 \times \text { vaihe } 2 & \qquad & +2 \times 5,48 \mathrm{\;MeV} \\ 
++~1 \times \text { vaihe } 3  & \qquad & +1 \times 12,9 \mathrm{\;MeV} \\ 
+\hline
+&  & =\phantom{+2\;} 24,7 \mathrm{\;MeV}
+
+$$
+
+- Yhteensä:
+\[
+4 \cdot { }_{1}^{1} H \quad \rightarrow \quad { }_{2}^{4} \mathrm{He}  ~+~ 2 \beta^{+} ~+~ 2 \mathrm{\nu} ~+~ 24,7 \mathrm{\;MeV}
+\]
+
+- Tämä pp-ketju on aurinkomme pääenergianlähde. Reaktio polttaa arviolta nopeudella $5,64 \times 10^{11} \mathrm{\;kg}$ vetyä per sekunti, tuottaen samalla teholla $3,7 \times 10^{25} \;W$ energiaa
+
+--- slide: Ydinreaktiot ---
+
+ (Hiilisykli)
+
+\semismall
+
+	- Protoni–protoni-ketju on tiettävästi hallitseva reaktio auringossa, mutta muissa tähdissä on korkeammat lämpötilat ja suurempi heliumin pitoisuus. Kaksi he-4 ydintä voi fuusioitua beryllium-8:ksi 
+	\[
+	 { }_{2}^{4} \mathrm{He} ~+~ { }_{2}^{4} \mathrm{He} \quad \rightarrow \quad { }_{4}^{8} \mathrm{Be} 
+	 \]
+
+- ${ }_{4}^{8} Be$ on epävakaa ja hajoaa takaisin kahdeksi heliumiksi (${\sim} 10^{-16} \mathrm{\;s}$), mutta jos toinen ${ }_{2}^{4} \mathrm{He}$ fuusioituu Be:n kanssa ennen sen hajoamista voi muodostua tiiviisti sitoutunut ${ }_{\;6}^{12} C$:
+
+{7.7cm}
+
+	- \[
+{ }_{4}^{8} \mathrm{Be}  ~+~ { }_{2}^{4}\mathrm{He} \quad \rightarrow \quad { }_{\;6}^{12} C
+\]
+
+- Tämä C-ydin voi aloittaa hiilisyklin, mikä on nopea tapa "polttaa" ~vetyä
+
+- Huomaa että hiiliydin toimii vain katalyyttinä reaktioketjussa. Huomaa myös että painavampia ytimiä kuten ${ }_{\;8}^{15} \mathrm{O}$ ja ${ }^{15} N$ syntyy syklissä, mutta ne hajoavat syklin aikana
+
+--- slide: Ydinreaktiot ---
+
+ (Hiilisykli)
+
+	- Huomaa että syklin lopputuloksena neljä protonia fuusioituu yhdeksi He-4:ksi emittoiden kaksi positronia ja kaksi neutriinoa 
+	
+	- Tämä reaktio on paljon nopeampi kuin pp-ketju, koska protonin ei tarvitse muuntua 
+	neutroniksi missään syklin vaiheessa, ennen kuin fuusio voi tapahtua
+		
+- Yhdessä syklissä vapautuu $26,7 \mathrm{\;MeV}$ verran energiaa.  Eli lähes saman verran kuin pp-ketjussa:
+\[
+4 \cdot { }_{1}^{1} \mathrm{H} \quad \rightarrow \quad { }_{2}^{4} \mathrm{He}  ~+~ 2 \mathrm{e}^{+} ~+~ 2 \nu
+\]
+
+- Auringossamme protoni–protoni-sykli on vallitseva prosessi  
+
+- Vanhemmissa ja kuumemmissa tähdissä, myös hiilisyklin ja muiden fuusioprosessien$^*$ 'tiedetään' olevan käynnissä\footnote{$^*$Esim.~Wikipediasta löytyy hyvä \href{https://fi.wikipedia.org/wiki/Tähden\_ydinsynteesi}{listaus} muista prosesseista.}
+
+--- slide: Ydinreaktiot ---
+
+ (Nukleosynteesi: alkuaineiden alkuperä)
+
+	- Universumin yleisin alkuaine on vety, toiseksi yleisin helium 
+	
+	- Sitten pitoisuudet putoavat litiumin, berylliumin ja boorin ollessa seuraavaksi yleisimpiä, joiden jälkeen pitoisuudet pienenevät tasaisesti painavampiin alkuaineisiin mentäessä 
+	
+	- Sama pitoisuusjakauma on löytynyt lukuisista maan kuoresta otetuista näytteistä (eri syvyyksiltä), sekä maahan pudonneista meteoriiteista
+	
+- Pitoisuudet tasoittuvat suurin piirtein järjestysluvun $Z=35$ tienoilla (tai $A=80)$, joskin maksimeita löytyy
+
+- Isotooppikoostumukseltaan kevyemmät (vakaat) alkuaineet suosivat neutroniköyhiä isotooppeja, kun taas painavammissa ytimissä neutronirikkaat isotoopit ovat yleisempiä 
+
+- On mielenkiintoista huomata että luonnosta ei löydy (vakaita) isotooppeja $A=5$ ja $A=8$
+
+--- slide: Ydinreaktiot ---
+
+ (Nukleosynteesi: alkuaineiden alkuperä)
+
+\semismall
+
+	- Nykytietämyksen valossa alkuaineet ovat syntyneet suurinpiirtein samojen prosessien seurauksena
+	
+	- Universumin alkuaikoina aine oli suurimmaksi osaksi kaasumaista vetyä.  Tilastollisten fluktuaatioiden ja painovoiman seurauksena osa vedystä tiivistyi kaasusumuiksi, ja tähdiksi joissa on suuri tiheys $10^{5} \mathrm{\;kg} / \mathrm{m}^{3}$
+	
+	- Tähtien/kaasusumujen lämpötilat kohosivat käynnistäen pp-ketjun. Näin syntyvä he-4 johti edelleen painavampien alkuaineiden muodostumiseen
+	
+	- Huomaa että ${ }_{4}^{8} \mathrm{Be}$ on epävakaa, mutta fuusio ${ }_{1}^{2} \mathrm{H}$ tai ${ }_{2}^{3} \mathrm{He}$ voi johtaa ${ }_{\;5}^{10} B$, ${ }_{\;6}^{11} C$ jne.
+	
+	- Havainnereaktio kuvaa berylliumin ja helium-4:n fuusiota, mikä johtaa niin sanottuun 'heliumin palamisreaktioon' (kolmialfareaktioon):
+	$$
+
+&{ }_{2}^{4} \mathrm{He}  ~+~ { }_{2}^{4} \mathrm{He} \quad &\rightarrow& \qquad { }_{4}^{8}\mathrm{Be} \qquad &(-0,0918 \mathrm{\;MeV}) \\
+&{ }_{4}^{8} \mathrm{Be} ~+~ { }_{2}^{4} \mathrm{He} \quad &\rightarrow& \quad { }_{\;6}^{12} \mathrm{C} ~+~ 2 \gamma \qquad &(+7,367 \mathrm{\;MeV})
+
+$$
+
+- Tavallisten fuusioreaktioiden avulla saavutetaan $A \approx 60$. Sen jälkeen neutronikaappaus ja sitä seuraava $\beta^{-}$-hajoaminen johtavat suurempiin järjestyslukuihin $Z$ (supernovat, neutronitähtien törmäykset, jne.)
+
+--- slide: Ydinreaktiot ---
+
+ (Keinotekoinen fuusio)
+
+	- Fuusio ei tapahdu spontaanisti. Voittaakseen Coulombisen repulsiovoiman (ytimet ovat positiivisesti varautuneita), ytimillä pitää olla suuret kineettiset energiat  (= korkea lämpötila) 
+
+[FIGURE: SOM_Nuclear_physics_Figure_32.png]
+
+{7.5cm}
+
+	- Kun ytimet ovat lähekkäin, vahvan vuorovaikutuksen piirissä, ytimet voivat "tipahtaa potentiaalikaivoon" ~(kuva)
+
+- Selkeästikin fuusion käynnistyminen vaatii suuret tiheydet ja korkeat lämpötilat
+
+- Kun reaktio käynnistyy, suuria määriä energiaa vapautuu, kuten nähdään alku- ja lopputilan suuresta energiaerosta
+
+--- slide: Ydinreaktiot ---
+
+ (Fuusioreaktorit)
+
+	- Deuteriumin $(D)$ ja tritiumin $(T)$ fuusio ($D+T$) on fuusioreaktio, jolla on suuri vuorovaikutusala ja joka vapauttaa paljon energiaa
+	
+	- Ongelmana on että tritiumia ei ole helposti saatavilla, joten kahden deuteriumin $(D+D)$ fuusio on käytännössä tärkeämpi 
+	
+	- Reaktion etu on myös että vain yhden tyyppisiä ytimiä ($D$) käytetään  
+	
+	- Lisäksi deuteriumin fuusio tuottaa tritiumia jatkoreaktioon:
+	$$
+{ }_{\,1}^{2} \mathrm{D}  ~+~ { }_{\,1}^{2} \mathrm{D} \quad \rightarrow \quad 
+{ {ll} { }^{3} \mathrm{T} ~+~ { }_{1}^{1} \mathrm{H} & \qquad Q=4,0 \mathrm{\;MeV} \\ { }_{2}^{3} \mathrm{He}  ~+~ { }_{0}^{1} \mathrm{n} & \qquad Q=3,3 \mathrm{\;MeV} 
+
+$$
+ja 
+\[
+{ }_{\,1}^{2} D  ~+~ { }_{\,1}^{3} \mathrm{T} \quad \rightarrow \quad { }_{2}^{4} \mathrm{He}  ~+~ { }_{0}^{1} \mathrm{n} \qquad Q=17,6 \mathrm{\;MeV}
+\]
+
+--- slide: Ydinreaktiot ---
+
+ (Fuusioreaktorit)
+
+[FIGURE: SOM_Nuclear_physics_Figure_33.png]
+
+\semismall
+
+{8.65cm}
+
+	- Fuusion käynnistyminen vaatii suuren energian. 
+	
+	Kahden deuteronin saattaminen etäisyydelle ${\sim} 2 \mathrm{\;fm}$ toisistaan vaatii lämpötilan $T \sim 6 \times 10{ }^{9} \mathrm{\;K}$ 
+	
+	- Luonnollisestikin ytimien nopeudet muodostavat jakauman, joten joillakin ytimillä on keskimääräistä korkeampi nopeus. Tunnelointi auttaa myös prosessissa. Lopulta $10^{7}–10^{8} \;K$ lämpötilat voivat olla riittävät reaktion käynnistymiseksi (kuten auringossa)
+
+- Oikeissa fuusioreaktoreissa haasteena on plasman koossapitäminen jonka lämpötila on tarpeeksi korkea
+
+- On kaksi lupaavaa tekniikkaa:\%Two promising techniques are available
+Magneettinen koossapito $\rightarrow$ toroidaalinen (rengasmainen) magneettikenttä\\
+Inertiaalikoossapito $\rightarrow$ näytepellettiä is\-ke\-tään tahdistetuilla iskuilla joka puolelta maailman{https://www.youtube.com/watch?v=zrbQsufh4b4} tehokkaimmilla lasereilla{https://www.youtube.com/watch?v=zrbQsufh4b4} (NIF ja 13.12.2022)
+
+--- slide: Ydinreaktiot ---
+
+ (Fission ja fuusion vertailu)
+
+	- 
+	- Sekä fissio että fuusio perustuvat vahvaan vuorovaikutukseen 
+	- Tarvitaan vain pieni määrä polttoainetta (verrattuna fossiilisiin polttoaineisiin)
+- Ei muodostu $\mathrm{CO}_{2}$  $\rightarrow$ ilmaston kannalta kestävämpää
+- Reaktiotuotteet ovat radioaktiivisia $\rightarrow$ ympäristön kannalta haitallista
+($\rightarrow$ loppusijoitus??)
+
+- Fissio:
+
+	- Polttoaineet: uraani ja torium, joiden kaivaminen on kallista
+- Lopputuotteet: pitkäikäistä radioaktiivista jätettä (esim.\ $T_{1/2}(Pu-239) =24\;100$ vuotta)
+
+- Fuusio:
+
+	- Polttoaine: D:ia voidaan erotella vedestä, ja sitä riittää
+- Lopputuotteet: tritiumin ja heliumin isotooppeja, tritiumi on radioaktiivista, mutta sen puoliintumisaika on lyhyt (12,3 vuotta)
+
+--- slide: Ydinreaktiot ---
+
+ (Hyötysuhteet)
+
+\seminormal
+
+	- Yhdessä fuusioprosessissa vapautuva energian määrä on huomattavasti alhaisempi kuin fissiossa. Mutta suhteutettuna ytimien massoihin, deuteron–deuteron-fuusiossa vapautuva energia on noin  $2 \times 10^{14} \;J$ yhtä polttoainekiloa kohti
+	\implies{ Yli tuplat uraanin fissioon verrattuna }
+
+- Koska deuteriumia on runsaasti (noin 1 D per 7000 vetyatomia), ja D:n erottaminen vedestä on halpaa (alle €/gramma), fuusion ajatellaan olevan 'lupaava tulevaisuuden energialähde'
+
+- Mutta kokeiden perusteella (esim. ITER-reaktorit), sen toteuttaminen on teknisesti erittäin haastavaa 
+
+- On myös hyvä tiedostaa fuusiotutkimuksen aikajänne:
+ \semismall
+	- "Lupaava energianlähde noin 20 vuoden kuluttua..."\\
+	 – lausunto vuodelta $1985 !$
+- "Vieläkin lupaava energianlähde noin 20 vuoden kuluttua..."\\
+	  – lausunto vuodelta $2020 !$
+
+## 3.7 Ydinfysiikan ja Radioaktiivisuuden Sovelluskohteet
+
+--- slide: 3. Ydinfysiikka ---
+
+    -<1-> 3_1_a{Ytimen Rakenne}
+    -<1-> 3_2_a{Ytimen Koossapysyminen}	
+    -<1-> 3_3_a{Ydinmallit}	
+    -<1-> 3_4_a{Radioaktiivisuus}
+    -<1-> 3_5_a{Radioaktiivinen Hajoamislaki}
+    -<1-> 3_6_a{Ydinreaktiot}
+    -<1-> 3_7_a{Ydinfysiikan ja Radioaktiivisuuden Sovelluskohteet}
+
+--- slide: Ydinfysiikan ja Radioaktiivisuuden Sovelluskohteet ---
+
+ (NMR)
+
+	- Ydinmagneettinen resonanssi (NMR):
+	
+	- Kuten Zeemanin ilmiö atomin elektroneilla,  myös ytimen energiatasot jakaantuvat ulkoisessa magneettikentässä
+
+- Ytimen magneettinen momentti on  
+\[
+\vec{\mu}  = \gamma \vec{I} \,, \qquad \mu_{N}  = \frac{e \hbar}{2 m_{p}} \,, \qquad missä \qquad |\, \vec{I} \,|  =  I(I+1)^{1 / 2} \hbar
+\]
+
+- Ulkoisessa magneettikentässä olevan magneettimomentin potentiaalienergia on
+\[
+U  = -\vec{\mu} \cdot \vec{B}
+\]
+
+- Energiaero jakaantuneiden tilojen välillä on
+\[
+\Delta E  = 2 ( \mu_{z} )_{\text {protoni}} B
+\]
+
+--- slide: Ydinfysiikan ja Radioaktiivisuuden Sovelluskohteet ---
+
+ (NMR)
+
+\seminormal 
+
+	- Kun vetyatomeja (esim.\ veden protoneja) viritetään sähkömagneettisella säteilyllä, eli fotoneilla $h f=\Delta E$, tapahtuu resonanssiabsorptiota, ja vastaavaa emissiota
+
+- $1 \mathrm{\;T}$ magneettikentässä, energiaero $\Delta E=1,76 \times 10^{-7} \mathrm{\;eV}$ vastaa resonanssitaajuutta $f=42,5$ $\mathrm{\;MHz}$  (radiotaajuus)
+
+{7.5cm}
+
+	- NMR:ää sovelletaan materiaalien sisäisen magneettisen rakenteen tutkimiseen, ja erityisesti elävien kudosten magneettiresonanssikuvaukseen (MRI), minimoiden kudoksien lämpenemisen
+
+[FIGURE: SOM_Nuclear_physics_Figure_17.png]
+
+- NMR on parhaiten tunnettu MR-kuvauksesta, mutta sitä käytetään paljon myös tutkimuksessa, kuten mo- nimutkaisten kemiallisten molekyylien rakenteiden karakterisointiin 
+
+--- slide: Ydinfysiikan ja Radioaktiivisuuden Sovelluskohteet ---
+
+ (NAA)
+
+	- Neutroniaktivaatioanalyysi (NAA):
+	- ${ }_{Z}^{A} M$ sisältävää näytettä pommitetaan hitailla neutroneilla 
+
+- Nuklidi ${ }^{A+1}_{~\;Z}M$ voi muodostua reaktiosta ${ }_{Z}^{A} M (n, \gamma)^{A+1} M$, mutta se on radioaktiivinen, eli se emittoi beetahiukkasia tai gammasäteitä
+
+- Muodostuvaa säteilyä mittaamalla, ${ }^{A+1}_{~\;Z} M$ voidaan tunnistaa, ja lisäksi isotoopin ${ }_{Z}^{A} M $ pitoisuus näytteessä voidaan määrittää
+
+- Tämä mahdollistaa näppärästi kemiallisen analyysin, jopa erilaisia isotooppeja voidaan erottaa toisistaan, hajottamatta näytettä
+
+- Neutroniaktivaatioanalyysin (NAA) avulla voidaan analysoida pieniä määriä ainetta, ja sitä käytetään usein kun 'muut fysikokemiallisen menetelmät eivät ole tarpeeksi herkkiä'
+
+- Menetelmän heikkoutena on radioaktiivisten näytteiden hävittäminen
+
+--- slide: Ydinfysiikan ja Radioaktiivisuuden Sovelluskohteet ---
+
+ (NAA)
+
+\seminormal
+
+	- Kun nuklideja on säteilytetty termisillä neutroneilla, niiden aktiivisuus noudattaa yhtälöä
+\[
+R(t)  = \lambda N(t)  = R_{0} (1-\rme^{-\lambda t} )
+\]
+missä $\lambda=$ hajoamisvakio joka riippuu ytimestä ${ }^{A+1}_{~\;Z}M$, ja $R_{0}$ on isotoopin  muodostumisnopeus ($g$ aiemmissa luennoissa)
+
+- Yhtälössä $R(t)$ mitataan ja $R_{0}$ voidaan periaatteessa laskea tunnettujen intensiteettien $I$ avulla (riippuu mittausjärjestelystä) ja vuorovaikutusalasta (riippuu reaktiosta joka johtaa nuklidiin $ { }^{A+1}_{~\;Z}M$). $I$ on neutronivuo (esim.\ yksiköissä neutronia/s$\cdot\mathrm{m}^{2}$)
+
+- Yleisesti ottaen ytimen ${ }^{A+1}_{~\;Z}M$ törmäys/tuotantonopeus on:
+\[
+R_{0}  = N_{0} \sigma I \qquad , \qquad [\sigma I]  = m^{2} \frac{\text {neutronia}}{s \cdot m^{2}}  = \frac{\text {neutronia}}{s}
+\]
+missä $N_{0}$ on nuklidien ${ }_{Z}^{A} M$ lukumäärä näytteessä
+
+--- slide: Ydinfysiikan ja Radioaktiivisuuden Sovelluskohteet ---
+
+ (NAA)
+
+	- Näin saadaan $R(t)  = \lambda N(t)  = N_{0} \sigma I (1-\rme^{-\lambda t} )$ ja jos nuklidin puoliintumisaika on lyhyt, aktiivisuus saturoituu $R(t)=R(t=\infty)=N_{0} \sigma I$
+
+- Taulukko näyttää saturaatioaktiivisuudet $R(\infty)$ (per näytemilligramma) muutamille isotoopeille
+
+- Atomien ${ }_{Z}^{A} M$ lukumäärä näytteessä on
+\[
+N_{0}  = \fraca{R(t=\infty)}{\sigma I} \,,
+\]
+ja näytteessä olevan ${ }_{Z}^{A} M$:n massa on
+
+{7.8cm}
+
+	-<.->[] 
+	\[
+ m ({ }_{Z}^{A} M)  = \frac{N_{0}}{N_{A}} M({ }_{Z}^{A} M)  = \frac{R(t=\infty)}{N_{A} \sigma I} M({ }_{Z}^{A} M) \,,
+\]
+- missä $M({ }_{Z}^{A} M)$ on alkuaineen atomipaino ja $N_{A}$ on Avogadron luku	
+
+--- slide: Ydinfysiikan ja Radioaktiivisuuden Sovelluskohteet ---
+
+ (Ajoitus)
+
+	- Radioaktiivinen ajoitus:
+
+\semismall
+
+	- Luonnossa on radioaktiivisia isotooppeja:
+
+	- Kolme alfaaktiivista alkuainetta ketjuineen (torium, uraani, aktinium)
+- Yksittäisiä pitkäikäisiä isotooppeja, kuten ${ }^{40} \mathrm{K}$ ($T_{1 / 2}=1,25 \times 10^{9} \mathrm{\;a}$)
+- Yksittäisiä radioaktiivisia isotooppeja muodostuu kosmisten säteiden pommituksessa
+
+- Geologiseen ajoitukseen käytetään ${ }^{40} \mathrm{K}$ ja ${ }^{232} \mathrm{Th} ~(T_{1 / 2}=1,24 \times 10^{10} \mathrm{\;a})$ ("vanhoihin" ~kiviin, tai "uudempiin" ~kiviin)
+
+- Kahden isotoopin nykyinen pitoisuussuhde mitataan, joista toinen on radioaktiivinen tai radioaktiivisen hajoa-
+
+{6.45cm}
+
+	- misen stabiili lopputuote, (jolloin pi\-toi\-suus\-suhde on ajastariippuva), ja verrataan aiempaan pitoisuussuhteeseen, jonka on tiedetty olevan voimassa kun aine muodostui
+
+--- slide: Ydinfysiikan ja Radioaktiivisuuden Sovelluskohteet ---
+
+ (Ajoitus)
+
+\seminormal
+
+	- Arkeologiassa, ${ }^{14} \mathrm{C}$-ajoitus on tärkeä työkalu
+	- ${ }^{14} \mathrm{C}$ on $\beta^{-}$-aktiivinen, sen puoliintumisaika on $T_{1 / 2}=5730$ vuotta
+
+- Luonnon hiilenkierron takia, suhde ${ }^{14} \mathrm{C} /{ }^{12} \mathrm{C}$ on elävissä organismeissa sama kuin ilmakehässä (nykyisin suhde on ${ }^{14} \mathrm{C} /{ }^{12} \mathrm{C}=1,35 \times 10^{-12})$ 
+- Organismi kuolee, ilmakehän yhdisteet kuten $\mathrm{CO}_{2}$ tai hiilivedyt lopettavat hiilenkierron 
+\implies{ Hiili ei enää uudistu, ja radioaktiivinen ${ }^{14} \mathrm{C}$ alkaa hajoamaan}
+
+- Näytteessä olevan yhden hiiligramman aktiivisuus (vaimenemisnopeus) mahdollistaa kuolinhetken laskemisen. Käytännössä ${ }^{14} \mathrm{C} /{ }^{12} \mathrm{C}$ suhde on muuttunut vuosien saatossa, heikentäen radiohiiliajoituksen tarkkuutta 
+
+ \small
+	- ${\sim}$9000 vuotta sitten suhdeluku oli $1,5$-kertainen nykyiseen verrattuna
+	- Ydinkokeet ovat kasvattaneet suhdetta 
+	- Fossiilisten polttoaineiden käyttö on pienentänyt suhdetta (merkkejä antroposeenistä?)
+
+--- slide: Ydinfysiikan ja Radioaktiivisuuden Sovelluskohteet ---
+
+ (Ajoitus)
+
+	- Arvioidaan seuraavaksi maapallon ikä!
+
+- Radioaktiivisessa hajoamisessa emoydin $(A)$ hajoaa reaktiotuotteeksi $(B)$. Näiden ytimien lukumäärät ovat vastaavasti: 
+\[
+N_{A}(t)  = N_{0} \rme^{-\lambda t} \qquad , \qquad N_{B}(t)  = N_{0}-N_{A}(t)
+\]
+
+- Tällöin jokaisella ajan hetkellä $t$ on voimassa 
+\[
+t = \frac{1}{\lambda} \ln ( \frac{N_{0}}{N_{A}} \;)  = \frac{T_{1 / 2}}{\ln 2} \ln ( \frac{N_{0}}{N_{A}} \,)  = \frac{T_{1 / 2}}{\ln 2} \ln ( 1 + \frac{N_{B}}{N_{A}} \,)
+\]
+
+- Joidenkin isotooppien pitoisuuksien suhteita (${ }^{238} \mathrm{U} /{ }^{206} \mathrm{Pb},~{ }^{87} \mathrm{Rb} /{ }^{87} \mathrm{Sr},~{ }^{40} \mathrm{K} /{ }^{40} \mathrm{Ar}$) käytetään 'kivikelloina'. Niiden avulla on arvioitu maanpinnan kivikerroksien iän olevan noin $4,5 \times 10^{9}$ vuotta
+
+--- slide: Ydinfysiikan ja Radioaktiivisuuden Sovelluskohteet ---
+
+ (Hälyttimet)
+
+	- Am-241 on neptuniumin hajoamisketjuun kuuluva isotooppi
+	
+	- Am-241 käytetään perinteisissä kotitalouksien palohälyttimissä ionisoimaan ilmaa
+
+- Puhtaassa ilmassa ilman ionit liikkuvat helposti elektrodien välillä muodostaen pienen ylläpitovirran
+\implies{ tätä ylläpitovirtaa mitataan jatkuvasti }
+
+- Jos savuhiukkasia saapuu kammioon, ne poistavat ioneita ilmasta (reagoivat ionisoituneiden kaasumolekyylien kanssa), ilman sähköinen johtavuus laskee 
+\implies{ ylläpitovirta heikkenee/häviää}
+
+--- slide: Ydinfysiikan ja Radioaktiivisuuden Sovelluskohteet ---
+
+	- Hiukkasten synnyttämä röntgensäteily ja gammasäteily (PIXE ja PIGE)
+- PIXE: 
+- 
+	 - Näytteiden hivenalkuainepitoisuuksien alkuaineanalyysi ($Z>20$) 
+	 - Näytettä pommitetaan matalan energian ioneilla (${\sim}$MeV), jolloin atomin K- ja L-kuorien elektronit emittoivat röntgensäteitä 
+	 
+	 - Tämän avulla näytteen alkuaineita voidaan tunnistaa 
+	 
+	 - Käytettävistä ioneista riippuen  menetelmä voi soveltua hyvin pintojen tutkimiseen 
+	 
+	 - PIXE:ä käytetään selvittämään puiden alkuainekoostumuksia (joilla on vuosilustot/-renkaat) tai varmistamaan vanhojen maalauksien aitous (maaliaineiden koostumus on vaihdellut aikakausittain)
+
+--- slide: Ydinfysiikan ja Radioaktiivisuuden Sovelluskohteet ---
+
+	- Hiukkasten synnyttämä röntgensäteily ja gammasäteily (PIXE ja PIGE)
+
+	- PIGE: 
+	- 
+	 - Kun ytimiä pommitetaan energeettisemmillä ioneilla, ydin alkaa emittoimaan gammasäteitä samalla tavalla kuin PIXE:ssä
+	 - Nyt myös kevyempiä alkuaineita voidaan mitata ja tunnistaa 
+	  
+	 - Esimerkiksi ${ }^{23} \mathrm{Na}( \mathrm{p}, \mathrm{p}^{\prime} + \gamma ) {}^{23} \mathrm{Na}$ reaktiota käytetään jatkuvasti määrittelemään lasien natriumpitoisuuksia 
+
+-
+- PIXE:ä ja PIGE:ä käytetään paljon materiaalitutkimuksessa ja ympäristötieteissä alkuainekoostumuksien selvittämiseen
